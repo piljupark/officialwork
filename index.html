@@ -24,7 +24,6 @@
 
 <body>
     <div id="wrap">
-
         <div class="nav">
             <article>
                 <a href="#" alt="mob-logo"><img src="images/mob_logo.png"></a>
@@ -33,40 +32,96 @@
             <section class="menu"><a href="#">MENU</a></section>
         </div>
     </div>
-    
-    
-   <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/cc-ca.png"></div>
-            <div class="swiper-slide"><img src="images/chassis.png"></div>
-            <div class="swiper-slide"><img src="images/e-cutaway.png"></div>
-            <div class="swiper-slide"><img src="images/e_side.png"></div>
-            <div class="swiper-slide"><img src="images/ecosport_side.png"></div>
-            <div class="swiper-slide"><img src="images/edge_side.png"></div>
-            <div class="swiper-slide"><img src="images/esc_side2.png"></div>
-            <div class="swiper-slide"><img src="images/esp.jpg"></div>
-            <div class="swiper-slide"><img src="images/esc_side3.png"></div>
-            <div class="swiper-slide"><img src="images/superduty.png"></div>
+
+    <div id="model-form">
+        <div class="swiper-container">
+           <p>CAR</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/fiesta_side.png">
+                <p class="model-name">2020 FIESTA</p></div>
+                <div class="swiper-slide"><img src="images/fusion-side.png"></div>
+                <div class="swiper-slide"><img src="images/m_side1.png"></div>
+            </div>
         </div>
-        <!-- Add Scrollbar -->
+        <div class="swiper-container">
+           <p>SUV / CROSSOVER</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/e_side.png"></div>
+                <div class="swiper-slide"><img src="images/edge_side.png"></div>
+                <div class="swiper-slide"><img src="images/ex_side.png"></div>
+                <div class="swiper-slide"><img src="images/flex_side.png"></div>
+                <div class="swiper-slide"><img src="images/ecosport_side.png"></div>
+                <div class="swiper-slide"><img src="images/esc_side.png"></div>
+                <div class="swiper-slide"><img src="images/mach-e_side.png"></div>
+            </div>
+        </div>
+        <div class="swiper-container">
+           <p>COMMERCIAL</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/tra-connect_side.png">
+                </div>
+                <div class="swiper-slide"><img src="images/tra_side.png"></div>
+                <div class="swiper-slide"><img src="images/superduty.png"></div>
+                <div class="swiper-slide"><img src="images/e-cutaway.png"></div>
+                <div class="swiper-slide"><img src="images/cc-ca.png"></div>
+                <div class="swiper-slide"><img src="images/chassis.png"></div>
+            </div>
+        </div>
+        <div class="swiper-container">
+           <p>HYBRID / EV</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/esc_side.png"></div>
+                <div class="swiper-slide"><img src="images/edge_side.png"></div>
+                <div class="swiper-slide"><img src="images/fusion-side2.png"></div>
+                <div class="swiper-slide"><img src="images/fusion-side3.png"></div>
+                <div class="swiper-slide"><img src="images/mach-e_side.png"></div>
+                <div class="swiper-slide"><img src="images/esc_side2.png"></div>
+                <div class="swiper-slide"><img src="images/esc_side5.png"></div>
+            </div>
+        </div>
+        <div class="swiper-container">
+           <p>PERFORMANCE</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/edge-st_side.png"></div>
+                <div class="swiper-slide"><img src="images/f150_side.png"></div>
+                <div class="swiper-slide"><img src="images/gt_side.png"></div>
+                <div class="swiper-slide"><img src="images/mk2_side.png"></div>
+                <div class="swiper-slide"><img src="images/m_side1.png"></div>
+            </div>
+        </div>
+        <div class="swiper-container">
+           <p>TRUCK / VAN</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/ranger_side.png"></div>
+                <div class="swiper-slide"><img src="images/f150_side.png"></div>
+                <div class="swiper-slide"><img src="images/superduty.png"></div>
+                <div class="swiper-slide"><img src="images/tra-connect_side.png"></div>
+                <div class="swiper-slide"><img src="images/tra_side.png"></div>
+            </div>
+        </div>
+        <div class="swiper-container">
+           <p>FUTURE</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/bronco.png"></div>
+                <div class="swiper-slide"><img src="images/mach-e_side.png"></div>
+                <div class="swiper-slide"><img src="images/m_side1.png"></div>
+            </div>
+        </div>
     </div>
-
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflow: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : false
-        }
-    });
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+                rotate: 50,
+                stretch: -50,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false
+            }
+        });
     </script>
-</body>
-
-</html>
+</body></html>

@@ -9,7 +9,7 @@ li {
     list-style: none;
 }
 
-@media screen and (max-width:1366px) and (min-width:768px) {
+@media screen and (max-width:1366px) and (min-width:360px) {
 
     #wrap .nav {
         width: 100%;
@@ -21,13 +21,13 @@ li {
     }
 
     #wrap .nav article {
-        width: 10%;
+        width: 80px;
         margin: 0 auto;
         padding-top: 20px;
     }
 
     #wrap .nav article a img {
-        width: 100%;
+        width: 80px;
     }
 
     #wrap .nav .model {

@@ -34,7 +34,7 @@ body {
     }
 
 
-    #wrap header article {
+    #wrap header .main-logo {
         position: absolute;
         width: 80px;
         left: 20px;
@@ -44,7 +44,33 @@ body {
     #wrap header article a img {
         width: 80px;
     }
-
+    #wrap header .model-logo{
+        position:absolute;
+        right:0;
+        top:24px;
+        right:65px;
+        background-color: rgba(0, 0, 0, .0);
+        -webkit-transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        border-radius: 5px;
+    }
+    #wrap header .menu-logo{
+        position:absolute;
+        right:0;
+        top:21px;
+        right:20px;
+        background-color: rgba(0, 0, 0, .0);
+        -webkit-transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        border-radius: 5px;
+    }
+    #wrap header .menu-logo a img{
+        width:25px;
+    }
 
 
     /* MODEL-FORM */
@@ -56,26 +82,33 @@ body {
 
     .swiper-container {
         width: 100%;
-        height: 200px;
+        height: 250px;
         margin: 20px auto;
         z-index: 1;
         margin-top: 0px;
-        border-bottom: 1px solid #999;
     }
 
-    .swiper-container p {
+    .swiper-container .kind {
         font-family: 'Fugaz one', cursive;
-        margin-left: 20px;
+        padding-left: 20px;
+        padding-top:9px;
+        background-color: #003478;
+        color:#fff;
+        height:30px;
     }
 
     .swiper-wrapper .model-name {
-        font-size: 13px;
+        font-size: 14px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         color:#333;
+        float:left;
+        position:absolute;
+        top:40px;
     }
 
     .swiper-wrapper button {
+        width:70px;
         background-color: #003478;
         color: #fff;
         border: none;
@@ -83,6 +116,10 @@ body {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         border-radius: 5px;
+        position: absolute;
+        left:90px;
+        bottom:40px;
+        font-size: 12px;
     }
 
     .swiper-slide {

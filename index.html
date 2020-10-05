@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    
+
     <script src="script/swiper.min.js"></script>
     <script src="script/jquery-1.11.2.min.js"></script>
     <script src="script/script.js"></script>
-    
+
 
 
 
@@ -25,11 +25,11 @@
 
 <body>
     <div id="wrap">
-      
-    <!-- NAVIGATION -->
+
+        <!-- NAVIGATION -->
         <header>
             <article class="main-logo">
-                <a href="#" alt="mob-logo"><img src="images/mob_logo.png"></a>
+                <a href="index.html" alt="mob-logo"><img src="images/mob_logo.png"></a>
             </article>
             <article class="model-logo">
                 <a href="#" alt="mob-logo"><img src="images/model-logo.png"></a>
@@ -41,7 +41,28 @@
     </div>
     <!-- //NAVIGATION -->
 
+
     <div id="model-form">
+        <span class="model-list">
+            <a href="#"><p class="model-name car">CAR</p><div class="line"></div></a>
+            <a href="#"><p class="model-name">SUV / CROSSOVER</p><div class="line"></div></a>
+            <a href="#"><p class="model-name">COMMERCIAL</p><div class="line"></div></a>
+            <a href="#"><p class="model-name">HYBIRD / EV</p><div class="line"></div></a>
+            <a href="#"><p class="model-name">PERFORMANCE</p><div class="line"></div></a>
+            <a href="#"><p class="model-name">TRUCK / VAN</p><div class="line"></div></a>
+            <a href="#"><p class="model-name future">FUTURE</p></a>
+        </span>
+    </div>
+    <div id="int-car">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/fiesta_side.png"></div>
+                <div class="swiper-slide"><img src="images/fiesta_side.png"></div>
+                <div class="swiper-slide"><img src="images/fiesta_side.png"></div>
+            </div>
+        </div>
+    </div>
+    <!--<div id="model-form">
         <div class="swiper-container">
            <p class="kind">CAR</p>
             <div class="swiper-wrapper">
@@ -222,21 +243,20 @@
                 <img src="images/m_side1.png"></div>
             </div>
         </div>
-    </div>
+    </div>-->
+    
+    
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            coverflow: {
-                rotate: 50,
-                stretch: -130,
-                depth: 200,
-                modifier: 1,
-                slideShadows: false
-            }
-        });
+         
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    
+
     </script>
-</body></html>
+    
+
+</body>
+
+</html>

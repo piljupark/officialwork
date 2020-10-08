@@ -90,7 +90,7 @@ body {
     }
     
     #model-form .model-list a .model-name{
-        font-size: 30px;
+        font-size: 25px;
         line-height: 3.3;
         text-align: right;
         
@@ -115,9 +115,10 @@ body {
         display: none;
     }
     #int-car .swiper-container .swiper-wrapper .swiper-slide img{
-        width:600px;
-        margin-top:500px;
+        width:400px;
+        margin-top:400px;
         margin-right:100px;
+        margin-left:50px;
     }
     /* #model-form .swiper-container:nth-child(1) {
         padding-top: 48px;

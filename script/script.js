@@ -9,11 +9,16 @@ $(document).ready(function(){
       $("header").css("background","rgba(0, 0, 0, .1)"); 
     }
   });
-    $("#wrap > header > .model-logo").mouseenter(function(){
-        $("#model-form").show(300);
+    $(".menu>a").click(function(){
+        var submenu = $(this).next("ul");
+        if( submenu.is(":visible") ){
+            submenu.slideUp(100);
+        }else{
+            submenu.slideDown(100);
+        }
     });
-     $("#model-form > .model-list > a > .car").mouseenter(function(){
-        $("#int-car").show(300);
-        $("#model-form").hide();
-    });
+    $("header > .model-logo > ul > .menu > .hide > li > .car").click(function(){
+        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+        $("#int-car").show();
+    })
 });

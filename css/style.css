@@ -16,6 +16,7 @@ body {
 @media screen and (max-width:4000px) and (min-width:300px) {
     #wrap {
         width: 100%;
+        overflow-y:hidden;
     }
 
     #wrap header {
@@ -50,11 +51,32 @@ body {
         top:14px;
         right:65px;
         background-color: rgba(0, 0, 0, .0);
-        -webkit-transition-duration: 0.4s;
-        -webkit-transition-timing-function: ease;
-        transition-duration: 0.4s;
-        transition-timing-function: ease;
         border-radius: 5px;
+    }
+    #wrap header .model-logo ul .menu a img{
+        width:80px;
+    }
+    
+    
+    #wrap header .model-logo ul .menu .hide{
+        display: none;
+        position:absolute;
+        width:420px;
+        height:900px;
+        font-family: 'Montserrat', sans-serif;
+        font-size:30px;
+        margin-top:15px;
+        right:-70px;
+        background-color: #fff;
+        text-align: right;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #wrap header .model-logo ul .menu .hide li{
+        margin-bottom:20px;
+    }
+    #wrap header .model-logo ul .menu .hide li a{
+        padding-right:40px;
     }
     #wrap header .menu-logo{
         position:absolute;
@@ -74,38 +96,10 @@ body {
 
 
     /* MODEL-FORM */
-    #model-form {
-        width:100%;
-        height:812px;
-        top:70px;
-        position:absolute;
-        font-family: 'Montserrat', sans-serif;
-        display:none;
-        /*-webkit-transition-duration: 0.4s;
-        -webkit-transition-timing-function: ease;
-        transition-duration: 0.4s;
-        transition-timing-function: ease;*/
-        background-color: #fff;
-        z-index: 9;
+    .menu-model .menu a {
+        cursor:pointer;
     }
-    
-    #model-form .model-list a .model-name{
-        font-size: 25px;
-        line-height: 3.3;
-        text-align: right;
-        
-        color:#444;
-        padding-right:20px;
-    }
-    #model-form .model-list a .line{
-        border-bottom:0.5px solid #999;
-        width:350px;
-        margin:0 auto;
-    } 
-    #model-form .model-list a .future{
-        border-bottom:0.5px solid #fff;
-    }
-    
+   
     #int-car{
         width:100%;
         height:812px;

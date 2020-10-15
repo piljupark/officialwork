@@ -56,14 +56,12 @@
     <!-- //NAVIGATION -->
 
 
-
-    <div id="int-car">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/fiesta_side.png"></div>
-                <div class="swiper-slide"><img src="images/fiesta_side.png"></div>
-                <div class="swiper-slide"><img src="images/fiesta_side.png"></div>
-            </div>
+    
+    <div class="swiper-container car-info">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/fiesta_side.png"></div>
+        <div class="swiper-slide car2"><img src="images/fusion-side.png"></div>
+        <div class="swiper-slide car3"><img src="images/m_side1.png"></div>
         </div>
     </div>
     <!--<div id="model-form">
@@ -251,10 +249,15 @@
 
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true
-        });
+        
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30
+    });
+    
     </script>
 
 

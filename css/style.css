@@ -18,7 +18,7 @@ body {
         width: 100%;
         overflow-y:hidden;
     }
-
+    /* MODEL-FORM */
     #wrap header {
         width: 100%;
         float: left;
@@ -102,28 +102,29 @@ body {
     #wrap header .menu-logo a img{
         width:25px;
     }
-
-
-    /* MODEL-FORM */
+    
     .menu-model .menu a {
         cursor:pointer;
     }
-   
-    #int-car{
-        width:100%;
-        /*border:1px solid #000;*/
-        position: absolute;
-        top:50px;
+       
+    /* //MODEL-FORM */
+    
+    /* CAR-INFORMATION */
+    .car-info{
+        z-index: 1;
         display: none;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
-    #int-car .swiper-container .swiper-wrapper .swiper-slide img{
-        width:400px;
-        margin-top:400px;
-        margin-right:100px;
-        margin-left:50px;
+   
+    .car-info .swiper-wrapper .swiper-slide img{
+        width:300px;
+        margin-left:100px;
+        margin-top:500px;  
     }
+    .car-info .swiper-wrapper .car2, .car3{
+        margin-left:-20px;
+    }
+    /* //CAR-INFORMATION */
+    
     /* #model-form .swiper-container:nth-child(1) {
         padding-top: 48px;
         border-top: 1px solid #fff;

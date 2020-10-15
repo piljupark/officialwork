@@ -19,6 +19,6 @@ $(document).ready(function(){
     });
     $("header > .model-logo > ul > .menu > .hide > li > .car").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
-        $("#int-car").show();
+        $(".car-info").show();
     })
 });

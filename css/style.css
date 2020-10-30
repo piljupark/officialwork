@@ -24,7 +24,7 @@ body {
         float: left;
         height: 50px;
         position: fixed;
-        z-index: 9999;
+        z-index: 10;
         margin: 0 auto;
         background-color: rgba(0, 0, 0, .1);
         -webkit-transition-duration: 0.4s;
@@ -61,17 +61,17 @@ body {
     #wrap header .model-logo ul .menu .hide{
         display: none;
         position:absolute;
-        width:375px;
+        width:380px;
         height:812px;
         font-family: 'Montserrat', sans-serif;
         font-size:30px;
-        margin-top:35px;
         right:-70px;
         background-color: #fff;
         text-align: right;
         overflow-x: hidden;
         overflow-y: hidden;
-        z-index: 9;
+        z-index: -10;
+        top:40px;
     }
     #wrap header .model-logo ul .menu .hide li{
         margin-bottom:20px;
@@ -109,94 +109,88 @@ body {
        
     /* //MODEL-FORM */
     
-    /* CAR-INFORMATION */
-    .car-info{
-        z-index: 1;
+    
+    
+    
+    /* INFORMATION */
+    #car-info, #suv-info, #commercial-info, #hybrid-info, #performance-info, #truck-info, #future-info{
         display: none;
+        font-family: 'Fugaz one',cursive;
+        font-size:20px;
+        overflow-x: hidden;
+    }
+    h1{
+        
+        margin-left:20px;
+        margin-bottom:60px;
+        width:335px;
+        margin-top:50px;
+    }
+    span .detail .d1{
+        width:160px;
+        float:left;
+    }
+    span .detail .d2{
+        float:left;
+        width:40px;
+    }
+    span .detail .d2 p{
+        color:#555;
+        font-size:13px;
+        margin-left:70px;
+    }
+    span .detail .d3{
+        float:left;
+        width:120px;
+        margin-left:50px;
+    }
+    span .detail .d3 p{
+        color:#555;
+        font-size:13px;
+        margin-left:50px;
+        margin-top:-1px;
+    }
+    span .detail .d2 img{
+        width:23px;
+    }
+    span .detail .d3 img{
+        width:16px;
+    }
+    
+    span p{
+        margin-left:20px;
+        color:#003478;
+    }
+    .price{
+        font-size:15px;
+        color:#555;
     }
    
-    .car-info .swiper-wrapper .swiper-slide img{
-        width:300px;
-        margin-left:100px;
-        margin-top:500px;  
+    span img{
+        width:400px;
+        margin-left:80px;
+        
     }
-    .car-info .swiper-wrapper .car2, .car3{
-        margin-left:-20px;
+    span .car-bottom-line{
+        border-bottom:0.2px solid #003478;
+        width:335px;
+        margin:0 auto;
+        margin-top:30px;
+        margin-bottom:100px;
     }
-    /* //CAR-INFORMATION */
-    
-    /* #model-form .swiper-container:nth-child(1) {
-        padding-top: 48px;
-        border-top: 1px solid #fff;
+    span a .more{
+        margin-left:290px;
+        font-family: 'Noto sans', sans-serif;
+        font-size:13px;
+        margin-top:20px;
     }
-
-    .swiper-container {
-        width: 100%;
-        height: 250px;
-        margin: 20px auto;
-        z-index: 1;
-        margin-top: 0px;
+    span a .more-last{
+        margin-left:290px;
+        font-family: 'Noto sans', sans-serif;
+        font-size:13px;
+        margin-bottom:50px;
+        margin-top:20px;
     }
-
-    .swiper-container .kind {
-        font-family: 'Fugaz one', cursive;
-        padding-left: 20px;
-        padding-top:9px;
-        background-color: #003478;
-        color:#fff;
-        height:30px;
-    }
-
-    .swiper-wrapper .model-name {
-        font-size: 14px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        color:#333;
-        float:left;
-        position:absolute;
-        top:40px;
-    }
-
-    .swiper-wrapper button {
-        width:70px;
-        background-color: #003478;
-        color: #fff;
-        border: none;
-        height: 20px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        border-radius: 5px;
-        position: absolute;
-        left:90px;
-        bottom:40px;
-        font-size: 12px;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        width: 250px;
-
-        /* Center slide text vertically 
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .swiper-slide img {
-        width: 250px;
-    }*/
-
-    /* //MODEL-FORM */
+    /* //INFORMATION */
 
 }

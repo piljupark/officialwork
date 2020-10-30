@@ -19,6 +19,72 @@ $(document).ready(function(){
     });
     $("header > .model-logo > ul > .menu > .hide > li > .car").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
-        $(".car-info").show();
-    })
+        $("#car-info").show();
+        $("#suv-info").hide();
+        $("#commercial-info").hide();
+        $("#hybrid-info").hide();
+        $("#performance-info").hide();
+        $("#truck-info").hide();
+        $("#future-info").hide();
+    });
+    $("header > .model-logo > ul > .menu > .hide > li > .suv").click(function(){
+        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+        $("#car-info").hide();
+        $("#suv-info").show();
+        $("#commercial-info").hide();
+        $("#hybrid-info").hide();
+        $("#performance-info").hide();
+        $("#truck-info").hide();
+        $("#future-info").hide();
+    });
+    $("header > .model-logo > ul > .menu > .hide > li > .commercial").click(function(){
+        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+        $("#car-info").hide();
+        $("#suv-info").hide();
+        $("#commercial-info").show();
+        $("#hybrid-info").hide();
+        $("#performance-info").hide();
+        $("#truck-info").hide();
+        $("#future-info").hide();
+    });
+    $("header > .model-logo > ul > .menu > .hide > li > .hybrid").click(function(){
+        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+        $("#car-info").hide();
+        $("#suv-info").hide();
+        $("#commercial-info").hide();
+        $("#hybrid-info").show();
+        $("#performance-info").hide();
+        $("#truck-info").hide();
+        $("#future-info").hide();
+    });
+    $("header > .model-logo > ul > .menu > .hide > li > .performance").click(function(){
+        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+        $("#car-info").hide();
+        $("#suv-info").hide();
+        $("#commercial-info").hide();
+        $("#hybrid-info").hide();
+        $("#performance-info").show();
+        $("#truck-info").hide();
+        $("#future-info").hide();
+    });
+    $("header > .model-logo > ul > .menu > .hide > li > .truck").click(function(){
+        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+        $("#car-info").hide();
+        $("#suv-info").hide();
+        $("#commercial-info").hide();
+        $("#hybrid-info").hide();
+        $("#performance-info").hide();
+        $("#truck-info").show();
+        $("#future-info").hide();
+    });
+    $("header > .model-logo > ul > .menu > .hide > li > .future").click(function(){
+        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+        $("#car-info").hide();
+        $("#suv-info").hide();
+        $("#commercial-info").hide();
+        $("#hybrid-info").hide();
+        $("#performance-info").hide();
+        $("#truck-info").hide();
+        $("#future-info").show();
+    });
 });

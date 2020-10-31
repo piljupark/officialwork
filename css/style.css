@@ -71,7 +71,7 @@ body {
         overflow-x: hidden;
         overflow-y: hidden;
         z-index: -10;
-        top:40px;
+        top:36px;
     }
     #wrap header .model-logo ul .menu .hide li{
         margin-bottom:20px;
@@ -149,6 +149,7 @@ body {
         font-size:13px;
         margin-left:50px;
         margin-top:-1px;
+        text-align: center;
     }
     span .detail .d2 img{
         width:23px;

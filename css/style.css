@@ -123,7 +123,7 @@ body {
 
     /* -------------------------------HOME INFO----------------------------- */
     #home-info {
-        height: 2000px;
+        height: 3000px;
         overflow-x: hidden;
     }
 
@@ -225,15 +225,102 @@ body {
         height: 533px;
         background: url('../images/gt500-mobile-black.jpg') no-repeat;
         transition: .3s;
-        margin-left:60px;
-        margin-top:100px;
+        margin-left: 60px;
+        margin-top: 100px;
     }
 
     #home-info .homesooner:hover {
         background: url('../images/gt500-mobile.jpg') no-repeat;
     }
 
+    #home-info .homecontactbox {
+        width: 100%;
+        height: 500px;
+        background-color: #f7f5f5;
+        margin-top: 80px;
+        overflow-x: hidden;
+    }
 
+    #home-info .homecontactbox .hometxt6 {
+        position: absolute;
+        top: 2100px;
+        left: -25px;
+        font-family: 'Fugaz one', cursive;
+        color: #444;
+        transform: rotate(270deg);
+    }
+
+    #home-info .homecontactbox .control-box {
+        width: 250px;
+        float: left;
+        margin-top: 27px;
+        margin-left: 75px;
+    }
+
+    #home-info .homecontactbox .control-box .homecontact-control {
+        width: 260px;
+        height: 25px;
+        margin-bottom: 20px;
+        display: block;
+        border: 1px solid #dbdbdb;
+        padding-left: 20px;
+    }
+
+    #home-info .homecontactbox .control-box .homecontact-control:nth-last-child(1) {
+        height: 300px;
+    }
+
+    #home-info .homecontactbox .homecontact-button {
+        margin-top: 450px;
+        border: 1px solid #dbdbdb;
+        width: 70px;
+        height: 35px;
+        margin-left: -36px;
+        font-size: 15px;
+        background-color: #003478;
+        color: #efefef;
+        font-weight: bold;
+    }
+
+    footer .footer-logo-box {
+        width: 150px;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin-top: 250px;
+    }
+
+    footer .footer-logo img {
+        width: 150px;
+        overflow: hidden;
+    }
+
+    footer .footer-sns-box {
+        margin: 0 auto;
+        width: 160px;
+    }
+
+    footer .sns {
+        opacity: .6;
+        margin-right: 20px;
+    }
+
+    footer .footer-sns-box .sns:nth-last-child(1) {
+        margin-right: -20px;
+    }
+
+    footer .sns:hover {
+        opacity: 1;
+        transition: .2s;
+    }
+
+    footer .copyright {
+        font-style: italic;
+        color: #444;
+        font-size: 11px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    }
 
     /* -----------------------------//HOME INFO----------------------------- */
 

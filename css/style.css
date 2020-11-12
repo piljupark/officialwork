@@ -214,7 +214,7 @@ body {
 
     #home-info .hometxt5 {
         position: absolute;
-        top: 1470px;
+        top: 1420px;
         left: -30px;
         font-family: 'Fugaz one', cursive;
         color: #444;
@@ -247,7 +247,7 @@ body {
 
     #home-info .homecontactbox .hometxt6 {
         position: absolute;
-        top: 2115px;
+        top: 2065px;
         left: -25px;
         font-family: 'Fugaz one', cursive;
         color: #444;
@@ -259,7 +259,7 @@ body {
         width: 80%;
         margin-top: 27px;
         position:absolute;
-        right:10px;
+        right:5px;
     }
 
     #home-info .homecontactbox .control-box .homecontact-control {

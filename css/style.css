@@ -12,6 +12,7 @@ li {
 body {
     overflow-x: hidden;
 }
+
 @media screen and (max-width:354px) and (min-width:200px) {
     #wrap {
         width: 100%;
@@ -132,7 +133,7 @@ body {
         font-family: 'Fugaz one', cursive;
         color: #444;
         transform: rotate(270deg);
-        font-size:14px;
+        font-size: 14px;
     }
 
 
@@ -140,12 +141,18 @@ body {
         width: 320px;
         margin-left: 60px;
         margin-top: 70px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .mainimg2 img {
         width: 320px;
         margin-top: 20px;
         margin-left: 60px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
 
     }
 
@@ -153,6 +160,9 @@ body {
         width: 320px;
         margin-top: 20px;
         margin-left: 60px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .hometxt2 {
@@ -181,12 +191,12 @@ body {
         font-family: 'Fugaz one', cursive;
         color: #afafaf;
         transform: rotate(270deg);
-        font-size:14px;
+        font-size: 14px;
     }
 
     #home-info .homecolor1 {
         width: 89%;
-        height:500px;
+        height: 500px;
         background-color: #003478;
         margin-left: 0px;
         margin-top: 70px;
@@ -196,12 +206,15 @@ body {
         width: 80%;
         position: absolute;
         top: 900px;
-        right:10px;
+        right: 10px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .hometechbox {
         margin-top: -190px;
-        margin-left:25%;
+        margin-left: 25%;
     }
 
     #home-info .hometechbox a p {
@@ -209,7 +222,7 @@ body {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         margin-bottom: 30px;
-        font-size:0.9em;
+        font-size: 0.9em;
     }
 
     #home-info .hometxt5 {
@@ -219,18 +232,21 @@ body {
         font-family: 'Fugaz one', cursive;
         color: #444;
         transform: rotate(270deg);
-        font-size:14px;
+        font-size: 14px;
     }
 
     #home-info .homesooner {
         display: inline-block;
         position: absolute;
-        width:80%;
-        height:80%;
+        width: 80%;
+        height: 80%;
         background: url('../images/gt500-mobile-black.jpg') no-repeat;
         transition: .3s;
-        right:10px;
+        right: 10px;
         margin-top: 100px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .homesooner:hover {
@@ -252,14 +268,14 @@ body {
         font-family: 'Fugaz one', cursive;
         color: #444;
         transform: rotate(270deg);
-        font-size:14px;
+        font-size: 14px;
     }
 
     #home-info .homecontactbox .control-box {
         width: 80%;
         margin-top: 27px;
-        position:absolute;
-        right:5px;
+        position: absolute;
+        right: 5px;
     }
 
     #home-info .homecontactbox .control-box .homecontact-control {
@@ -269,6 +285,9 @@ body {
         display: block;
         border: 1px solid #dbdbdb;
         padding-left: 17px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .homecontactbox .control-box .homecontact-control:nth-last-child(1) {
@@ -280,14 +299,14 @@ body {
         border: 1px solid #dbdbdb;
         width: 70px;
         height: 35px;
-        float:right;
-        margin-right:10px;
+        float: right;
+        margin-right: 10px;
         font-size: 15px;
         background-color: #003478;
         color: #efefef;
         font-weight: bold;
     }
-    
+
     footer .footer-logo-box {
         width: 150px;
         margin: 0 auto;
@@ -441,7 +460,7 @@ body {
 
 
 
-@media screen and (max-width:410px) and (min-width:355px) {
+@media screen and (max-width:500px) and (min-width:355px) {
     #wrap {
         width: 100%;
         overflow-y: hidden;
@@ -568,12 +587,18 @@ body {
         width: 350px;
         margin-left: 60px;
         margin-top: 70px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .mainimg2 img {
         width: 350px;
         margin-top: 20px;
         margin-left: 60px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
 
     }
 
@@ -581,6 +606,9 @@ body {
         width: 350px;
         margin-top: 20px;
         margin-left: 60px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .hometxt2 {
@@ -617,18 +645,22 @@ body {
         background-color: #003478;
         margin-left: 0px;
         margin-top: 70px;
+
     }
 
     #home-info .hometech1 img {
         width: 300px;
         position: absolute;
         top: 900px;
-        right:10px;
+        right: 10px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .hometechbox {
         margin-top: -190px;
-        margin-left:25%;
+        margin-left: 25%;
     }
 
     #home-info .hometechbox a p {
@@ -654,8 +686,11 @@ body {
         height: 533px;
         background: url('../images/gt500-mobile-black.jpg') no-repeat;
         transition: .3s;
-        right:10px;
+        right: 10px;
         margin-top: 100px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .homesooner:hover {
@@ -682,8 +717,8 @@ body {
     #home-info .homecontactbox .control-box {
         width: 250px;
         margin-top: 27px;
-        position:absolute;
-        right:45px;
+        position: absolute;
+        right: 45px;
     }
 
     #home-info .homecontactbox .control-box .homecontact-control {
@@ -693,6 +728,9 @@ body {
         display: block;
         border: 1px solid #dbdbdb;
         padding-left: 20px;
+        -moz-border-radius: 7px;
+        -khtml-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 
     #home-info .homecontactbox .control-box .homecontact-control:nth-last-child(1) {
@@ -704,14 +742,14 @@ body {
         border: 1px solid #dbdbdb;
         width: 70px;
         height: 35px;
-        float:right;
-        margin-right:10px;
+        float: right;
+        margin-right: 10px;
         font-size: 15px;
         background-color: #003478;
         color: #efefef;
         font-weight: bold;
     }
-    
+
     footer .footer-logo-box {
         width: 150px;
         margin: 0 auto;

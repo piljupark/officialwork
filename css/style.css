@@ -433,16 +433,9 @@ body {
         font-family: 'Fugaz one', cursive;
         font-size: 20px;
         float: left;
+        overflow-x:hidden;
     }
-    #car-info span span,
-    #suv-info span, 
-    #commercial-info span,
-    #hybrid-info span, 
-    #performance-info  span,
-    #truck-info span, 
-    #future-info span{
-        float:left;
-    }
+
     h1 {
         float: left;
         margin-left: 20px;

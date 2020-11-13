@@ -22,6 +22,7 @@ body {
         width: 100%;
         float: left;
         height: 70px;
+        overflow-x: hidden;
     }
 
     #wrap header {
@@ -261,7 +262,8 @@ body {
         width: 100%;
         height: 600px;
         /*background-color: beige;*/
-        margin-top: 100px;
+        /*margin-top: 100px;*/
+        
     }
 
     #home-info .comingbox .hometxt6box {
@@ -296,7 +298,7 @@ body {
         float: right;
         width: 100%;
         height: 90%;
-        background: url('../images/gt500-mobile-black.jpg') no-repeat;
+        background: url('../images/gt500-mobile.jpg') no-repeat;
         transition: .3s;
         right: 0;
         -moz-border-radius: 7px;
@@ -443,7 +445,9 @@ body {
         width: 335px;
         margin-top:0px;
     }
-    
+    span {
+        overflow-x:hidden;
+    }
     span .detail .d1 {
         width: 160px;
         float: left;
@@ -514,7 +518,7 @@ body {
     }
 
     span a .more-last {
-        margin-left: 290px;
+        margin-left: 200px;
         font-family: 'Noto sans', sans-serif;
         font-size: 13px;
         margin-bottom: 50px;

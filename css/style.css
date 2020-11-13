@@ -13,521 +13,17 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (max-width:354px) and (min-width:200px) {
-    #wrap {
-        width: 100%;
-        overflow-y: hidden;
-    }
+
+@media screen and (max-width:500px) and (min-width:200px) {
 
     /* MODEL-FORM */
-    #wrap header {
-        width: 100%;
-        float: left;
-        height: 50px;
-        position: fixed;
-        z-index: 10;
-        margin: 0 auto;
-        background-color: rgba(0, 0, 0, .1);
-        -webkit-transition-duration: 0.4s;
-        -webkit-transition-timing-function: ease;
-        transition-duration: 0.4s;
-        transition-timing-function: ease;
-        /*background-color: #999;*/
-    }
-
-
-    #wrap header .main-logo {
-        position: absolute;
-        width: 80px;
-        left: 10px;
-        padding-top: 10px;
-    }
-
-    #wrap header article a img {
-        width: 80px;
-    }
-
-    #wrap header .model-logo {
-        position: absolute;
-        right: 0;
-        top: 14px;
-        right: 65px;
-        background-color: rgba(0, 0, 0, .0);
-        border-radius: 5px;
-    }
-
-    #wrap header .model-logo ul .menu a img {
-        width: 80px;
-    }
-
-
-    #wrap header .model-logo ul .menu .hide {
-        display: none;
-        position: absolute;
-        width: 380px;
-        height: 812px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        right: -70px;
-        background-color: #fff;
-        text-align: right;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        z-index: -10;
-        top: 36px;
-    }
-
-    #wrap header .model-logo ul .menu .hide li {
-        margin-bottom: 20px;
-    }
-
-    #wrap header .model-logo ul .menu .hide li a {
-        padding-right: 40px;
-    }
-
-    #wrap header .model-logo ul .menu .hide .line {
-        border-bottom: 0.5px solid #444;
-        width: 300px;
-        margin: 0 auto;
-        margin-top: 40px;
-    }
-
-
-    #wrap header .menu-logo {
-        position: absolute;
-        right: 0;
-        top: 11px;
-        right: 20px;
-        background-color: rgba(0, 0, 0, .0);
-        -webkit-transition-duration: 0.1s;
-        -webkit-transition-timing-function: ease;
-        transition-duration: 0.1s;
-        transition-timing-function: ease;
-        border-radius: 5px;
-    }
-
-    #wrap header .menu-logo a img {
-        width: 25px;
-    }
-
-    .menu-model .menu a {
-        cursor: pointer;
-    }
-
-    /* ------------------------------//MODEL-FORM--------------------------- */
-
-
-
-
-
-
-    /* -------------------------------HOME INFO----------------------------- */
-    #home-info {
-        height: 2700px;
-        overflow-x: hidden;
-        margin-top: 70px;
-    }
-
-    #home-info .mainbox .hometxt1box {
-        background: linear-gradient(to bottom, rgba(0, 52, 120, .9), #f1f1f1, #fff);
-        width: 15%;
-        height: 600px;
-        float: left;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
-    }
-
-    #home-info .mainbox .hometxt1box .hometxt1 {
-        font-family: 'Fugaz one', cursive;
-        color: #eee;
-        font-size: 14px;
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-    #home-info .mainimgbox {
-        float: right;
-        width: 84%;
-        overflow: hidden;
-    }
-
-
-    #home-info .mainimgbox img {
-        width: 100%;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
-        margin-left:
-    }
-
-    #home-info .hometxt2box {
-        float: right;
-        width: 82%;
-        margin-top: 30px;
-    }
-
-    #home-info .hometxt2box .hometxt2 {
-        font-family: 'Montserrat', sans-serif;
-        color: #444;
-        transition: .3s;
-    }
-
-    #home-info .hometxt2box .hometxt2:hover {
-        color: #003478;
-        transition: .3s;
-    }
-
-    #home-info .hometxt2box .hometxt3 {
-        color: #666;
-        font-family: 'Noto Serif KR', serif;
-        font-size: 0.7em;
-        margin-top: 5px;
-    }
-
-
-    #home-info .techbox {
+    #wrap {
         position: relative;
-        float: left;
         width: 100%;
-        height: 400px;
-        /*background-color: #999;*/
-        margin-top: 70px;
-    }
-
-    #home-info .techbox .hometxt4box {
-        background-color: rgba(0, 52, 120, .9);
-        width: 70%;
-        height: 400px;
         float: left;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
+        height: 70px;
     }
 
-    #home-info .techbox .hometxt4box .hometxt4 {
-        font-family: 'Fugaz one', cursive;
-        color: #eee;
-        font-size: 14px;
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        margin-left: 10px;
-        margin-top: 32px;
-    }
-
-    #home-info .techbox .techimgbox {
-        position: absolute;
-        right: 0;
-        width: 85%;
-        top: 30px;
-        /*background-color: aliceblue;*/
-    }
-
-    #home-info .techbox .techimgbox img {
-        width: 100%;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
-    }
-
-    #home-info .techbox .hometxt5box {
-        position: absolute;
-        bottom: 4%;
-        right: 30%;
-        width: 150px;
-        float: left;
-    }
-
-    #home-info .techbox .hometxt5box a {
-        float: left;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1em;
-        margin-bottom: 10px;
-        font-weight: bold;
-        color: #eee;
-
-    }
-
-    #home-info .comingbox {
-        float: left;
-        width: 100%;
-        height: 600px;
-        /*background-color: beige;*/
-        margin-top: 100px;
-    }
-
-    #home-info .comingbox .hometxt6box {
-        background: linear-gradient(to bottom, rgba(0, 52, 120, .9), #f1f1f1, #fff);
-        width: 15%;
-        height: 600px;
-        float: left;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
-    }
-
-    #home-info .comingbox .hometxt6box .hometxt6 {
-        font-family: 'Fugaz one', cursive;
-        color: #eee;
-        font-size: 14px;
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-    #home-info .comingbox .comingimgbox {
-        float: right;
-        width:80%;
-        height:600px;
-    }
-
-    #home-info .comingbox .comingimgbox .homesooner {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        background: url('../images/gt500-mobile-black.jpg') no-repeat;
-        transition: .3s;
-        right: 10px;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
-    }
-
-    #home-info .comingbox .comingimgbox .homesooner:hover {
-        background: url('../images/gt500-mobile.jpg') no-repeat;
-    }
-
-    #home-info .contactbox {
-        width: 100%;
-        height: 500px;
-        background-color: #f7f5f5;
-        overflow-x: hidden;
-        float:left;
-    }
-
-    #home-info .contactbox .hometxt7box {
-        width: 20%;
-        height: 500px;
-        float: left;
-    }
-
-    #home-info .contactbox .hometxt7box .hometxt7 {
-        font-family: 'Fugaz one', cursive;
-        color: #444;
-        font-size: 14px;
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        margin-left: 10px;
-        margin-top: 30px;
-        overflow: hidden;
-    }
-
-    #home-info .contactbox .control-box {
-        width: 75%;
-        margin-top: 27px;
-        margin-right: 10px;
-        /*background-color: #888;*/
-        float: right;
-    }
-
-    #home-info .contactbox .control-box .homecontact-control {
-        width: 90.5%;
-        height: 25px;
-        margin-bottom: 20px;
-        display: block;
-        border: 1px solid #dbdbdb;
-        padding-left: 20px;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
-    }
-
-    #home-info .contactbox .control-box .homecontact-control:nth-last-child(1) {
-        height: 300px;
-    }
-
-    #home-info .contactbox .homecontact-button {
-        border: 1px solid #dbdbdb;
-        width: 70px;
-        height: 35px;
-        float: right;
-        margin-right: 10px;
-        font-size: 13px;
-        background-color: #003478;
-        color: #efefef;
-        font-weight: bold;
-        float: right;
-        -moz-border-radius: 7px;
-        -khtml-border-radius: 7px;
-        -webkit-border-radius: 7px;
-    }
-
-    footer .footer-logo-box {
-        width: 150px;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin-top: 250px;
-    }
-    footer{
-        float:left;
-        width:100%;
-    }
-    footer .footer-logo img {
-        width: 150px;
-        overflow: hidden;
-    }
-
-    footer .footer-sns-box {
-        margin: 0 auto;
-        width: 160px;
-    }
-
-    footer .sns {
-        opacity: .6;
-        margin-right: 20px;
-    }
-
-    footer .footer-sns-box .sns:nth-last-child(1) {
-        margin-right: -20px;
-    }
-
-    footer .sns:hover {
-        opacity: 1;
-        transition: .2s;
-    }
-
-    footer .copyright {
-        font-style: italic;
-        color: #444;
-        font-size: 11px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    /* -----------------------------//HOME INFO----------------------------- */
-
-
-    /* -------------------------------INFORMATION--------------------------- */
-    #car-info,
-    #suv-info,
-    #commercial-info,
-    #hybrid-info,
-    #performance-info,
-    #truck-info,
-    #future-info {
-        display: none;
-        font-family: 'Fugaz one', cursive;
-        font-size: 20px;
-        overflow-x: hidden;
-    }
-
-    h1 {
-
-        margin-left: 20px;
-        margin-bottom: 60px;
-        width: 335px;
-        margin-top: 50px;
-    }
-
-    span .detail .d1 {
-        width: 160px;
-        float: left;
-    }
-
-    span .detail .d2 {
-        float: left;
-        width: 40px;
-    }
-
-    span .detail .d2 p {
-        color: #555;
-        font-size: 13px;
-        margin-left: 70px;
-    }
-
-    span .detail .d3 {
-        float: left;
-        width: 120px;
-        margin-left: 50px;
-    }
-
-    span .detail .d3 p {
-        color: #555;
-        font-size: 13px;
-        margin-left: 50px;
-        margin-top: -1px;
-        text-align: center;
-    }
-
-    span .detail .d2 img {
-        width: 23px;
-    }
-
-    span .detail .d3 img {
-        width: 16px;
-    }
-
-    span p {
-        margin-left: 20px;
-        color: #003478;
-    }
-
-    .price {
-        font-size: 15px;
-        color: #555;
-    }
-
-    span img {
-        width: 400px;
-        margin-left: 80px;
-
-    }
-
-    span .car-bottom-line {
-        border-bottom: 0.2px solid #003478;
-        width: 335px;
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 100px;
-    }
-
-    span a .more {
-        margin-left: 290px;
-        font-family: 'Noto sans', sans-serif;
-        font-size: 13px;
-        margin-top: 20px;
-    }
-
-    span a .more-last {
-        margin-left: 290px;
-        font-family: 'Noto sans', sans-serif;
-        font-size: 13px;
-        margin-bottom: 50px;
-        margin-top: 20px;
-    }
-
-    /* --------------------------//INFORMATION---------------------------- */
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:500px) and (min-width:355px) {
-    #wrap {
-        width: 100%;
-        overflow-y: hidden;
-    }
-
-    /* MODEL-FORM */
     #wrap header {
         width: 100%;
         float: left;
@@ -544,18 +40,18 @@ body {
     }
 
 
-    #wrap header .main-logo {
+    header .main-logo {
         position: absolute;
         width: 80px;
         left: 10px;
         padding-top: 10px;
     }
 
-    #wrap header article a img {
+    header article a img {
         width: 80px;
     }
 
-    #wrap header .model-logo {
+    header .model-logo {
         position: absolute;
         right: 0;
         top: 14px;
@@ -564,20 +60,20 @@ body {
         border-radius: 5px;
     }
 
-    #wrap header .model-logo ul .menu a img {
+    header .model-logo ul .menu a img {
         width: 80px;
     }
 
 
-    #wrap header .model-logo ul .menu .hide {
+    header .model-logo ul .menu .hide {
         display: none;
         position: absolute;
-        width: 380px;
+        width: 375px;
         height: 812px;
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
         right: -70px;
-        background-color: #fff;
+        background: linear-gradient(to top, rgb(0, 52, 120), #f1f1f1, #fff);
         text-align: right;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -585,15 +81,15 @@ body {
         top: 36px;
     }
 
-    #wrap header .model-logo ul .menu .hide li {
+    header .model-logo ul .menu .hide li {
         margin-bottom: 20px;
     }
 
-    #wrap header .model-logo ul .menu .hide li a {
+    header .model-logo ul .menu .hide li a {
         padding-right: 40px;
     }
 
-    #wrap header .model-logo ul .menu .hide .line {
+    header .model-logo ul .menu .hide .line {
         border-bottom: 0.5px solid #444;
         width: 300px;
         margin: 0 auto;
@@ -601,7 +97,7 @@ body {
     }
 
 
-    #wrap header .menu-logo {
+    header .menu-logo {
         position: absolute;
         right: 0;
         top: 11px;
@@ -614,7 +110,7 @@ body {
         border-radius: 5px;
     }
 
-    #wrap header .menu-logo a img {
+    header .menu-logo a img {
         width: 25px;
     }
 
@@ -632,7 +128,6 @@ body {
     /* -------------------------------HOME INFO----------------------------- */
     #home-info {
         height: 2700px;
-        overflow-x: hidden;
         margin-top: 00px;
     }
 
@@ -659,7 +154,6 @@ body {
     #home-info .mainimgbox {
         float: right;
         width: 84%;
-        overflow: hidden;
     }
 
 
@@ -668,7 +162,6 @@ body {
         -moz-border-radius: 7px;
         -khtml-border-radius: 7px;
         -webkit-border-radius: 7px;
-        margin-left:
     }
 
     #home-info .hometxt2box {
@@ -690,7 +183,7 @@ body {
 
     #home-info .hometxt2box .hometxt3 {
         color: #666;
-        font-family: 'Noto Serif KR', serif;
+        font-family: 'Noto Sans KR', serif;
         font-size: 0.7em;
         margin-top: 5px;
     }
@@ -744,16 +237,21 @@ body {
         position: absolute;
         bottom: 4%;
         right: 30%;
-        width: 150px;
+        width: 190px;
         float: left;
+        border:6px solid #fff;
+        transition:.4s
+    }
+    #home-info .techbox .hometxt5box:hover{
+        width:250px;
+        transition: .4s;
     }
 
     #home-info .techbox .hometxt5box a {
         float: left;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
         font-size: 1em;
         margin-bottom: 10px;
-        font-weight: bold;
         color: #eee;
 
     }
@@ -788,17 +286,19 @@ body {
 
     #home-info .comingbox .comingimgbox {
         float: right;
-        width:80%;
-        height:600px;
+        width: 80%;
+        height: 600px;
+        right: 0;
     }
 
     #home-info .comingbox .comingimgbox .homesooner {
         display: inline-block;
+        float: right;
         width: 100%;
-        height: 100%;
+        height: 90%;
         background: url('../images/gt500-mobile-black.jpg') no-repeat;
         transition: .3s;
-        right: 10px;
+        right: 0;
         -moz-border-radius: 7px;
         -khtml-border-radius: 7px;
         -webkit-border-radius: 7px;
@@ -813,7 +313,7 @@ body {
         height: 500px;
         background-color: #f7f5f5;
         overflow-x: hidden;
-        float:left;
+        float: left;
     }
 
     #home-info .contactbox .hometxt7box {
@@ -879,10 +379,12 @@ body {
         overflow-x: hidden;
         margin-top: 250px;
     }
-    footer{
-        float:left;
-        width:100%;
+
+    footer {
+        float: left;
+        width: 100%;
     }
+
     footer .footer-logo img {
         width: 150px;
         overflow: hidden;
@@ -930,17 +432,25 @@ body {
         display: none;
         font-family: 'Fugaz one', cursive;
         font-size: 20px;
-        overflow-x: hidden;
+        float: left;
     }
-
+    #car-info span span,
+    #suv-info span, 
+    #commercial-info span,
+    #hybrid-info span, 
+    #performance-info  span,
+    #truck-info span, 
+    #future-info span{
+        float:left;
+    }
     h1 {
-
+        float: left;
         margin-left: 20px;
         margin-bottom: 60px;
         width: 335px;
-        margin-top: 50px;
+        margin-top:0px;
     }
-
+    
     span .detail .d1 {
         width: 160px;
         float: left;

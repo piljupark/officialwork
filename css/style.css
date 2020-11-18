@@ -139,7 +139,7 @@ body {
         margin:0 auto;
         float: left;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 10px;
     }
     #home-box .main-info .main-img-box{
         position: relative;
@@ -155,7 +155,7 @@ body {
         position:relative;
         float:left;
         width:100%;
-        margin-top:50px;
+        margin-top:20px;
     }
     #home-box .main-info .main-txt-box .main-txt1{
         font-size: 45px;

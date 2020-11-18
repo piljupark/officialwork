@@ -127,7 +127,49 @@ body {
 
 
     /* -------------------------------HOME INFO----------------------------- */
-    #home-info {
+    #home-box{
+        position: relative;
+        width:100%;
+        float:left;
+    }
+    #home-box .main-info{
+        position: relative;
+        width:100%;
+        height:700px;
+        margin:0 auto;
+        float: left;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #home-box .main-info .main-img-box{
+        position: relative;
+        width:100%;
+        margin:0 auto;
+        float:left;
+    }
+    #home-box .main-info .main-img-box img{
+        width:80%;
+        border-radius: 20px;
+    }
+    #home-box .main-info .main-txt-box{
+        position:relative;
+        float:left;
+        width:100%;
+        margin-top:50px;
+    }
+    #home-box .main-info .main-txt-box .main-txt1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    #home-box .main-info .main-txt-box .main-txt2{
+        font-size:20px;
+        color:#444;
+        font-weight: bold;
+    }
+    
+    
+    
+    /*     #home-info {
         height: 2700px;
         margin-top: 00px;
     }
@@ -195,7 +237,6 @@ body {
         float: left;
         width: 100%;
         height: 400px;
-        /*background-color: #999;*/
         margin-top: 70px;
     }
 
@@ -224,7 +265,6 @@ body {
         right: 0;
         width: 85%;
         top: 30px;
-        /*background-color: aliceblue;*/
     }
 
     #home-info .techbox .techimgbox img {
@@ -261,8 +301,6 @@ body {
         float: left;
         width: 100%;
         height: 600px;
-        /*background-color: beige;*/
-        /*margin-top: 100px;*/
         
     }
 
@@ -339,7 +377,6 @@ body {
         width: 75%;
         margin-top: 27px;
         margin-right: 10px;
-        /*background-color: #888;*/
         float: right;
     }
 
@@ -419,7 +456,10 @@ body {
         text-align: center;
         margin-top: 30px;
     }
-
+    
+    
+    
+    */
     /* -----------------------------//HOME INFO----------------------------- */
 
 
@@ -438,7 +478,7 @@ body {
         overflow-x:hidden;
     }
 
-    h1 {
+   .vehicle-txt {
         float: left;
         margin-left: 20px;
         margin-bottom: 60px;

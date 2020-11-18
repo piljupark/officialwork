@@ -135,7 +135,9 @@ body {
     }
 
     #home-box .main-info,
-    .vehicle-info {
+    .vehicle-info,
+    .tech-info,
+    .contact-info{
         position: relative;
         width: 100%;
         height: 620px;
@@ -157,7 +159,7 @@ body {
         border-radius: 20px;
     }
 
-    #home-box .main-info .main-txt-box {
+    #home-box .main-info .main-txt-box, .vehicle-txt-box, .tech-txt-box, .contact-txt-box {
         position: relative;
         float: left;
         width: 100%;
@@ -167,15 +169,19 @@ body {
     #home-box .main-info .main-txt-box .main-txt1 {
         font-size: 18px;
         font-weight: bold;
-        color: #333;
+        color: #003478;
     }
 
-    #home-box .main-info .main-txt-box .main-txt2, .vehicle-txt1 {
-        font-size: 40px;
+    #home-box .main-info .main-txt-box .main-txt2,
+    .vehicle-txt1,
+    .tech-txt1,
+    .contact-txt1{
+        font-size: 38px;
         font-weight: bold;
     }
 
-    #home-box .main-info .main-txt-box .main-txt3 {
+    #home-box .main-info .main-txt-box .main-txt3,
+    .tech-txt2, .contact-txt2 {
         font-size: 15px;
         color: #444;
         font-family: 'Noto Sans KR', sans-serif;
@@ -190,22 +196,103 @@ body {
     #home-box .vehicle-info .vehicle-img-box {
         width: 100%;
         margin: 0 auto;
+        margin-top: 30px;
     }
 
     #home-box .vehicle-info .vehicle-img-box img {
         width: 80%;
         border-radius: 20px;
     }
-    #home-box .vehicle-info .vehicle-txt-box{
-        margin-top:50px;
-    }
-    #home-box .vehicle-info .vehicle-txt-box .vehicle-txt2{
+
+    #home-box .vehicle-info .vehicle-txt-box .vehicle-txt2 {
         font-size: 14px;
         color: #444;
         font-family: 'Noto Sans KR', sans-serif;
         margin-top: -5px;
     }
 
+    #home-box .tech-info {
+        margin-top: 100px;
+    }
+
+    #home-box .tech-info .tech-img-box img {
+        width: 80%;
+        border-radius: 20px;
+    }
+    #home-box .contact-info{
+        background-color: #fafafa;
+        margin:0 auto;
+        position: relative;
+        text-align: center;
+        float:left;
+        padding-top: 50px;
+    }
+    #home-box .contact-info .contact-box .contact-control{
+        width:75%;
+        border-radius: 7px;
+        padding-left:10px;
+        margin-bottom:5px;
+        border: 1px solid #dbdbdb;
+        height: 30px;
+    }
+    #home-box .contact-info .contact-box .contact-control:nth-last-child(1){
+        height:300px;
+    }
+    #home-box .contact-info .contact-button-box{
+        width:80%;
+        margin:0 auto;
+        margin-top:20px;
+    }
+    #home-box .contact-info .contact-button-box .contact-button{
+        border-radius: 7px;
+        background-color: #fff;
+        border:1px solid #000;
+        width:80px;
+        height:40px;
+        font-size: 16px;
+        transition: .2s;
+    }
+    #home-box .contact-info .contact-button-box .contact-button:hover{
+        background-color: #000;
+        transition: .2s;
+        color:#fff;
+    }
+    
+    #home-box footer{
+        position: relative;
+        width:100%;
+        float:left;
+        margin:0 auto;
+        text-align: center;
+        padding-top:100px;
+        
+    }
+    #home-box footer .footer-logo-img-box{
+        width:100%;
+        position: relative;
+        margin:0 auto;
+        margin-bottom:20px;
+    }
+    #home-box footer .footer-logo-img-box img{
+        width:44%;
+    }
+    #home-box footer .footer-sns-img-box img{
+        opacity: .7;
+        margin-right:18px;
+        transition:.3s;
+    }
+    #home-box footer .footer-sns-img-box img:hover{
+        opacity: 1;
+        transition:.3s;
+    }
+    #home-box footer .footer-txt-box .footer-txt1{
+        font-style: italic;
+        color:#555;
+        font-size:13px;
+        margin-top:20px;
+    }
+    
+    
     /*     #home-info {
         height: 2700px;
         margin-top: 00px;

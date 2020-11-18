@@ -18,7 +18,11 @@
     <script src="script/jquery-1.11.2.min.js"></script>
     <script src="script/script.js"></script>
 
-
+    <script language="javascript">
+        function showPopup() {
+            window.open("Feedback_for_FORD.html", "컨택트 팝업", "width=800, height=300, left=100, top=50%");
+        }
+    </script>
 
 
 
@@ -92,11 +96,48 @@
             </div>
         </section>
 
-        <section class="third-info"></section>
+        <section class="tech-info">
+            <div class="tech-img-box">
+                <img src="images/tech-mobile-black.jpg" alt="technology">
+            </div>
+            <div class="tech-txt-box">
+                <a href="#">
+                    <p class="tech-txt1">TECHNOLOGY</p>
+                    <p class="tech-txt2">포드의 놀라운 기술력, 완벽한 퍼포먼스</p>
+                </a>
+            </div>
+        </section>
 
-        <section class="forth-info"></section>
+        <section class="contact-info">
+            <div class="contact-box">
+                <input type="text" class="contact-control" name="name" placeholder="성함">
+                <input type="email" class="contact-control" name="email" placeholder="이메일">
+                <input type="text" class="contact-control" name="message" placeholder="질문이나 의견을 자유롭게 적어주세요.">
+            </div>
+            <div class="contact-button-box">
+                <button type="button" value="pop-up" class="contact-button" onclick="showPopup();">전송</button>
+            </div>
+            <div class="contact-txt-box">
+                <p class="contact-txt1">CONTACT US</p>
+                <p class="contact-txt2">포드의 문제점 개선에 동참해주세요</p>
+            </div>
+        </section>
 
-        <footer></footer>
+
+        <footer>
+            <div class="footer-logo-img-box">
+                <img src="images/footer_logo.png" alt="ford">
+            </div>
+            <div class="footer-sns-img-box">
+                <a href="#"><img src="images/snsm1.png" alt="facebook"></a>
+                <a href="#"><img src="images/snsm2.png" alt="youtube"></a>
+                <a href="#"><img src="images/snsm3.png" alt="instagram"></a>
+                <a href="#"><img src="images/snsm4.png" alt="map"></a>
+            </div>
+            <div class="footer-txt-box">
+                <p class="footer-txt1">Copyright © 2016 Ford Sales &amp; Service Korea Inc.</p>
+            </div>
+        </footer>
     </div>
 
 

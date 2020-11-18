@@ -94,4 +94,6 @@ $(document).ready(function(){
         $("#future-info").show();
         $("#home-info").hide();
     });
+    
+    
 });

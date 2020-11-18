@@ -127,48 +127,85 @@ body {
 
 
     /* -------------------------------HOME INFO----------------------------- */
-    #home-box{
+    #home-box {
         position: relative;
-        width:100%;
-        float:left;
+        width: 100%;
+        float: left;
+        margin: 0 auto;
     }
-    #home-box .main-info{
+
+    #home-box .main-info,
+    .vehicle-info {
         position: relative;
-        width:100%;
-        height:700px;
-        margin:0 auto;
+        width: 100%;
+        height: 620px;
+        margin: 0 auto;
         float: left;
         text-align: center;
         margin-top: 10px;
     }
-    #home-box .main-info .main-img-box{
+
+    #home-box .main-info .main-img-box {
         position: relative;
-        width:100%;
-        margin:0 auto;
-        float:left;
+        width: 100%;
+        margin: 0 auto;
+        float: left;
     }
-    #home-box .main-info .main-img-box img{
-        width:80%;
+
+    #home-box .main-info .main-img-box img {
+        width: 80%;
         border-radius: 20px;
     }
-    #home-box .main-info .main-txt-box{
-        position:relative;
-        float:left;
-        width:100%;
-        margin-top:20px;
+
+    #home-box .main-info .main-txt-box {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-top: 20px;
     }
-    #home-box .main-info .main-txt-box .main-txt1{
-        font-size: 45px;
+
+    #home-box .main-info .main-txt-box .main-txt1 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #home-box .main-info .main-txt-box .main-txt2, .vehicle-txt1 {
+        font-size: 40px;
         font-weight: bold;
     }
-    #home-box .main-info .main-txt-box .main-txt2{
-        font-size:20px;
-        color:#444;
-        font-weight: bold;
+
+    #home-box .main-info .main-txt-box .main-txt3 {
+        font-size: 15px;
+        color: #444;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-top: -5px;
     }
-    
-    
-    
+
+    #home-box .vehicle-info {
+        background-color: #fafafa;
+        padding: 50px 0 50px 0;
+    }
+
+    #home-box .vehicle-info .vehicle-img-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #home-box .vehicle-info .vehicle-img-box img {
+        width: 80%;
+        border-radius: 20px;
+    }
+    #home-box .vehicle-info .vehicle-txt-box{
+        margin-top:50px;
+    }
+    #home-box .vehicle-info .vehicle-txt-box .vehicle-txt2{
+        font-size: 14px;
+        color: #444;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-top: -5px;
+    }
+
     /*     #home-info {
         height: 2700px;
         margin-top: 00px;
@@ -475,19 +512,21 @@ body {
         font-family: 'Fugaz one', cursive;
         font-size: 20px;
         float: left;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
-   .vehicle-txt {
+    .vehicle-txt {
         float: left;
         margin-left: 20px;
         margin-bottom: 60px;
         width: 335px;
-        margin-top:0px;
+        margin-top: 0px;
     }
+
     span {
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
+
     span .detail .d1 {
         width: 160px;
         float: left;

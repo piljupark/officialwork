@@ -26,7 +26,7 @@ $(document).ready(function(){
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
-        $("#home-info").hide();
+        $("#home-box").hide();
     });
     $("header > .model-logo > ul > .menu > .hide > li > .suv").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
@@ -37,7 +37,7 @@ $(document).ready(function(){
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
-        $("#home-info").hide();
+        $("#home-box").hide();
     });
     $("header > .model-logo > ul > .menu > .hide > li > .commercial").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
@@ -48,7 +48,7 @@ $(document).ready(function(){
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
-        $("#home-info").hide();
+        $("#home-box").hide();
     });
     $("header > .model-logo > ul > .menu > .hide > li > .hybrid").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
@@ -59,7 +59,7 @@ $(document).ready(function(){
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
-        $("#home-info").hide();
+        $("#home-box").hide();
     });
     $("header > .model-logo > ul > .menu > .hide > li > .performance").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
@@ -70,7 +70,7 @@ $(document).ready(function(){
         $("#performance-info").show();
         $("#truck-info").hide();
         $("#future-info").hide();
-        $("#home-info").hide();
+        $("#home-box").hide();
     });
     $("header > .model-logo > ul > .menu > .hide > li > .truck").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
@@ -81,7 +81,7 @@ $(document).ready(function(){
         $("#performance-info").hide();
         $("#truck-info").show();
         $("#future-info").hide();
-        $("#home-info").hide();
+        $("#home-box").hide();
     });
     $("header > .model-logo > ul > .menu > .hide > li > .future").click(function(){
         $("header > .model-logo > ul > .menu > .hide").slideUp(100);
@@ -92,7 +92,7 @@ $(document).ready(function(){
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").show();
-        $("#home-info").hide();
+        $("#home-box").hide();
     });
     
     

@@ -14,9 +14,12 @@
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 
 
-
+    
     <script src="script/jquery-1.11.2.min.js"></script>
     <script src="script/script.js"></script>
+        <script src="script/jquery.js"></script>
+    <script src="script/jquery.fadethis.min.js"></script> 
+
 
     <script language="javascript">
         function showPopup() {
@@ -82,12 +85,12 @@
         </section>
 
         <section class="vehicle-info">
-            <div class="vehicle-img-box">
+            <div class="vehicle-img-box slide-bottom" data-plugin-options='{"distance":20, "reverse":false}'>
                 <img src="images/main1.jpg" alt="mustang">
                 <img src="images/main2.jpg" alt="explorer">
                 <img src="images/main3.jpg" alt="gt350">
             </div>
-            <div class="vehicle-txt-box">
+            <div class="vehicle-txt-box slide-bottom" data-plugin-options='{"distance":20, "reverse":false}'>
                 <a href="#">
                     <p class="vehicle-txt1">Vehicles of FORD</p>
                     <p class="vehicle-txt2">당신의 라이프 스타일에 꼭 맞는 모델을 찾아보세요 </p>
@@ -95,7 +98,7 @@
             </div>
         </section>
 
-        <section class="tech-info">
+        <section class="tech-info slide-bottom" data-plugin-options='{"distance":20, "reverse":false}'>
             <div class="tech-img-box">
                 <img src="images/tech-mobile-black.jpg" alt="technology">
             </div>
@@ -128,90 +131,16 @@
                 <img src="images/footer_logo.png" alt="ford">
             </div>
             <div class="footer-sns-img-box">
-                <a href="#"><img src="images/snsm1.png" alt="facebook"></a>
-                <a href="#"><img src="images/snsm2.png" alt="youtube"></a>
-                <a href="#"><img src="images/snsm3.png" alt="instagram"></a>
-                <a href="#"><img src="images/snsm4.png" alt="map"></a>
+                <a href="https://www.facebook.com/fordkorea/"><img src="images/snsm1.png" alt="facebook"></a>
+                <a href="https://www.youtube.com/c/ford/featured"><img src="images/snsm2.png" alt="youtube"></a>
+                <a href="https://www.instagram.com/fordkorea/"><img src="images/snsm3.png" alt="instagram"></a>
+                <a href="https://map.naver.com/v5/search/포드/place/1775943723?c=14134897.6991799,4507400.7890057,13,0,0,0,dh&placePath=%3F%2526"><img src="images/snsm4.png" alt="map"></a>
             </div>
             <div class="footer-txt-box">
                 <p class="footer-txt1">Copyright © 2016 Ford Sales &amp; Service Korea Inc.</p>
             </div>
         </footer>
     </div>
-
-
-    <!--   <div id="home-info">
-       
-       
-       <section class="comingbox">
-            <div class="hometxt6box">
-                <p class="hometxt6">COMING SOON</p>
-            </div>
-            <article class="comingimgbox">
-                <a href="" class="homesooner"></a>
-            </article>
-        </section>
-       
-        <div class="mainbox">
-            <div class="hometxt1box">
-                <p class="hometxt1">VEHICLES</p>
-            </div>
-            <article class="mainimgbox">
-                <a href="" class="mainimg1"><img src="images/main1.jpg" alt="mustang"></a>
-                <a href="" class="mainimg2"><img src="images/main2.jpg" alt="explorer"></a>
-                <a href="" class="mainimg3"><img src="images/main3.jpg" alt="gt350"></a>
-            </article>
-            <div class="hometxt2box">
-                <h2 class="hometxt2">A Vehicle <br>for Every Lifestyle</h2>
-                <h5 class="hometxt3">당신의 라이프 스타일에 꼭 맞는 모델을 찾아보세요</h5>
-            </div>
-        </div>
-
-        <section class="techbox">
-            <div class="hometxt4box">
-                <p class="hometxt4">TECHNOLOGY</p>
-            </div>
-            <article class="techimgbox">
-                <img src="images/tech-copilot.jpg">
-            </article>
-            <div class="hometxt5box">
-                <a href="hometxt5">CO PILOT 360</a>
-                <a href="hometxt6">SYNC 3</a>
-                <a href="hometxt7">ECOBOOST</a>
-            </div>
-        </section>
-
-
-        
-
-        
-        <div class="contactbox">
-            <div class="hometxt7box">
-                <p class="hometxt7">CONTACT US</p>
-            </div>
-            <div class="control-box">
-                <input type="text" class="homecontact-control" name="name" placeholder="성함">
-                <input type="email" class="homecontact-control" name="email" placeholder="이메일">
-                <input type="text" class="homecontact-control" name="message" placeholder="질문이나 의견을 자유롭게 적어주세요.">
-
-            </div>
-            <a href=""><button type="button" class="homecontact-button">전 송</button></a>
-        </div>
-        
-        
-        <footer>
-            <div class="footer-logo-box">
-                <a href="#" class="footer-logo"><img src="images/footer_logo.png"></a>
-            </div>
-            <div class="footer-sns-box">
-                <a href="" class="sns"><img src="images/snsm1.png"></a>
-                <a href="" class="sns"><img src="images/snsm2.png"></a>
-                <a href="" class="sns"><img src="images/snsm3.png"></a>
-                <a href="" class="sns"><img src="images/snsm4.png"></a>
-            </div>
-            <p class="copyright">Copyright © 2016 Ford Sales &amp; Service Korea Inc.</p>
-        </footer>
-    </div>    -->
     <!-- -------------------------------//HOME-------------------------------- -->
 
 
@@ -921,5 +850,5 @@
 
 
 
-
+<script>$('#home-box').fadeThis({speed:500});</script>
 </body></html>

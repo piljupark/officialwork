@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 1) {
             $("header").css("background", "rgba(0, 0, 0, .8)");
@@ -7,7 +7,9 @@ $(document).ready(function () {
         } else {
             $("header").css("background", "rgba(0, 0, 0, .1)");
         }
-    });
+    });*/
+    
+    
     $(".menu>a").click(function () {
         var submenu = $(this).next("ul");
         if (submenu.is(":visible")) {

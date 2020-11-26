@@ -10,16 +10,42 @@ $(document).ready(function () {
     });*/
     
     
-    $(".menu>a").click(function () {
+    /*$(".menu>a").click(function () {
         var submenu = $(this).next("ul");
         if (submenu.is(":visible")) {
             submenu.slideUp(100);
         } else {
             submenu.slideDown(100);
         }
+    });*/
+    
+    $(".menu-btn>a").on("click",function(){
+        $(".click-to-black").show();
+        $(".sidebar-menu").show();
+        $(".sidebar-menu").animate({
+            right:0
+        });
     });
-    $("#wrap > header > .model-logo > ul > .menu > .hide > li > .car").click(function () {
-        $("#wrap > header > .model-logo > ul > .menu > .hide").slideUp(100);
+    $(".close-btn>a").on("click",function(){
+        $(".click-to-black").hide();
+        
+        $(".sidebar-menu").animate({
+            right:"-" + 50 + "%"
+        });
+    });
+    
+    $(".menu-btn>a").on("click",function(){
+       $("body").css("overflow","hidden");
+    });
+    $(".close-btn>a").on("click",function(){
+       $("body").css("overflow","scroll");
+    });
+    $(".menu-btn>a").on("click",function(){
+       $(".header").css("z-index","8");
+    });
+    
+    $(".sidebar-menu > .menu-wrap > li > .car").click(function () {
+        $(".sidebar-menu").hide(100);
         $("#car-info").show();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -28,9 +54,15 @@ $(document).ready(function () {
         $("#truck-info").hide();
         $("#future-info").hide();
         $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow","scroll");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
     });
-    $("header > .model-logo > ul > .menu > .hide > li > .suv").click(function () {
-        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+    $(".sidebar-menu > .menu-wrap > li > .suv").click(function () {
+        $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").show();
         $("#commercial-info").hide();
@@ -39,9 +71,15 @@ $(document).ready(function () {
         $("#truck-info").hide();
         $("#future-info").hide();
         $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow","scroll");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
     });
-    $("header > .model-logo > ul > .menu > .hide > li > .commercial").click(function () {
-        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+    $(".sidebar-menu > .menu-wrap > li > .commercial").click(function () {
+        $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").show();
@@ -50,9 +88,15 @@ $(document).ready(function () {
         $("#truck-info").hide();
         $("#future-info").hide();
         $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow","scroll");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
     });
-    $("header > .model-logo > ul > .menu > .hide > li > .hybrid").click(function () {
-        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+    $(".sidebar-menu > .menu-wrap > li > .hybrid").click(function () {
+        $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -61,9 +105,16 @@ $(document).ready(function () {
         $("#truck-info").hide();
         $("#future-info").hide();
         $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow","scroll");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
+        
     });
-    $("header > .model-logo > ul > .menu > .hide > li > .performance").click(function () {
-        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+    $(".sidebar-menu > .menu-wrap > li > .performance").click(function () {
+        $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -72,9 +123,15 @@ $(document).ready(function () {
         $("#truck-info").hide();
         $("#future-info").hide();
         $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow","scroll");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
     });
-    $("header > .model-logo > ul > .menu > .hide > li > .truck").click(function () {
-        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+    $(".sidebar-menu > .menu-wrap > li > .truck").click(function () {
+        $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -83,9 +140,15 @@ $(document).ready(function () {
         $("#truck-info").show();
         $("#future-info").hide();
         $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow","scroll");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
     });
-    $("header > .model-logo > ul > .menu > .hide > li > .future").click(function () {
-        $("header > .model-logo > ul > .menu > .hide").slideUp(100);
+    $(".sidebar-menu > .menu-wrap > li > .future").click(function () {
+        $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -94,8 +157,14 @@ $(document).ready(function () {
         $("#truck-info").hide();
         $("#future-info").show();
         $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow","scroll");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
     });
-
+    
     $('footer > .footer-logo-img-box > img').click(function () {
         $('html, body').animate({
             scrollTop: 0

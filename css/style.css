@@ -14,10 +14,13 @@ body {
 }
 
 
-@media screen and (max-width:500px) and (min-width:200px) {
 
+@media screen and (max-width:500px) and (min-width:200px) {
+    html{
+    overflow-x:hidden;
+}
     /* MODEL-FORM */
-    #wrap {
+    /*#wrap {
         position: relative;
         width: 100%;
         float: left;
@@ -33,12 +36,10 @@ body {
         z-index: 10;
         margin: 0 auto;
         background-color:#f1f1f1;
-        /*background-color: rgba(0, 0, 0, .1);*/
         -webkit-transition-duration: 0.4s;
         -webkit-transition-timing-function: ease;
         transition-duration: 0.4s;
         transition-timing-function: ease;
-        /*background-color: #999;*/
     }
 
 
@@ -57,7 +58,7 @@ body {
         position: absolute;
         right: 0;
         top: 14px;
-        right: 65px;
+        right: 20px;
         background-color: rgba(0, 0, 0, .0);
         border-radius: 5px;
     }
@@ -71,17 +72,15 @@ body {
         display: none;
         position: absolute;
         width: 300px;
-        height: 650px;
+        height: 1500px;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
-        right: -70px;
+        right: -20px;
         background-color: #f1f1f1;
         text-align: right;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        z-index: -10;
-        top: 36px;
-        padding-top:20px;
+        overflow-y: scroll;
+        top: 32px;
+        padding-top:10px;
         border-bottom-left-radius: 15px;
     }
     header .model-logo ul .menu .hide li {
@@ -91,20 +90,22 @@ body {
     header .model-logo ul .menu .hide li a {
         padding-right: 40px;
         color:#444;
+        
     }
     header .model-logo ul .menu .hide li a:hover{
         border-bottom: 1px solid #000;
+        font-weight: bold;
     }
     header .model-logo ul .menu .hide .etc-menu{
         background-color: #e1e1e1;
         padding-top:20px;
-        height:360px;
+        height:500px;
     }
     header .model-logo ul .menu .hide .line {
-        border-bottom: 0.5px solid #444;
-        width: 300px;
+        border-bottom: 0.5px solid #d4d4d4;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-bottom:-20px
+        
     }
 
 
@@ -128,6 +129,90 @@ body {
     .menu-model .menu a {
         cursor: pointer;
     }
+    
+    */
+    .click-to-black{
+        width:100%;
+        height:100%;
+        background: rgba(0,0,0,0.7);
+        position:absolute;
+        top:0;
+        display: none;
+        z-index: 9;
+    }
+    .header {
+        width: 100%;
+        height: 60px;
+        background: #f1f1f1;
+        position: fixed;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .header .menu-btn {
+        width: 49%;
+        float: right;
+        height: 100%;
+
+    }
+
+    .header .menu-btn a img {
+        width: 80px;
+        float: right;
+        margin-top: 20px;
+        margin-right: 10px;
+        z-index: 2;
+    }
+
+    .header .logo-btn {
+        width: 49%;
+        float: left;
+        height: 100%;
+    }
+
+    .header .logo-btn a img {
+        width: 180px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .sidebar-menu {
+        width: 50%;
+        height: 100%;
+        background: #f1f1f1;
+        position: absolute;
+        top: 0;
+        right: -50%;
+        z-index: 11;
+        display:none;
+        overflow-x: hidden;
+    }
+    .sidebar-menu .close-btn a img {
+        width:30px;
+        margin:15px 0 20px 18px;
+    }
+    
+    .close-btn > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-wrap {
+        list-style: none;
+        padding: 20px 20px;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .menu-wrap li{
+        height:40px;
+    }
+    .menu-wrap li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
 
     /* ------------------------------//MODEL-FORM--------------------------- */
 
@@ -142,12 +227,14 @@ body {
         width: 100%;
         float: left;
         margin: 0 auto;
+        margin-top: 80px;
+        z-index: 1;
     }
 
     #home-box .main-info,
     .vehicle-info,
     .tech-info,
-    .contact-info{
+    .contact-info {
         position: relative;
         width: 100%;
         height: 620px;
@@ -167,9 +254,13 @@ body {
     #home-box .main-info .main-img-box img {
         width: 80%;
         border-radius: 20px;
+        z-index: 1;
     }
 
-    #home-box .main-info .main-txt-box, .vehicle-txt-box, .tech-txt-box, .contact-txt-box {
+    #home-box .main-info .main-txt-box,
+    .vehicle-txt-box,
+    .tech-txt-box,
+    .contact-txt-box {
         position: relative;
         float: left;
         width: 100%;
@@ -179,19 +270,20 @@ body {
     #home-box .main-info .main-txt-box .main-txt1 {
         font-size: 18px;
         color: #003478;
-        font-family: 'Fugaz One',cursive;
+        font-family: 'Fugaz One', cursive;
     }
 
     #home-box .main-info .main-txt-box .main-txt2,
     .vehicle-txt1,
     .tech-txt1,
-    .contact-txt1{
+    .contact-txt1 {
         font-size: 38px;
         font-weight: bold;
     }
 
     #home-box .main-info .main-txt-box .main-txt3,
-    .tech-txt2, .contact-txt2 {
+    .tech-txt2,
+    .contact-txt2 {
         font-size: 15px;
         color: #444;
         font-family: 'Noto Sans KR', sans-serif;
@@ -229,81 +321,92 @@ body {
         width: 80%;
         border-radius: 20px;
     }
-    #home-box .contact-info{
+
+    #home-box .contact-info {
         background-color: #fafafa;
-        margin:0 auto;
+        margin: 0 auto;
         position: relative;
         text-align: center;
-        float:left;
+        float: left;
         padding-top: 50px;
     }
-    #home-box .contact-info .contact-box .contact-control{
-        width:75%;
+
+    #home-box .contact-info .contact-box .contact-control {
+        width: 75%;
         border-radius: 7px;
-        padding-left:10px;
-        margin-bottom:5px;
+        padding-left: 10px;
+        margin-bottom: 5px;
         border: 1px solid #dbdbdb;
         height: 30px;
     }
-    #home-box .contact-info .contact-box .contact-control:nth-last-child(1){
-        height:300px;
+
+    #home-box .contact-info .contact-box .contact-control:nth-last-child(1) {
+        height: 300px;
     }
-    #home-box .contact-info .contact-button-box{
-        width:80%;
-        margin:0 auto;
-        margin-top:20px;
+
+    #home-box .contact-info .contact-button-box {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
     }
-    #home-box .contact-info .contact-button-box .contact-button{
+
+    #home-box .contact-info .contact-button-box .contact-button {
         border-radius: 7px;
         background-color: #fff;
-        border:1px solid #000;
-        width:80px;
-        height:40px;
+        border: 1px solid #000;
+        width: 80px;
+        height: 40px;
         font-size: 16px;
         transition: .2s;
     }
-    #home-box .contact-info .contact-button-box .contact-button:hover{
+
+    #home-box .contact-info .contact-button-box .contact-button:hover {
         background-color: #000;
         transition: .2s;
-        color:#fff;
+        color: #fff;
     }
-    
-    #home-box footer{
+
+    #home-box footer {
         position: relative;
-        width:100%;
-        float:left;
-        margin:0 auto;
+        width: 100%;
+        float: left;
+        margin: 0 auto;
         text-align: center;
-        padding-top:100px;
-        
+        padding-top: 100px;
+
     }
-    #home-box footer .footer-logo-img-box{
-        width:100%;
+
+    #home-box footer .footer-logo-img-box {
+        width: 100%;
         position: relative;
-        margin:0 auto;
-        margin-bottom:20px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
-    #home-box footer .footer-logo-img-box img{
-        width:44%;
+
+    #home-box footer .footer-logo-img-box img {
+        width: 44%;
     }
-    #home-box footer .footer-sns-img-box img{
+
+    #home-box footer .footer-sns-img-box img {
         opacity: .7;
-        margin-right:18px;
-        transition:.3s;
+        margin-right: 18px;
+        transition: .3s;
     }
-    #home-box footer .footer-sns-img-box img:hover{
+
+    #home-box footer .footer-sns-img-box img:hover {
         opacity: 1;
-        transition:.3s;
+        transition: .3s;
     }
-    #home-box footer .footer-txt-box .footer-txt1{
+
+    #home-box footer .footer-txt-box .footer-txt1 {
         font-style: italic;
-        color:#555;
-        font-size:13px;
-        margin-top:20px;
+        color: #555;
+        font-size: 13px;
+        margin-top: 20px;
     }
-    
-    
-    
+
+
+
     /* -----------------------------//HOME INFO----------------------------- */
 
 
@@ -320,7 +423,6 @@ body {
         font-size: 20px;
         float: left;
         overflow-x: hidden;
-        position:relative;
     }
 
     .vehicle-txt {

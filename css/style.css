@@ -178,15 +178,16 @@ body {
     }
 
     .sidebar-menu {
-        width: 50%;
+        width: 65%;
         height: 100%;
         background: #f1f1f1;
-        position: absolute;
+        position: fixed;
         top: 0;
-        right: -50%;
+        right: -65%;
         z-index: 11;
         display:none;
         overflow-x: hidden;
+        overflow-y: auto;
     }
     .sidebar-menu .close-btn a img {
         width:30px;
@@ -201,18 +202,29 @@ body {
 
     .menu-wrap {
         list-style: none;
-        padding: 20px 20px;
         height: 100%;
         overflow-x: hidden;
+        overflow-y: auto;
     }
     .menu-wrap li{
-        height:40px;
+        height:35px;
+        border-bottom:0.5px solid #333;
+        border-width: 100%;
+        margin-top:15px;
     }
     .menu-wrap li a {
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
+        color:#333;
+        margin-left:20px;
+        
     }
-
+    .menu-wrap .etc-menu{
+        background: #e1e1e1;
+        width:100%;
+        float:left;
+        padding-top:0px; 
+    }
 
     /* ------------------------------//MODEL-FORM--------------------------- */
 

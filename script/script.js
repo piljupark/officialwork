@@ -25,23 +25,18 @@ $(document).ready(function () {
         $(".sidebar-menu").animate({
             right:0
         });
+        $("body").css("overflow-y","hidden");
+        $("html").css("overflow-y","hidden");
+        $(".header").css("z-index","8");
     });
     $(".close-btn>a").on("click",function(){
         $(".click-to-black").hide();
-        
+        $(".sidebar-menu").hide(100);
         $(".sidebar-menu").animate({
-            right:"-" + 50 + "%"
+            right:"-" + 65 + "%"
         });
-    });
-    
-    $(".menu-btn>a").on("click",function(){
-       $("body").css("overflow","hidden");
-    });
-    $(".close-btn>a").on("click",function(){
-       $("body").css("overflow","scroll");
-    });
-    $(".menu-btn>a").on("click",function(){
-       $(".header").css("z-index","8");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
     });
     
     $(".sidebar-menu > .menu-wrap > li > .car").click(function () {
@@ -55,7 +50,8 @@ $(document).ready(function () {
         $("#future-info").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
-        $("body").css("overflow","scroll");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
         $("body").css("overflow-x","hidden");
         $(".sidebar-menu").animate({
             right:"-" + 70 + "%"
@@ -72,7 +68,8 @@ $(document).ready(function () {
         $("#future-info").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
-        $("body").css("overflow","scroll");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
         $("body").css("overflow-x","hidden");
         $(".sidebar-menu").animate({
             right:"-" + 70 + "%"
@@ -89,7 +86,8 @@ $(document).ready(function () {
         $("#future-info").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
-        $("body").css("overflow","scroll");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
         $("body").css("overflow-x","hidden");
         $(".sidebar-menu").animate({
             right:"-" + 70 + "%"
@@ -106,7 +104,8 @@ $(document).ready(function () {
         $("#future-info").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
-        $("body").css("overflow","scroll");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
         $("body").css("overflow-x","hidden");
         $(".sidebar-menu").animate({
             right:"-" + 70 + "%"
@@ -124,7 +123,8 @@ $(document).ready(function () {
         $("#future-info").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
-        $("body").css("overflow","scroll");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
         $("body").css("overflow-x","hidden");
         $(".sidebar-menu").animate({
             right:"-" + 70 + "%"
@@ -141,7 +141,8 @@ $(document).ready(function () {
         $("#future-info").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
-        $("body").css("overflow","scroll");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
         $("body").css("overflow-x","hidden");
         $(".sidebar-menu").animate({
             right:"-" + 70 + "%"
@@ -158,7 +159,8 @@ $(document).ready(function () {
         $("#future-info").show();
         $("#home-box").hide();
         $(".click-to-black").hide();
-        $("body").css("overflow","scroll");
+        $("body").css("overflow-y","scroll");
+        $("html").css("overflow-y","scroll");
         $("body").css("overflow-x","hidden");
         $(".sidebar-menu").animate({
             right:"-" + 70 + "%"

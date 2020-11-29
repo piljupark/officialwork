@@ -133,17 +133,18 @@ body {
     */
     .click-to-black{
         width:100%;
-        height:100%;
+        height:200%;
         background: rgba(0,0,0,0.7);
         position:absolute;
         top:0;
         display: none;
         z-index: 9;
     }
+    
     .header {
         width: 100%;
         height: 60px;
-        background: #f1f1f1;
+        background: #f1f1f1; /* 컬러1 */
         position: fixed;
         z-index: 10;
         overflow: hidden;
@@ -180,7 +181,7 @@ body {
     .sidebar-menu {
         width: 65%;
         height: 100%;
-        background: #f1f1f1;
+        background: #f1f1f1; /* 컬러1 */
         position: fixed;
         top: 0;
         right: -65%;
@@ -189,38 +190,44 @@ body {
         overflow-x: hidden;
         overflow-y: auto;
     }
+    .sidebar-menu .close-btn {
+        position: relative;
+        background-color: #eee; /* 컬러2 */
+    }
     .sidebar-menu .close-btn a img {
+        position:absolute;
+        top:15px;
+        left:18px;
         width:30px;
-        margin:15px 0 20px 18px;
     }
     
     .close-btn > a {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 60px;
     }
 
     .menu-wrap {
         list-style: none;
-        height: 100%;
+        height: 900px;
         overflow-x: hidden;
         overflow-y: auto;
     }
     .menu-wrap li{
         height:35px;
-        border-bottom:0.5px solid #333;
+        border-bottom:0.5px solid #777; /* 컬러3 */
         border-width: 100%;
         margin-top:15px;
     }
     .menu-wrap li a {
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
-        color:#333;
+        color:#444;  /* 컬러4 */
         margin-left:20px;
         
     }
     .menu-wrap .etc-menu{
-        background: #e1e1e1;
+        background: #e1e1e1;  /* 컬러5 */
         width:100%;
         float:left;
         padding-top:0px; 
@@ -281,7 +288,7 @@ body {
 
     #home-box .main-info .main-txt-box .main-txt1 {
         font-size: 18px;
-        color: #003478;
+        color: #003478;   /* 메인컬러 */
         font-family: 'Fugaz One', cursive;
     }
 
@@ -297,7 +304,7 @@ body {
     .tech-txt2,
     .contact-txt2 {
         font-size: 15px;
-        color: #444;
+        color: #444; /* 컬러4 */
         font-family: 'Noto Sans KR', sans-serif;
         margin-top: -5px;
     }
@@ -320,7 +327,7 @@ body {
 
     #home-box .vehicle-info .vehicle-txt-box .vehicle-txt2 {
         font-size: 14px;
-        color: #444;
+        color: #444; /* 컬러4 */
         font-family: 'Noto Sans KR', sans-serif;
         margin-top: -5px;
     }
@@ -489,12 +496,12 @@ body {
 
     span p {
         margin-left: 20px;
-        color: #003478;
+        color: #003478; /* 컬러6 */
     }
 
     .price {
         font-size: 15px;
-        color: #555;
+        color: #555; /* 컬러7 */
     }
 
     span img {

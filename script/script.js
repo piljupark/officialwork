@@ -35,8 +35,8 @@ $(document).ready(function () {
         $(".sidebar-menu").animate({
             right:"-" + 65 + "%"
         });
-        $("body").css("overflow-y","scroll");
-        $("html").css("overflow-y","scroll");
+        $("body").css("overflow-y","auto");
+        $("html").css("overflow-y","auto");
     });
     
     $(".sidebar-menu > .menu-wrap > li > .car").click(function () {

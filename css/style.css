@@ -113,7 +113,6 @@ body {
         height: 35px;
         border-bottom: 0.5px solid #777;
         /* 컬러3 */
-        border-width: 100%;
         margin-top: 15px;
     }
 
@@ -445,15 +444,9 @@ body {
     }
     .explain-vehicle-hp-wrap img{
         width:25px;
-        position:absolute;
-        top:40px;
-        left:125%;
     }
      .explain-vehicle-exhaust-wrap img{
         width:25px;
-        position:absolute;
-        top:40px;
-        left:250%;
     
     }
 

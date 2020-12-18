@@ -7,87 +7,34 @@
 
     <title>Ford-mobile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 
-
-
-    <script src="script/jquery-1.11.2.min.js"></script>
     <script src="script/script.js"></script>
-    <script src="script/jquery.js"></script>
     <script src="script/jquery.fadethis.min.js"></script>
+    <script src="script/jquery-1.11.2.min.js"></script>
 
 
-    <script language="javascript">
+    <script>
         function showPopup() {
             window.open("Feedback_for_FORD.html", "컨택트 팝업", "width=800, height=300, left=100, top=50%");
-        }
+        };
+        $('#home-box').fadeThis({
+            speed: 500
+        });
     </script>
-
 
 
 </head>
 
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- NAVIGATION -->
-    <!--<div id="wrap">
-        <header>
-
-            <article class="main-logo">
-                <a href="index.html" alt="mob-logo"><img src="images/mob_logo.png"></a>
-            </article>
-            <div class="model-logo">
-                <ul>
-                    <li class="menu">
-                        <a href="#"><img src="images/model-logo.png" alt="모델로고"></a>
-                        <ul class="hide">
-                            <li><a href="#car-info" class="car">CAR</a></li>
-                            
-                            <li><a href="#suv-info" class="suv">SUV / CROSSOVER</a></li>
-                            
-                            <li><a href="#commercial-info" class="commercial">COMMERCIAL</a></li>
-                            
-                            <li><a href="#hybrid-info" class="hybrid">HYBRID / EV</a></li>
-                            
-                            <li><a href="#performance-info" class="performance">PERFORMANCE</a></li>
-                            
-                            <li><a href="#truck-info" class="truck">TRUCK / VAN</a></li>
-                            
-                            <li><a href="#future-info" class="future">FUTURE</a></li>
-                            
-                            
-                            <div class="etc-menu">
-                                <li><a href="#">부품 / 서비스</a></li>
-                                
-                                <li><a href="#">차량 관리</a></li>
-                                
-                                <li><a href="#">프로모션</a></li>
-                                
-                                <li><a href="#">기술지원</a></li>
-                                
-                                <li><a href="#">시승 신청</a></li>
-                                
-                                <li><a href="#">이벤트</a></li>
-                                
-                                <li><a href="#">다운로드</a></li>
-                                
-                                <li><a href="#">FORD</a></li>
-                                
-                                <li><a href="#">GLOBAL SITES</a></li>
-                                
-                            </div>
-                                
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-        </header>
-    </div>-->
 
     <div class="header">
         <div class="menu-btn">
@@ -110,14 +57,14 @@
         </div>
         <ul class="menu-wrap">
             <li><a href="#car-info" class="car">CAR</a></li>
-            <li><a href="#suv-info" class="suv">SUV / CROSSOVER</a></li>
-            <li><a href="#commercial-info" class="commercial">COMMERCIAL</a></li>
-            <li><a href="#hybrid-info" class="hybrid">HYBRID / EV</a></li>
-            <li><a href="#performance-info" class="performance">PERFORMANCE</a></li>
-            <li><a href="#truck-info" class="truck">TRUCK / VAN</a></li>
-            <li><a href="#future-info" class="future">FUTURE</a></li>
+            <li><a href="#suv-info" class="suv" onclick="javascript:click()">SUV / CROSSOVER</a></li>
+            <li><a href="#commercial-info" class="commercial" onclick="javascript:click()">COMMERCIAL</a></li>
+            <li><a href="#hybrid-info" class="hybrid" onclick="javascript:click()">HYBRID / EV</a></li>
+            <li><a href="#performance-info" class="performance" onclick="javascript:click()">PERFORMANCE</a></li>
+            <li><a href="#truck-info" class="truck" onclick="javascript:click()">TRUCK / VAN</a></li>
+            <li><a href="#future-info" class="future" onclick="javascript:click()">FUTURE</a></li>
             <div class="etc-menu">
-               <li><a href="#">부품/서비스</a></li>
+                <li><a href="#">부품/서비스</a></li>
                 <li><a href="#">차량관리</a></li>
                 <li><a href="#">기술지원</a></li>
                 <li><a href="#">프로모션</a></li>
@@ -216,8 +163,53 @@
 
 
 
-    <!-- -------------------------------CAR info------------------------------ -->
+    <!-- -------------------------------CAR info-----------------------------
+    - -->
+
     <div id="car-info">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/fiesta_side.png">
+                    <div class="explain-wrap">
+                       <div class="explain-vehicle-name-wrap">
+                        <p>Ford Fiesta</p>
+                        </div>
+                        <div class="explain-vehicle-kind-wrap">
+                            <p>소형차 / 5인승 / 가솔린</p>
+                        </div>
+                        <div class="explain-vehicle-price-wrap">
+                            <p>15,000,000 ￦ ~</p>
+                        </div>
+                        <div class="explain-vehicle-fuel-wrap">
+                            <img src="images/fuel.png">
+                            <p>12 - 13.2km/L</p>
+                        </div>
+                        <div class="explain-vehicle-hp-wrap">
+                            <img src="images/hp.png">
+                            <p></p>
+                        </div>
+                        <div class="explain-vehicle-exhaust-wrap">
+                            <img src="images/exhaust.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="images/fusion-side.png"></div>
+                <div class="swiper-slide"><img src="images/m_side1.png"></div>
+            </div>
+            <div class="explain-window-wrap">
+            </div>
+        </div>
+    </div>
+
+    <div id="suv-info"></div>
+    <div id="commercial-info"></div>
+    <div id="hybrid-info"></div>
+    <div id="performance-info"></div>
+    <div id="truck-info"></div>
+    <div id="future-info"></div>
+
+    <!--<div id="car-info">
         <h1 class="vehicle-txt">CAR</h1>
         <span>
             <div class="detail">
@@ -232,7 +224,9 @@
                     <p>30/31MPG</p>
                 </div>
             </div>
-            <img src="images/fiesta_side.png" alt="fiesta">
+            <div>
+                <img src="images/fiesta_side.png" alt="fiesta">
+            </div>
             <a href="#">
                 <p class="more">자세히보기 ></p>
             </a>
@@ -251,7 +245,7 @@
                     <p>23/34MPG</p>
                 </div>
             </div>
-            <img src="images/fusion-side.png" alt="fiesta">
+            <img src="images/fusion-side.png" alt="fusion">
             <a href="#">
                 <p class="more">자세히보기 ></p>
             </a>
@@ -270,16 +264,13 @@
                     <p>21/31MPG</p>
                 </div>
             </div>
-            <img src="images/m_side1.png" alt="fiesta">
+            <img src="images/m_side1.png" alt="mustang">
             <a href="#">
                 <p class="more-last">자세히보기 ></p>
             </a>
-
         </span>
     </div>
-    <!-- ----------------------------//CAR info------------------------------ -->
-
-    <!-- -----------------------------SUV info------------------------------- -->
+    
     <div id="suv-info">
         <h1 class="vehicle-txt">SUV / CROSSOVER</h1>
         <span>
@@ -400,10 +391,6 @@
         </span>
 
     </div>
-    <!-- -------------------------------//SUV info-------------------------- -->
-
-
-    <!-- -----------------------------COMMERCIAL info----------------------- -->
     <div id="commercial-info">
         <h1 class="vehicle-txt">COMMERCIAL</h1>
         <span>
@@ -522,10 +509,7 @@
             </a>
         </span>
     </div>
-    <!-- ---------------------------//COMMERCIAL info------------------------- -->
-
-
-    <!-- ----------------------------PERFORMANCE info------------------------- -->
+    
     <div id="performance-info">
         <h1 class="vehicle-txt">PERFORMANCE</h1>
         <span>
@@ -625,11 +609,9 @@
             </a>
         </span>
     </div>
-    <!-- --------------------------//PERFORMANCE info------------------------ -->
-
-    <!-- -----------------------------HYBRID info---------------------------- -->
+    
     <div id="hybrid-info">
-        <h1 class="vehicle-txt">HIBRID / EV</h1>
+        <h1 class="vehicle-txt">HYBRID / EV</h1>
         <span>
             <div class="detail">
                 <div class="d1">
@@ -746,9 +728,7 @@
             </a>
         </span>
     </div>
-    <!-- ---------------------------//PERFORMANCE info------------------------ -->
-
-    <!-- -------------------------------TRUCK info---------------------------- -->
+    
     <div id="truck-info">
         <h1 class="vehicle-txt">TRUCK / VAN</h1>
         <span>
@@ -848,9 +828,7 @@
             </a>
         </span>
     </div>
-    <!-- -------------------------------//TRUCK info-------------------------- -->
-
-    <!-- --------------------------------FUTURE info-------------------------- -->
+    
     <div id="future-info">
         <h1 class="vehicle-txt">FUTURE</h1>
         <span>
@@ -912,13 +890,15 @@
 
         </span>
     </div>
-    <!-- ------------------------------//FUTURE info-------------------------- -->
-
+    
+    -->
 
 
     <script>
-        $('#home-box').fadeThis({
-            speed: 500
-        });
+        // 클래스명 swiper-container 입력
+        // 이 클래스명은 변경하면 안됨
+        new Swiper('#car-info > .swiper-container');
+
+        
     </script>
 </body></html>

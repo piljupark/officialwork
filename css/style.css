@@ -15,136 +15,27 @@ body {
 
 
 
-@media screen and (max-width:500px) and (min-width:200px) {
-    html{
-    overflow-x:hidden;
-}
-    /* MODEL-FORM */
-    /*#wrap {
-        position: relative;
-        width: 100%;
-        float: left;
-        height: 70px;
+@media screen and (max-width:2500px) and (min-width:200px) {
+    html {
         overflow-x: hidden;
     }
 
-    #wrap header {
+    /* MODEL-FORM */
+    .click-to-black {
         width: 100%;
-        float: left;
-        height: 50px;
-        position: fixed;
-        z-index: 10;
-        margin: 0 auto;
-        background-color:#f1f1f1;
-        -webkit-transition-duration: 0.4s;
-        -webkit-transition-timing-function: ease;
-        transition-duration: 0.4s;
-        transition-timing-function: ease;
-    }
-
-
-    header .main-logo {
+        height: 200%;
+        background: rgba(0, 0, 0, 0.7);
         position: absolute;
-        width: 80px;
-        left: 10px;
-        padding-top: 10px;
-    }
-
-    header article a img {
-        width: 80px;
-    }
-
-    header .model-logo {
-        position: absolute;
-        right: 0;
-        top: 14px;
-        right: 20px;
-        background-color: rgba(0, 0, 0, .0);
-        border-radius: 5px;
-    }
-
-    header .model-logo ul .menu a img {
-        width: 80px;
-    }
-
-
-    header .model-logo ul .menu .hide {
-        display: none;
-        position: absolute;
-        width: 300px;
-        height: 1500px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
-        right: -20px;
-        background-color: #f1f1f1;
-        text-align: right;
-        overflow-y: scroll;
-        top: 32px;
-        padding-top:10px;
-        border-bottom-left-radius: 15px;
-    }
-    header .model-logo ul .menu .hide li {
-        margin-bottom: 20px;
-    }
-
-    header .model-logo ul .menu .hide li a {
-        padding-right: 40px;
-        color:#444;
-        
-    }
-    header .model-logo ul .menu .hide li a:hover{
-        border-bottom: 1px solid #000;
-        font-weight: bold;
-    }
-    header .model-logo ul .menu .hide .etc-menu{
-        background-color: #e1e1e1;
-        padding-top:20px;
-        height:500px;
-    }
-    header .model-logo ul .menu .hide .line {
-        border-bottom: 0.5px solid #d4d4d4;
-        margin: 0 auto;
-        margin-bottom:-20px
-        
-    }
-
-
-    header .menu-logo {
-        position: absolute;
-        right: 0;
-        top: 11px;
-        right: 20px;
-        background-color: rgba(0, 0, 0, .0);
-        -webkit-transition-duration: 0.1s;
-        -webkit-transition-timing-function: ease;
-        transition-duration: 0.1s;
-        transition-timing-function: ease;
-        border-radius: 5px;
-    }
-
-    header .menu-logo a img {
-        width: 25px;
-    }
-
-    .menu-model .menu a {
-        cursor: pointer;
-    }
-    
-    */
-    .click-to-black{
-        width:100%;
-        height:200%;
-        background: rgba(0,0,0,0.7);
-        position:absolute;
-        top:0;
+        top: 0;
         display: none;
         z-index: 9;
     }
-    
+
     .header {
         width: 100%;
         height: 60px;
-        background: #f1f1f1; /* 컬러1 */
+        background: #f1f1f1;
+        /* 컬러1 */
         position: fixed;
         z-index: 10;
         overflow: hidden;
@@ -181,26 +72,30 @@ body {
     .sidebar-menu {
         width: 65%;
         height: 100%;
-        background: #f1f1f1; /* 컬러1 */
+        background: #f1f1f1;
+        /* 컬러1 */
         position: fixed;
         top: 0;
         right: -65%;
         z-index: 11;
-        display:none;
+        display: none;
         overflow-x: hidden;
         overflow-y: auto;
     }
+
     .sidebar-menu .close-btn {
         position: relative;
-        background-color: #eee; /* 컬러2 */
+        background-color: #eee;
+        /* 컬러2 */
     }
+
     .sidebar-menu .close-btn a img {
-        position:absolute;
-        top:15px;
-        left:18px;
-        width:30px;
+        position: absolute;
+        top: 15px;
+        left: 18px;
+        width: 30px;
     }
-    
+
     .close-btn > a {
         display: block;
         width: 100%;
@@ -213,24 +108,30 @@ body {
         overflow-x: hidden;
         overflow-y: auto;
     }
-    .menu-wrap li{
-        height:35px;
-        border-bottom:0.5px solid #777; /* 컬러3 */
+
+    .menu-wrap li {
+        height: 35px;
+        border-bottom: 0.5px solid #777;
+        /* 컬러3 */
         border-width: 100%;
-        margin-top:15px;
+        margin-top: 15px;
     }
+
     .menu-wrap li a {
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
-        color:#444;  /* 컬러4 */
-        margin-left:20px;
-        
+        color: #444;
+        /* 컬러4 */
+        margin-left: 20px;
+
     }
-    .menu-wrap .etc-menu{
-        background: #e1e1e1;  /* 컬러5 */
-        width:100%;
-        float:left;
-        padding-top:0px; 
+
+    .menu-wrap .etc-menu {
+        background: #e1e1e1;
+        /* 컬러5 */
+        width: 100%;
+        float: left;
+        padding-top: 0px;
     }
 
     /* ------------------------------//MODEL-FORM--------------------------- */
@@ -288,7 +189,8 @@ body {
 
     #home-box .main-info .main-txt-box .main-txt1 {
         font-size: 18px;
-        color: #003478;   /* 메인컬러 */
+        color: #003478;
+        /* 메인컬러 */
         font-family: 'Fugaz One', cursive;
     }
 
@@ -304,7 +206,8 @@ body {
     .tech-txt2,
     .contact-txt2 {
         font-size: 15px;
-        color: #444; /* 컬러4 */
+        color: #444;
+        /* 컬러4 */
         font-family: 'Noto Sans KR', sans-serif;
         margin-top: -5px;
     }
@@ -327,7 +230,8 @@ body {
 
     #home-box .vehicle-info .vehicle-txt-box .vehicle-txt2 {
         font-size: 14px;
-        color: #444; /* 컬러4 */
+        color: #444;
+        /* 컬러4 */
         font-family: 'Noto Sans KR', sans-serif;
         margin-top: -5px;
     }
@@ -430,108 +334,129 @@ body {
 
 
     /* -------------------------------INFORMATION--------------------------- */
-    #car-info,
-    #suv-info,
-    #commercial-info,
-    #hybrid-info,
-    #performance-info,
-    #truck-info,
-    #future-info {
-        display: none;
-        font-family: 'Fugaz one', cursive;
-        font-size: 20px;
-        float: left;
+    
+    
+    #car-info {
+        width: 100%;
+        height: 0px;
+        background-color: #f6f6f6;
         overflow-x: hidden;
+        transition:all 0.3s;
     }
 
-    .vehicle-txt {
-        float: left;
-        margin-left: 20px;
-        margin-bottom: 60px;
-        width: 335px;
-        margin-top: 0px;
+    .swiper-container {
+        width: 85%;
+        height: 700px;
+        margin-top:60px;
+        position:relative;
     }
 
-    span {
-        overflow-x: hidden;
-    }
-
-    span .detail .d1 {
-        width: 160px;
-        float: left;
-    }
-
-    span .detail .d2 {
-        float: left;
-        width: 40px;
-    }
-
-    span .detail .d2 p {
-        color: #555;
-        font-size: 13px;
-        margin-left: 70px;
-    }
-
-    span .detail .d3 {
-        float: left;
-        width: 120px;
-        margin-left: 50px;
-    }
-
-    span .detail .d3 p {
-        color: #555;
-        font-size: 13px;
-        margin-left: 50px;
-        margin-top: -1px;
+    .swiper-slide {
         text-align: center;
+        display: flex;
+        /* 내용을 중앙정렬 하기위해 flex 사용 */
+        align-items: center;
+        /* 위아래 기준 중앙정렬 */
+        justify-content: center;
+        /* 좌우 기준 중앙정렬 */
+        position:relative;
     }
 
-    span .detail .d2 img {
-        width: 23px;
+    .swiper-slide img {
+        width:300px;
+        position: absolute;
+        top:100px;
+        margin:10px 0 10px 0;
+    }
+    .explain-window-wrap{
+        width:99%;
+        height:400px;
+        background-color: #fff;
+        border-radius: 10px;
+        position:absolute;
+        top:250px;
+        box-shadow: 1px 1px 1px 1px #e1e1e1;
+        margin:0 auto;
+    }
+    .explain-wrap{
+        width:100%;
+        height:400px;
+        z-index: 11;
+        position:absolute;
+        top:250px;
+        float:left;
+    }
+    .explain-vehicle-name-wrap, explain-vehicle-kind-wrap{
+        width:100%;
+        float:left;
+    }
+    .explain-wrap .explain-vehicle-name-wrap p{
+        float:left;
+        margin-left:25px;
+        margin-top:40px;
+        font-family: 'Montserrat',sans-serif;
+        font-size:25px;
+        font-weight: bold;
+    }
+    .explain-vehicle-kind-wrap p{
+        float:left;
+        margin-left:25px;
+        margin-top:5px;
+        font-family: 'Noto Sans KR',sans-serif;
+        font-weight: bold;
+        color:#3f3f3f;
+        font-size:13px;
+    }
+    .explain-vehicle-price-wrap{
+        width:90%;
+        float:left;
+         font-family: 'Noto Sans KR',sans-serif;
+        font-size:13px;
+        margin-top:5px;
+        color:#3f3f3f;
+        text-align: left;
+        margin-left:25px;
+        font-weight: bold;
+    }
+    .explain-vehicle-fuel-wrap, .explain-vehicle-hp-wrap, .explain-vehicle-exhaust-wrap{
+        float:left;
+        width:30%;
+        text-align: left;
+        margin-left:25px;
+        position:relative;
+        
+    }
+    .explain-vehicle-fuel-wrap img, .explain-vehicle-fuel-wrap p{
+        width:20px;
+        position:absolute;
+        top:40px;
+        font-size:13px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+    }
+    .explain-vehicle-fuel-wrap p{
+        width:100%;
+        top:80px;
+    }
+    .explain-vehicle-fuel-wrap p:nth-child(3){
+        top:100px;
+        font-size:12px;
+        color: #333;
+    }
+    .explain-vehicle-hp-wrap img{
+        width:25px;
+        position:absolute;
+        top:40px;
+        left:125%;
+    }
+     .explain-vehicle-exhaust-wrap img{
+        width:25px;
+        position:absolute;
+        top:40px;
+        left:250%;
+    
     }
 
-    span .detail .d3 img {
-        width: 16px;
-    }
-
-    span p {
-        margin-left: 20px;
-        color: #003478; /* 컬러6 */
-    }
-
-    .price {
-        font-size: 15px;
-        color: #555; /* 컬러7 */
-    }
-
-    span img {
-        width: 400px;
-        margin-left: 80px;
-
-    }
-
-    span .car-bottom-line {
-        border-bottom: 0.2px solid #003478;
-        width: 335px;
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 100px;
-    }
-
-    span a .more {
-        margin-left: 290px;
-        font-family: 'Noto sans', sans-serif;
-        font-size: 13px;
-        margin-top: 20px;
-    }
-
-    span a .more-last {
-        margin-left: 200px;
-        font-family: 'Noto sans', sans-serif;
-        font-size: 13px;
-        margin-bottom: 50px;
-        margin-top: 20px;
-    }
 
     /* --------------------------//INFORMATION---------------------------- */
 

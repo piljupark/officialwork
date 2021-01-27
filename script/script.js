@@ -39,6 +39,7 @@ $(document).ready(function () {
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
+        $("#parts").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y","auto");
@@ -51,12 +52,14 @@ $(document).ready(function () {
     $(".sidebar-menu > .menu-wrap > li > .suv").click(function () {
         $(".sidebar-menu").hide(100);
         $("#car-info").hide();
+        $("#suv-info").css("height","810px");
         $("#suv-info").show();
         $("#commercial-info").hide();
         $("#hybrid-info").hide();
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
+        $("#parts").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y","auto");
@@ -70,11 +73,13 @@ $(document).ready(function () {
         $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").hide();
+        $("#commercial-info").css("height","810px");
         $("#commercial-info").show();
         $("#hybrid-info").hide();
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
+        $("#parts").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y","auto");
@@ -89,10 +94,12 @@ $(document).ready(function () {
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
+        $("#hybrid-info").css("height","810px");
         $("#hybrid-info").show();
         $("#performance-info").hide();
         $("#truck-info").hide();
         $("#future-info").hide();
+        $("#parts").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y","auto");
@@ -109,9 +116,11 @@ $(document).ready(function () {
         $("#suv-info").hide();
         $("#commercial-info").hide();
         $("#hybrid-info").hide();
+        $("#performance-info").css("height","810px");
         $("#performance-info").show();
         $("#truck-info").hide();
         $("#future-info").hide();
+        $("#parts").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y","auto");
@@ -128,8 +137,10 @@ $(document).ready(function () {
         $("#commercial-info").hide();
         $("#hybrid-info").hide();
         $("#performance-info").hide();
+        $("#truck-info").css("height","810px");
         $("#truck-info").show();
         $("#future-info").hide();
+        $("#parts").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y","auto");
@@ -147,7 +158,28 @@ $(document).ready(function () {
         $("#hybrid-info").hide();
         $("#performance-info").hide();
         $("#truck-info").hide();
+        $("#future-info").css("height","810px");
         $("#future-info").show();
+        $("#parts").hide();
+        $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow-y","auto");
+        $("html").css("overflow-y","auto");
+        $("body").css("overflow-x","hidden");
+        $(".sidebar-menu").animate({
+            right:"-" + 70 + "%"
+        });
+    });
+    $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .parts-service").click(function () {
+        $(".sidebar-menu").hide(100);
+        $("#car-info").hide();
+        $("#suv-info").hide();
+        $("#commercial-info").hide();
+        $("#hybrid-info").hide();
+        $("#performance-info").hide();
+        $("#truck-info").hide();
+        $("#future-info").hide();
+        $("#parts").css("display","block");
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y","auto");

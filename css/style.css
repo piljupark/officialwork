@@ -541,6 +541,7 @@ body {
         top:70px;
         display: none;
         position:absolute;
+        padding-top:40px;
     }
    
     .maintain-main-img{
@@ -571,10 +572,7 @@ body {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    #maintain .maintain-menu a .menu9{
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+    
     #maintain .maintain-menu .maintain-mention{
         width:80%;
         margin-left: 20px;
@@ -584,8 +582,6 @@ body {
         padding-bottom:5px;
         background-color: #f9f9f9;
         font-size: 14px;
-        transition: .5s;
-        transition-delay: .4s;
         display: none;
     }
     #maintain .maintain-menu .maintain-mention h4{

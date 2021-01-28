@@ -477,7 +477,8 @@ body {
         width:100%;
         margin:0 auto;
         display: none;
-        margin-top:80px;
+        position: absolute;
+        top:70px;
     }
     .parts-main-img{
         margin:0 auto;
@@ -497,7 +498,7 @@ body {
         font-size:20px;
         border-right:0.5px solid #555;
         width:32%;
-        height:380px;
+        height:400px;
     }
     .parts-pure-txt{
         float:left;
@@ -508,6 +509,7 @@ body {
         margin-top:20px;
         margin-right:20px;
         float:right;
+        height: 400px;
     }
     .parts-warning{
         font-weight: bold;
@@ -529,5 +531,66 @@ body {
         font-family: 'Noto Sans KR',sans-serif;
     }
     /* --------------------------//PARTS---------------------------- */
+    
+    
+    /* --------------------------MAINTAIN---------------------------- */
+    #maintain{
+        float:left;
+        width:100%;
+        margin:0 auto;
+        top:70px;
+        display: none;
+        position:absolute;
+    }
+   
+    .maintain-main-img{
+        margin:0 auto;
+        width:90%;
+        margin-top:20px;
+    }
+    .maintain-main-img img{
+        width:100%;
+        border-radius: 10px;
+    }
+    #maintain .maintain-menu {
+        margin:20px 0 20px 0;
+    }
+    #maintain .maintain-menu a p{
+        width:85%;
+        height:40px;
+        text-align: left;
+        margin-left: 20px;
+        padding-left:20px;
+        padding-top:10px;
+        background-color: #f0f0f0;
+        font-weight: bold;
+        font-family: 'Noto Sans KR',sans-serif;
+        border-bottom:0.5px solid #e1e1e1;
+    }
+    #maintain .maintain-menu a .menu1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #maintain .maintain-menu a .menu9{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #maintain .maintain-menu .maintain-mention{
+        width:80%;
+        margin-left: 20px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        background-color: #f9f9f9;
+        font-size: 14px;
+        transition: .5s;
+        transition-delay: .4s;
+        display: none;
+    }
+    #maintain .maintain-menu .maintain-mention h4{
+        text-decoration: underline;
+    }
+    /* --------------------------//MAINTAIN---------------------------- */
     
 }

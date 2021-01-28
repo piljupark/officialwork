@@ -364,7 +364,7 @@ body {
     .swiper-slide .vehicle-img{
         width:300px;
         position: absolute;
-        top:70px;
+        top:50px;
         margin:10px 0 10px 0;
     }
     
@@ -375,7 +375,7 @@ body {
         background-color: #fff;
         border-radius: 10px;
         position:absolute;
-        top:250px;
+        top:200px;
         box-shadow: 1px 1px 1px 1px #e1e1e1;
         margin:0 auto;
     }
@@ -384,7 +384,7 @@ body {
         height:300px;
         z-index: 11;
         position:absolute;
-        top:250px;
+        top:200px;
         float:left;
         font-family: 'Noto Sans KR',sans-serif;
     }

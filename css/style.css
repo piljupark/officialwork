@@ -214,25 +214,32 @@ body {
     #home-box .vehicle-info {
         background-color: #fafafa;
         padding: 50px 0 50px 0;
+        height:250px;
     }
 
     #home-box .vehicle-info .vehicle-img-box {
         width: 100%;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 10px;
+        position:relative;
     }
 
     #home-box .vehicle-info .vehicle-img-box img {
-        width: 80%;
+        width: 97%;
         border-radius: 20px;
+        position:absolute;
+        left:5.5px;
     }
-
+    #home-box .vehicle-info .vehicle-txt-box .vehicle-txt1{
+        color:#f1f1f1;
+        margin-top:40px;
+    }
     #home-box .vehicle-info .vehicle-txt-box .vehicle-txt2 {
         font-size: 14px;
-        color: #444;
+        color: #f1f1f1;
         /* 컬러4 */
         font-family: 'Noto Sans KR', sans-serif;
-        margin-top: -5px;
+        margin-top: 35px;
     }
 
     #home-box .tech-info {
@@ -333,21 +340,27 @@ body {
 
 
     /* -------------------------------INFORMATION--------------------------- */
-    
-    
-    #car-info, #suv-info, #commercial-info, #hybrid-info, #performance-info, #truck-info, #future-info{
+
+
+    #car-info,
+    #suv-info,
+    #commercial-info,
+    #hybrid-info,
+    #performance-info,
+    #truck-info,
+    #future-info {
         width: 100%;
         height: 0px;
         background-color: #f6f6f6;
         overflow-x: hidden;
-        transition:all 0.3s;
+        transition: all 0.3s;
     }
 
     .swiper-container {
         width: 85%;
         height: 700px;
-        margin-top:60px;
-        position:relative;
+        margin-top: 60px;
+        position: relative;
     }
 
     .swiper-slide {
@@ -358,235 +371,327 @@ body {
         /* 위아래 기준 중앙정렬 */
         justify-content: center;
         /* 좌우 기준 중앙정렬 */
-        position:relative;
+        position: relative;
     }
 
-    .swiper-slide .vehicle-img{
-        width:300px;
+    .swiper-slide .vehicle-img {
+        width: 300px;
         position: absolute;
-        top:50px;
-        margin:10px 0 10px 0;
+        top: 50px;
+        margin: 10px 0 10px 0;
     }
-    
+
     /* 차량 간략설명 */
-    .explain-window-wrap{
-        width:99.7%;
-        height:300px;
+    .explain-window-wrap {
+        width: 99.7%;
+        height: 300px;
         background-color: #fff;
         border-radius: 10px;
-        position:absolute;
-        top:200px;
+        position: absolute;
+        top: 200px;
         box-shadow: 1px 1px 1px 1px #e1e1e1;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .explain-wrap{
-        width:100%;
-        height:300px;
+
+    .explain-wrap {
+        width: 100%;
+        height: 300px;
         z-index: 11;
-        position:absolute;
-        top:200px;
-        float:left;
-        font-family: 'Noto Sans KR',sans-serif;
+        position: absolute;
+        top: 200px;
+        float: left;
+        font-family: 'Noto Sans KR', sans-serif;
     }
-    .explain-vehicle-name-wrap, explain-vehicle-kind-wrap{
-        width:100%;
-        float:left;
+
+    .explain-vehicle-name-wrap,
+    explain-vehicle-kind-wrap {
+        width: 100%;
+        float: left;
     }
-    .explain-wrap .explain-vehicle-name-wrap p{
-        float:left;
-        margin-left:40px;
-        margin-top:40px;
-        font-family: 'Montserrat',sans-serif;
-        font-size:22px;
+
+    .explain-wrap .explain-vehicle-name-wrap p {
+        float: left;
+        margin-left: 40px;
+        margin-top: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
         font-weight: bold;
     }
-    .explain-vehicle-kind-wrap p{
-        float:left;
-        margin-left:40px;
-        margin-top:5px;
-        font-family: 'Noto Sans KR',sans-serif;
+
+    .explain-vehicle-kind-wrap p {
+        float: left;
+        margin-left: 40px;
+        margin-top: 5px;
+        font-family: 'Noto Sans KR', sans-serif;
         font-weight: bold;
-        color:#3f3f3f;
-        font-size:13px;
+        color: #3f3f3f;
+        font-size: 13px;
     }
-    .explain-vehicle-price-wrap{
-        width:90%;
-        float:left;
-         font-family: 'Noto Sans KR',sans-serif;
-        font-size:13px;
-        margin-top:5px;
-        color:#3f3f3f;
+
+    .explain-vehicle-price-wrap {
+        width: 90%;
+        float: left;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 13px;
+        margin-top: 5px;
+        color: #3f3f3f;
         text-align: left;
-        margin-left:40px;
+        margin-left: 40px;
         font-weight: bold;
     }
-    .explain-vehicle-fuel-wrap, .explain-vehicle-hp-wrap, .explain-vehicle-exhaust-wrap{
-        width:20%;
-        margin-top:60px;
-        margin-left:30px;
-        float:left;
-        font-size:12px;
+
+    .explain-vehicle-fuel-wrap,
+    .explain-vehicle-hp-wrap,
+    .explain-vehicle-exhaust-wrap {
+        width: 20%;
+        margin-top: 60px;
+        margin-left: 30px;
+        float: left;
+        font-size: 12px;
         font-weight: bold;
     }
-    
-    .explain-vehicle-fuel-wrap img{
-        width:25px;
-        float:left;
-        margin-left:22px;
+
+    .explain-vehicle-fuel-wrap img {
+        width: 25px;
+        float: left;
+        margin-left: 22px;
     }
-    .explain-vehicle-hp-wrap img{
-        width:30px;
-        float:left;
-        margin-left:18px;
+
+    .explain-vehicle-hp-wrap img {
+        width: 30px;
+        float: left;
+        margin-left: 18px;
     }
-    .explain-vehicle-exhaust-wrap img{
-        width:34px;
-        float:left;
-        margin-left:19px;
+
+    .explain-vehicle-exhaust-wrap img {
+        width: 34px;
+        float: left;
+        margin-left: 19px;
     }
-    .explain-vehicle-fuel-wrap p{
+
+    .explain-vehicle-fuel-wrap p {
         line-height: 2.3;
     }
-    .explain-vehicle-hp-wrap p{
+
+    .explain-vehicle-hp-wrap p {
         line-height: 3.3;
     }
-     .explain-vehicle-exhaust-wrap p{
+
+    .explain-vehicle-exhaust-wrap p {
         line-height: 2.2;
     }
-    .vehicle-more{
-        width:80%;
-        height:40px;
-        margin-top:80px;
-        border:0px;
+
+    .vehicle-more {
+        width: 80%;
+        height: 40px;
+        margin-top: 80px;
+        border: 0px;
         border-radius: 10px;
         background-color: #003478;
-        color:#fff;
+        color: #fff;
         font-weight: bold;
-        font-family: 'Noto Sans KR',sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
-    
+
     /* //차량 간략설명 */
 
 
     /* --------------------------//INFORMATION---------------------------- */
-    
-    
+
+
     /* --------------------------PARTS---------------------------- */
-    #parts{
-        float:left;
-        width:100%;
-        margin:0 auto;
+    #parts {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
         display: none;
-        top:70px;
-         padding-top:60px;
+        top: 70px;
+        padding-top: 60px;
     }
-    .parts-main-img{
-        margin:0 auto;
-        width:90%;
-        margin-top:20px;
+
+    .parts-main-img {
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 20px;
     }
-    .parts-main-img img{
-        width:100%;
+
+    .parts-main-img img {
+        width: 100%;
         border-radius: 10px;
     }
-    .parts-main-txt{
-        float:left;
-        margin-left:20px;
-        margin-top:20px;
-        font-family: 'Montserrat',sans-serif;
+
+    .parts-main-txt {
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-        font-size:20px;
-        border-right:0.5px solid #555;
-        width:32%;
-        height:400px;
-    }
-    .parts-pure-txt{
-        float:left;
-        font-family: 'Noto Sans KR',sans-serif;
-        text-align: left;
-        font-size: 14px;
-        width:55%;
-        margin-top:20px;
-        margin-right:20px;
-        float:right;
+        font-size: 20px;
+        border-right: 0.5px solid #555;
+        width: 32%;
         height: 400px;
     }
-    .parts-warning{
+
+    .parts-pure-txt {
+        float: left;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: left;
+        font-size: 14px;
+        width: 55%;
+        margin-top: 20px;
+        margin-right: 20px;
+        float: right;
+        height: 400px;
+    }
+
+    .parts-warning {
         font-weight: bold;
-        margin-top:30px;
+        margin-top: 30px;
     }
-    .parts-button-place{
-        margin:0 auto;
-        width:90%;
+
+    .parts-button-place {
+        margin: 0 auto;
+        width: 90%;
     }
-    .parts-button{
-        width:49%;
-        height:40px;
-        margin-top:20px;
-        border:0px;
+
+    .parts-button {
+        width: 49%;
+        height: 40px;
+        margin-top: 20px;
+        border: 0px;
         border-radius: 10px;
         background-color: #003478;
-        color:#fff;
+        color: #fff;
         font-weight: bold;
-        font-family: 'Noto Sans KR',sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
+
     /* --------------------------//PARTS---------------------------- */
-    
-    
+
+
     /* --------------------------MAINTAIN---------------------------- */
-    #maintain{
-        float:left;
-        width:100%;
-        margin:0 auto;
-        top:70px;
+    #maintain {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+        top: 70px;
         display: none;
-        
-        padding-top:60px;
+
+        padding-top: 60px;
     }
-   
-    .maintain-main-img{
-        margin:0 auto;
-        width:90%;
-        margin-top:20px;
+
+    .maintain-main-img {
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 20px;
     }
-    .maintain-main-img img{
-        width:100%;
+
+    .maintain-main-img img {
+        width: 100%;
         border-radius: 10px;
     }
+
     #maintain .maintain-menu {
-        margin:20px 0 20px 0;
+        margin: 20px 0 20px 0;
     }
-    #maintain .maintain-menu a p{
-        width:85%;
-        height:40px;
+
+    #maintain .maintain-menu a p {
+        width: 85%;
+        height: 40px;
         text-align: left;
         margin-left: 20px;
-        padding-left:20px;
-        padding-top:10px;
+        padding-left: 20px;
+        padding-top: 10px;
         background-color: #f0f0f0;
         font-weight: bold;
-        font-family: 'Noto Sans KR',sans-serif;
-        border-bottom:0.5px solid #e1e1e1;
+        font-family: 'Noto Sans KR', sans-serif;
+        border-bottom: 0.5px solid #e1e1e1;
     }
-    #maintain .maintain-menu a .menu1{
+
+    #maintain .maintain-menu a .menu1 {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    
-    #maintain .maintain-menu .maintain-mention{
-        width:80%;
+
+    #maintain .maintain-menu .maintain-mention {
+        width: 80%;
         margin-left: 20px;
-        padding-left:20px;
-        padding-right:20px;
-        padding-top:5px;
-        padding-bottom:5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         background-color: #f9f9f9;
         font-size: 14px;
         display: none;
     }
-    #maintain .maintain-menu .maintain-mention h4{
+
+    #maintain .maintain-menu .maintain-mention h4 {
         text-decoration: underline;
     }
+
     /* --------------------------//MAINTAIN---------------------------- */
+
+
+    /* --------------------------SUPPORT---------------------------- */
+    #support .swiper-container{
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        position: relative;
+    }
+    #support .swiper-container .swiper-wrapper .swiper-slide{
+        text-align: left;
+        display: flex;
+        /* 내용을 중앙정렬 하기위해 flex 사용 */
+        align-items: center;
+        /* 위아래 기준 중앙정렬 */
+        justify-content: center;
+        /* 좌우 기준 중앙정렬 */
+    }
     
+    #support .support-main-img {
+        width: 85%;
+        margin-top: 20px;
+    }
+    #support .support-main-img img{
+        width:90%;
+        border-radius: 10px;
+    }
+    #support .support-ex{
+        width:85%;
+        margin:0 auto;
+        margin-top: 40px;
+        font-family: 'Apple SD Gothic', sans-serif;
+    }
+    #support .support-ex h1{
+        position:absolute;
+        color:#ccc;
+        font-size:40px;
+        left:15px;
+        opacity: 0.3;
+    }
+    #support .support-ex .support-ex-title{
+        font-size:20px;
+        font-weight: bold;
+        padding-left:20px;
+        color:#222;
+    }
+    #support .support-ex .support-ex-text{
+        font-size:15px;
+        padding-left:20px;
+        color:#444;
+    }
+    
+    #support .support-caution{
+        font-size: 12px;
+        padding-top:25px;
+        padding-left:45px;
+        padding-bottom: 20px;
+        margin-top:20px;
+        color:#666;
+        background-color: #f5f5f5;
+        /*border-top:0.3px solid #ccc;*/
+    }   
+    /* --------------------------//SUPPORT---------------------------- */
+
 }

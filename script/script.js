@@ -383,26 +383,26 @@ $(document).ready(function () {
         $("#maintain > .maintain-menu > a > .mention9").css("display", "block");
     });
     $("#support > .support-main-img-wrap > .support-img2").click(function () {
-        $("#support > .support-main-img-wrap > .support-img1").css("width", "20%");
+        $("#support > .support-main-img-wrap > .support-img1").css("width", "25%");
         $("#support > .support-main-img-wrap > .support-img1").css("opacity", "0.3");
         $("#support > .support-main-img-wrap > .support-img1 > p").css("font-size", "20px");
         $("#support > .support-main-img-wrap > .support-img1 > p").css("margin-top", "125px");
         $("#support > .support-main-img-wrap > .support-img2").css("opacity", "1");
         $("#support > .support-main-img-wrap > .support-img2 > p").css("font-size", "40px");
-        $("#support > .support-main-img-wrap > .support-img2").css("width", "65%");
+        $("#support > .support-main-img-wrap > .support-img2").css("width", "70%");
         $("#support > .support-main-img-wrap > .support-img2 > p").css("margin-top", "100px");
         $("#support > .support-ex-wrapper2").css("display", "block");
         $("#support > .support-ex-wrapper1").css("display", "none");
         $("#support > .support-caution").css("display", "none");
     });
     $("#support > .support-main-img-wrap > .support-img1").click(function () {
-        $("#support > .support-main-img-wrap > .support-img2").css("width", "20%");
+        $("#support > .support-main-img-wrap > .support-img2").css("width", "25%");
         $("#support > .support-main-img-wrap > .support-img2").css("opacity", "0.3");
         $("#support > .support-main-img-wrap > .support-img2 > p").css("font-size", "20px");
         $("#support > .support-main-img-wrap > .support-img2 > p").css("margin-top", "115px");
         $("#support > .support-main-img-wrap > .support-img1").css("opacity", "1");
         $("#support > .support-main-img-wrap > .support-img1 > p").css("font-size", "40px");
-        $("#support > .support-main-img-wrap > .support-img1").css("width", "65%");
+        $("#support > .support-main-img-wrap > .support-img1").css("width", "70%");
         $("#support > .support-main-img-wrap > .support-img1 > p").css("margin-top", "115px");
         $("#support > .support-ex-wrapper1").css("display", "block");
         $("#support > .support-ex-wrapper2").css("display", "none");

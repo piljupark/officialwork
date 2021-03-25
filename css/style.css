@@ -641,6 +641,7 @@ body {
     #support{
         float:left;
         padding-top:80px;
+        display: none;
     }
     #support .swiper-container{
         width: 100%;

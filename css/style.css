@@ -1,5 +1,5 @@
 @@ -1,697 +0,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&display=swap');
 
 a {
     text-decoration: none;
@@ -646,24 +646,33 @@ body {
         margin-top: 0px;
         position: relative;
     }
-    #support .swiper-container .swiper-wrapper .swiper-slide{
-        text-align: left;
-        display: flex;
-        /* 내용을 중앙정렬 하기위해 flex 사용 */
-        align-items: center;
-        /* 위아래 기준 중앙정렬 */
-        justify-content: center;
-        /* 좌우 기준 중앙정렬 */
-    }
-    
-    #support .support-main-img {
-        width: 85%;
-        margin-top: 20px;
-    }
-    #support .support-main-img img{
+    #support .support-main-img-wrap{
         width:90%;
+        margin:0 auto;
+    }
+    #support .support-main-img-wrap .support-img1{
+        background-image: url(../images/support3.png);
+        width:65%;
+        height:280px;
+        float:left;
         border-radius: 10px;
     }
+    #support .support-main-img-wrap .support-img2{
+        background-image: url(../images/ecoboost3.png);
+        width:30%;
+        height:280px;
+        background-size: cover;
+        float:left;
+        border-radius: 10px;
+        float:right;
+    }
+    
+    #support .support-ex-wrapper1{
+        float:left;
+        width:100%;
+        margin:0 auto;
+    }
+    
     #support .support-ex{
         width:85%;
         margin:0 auto;
@@ -697,6 +706,8 @@ body {
         margin-top:20px;
         color:#666;
         background-color: #f5f5f5;
+        float:left;
+        width:100%;
         /*border-top:0.3px solid #ccc;*/
     }   
     /* --------------------------//SUPPORT---------------------------- */

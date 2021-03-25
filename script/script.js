@@ -281,7 +281,10 @@ $(document).ready(function () {
         });
     });
 
-
+    
+    
+    
+    
     $("#maintain > .maintain-menu > a > .menu1").click(function () {
         $("#maintain > .maintain-menu > a > .mention1").css("display", "block");
         $("#maintain > .maintain-menu > a > .mention1").css("transition-delay", ".4s");
@@ -1043,6 +1046,7 @@ $(document).ready(function () {
         $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .choose22").css("opacity", "0");
         $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .choose23").css("opacity", "1");
     });
+    
 
 
     $('footer > .footer-logo-img-box > img').click(function () {

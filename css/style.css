@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&display=swap');
 
 a {
@@ -884,7 +885,54 @@ body {
         width:100%;
         float:left;
     }
-    
+    #drive-test .drive-test-wrap{
+        width:90%;
+        margin: 0 auto;
+    }
+    #drive-test .drive-test-wrap .into-wrap .test-title{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #drive-test .drive-test-wrap .into-wrap .test-caution{
+        text-align: center;
+        font-size: 12px;
+        color:#003478;
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+    #drive-test .drive-test-wrap .into-wrap .title{
+        float:left;
+        width:55%;
+        margin::0 auto;
+        margin-bottom:80px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #drive-test .drive-test-wrap .into-wrap .model-detail{
+        float:right;
+        width:35%;
+        margin:0 auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        margin-bottom:15px;
+        line-height: 1.5;
+    }
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail{
+        position: relative;
+    }
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text{
+        color:#888;
+        width:100%;
+    }
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .choose{
+        width:5px;
+        height:5px;
+        border-radius: 5px;
+        background-color: #003478;
+        position:absolute;
+        right:0px;
+        top:8px;
+    }
     /* --------------------------//DRIVE-TEST---------------------------- */
 
 }

@@ -935,12 +935,17 @@ body {
         border-bottom:0.5px solid #ccc;
         margin-top:4px;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline:active{
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline-color{
         border-bottom:0.5px solid #003478;
         width:0%;
         transition:.3s;
+        position:absolute;
+        bottom:0;
+        transition:.5s;
     }
-    
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail:hover .underline-color{
+        width:100%;
+    }
     /* --------------------------//DRIVE-TEST---------------------------- */
     
     

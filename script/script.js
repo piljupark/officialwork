@@ -1082,7 +1082,6 @@ $(document).ready(function () {
     });
     
 
-
     $('footer > .footer-logo-img-box > img').click(function () {
         $('html, body').animate({
             scrollTop: 0

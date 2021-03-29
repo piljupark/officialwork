@@ -873,9 +873,9 @@ body {
         transition:.3s;
         transition-delay: 1s;
     }
-    #drive-test .drive-test-wrap .into-wrap .test-title{
+    #drive-test .drive-test-wrap .test-title{
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
     }
     #drive-test .drive-test-wrap .into-wrap .test-caution{
@@ -890,6 +890,7 @@ body {
         width:55%;
         margin::0 auto;
         margin-bottom:80px;
+        font-size:15px;
         font-family: 'Montserrat', sans-serif;
     }
     #drive-test .drive-test-wrap:nth-child(2) .into-wrap .title{
@@ -918,7 +919,7 @@ body {
     }
     #drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text{
         color:#888;
-        margin-top:10px;
+        margin-top:5px;
     }
     #drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text:hover{
         color:#003478;
@@ -959,6 +960,8 @@ body {
         float:left;
         text-align: right;
         color:#888;
+        margin-bottom:40px;
+        
     }
     #drive-test .drive-test-next{
         bottom:0;
@@ -966,9 +969,10 @@ body {
         float:right;
         text-align: left;
         color:#003478;
+        margin-bottom:40px;
+        
     }
     #drive-test .drive-test-model-wrap .drive-test-next{
-        position: absolute;
         bottom:0;
         width:100%;
         float:right;
@@ -984,7 +988,7 @@ body {
         margin:0 auto;
         margin-top:40px;
         display: none;
-        transition:4s;
+        transition:.3s;
         opacity: 0;
     }
     #drive-test .drive-test-area .into-wrap .title{
@@ -998,6 +1002,60 @@ body {
     }
     #drive-test .drive-test-area .into-wrap:nth-child(n+4):nth-child(-n+7) .title{
         margin-bottom:80px;
+    }
+    
+    
+    #drive-test .drive-test-information{
+        margin:0 auto;
+        margin-top:40px;
+        display: none;
+        transition:.3s;
+        opacity: 0;
+    }
+    #drive-test .drive-test-information .test-title{
+        margin-bottom:40px;
+    }
+    
+    #drive-test .drive-test-information{
+        display: none;
+        opacity: 0;
+        transition: .3s;
+    }
+    #drive-test .drive-test-information .into-wrap .drive-inform-wrap{
+        float:left;
+        width:100%;
+    }
+    #drive-test .drive-test-information .into-wrap .title{
+        float:left;
+        margin-bottom:50px;
+    }
+    #drive-test .drive-test-information .into-wrap .detail-wrap{
+        width:41%;
+        float:right;
+    }
+    #drive-test .drive-test-information .detail-text{
+        border:none;
+        width:140px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    #drive-test .drive-test-information .drive-test-prev{
+        bottom:0;
+        width:45%;
+        float:left;
+        text-align: right;
+        color:#888;
+        margin-bottom:40px;
+    }
+    
+    #drive-test .drive-test-information .drive-test-next{
+        bottom:0;
+        width:49%;
+        float:right;
+        text-align: left;
+        color:#003478;
+        margin-bottom:40px;
+        font-weight: bold;
     }
     /* --------------------------//DRIVE-TEST---------------------------- */
     

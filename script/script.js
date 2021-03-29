@@ -1103,7 +1103,33 @@ $(document).ready(function () {
         return false;
     });
     
+    $("#drive-test > .drive-test-area > .drive-test-next").click(function(){
+        $("#drive-test > .drive-test-area").css("display","none");
+        $("#drive-test > .drive-test-area").css("opacity","0");
+        $("#drive-test > .drive-test-information").css("display","block");
+        $("#drive-test > .drive-test-information").css("opacity","1");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+    
+    $("#drive-test > .drive-test-information > .drive-test-prev").click(function(){
+        $("#drive-test > .drive-test-area").css("display","block");
+        $("#drive-test > .drive-test-area").css("opacity","1");
+        $("#drive-test > .drive-test-information").css("display","none");
+        $("#drive-test > .drive-test-information").css("opacity","0");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+    
+    
+    
 
+    
+    
     $('footer > .footer-logo-img-box > img').click(function () {
         $('html, body').animate({
             scrollTop: 0

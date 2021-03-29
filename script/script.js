@@ -43,6 +43,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -66,6 +67,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -89,6 +91,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -112,6 +115,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -136,6 +140,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -159,6 +164,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -182,6 +188,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -204,6 +211,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -226,6 +234,7 @@ $(document).ready(function () {
         $("#maintain").css("display", "block");
         $("#support").hide();
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -249,6 +258,7 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").css("display", "block");
         $("#promotion").hide();
+        $("#drive-test").hide();
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");
@@ -271,6 +281,30 @@ $(document).ready(function () {
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").css("display", "block");
+        $("#drive-test").hide();
+        $("#home-box").hide();
+        $(".click-to-black").hide();
+        $("body").css("overflow-y", "auto");
+        $("html").css("overflow-y", "auto");
+        $("body").css("overflow-x", "hidden");
+        $(".sidebar-menu").animate({
+            right: "-" + 70 + "%"
+        });
+    });
+     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .drive-test").click(function () {
+        $(".sidebar-menu").hide(100);
+        $("#car-info").hide();
+        $("#suv-info").hide();
+        $("#commercial-info").hide();
+        $("#hybrid-info").hide();
+        $("#performance-info").hide();
+        $("#truck-info").hide();
+        $("#future-info").hide();
+        $("#parts").hide();
+        $("#maintain").hide();
+        $("#support").hide();
+        $("#promotion").hide();
+        $("#drive-test").css("display","block");
         $("#home-box").hide();
         $(".click-to-black").hide();
         $("body").css("overflow-y", "auto");

@@ -1080,9 +1080,27 @@ $(document).ready(function () {
         $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .choose22").css("opacity", "0");
         $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .choose23").css("opacity", "1");
     });
+    
+    
     $("#drive-test > .drive-test-model-wrap > .drive-test-next").click(function(){
         $("#drive-test > .drive-test-area").css("display","block");
+        $("#drive-test > .drive-test-area").css("opacity","1");
         $("#drive-test > .drive-test-model-wrap").css("display","none");
+        $("#drive-test > .drive-test-model-wrap").css("opacity","0");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+    $("#drive-test > .drive-test-area > .drive-test-prev").click(function(){
+        $("#drive-test > .drive-test-area").css("display","none");
+        $("#drive-test > .drive-test-area").css("opacity","0");
+        $("#drive-test > .drive-test-model-wrap").css("display","block");
+        $("#drive-test > .drive-test-model-wrap").css("opacity","1");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
     });
     
 

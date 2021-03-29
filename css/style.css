@@ -870,6 +870,8 @@ body {
         margin: 0 auto;
         margin-top:30px;
         display: block;
+        transition:.3s;
+        transition-delay: 1s;
     }
     #drive-test .drive-test-wrap .into-wrap .test-title{
         text-align: center;
@@ -949,8 +951,9 @@ body {
     #drive-test .drive-test-wrap .into-wrap .model-detail .detail:hover .underline-color{
         width:100%;
     }
+    
+    
     #drive-test .drive-test-prev{
-        position: absolute;
         bottom:0;
         width:49%;
         float:left;
@@ -958,6 +961,13 @@ body {
         color:#888;
     }
     #drive-test .drive-test-next{
+        bottom:0;
+        width:49%;
+        float:right;
+        text-align: left;
+        color:#003478;
+    }
+    #drive-test .drive-test-model-wrap .drive-test-next{
         position: absolute;
         bottom:0;
         width:100%;
@@ -974,6 +984,8 @@ body {
         margin:0 auto;
         margin-top:40px;
         display: none;
+        transition:4s;
+        opacity: 0;
     }
     #drive-test .drive-test-area .into-wrap .title{
         margin-bottom:230px;

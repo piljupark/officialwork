@@ -863,12 +863,13 @@ body {
         display: none;
         padding-top:80px;
         position: relative;
+        overflow-x: hidden;
     }
     #drive-test .drive-test-wrap{
         width:90%;
         margin: 0 auto;
         margin-top:30px;
-        display: none;
+        display: block;
     }
     #drive-test .drive-test-wrap .into-wrap .test-title{
         text-align: center;
@@ -959,17 +960,33 @@ body {
     #drive-test .drive-test-next{
         position: absolute;
         bottom:0;
-        width:49%;
+        width:100%;
         float:right;
         right:0;
+        text-align: center;
         color:#003478;
     }
+    
+    
+    
+    
     #drive-test .drive-test-area {
         margin:0 auto;
         margin-top:40px;
-        display: block;
+        display: none;
     }
-    
+    #drive-test .drive-test-area .into-wrap .title{
+        margin-bottom:230px;
+    }
+    #drive-test .drive-test-area .into-wrap:nth-child(2) .title{
+        margin-bottom:250px;
+    }
+    #drive-test .drive-test-area .into-wrap:nth-child(3) .title{
+        margin-bottom:110px;
+    }
+    #drive-test .drive-test-area .into-wrap:nth-child(n+4):nth-child(-n+7) .title{
+        margin-bottom:80px;
+    }
     /* --------------------------//DRIVE-TEST---------------------------- */
     
     

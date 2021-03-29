@@ -1080,6 +1080,10 @@ $(document).ready(function () {
         $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .choose22").css("opacity", "0");
         $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .choose23").css("opacity", "1");
     });
+    $("#drive-test > .drive-test-model-wrap > .drive-test-next").click(function(){
+        $("#drive-test > .drive-test-area").css("display","block");
+        $("#drive-test > .drive-test-model-wrap").css("display","none");
+    });
     
 
     $('footer > .footer-logo-img-box > img').click(function () {

@@ -1046,6 +1046,7 @@ body {
         text-align: right;
         color:#888;
         margin-bottom:40px;
+        margin-top:40px;
     }
     
     #drive-test .drive-test-information .drive-test-next{
@@ -1056,6 +1057,7 @@ body {
         color:#003478;
         margin-bottom:40px;
         font-weight: bold;
+        margin-top:40px;
     }
     /* --------------------------//DRIVE-TEST---------------------------- */
     

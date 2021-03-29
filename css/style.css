@@ -643,7 +643,7 @@ body {
         padding-top:80px;
         display: none;
     }
-    #support .support-top{
+    #support .support-top, #promotion .promotion-top{
         width:100%;
         height:30px;
         background-color: #f1f1f1;
@@ -660,7 +660,7 @@ body {
         float:left;
         margin-left:13px;
     }*/
-    #support .support-top2{
+    #support .support-top2, #promotion .promotion-top2{
         width:40%;
         float:right;
         text-align: right;
@@ -816,10 +816,13 @@ body {
     #promotion{
         float:left;
         width:100%;
+        padding-top:80px;
+        display: none;
     }
     #promotion .promotion-wrap{
         width:90%;
         margin:0 auto;
+        padding-top:40px;
     }
     #promotion .promotion-wrap .promotion-img1{
         background-image: url(../images/promotion2.png);
@@ -828,14 +831,18 @@ body {
         background-size: cover;
         margin-bottom:40px;
         border-radius: 10px;
+        transition:.3s;
     }
+    
     #promotion .promotion-wrap .promotion-img2{
         background-image: url(../images/promotion5.png);
         width:100%;
-        height:250px;
+        height:280px;
         background-size: cover;
         margin-bottom:40px;
         border-radius: 10px;
+        transition:.3s;
+        
     }
     #promotion .promotion-wrap .promotion-img3{
         background-image: url(../images/promotion4.png);
@@ -843,7 +850,29 @@ body {
         height:250px;
         background-size: cover;
         border-radius: 10px;
+        transition:.3s;
+        
     }
+    #promotion .promotion-wrap .promotion-dark{
+        background-color: rgba(0,0,0,0.5);
+        width:100%;
+        border-radius: 10px;
+        height:100%;
+        transition:.3s;
+    }
+    #promotion .promotion-wrap p{
+        color:#ccc;
+        font-size: 30px;
+        text-align: center;
+        padding-top:110px;
+    }
+    #promotion .promotion-wrap .promotion-img1 p{
+        color:#fff;
+    }
+    #promotion .promotion-wrap .promotion-img2 p{
+        padding-top:120px;
+    }
+    
     /* --------------------------//PROMOTION---------------------------- */
     
     
@@ -852,8 +881,10 @@ body {
     
     /* --------------------------DRIVE-TEST---------------------------- */
     #drive-test {
-        display: none;
+        width:100%;
+        float:left;
     }
+    
     /* --------------------------//DRIVE-TEST---------------------------- */
 
 }

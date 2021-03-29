@@ -862,11 +862,13 @@ body {
         float:left;
         display: none;
         padding-top:80px;
+        position: relative;
     }
     #drive-test .drive-test-wrap{
         width:90%;
         margin: 0 auto;
         margin-top:30px;
+        display: none;
     }
     #drive-test .drive-test-wrap .into-wrap .test-title{
         text-align: center;
@@ -919,7 +921,7 @@ body {
         color:#003478;
         transition: .3s;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .choose{
+    #drive-test .into-wrap .model-detail .detail .choose{
         width:5px;
         height:5px;
         border-radius: 5px;
@@ -946,6 +948,28 @@ body {
     #drive-test .drive-test-wrap .into-wrap .model-detail .detail:hover .underline-color{
         width:100%;
     }
+    #drive-test .drive-test-prev{
+        position: absolute;
+        bottom:0;
+        width:49%;
+        float:left;
+        text-align: right;
+        color:#888;
+    }
+    #drive-test .drive-test-next{
+        position: absolute;
+        bottom:0;
+        width:49%;
+        float:right;
+        right:0;
+        color:#003478;
+    }
+    #drive-test .drive-test-area {
+        margin:0 auto;
+        margin-top:40px;
+        display: block;
+    }
+    
     /* --------------------------//DRIVE-TEST---------------------------- */
     
     

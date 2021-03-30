@@ -225,14 +225,14 @@ body {
         margin-right:20px;
     }
     #home-box .home-finder-wrapper .home-finder .finder{
-        width:65%;
+        width:34%;
         border:none;
         border-bottom:0.5px solid #ccc;
         height:30px;
         transition:.3s;
         float:left;
         padding-left:10px;
-        margin-left:30px;
+        margin-left:120px;
     } 
     
     /* -------------------------------//HOME TEST----------------------------- */

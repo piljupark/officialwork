@@ -169,6 +169,14 @@ body {
         width:100%;
         transition-delay:.5s;
     }
+    #home-box .swiper-container .swiper-pagination-bullet{
+        width:10px;
+        height:10px;
+        background-color: #fff;
+        transition:.4s;
+        border:0.5px solid #fff;
+        margin:0 10px;
+    }
     
     #home-box .home-txt-en{
         position:absolute;
@@ -226,6 +234,7 @@ body {
         padding-left:10px;
         margin-left:30px;
     } 
+    
     /* -------------------------------//HOME TEST----------------------------- */
     
     /* -------------------------------HOME INFO----------------------------- */
@@ -350,6 +359,7 @@ body {
         text-align: center;
         float: left;
         padding-top: 50px;
+        overflow-y: none;
     }
 
     #home-box .contact-info .contact-box .contact-control {
@@ -396,6 +406,7 @@ body {
         text-align: center;
         padding-top: 100px;
         bottom:0;
+        overflow: none;
     }
 
     #home-box footer .footer-logo-img-box {

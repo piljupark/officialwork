@@ -30,7 +30,7 @@ $(document).ready(function () {
     })
 
     
-    $("#home-box > .swiper-container > .swiper-wrapper > .home-b > a").click(function(){
+    $("#home-box > .swiper-container > .swiper-wrapper > .home-b").click(function(){
         $("#support").css("display","block");
         $("#home-box").css("display","none");
     });

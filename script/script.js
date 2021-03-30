@@ -29,6 +29,13 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
     })
 
+    
+    $("#home-box > .swiper-container > .swiper-wrapper > .home-b > a").click(function(){
+        $("#support").css("display","block");
+        $("#home-box").css("display","none");
+    });
+    
+    
     $(".sidebar-menu > .menu-wrap > li > .car").click(function () {
         $("#car-info").css("height", "810px");
         $(".sidebar-menu").hide(100);

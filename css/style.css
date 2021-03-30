@@ -155,7 +155,6 @@ body {
     #home-box .swiper-container{
         width:100%;
         margin:0 auto;
-        margin-top:-80px;
         float:left;
     }
     #home-box .swiper-container .swiper-wrapper{
@@ -177,8 +176,9 @@ body {
         font-size: 70px;
         font-family: 'Bebas Neue', cursive;
         right:5px;
-        top:140px; 
+        top:80px; 
         text-align: right;
+        width:100%;
     }
     #home-box .home-b .home-txt-en{
         opacity: 0.7;
@@ -189,7 +189,7 @@ body {
         color:#fff;
         font-size: 15px;
         right:5px;
-        top:120px;
+        top:60px;
         font-weight: bold;
         opacity:1;
     }
@@ -197,14 +197,14 @@ body {
         width:100%;
         float:left;
         height: 100px;
-        background-color: #ccc;
+        position:relative;
     }
     #home-box .home-finder-wrapper .home-finder{
         width:90%;
         margin:0 auto;
         height:50%;
         text-align: center;
-        margin-top:100px;
+        margin-top:30px;
     }
     #home-box .home-finder-wrapper .home-finder .finder-img{
         width:20%;
@@ -214,15 +214,17 @@ body {
     #home-box .home-finder-wrapper .home-finder .finder-img img{
         width:25px;
         margin-top:5px;
+        margin-right:20px;
     }
     #home-box .home-finder-wrapper .home-finder .finder{
-        width:70%;
+        width:65%;
         border:none;
         border-bottom:0.5px solid #ccc;
         height:30px;
         transition:.3s;
         float:left;
         padding-left:10px;
+        margin-left:30px;
     } 
     /* -------------------------------//HOME TEST----------------------------- */
     

@@ -150,13 +150,18 @@ body {
     #home-box{
         overflow-x: hidden;
         position:relative;
+        float:left;
     }
     #home-box .swiper-container{
         width:100%;
         margin:0 auto;
         margin-top:-80px;
+        float:left;
     }
-    #home-box .swiper-container .swiper.wrapper .swiper-slide{
+    #home-box .swiper-container .swiper-wrapper{
+        float:left;
+    }
+    #home-box .swiper-container .swiper-wrapper .swiper-slide{
         width:100%;
         position:relative;
         transition-delay:.5s;
@@ -178,15 +183,7 @@ body {
     #home-box .home-b .home-txt-en{
         opacity: 0.7;
     }
-    #home-box .home-underline{
-        width:200px;
-        position:absolute;
-        left:23px;
-        top:230px;
-        transition:.4s;
-        border-bottom:3px solid #fff;
-        opacity: 0.5;
-    }
+   
     #home-box .home-txt-ko{
         position:absolute;
         color:#fff;
@@ -194,9 +191,39 @@ body {
         right:5px;
         top:120px;
         font-weight: bold;
-        opacity:1
+        opacity:1;
     }
-   
+    #home-box .home-finder-wrapper{
+        width:100%;
+        float:left;
+        height: 100px;
+        background-color: #ccc;
+    }
+    #home-box .home-finder-wrapper .home-finder{
+        width:90%;
+        margin:0 auto;
+        height:50%;
+        text-align: center;
+        margin-top:100px;
+    }
+    #home-box .home-finder-wrapper .home-finder .finder-img{
+        width:20%;
+        float:right;
+        height:40px;
+    }
+    #home-box .home-finder-wrapper .home-finder .finder-img img{
+        width:25px;
+        margin-top:5px;
+    }
+    #home-box .home-finder-wrapper .home-finder .finder{
+        width:70%;
+        border:none;
+        border-bottom:0.5px solid #ccc;
+        height:30px;
+        transition:.3s;
+        float:left;
+        padding-left:10px;
+    } 
     /* -------------------------------//HOME TEST----------------------------- */
     
     /* -------------------------------HOME INFO----------------------------- */
@@ -206,7 +233,7 @@ body {
         width:100%;
         float: left;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 60px;
         z-index: 1;
         /*height:auto;*/
         height:1000px;
@@ -420,14 +447,26 @@ body {
         transition: all 0.3s;
     }
 
-    .swiper-container {
+    #car-info .swiper-container,
+    #suv-info .swiper-container,
+    #commercial-info .swiper-container,
+    #hybrid-info .swiper-container,
+    #performance-info .swiper-container,
+    #truck-info .swiper-container,
+    #future-info .swiper-container{
         width: 85%;
         height: 700px;
         margin-top: 60px;
         position: relative;
     }
 
-    .swiper-slide {
+    #car-info .swiper-slide,
+    #suv-info .swiper-slide,
+    #commercial-info .swiper-slide,
+    #hybrid-info .swiper-slide,
+    #performance-info .swiper-slide,
+    #truck-info .swiper-slide,
+    #future-info .swiper-slide {
         text-align: center;
         display: flex;
         /* 내용을 중앙정렬 하기위해 flex 사용 */

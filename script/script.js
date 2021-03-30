@@ -35,9 +35,8 @@ $(document).ready(function () {
         $("#home-box").css("display","none");
     });
     $("#home-box > .home-finder-wrapper > .home-finder > .finder").click(function(){
-        $("#home-box > .home-finder-wrapper > .home-finder > .finder").css("width","60%");
-        $("#home-box > .home-finder-wrapper > .home-finder > .finder").css("margin-left","30px");
-        $("#home-box > .home-finder-wrapper > .home-finder > .finder").css("border-bottom","1px solid #003478");
+        
+        $("#home-box > .home-finder-wrapper > .home-finder > .finder-active").css("border-bottom","1px solid #003478");
     });
     
     $(".sidebar-menu > .menu-wrap > li > .car").click(function () {

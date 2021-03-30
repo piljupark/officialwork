@@ -103,6 +103,7 @@
                     <p class="home-txt-ko">새로워진 GT500을 만나보세요</p>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="home-finder-wrapper">
             <div class="home-finder">
@@ -112,6 +113,20 @@
                 </div>
             </div>
         </div>
+        <section class="contact-info">
+            <div class="contact-box">
+                <input type="text" class="contact-control" name="name" placeholder="성함">
+                <input type="email" class="contact-control" name="email" placeholder="이메일">
+                <input type="text" class="contact-control" name="message" placeholder="질문이나 의견을 자유롭게 적어주세요.">
+            </div>
+            <div class="contact-button-box">
+                <button type="button" value="pop-up" class="contact-button" onclick="showPopup();">전송</button>
+            </div>
+            <div class="contact-txt-box">
+                <p class="contact-txt1">CONTACT US</p>
+                <p class="contact-txt2">포드의 문제점 개선에 동참해주세요</p>
+            </div>
+        </section>
         <!--
         <section class="main-info">
             <div class="main-img-box">
@@ -2271,6 +2286,16 @@
     <script>
         // 클래스명 swiper-container 입력
         // 이 클래스명은 변경하면 안됨
+        new Swiper('#home-box > .swiper-container', {
+            pagination: {
+            el: '.swiper-pagination',
+                clickable:true,
+                },
+            autoplay: 300,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            speed:1000,
+        });
         new Swiper('#car-info > .swiper-container');
         new Swiper('#suv-info > .swiper-container');
         new Swiper('#commercial-info > .swiper-container');
@@ -2280,8 +2305,8 @@
         new Swiper('#future-info > .swiper-container');
         new Swiper('#support > .swiper-container');
 
-        var swiper = new Swiper('.swiper-container', {
+        /*var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1, // 보여지는 슬라이드 수
-        });
+        });*/
     </script>
 </body></html>

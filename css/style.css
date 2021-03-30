@@ -51,7 +51,6 @@ body {
         width: 49%;
         float: right;
         height: 100%;
-
     }
 
     .header .menu-btn a img {
@@ -167,11 +166,9 @@ body {
     #home-box .swiper-container .swiper-wrapper .swiper-slide{
         width:100%;
         position:relative;
-        transition-delay:.5s;
     }
     #home-box .swiper-container .swiper-wrapper .swiper-slide img{
         width:100%;
-        transition-delay:.5s;
     }
     #home-box .swiper-container .swiper-pagination-bullet{
         width:10px;

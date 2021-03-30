@@ -151,6 +151,7 @@ body {
         overflow-x: hidden;
         position:relative;
         float:left;
+        overflow: hidden;
     }
     #home-box .swiper-container{
         width:100%;
@@ -227,12 +228,13 @@ body {
     #home-box .home-finder-wrapper .home-finder .finder{
         width:34%;
         border:none;
+        margin:0 auto;
         border-bottom:0.5px solid #ccc;
         height:30px;
         transition:.3s;
         float:left;
         padding-left:10px;
-        margin-left:120px;
+        margin-left:115px;
     } 
     
     /* -------------------------------//HOME TEST----------------------------- */

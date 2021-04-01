@@ -350,6 +350,7 @@ body {
 
     /* -------------------------------INFORMATION--------------------------- */
 
+    
 
     #car-info,
     #suv-info,
@@ -359,8 +360,8 @@ body {
     #truck-info,
     #future-info {
         width: 100%;
-        height: 0px;
-        background-color: #f6f6f6;
+        height: auto;
+        background-color: #fff;
         overflow-x: hidden;
         transition: all 0.3s;
     }
@@ -904,8 +905,8 @@ body {
         width:55%;
         margin::0 auto;
         margin-bottom:80px;
-        font-size:15px;
-        font-family: 'Montserrat', sans-serif;
+        font-size:20px;
+        font-family: 'Bebas Neue', cursive;
     }
     #drive-test .drive-test-wrap:nth-child(2) .into-wrap .title{
         margin-bottom:80px;
@@ -923,8 +924,8 @@ body {
         float:right;
         width:35%;
         margin:0 auto;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 17px;
         margin-bottom:15px;
         line-height: 1.5;
     }

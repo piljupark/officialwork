@@ -40,7 +40,7 @@ $(document).ready(function () {
     });
     
     $(".sidebar-menu > .menu-wrap > li > .car").click(function () {
-        $("#car-info").css("height", "810px");
+        $("#car-info").css("display","block");
         $(".sidebar-menu").hide(100);
         $("#car-info").show();
         $("#suv-info").hide();
@@ -66,7 +66,7 @@ $(document).ready(function () {
     $(".sidebar-menu > .menu-wrap > li > .suv").click(function () {
         $(".sidebar-menu").hide(100);
         $("#car-info").hide();
-        $("#suv-info").css("height", "810px");
+        $("#suv-info").css("display","block");
         $("#suv-info").show();
         $("#commercial-info").hide();
         $("#hybrid-info").hide();
@@ -91,7 +91,7 @@ $(document).ready(function () {
         $(".sidebar-menu").hide(100);
         $("#car-info").hide();
         $("#suv-info").hide();
-        $("#commercial-info").css("height", "810px");
+        $("#commercial-info").css("display","block");
         $("#commercial-info").show();
         $("#hybrid-info").hide();
         $("#performance-info").hide();
@@ -116,7 +116,7 @@ $(document).ready(function () {
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
-        $("#hybrid-info").css("height", "810px");
+        $("#hybrid-info").css("display","block");
         $("#hybrid-info").show();
         $("#performance-info").hide();
         $("#truck-info").hide();
@@ -142,7 +142,7 @@ $(document).ready(function () {
         $("#suv-info").hide();
         $("#commercial-info").hide();
         $("#hybrid-info").hide();
-        $("#performance-info").css("height", "810px");
+        $("#performance-info").css("display","block");
         $("#performance-info").show();
         $("#truck-info").hide();
         $("#future-info").hide();
@@ -192,7 +192,7 @@ $(document).ready(function () {
         $("#hybrid-info").hide();
         $("#performance-info").hide();
         $("#truck-info").hide();
-        $("#future-info").css("height", "810px");
+        $("#future-info").css("display","block");
         $("#future-info").show();
         $("#parts").hide();
         $("#maintain").hide();

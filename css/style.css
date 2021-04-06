@@ -1,13 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&display=swap');
 
 a {
     text-decoration: none;
     color: #000;
 }
-p{
+
+p {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
 
 li {
@@ -123,7 +123,7 @@ body {
 
     .menu-wrap li a {
         text-decoration: none;
-        font-family: 'Bebas Neue',cursive;
+        font-family: 'Bebas Neue', cursive;
         color: #444;
         /* 컬러4 */
         margin-left: 20px;
@@ -141,124 +141,137 @@ body {
     /* ------------------------------//MODEL-FORM--------------------------- */
 
 
-    
+
 
 
 
     /* -------------------------------HOME TEST----------------------------- */
-    #home-box{
+    #home-box {
         overflow-x: hidden;
-        position:relative;
-        float:left;
-        width:100%;
+        position: relative;
+        float: left;
+        width: 100%;
         margin-top: 60px;
         z-index: 1;
     }
-    #home-box .swiper-container{
-        width:100%;
-        margin:0 auto;
-        float:left;
+
+    #home-box .swiper-container {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
     }
-    #home-box .swiper-container .swiper-wrapper{
-        float:left;
+
+    #home-box .swiper-container .swiper-wrapper {
+        float: left;
     }
-    #home-box .swiper-container .swiper-wrapper .swiper-slide{
-        width:100%;
-        position:relative;
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide {
+        width: 100%;
+        position: relative;
     }
-    #home-box .swiper-container .swiper-wrapper .swiper-slide img{
-        width:100%;
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 100%;
     }
-    #home-box .swiper-container .swiper-pagination-bullet{
-        width:10px;
-        height:10px;
+
+    #home-box .swiper-container .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
         background-color: #fff;
-        transition:.4s;
-        border:0.5px solid #fff;
-        margin:0 10px;
+        transition: .4s;
+        border: 0.5px solid #fff;
+        margin: 0 10px;
     }
-    
-    #home-box .home-txt-en{
-        position:absolute;
-        color:#fff;
+
+    #home-box .home-txt-en {
+        position: absolute;
+        color: #fff;
         font-size: 70px;
         font-family: 'Bebas Neue', cursive;
-        right:5px;
-        top:80px; 
+        right: 5px;
+        top: 80px;
         text-align: right;
-        width:100%;
+        width: 100%;
     }
-    #home-box .home-b .home-txt-en{
+
+    #home-box .home-b .home-txt-en {
         opacity: 0.7;
     }
-    #home-box .home-d .home-txt-ko{
-        color:#003478;
+
+    #home-box .home-d .home-txt-ko {
+        color: #003478;
         opacity: 1;
     }
-   
-    #home-box .home-txt-ko{
-        position:absolute;
-        color:#fff;
+
+    #home-box .home-txt-ko {
+        position: absolute;
+        color: #fff;
         font-size: 15px;
-        right:5px;
-        top:60px;
+        right: 5px;
+        top: 60px;
         font-weight: bold;
-        opacity:1;
+        opacity: 1;
     }
-    #home-box .home-finder-wrapper{
-        width:100%;
-        float:left;
+
+    #home-box .home-finder-wrapper {
+        width: 100%;
+        float: left;
         height: 100px;
-        position:relative;
+        position: relative;
     }
-    #home-box .home-finder-wrapper .home-finder{
-        width:90%;
-        margin:0 auto;
-        height:50%;
+
+    #home-box .home-finder-wrapper .home-finder {
+        width: 90%;
+        margin: 0 auto;
+        height: 50%;
         text-align: center;
-        margin-top:30px;
+        margin-top: 30px;
     }
-    #home-box .home-finder-wrapper .home-finder .finder-img{
-        width:20%;
-        float:right;
-        height:40px;
+
+    #home-box .home-finder-wrapper .home-finder .finder-img {
+        width: 20%;
+        float: right;
+        height: 40px;
     }
-    #home-box .home-finder-wrapper .home-finder .finder-img img{
-        width:25px;
-        margin-top:5px;
-        margin-right:20px;
+
+    #home-box .home-finder-wrapper .home-finder .finder-img img {
+        width: 25px;
+        margin-top: 5px;
+        margin-right: 20px;
     }
-    #home-box .home-finder-wrapper .home-finder .finder{
-        width:60%;
-        border:none;
-        margin:0 auto;
-        border-bottom:0.5px solid #ccc;
-        height:30px;
-        transition:.3s;
-        float:left;
-        padding-left:10px;
-        margin-left:30px;
+
+    #home-box .home-finder-wrapper .home-finder .finder {
+        width: 60%;
+        border: none;
+        margin: 0 auto;
+        border-bottom: 0.5px solid #ccc;
+        height: 30px;
+        transition: .3s;
+        float: left;
+        padding-left: 10px;
+        margin-left: 30px;
         border-radius: 0px;
-    } 
-    
+    }
+
     /* -------------------------------//HOME TEST----------------------------- */
-    
-    /* -------------------------------HOME INFO----------------------------- */ 
+
+    /* -------------------------------HOME INFO----------------------------- */
     #home-box .contact-info {
         background-color: #fafafa;
-        width:100%;
+        width: 100%;
         margin: 0 auto;
         position: relative;
         text-align: center;
         padding-top: 50px;
         overflow-y: none;
         padding-bottom: 50px;
-        float:left;
+        float: left;
     }
-    #home-box .contact-info .contact-info-wrap{
-        width:100%;
-        margin:0 auto;
-        float:left;
+
+    #home-box .contact-info .contact-info-wrap {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
     }
 
     #home-box .contact-info .contact-box .contact-control {
@@ -295,17 +308,20 @@ body {
         transition: .2s;
         color: #fff;
     }
-    #home-box .contact-info .contact-txt-box{
-        margin-bottom:40px;
+
+    #home-box .contact-info .contact-txt-box {
+        margin-bottom: 40px;
     }
-    #home-box .contact-info .contact-txt-box .contact-txt1{
+
+    #home-box .contact-info .contact-txt-box .contact-txt1 {
         font-family: 'Bebas Neue', cursive;
         font-size: 40px;
     }
-    #home-box .contact-info .contact-txt-box .contact-txt2{
-        font-size:11px;
+
+    #home-box .contact-info .contact-txt-box .contact-txt2 {
+        font-size: 11px;
     }
-    
+
 
     #home-box footer {
         /*position:relative;*/
@@ -315,7 +331,7 @@ body {
         margin: 0 auto;
         text-align: center;
         padding-top: 100px;
-        bottom:0;
+        bottom: 0;
         overflow: none;
     }
 
@@ -342,7 +358,7 @@ body {
     }
 
     #home-box footer .footer-txt-box .footer-txt1 {
-        font-family: 'Bebas Neue',cursive;
+        font-family: 'Bebas Neue', cursive;
         font-style: italic;
         color: #555;
         font-size: 14px;
@@ -355,63 +371,72 @@ body {
 
 
     /* -------------------------------INFORMATION--------------------------- */
-    #car-info{
-        width:100%;
+    #car-info, #suv-info, #commercial-info, #hybrid-info, #performance-info, #truck-info, #future-info {
+        width: 100%;
         margin: 0 auto;
-        float:left;
-        padding-top:80px;
+        float: left;
+        padding-top: 80px;
+        display: none;
     }
-    #car-info .car-info-wrapper{
-        width:100%;
+
+    .car-info-wrapper {
+        width: 100%;
         margin: 0 auto;
-        float:left;
-        padding-bottom:40px;
-        margin-bottom:40px;
-        border-bottom:0.5px solid #777;
-        height:300px;
+        float: left;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 0.5px solid #777;
+        height: 300px;
     }
-    #car-info .car-info-wrapper-last{
+
+    .car-info-wrapper-last {
         border: none;
     }
-    #car-info .car-info-wrapper .car-1 .car-txt-wrap{
-        width:30%;
-        float:left;
-        position:relative;
-   }
-    #car-info .car-info-wrapper .car-1 .car-txt-wrap .car-title{
-        font-family: 'Bebas Neue',cursive;
-        font-size:40px;
-        width:150%;
-        
+
+    .car-info-wrapper .car-1 .car-txt-wrap {
+        width: 30%;
+        float: left;
+        position: relative;
     }
-    #car-info .car-info-wrapper .car-1 .car-txt-wrap .car-txt{
+
+    .car-info-wrapper .car-1 .car-txt-wrap .car-title {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        width: 300%;
+
+    }
+
+    .car-info-wrapper .car-1 .car-txt-wrap .car-txt {
         line-height: 3.3;
         font-size: 14px;
         text-align: right;
-        color:#777;
-        border-bottom:0.5px solid #777;
-        width:80px;
-        
+        color: #777;
+        border-bottom: 0.5px solid #777;
+        width: 80px;
+
     }
-    #car-info .car-info-wrapper .car-1 .car-img-wrap{
-        width:65%;
-        float:right;
-        padding-top:65px;
+
+    .car-info-wrapper .car-1 .car-img-wrap {
+        width: 65%;
+        float: right;
+        padding-top: 65px;
     }
-    #car-info .car-info-wrapper .car-1 .car-img-wrap img{
-        width:450px;
+
+    .car-info-wrapper .car-1 .car-img-wrap img {
+        width: 450px;
         overflow-x: hidden;
     }
-    #car-info .car-info-wrapper .car-1 .car-img-wrap .more{
-        text-align: right;
-        margin-right:20px;
-        margin-top:35px;
-        font-size: 14px;
-        color:#003478;
-    }
-    
 
-    
+    .car-info-wrapper .car-1 .car-img-wrap .more {
+        text-align: right;
+        margin-right: 20px;
+        margin-top: 35px;
+        font-size: 14px;
+        color: #003478;
+    }
+
+
+
 
     /* 차량 간략설명 */
     .explain-window-wrap {
@@ -664,442 +689,497 @@ body {
 
 
     /* --------------------------SUPPORT---------------------------- */
-    #support{
-        float:left;
-        padding-top:80px;
+    #support {
+        float: left;
+        padding-top: 80px;
         display: none;
     }
-    
-    #support .swiper-container{
+
+    #support .swiper-container {
         width: 100%;
         height: auto;
         margin-top: 0px;
         position: relative;
     }
-    #support .support-main-img-wrap{
-        width:90%;
-        margin:0 auto;
-        padding-top:40px;
+
+    #support .support-main-img-wrap {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
     }
-    #support .support-main-img-wrap .support-img1{
+
+    #support .support-main-img-wrap .support-img1 {
         background-image: url(../images/support3.png);
-        width:70%;
-        height:280px;
-        float:left;
+        width: 70%;
+        height: 280px;
+        float: left;
         border-radius: 10px;
-        transition:.3s;
-        position:relative;
+        transition: .3s;
+        position: relative;
     }
-    #support .support-main-img-wrap .support-img2{
+
+    #support .support-main-img-wrap .support-img2 {
         background-image: url(../images/ecoboost3.png);
-        width:25%;
-        height:280px;
+        width: 25%;
+        height: 280px;
         background-size: cover;
-        float:left;
+        float: left;
         border-radius: 10px;
-        float:right;
-        transition:.3s;
-        position:relative;
-        opacity:0.3;
+        float: right;
+        transition: .3s;
+        position: relative;
+        opacity: 0.3;
     }
-    #support .support-main-img-wrap .support-img1 p{
-        position:absolute;
+
+    #support .support-main-img-wrap .support-img1 p {
+        position: absolute;
         font-family: 'Fjalla One', sans-serif;
-        color:#fff;
-        margin:0 auto;
-        width:100%;
+        color: #fff;
+        margin: 0 auto;
+        width: 100%;
         text-align: center;
-        font-size:40px;
-        margin-top:115px;
-        transition:.3s;
+        font-size: 40px;
+        margin-top: 115px;
+        transition: .3s;
     }
-    #support .support-main-img-wrap .support-img2 p{
-        position:absolute;
+
+    #support .support-main-img-wrap .support-img2 p {
+        position: absolute;
         font-family: 'Fjalla One', sans-serif;
-        color:#fff;
-        margin:0 auto;
-        width:100%;
+        color: #fff;
+        margin: 0 auto;
+        width: 100%;
         text-align: center;
-        font-size:20px;
-        margin-top:115px;
-        transition:.3s;
+        font-size: 20px;
+        margin-top: 115px;
+        transition: .3s;
     }
-    
-    #support .support-ex-wrapper1, .support-ex-wrapper2{
-        float:left;
-        width:100%;
-        margin:0 auto;
+
+    #support .support-ex-wrapper1,
+    .support-ex-wrapper2 {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
     }
-    #support .support-ex-wrapper2{
+
+    #support .support-ex-wrapper2 {
         display: none;
     }
-    #support .support-ex-wrap{
-        margin:0 auto;
-        width:90%;
-        border:0.5px solid #ccc;
+
+    #support .support-ex-wrap {
+        margin: 0 auto;
+        width: 90%;
+        border: 0.5px solid #ccc;
         border-radius: 10px;
-        padding-bottom:40px;
-        margin-top:40px;
+        padding-bottom: 40px;
+        margin-top: 40px;
     }
-    #support .sync3-wrap{
-        width:20%;
-        margin:0 auto;
+
+    #support .sync3-wrap {
+        width: 20%;
+        margin: 0 auto;
     }
-    #support .sync3-wrap .sync3{
+
+    #support .sync3-wrap .sync3 {
         text-align: center;
         background-color: #fff;
         font-family: 'Fjalla One', sans-serif;
         font-size: 20px;
-        color:#003478;
-        margin-top:-13px;
+        color: #003478;
+        margin-top: -13px;
     }
-    #support .ecoboost-wrap{
-        width:30%;
-        margin:0 auto;
+
+    #support .ecoboost-wrap {
+        width: 30%;
+        margin: 0 auto;
     }
-    #support .ecoboost-wrap .ecoboost{
+
+    #support .ecoboost-wrap .ecoboost {
         text-align: center;
         background-color: #fff;
         font-family: 'Fjalla One', sans-serif;
         font-size: 20px;
-        color:#003478;
-        margin-top:-13px;
+        color: #003478;
+        margin-top: -13px;
     }
-    #support .support-ex{
-        width:80%;
-        margin:0 auto;
+
+    #support .support-ex {
+        width: 80%;
+        margin: 0 auto;
         margin-top: 40px;
         font-family: 'Apple SD Gothic', sans-serif;
-        position:relative;
+        position: relative;
     }
-    #support .support-ex h1{
-        position:absolute;
-        color:#ccc;
-        font-size:40px;
-        left:-15px;
+
+    #support .support-ex h1 {
+        position: absolute;
+        color: #ccc;
+        font-size: 40px;
+        left: -15px;
         opacity: 0.3;
-        position:absolute;
-        top:-4px;
+        position: absolute;
+        top: -4px;
     }
-    #support .support-ex-wrap .support-ex .support-ex-title h1{
-        left:-12px;
+
+    #support .support-ex-wrap .support-ex .support-ex-title h1 {
+        left: -12px;
     }
-    #support .support-ex .support-ex-title{
-        font-size:20px;
+
+    #support .support-ex .support-ex-title {
+        font-size: 20px;
         font-weight: bold;
-        padding-left:20px;
-        color:#222;
-        
+        padding-left: 20px;
+        color: #222;
+
     }
-    #support .support-ex .support-ex-text{
-        font-size:13px;
-        padding-left:20px;
-        color:#444;
+
+    #support .support-ex .support-ex-text {
+        font-size: 13px;
+        padding-left: 20px;
+        color: #444;
     }
-    
-    #support .support-caution{
+
+    #support .support-caution {
         font-size: 12px;
-        padding-top:25px;
-        padding-left:45px;
+        padding-top: 25px;
+        padding-left: 45px;
         padding-bottom: 20px;
-        margin-top:20px;
-        color:#666;
+        margin-top: 20px;
+        color: #666;
         background-color: #f5f5f5;
-        float:left;
-        width:100%;
+        float: left;
+        width: 100%;
         /*border-top:0.3px solid #ccc;*/
-    }   
+    }
+
     /* --------------------------//SUPPORT---------------------------- */
-    
-    
-    
+
+
+
     /* -------------------------PROMOTION---------------------------- */
-    #promotion{
-        float:left;
-        width:100%;
-        padding-top:80px;
+    #promotion {
+        float: left;
+        width: 100%;
+        padding-top: 80px;
         display: none;
     }
-    #promotion .promotion-wrap{
-        width:90%;
-        margin:0 auto;
-        padding-top:40px;
+
+    #promotion .promotion-wrap {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
         margin-bottom: 40px;
     }
-    #promotion .promotion-wrap .promotion-img1{
+
+    #promotion .promotion-wrap .promotion-img1 {
         background-image: url(../images/promotion2.png);
-        width:100%;
-        height:250px;
+        width: 100%;
+        height: 250px;
         background-size: cover;
-        margin-bottom:40px;
+        margin-bottom: 40px;
         border-radius: 10px;
-        transition:.3s;
+        transition: .3s;
     }
-    
-    #promotion .promotion-wrap .promotion-img2{
+
+    #promotion .promotion-wrap .promotion-img2 {
         background-image: url(../images/promotion5.png);
-        width:100%;
-        height:280px;
+        width: 100%;
+        height: 280px;
         background-size: cover;
-        margin-bottom:40px;
+        margin-bottom: 40px;
         border-radius: 10px;
-        transition:.3s;
-        
+        transition: .3s;
+
     }
-    #promotion .promotion-wrap .promotion-img3{
+
+    #promotion .promotion-wrap .promotion-img3 {
         background-image: url(../images/promotion4.png);
-        width:100%;
-        height:250px;
+        width: 100%;
+        height: 250px;
         background-size: cover;
         border-radius: 10px;
-        transition:.3s;
-        
+        transition: .3s;
+
     }
-    #promotion .promotion-wrap .promotion-dark{
-        background-color: rgba(0,0,0,0.5);
-        width:100%;
+
+    #promotion .promotion-wrap .promotion-dark {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
         border-radius: 10px;
-        height:100%;
-        transition:.3s;
+        height: 100%;
+        transition: .3s;
     }
-    #promotion .promotion-wrap p{
-        color:#ccc;
+
+    #promotion .promotion-wrap p {
+        color: #ccc;
         font-size: 30px;
         text-align: center;
-        padding-top:110px;
+        padding-top: 110px;
     }
-    #promotion .promotion-wrap .promotion-img1 p{
-        color:#fff;
+
+    #promotion .promotion-wrap .promotion-img1 p {
+        color: #fff;
     }
-    #promotion .promotion-wrap .promotion-img2 p{
-        padding-top:120px;
+
+    #promotion .promotion-wrap .promotion-img2 p {
+        padding-top: 120px;
     }
-    
+
     /* --------------------------//PROMOTION---------------------------- */
-    
-    
-    
-    
-    
+
+
+
+
+
     /* --------------------------DRIVE-TEST---------------------------- */
     #drive-test {
-        width:100%;
-        float:left;
+        width: 100%;
+        float: left;
         display: none;
-        padding-top:80px;
+        padding-top: 80px;
         position: relative;
         overflow-x: hidden;
     }
-    #drive-test .drive-test-wrap{
-        width:90%;
+
+    #drive-test .drive-test-wrap {
+        width: 90%;
         margin: 0 auto;
-        margin-top:30px;
+        margin-top: 30px;
         display: block;
-        transition:.3s;
+        transition: .3s;
         transition-delay: 1s;
     }
-    #drive-test .drive-test-wrap .test-title{
+
+    #drive-test .drive-test-wrap .test-title {
         text-align: center;
         font-size: 30px;
         font-weight: bold;
     }
-    #drive-test .drive-test-wrap .into-wrap .test-caution{
+
+    #drive-test .drive-test-wrap .into-wrap .test-caution {
         text-align: center;
         font-size: 12px;
-        color:#003478;
-        margin-top:10px;
-        margin-bottom:60px;
+        color: #003478;
+        margin-top: 10px;
+        margin-bottom: 60px;
     }
-    #drive-test .drive-test-wrap .into-wrap .title{
-        float:left;
-        width:55%;
-        margin::0 auto;
-        margin-bottom:80px;
-        font-size:20px;
+
+    #drive-test .drive-test-wrap .into-wrap .title {
+        float: left;
+        width: 55%;
+        margin: :0 auto;
+        margin-bottom: 80px;
+        font-size: 20px;
         font-family: 'Bebas Neue', cursive;
     }
-    #drive-test .drive-test-wrap:nth-child(2) .into-wrap .title{
-        margin-bottom:80px;
+
+    #drive-test .drive-test-wrap:nth-child(2) .into-wrap .title {
+        margin-bottom: 80px;
     }
-    #drive-test .drive-test-wrap:nth-child(6) .into-wrap .title{
-        margin-bottom:150px;
+
+    #drive-test .drive-test-wrap:nth-child(6) .into-wrap .title {
+        margin-bottom: 150px;
     }
-    #drive-test .drive-test-wrap:nth-child(7) .into-wrap .title{
-        margin-bottom:90px;
+
+    #drive-test .drive-test-wrap:nth-child(7) .into-wrap .title {
+        margin-bottom: 90px;
     }
-    #drive-test .drive-test-wrap:nth-child(n+8):nth-child(-n+12) .into-wrap .title{
+
+    #drive-test .drive-test-wrap:nth-child(n+8):nth-child(-n+12) .into-wrap .title {
         margin-bottom: 40px;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail{
-        float:right;
-        width:35%;
-        margin:0 auto;
+
+    #drive-test .drive-test-wrap .into-wrap .model-detail {
+        float: right;
+        width: 35%;
+        margin: 0 auto;
         font-family: 'Bebas Neue', cursive;
         font-size: 17px;
-        margin-bottom:15px;
+        margin-bottom: 15px;
         line-height: 1.5;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail{
+
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail {
         position: relative;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text{
-        color:#888;
-        margin-top:5px;
+
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text {
+        color: #888;
+        margin-top: 5px;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text:hover{
-        color:#003478;
+
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text:hover {
+        color: #003478;
         transition: .3s;
     }
-    #drive-test .into-wrap .model-detail .detail .choose{
-        width:5px;
-        height:5px;
+
+    #drive-test .into-wrap .model-detail .detail .choose {
+        width: 5px;
+        height: 5px;
         border-radius: 5px;
         background-color: #003478;
-        position:absolute;
-        right:0px;
-        top:8px;
-        opacity:0;
+        position: absolute;
+        right: 0px;
+        top: 8px;
+        opacity: 0;
         transition: .3s;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline{
+
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline {
         width: 100%;
-        border-bottom:0.5px solid #ccc;
-        margin-top:4px;
+        border-bottom: 0.5px solid #ccc;
+        margin-top: 4px;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline-color{
-        border-bottom:0.5px solid #003478;
-        width:0%;
-        transition:.3s;
-        position:absolute;
-        bottom:0;
-        transition:.5s;
+
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline-color {
+        border-bottom: 0.5px solid #003478;
+        width: 0%;
+        transition: .3s;
+        position: absolute;
+        bottom: 0;
+        transition: .5s;
     }
-    #drive-test .drive-test-wrap .into-wrap .model-detail .detail:hover .underline-color{
-        width:100%;
+
+    #drive-test .drive-test-wrap .into-wrap .model-detail .detail:hover .underline-color {
+        width: 100%;
     }
-    
-    
-    #drive-test .drive-test-prev{
-        bottom:0;
-        width:49%;
-        float:left;
+
+
+    #drive-test .drive-test-prev {
+        bottom: 0;
+        width: 49%;
+        float: left;
         text-align: right;
-        color:#888;
-        margin-bottom:40px;
-        
+        color: #888;
+        margin-bottom: 40px;
+
     }
-    #drive-test .drive-test-next{
-        bottom:0;
-        width:49%;
-        float:right;
+
+    #drive-test .drive-test-next {
+        bottom: 0;
+        width: 49%;
+        float: right;
         text-align: left;
-        color:#003478;
-        margin-bottom:40px;
-        
+        color: #003478;
+        margin-bottom: 40px;
+
     }
-    #drive-test .drive-test-model-wrap .drive-test-next{
-        bottom:0;
-        width:100%;
-        float:right;
-        right:0;
+
+    #drive-test .drive-test-model-wrap .drive-test-next {
+        bottom: 0;
+        width: 100%;
+        float: right;
+        right: 0;
         text-align: center;
-        color:#003478;
+        color: #003478;
     }
-    
-    
-    
-    
+
+
+
+
     #drive-test .drive-test-area {
-        margin:0 auto;
-        margin-top:40px;
+        margin: 0 auto;
+        margin-top: 40px;
         display: none;
-        transition:.3s;
+        transition: .3s;
         opacity: 0;
     }
-    #drive-test .drive-test-area .into-wrap .title{
-        margin-bottom:190px;
+
+    #drive-test .drive-test-area .into-wrap .title {
+        margin-bottom: 190px;
     }
-    #drive-test .drive-test-area .into-wrap:nth-child(2) .title{
-        margin-bottom:220px;
+
+    #drive-test .drive-test-area .into-wrap:nth-child(2) .title {
+        margin-bottom: 220px;
     }
-    #drive-test .drive-test-area .into-wrap:nth-child(3) .title{
-        margin-bottom:110px;
+
+    #drive-test .drive-test-area .into-wrap:nth-child(3) .title {
+        margin-bottom: 110px;
     }
-    #drive-test .drive-test-area .into-wrap:nth-child(n+4):nth-child(-n+7) .title{
-        margin-bottom:50px;
+
+    #drive-test .drive-test-area .into-wrap:nth-child(n+4):nth-child(-n+7) .title {
+        margin-bottom: 50px;
     }
-    
-    
-    #drive-test .drive-test-information{
-        margin:0 auto;
-        margin-top:40px;
+
+
+    #drive-test .drive-test-information {
+        margin: 0 auto;
+        margin-top: 40px;
         display: none;
-        transition:.3s;
+        transition: .3s;
         opacity: 0;
     }
-    #drive-test .drive-test-information .test-title{
-        margin-bottom:40px;
+
+    #drive-test .drive-test-information .test-title {
+        margin-bottom: 40px;
     }
-    
-    #drive-test .drive-test-information{
+
+    #drive-test .drive-test-information {
         display: none;
         opacity: 0;
         transition: .3s;
     }
-    #drive-test .drive-test-information .into-wrap .drive-inform-wrap{
-        float:left;
-        width:100%;
+
+    #drive-test .drive-test-information .into-wrap .drive-inform-wrap {
+        float: left;
+        width: 100%;
     }
-    #drive-test .drive-test-information .into-wrap .title{
-        float:left;
-        margin-bottom:50px;
+
+    #drive-test .drive-test-information .into-wrap .title {
+        float: left;
+        margin-bottom: 50px;
     }
-    #drive-test .drive-test-information .into-wrap .detail-wrap{
-        width:41%;
-        float:right;
+
+    #drive-test .drive-test-information .into-wrap .detail-wrap {
+        width: 41%;
+        float: right;
     }
-    #drive-test .drive-test-information .detail-text{
-        border:none;
-        width:100%;
+
+    #drive-test .drive-test-information .detail-text {
+        border: none;
+        width: 100%;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
-    #drive-test .drive-test-information .drive-test-prev{
-        bottom:0;
-        width:45%;
-        float:left;
+
+    #drive-test .drive-test-information .drive-test-prev {
+        bottom: 0;
+        width: 45%;
+        float: left;
         text-align: right;
-        color:#888;
-        margin-bottom:40px;
-        margin-top:40px;
+        color: #888;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
-    
-    #drive-test .drive-test-information .drive-test-next{
-        bottom:0;
-        width:49%;
-        float:right;
+
+    #drive-test .drive-test-information .drive-test-next {
+        bottom: 0;
+        width: 49%;
+        float: right;
         text-align: left;
-        color:#003478;
-        margin-bottom:40px;
+        color: #003478;
+        margin-bottom: 40px;
         font-weight: bold;
-        margin-top:40px;
+        margin-top: 40px;
     }
+
     /* --------------------------//DRIVE-TEST---------------------------- */
-    
-    
-    
-    
+
+
+
+
     /* --------------------------FIXED-TOP---------------------------- */
-    .fixed-top{
-        width:100%;
-        height:30px;
+    .fixed-top {
+        width: 100%;
+        height: 30px;
         background-color: #f1f1f1;
-        position:fixed;
-        margin-top:-20px;
+        position: fixed;
+        margin-top: -20px;
         z-index: 7;
-        opacity:0.7;
-        transition:all ease 2s 2s;
+        opacity: 0.7;
+        transition: all ease 2s 2s;
     }
+
     /*#support .support-top1{
         width:180px;
         border-top:0.5px solid #333;
@@ -1107,15 +1187,16 @@ body {
         float:left;
         margin-left:13px;
     }*/
-    .fixed-top .fixed-top2{
-        width:40%;
-        float:right;
+    .fixed-top .fixed-top2 {
+        width: 40%;
+        float: right;
         text-align: right;
-        height:auto;
+        height: auto;
         margin: 7px 13px 7px 0;
-        font-size:12px;
-        color:#003478;
+        font-size: 12px;
+        color: #003478;
     }
+
     /* --------------------------//FIXED-TOP---------------------------- */
 
 }

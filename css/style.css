@@ -246,13 +246,19 @@ body {
     /* -------------------------------HOME INFO----------------------------- */ 
     #home-box .contact-info {
         background-color: #fafafa;
+        width:100%;
         margin: 0 auto;
         position: relative;
         text-align: center;
-        float: left;
         padding-top: 50px;
         overflow-y: none;
         padding-bottom: 50px;
+        float:left;
+    }
+    #home-box .contact-info .contact-info-wrap{
+        width:100%;
+        margin:0 auto;
+        float:left;
     }
 
     #home-box .contact-info .contact-box .contact-control {
@@ -349,59 +355,63 @@ body {
 
 
     /* -------------------------------INFORMATION--------------------------- */
-
+    #car-info{
+        width:100%;
+        margin: 0 auto;
+        float:left;
+        padding-top:80px;
+    }
+    #car-info .car-info-wrapper{
+        width:100%;
+        margin: 0 auto;
+        float:left;
+        padding-bottom:40px;
+        margin-bottom:40px;
+        border-bottom:0.5px solid #777;
+        height:300px;
+    }
+    #car-info .car-info-wrapper-last{
+        border: none;
+    }
+    #car-info .car-info-wrapper .car-1 .car-txt-wrap{
+        width:30%;
+        float:left;
+        position:relative;
+   }
+    #car-info .car-info-wrapper .car-1 .car-txt-wrap .car-title{
+        font-family: 'Bebas Neue',cursive;
+        font-size:40px;
+        width:150%;
+        
+    }
+    #car-info .car-info-wrapper .car-1 .car-txt-wrap .car-txt{
+        line-height: 3.3;
+        font-size: 14px;
+        text-align: right;
+        color:#777;
+        border-bottom:0.5px solid #777;
+        width:80px;
+        
+    }
+    #car-info .car-info-wrapper .car-1 .car-img-wrap{
+        width:65%;
+        float:right;
+        padding-top:65px;
+    }
+    #car-info .car-info-wrapper .car-1 .car-img-wrap img{
+        width:450px;
+        overflow-x: hidden;
+    }
+    #car-info .car-info-wrapper .car-1 .car-img-wrap .more{
+        text-align: right;
+        margin-right:20px;
+        margin-top:35px;
+        font-size: 14px;
+        color:#003478;
+    }
     
 
-    #car-info,
-    #suv-info,
-    #commercial-info,
-    #hybrid-info,
-    #performance-info,
-    #truck-info,
-    #future-info {
-        width: 100%;
-        height: auto;
-        background-color: #fff;
-        overflow-x: hidden;
-        transition: all 0.3s;
-    }
-
-    #car-info .swiper-container,
-    #suv-info .swiper-container,
-    #commercial-info .swiper-container,
-    #hybrid-info .swiper-container,
-    #performance-info .swiper-container,
-    #truck-info .swiper-container,
-    #future-info .swiper-container{
-        width: 85%;
-        height: 700px;
-        margin-top: 60px;
-        position: relative;
-    }
-
-    #car-info .swiper-slide,
-    #suv-info .swiper-slide,
-    #commercial-info .swiper-slide,
-    #hybrid-info .swiper-slide,
-    #performance-info .swiper-slide,
-    #truck-info .swiper-slide,
-    #future-info .swiper-slide {
-        text-align: center;
-        display: flex;
-        /* 내용을 중앙정렬 하기위해 flex 사용 */
-        align-items: center;
-        /* 위아래 기준 중앙정렬 */
-        justify-content: center;
-        /* 좌우 기준 중앙정렬 */
-        position: relative;
-    }
-
-    .swiper-slide .vehicle-img {
-        width: 300px;
-        position: absolute;
-        top: 50px;
-        margin: 10px 0 10px 0;
-    }
+    
 
     /* 차량 간략설명 */
     .explain-window-wrap {

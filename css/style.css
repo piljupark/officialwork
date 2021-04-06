@@ -396,7 +396,10 @@ body {
         border: none;
         margin-bottom:0;
     }
-
+    .ford-sport .car-txt-wrap .car-title{
+        font-style: italic;
+        color:#003478;
+    }
     .car-info-wrapper .car-1 .car-txt-wrap {
         width: 30%;
         float: left;
@@ -407,6 +410,7 @@ body {
         font-family: 'Bebas Neue', cursive;
         font-size: 40px;
         width: 300%;
+        margin-left:10px;
 
     }
 
@@ -416,7 +420,7 @@ body {
         text-align: right;
         color: #777;
         border-bottom: 0.5px solid #777;
-        width: 80px;
+        width: 90px;
 
     }
 

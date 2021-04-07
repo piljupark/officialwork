@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&display=swap');
 
 a {
@@ -878,7 +879,26 @@ body {
         padding-top: 40px;
         margin-bottom: 40px;
     }
-
+    #promotion .promotion-wrap .promotion-img-wrap{
+        width:300px;
+        text-align: center;
+        overflow: hidden;
+        margin:0 auto;
+        margin-bottom:20px;
+        height:220px;
+        border-radius: 10px;
+        transition:.3s;
+    }
+    #promotion .promotion-wrap .promotion-img-wrap:hover{
+        height:400px;
+    }
+    #promotion .promotion-wrap .promotion-img-wrap img{
+        width:300px;
+        border-radius: 10px;
+        
+    }
+    
+    /*
     #promotion .promotion-wrap .promotion-img1 {
         background-image: url(../images/promotion2.png);
         width: 100%;
@@ -932,7 +952,11 @@ body {
     #promotion .promotion-wrap .promotion-img2 p {
         padding-top: 120px;
     }
-
+    
+    
+    */
+    
+    
     /* --------------------------//PROMOTION---------------------------- */
 
 

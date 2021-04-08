@@ -70,7 +70,7 @@ html {
         width: 180px;
         float: left;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 13px;
     }
 
     .sidebar-menu {
@@ -1098,21 +1098,19 @@ html {
     /* --------------------------//FIXED-TOP---------------------------- */
 
 
-
-
-
-
-
-
-
 @media screen and (max-width:329px) and (min-width:280px) {
     
-
+    
+    
+    
+    
+    
     .header .menu-btn a img {
         width: 60px;
     }
     .header .logo-btn a img {
         width: 150px;
+        margin-top:15px;
     }
     .sidebar-menu {
         width: 60%;
@@ -1120,7 +1118,14 @@ html {
 
     /* ------------------------------//MODEL-FORM--------------------------- */
 
+    #home-box .home-txt-en {
 
+        font-size:50px;
+    }
+
+    #home-box .home-txt-ko {
+        font-size: 13px;
+    }
     #home-box footer .footer-logo-img-box img {
         width: 160px;
     }

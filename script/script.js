@@ -456,41 +456,25 @@ $(document).ready(function () {
         $("#support > .support-caution").css("display", "block");
     });
 
-    $("#promotion > .promotion-wrap > .promotion-img1 > .promotion-dark").click(function () {
-        $("#promotion > .promotion-wrap > .promotion-img1").css("height", "380px");
-        $("#promotion > .promotion-wrap > .promotion-img2").css("height", "280px");
-        $("#promotion > .promotion-wrap > .promotion-img3").css("height", "250px");
-        $("#promotion > .promotion-wrap > .promotion-img1 > .promotion-dark").css("background-color", "rgba(0,0,0,0)");
-        $("#promotion > .promotion-wrap > .promotion-img2 > .promotion-dark").css("background-color", "rgba(0,0,0,0.5)");
-        $("#promotion > .promotion-wrap > .promotion-img3 > .promotion-dark").css("background-color", "rgba(0,0,0,0.5)");
-        $("#promotion > .promotion-wrap > .promotion-img1 > .promotion-dark > p").css("opacity", "0");
-        $("#promotion > .promotion-wrap > .promotion-img2 > .promotion-dark > p").css("opacity", "1");
-        $("#promotion > .promotion-wrap > .promotion-img3 > .promotion-dark > p").css("opacity", "1");
+    $("#promotion > .promotion-wrap > .promotion-img-wrap1").hover(function(){
+        $("#promotion > .promotion-wrap > .promotion-img-wrap1 > .promotion-txt").css("display","none");
+        $("#promotion > .promotion-wrap > .promotion-img-wrap2 > .promotion-txt").css("display","block");
+        $("#promotion > .promotion-wrap > .promotion-img-wrap3 > .promotion-txt").css("display","block");
+    });
+    
+    $("#promotion > .promotion-wrap > .promotion-img-wrap2").hover(function(){
+        $("#promotion > .promotion-wrap > .promotion-img-wrap1 > .promotion-txt").css("display","block");
+        $("#promotion > .promotion-wrap > .promotion-img-wrap2 > .promotion-txt").css("display","none");
+        $("#promotion > .promotion-wrap > .promotion-img-wrap3 > .promotion-txt").css("display","block");
+    });
+    
+    $("#promotion > .promotion-wrap > .promotion-img-wrap3").hover(function(){
+        $("#promotion > .promotion-wrap > .promotion-img-wrap1 > .promotion-txt").css("display","block");
+        $("#promotion > .promotion-wrap > .promotion-img-wrap2 > .promotion-txt").css("display","block");
+        $("#promotion > .promotion-wrap > .promotion-img-wrap3 > .promotion-txt").css("display","none");
     });
 
-    $("#promotion > .promotion-wrap > .promotion-img2 > .promotion-dark").click(function () {
-        $("#promotion > .promotion-wrap > .promotion-img1").css("height", "250px");
-        $("#promotion > .promotion-wrap > .promotion-img2").css("height", "438px");
-        $("#promotion > .promotion-wrap > .promotion-img3").css("height", "250px");
-        $("#promotion > .promotion-wrap > .promotion-img1 > .promotion-dark").css("background-color", "rgba(0,0,0,0.5)");
-        $("#promotion > .promotion-wrap > .promotion-img2 > .promotion-dark").css("background-color", "rgba(0,0,0,0)");
-        $("#promotion > .promotion-wrap > .promotion-img3 > .promotion-dark").css("background-color", "rgba(0,0,0,0.5)");
-        $("#promotion > .promotion-wrap > .promotion-img1 > .promotion-dark > p").css("opacity", "1");
-        $("#promotion > .promotion-wrap > .promotion-img2 > .promotion-dark > p").css("opacity", "0");
-        $("#promotion > .promotion-wrap > .promotion-img3 > .promotion-dark > p").css("opacity", "1");
-    });
-
-    $("#promotion > .promotion-wrap > .promotion-img3 > .promotion-dark").click(function () {
-        $("#promotion > .promotion-wrap > .promotion-img1").css("height", "250px");
-        $("#promotion > .promotion-wrap > .promotion-img2").css("height", "280px");
-        $("#promotion > .promotion-wrap > .promotion-img3").css("height", "380px");
-        $("#promotion > .promotion-wrap > .promotion-img1 > .promotion-dark").css("background-color", "rgba(0,0,0,0.5)");
-        $("#promotion > .promotion-wrap > .promotion-img2 > .promotion-dark").css("background-color", "rgba(0,0,0,0.5)");
-        $("#promotion > .promotion-wrap > .promotion-img3 > .promotion-dark").css("background-color", "rgba(0,0,0,0)");
-        $("#promotion > .promotion-wrap > .promotion-img1 > .promotion-dark > p").css("opacity", "1");
-        $("#promotion > .promotion-wrap > .promotion-img2 > .promotion-dark > p").css("opacity", "1");
-        $("#promotion > .promotion-wrap > .promotion-img3 > .promotion-dark > p").css("opacity", "0");
-    });
+    
 
     $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .detail-text1").click(function () {
         $("#drive-test > .drive-test-wrap > .into-wrap > .detail-wrap > .detail > .choose1").css("opacity", "1");

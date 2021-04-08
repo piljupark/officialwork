@@ -324,8 +324,84 @@ $(document).ready(function () {
             right: "-" + 50 + "%"
         });
     });
-
     
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .car").click(function(){
+       $("#car-info").css("display","block"); 
+        $("#suv-info").css("display","none"); 
+        $("#commercial-info").css("display","none"); 
+        $("#hybrid-info").css("display","none"); 
+        $("#performance-info").css("display","none"); 
+        $("#truck-info").css("display","none"); 
+        $("#future-info").css("display","none"); 
+        
+        $("#home-box").hide();
+    });  
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .suv").click(function(){
+       $("#suv-info").css("display","block"); 
+        $("#car-info").css("display","none"); 
+        $("#commercial-info").css("display","none"); 
+        $("#hybrid-info").css("display","none"); 
+        $("#performance-info").css("display","none"); 
+        $("#truck-info").css("display","none"); 
+        $("#future-info").css("display","none"); 
+        
+        $("#home-box").hide();
+    }); 
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .commercial").click(function(){
+       $("#commercial-info").css("display","block"); 
+        $("#suv-info").css("display","none"); 
+        $("#car-info").css("display","none"); 
+        $("#hybrid-info").css("display","none"); 
+        $("#performance-info").css("display","none"); 
+        $("#truck-info").css("display","none"); 
+        $("#future-info").css("display","none"); 
+        
+        $("#home-box").hide();
+    });  
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .hybrid").click(function(){
+       $("#hybrid-info").css("display","block"); 
+        $("#suv-info").css("display","none"); 
+        $("#commercial-info").css("display","none"); 
+        $("#car-info").css("display","none"); 
+        $("#performance-info").css("display","none"); 
+        $("#truck-info").css("display","none"); 
+        $("#future-info").css("display","none"); 
+        
+        $("#home-box").hide();
+    }); 
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .performance").click(function(){
+       $("#performance-info").css("display","block"); 
+        $("#suv-info").css("display","none"); 
+        $("#commercial-info").css("display","none"); 
+        $("#hybrid-info").css("display","none"); 
+        $("#car-info").css("display","none"); 
+        $("#truck-info").css("display","none"); 
+        $("#future-info").css("display","none"); 
+        
+        $("#home-box").hide();
+    });  
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .truck").click(function(){
+       $("#truck-info").css("display","block");
+        $("#suv-info").css("display","none"); 
+        $("#commercial-info").css("display","none"); 
+        $("#hybrid-info").css("display","none"); 
+        $("#performance-info").css("display","none"); 
+        $("#car-info").css("display","none"); 
+        $("#future-info").css("display","none"); 
+        
+        $("#home-box").hide();
+    });  
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .future").click(function(){
+       $("#future-info").css("display","block"); 
+        $("#suv-info").css("display","none"); 
+        $("#commercial-info").css("display","none"); 
+        $("#hybrid-info").css("display","none"); 
+        $("#performance-info").css("display","none"); 
+        $("#truck-info").css("display","none"); 
+        $("#car-info").css("display","none"); 
+        
+        $("#home-box").hide();
+    });  
     
     
     

@@ -75,7 +75,7 @@ body {
     }
 
     .sidebar-menu {
-        width: 65%;
+        width: 60%;
         height: 100%;
         background: #f1f1f1;
         /* 컬러1 */
@@ -890,10 +890,10 @@ body {
         transition:.7s;
         position:relative;
     }
-    #promotion .promotion-wrap .promotion-img-wrap:hover{
+    #promotion .promotion-wrap .promotion-img-wrap:click{
         height:315px;
     }
-    #promotion .promotion-wrap .promotion-img-wrap1:hover{
+    #promotion .promotion-wrap .promotion-img-wrap1:{
         height:270px;
     }
     #promotion .promotion-wrap .promotion-img-wrap3:hover{
@@ -1308,7 +1308,7 @@ body {
     }
 
     .sidebar-menu {
-        width: 65%;
+        width: 60%;
         height: 100%;
         background: #f1f1f1;
         /* 컬러1 */

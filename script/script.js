@@ -60,7 +60,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > li > .suv").click(function () {
@@ -84,7 +84,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > li > .commercial").click(function () {
@@ -108,7 +108,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > li > .hybrid").click(function () {
@@ -132,7 +132,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
 
     });
@@ -157,7 +157,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > li > .truck").click(function () {
@@ -181,7 +181,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > li > .future").click(function () {
@@ -205,7 +205,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .parts-service").click(function () {
@@ -228,7 +228,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .maintain").click(function () {
@@ -251,7 +251,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
 
     });
@@ -275,7 +275,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .promotion").click(function () {
@@ -298,7 +298,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
      $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .drive-test").click(function () {
@@ -321,7 +321,7 @@ $(document).ready(function () {
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
         $(".sidebar-menu").animate({
-            right: "-" + 70 + "%"
+            right: "-" + 50 + "%"
         });
     });
 
@@ -456,13 +456,16 @@ $(document).ready(function () {
         $("#support > .support-caution").css("display", "block");
     });
 
+    
     $("#promotion > .promotion-wrap > .promotion-img-wrap1").hover(function(){
+        
         $("#promotion > .promotion-wrap > .promotion-img-wrap1 > .promotion-txt").css("display","none");
         $("#promotion > .promotion-wrap > .promotion-img-wrap2 > .promotion-txt").css("display","block");
         $("#promotion > .promotion-wrap > .promotion-img-wrap3 > .promotion-txt").css("display","block");
     });
     
     $("#promotion > .promotion-wrap > .promotion-img-wrap2").hover(function(){
+        
         $("#promotion > .promotion-wrap > .promotion-img-wrap1 > .promotion-txt").css("display","block");
         $("#promotion > .promotion-wrap > .promotion-img-wrap2 > .promotion-txt").css("display","none");
         $("#promotion > .promotion-wrap > .promotion-img-wrap3 > .promotion-txt").css("display","block");

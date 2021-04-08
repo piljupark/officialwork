@@ -37,6 +37,7 @@ html {
     }
 
     .header {
+        position:relative;
         width: 100%;
         height: 60px;
         background: #fff;
@@ -786,13 +787,15 @@ html {
         text-align: center;
         overflow: hidden;
         margin:0 auto;
-        margin-bottom:20px;
+        margin-bottom:40px;
         height:450px;
         border-radius: 10px;
         transition:.7s;
         position:relative;
     }
-    
+#promotion .promotion-wrap .promotion-img-wrap3{
+    margin-bottom: 10px;
+}
     #promotion .promotion-wrap .promotion-img-wrap img{
         width:600px;
         border-radius: 10px;   
@@ -1100,7 +1103,9 @@ html {
 
 @media screen and (max-width:329px) and (min-width:280px) {
     
-    
+    .tablet-pc-vehicle-menu{
+        display: none;
+    }
     
     
     
@@ -1119,7 +1124,6 @@ html {
     /* ------------------------------//MODEL-FORM--------------------------- */
 
     #home-box .home-txt-en {
-
         font-size:50px;
     }
 
@@ -1165,11 +1169,13 @@ html {
         text-align: center;
         overflow: hidden;
         margin:0 auto;
-        margin-bottom:20px;
         height:220px;
         border-radius: 10px;
         transition:.7s;
         position:relative;
+    }
+    #promotion .promotion-wrap .promotion-img-wrap3{
+        margin-bottom: 10px;
     }
     #promotion .promotion-wrap .promotion-img-wrap:hover{
         height:315px;
@@ -1205,6 +1211,10 @@ html {
 
 
 @media screen and (max-width:500px) and (min-width:330px) {
+     .tablet-pc-vehicle-menu{
+        display: none;
+    }
+    
     .sidebar-menu {
         width: 60%;
         height: 100%;
@@ -1302,12 +1312,12 @@ html {
 
 }
 
-
 @media screen and (max-width:700px) and (min-width:501px) {
     
-
-   
-
+     .tablet-pc-vehicle-menu{
+        display: none;
+    }
+    
     /* --------------------------SUPPORT---------------------------- */
    
     #support .support-caution {
@@ -1373,9 +1383,35 @@ html {
         background-color: rgba(0,0,0,0.5);
         transition: .8s;
     }
+    
+    /* -------------------------//PROMOTION---------------------------- */
 }
 
 @media screen and (max-width:850px) and (min-width:701px) {
+    .header .menu-btn{
+        display: none;
+    }
+    .tablet-pc-vehicle-menu{
+        float:right;
+        width:70%;
+        height:60px;
+        z-index: 2;
+        position: absolute;
+        right:0;
+        bottom:0;
+    }
+    .tablet-pc-vehicle-menu-wrap{
+        width:90%;
+        float:right;
+        height:50%;
+        margin-top:24.5px;
+    }
+    .tablet-pc-vehicle-menu-wrap a{
+        float:left;
+        font-family: 'Bebas Neue',cursive;
+        padding:0 10px;
+        font-size: 12px;
+    }
 
     /* --------------------------SUPPORT---------------------------- */
 

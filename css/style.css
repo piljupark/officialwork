@@ -138,12 +138,55 @@ html {
         padding-top: 0px;
     }
 
+
+
+    .tablet-pc-vehicle-menu{
+        float:right;
+        width:70%;
+        height:60px;
+        z-index: 2;
+        position: absolute;
+        right:0;
+        bottom:0;
+    }
+    .tablet-pc-vehicle-menu-wrap{
+        width:90%;
+        float:right;
+        height:50%;
+        margin-top:24.5px;
+    }
+    .tablet-pc-vehicle-menu-wrap a{
+        float:left;
+        font-family: 'Bebas Neue',cursive;
+        padding:0 10px;
+        font-size: 12px;
+        
+    }
+
+
+
     /* ------------------------------//MODEL-FORM--------------------------- */
 
 
-
-
-
+.tablet-pc-btn{
+    position: fixed;
+    width:70px;
+    height:50px;
+    background-color: #000;
+    border-radius: 25px;
+    bottom:0px;
+    right:-20px;
+    z-index: 10;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: .6s;
+}
+.tablet-pc-btn:hover{
+    width:200px;
+}
+.tablet-pc-btn img{
+    width:40px;
+}
 
     /* -------------------------------HOME TEST----------------------------- */
     #home-box {
@@ -1391,27 +1434,7 @@ html {
     .header .menu-btn{
         display: none;
     }
-    .tablet-pc-vehicle-menu{
-        float:right;
-        width:70%;
-        height:60px;
-        z-index: 2;
-        position: absolute;
-        right:0;
-        bottom:0;
-    }
-    .tablet-pc-vehicle-menu-wrap{
-        width:90%;
-        float:right;
-        height:50%;
-        margin-top:24.5px;
-    }
-    .tablet-pc-vehicle-menu-wrap a{
-        float:left;
-        font-family: 'Bebas Neue',cursive;
-        padding:0 10px;
-        font-size: 12px;
-    }
+    
 
     /* --------------------------SUPPORT---------------------------- */
 

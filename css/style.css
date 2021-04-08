@@ -902,7 +902,6 @@ body {
     }
     #promotion .promotion-txt{
         color:#f1f1f1;
-        z-index: 10;
         margin-bottom:50px;
         font-size: 40px;
         position:absolute;

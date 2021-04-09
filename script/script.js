@@ -403,6 +403,57 @@ $(document).ready(function () {
         $("#home-box").hide();
     });  
     
+   
+    
+    $(".tablet-pc-btn > .parts-service").click(function(){
+        $("#parts").css("display","block");
+        $("#maintain").hide();
+        $("#support").hide();
+        $("#promotion").hide();
+        $("#drive-test").hide();
+        
+        $("#home-box").hide();
+    });
+    
+    $(".tablet-pc-btn > .maintain").click(function(){
+        $("#parts").hide();
+        $("#maintain").css("display","block");
+        $("#support").hide();
+        $("#promotion").hide();
+        $("#drive-test").hide();
+        
+        $("#home-box").hide();
+    });
+    
+    $(".tablet-pc-btn > .sync3-ecoboost").click(function(){
+        $("#parts").hide();
+        $("#maintain").hide();
+        $("#support").css("display","block");
+        $("#promotion").hide();
+        $("#drive-test").hide();
+        
+        $("#home-box").hide();
+    });
+    
+    $(".tablet-pc-btn > .promotion").click(function(){
+        $("#parts").hide();
+        $("#maintain").hide();
+        $("#support").hide();
+        $("#promotion").css("display","block");
+        $("#drive-test").hide();
+        
+        $("#home-box").hide();
+    });
+    
+    $(".tablet-pc-btn > .drive-test").click(function(){
+        $("#parts").hide();
+        $("#maintain").hide();
+        $("#support").hide();
+        $("#promotion").hide();
+        $("#drive-test").css("display","block");
+        
+        $("#home-box").hide();
+    });
     
     
     $("#maintain > .maintain-menu > a > .menu1").click(function () {

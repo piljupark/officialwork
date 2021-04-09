@@ -174,32 +174,33 @@ html {
 
 .tablet-pc-btn {
     position: fixed;
-    width: 70px;
+    width: 100%;
     height: 50px;
     background-color: #000;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     bottom: 0px;
-    right: -20px;
-    z-index: 10;
-    opacity: 0.4;
+    opacity: 1;
     overflow: hidden;
     transition: .6s;
+    z-index: 100;
 }
 
+/*
 .tablet-pc-btn:hover {
     width: 650px;
     opacity:1;
 }
-
-.tablet-pc-btn img {
-    width: 45px;
-    margin-left: 5px;
-    margin-top: 16px;
-    float: left;
+.tablet-pc-btn:before{
+    width:70px;
+    opacity:0.4;
 }
+*/
 
-.tablet-pc-btn a:nth-child(2) {
-    margin-left: 40px;
+.tablet-pc-btn-menu-wrap{
+    position:absolute;
+    width:540px;
+    right:0;
 }
 
 .tablet-pc-btn a {
@@ -207,12 +208,8 @@ html {
     margin: 0 10px;
     color: #fff;
     font-size: 11px;
-    text-align: left;
     margin-top: 19px;
-    font-weight: bold;
     transition: .3s;
-    opacity: 1;
-    z-index: 10;
     font-family: 'Bebas Neue', cursive;
 }
 

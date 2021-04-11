@@ -419,7 +419,7 @@ $(document).ready(function () {
         $("#car-info").css("display","none"); 
         $("#future-info").css("display","none"); 
         
-        $("#parts").css("display","block");
+        $("#parts").hide();
         $("#maintain").hide();
         $("#support").hide();
         $("#promotion").hide();
@@ -434,14 +434,13 @@ $(document).ready(function () {
         $("#hybrid-info").css("display","none"); 
         $("#performance-info").css("display","none"); 
         $("#truck-info").css("display","none"); 
-        $("#future-info").css("display","none"); 
-       $("#future-info").css("display","block"); 
-        $("#suv-info").css("display","none"); 
-        $("#commercial-info").css("display","none"); 
-        $("#hybrid-info").css("display","none"); 
-        $("#performance-info").css("display","none"); 
-        $("#truck-info").css("display","none"); 
-        $("#car-info").css("display","none"); 
+        $("#future-info").css("display","block"); 
+       
+        $("#parts").hide();
+        $("#maintain").hide();
+        $("#support").hide();
+        $("#promotion").hide();
+        $("#drive-test").hide();
         
         $("#home-box").hide();
     });  

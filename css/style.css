@@ -416,31 +416,60 @@ footer .footer-line{
     margin:0 auto;
     margin-bottom:60px;
 }
-
+footer .footer-img-box-wrap{
+    float:left;
+    width:100%;
+    position:relative;
+}
 footer .footer-logo-img-box {
     width: 20%;
-    
     margin-bottom: 20px;
+    float:left;
 }
 
 footer .footer-logo-img-box img {
     width: 200px;
+    opacity: 1;
+}
+
+footer .footer-sns-img-box{
+    width:230px;
+    position: absolute;
+    right:0;
 }
 
 footer .footer-sns-img-box img {
-    opacity: .7;
+    width:40px;
+    opacity: .5;
     margin-right: 18px;
     transition: .3s;
+    margin-top:10px;
 }
-
+footer .footer-sns-img-box .sns-img-last{
+    margin-right:0px;
+}
 footer .footer-sns-img-box img:hover {
     opacity: 1;
     transition: .3s;
 }
 
-footer .footer-txt-box .footer-txt1 {
+footer .footer-txt-box{
+    width:100%;
+    float:left;
     font-family: 'Bebas Neue', cursive;
-    font-style: italic;
+}
+footer .footer-txt-box a{
+    margin:0 10px;
+    transition:.3s;
+    opacity: .5;
+}
+footer .footer-txt-box a:hover{
+    opacity: 1;
+}
+footer .footer-txt-box .footer-txt-ko{
+    font-size: 14px;
+}
+footer .footer-txt-box .footer-txt1 {
     color: #555;
     font-size: 14px;
     margin-top: 20px;

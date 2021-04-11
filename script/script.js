@@ -1331,7 +1331,7 @@ $(document).ready(function () {
 
     
     
-    $('footer > .footer-logo-img-box > img').click(function () {
+    $('footer > .footer-wrap > .footer-img-box-wrap > .footer-logo-img-box > .bottom-logo').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 400);

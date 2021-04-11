@@ -167,7 +167,7 @@ $(document).ready(function () {
         $("#commercial-info").hide();
         $("#hybrid-info").hide();
         $("#performance-info").hide();
-        $("#truck-info").css("height", "810px");
+        
         $("#truck-info").show();
         $("#future-info").hide();
         $("#parts").hide();
@@ -426,7 +426,8 @@ $(document).ready(function () {
         $("#drive-test").hide();
         
         $("#home-box").hide();
-    });  
+    }); 
+    
     $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .future").click(function(){
         $("#car-info").css("display","none"); 
         $("#suv-info").css("display","none"); 

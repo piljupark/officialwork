@@ -1559,6 +1559,9 @@ footer .footer-txt-box-wrap .footer-txt1 {
     bottom: 0;
     overflow: none;
     padding-bottom:30px;
+    background-color: #000;
+        
+        
 }
 footer .footer-wrap{
     width:90%;
@@ -1569,6 +1572,7 @@ footer .footer-line{
     border-top:0.5px solid #ccc;
     margin:0 auto;
     margin-bottom:60px;
+    display: none;
 }
 footer .footer-img-box-wrap{
     float:left;
@@ -1579,11 +1583,13 @@ footer .footer-logo-img-box {
     width: 100%;
     margin-bottom: 20px;
     float:left;
+    background-color: #f1f1f1;
 }
 
 footer .footer-logo-img-box img {
     width: 180px;
     opacity: 1;
+    display: none;
 }
 
 footer .footer-sns-img-box{
@@ -1599,6 +1605,7 @@ footer .footer-sns-img-box img {
     margin-right: 18px;
     transition: .3s;
     margin-top:10px;
+    background-color: #fff;
 }
 footer .footer-sns-img-box .sns-img-last{
     margin-right:0px;
@@ -1612,6 +1619,7 @@ footer .footer-txt-box-wrap{
     width:100%;
     float:left;
     font-family: 'Bebas Neue', cursive;
+    
 }
 footer .footer-txt-box-wrap .footer-txt-box{
     width:100%;
@@ -1621,8 +1629,9 @@ footer .footer-txt-box-wrap .footer-txt-box{
 footer .footer-txt-box-wrap a{
     margin:0 4px;
     transition:.3s;
-    opacity: .5;
+    opacity: .7;
     font-size: 12px;
+    color:#fff;
 }
 footer .footer-txt-box-wrap a:hover{
     opacity: 1;
@@ -1633,10 +1642,11 @@ footer .footer-txt-box-wrap .footer-txt-ko{
 
 footer .footer-txt-box-wrap .footer-txt1 {
     margin-top:10px;
-    opacity: .5;
+    opacity: .7;
     font-size: 13.2px;
     text-align: center;
     margin-right: 0;
+    color:#fff;
 }
 
     /* --------------------------//FOOTER---------------------------- */

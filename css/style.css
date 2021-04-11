@@ -184,6 +184,7 @@ html {
     overflow: hidden;
     transition: .6s;
     z-index: 100;
+    border-top:0.5px solid #333;
 }
 
 /*
@@ -201,6 +202,7 @@ html {
     position: absolute;
     width: 520px;
     right: 0;
+    
 }
 
 .tablet-pc-btn a {
@@ -407,6 +409,7 @@ footer {
     bottom: 0;
     overflow: none;
     padding-bottom: 50px;
+    background-color: #000;
 }
 
 footer .footer-wrap {
@@ -419,6 +422,7 @@ footer .footer-line {
     border-top: 0.5px solid #ccc;
     margin: 0 auto;
     margin-bottom: 60px;
+    display: none;
 }
 
 footer .footer-img-box-wrap {
@@ -435,18 +439,18 @@ footer .footer-logo-img-box {
 
 footer .footer-logo-img-box img {
     width: 150px;
-    opacity: 1;
+    opacity: 0;
 }
 
 footer .footer-sns-img-box {
-    width: 230px;
+    width: 220px;
     position: absolute;
     right: 0;
 }
 
 footer .footer-sns-img-box img {
-    width: 40px;
-    opacity: .5;
+    width: 36px;
+    opacity: .7;
     margin-right: 18px;
     transition: .3s;
     margin-top: 10px;
@@ -472,9 +476,12 @@ footer .footer-txt-box-wrap .footer-txt-box {
 }
 
 footer .footer-txt-box-wrap a {
-    margin: 0 10px;
+    margin: 0 8px;
     transition: .3s;
-    opacity: .5;
+    opacity: .7;
+    font-size: 10px;
+    float:right;
+    color:#fff;
 }
 
 footer .footer-txt-box-wrap a:hover {
@@ -482,18 +489,17 @@ footer .footer-txt-box-wrap a:hover {
 }
 
 footer .footer-txt-box-wrap .footer-txt-ko {
-    font-size: 14px;
+    font-size: 5px;
 }
 
-footer .footer-txt-box-wrap .ko2 {
-    margin-right: 5px;
-}
 
 footer .footer-txt-box-wrap .footer-txt1 {
-    margin-top: 10px;
-    opacity: .5;
+    margin-top: 30px;
+    opacity: .7;
     text-align: right;
     margin-right: 5px;
+    font-size: 13px;
+    color:#fff;
 }
 
 
@@ -1364,117 +1370,107 @@ footer .footer-txt-box-wrap .footer-txt1 {
     /* --------------------------//PROMOTION---------------------------- */
 
 
-    /* --------------------------FOOTER---------------------------- */
-    footer {
-        /*position:relative;*/
-        position: relative;
-        width: 100%;
-        float: left;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 60px;
-        bottom: 0;
-        overflow: none;
-        padding-bottom: 30px;
-        background-color: #000;
-    }
+   footer {
+    /*position:relative;*/
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    padding-top:50px;
+    bottom: 0;
+    overflow: none;
+    padding-bottom: 50px;
+    background-color: #000;
+}
 
-    footer .footer-wrap {
-        width: 90%;
-        margin: 0 auto;
-    }
+footer .footer-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    footer .footer-line {
-        width: 90%;
-        border-top: 0.5px solid #ccc;
-        margin: 0 auto;
-        margin-bottom: 60px;
-        display: none;
-    }
+footer .footer-line {
+    width: 100%;
+    border-top: 0.5px solid #ccc;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: none;
+}
 
-    footer .footer-img-box-wrap {
-        float: left;
-        width: 100%;
-        position: relative;
-    }
+footer .footer-img-box-wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+}
 
-    footer .footer-logo-img-box {
-        width: 100%;
-        margin-bottom: 20px;
-        float: left;
-    }
+footer .footer-logo-img-box {
+    width: 0%;
+    margin-bottom: 20px;
+    float: left;
+    display: none;
+}
 
-    footer .footer-logo-img-box img {
-        width: 180px;
-        opacity: 1;
-        display: none;
-    }
+footer .footer-logo-img-box img {
+    width: 150px;
+    opacity: 0;
+}
 
-    footer .footer-sns-img-box {
-        width: 100%;
-        position: relative;
-        margin: 0 auto;
-        float: left;
-    }
+footer .footer-sns-img-box {
+    width: 220px;
+    position: relative;
+    margin: 0 auto;
+}
 
-    footer .footer-sns-img-box .logo-black {
-        display: none;
-    }
+footer .footer-sns-img-box img {
+    width: 36px;
+    opacity: .7;
+    margin-right: 18px;
+    transition: .3s;
+    margin-top: 10px;
+}
 
-    footer .footer-sns-img-box img {
-        width: 30px;
-        opacity: .5;
-        margin-right: 18px;
-        transition: .3s;
-        margin-top: 10px;
-    }
+footer .footer-sns-img-box .sns-img-last {
+    margin-right: 0px;
+}
 
-    footer .footer-sns-img-box .sns-img-last {
-        margin-right: 0px;
-    }
+footer .footer-sns-img-box img:hover {
+    opacity: 1;
+    transition: .3s;
+}
 
-    footer .footer-sns-img-box img:hover {
-        opacity: 1;
-        transition: .3s;
-    }
+footer .footer-txt-box-wrap {
+    width: 100%;
+    float: left;
+    font-family: 'Bebas Neue', cursive;
+}
 
-    footer .footer-txt-box-wrap {
-        width: 100%;
-        float: left;
-        font-family: 'Bebas Neue', cursive;
 
-    }
+footer .footer-txt-box-wrap a {
+    margin: 0 8px;
+    transition: .3s;
+    opacity: .7;
+    font-size: 10px;
+    float:right;
+    color:#fff;
+}
 
-    footer .footer-txt-box-wrap .footer-txt-box {
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 10px;
-    }
+footer .footer-txt-box-wrap a:hover {
+    opacity: 1;
+}
 
-    footer .footer-txt-box-wrap a {
-        margin: 0 4px;
-        transition: .3s;
-        opacity: .7;
-        font-size: 12px;
-        color: #fff;
-    }
+footer .footer-txt-box-wrap .footer-txt-ko {
+    font-size: 5px;
+}
 
-    footer .footer-txt-box-wrap a:hover {
-        opacity: 1;
-    }
 
-    footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 11px;
-    }
-
-    footer .footer-txt-box-wrap .footer-txt1 {
-        margin-top: 10px;
-        opacity: .7;
-        font-size: 13.2px;
-        text-align: center;
-        margin-right: 0;
-        color: #fff;
-    }
+footer .footer-txt-box-wrap .footer-txt1 {
+    margin-top: 30px;
+    opacity: .7;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 13px;
+    color:#fff;
+}
 
     /* --------------------------//FOOTER---------------------------- */
 }
@@ -1874,7 +1870,95 @@ footer .footer-txt-box-wrap .footer-txt1 {
         
     }
     
-    footer .footer-sns-img-box .logo-white{
+    footer .footer-sns-img-box .logo-black{
         display: none;
+    }
+}
+
+
+@media screen and (max-width:1023px) and (min-width:851px){
+    .header .menu-btn {
+        display: none;
+    }
+
+
+    /* --------------------------SUPPORT---------------------------- */
+
+    #support .support-caution {
+        font-size: 0.7em;
+        width: 300px;
+    }
+
+    /* --------------------------//SUPPORT---------------------------- */
+
+
+
+    /* -------------------------PROMOTION---------------------------- */
+    #promotion {
+        float: left;
+        width: 100%;
+        padding-top: 80px;
+        display: none;
+    }
+
+    #promotion .promotion-wrap {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #promotion .promotion-wrap .promotion-img-wrap {
+        width: 600px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: 450px;
+        border-radius: 10px;
+        transition: .7s;
+        position: relative;
+    }
+
+    #promotion .promotion-wrap .promotion-img-wrap img {
+        width: 600px;
+        border-radius: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    #promotion .promotion-wrap .promotion-img-wrap1:hover {
+        height: 695px;
+    }
+
+    #promotion .promotion-wrap .promotion-img-wrap2:hover {
+        height: 787px;
+    }
+
+    #promotion .promotion-wrap .promotion-img-wrap3:hover {
+        height: 695px;
+    }
+
+    #promotion .promotion-txt {
+        color: #f1f1f1;
+        margin-bottom: 50px;
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        line-height: 11;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* --------------------------//PROMOTION---------------------------- */
+
+    footer {
+        padding-bottom: 80px;
+        
     }
 }

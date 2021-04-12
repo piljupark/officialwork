@@ -39,7 +39,8 @@ html {
     position: relative;
     width: 100%;
     height: 60px;
-    background: #fff;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
     /* 컬러1 */
     position: fixed;
     z-index: 10;
@@ -165,9 +166,26 @@ html {
     font-family: 'Bebas Neue', cursive;
     padding: 0 10px;
     font-size: 12px;
-
+    display: inline-block;
+  position: relative;
 }
 
+.tablet-pc-vehicle-menu-wrap a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -6px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.tablet-pc-vehicle-menu-wrap a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
 
 
 /* ------------------------------//MODEL-FORM--------------------------- */
@@ -178,7 +196,7 @@ html {
     width: 100%;
     height: 50px;
     background-color: #000;
-
+    
     bottom: 0px;
     opacity: 1;
     overflow: hidden;
@@ -187,16 +205,6 @@ html {
     border-top:0.5px solid #333;
 }
 
-/*
-.tablet-pc-btn:hover {
-    width: 650px;
-    opacity:1;
-}
-.tablet-pc-btn:before{
-    width:70px;
-    opacity:0.4;
-}
-*/
 
 .tablet-pc-btn-menu-wrap {
     position: absolute;
@@ -213,11 +221,25 @@ html {
     margin-top: 19px;
     transition: .3s;
     font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+  position: relative;
 }
 
-.tablet-pc-btn a:hover {
-    text-decoration-style: dashed;
-    text-decoration-color: #003478;
+.tablet-pc-btn a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -6px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.tablet-pc-btn a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 /* -------------------------------HOME TEST----------------------------- */
@@ -429,7 +451,9 @@ footer .footer-slogan .footer-slogan-wrap p{
     font-family: 'Bebas Neue', cursive;
     line-height: 3;
     padding-left:10px;
+    pointer-events: none;
 }
+
 footer .footer-line-wrap{
     width:100%;
     position:relative;

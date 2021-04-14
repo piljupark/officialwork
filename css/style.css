@@ -1342,7 +1342,8 @@ footer .footer-copy .footer-txt1 {
     #home-box .home-txt-ko {
         font-size: 13px;
     }
-#home-box .swiper-container .swiper-wrapper .swiper-slide .over-1280 {
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide .over-1280 {
         display: none;
     }
 
@@ -2297,6 +2298,29 @@ footer .footer-copy .footer-txt1 {
         font-size: 17px;
     }
 
+    
+
+    #home-box .home-finder-wrapper .home-finder {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    #home-box .home-finder-wrapper .home-finder .finder-img img {
+        width: 25px;
+        margin-top: 5px;
+        margin-right: 120px;
+    }
+    #home-box .home-finder-wrapper .home-finder .finder {
+        width: 60%;
+        border: none;
+        border-bottom: 0.5px solid #ccc;
+        height: 30px;
+        transition: .3s;
+        float: left;
+        padding-left: 10px;
+        margin-left: 140px;
+        border-radius: 0px;
+    }
 
     /* -------------------------------HOME CONTACT----------------------------- */
     #home-box .contact-info {
@@ -2557,26 +2581,29 @@ footer .footer-copy .footer-txt1 {
     .header .tablet-pc-vehicle-menu .tablet-pc-vehicle-menu-wrap .tablet-pc-vehicle-menu-wrapper a p {
         font-size: 15px;
     }
-    
-    #home-box .swiper-container{
-        width:100%;
+
+    #home-box .swiper-container {
+        width: 100%;
         margin: 0 auto;
     }
-    #home-box .swiper-container .swiper-wrapper{
-        width:1280px;
+
+    #home-box .swiper-container .swiper-wrapper {
+        width: 1280px;
         text-align: center;
         margin: 0 auto;
         position: relative;
     }
-    #home-box .swiper-container .swiper-wrapper .swiper-slide{
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide {
         position: relative;
     }
-    #home-box .swiper-container .swiper-wrapper .swiper-slide img{
-        width:1280px;
-        margin:0 auto;
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 1280px;
+        margin: 0 auto;
         text-align: center;
     }
-    
+
     #home-box .swiper-container .swiper-wrapper .swiper-slide .under-1280 {
         display: none;
     }
@@ -2588,37 +2615,80 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .home-b .home-txt-en-1280 {
         opacity: 1;
     }
-    
-    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-wrap{
-        width:100%;
-        position:absolute;
-        top:0;
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-wrap {
+        width: 100%;
+        position: absolute;
+        top: 0;
     }
-    
-    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-wrapper{
-        width:1280px;
-        margin:0 auto;
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-wrapper {
+        width: 1280px;
+        margin: 0 auto;
         position: relative;
     }
+
     #home-box .home-txt-en {
-    color: #fff;
-    font-size: 70px;
-    font-family: 'Bebas Neue', cursive;
-}
-    
+        color: #fff;
+        font-size: 70px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
     #home-box .home-txt-ko {
-    
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    opacity: 1;
-}
+
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        opacity: 1;
+    }
 
     #home-box .home-txt-ko {
         font-size: 17px;
     }
+
     #home-box .home-d .home-txt-ko {
-        color:#fff;
+        color: #fff;
+    }
+
+
+
+    #home-box .home-finder-wrapper {
+        width: 100%;
+        float: left;
+        height: 100px;
+        position: relative;
+    }
+
+    #home-box .home-finder-wrapper .home-finder {
+        width: 1280px;
+        margin: 0 auto;
+        height: 50%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #home-box .home-finder-wrapper .home-finder .finder-img {
+        width: 20%;
+        float: right;
+        height: 40px;
+    }
+
+    #home-box .home-finder-wrapper .home-finder .finder-img img {
+        width: 25px;
+        margin-top: 5px;
+        margin-right: 120px;
+    }
+
+    #home-box .home-finder-wrapper .home-finder .finder {
+        width: 60%;
+        border: none;
+        border-bottom: 0.5px solid #ccc;
+        height: 30px;
+        transition: .3s;
+        float: left;
+        padding-left: 10px;
+        margin-left: 200px;
+        border-radius: 0px;
     }
 
 
@@ -2626,19 +2696,22 @@ footer .footer-copy .footer-txt1 {
     #home-box .contact-info {
         width: 100%;
         margin: 0 auto;
-        margin-top: 50px;
         margin-bottom: 50px;
+        background-color: #fff;
     }
 
     #home-box .contact-info .contact-info-wrapper {
-        width: 1024px;
+        width: 1280px;
         margin: 0 auto;
+        height: auto;
     }
 
     #home-box .contact-info .contact-info-wrap {
         margin: 0 auto;
         width: 100%;
         height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
         background-color: #fafafa;
     }
 

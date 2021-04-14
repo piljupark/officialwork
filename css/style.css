@@ -2585,6 +2585,7 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container {
         width: 100%;
         margin: 0 auto;
+        margin-top:50px;
     }
 
     #home-box .swiper-container .swiper-wrapper {

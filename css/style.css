@@ -129,7 +129,6 @@ html {
     color: #444;
     /* 컬러4 */
     margin-left: 20px;
-
 }
 
 .menu-wrap .etc-menu {
@@ -139,7 +138,11 @@ html {
     float: left;
     padding-top: 0px;
 }
-
+.menu-wrap .etc-menu .mobile-ko{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+}
 
 
 .tablet-pc-vehicle-menu {
@@ -211,7 +214,7 @@ html {
 
 .tablet-pc-btn-menu-wrap {
     position: absolute;
-    width: 520px;
+    width: 613px;
     right: 0;
 
 }
@@ -220,12 +223,20 @@ html {
     float: left;
     margin: 0 10px;
     color: #fff;
-    font-size: 11px;
-    margin-top: 19px;
+    font-size: 15px;
+    margin-top: 15px;
     transition: .3s;
     font-family: 'Bebas Neue', cursive;
     display: inline-block;
     position: relative;
+}
+.tablet-pc-btn .tablet-pc-ko{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+.tablet-pc-btn .tablet-pc-en{
+    margin-top: 16px;
 }
 
 .tablet-pc-btn a:after {
@@ -293,6 +304,9 @@ html {
     top: 80px;
     text-align: right;
     width: 100%;
+}
+#home-box .home-txt-ko{
+    font-family: 'Noto Sans KR',sans-serif;
 }
 
 #home-box .home-b .home-txt-en {
@@ -523,7 +537,7 @@ footer .footer-txt-box-wrap {
 }
 
 footer .footer-txt-box-wrap .footer-txt-box {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -541,7 +555,7 @@ footer .footer-txt-box-wrap a:hover {
 
 footer .footer-txt-box-wrap .footer-txt-ko {
     font-size: 10px;
-    font-family: 'Noto Sasn KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 footer .footer-txt-box-wrap .ko2 {
@@ -1288,11 +1302,13 @@ footer .footer-copy .footer-txt1 {
 .fixed-top {
     width: 100%;
     height: 30px;
-    background-color: #f1f1f1;
     position: fixed;
     margin-top: -20px;
     z-index: 7;
-    opacity: 0.7;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
 }
 
 .fixed-top .fixed-top2 {
@@ -2030,7 +2046,7 @@ footer .footer-copy .footer-txt1 {
 
     footer .footer-txt-box-wrap .footer-txt-ko {
         font-size: 10px;
-        font-family: 'Noto Sasn KR', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     footer .footer-txt-box-wrap .ko2 {
@@ -2196,9 +2212,9 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-sns-img-box img {
-        width: 40px;
+        width: 45px;
         opacity: .7;
-        margin-right: 18px;
+        margin-right: 21px;
         transition: .3s;
         margin-top: 10px;
     }
@@ -2220,7 +2236,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 230px;
+        width: 260px;
         float: right;
         padding-right: 7px;
     }
@@ -2228,7 +2244,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-txt-box-wrap a {
         transition: .3s;
         opacity: .7;
-        font-size: 11px;
+        font-size: 14px;
         color: #fff;
         margin: 0 6px;
     }
@@ -2238,8 +2254,9 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 10px;
-        font-family: 'Noto Sasn KR', sans-serif;
+        font-size: 12px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
     }
 
     footer .footer-txt-box-wrap .ko2 {
@@ -2255,7 +2272,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-copy .footer-txt1 {
         color: #fff;
         font-family: 'Bebas Neue', cursive;
-        font-size: 12.7px;
+        font-size: 15px;
         pointer-events: none;
         float: right;
         text-align: right;
@@ -2495,7 +2512,7 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 250px;
+        width: 260px;
         margin-right: 10px;
     }
 
@@ -2543,7 +2560,7 @@ footer .footer-copy .footer-txt1 {
 
     footer .footer-txt-box-wrap .footer-txt-ko {
         font-size: 12px;
-        font-family: 'Noto Sasn KR', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     footer .footer-txt-box-wrap .ko2 {
@@ -2869,7 +2886,7 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 250px;
+        width: 260px;
         margin-right: 10px;
     }
 
@@ -2898,7 +2915,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 260px;
+        width: 270px;
         float: right;
         padding-right: 7px;
     }
@@ -2917,7 +2934,7 @@ footer .footer-copy .footer-txt1 {
 
     footer .footer-txt-box-wrap .footer-txt-ko {
         font-size: 12px;
-        font-family: 'Noto Sasn KR', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     footer .footer-txt-box-wrap .ko2 {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 a {
     text-decoration: none;
@@ -139,8 +139,8 @@ html {
     padding-top: 0px;
 }
 .menu-wrap .etc-menu .mobile-ko{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 700;
     font-size: 0.8em;
 }
 

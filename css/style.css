@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@font-face{
+    src:url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSD";
+}
 
 a {
     text-decoration: none;
@@ -17,6 +21,7 @@ li {
 body {
     overflow-x: hidden;
     text-decoration: none;
+    font-family: "AppleSD";
 }
 
 
@@ -139,7 +144,7 @@ html {
     padding-top: 0px;
 }
 .menu-wrap .etc-menu .mobile-ko{
-    font-family: 'Noto Serif KR', serif;
+    font-family: "AppleSD";
     font-weight: 700;
     font-size: 0.8em;
 }
@@ -231,8 +236,7 @@ html {
     position: relative;
 }
 .tablet-pc-btn .tablet-pc-ko{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold;
+    font-family: "AppleSD";
     font-size: 13px;
 }
 .tablet-pc-btn .tablet-pc-en{
@@ -305,9 +309,12 @@ html {
     text-align: right;
     width: 100%;
 }
+
 #home-box .home-txt-ko{
-    font-family: 'Noto Sans KR',sans-serif;
+    font-family: "AppleSD";
 }
+
+
 
 #home-box .home-b .home-txt-en {
     opacity: 0.7;
@@ -396,6 +403,7 @@ html {
     margin-bottom: 5px;
     border: 1px solid #dbdbdb;
     height: 30px;
+    font-family: "AppleSD";
 }
 
 #home-box .contact-info .contact-box .contact-control:nth-last-child(1) {
@@ -416,6 +424,7 @@ html {
     height: 38px;
     font-size: 16px;
     transition: .2s;
+    font-family: "AppleSD";
 }
 
 #home-box .contact-info .contact-button-box .contact-button:hover {
@@ -435,6 +444,7 @@ html {
 
 #home-box .contact-info .contact-txt-box .contact-txt2 {
     font-size: 11px;
+    font-family: "AppleSD";
 }
 
 /* -------------------------------//HOME CONTACT----------------------------- */
@@ -555,7 +565,7 @@ footer .footer-txt-box-wrap a:hover {
 
 footer .footer-txt-box-wrap .footer-txt-ko {
     font-size: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "AppleSD";
 }
 
 footer .footer-txt-box-wrap .ko2 {

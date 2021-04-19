@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @font-face{
-    src:url("../fonts/AppleSDGothicNeoB.ttf");
-    font-family: "AppleSD";
+    src:url("../fonts/AppleSDGothicNeoL.ttf");
+    font-family: "AppleSD", sans-serif;
 }
 
 a {
@@ -21,7 +21,7 @@ li {
 body {
     overflow-x: hidden;
     text-decoration: none;
-    font-family: "AppleSD";
+    font-family: "AppleSD", sans-serif;
 }
 
 
@@ -144,7 +144,7 @@ html {
     padding-top: 0px;
 }
 .menu-wrap .etc-menu .mobile-ko{
-    font-family: "AppleSD";
+    font-family: "AppleSD", sans-serif;
     font-weight: 700;
     font-size: 0.8em;
 }
@@ -236,8 +236,9 @@ html {
     position: relative;
 }
 .tablet-pc-btn .tablet-pc-ko{
-    font-family: "AppleSD";
+    font-family: "AppleSD", sans-serif;
     font-size: 13px;
+    font-weight: bold;
 }
 .tablet-pc-btn .tablet-pc-en{
     margin-top: 16px;
@@ -311,7 +312,8 @@ html {
 }
 
 #home-box .home-txt-ko{
-    font-family: "AppleSD";
+    font-family: "AppleSD",sans-serif;
+    font-weight: 500;
 }
 
 
@@ -403,7 +405,7 @@ html {
     margin-bottom: 5px;
     border: 1px solid #dbdbdb;
     height: 30px;
-    font-family: "AppleSD";
+    font-family: "AppleSD",sans-serif;
 }
 
 #home-box .contact-info .contact-box .contact-control:nth-last-child(1) {
@@ -424,7 +426,7 @@ html {
     height: 38px;
     font-size: 16px;
     transition: .2s;
-    font-family: "AppleSD";
+    font-family: "AppleSD",sans-serif;
 }
 
 #home-box .contact-info .contact-button-box .contact-button:hover {
@@ -444,7 +446,7 @@ html {
 
 #home-box .contact-info .contact-txt-box .contact-txt2 {
     font-size: 11px;
-    font-family: "AppleSD";
+    font-family: "AppleSD",sans-serif;
 }
 
 /* -------------------------------//HOME CONTACT----------------------------- */
@@ -565,7 +567,7 @@ footer .footer-txt-box-wrap a:hover {
 
 footer .footer-txt-box-wrap .footer-txt-ko {
     font-size: 10px;
-    font-family: "AppleSD";
+    font-family: "AppleSD",sans-serif;
 }
 
 footer .footer-txt-box-wrap .ko2 {
@@ -951,7 +953,7 @@ footer .footer-copy .footer-txt1 {
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
-    font-family: 'Apple SD Gothic', sans-serif;
+    font-family: 'Apple SD', sans-serif;
     position: relative;
 }
 

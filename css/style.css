@@ -219,7 +219,7 @@ html {
 
 .tablet-pc-btn-menu-wrap {
     position: absolute;
-    width: 613px;
+    width: 600px;
     right: 0;
 
 }
@@ -241,7 +241,10 @@ html {
     font-weight: bold;
 }
 .tablet-pc-btn .tablet-pc-en{
-    margin-top: 16px;
+    margin-top: 14px;
+}
+.tablet-pc-btn .en-last{
+    margin-right:0px;
 }
 
 .tablet-pc-btn a:after {
@@ -953,7 +956,7 @@ footer .footer-copy .footer-txt1 {
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
-    font-family: 'Apple SD', sans-serif;
+    font-family: 'AppleSD', sans-serif;
     position: relative;
 }
 

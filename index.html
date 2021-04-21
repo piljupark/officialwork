@@ -183,6 +183,8 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
         </div>
         <div class="home-finder-wrapper">
@@ -207,7 +209,7 @@
                         <input type="text" class="contact-control" name="message" placeholder="질문이나 의견을 자유롭게 적어주세요.">
                     </div>
                     <div class="contact-button-box">
-                        <button type="button" value="pop-up" class="contact-button" onclick="showPopup();">전송</button>
+                        <button type="button" value="pop-up" class="contact-button" onclick="showPopup();" style="cursor: pointer">전송</button>
                     </div>
                 </div>
             </div>
@@ -863,10 +865,7 @@
     <!-- 부품/서비스 -->
     <div id="parts">
         <div class="parts-main-img">
-            <img src="images/parts-main.jpg">
-        </div>
-        <div class="parts-main-txt">
-            <p>FORD<br>MOTOR<br>COMPANY</p>
+            <img src="images/parts-main4.png">
         </div>
         <div class="parts-pure-txt">
             <p>포드의 보증이 있다면 서비스, 수리, 차체, 악세서리와 관계없이 보증 받으실 수 있습니다.<br><br>귀하께서 포드 차량 정비시 설계 및 제작된 부품인 포드 자사의 순정 부품과 모터크래프트 부품을 사용하세요.</p>
@@ -1152,13 +1151,14 @@
             <p class="fixed-top2">기술지원</p>
         </div>
         <div class="support-main-img-wrap">
-            <div class="support-img1">
+            <div class="support-img1" style="cursor: pointer">
                 <p>SYNC 3</p>
             </div>
-            <div class="support-img2">
+            <div class="support-img2" style="cursor: pointer">
                 <p>ECO<br>BOOST</p>
             </div>
         </div>
+        
         <div class="support-ex-wrapper1">
             <div class="support-ex-wrap">
                 <div class="sync3-wrap">
@@ -1891,14 +1891,20 @@
     <script>
         // 클래스명 swiper-container 입력
         // 이 클래스명은 변경하면 안됨
-        new Swiper('#home-box > .swiper-container', {
+        var mySwiper = new Swiper('#home-box > .swiper-container', {
+            
+            navigation:{
+                prevEl:'.swiper-button-prev',
+                nextEl:'.swiper-button-next',
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            
             effect: 'fade',
-            autoplay: 300,
-            autoplayDisableOnInteraction: false,
+            autoplay: 1000,
+            autoplayDisableOnInteraction: true,
             loop: true,
             speed: 1000,
         });

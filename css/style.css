@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @font-face{
     src:url("../fonts/AppleSDGothicNeoL.ttf");
-    font-family: "AppleSD", sans-serif;
+    font-family: "AppleSD"
 }
 
 a {
@@ -21,7 +21,7 @@ li {
 body {
     overflow-x: hidden;
     text-decoration: none;
-    font-family: "AppleSD", sans-serif;
+    font-family: "AppleSD";
 }
 
 
@@ -144,7 +144,7 @@ html {
     padding-top: 0px;
 }
 .menu-wrap .etc-menu .mobile-ko{
-    font-family: "AppleSD", sans-serif;
+    font-family: "AppleSD";
     font-weight: 700;
     font-size: 0.8em;
 }
@@ -235,13 +235,14 @@ html {
     display: inline-block;
     position: relative;
 }
+
 .tablet-pc-btn .tablet-pc-ko{
-    font-family: "AppleSD", sans-serif;
+    font-family: "AppleSD";
     font-size: 13px;
     font-weight: bold;
 }
 .tablet-pc-btn .tablet-pc-en{
-    margin-top: 14px;
+    margin-top: 14.5px;
 }
 .tablet-pc-btn .en-last{
     margin-right:0px;
@@ -302,6 +303,14 @@ html {
     border: 0.5px solid #fff;
     margin: 0 10px;
 }
+#home-box .swiper-container .swiper-button-prev{
+    background-image: url('../images/arrow-prev.png');
+    width:40px;
+}#home-box .swiper-container .swiper-button-next{
+    background-image: url('../images/arrow-next.png');
+    width:40px;
+}
+
 
 #home-box .home-txt-en {
     position: absolute;
@@ -315,7 +324,7 @@ html {
 }
 
 #home-box .home-txt-ko{
-    font-family: "AppleSD",sans-serif;
+    font-family: "AppleSD";
     font-weight: 500;
 }
 
@@ -378,6 +387,7 @@ html {
     padding-left: 10px;
     margin-left: 30px;
     border-radius: 0px;
+    font-family: "AppleSD";
 }
 
 /* -------------------------------//HOME TEST----------------------------- */
@@ -408,7 +418,7 @@ html {
     margin-bottom: 5px;
     border: 1px solid #dbdbdb;
     height: 30px;
-    font-family: "AppleSD",sans-serif;
+    font-family: "AppleSD";
 }
 
 #home-box .contact-info .contact-box .contact-control:nth-last-child(1) {
@@ -429,7 +439,7 @@ html {
     height: 38px;
     font-size: 16px;
     transition: .2s;
-    font-family: "AppleSD",sans-serif;
+    font-family: "AppleSD";
 }
 
 #home-box .contact-info .contact-button-box .contact-button:hover {
@@ -449,7 +459,7 @@ html {
 
 #home-box .contact-info .contact-txt-box .contact-txt2 {
     font-size: 11px;
-    font-family: "AppleSD",sans-serif;
+    font-family: "AppleSD";
 }
 
 /* -------------------------------//HOME CONTACT----------------------------- */
@@ -570,7 +580,7 @@ footer .footer-txt-box-wrap a:hover {
 
 footer .footer-txt-box-wrap .footer-txt-ko {
     font-size: 10px;
-    font-family: "AppleSD",sans-serif;
+    font-family: "AppleSD";
 }
 
 footer .footer-txt-box-wrap .ko2 {
@@ -689,43 +699,30 @@ footer .footer-copy .footer-txt1 {
     width: 100%;
     margin: 0 auto;
     display: none;
-    top: 70px;
     padding-top: 60px;
+    
 }
 
 .parts-main-img {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
 }
 
 .parts-main-img img {
     width: 100%;
-    border-radius: 10px;
-}
-
-.parts-main-txt {
-    float: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    border-right: 0.5px solid #555;
-    width: 32%;
-    height: 400px;
 }
 
 .parts-pure-txt {
     float: left;
-    font-family: 'Noto Sans KR', sans-serif;
     text-align: left;
     font-size: 14px;
-    width: 55%;
+    width: 100%;
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: px;
     float: right;
     height: 400px;
+    font-family: "AppleSD";
 }
 
 .parts-warning {
@@ -818,15 +815,9 @@ footer .footer-copy .footer-txt1 {
 /* --------------------------SUPPORT---------------------------- */
 #support {
     float: left;
+    width:100%;
     padding-top: 80px;
     display: none;
-}
-
-#support .swiper-container {
-    width: 100%;
-    height: auto;
-    margin-top: 0px;
-    position: relative;
 }
 
 #support .support-main-img-wrap {
@@ -891,6 +882,7 @@ footer .footer-copy .footer-txt1 {
 
 #support .support-ex-wrapper2 {
     display: none;
+    margin-bottom: 60px;
 }
 
 #support .support-ex-wrap {
@@ -934,6 +926,7 @@ footer .footer-copy .footer-txt1 {
     width: 100%;
     background-color: #f5f5f5;
     margin-top: 20px;
+    margin-bottom:60px;
 }
 
 #support .support-caution {
@@ -956,7 +949,7 @@ footer .footer-copy .footer-txt1 {
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
-    font-family: 'AppleSD', sans-serif;
+    font-family: 'AppleSD';
     position: relative;
 }
 
@@ -1316,24 +1309,35 @@ footer .footer-copy .footer-txt1 {
 /* --------------------------FIXED-TOP---------------------------- */
 .fixed-top {
     width: 100%;
-    height: 30px;
+    height: 130px;
     position: fixed;
-    margin-top: -20px;
+    margin-top: -120px;
     z-index: 7;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    
 }
-
+.fixed-top .fixed-top1{
+    width:80%;
+    border-top: 0.5px solid #003478;
+    position:absolute;
+    bottom:13px;
+    left:10px;
+}
 .fixed-top .fixed-top2 {
+    position:absolute;
     width: 40%;
     float: right;
     text-align: right;
     height: auto;
-    margin: 7px 13px 7px 0;
+    margin: 7px 8px 7px 0;
     font-size: 12px;
     color: #003478;
+    font-family: "AppleSD";
+    bottom:0px;
+    right:0px;
 }
 
 /* --------------------------//FIXED-TOP---------------------------- */
@@ -1381,7 +1385,12 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
-
+    #home-box .swiper-container .swiper-button-prev{
+        background-size:15px;
+    }
+    #home-box .swiper-container .swiper-button-next{
+        background-size:15px;
+    }
     /* -----------------------------//HOME INFO----------------------------- */
 
     /* --------------------------SUPPORT---------------------------- */
@@ -1602,7 +1611,12 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
-
+    #home-box .swiper-container .swiper-button-prev{
+        background-size:15px;
+    }
+    #home-box .swiper-container .swiper-button-next{
+        background-size:15px;
+    }
     /* -----------------------------//HOME INFO----------------------------- */
 
     /* --------------------------SUPPORT---------------------------- */

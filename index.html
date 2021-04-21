@@ -97,8 +97,8 @@
                     <li><a href="#drive-test" class="drive-test mobile-ko">시승신청</a></li>
                     <li><a href="#" class="mobile-ko">이벤트</a></li>
                     <li><a href="#" class="mobile-ko">다운로드</a></li>
-                    <li><a href="#" >FORD</a></li>
-                    <li><a href="#" >GLOBAL SITES</a></li>
+                    <li><a href="#">FORD</a></li>
+                    <li><a href="#">GLOBAL SITES</a></li>
                 </ul>
             </div>
         </ul>
@@ -865,16 +865,27 @@
     <!-- 부품/서비스 -->
     <div id="parts">
         <div class="parts-main-img">
-            <img src="images/parts-main4.png">
         </div>
-        <div class="parts-pure-txt">
-            <p>포드의 보증이 있다면 서비스, 수리, 차체, 악세서리와 관계없이 보증 받으실 수 있습니다.<br><br>귀하께서 포드 차량 정비시 설계 및 제작된 부품인 포드 자사의 순정 부품과 모터크래프트 부품을 사용하세요.</p>
-            <p class="parts-warning">아울러 포드 모터 컴퍼니는 위조 부품을 매우 심각하게 여기고 있으며 시장에 유통되어 귀하의 차량에 사용되지 않도록 예방조치를 취하고 있습니다.</p>
-            <p class="parts-warning">위조품 생산은 세계적인 현상이며 고객님들을 보호하기 위해 최선을 다하고 있습니다.</p>
+        <div class="parts-txt-wrapper">
+           <div class="parts-title-wrap">
+               <div class="parts-title">
+                   <p>FORD<br>MOTOR<br>COMPANY</p>
+               </div>
+           </div>
+           <div class="parts-line"></div>
+            <div class="parts-txt-wrap">
+                <div class="parts-pure-txt">
+                    <p>포드의 보증이 있다면 서비스, 수리, 차체, 악세서리와 관계없이 보증 받으실 수 있습니다.<br><br>귀하께서 포드 차량 정비시 설계 및 제작된 부품인 포드 자사의 순정 부품과 모터크래프트 부품을 사용하세요.</p>
+                    <p class="parts-warning">* 아울러 포드 모터 컴퍼니는 위조 부품을 매우 심각하게 여기고 있으며 시장에 유통되어 귀하의 차량에 사용되지 않도록 예방조치를 취하고 있습니다.</p>
+                    <p class="parts-warning warning2">* 위조품 생산은 세계적 현상이며 고객님들을 보호하기 위해 노력을 기울이겠습니다.</p>
+                </div>
+            </div>
         </div>
+        <div class="parts-button-wrap">
         <div class="parts-button-place">
-            <a href="http://www.suninford.co.kr/04_service/price.php"><button type="button" class="parts-button">선인 자동차</button></a>
-            <a href=""><button type="button" class="parts-button">Premere Motors</button></a>
+            <a href="http://www.suninford.co.kr/04_service/price.php"><div class="parts-button" style="cursor: pointer">선인 자동차</div></a>
+            <a href=""><div class="parts-button" style="cursor: pointer">Premere Motors</div></a>
+        </div>
         </div>
     </div>
     <!-- //부품/서비스 -->
@@ -1158,7 +1169,7 @@
                 <p>ECO<br>BOOST</p>
             </div>
         </div>
-        
+
         <div class="support-ex-wrapper1">
             <div class="support-ex-wrap">
                 <div class="sync3-wrap">
@@ -1892,16 +1903,16 @@
         // 클래스명 swiper-container 입력
         // 이 클래스명은 변경하면 안됨
         var mySwiper = new Swiper('#home-box > .swiper-container', {
-            
-            navigation:{
-                prevEl:'.swiper-button-prev',
-                nextEl:'.swiper-button-next',
+
+            navigation: {
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
             },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            
+
             effect: 'fade',
             autoplay: 1000,
             autoplayDisableOnInteraction: true,

@@ -757,10 +757,11 @@ footer .footer-copy .footer-txt1 {
     width: 100%;
     float: right;
     position: absolute;
-    top: 50%;
+    top:300px;
 }
 
 .parts-pure-txt {
+    position:relative;
     margin: 0 auto;
     text-align: left;
     font-size: 14px;
@@ -1509,7 +1510,7 @@ footer .footer-copy .footer-txt1 {
         margin: 0 auto;
         width: 100%;
         position: absolute;
-        top: -680px;
+        top: -780px;
         text-align: center;
     }
 
@@ -1777,8 +1778,9 @@ footer .footer-copy .footer-txt1 {
         margin: 0 auto;
         width: 100%;
         position: absolute;
-        top: -680px;
+        top: -780px;
         text-align: center;
+        
     }
 
     .parts-button {
@@ -1996,6 +1998,56 @@ footer .footer-copy .footer-txt1 {
 
     /* --------------------------//SUPPORT---------------------------- */
 
+    #parts {
+        height: 800px;
+    }
+
+    .parts-title-wrap .parts-title {
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .parts-pure-txt {
+        width: 90%;
+    }
+
+    .parts-pure-txt h2 {
+        font-size: 1.8em
+    }
+
+    .parts-main-img img {
+        margin-left: -300px;
+    }
+
+    .parts-button-wrap {
+        position: relative;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .parts-button-place {
+        margin: 0 auto;
+        width: 100%;
+        position: absolute;
+        top: -880px;
+        text-align: center;
+    }
+
+    .parts-button {
+        width: 44%;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        font-weight: bold;
+        font-family: "AppleSD-R";
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        float: left;
+        line-height: 2.8;
+        font-size: .9em;
+    }
 
     /* -------------------------PROMOTION---------------------------- */
     #promotion {

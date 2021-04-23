@@ -833,18 +833,27 @@ footer .footer-copy .footer-txt1 {
     margin: 0 auto;
     top: 70px;
     display: none;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .maintain-main-img {
     margin: 0 auto;
-    width: 90%;
+    width:100%;
     margin-top: 20px;
+    position:relative;
 }
 
 .maintain-main-img img {
-    width: 100%;
-    border-radius: 10px;
+    width:100%;
+}
+#maintain .maintain-main-img .maintain-title{
+    font-family: "AppleSD-R";
+    color:#fff;
+    position:absolute;
+    top:40px;
+    left:20px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 #maintain .maintain-menu {
@@ -1464,6 +1473,7 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
+    #
 
     /* -----------------------------//HOME INFO----------------------------- */
 

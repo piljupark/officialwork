@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
-@font-face{
-    src:url("../fonts/AppleSDGothicNeoL.ttf");
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoL.ttf");
     font-family: "AppleSD";
 }
-@font-face{
-    src:url("../fonts/AppleSDGothicNeoR.ttf");
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.ttf");
     font-family: "AppleSD-R", sans-serif;
 }
 
@@ -146,7 +148,8 @@ html {
     float: left;
     padding-top: 0px;
 }
-.menu-wrap .etc-menu .mobile-ko{
+
+.menu-wrap .etc-menu .mobile-ko {
     font-family: "AppleSD-R";
     font-weight: 700;
     font-size: 0.8em;
@@ -239,16 +242,18 @@ html {
     position: relative;
 }
 
-.tablet-pc-btn .tablet-pc-ko{
+.tablet-pc-btn .tablet-pc-ko {
     font-family: "AppleSD-R";
     font-size: 13px;
     font-weight: bold;
 }
-.tablet-pc-btn .tablet-pc-en{
+
+.tablet-pc-btn .tablet-pc-en {
     margin-top: 14.5px;
 }
-.tablet-pc-btn .en-last{
-    margin-right:0px;
+
+.tablet-pc-btn .en-last {
+    margin-right: 0px;
 }
 
 .tablet-pc-btn a:after {
@@ -286,7 +291,7 @@ html {
 }
 
 #home-box .swiper-container .swiper-wrapper {
-    float:left;
+    float: left;
 }
 
 #home-box .swiper-container .swiper-wrapper .swiper-slide {
@@ -296,7 +301,7 @@ html {
 
 #home-box .swiper-container .swiper-wrapper .swiper-slide img {
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #home-box .swiper-container .swiper-pagination-bullet {
@@ -308,12 +313,14 @@ html {
     margin: 0 10px;
 }
 
-#home-box .swiper-container .swiper-button-prev{
+#home-box .swiper-container .swiper-button-prev {
     background-image: url('../images/arrow-prev1.png');
-    width:40px;
-}#home-box .swiper-container .swiper-button-next{
+    width: 40px;
+}
+
+#home-box .swiper-container .swiper-button-next {
     background-image: url('../images/arrow-next1.png');
-    width:40px;
+    width: 40px;
 }
 
 
@@ -328,7 +335,7 @@ html {
     width: 100%;
 }
 
-#home-box .home-txt-ko{
+#home-box .home-txt-ko {
     font-family: "AppleSD-R";
     font-weight: 500;
 }
@@ -705,67 +712,74 @@ footer .footer-copy .footer-txt1 {
     margin: 0 auto;
     display: none;
     padding-top: 60px;
-    margin-bottom:-10px;
+    margin-bottom: -10px;
     overflow: hidden;
 }
 
 .parts-main-img {
     margin: 0 auto;
-    position:relative;
-    overflow: hidden;
-}
-.parts-txt-wrapper{
-    width:100%;
-    float:left;
-    margin:0 auto;
-    overflow: hidden;
-}
-.parts-title-wrap{
-    width:100%;
-    float:left;
-    position:absolute;
-    top:100px;
-    
-}
-.parts-title{
-    margin:0 auto;
-    width: 50%;
-    height:auto;
-    float:left;
-    padding-left:60px;
+    position: relative;
     overflow: hidden;
 }
 
-.parts-title p{
-    color:#fff;
-    font-family: "Bebas Neue", cursive;
-    font-size:3em;
+.parts-txt-wrapper {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
     overflow: hidden;
 }
 
-.parts-txt-wrap{
-    width:100%;
-    float:right;
+.parts-title-wrap {
+    width: 100%;
+    float: left;
     position: absolute;
-    top:50%;
+    top: 100px;
+
 }
+
+.parts-title {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    float: left;
+    padding-left: 60px;
+    overflow: hidden;
+}
+
+.parts-title p {
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    font-size: 3em;
+    overflow: hidden;
+}
+
+.parts-txt-wrap {
+    width: 100%;
+    float: right;
+    position: absolute;
+    top: 50%;
+}
+
 .parts-pure-txt {
-    margin:0 auto;
+    margin: 0 auto;
     text-align: left;
     font-size: 14px;
     width: 400px;
     margin-top: 20px;
     font-family: "AppleSD-R";
 }
-.parts-pure-txt h2{
-    color:#fff;
+
+.parts-pure-txt h2 {
+    color: #fff;
     font-weight: bold;
 }
-.parts-pure-txt .parts-txt1{
-    margin-bottom:10px;
+
+.parts-pure-txt .parts-txt1 {
+    margin-bottom: 10px;
 }
-.parts-pure-txt p{
-    color:#fff;
+
+.parts-pure-txt p {
+    color: #fff;
     line-height: 1.3
 }
 
@@ -774,19 +788,22 @@ footer .footer-copy .footer-txt1 {
     margin-top: 30px;
     font-size: 8px;
 }
-.warning2{
-    margin-top:10px;
+
+.warning2 {
+    margin-top: 10px;
 }
-.parts-button-wrap{
-    position:relative;
-    width:350px;
-    margin:0 auto;
+
+.parts-button-wrap {
+    position: relative;
+    width: 430px;
+    margin: 0 auto;
 }
+
 .parts-button-place {
     margin: 0 auto;
     width: 100%;
-    position:absolute;
-    top:-380px;
+    position: absolute;
+    top: -680px;
     text-align: center;
 }
 
@@ -794,14 +811,14 @@ footer .footer-copy .footer-txt1 {
     width: 43.1%;
     height: 40px;
     margin-top: 20px;
-    border-radius: 10px;
-    border:2px solid #fff;
+    border-radius: 20px;
+    border: 2px solid #fff;
     font-weight: bold;
     font-family: "AppleSD-R";
-    margin:0 10px;
+    margin: 0 10px;
     text-align: center;
-    color:#fff;
-    float:left;
+    color: #fff;
+    float: left;
     line-height: 2.5;
 }
 
@@ -873,7 +890,7 @@ footer .footer-copy .footer-txt1 {
 /* --------------------------SUPPORT---------------------------- */
 #support {
     float: left;
-    width:100%;
+    width: 100%;
     padding-top: 80px;
     display: none;
 }
@@ -984,7 +1001,7 @@ footer .footer-copy .footer-txt1 {
     width: 100%;
     background-color: #f5f5f5;
     margin-top: 20px;
-    margin-bottom:60px;
+    margin-bottom: 60px;
 }
 
 #support .support-caution {
@@ -1371,21 +1388,23 @@ footer .footer-copy .footer-txt1 {
     position: fixed;
     margin-top: -120px;
     z-index: 7;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     -moz-backdrop-filter: blur(20px);
-    
+
 }
-.fixed-top .fixed-top1{
-    width:80%;
+
+.fixed-top .fixed-top1 {
+    width: 80%;
     border-top: 0.5px solid #003478;
-    position:absolute;
-    bottom:13px;
-    left:10px;
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
 }
+
 .fixed-top .fixed-top2 {
-    position:absolute;
+    position: absolute;
     width: 40%;
     float: right;
     text-align: right;
@@ -1394,8 +1413,8 @@ footer .footer-copy .footer-txt1 {
     font-size: 12px;
     color: #003478;
     font-family: "AppleSD-R";
-    bottom:0px;
-    right:0px;
+    bottom: 0px;
+    right: 0px;
 }
 
 /* --------------------------//FIXED-TOP---------------------------- */
@@ -1415,7 +1434,7 @@ footer .footer-copy .footer-txt1 {
 
     .header .menu-btn a img {
         width: 60px;
-        margin-top:22px;
+        margin-top: 22px;
     }
 
     .header .logo-btn a img {
@@ -1444,6 +1463,7 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
+
     /* -----------------------------//HOME INFO----------------------------- */
 
     /* --------------------------SUPPORT---------------------------- */
@@ -1459,22 +1479,55 @@ footer .footer-copy .footer-txt1 {
     /* --------------------------//SUPPORT---------------------------- */
 
     #parts {
-    float: left;
-    width: 100%;
-    height:800px;
-    margin: 0 auto;
-    display: none;
-    padding-top: 60px;
-    margin-bottom:-10px;
-    overflow: hidden;
-}
+        height: 800px;
+    }
 
-.parts-main-img {
-    margin: 0 auto;
-    position:relative;
-    overflow: hidden;
-    margin-left:-400px;
-}
+    .parts-title-wrap .parts-title {
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .parts-pure-txt {
+        width: 80%;
+    }
+
+    .parts-pure-txt h2 {
+        font-size: 1.8em
+    }
+
+    .parts-main-img img {
+        margin-left: -300px;
+    }
+
+    .parts-button-wrap {
+        position: relative;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .parts-button-place {
+        margin: 0 auto;
+        width: 100%;
+        position: absolute;
+        top: -680px;
+        text-align: center;
+    }
+
+    .parts-button {
+        width: 40%;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        font-weight: bold;
+        font-family: "AppleSD-R";
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        float: left;
+        line-height: 3.5;
+        font-size: .7em;
+    }
 
 
     /* -------------------------PROMOTION---------------------------- */
@@ -1681,6 +1734,7 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
+
     /* -----------------------------//HOME INFO----------------------------- */
 
     /* --------------------------SUPPORT---------------------------- */
@@ -1692,8 +1746,56 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* --------------------------//SUPPORT---------------------------- */
+    #parts {
+        height: 800px;
+    }
 
+    .parts-title-wrap .parts-title {
+        width: 90%;
+        padding-left: 20px;
+    }
 
+    .parts-pure-txt {
+        width: 90%;
+    }
+
+    .parts-pure-txt h2 {
+        font-size: 1.8em
+    }
+
+    .parts-main-img img {
+        margin-left: -300px;
+    }
+
+    .parts-button-wrap {
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .parts-button-place {
+        margin: 0 auto;
+        width: 100%;
+        position: absolute;
+        top: -680px;
+        text-align: center;
+    }
+
+    .parts-button {
+        width: 42%;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        font-weight: bold;
+        font-family: "AppleSD-R";
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        float: left;
+        line-height: 2.8;
+        font-size: .9em;
+    }
 
     /* -------------------------PROMOTION---------------------------- */
     #promotion {
@@ -1894,7 +1996,7 @@ footer .footer-copy .footer-txt1 {
 
     /* --------------------------//SUPPORT---------------------------- */
 
-    
+
     /* -------------------------PROMOTION---------------------------- */
     #promotion {
         float: left;
@@ -2496,7 +2598,7 @@ footer .footer-copy .footer-txt1 {
         font-size: 17px;
     }
 
-    
+
 
     #home-box .home-finder-wrapper .home-finder {
         width: 90%;
@@ -2508,6 +2610,7 @@ footer .footer-copy .footer-txt1 {
         margin-top: 5px;
         margin-right: 120px;
     }
+
     #home-box .home-finder-wrapper .home-finder .finder {
         width: 60%;
         border: none;
@@ -2783,21 +2886,24 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container {
         width: 100%;
         margin: 0 auto;
-        margin-top:50px;
+        margin-top: 50px;
     }
-    #home-box .swiper-container .swiper-button-wrap{
-    width:1280px;
-    height: auto;
-    margin:0 auto;
-    position: relative;
+
+    #home-box .swiper-container .swiper-button-wrap {
+        width: 1280px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
     }
-    #home-box .swiper-container .swiper-button-wrap .swiper-button-prev{
-        position:absolute;
-        top:400px;
+
+    #home-box .swiper-container .swiper-button-wrap .swiper-button-prev {
+        position: absolute;
+        top: 400px;
     }
-    #home-box .swiper-container .swiper-button-wrap .swiper-button-next{
-        position:absolute;
-        top:400px;
+
+    #home-box .swiper-container .swiper-button-wrap .swiper-button-next {
+        position: absolute;
+        top: 400px;
     }
 
     #home-box .swiper-container .swiper-wrapper {
@@ -2806,7 +2912,7 @@ footer .footer-copy .footer-txt1 {
         margin: 0 auto;
         position: relative;
     }
-    
+
 
     #home-box .swiper-container .swiper-wrapper .swiper-slide {
         position: relative;

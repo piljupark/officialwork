@@ -147,7 +147,7 @@ html {
     padding-top: 0px;
 }
 .menu-wrap .etc-menu .mobile-ko{
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
     font-weight: 700;
     font-size: 0.8em;
 }
@@ -240,7 +240,7 @@ html {
 }
 
 .tablet-pc-btn .tablet-pc-ko{
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
     font-size: 13px;
     font-weight: bold;
 }
@@ -329,7 +329,7 @@ html {
 }
 
 #home-box .home-txt-ko{
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
     font-weight: 500;
 }
 
@@ -392,7 +392,7 @@ html {
     padding-left: 10px;
     margin-left: 30px;
     border-radius: 0px;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
 }
 
 /* -------------------------------//HOME TEST----------------------------- */
@@ -423,7 +423,7 @@ html {
     margin-bottom: 5px;
     border: 1px solid #dbdbdb;
     height: 30px;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
 }
 
 #home-box .contact-info .contact-box .contact-control:nth-last-child(1) {
@@ -444,7 +444,7 @@ html {
     height: 38px;
     font-size: 16px;
     transition: .2s;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
 }
 
 #home-box .contact-info .contact-button-box .contact-button:hover {
@@ -464,7 +464,7 @@ html {
 
 #home-box .contact-info .contact-txt-box .contact-txt2 {
     font-size: 11px;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
 }
 
 /* -------------------------------//HOME CONTACT----------------------------- */
@@ -585,7 +585,7 @@ footer .footer-txt-box-wrap a:hover {
 
 footer .footer-txt-box-wrap .footer-txt-ko {
     font-size: 10px;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
 }
 
 footer .footer-txt-box-wrap .ko2 {
@@ -755,7 +755,7 @@ footer .footer-copy .footer-txt1 {
     font-size: 14px;
     width: 400px;
     margin-top: 20px;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
 }
 .parts-pure-txt h2{
     color:#fff;
@@ -797,7 +797,7 @@ footer .footer-copy .footer-txt1 {
     border-radius: 10px;
     border:2px solid #fff;
     font-weight: bold;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
     margin:0 10px;
     text-align: center;
     color:#fff;
@@ -1007,7 +1007,7 @@ footer .footer-copy .footer-txt1 {
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
-    font-family: 'AppleSD';
+    font-family: 'AppleSD-R';
     position: relative;
 }
 
@@ -1393,7 +1393,7 @@ footer .footer-copy .footer-txt1 {
     margin: 7px 8px 7px 0;
     font-size: 12px;
     color: #003478;
-    font-family: "AppleSD";
+    font-family: "AppleSD-R";
     bottom:0px;
     right:0px;
 }

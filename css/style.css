@@ -7,7 +7,7 @@
 
 @font-face {
     src: url("../fonts/AppleSDGothicNeoR.ttf");
-    font-family: "AppleSD-R", sans-serif;
+    font-family: "AppleSD-R";
 }
 
 a {
@@ -316,11 +316,13 @@ html {
 #home-box .swiper-container .swiper-button-prev {
     background-image: url('../images/arrow-prev1.png');
     width: 40px;
+    opacity:.7;
 }
 
 #home-box .swiper-container .swiper-button-next {
     background-image: url('../images/arrow-next1.png');
     width: 40px;
+    opacity:.7;
 }
 
 
@@ -1745,6 +1747,13 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
+    
+    #home-box .home-finder-wrapper{
+        display: none;
+    }
+    #home-box .contact-info{
+        display: none;
+    }
 
     /* -----------------------------//HOME INFO----------------------------- */
 
@@ -1883,6 +1892,7 @@ footer .footer-copy .footer-txt1 {
         overflow: none;
         padding-bottom: 30px;
         background-color: #000;
+        margin-top:-10px;
     }
 
     footer .footer-slogan {
@@ -2233,11 +2243,11 @@ footer .footer-copy .footer-txt1 {
         display: none;
     }
 
-    #home-box .swiper-container .swiper-wrapper .swiper-slide .over-1280 {
+    #home-box .swiper-container .swiper-wrapper .swiper-slide .under-1280 {
         display: none;
     }
 
-    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
+    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-under-1280 {
         display: none;
     }
 
@@ -2647,6 +2657,9 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .under-1280 {
         display: none;
     }
+    #home-box .swiper-container .swiper-wrapper .swiper-slide img{
+        width:1280px;
+    }
 
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-under-1280 {
         display: none;
@@ -2948,9 +2961,9 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container {
         width: 100%;
         margin: 0 auto;
-        margin-top: 50px;
-    }
 
+    }
+    /*
     #home-box .swiper-container .swiper-button-wrap {
         width: 1280px;
         height: auto;
@@ -2967,6 +2980,8 @@ footer .footer-copy .footer-txt1 {
         position: absolute;
         top: 400px;
     }
+    
+    */
 
     #home-box .swiper-container .swiper-wrapper {
         width: 1280px;
@@ -2981,7 +2996,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     #home-box .swiper-container .swiper-wrapper .swiper-slide img {
-        width: 1280px;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
     }

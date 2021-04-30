@@ -273,7 +273,48 @@ html {
     width: 100%;
     left: 0;
 }
+
+
+
+
+ 
 .mobile-small-button{
+    position: fixed;
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    background-color: #000;
+    bottom:100px;
+    right:15px;
+    z-index: 3;
+    border:2px solid #fff;
+    text-align: center;
+    transition:.3s;
+}
+.mobile-small-button img{
+    width:30px;
+    margin-top:10px;
+}
+.mobile-small-ex{
+    position: fixed;
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    background-color: #000;
+    bottom:100px;
+    right:15px;
+    z-index: 3;
+    border:2px solid #fff;
+    text-align: center;
+    transition:.3s;
+    display: none;
+    opacity: .8;
+}
+.mobile-x{
+    width:30px;
+    margin-top:10px;
+}
+.mobile-small-button2{
     position: fixed;
     width:50px;
     height:50px;
@@ -285,23 +326,7 @@ html {
     border:2px solid #fff;
     text-align: center;
     transition:.3s;
-}
-.mobile-small-button img{
-    width:30px;
-    margin-top:10px;
-}
-.mobile-small-button2{
-    position: fixed;
-    width:50px;
-    height:50px;
-    border-radius: 30px;
-    background-color: #000;
-    bottom:170px;
-    right:15px;
-    z-index: 2;
-    border:2px solid #fff;
-    text-align: center;
-    transition:.3s;
+     opacity: .8;
 }
 .mobile-small-button2 img{
     width:30px;
@@ -313,12 +338,13 @@ html {
     height:50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:240px;
+    bottom:100px;
     right:15px;
     z-index: 2;
     border:2px solid #fff;
     text-align: center;
     transition:.3s;
+    opacity: .8;
 }
 .mobile-small-button3 img{
     width:30px;

@@ -533,6 +533,19 @@ $(document).ready(function () {
         $("#home-box").hide();
     });
     
+    $(".mobile-small-button").click(function(){
+        $(".mobile-small-button2").css("bottom","170px");
+        $(".mobile-small-button3").css("bottom","240px");
+        $(".mobile-small-ex").css("display","block");
+        $(".mobile-small-button").css("display","none");
+    });
+    $(".mobile-small-ex").click(function(){
+        $(".mobile-small-button2").css("bottom","100px");
+        $(".mobile-small-button3").css("bottom","100px");
+        $(".mobile-small-ex").css("display","none");
+        $(".mobile-small-button").css("display","block");
+    });
+    
     
     $("#maintain > .maintain-menu > a > .menu1").click(function () {
         $("#maintain > .maintain-menu > a > .mention1").css("display", "block");

@@ -497,7 +497,7 @@ html {
 /* -------------------------------//HOME TEST----------------------------- */
 
 /* -------------------------------HOME CONTACT----------------------------- */
-#home-box .contact-info {
+.contact-info {
     background-color: #fafafa;
     width: 100%;
     margin: 0 auto;
@@ -509,13 +509,13 @@ html {
     float: left;
 }
 
-#home-box .contact-info .contact-info-wrap {
+.contact-info .contact-info-wrap {
     width: 100%;
     margin: 0 auto;
     float: left;
 }
 
-#home-box .contact-info .contact-box .contact-control {
+.contact-info .contact-box .contact-control {
     width: 75%;
     border-radius: 7px;
     padding-left: 10px;
@@ -525,17 +525,16 @@ html {
     font-family: "AppleSD-R";
 }
 
-#home-box .contact-info .contact-box .contact-control:nth-last-child(1) {
+.contact-info .contact-box .contact-control:nth-last-child(1) {
     height: 300px;
 }
 
-#home-box .contact-info .contact-button-box {
+.contact-info .contact-button-box {
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
 }
-
-#home-box .contact-info .contact-button-box .contact-button {
+.contact-info .contact-button-box .contact-button {
     border-radius: 7px;
     background-color: #fff;
     border: 1px solid #000;
@@ -546,22 +545,22 @@ html {
     font-family: "AppleSD-R";
 }
 
-#home-box .contact-info .contact-button-box .contact-button:hover {
+.contact-info .contact-button-box .contact-button:hover {
     background-color: #000;
     transition: .2s;
     color: #fff;
 }
 
-#home-box .contact-info .contact-txt-box {
+.contact-info .contact-txt-box {
     margin-bottom: 40px;
 }
 
-#home-box .contact-info .contact-txt-box .contact-txt1 {
+.contact-info .contact-txt-box .contact-txt1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
 }
 
-#home-box .contact-info .contact-txt-box .contact-txt2 {
+.contact-info .contact-txt-box .contact-txt2 {
     font-size: 11px;
     font-family: "AppleSD-R";
 }
@@ -1566,9 +1565,15 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
-    #
+    
 
     /* -----------------------------//HOME INFO----------------------------- */
+    .contact-info .contact-box .contact-control:nth-last-child(1) {
+        height: 100px;
+    }
+    .contact-info .contact-txt-box .contact-txt1{
+        margin-top:-80px;
+    }
 
     /* --------------------------SUPPORT---------------------------- */
     #support .support-caution {
@@ -1847,6 +1852,20 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* -----------------------------//HOME INFO----------------------------- */
+    .contact-info{
+        opacity: 0;
+        transition-duration: 1s;
+        overflow:hidden;
+    }
+    .contact-info .contact-box .contact-control:nth-last-child(1) {
+        height: 100px;
+    }
+    .contact-info .contact-txt-box .contact-txt1{
+        margin-top:-80px;
+    }
+    .contact-info .contact-button-box{
+        margin-bottom:-60px;
+    }
 
     /* --------------------------SUPPORT---------------------------- */
 

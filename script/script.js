@@ -550,6 +550,7 @@ $(document).ready(function () {
         $(".mobile-small-button2 > .contact-info").css("opacity", "0");
         $(".mobile-small-button2 > .contact-info").css("transition-duration", "0.1s");
         $(".mobile-small-button2 > .contact-info").css("overflow", "hidden");
+        $(".mobile-small-button2").css("opacity", ".8");
 
         $(".mobile-small-button3").css("bottom", "40px");
         $(".mobile-small-button3").css("width", "50px");
@@ -588,8 +589,10 @@ $(document).ready(function () {
         $(".mobile-small-button2 > .contact-info").css("transition-duration", "0.1s");
         $(".mobile-small-button2").css("background-color", "#000");
         $(".mobile-small-button2 > .contact-info").css("overflow", "hidden");
+        $(".mobile-small-button2").css("opacity", ".8");
 
         $(".mobile-small-button3").css("width", "250px");
+        
         $(".mobile-small-button3 > .finder").css("transition-duration", "3s");
         $(".mobile-small-button3 > .finder").css("opacity", "1");
 
@@ -597,6 +600,31 @@ $(document).ready(function () {
         $(".mobile-small-button3 > img").css("float", "right");
         $(".mobile-small-button3 > img").css("margin-right", "10px");
     });
+    
+    $('.header, #home-box, footer').mouseover(function(){
+        $(".mobile-small-button2").css("width", "50px");
+        $(".mobile-small-button2").css("height", "50px");
+        $(".mobile-small-button2").css("right", "15px");
+        $(".mobile-small-button2 > img").css("opacity", "1");
+        $(".mobile-small-button2 > .contact-info").css("opacity", "0");
+        $(".mobile-small-button2 > .contact-info").css("transition-duration", "0.1s");
+        $(".mobile-small-button2").css("background-color", "#000");
+        $(".mobile-small-button2 > .contact-info").css("overflow", "hidden");
+        $(".mobile-small-button2").css("opacity", ".8");
+        $(".mobile-small-button2").css("bottom", "40px");
+        
+        $(".mobile-small-button3").css("width", "50px");
+        $(".mobile-small-button3 > .finder").css("opacity", "0");
+        $(".mobile-small-button3 > .finder").css("transition-duration", "0.1s");
+        $(".mobile-small-button3").css("bottom", "40px");
+        
+        $(".mobile-small-ex").css("display","none");
+        $(".mobile-small-button").css("display","block");
+    });
+    
+   
+    
+   
 
 
     $("#maintain > .maintain-menu > a > .menu1").click(function () {

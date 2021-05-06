@@ -534,14 +534,14 @@ $(document).ready(function () {
     });
     
     $(".mobile-small-button").click(function(){
-        $(".mobile-small-button2").css("bottom","170px");
-        $(".mobile-small-button3").css("bottom","240px");
+        $(".mobile-small-button2").css("bottom","100px");
+        $(".mobile-small-button3").css("bottom","160px");
         $(".mobile-small-ex").css("display","block");
         $(".mobile-small-button").css("display","none");
     });
     $(".mobile-small-ex").click(function(){
-        $(".mobile-small-button2").css("bottom","100px");
-        $(".mobile-small-button3").css("bottom","100px");
+        $(".mobile-small-button2").css("bottom","40px");
+        $(".mobile-small-button3").css("bottom","40px");
         $(".mobile-small-ex").css("display","none");
         $(".mobile-small-button").css("display","block");
     });

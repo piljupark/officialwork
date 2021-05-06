@@ -284,7 +284,7 @@ html {
     height:50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:100px;
+    bottom:40px;
     right:15px;
     z-index: 3;
     border:2px solid #fff;
@@ -301,7 +301,7 @@ html {
     height:50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:100px;
+    bottom:40px;
     right:15px;
     z-index: 3;
     border:2px solid #fff;
@@ -320,7 +320,7 @@ html {
     height:50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:100px;
+    bottom:40px;
     right:15px;
     z-index: 2;
     border:2px solid #fff;
@@ -330,7 +330,7 @@ html {
 }
 .mobile-small-button2 img{
     width:30px;
-    margin-top:9px;
+    margin-top:10px;
 }
 .mobile-small-button3{
     position: fixed;
@@ -338,7 +338,7 @@ html {
     height:50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:100px;
+    bottom:40px;
     right:15px;
     z-index: 2;
     border:2px solid #fff;

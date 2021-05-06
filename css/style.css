@@ -498,7 +498,7 @@ html {
 
 /* -------------------------------HOME CONTACT----------------------------- */
 .contact-info {
-    background-color: #fafafa;
+    background-color: #f1f1f1;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -1568,11 +1568,19 @@ footer .footer-copy .footer-txt1 {
     
 
     /* -----------------------------//HOME INFO----------------------------- */
+    .contact-info{
+        opacity: 0;
+        transition-duration: 1s;
+        overflow:hidden;
+    }
     .contact-info .contact-box .contact-control:nth-last-child(1) {
         height: 100px;
     }
     .contact-info .contact-txt-box .contact-txt1{
         margin-top:-80px;
+    }
+    .contact-info .contact-button-box{
+        margin-bottom:-60px;
     }
 
     /* --------------------------SUPPORT---------------------------- */
@@ -1861,7 +1869,7 @@ footer .footer-copy .footer-txt1 {
         height: 100px;
     }
     .contact-info .contact-txt-box .contact-txt1{
-        margin-top:-80px;
+        margin-top:-70px;
     }
     .contact-info .contact-button-box{
         margin-bottom:-60px;

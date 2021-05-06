@@ -566,19 +566,16 @@ $(document).ready(function () {
         $(".mobile-small-button2").css("width", "98%");
         $(".mobile-small-button2").css("height", "400px");
         $(".mobile-small-button2").css("right", "0.5%");
+        $(".mobile-small-button2").css("opacity", "1");
         $(".mobile-small-button2").css("background-color", "#f1f1f1");
         $(".mobile-small-button2 > img").css("opacity", "0");
         $(".mobile-small-button2 > .contact-info").css("opacity", "1");
         $(".mobile-small-button2 > .contact-info").css("transition-duration", "1s");
         $(".mobile-small-button2 > .contact-info").css("overflow", "visible");
         
-        
-
         $(".mobile-small-button3").css("width", "50px");
         $(".mobile-small-button3 > .finder").css("opacity", "0");
         $(".mobile-small-button3 > .finder").css("transition-duration", "0.1s");
-
-
     });
 
 
@@ -593,7 +590,7 @@ $(document).ready(function () {
         $(".mobile-small-button2 > .contact-info").css("overflow", "hidden");
 
         $(".mobile-small-button3").css("width", "250px");
-        $(".mobile-small-button3 > .finder").css("transition-duration", "2s");
+        $(".mobile-small-button3 > .finder").css("transition-duration", "3s");
         $(".mobile-small-button3 > .finder").css("opacity", "1");
 
         $(".mobile-small-button3 > img").css("opacity", "1");

@@ -529,8 +529,32 @@ $(document).ready(function () {
         $("#support").hide();
         $("#promotion").hide();
         $("#drive-test").css("display", "block");
-
         $("#home-box").hide();
+    });
+    
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder").click(function(){
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity","0");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2 > img").css("opacity","1");
+        $(".finder-place").css("height","50px");
+         $(".finder-place > .finder").css("transition-duration","2.5s");
+        $(".finder-place > p").css("transition-duration","2.5s");
+        $(".finder-place > .finder").css("opacity","1");
+        $(".finder-place > p").css("opacity","1");
+        $(".finder-shadow").css("opacity",".7");
+        $("body").css("overflow","hidden");
+    });
+    
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").click(function(){
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity","1");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2 > img").css("opacity","0");
+        $(".finder-place").css("height","0px");
+        $(".finder-place > .finder").css("transition-duration",".3s");
+        $(".finder-place > p").css("transition-duration",".3s");
+        $(".finder-place > .finder").css("opacity","0");
+        $(".finder-place > p").css("opacity","0");
+        
+        $(".finder-shadow").css("opacity","0");
+        $(body).css("overflow","auto");
     });
 
     $(".mobile-small-button").click(function () {

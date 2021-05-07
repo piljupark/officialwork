@@ -535,8 +535,10 @@ $(document).ready(function () {
 
     $(".mobile-small-button").click(function () {
         $(".mobile-small-button2").css("bottom", "160px");
+        $(".mobile-small-button2").css("z-index", "2");
         $(".mobile-small-button2 > img").css("opacity", "1");
         $(".mobile-small-button3").css("bottom", "100px");
+        $(".mobile-small-button3").css("z-index", "2");
         $(".mobile-small-button3 > img").css("opacity", "1");
         $(".mobile-small-ex").css("display", "block");
         $(".mobile-small-button").css("display", "none");
@@ -551,11 +553,13 @@ $(document).ready(function () {
         $(".mobile-small-button2 > .contact-info").css("transition-duration", "0.1s");
         $(".mobile-small-button2 > .contact-info").css("overflow", "hidden");
         $(".mobile-small-button2").css("opacity", ".8");
+        $(".mobile-small-button2").css("z-index", "-2");
 
         $(".mobile-small-button3").css("bottom", "40px");
         $(".mobile-small-button3").css("width", "50px");
         $(".mobile-small-button3 > .finder").css("opacity", "0");
         $(".mobile-small-button3 > .finder").css("transition-duration", "0.1s");
+        $(".mobile-small-button3").css("z-index", "-2");
         
 
 

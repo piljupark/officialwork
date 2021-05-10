@@ -176,15 +176,17 @@ html {
 .tablet-pc-vehicle-menu-wrapper {
     float: right;
 }
-.tablet-pc-vehicle-menu-wrapper .finder img{
-    width:15px;
-    margin-top:-1px;
+
+.tablet-pc-vehicle-menu-wrapper .finder img {
+    width: 15px;
+    margin-top: -1px;
 }
-.tablet-pc-vehicle-menu-wrapper .finder2 img{
-    width:15px;
-    margin-top:-1px;
-    position:absolute;
-    right:0px;
+
+.tablet-pc-vehicle-menu-wrapper .finder2 img {
+    width: 15px;
+    margin-top: -1px;
+    position: absolute;
+    right: 0px;
 }
 
 .tablet-pc-vehicle-menu-wrap a {
@@ -213,40 +215,44 @@ html {
     width: 100%;
     left: 0;
 }
-.tablet-pc-vehicle-menu-wrap .finder{
+
+.tablet-pc-vehicle-menu-wrap .finder {
     transition-duration: 1s;
     opacity: 01;
 }
-.tablet-pc-vehicle-menu-wrap .finder2{
+
+.tablet-pc-vehicle-menu-wrap .finder2 {
     transition-duration: 1s;
     opacity: 0;
-    position:absolute;
-    right:0px;
+    position: absolute;
+    right: 0px;
     z-index: -1;
 }
 
-.finder-place{
-    position:fixed;
-    width:100%;
-    height:0px;
+.finder-place {
+    position: fixed;
+    width: 100%;
+    height: 0px;
     z-index: 10;
-    top:60px;
+    top: 60px;
     background-color: #f1f1f1;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     transition-duration: 1s;
 }
-.finder-shadow{
-    width:100%;
-    height:100%;
+
+.finder-shadow {
+    width: 100%;
+    height: 100%;
     z-index: 0;
     background-color: #000;
     position: absolute;
-    top:60px;
+    top: 60px;
     opacity: .0;
     transition-duration: 1s;
 }
-.finder-place .finder{
+
+.finder-place .finder {
     width: 80%;
     border: none;
     border-bottom: 0.5px solid #ccc;
@@ -255,19 +261,20 @@ html {
     float: left;
     padding-left: 10px;
     margin-left: 30px;
-    margin-top:5px;
+    margin-top: 5px;
     border-radius: 0px;
     font-family: "AppleSD-R";
     background-color: #f1f1f1;
     opacity: 0;
-    cursor:default;
+    cursor: default;
 }
-.finder-place p{
+
+.finder-place p {
     font-family: 'Bebas Neue', cursive;
     position: absolute;
-    right:10px;
-    top:16px;
-    color:#003478;
+    right: 10px;
+    top: 16px;
+    color: #003478;
     transition-duration: .2s;
     opacity: 0;
 }
@@ -345,91 +352,98 @@ html {
 
 
 
- 
-.mobile-small-button{
+
+.mobile-small-button {
     position: fixed;
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:40px;
-    right:15px;
+    bottom: 40px;
+    right: 15px;
     z-index: 3;
-    border:2px solid #fff;
+    border: 2px solid #fff;
     text-align: center;
-    transition:.3s;
+    transition: .3s;
 }
-.mobile-small-button img{
-    width:30px;
-    margin-top:10px;
+
+.mobile-small-button img {
+    width: 30px;
+    margin-top: 10px;
 }
-.mobile-small-ex{
+
+.mobile-small-ex {
     position: fixed;
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:40px;
-    right:15px;
+    bottom: 40px;
+    right: 15px;
     z-index: 3;
-    border:2px solid #fff;
+    border: 2px solid #fff;
     text-align: center;
-    transition:.1s;
+    transition: .1s;
     display: none;
     opacity: .8;
 }
-.mobile-x{
-    width:30px;
-    margin-top:10px;
-}
-.mobile-small-button2{
-    position: fixed;
-    width:50px;
-    height:50px;
-    border-radius: 30px;
-    background-color: #000;
-    bottom:40px;
-    right:15px;
-    z-index: -2;
-    border:2px solid #fff;
-    text-align: center;
-    transition:.1s;
-     opacity: .8;
-}
-.mobile-small-button2 img{
-    width:30px;
-    margin-top:10px;
+
+.mobile-x {
+    width: 30px;
+    margin-top: 10px;
 }
 
-.mobile-small-button3{
+.mobile-small-button2 {
     position: fixed;
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
     border-radius: 30px;
     background-color: #000;
-    bottom:40px;
-    right:15px;
+    bottom: 40px;
+    right: 15px;
     z-index: -2;
-    border:2px solid #fff;
+    border: 2px solid #fff;
     text-align: center;
-    transition:.1s;
+    transition: .1s;
     opacity: .8;
 }
-.mobile-small-button3 .finder{
+
+.mobile-small-button2 img {
+    width: 30px;
+    margin-top: 10px;
+}
+
+.mobile-small-button3 {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #000;
+    bottom: 40px;
+    right: 15px;
+    z-index: -2;
+    border: 2px solid #fff;
     text-align: center;
-    background-color:#000;
-    border:#000;
-    padding-left:5px;
-    margin-top:15px;
+    transition: .1s;
+    opacity: .8;
+}
+
+.mobile-small-button3 .finder {
+    text-align: center;
+    background-color: #000;
+    border: #000;
+    padding-left: 5px;
+    margin-top: 15px;
     font-size: 15px;
-    color:#fff;
-   opacity: 0;
-    margin-left:20px;
+    color: #fff;
+    opacity: 0;
+    margin-left: 20px;
     transition-duration: 2s;
 }
-.mobile-small-button3 img{
-    width:30px;
-    margin-top:10px;
+
+.mobile-small-button3 img {
+    width: 30px;
+    margin-top: 10px;
 }
 
 /* -------------------------------HOME TEST----------------------------- */
@@ -446,7 +460,7 @@ html {
     width: 100%;
     margin: 0 auto;
     float: left;
-    position:relative;
+    position: relative;
 }
 
 #home-box .swiper-container .swiper-wrapper {
@@ -475,13 +489,13 @@ html {
 #home-box .swiper-container .swiper-button-prev {
     background-image: url('../images/arrow-prev1.png');
     width: 40px;
-    opacity:.7;
+    opacity: .7;
 }
 
 #home-box .swiper-container .swiper-button-next {
     background-image: url('../images/arrow-next1.png');
     width: 40px;
-    opacity:.7;
+    opacity: .7;
 }
 
 
@@ -569,48 +583,90 @@ html {
 
 /* -------------------------------HOME BANNER----------------------------- */
 
-#home-banner{
-    width:100%;
-    float:left;
-    position:relative;
-    margin:50px 0;
+#home-banner {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin: 50px 0;
 }
-#home-banner img{
+
+#home-banner img {
     border-radius: 10px;
     transition-duration: .5s;
-}
-#home-banner img:hover{
-    width:130%;
-}
-
-#home-banner .home-banner-wrap{
-    width:100%;
-    margin:0 auto;
-}
-#home-banner .home-banner-wrap .home-banner-left{
-    width:50%;
-    float:left;
-    margin:0 auto;
+    object-fit: cover;
+    transform: scale(1.0);
+    transition: transform .5s;
 }
 
-#home-banner .home-banner-wrap .home-banner-right{
-    width:50%;
-    float:left;
+#home-banner img:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
 }
-#home-banner .home-banner-left img{
-    width:100%;
-    float:left;
+
+#home-banner .home-banner-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#home-banner .home-banner-wrap .home-banner-left {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#home-banner .home-banner-wrap .home-banner-right {
+    width: 50%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#home-banner .home-banner-wrap .home-banner-right .banner-2-wrap {
+    float: left;
+    width: 49%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 3px;
+    position: relative;
+}
+
+#home-banner .home-banner-wrap .home-banner-right .banner-3-wrap {
+    width: 49%;
+    float: right;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 3px;
+    position: relative;
+}
+
+#home-banner .home-banner-wrap .home-banner-right .banner-4-wrap {
+    width: 99%;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 3px;
+}
+
+
+#home-banner .home-banner-left img {
+    width: 100%;
+    float: left;
     cursor: pointer;
+    object-fit: cover;
 }
-#home-banner .home-banner-right img{
-    width:49%;
+
+#home-banner .home-banner-right img {
+    width: 100%;
     cursor: pointer;
+    object-fit: cover;
 }
-#home-banner .home-banner-right img:nth-child(1){
-    margin-left:3px;
-}
-#home-banner .home-banner-right img:nth-child(3){
-    width:100%;
+
+#home-banner .home-banner-right img:nth-child(3) {
+    width: 100%;
 }
 
 /* -------------------------------//HOME BANNER----------------------------- */
@@ -655,6 +711,7 @@ html {
     margin: 0 auto;
     margin-top: 20px;
 }
+
 .contact-info .contact-button-box .contact-button {
     border-radius: 7px;
     background-color: #fff;
@@ -970,11 +1027,11 @@ footer .footer-copy .footer-txt1 {
     width: 100%;
     float: right;
     position: absolute;
-    top:300px;
+    top: 300px;
 }
 
 .parts-pure-txt {
-    position:relative;
+    position: relative;
     margin: 0 auto;
     text-align: left;
     font-size: 14px;
@@ -1051,20 +1108,21 @@ footer .footer-copy .footer-txt1 {
 
 .maintain-main-img {
     margin: 0 auto;
-    width:100%;
+    width: 100%;
     margin-top: 20px;
-    position:relative;
+    position: relative;
 }
 
 .maintain-main-img img {
-    width:100%;
+    width: 100%;
 }
-#maintain .maintain-main-img .maintain-title{
+
+#maintain .maintain-main-img .maintain-title {
     font-family: "AppleSD-R";
-    color:#fff;
-    position:absolute;
-    top:40px;
-    left:20px;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 20px;
     font-size: 2em;
     font-weight: bold;
 }
@@ -1686,22 +1744,25 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
-    
+
 
     /* -----------------------------//HOME INFO----------------------------- */
-    .contact-info{
+    .contact-info {
         opacity: 0;
         transition-duration: 1s;
-        overflow:hidden;
+        overflow: hidden;
     }
+
     .contact-info .contact-box .contact-control:nth-last-child(1) {
         height: 100px;
     }
-    .contact-info .contact-txt-box .contact-txt1{
-        margin-top:-80px;
+
+    .contact-info .contact-txt-box .contact-txt1 {
+        margin-top: -80px;
     }
-    .contact-info .contact-button-box{
-        margin-bottom:-60px;
+
+    .contact-info .contact-button-box {
+        margin-bottom: -60px;
     }
 
     /* --------------------------SUPPORT---------------------------- */
@@ -1972,28 +2033,32 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
     }
-    
-    #home-box .home-finder-wrapper{
+
+    #home-box .home-finder-wrapper {
         display: none;
     }
-    #home-box .contact-info{
+
+    #home-box .contact-info {
         display: none;
     }
 
     /* -----------------------------//HOME INFO----------------------------- */
-    .contact-info{
+    .contact-info {
         opacity: 0;
         transition-duration: 1s;
-        overflow:hidden;
+        overflow: hidden;
     }
+
     .contact-info .contact-box .contact-control:nth-last-child(1) {
         height: 100px;
     }
-    .contact-info .contact-txt-box .contact-txt1{
-        margin-top:-70px;
+
+    .contact-info .contact-txt-box .contact-txt1 {
+        margin-top: -70px;
     }
-    .contact-info .contact-button-box{
-        margin-bottom:-60px;
+
+    .contact-info .contact-button-box {
+        margin-bottom: -60px;
     }
 
     /* --------------------------SUPPORT---------------------------- */
@@ -2038,7 +2103,7 @@ footer .footer-copy .footer-txt1 {
         position: absolute;
         top: -780px;
         text-align: center;
-        
+
     }
 
     .parts-button {
@@ -2131,7 +2196,7 @@ footer .footer-copy .footer-txt1 {
         overflow: none;
         padding-bottom: 30px;
         background-color: #000;
-        margin-top:-10px;
+        margin-top: -10px;
     }
 
     footer .footer-slogan {
@@ -2498,10 +2563,13 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* --------------------------//SUPPORT---------------------------- */
-    
-    .mobile-small-button, .mobile-small-ex, .mobile-small-button2, .mobile-small-button3{
-        display:none;
-        opacity:0;
+
+    .mobile-small-button,
+    .mobile-small-ex,
+    .mobile-small-button2,
+    .mobile-small-button3 {
+        display: none;
+        opacity: 0;
         z-index: -2;
     }
 
@@ -2711,10 +2779,13 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* --------------------------//SUPPORT---------------------------- */
-    
-    .mobile-small-button, .mobile-small-ex, .mobile-small-button2, .mobile-small-button3{
-        display:none;
-        opacity:0;
+
+    .mobile-small-button,
+    .mobile-small-ex,
+    .mobile-small-button2,
+    .mobile-small-button3 {
+        display: none;
+        opacity: 0;
         z-index: -2;
     }
 
@@ -2907,8 +2978,9 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .under-1280 {
         display: none;
     }
-    #home-box .swiper-container .swiper-wrapper .swiper-slide img{
-        width:1280px;
+
+    #home-box .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 1280px;
     }
 
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-under-1280 {
@@ -2924,29 +2996,16 @@ footer .footer-copy .footer-txt1 {
     }
 
 
+    /* -------------------------------HOME BANNER----------------------------- */
 
-    #home-box .home-finder-wrapper .home-finder {
-        width: 90%;
-        margin-top: 50px;
+    #home-banner .home-banner-wrap {
+        width: 1024px;
     }
 
-    #home-box .home-finder-wrapper .home-finder .finder-img img {
-        width: 25px;
-        margin-top: 5px;
-        margin-right: 120px;
-    }
+    /* -------------------------------//HOME BANNER----------------------------- */
 
-    #home-box .home-finder-wrapper .home-finder .finder {
-        width: 60%;
-        border: none;
-        border-bottom: 0.5px solid #ccc;
-        height: 30px;
-        transition: .3s;
-        float: left;
-        padding-left: 10px;
-        margin-left: 140px;
-        border-radius: 0px;
-    }
+
+
 
     /* -------------------------------HOME CONTACT----------------------------- */
     #home-box .contact-info {
@@ -2965,7 +3024,7 @@ footer .footer-copy .footer-txt1 {
         margin: 0 auto;
         width: 100%;
         height: auto;
-        background-color: #fafafa;
+        background-color: #f1f1f1;
     }
 
     #home-box .contact-info .contact-box .contact-control {
@@ -3026,10 +3085,13 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* --------------------------//SUPPORT---------------------------- */
-    
-    .mobile-small-button, .mobile-small-ex, .mobile-small-button2, .mobile-small-button3{
-        display:none;
-        opacity:0;
+
+    .mobile-small-button,
+    .mobile-small-ex,
+    .mobile-small-button2,
+    .mobile-small-button3 {
+        display: none;
+        opacity: 0;
         z-index: -2;
     }
 
@@ -3219,6 +3281,7 @@ footer .footer-copy .footer-txt1 {
         margin: 0 auto;
 
     }
+
     /*
     #home-box .swiper-container .swiper-button-wrap {
         width: 1280px;
@@ -3305,45 +3368,13 @@ footer .footer-copy .footer-txt1 {
 
 
 
-    #home-box .home-finder-wrapper {
-        width: 100%;
-        float: left;
-        height: 100px;
-        position: relative;
+    /* -------------------------------HOME BANNER----------------------------- */
+
+    #home-banner .home-banner-wrap {
+        width: 90%;
     }
 
-    #home-box .home-finder-wrapper .home-finder {
-        width: 1280px;
-        margin: 0 auto;
-        height: 50%;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    #home-box .home-finder-wrapper .home-finder .finder-img {
-        width: 20%;
-        float: right;
-        height: 40px;
-    }
-
-    #home-box .home-finder-wrapper .home-finder .finder-img img {
-        width: 25px;
-        margin-top: 5px;
-        margin-right: 120px;
-    }
-
-    #home-box .home-finder-wrapper .home-finder .finder {
-        width: 60%;
-        border: none;
-        border-bottom: 0.5px solid #ccc;
-        height: 30px;
-        transition: .3s;
-        float: left;
-        padding-left: 10px;
-        margin-left: 200px;
-        border-radius: 0px;
-    }
-
+    /* -------------------------------//HOME BANNER----------------------------- */
 
     /* -------------------------------HOME CONTACT----------------------------- */
     #home-box .contact-info {
@@ -3426,10 +3457,13 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* --------------------------//SUPPORT---------------------------- */
-    
-    .mobile-small-button, .mobile-small-ex, .mobile-small-button2, .mobile-small-button3{
-        display:none;
-        opacity:0;
+
+    .mobile-small-button,
+    .mobile-small-ex,
+    .mobile-small-button2,
+    .mobile-small-button3 {
+        display: none;
+        opacity: 0;
         z-index: -2;
     }
 

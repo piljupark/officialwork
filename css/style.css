@@ -565,6 +565,58 @@ html {
 
 /* -------------------------------//HOME TEST----------------------------- */
 
+
+
+/* -------------------------------HOME BANNER----------------------------- */
+
+#home-banner{
+    width:100%;
+    float:left;
+    position:relative;
+    margin:50px 0;
+}
+#home-banner img{
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+#home-banner img:hover{
+    width:130%;
+}
+
+#home-banner .home-banner-wrap{
+    width:100%;
+    margin:0 auto;
+}
+#home-banner .home-banner-wrap .home-banner-left{
+    width:50%;
+    float:left;
+    margin:0 auto;
+}
+
+#home-banner .home-banner-wrap .home-banner-right{
+    width:50%;
+    float:left;
+}
+#home-banner .home-banner-left img{
+    width:100%;
+    float:left;
+    cursor: pointer;
+}
+#home-banner .home-banner-right img{
+    width:49%;
+    cursor: pointer;
+}
+#home-banner .home-banner-right img:nth-child(1){
+    margin-left:3px;
+}
+#home-banner .home-banner-right img:nth-child(3){
+    width:100%;
+}
+
+/* -------------------------------//HOME BANNER----------------------------- */
+
+
+
 /* -------------------------------HOME CONTACT----------------------------- */
 .contact-info {
     background-color: #f1f1f1;

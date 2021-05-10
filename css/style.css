@@ -1728,6 +1728,8 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* ------------------------------//MODEL-FORM--------------------------- */
+    
+    /* -----------------------------HOME INFO----------------------------- */
 
     #home-box .home-txt-en {
         font-size: 50px;
@@ -1747,6 +1749,32 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME INFO----------------------------- */
+    
+    
+    
+    /* -----------------------------HOME BANNER----------------------------- */
+    #home-banner{
+        margin-top:10px;
+        float:left;
+        margin-bottom:-290px;
+    }
+    #home-banner .home-banner-wrap .home-banner-left{
+        width:100%;
+    }
+    #home-banner .home-banner-wrap .home-banner-right{
+        width:100%;
+    }
+    #home-banner .home-banner-wrap .home-banner-right .banner-2-wrap, #home-banner .home-banner-wrap .home-banner-right .banner-3-wrap{
+        width:48%;
+        margin-top:5px;
+    }
+    
+    
+    /* -----------------------------//HOME BANNER----------------------------- */
+    
+    
+    
+    /* -----------------------------CONTACT----------------------------- */
     .contact-info {
         opacity: 0;
         transition-duration: 1s;
@@ -1764,6 +1792,10 @@ footer .footer-copy .footer-txt1 {
     .contact-info .contact-button-box {
         margin-bottom: -60px;
     }
+    
+     /* -----------------------------CONTACT----------------------------- */
+    
+    
 
     /* --------------------------SUPPORT---------------------------- */
     #support .support-caution {
@@ -2043,6 +2075,25 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* -----------------------------//HOME INFO----------------------------- */
+    
+        /* -----------------------------HOME BANNER----------------------------- */
+    #home-banner{
+        margin-top:10px;
+        float:left;
+        margin-bottom:20px;
+    }
+    #home-banner .home-banner-wrap .home-banner-left{
+        width:100%;
+    }
+    #home-banner .home-banner-wrap .home-banner-right{
+        width:100%;
+    }
+    #home-banner .home-banner-wrap .home-banner-right .banner-2-wrap, #home-banner .home-banner-wrap .home-banner-right .banner-3-wrap{
+        width:48%;
+        margin-top:5px;
+    }
+    
+    /* -----------------------------//HOME BANNER----------------------------- */
     .contact-info {
         opacity: 0;
         transition-duration: 1s;
@@ -2311,6 +2362,45 @@ footer .footer-copy .footer-txt1 {
 
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-1280 {
         display: none;
+    }
+    
+    
+        /* -----------------------------HOME BANNER----------------------------- */
+    #home-banner{
+        margin-top:10px;
+        float:left;
+        margin-bottom:-310px;
+    }
+    #home-banner .home-banner-wrap .home-banner-left{
+        width:100%;
+    }
+    #home-banner .home-banner-wrap .home-banner-right{
+        width:100%;
+    }
+    #home-banner .home-banner-wrap .home-banner-right .banner-2-wrap, #home-banner .home-banner-wrap .home-banner-right .banner-3-wrap{
+        width:48%;
+        margin-top:5px;
+    }
+    
+    
+    /* -----------------------------//HOME BANNER----------------------------- */
+    
+    .contact-info {
+        opacity: 0;
+        transition-duration: 1s;
+        overflow: hidden;
+    }
+
+    .contact-info .contact-box .contact-control:nth-last-child(1) {
+        height: 100px;
+    }
+
+    .contact-info .contact-txt-box .contact-txt1 {
+        margin-top: -70px;
+    }
+
+    .contact-info .contact-button-box {
+        margin-bottom: -60px;
     }
 
     /* --------------------------SUPPORT---------------------------- */
@@ -3281,26 +3371,6 @@ footer .footer-copy .footer-txt1 {
         margin: 0 auto;
 
     }
-
-    /*
-    #home-box .swiper-container .swiper-button-wrap {
-        width: 1280px;
-        height: auto;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    #home-box .swiper-container .swiper-button-wrap .swiper-button-prev {
-        position: absolute;
-        top: 400px;
-    }
-
-    #home-box .swiper-container .swiper-button-wrap .swiper-button-next {
-        position: absolute;
-        top: 400px;
-    }
-    
-    */
 
     #home-box .swiper-container .swiper-wrapper {
         width: 1280px;

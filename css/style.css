@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 @font-face {
-    src: url("../fonts/AppleSDGothicNeoM.ttf");
-    src: local("AppleSDGothicNeoM00");
-    font-family: "AppleSD";
+    src: url(../fonts/AppleSDGothicNeoM.woff2) format("woff2"), url(../fonts/AppleSDGothicNeoM.woff) format("woff"), url(../fonts/AppleSDGothicNeoM.ttf) format("truetype");
+    src: local("AppleSDGothicNeoM");
+    font-family: "AppleSDGothicNeoM";
 }
 
 @font-face {
     src: url(../fonts/AppleSDGothicNeoR.woff2) format("woff2"), url(../fonts/AppleSDGothicNeoR.woff) format("woff"), url(../fonts/AppleSDGothicNeoR.ttf) format("truetype");
     src: local("AppleSDGothicNeoR");
-    font-family: "AppleSD-R";
+    font-family: "AppleSDGothicNeoR";
+}
+@font-face {
+    src: url(../fonts/AppleSDGothicNeoT.woff2) format("woff2"), url(../fonts/AppleSDGothicNeoT.woff) format("woff"), url(../fonts/AppleSDGothicNeoT.ttf) format("truetype");
+    src: local("AppleSDGothicNeoT");
+    font-family: "AppleSDGothicNeoT";
 }
 
 a {
@@ -152,9 +157,9 @@ html {
 }
 
 .menu-wrap .etc-menu .mobile-ko {
-    font-family: "AppleSD-R";
-    font-weight: 700;
+    font-family: "AppleSDGothicNeoM";
     font-size: 0.8em;
+    font-weight: 500;
 }
 
 
@@ -1756,7 +1761,7 @@ footer .footer-copy .footer-txt1 {
     #home-banner{
         margin-top:10px;
         float:left;
-        margin-bottom:-290px;
+        margin-bottom: 30px;
     }
     #home-banner .home-banner-wrap .home-banner-left{
         width:100%;
@@ -1776,6 +1781,7 @@ footer .footer-copy .footer-txt1 {
     
     /* -----------------------------CONTACT----------------------------- */
     .contact-info {
+        display: none;
         opacity: 0;
         transition-duration: 1s;
         overflow: hidden;
@@ -2080,7 +2086,8 @@ footer .footer-copy .footer-txt1 {
     #home-banner{
         margin-top:10px;
         float:left;
-        margin-bottom:20px;
+        margin-bottom:30px;
+        overflow: hidden;
     }
     #home-banner .home-banner-wrap .home-banner-left{
         width:100%;
@@ -2095,6 +2102,7 @@ footer .footer-copy .footer-txt1 {
     
     /* -----------------------------//HOME BANNER----------------------------- */
     .contact-info {
+        display: none;
         opacity: 0;
         transition-duration: 1s;
         overflow: hidden;
@@ -2369,7 +2377,7 @@ footer .footer-copy .footer-txt1 {
     #home-banner{
         margin-top:10px;
         float:left;
-        margin-bottom:-310px;
+        margin-bottom:30px;
     }
     #home-banner .home-banner-wrap .home-banner-left{
         width:100%;
@@ -2386,6 +2394,7 @@ footer .footer-copy .footer-txt1 {
     /* -----------------------------//HOME BANNER----------------------------- */
     
     .contact-info {
+        display: none;
         opacity: 0;
         transition-duration: 1s;
         overflow: hidden;

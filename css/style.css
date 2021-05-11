@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 @font-face {
-    src: url(../fonts/AppleSDGothicNeoM.woff2) format("woff2"), url(../fonts/AppleSDGothicNeoM.woff) format("woff"), url(../fonts/AppleSDGothicNeoM.ttf) format("truetype");
-    src: local("AppleSDGothicNeoM");
-    font-family: "AppleSDGothicNeoM";
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB";
+}
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff");
+    font-family: "AppleSDGothicNeoB";
+}
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff2");
+    font-family: "AppleSDGothicNeoB";
 }
 
 @font-face {
@@ -20,6 +27,7 @@
 a {
     text-decoration: none;
     color: #000;
+    
 }
 
 p {
@@ -867,7 +875,7 @@ footer .footer-txt-box-wrap a:hover {
 
 footer .footer-txt-box-wrap .footer-txt-ko {
     font-size: 10px;
-    font-family: "AppleSD-R";
+    font-family: "AppleSDGothicNeoM";
 }
 
 footer .footer-txt-box-wrap .ko2 {
@@ -949,7 +957,7 @@ footer .footer-copy .footer-txt1 {
     color: #777;
     border-bottom: 0.5px solid #777;
     width: 90px;
-    font-family: "AppleSD-R";
+    font-family: "AppleSDGothicNeoB";
 }
 
 .car-info-wrapper .car-1 .car-img-wrap {

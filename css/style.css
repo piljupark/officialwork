@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 @font-face {
-    src: url("../fonts/AppleSDGothicNeoL.ttf");
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    src: local("AppleSDGothicNeoM00");
     font-family: "AppleSD";
 }
 
 @font-face {
-    src: url("../fonts/AppleSDGothicNeoR.ttf");
+    src: url(../fonts/AppleSDGothicNeoR.woff2) format("woff2"), url(../fonts/AppleSDGothicNeoR.woff) format("woff"), url(../fonts/AppleSDGothicNeoR.ttf) format("truetype");
+    src: local("AppleSDGothicNeoR");
     font-family: "AppleSD-R";
 }
 
@@ -538,6 +540,44 @@ html {
 
 /* -------------------------------//HOME TEST----------------------------- */
 
+#home-showrooom{
+    width:100%;
+    float:left;
+    position:relative;
+    
+}
+#home-showroom .home-showroom-wrap{
+    width:95%;
+    margin:0 auto;
+    height:auto;
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+#home-showroom .home-showroom-wrap img{
+    width: 100%;
+    border-radius: 10px;
+    float:left;
+    margin-bottom:30px;
+}
+#home-showroom .home-showroom-wrap .home-showroom-txt{
+    color:#292929;
+    font-size: 25px;
+    font-family: "AppleSD-R";
+    text-align: center;
+    line-height: 3;
+    font-weight: bold;
+}
+
+
+
+
+/* -------------------------------HOME SHOWROOM----------------------------- */
+.ho
+/* -------------------------------//HOME SHOWROOM----------------------------- */
+
+
 
 
 /* -------------------------------HOME BANNER----------------------------- */
@@ -904,7 +944,7 @@ footer .footer-copy .footer-txt1 {
     color: #777;
     border-bottom: 0.5px solid #777;
     width: 90px;
-
+    font-family: "AppleSD-R";
 }
 
 .car-info-wrapper .car-1 .car-img-wrap {

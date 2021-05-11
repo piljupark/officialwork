@@ -512,6 +512,7 @@ html {
     width: 100%;
     float:left;
     opacity: 0.5;
+    cursor: default;
 }
 #home-box .home-txt-ko {
     width:100%;
@@ -2590,7 +2591,7 @@ footer .footer-copy .footer-txt1 {
 
 }
 
-@media screen and (max-width:850px) and (min-width:701px) {
+@media screen and (max-width:880px) and (min-width:701px) {
 
     .header .menu-btn {
         display: none;
@@ -2795,7 +2796,7 @@ footer .footer-copy .footer-txt1 {
 
 
 
-@media screen and (max-width:1023px) and (min-width:851px) {
+@media screen and (max-width:1023px) and (min-width:881px) {
     .header .menu-btn {
         display: none;
     }

@@ -378,7 +378,7 @@ html {
 .tablet-pc-btn .tablet-pc-ko {
     font-family: "AppleSDGothicNeoM";
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 14px;
 }
 
@@ -769,6 +769,11 @@ html {
 
 
 /* -------------------------------HOME PROMOTION----------------------------- */
+
+
+/*
+
+
 #home-promotion{
     float:left;
     width:100%;
@@ -801,7 +806,7 @@ html {
     text-align: center;
 }
 #home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .box-txt{
-    line-height: 3.5;
+    margin-top:20px;
 }
 #home-promotion .home-promotion-wrap .box{
     width:100%;
@@ -823,6 +828,7 @@ html {
     margin-top:20px;
     color:#292929;
     opacity: .7;
+    float
 }
 #home-promotion .home-promotion-wrap .box .box-txt{
     font-size: 20px;
@@ -840,12 +846,13 @@ html {
 #home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box{
     width:100%;
     margin:0 auto;
+    float:left;
 }
 #home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box .box-txt{
     float:left;
     width:25%;
     border-radius: 20px;
-    margin-top:10px;
+    margin-top:0px;
     line-height: 2;
     color:#003478;
     font-size:25px;
@@ -859,6 +866,34 @@ html {
     line-height: 1.4;
     color:#292929;
 }
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box .box-title{
+    float:left;
+}
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box .box-title2{
+    float:right;
+    border:1px solid #003478;
+    margin-right:30px;
+    width:80px;
+    height:30px;
+    text-align: center;
+    color:#003478;
+    border-radius: 50px;
+    line-height: 2.5;
+    font-family: "AppleSDGothicNeoM";
+    font-size: 12px;
+    margin-top:15px;
+    cursor: pointer;
+    transition-duration: .3s;
+    opacity: 1;
+}
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box .box-title2:hover{
+    color:#fff;
+    background-color: #003478;
+}
+
+
+*/
+
 /* -------------------------------//HOME PROMOTION----------------------------- */
 
 
@@ -870,19 +905,70 @@ html {
     float: left;
     position: relative;
     text-align: center;
-    padding-top: 50px;
     overflow-y: none;
-    padding-bottom: 50px;
     border-radius: 10px;
+    margin-bottom:30px;
 
 }
 
 .contact-info .contact-info-wrap {
     width: 95%;
+    height:270px;
     margin: 0 auto;
     background-color: #fafafa;
     border-radius: 10px;
 }
+.contact-info .contact-txt-box {
+    padding: 30px 0;
+}
+
+.contact-info .contact-txt-box .contact-txt1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+}
+
+.contact-info .contact-txt-box .contact-txt2 {
+    font-size: 12px;
+    font-family: "AppleSDGothicNeoT";
+}
+.contact-info .contact-info-wrap .contact-minibox{
+    width:100%;
+    position:relative;
+    float: left;
+    text-align: center;
+}
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap{
+    width:33%;
+    margin:0 auto;
+    float:left;
+    text-align: center;
+}
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox{
+    height:150px;
+    text-align: center;
+}
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap img{
+    width:50px;
+    text-align: center;
+}
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
+    border:1px solid #003478;
+    margin:30px 60px 0;
+    color:#003478;
+    height:30px;
+    line-height: 2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p:hover{
+    color:#fff;
+    background-color: #003478;
+}
+
+
+
+/*
 
 .contact-info .contact-box .contact-control {
     width: 75%;
@@ -922,19 +1008,8 @@ html {
     color: #fff;
 }
 
-.contact-info .contact-txt-box {
-    padding: 30px 0;
-}
 
-.contact-info .contact-txt-box .contact-txt1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-}
-
-.contact-info .contact-txt-box .contact-txt2 {
-    font-size: 11px;
-    font-family: "AppleSD-R";
-}
+*/
 
 
 /* -------------------------------//HOME CONTACT----------------------------- */
@@ -1978,6 +2053,9 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME BANNER----------------------------- */
+    
+    
+    
 
 
 

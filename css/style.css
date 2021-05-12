@@ -777,28 +777,45 @@ html {
 
 #home-promotion .home-promotion-wrap{
     width:95%;
+    height:300px;
     margin:0 auto;
     position: relative;
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
 }
+#home-promotion .home-promotion-wrap .promotion-line{
+    width:95%;
+    position: absolute;
+    top:50%;
+    left:2.5%;
+    margin:0 auto;
+    border-top:0.5px solid #292929;
+    opacity: .2;
+    text-align: center;
+}
 
 #home-promotion .home-promotion-wrap .home-promotion-box-wrap{
     width:33%;
+    float:left;
     text-align: center;
 }
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box{
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .box-txt{
+    line-height: 3.5;
+}
+#home-promotion .home-promotion-wrap .box{
     width:100%;
-    height:100px;
+    height:143px;
     border:1px solid #fafafa;
     border-radius: 10px;
     margin-bottom:10px;
 }
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box:nth-child(3){
+
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box:nth-child(2){
     margin-bottom: 0px;
 }
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .box-title{
+
+#home-promotion .home-promotion-wrap .box .box-title{
     font-size: 14px;
     font-family: "AppleSDGothicNeoT";
     text-align: left;
@@ -807,23 +824,40 @@ html {
     color:#292929;
     opacity: .7;
 }
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .box-txt{
+#home-promotion .home-promotion-wrap .box .box-txt{
     font-size: 20px;
     font-family: "AppleSDGothicNeoT";
     font-weight: 800;
     margin-top:10px;
     color:#292929;
 }
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .promotion-line{
-    width:90%;
-    height:10px;
-    margin:0 auto;
-    border-top:0.5px solid #f1f1f1;
-}
+
 
 #home-promotion .home-promotion-wrap .home-promotion-explain-wrap{
-    width:60%;
+    width:50%;
     float:right;
+}
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box{
+    width:100%;
+    margin:0 auto;
+}
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box .box-txt{
+    float:left;
+    width:25%;
+    border-radius: 20px;
+    margin-top:10px;
+    line-height: 2;
+    color:#003478;
+    font-size:25px;
+}
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box:nth-child(2) .explain-box .box-txt{
+    width:20%;
+}
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box .box-txt2{
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1.4;
+    color:#292929;
 }
 /* -------------------------------//HOME PROMOTION----------------------------- */
 

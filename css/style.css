@@ -575,11 +575,13 @@ html {
 
 /* -------------------------------//HOME TEST----------------------------- */
 
+
+/* -------------------------------HOME SHOWROOM----------------------------- */
+
 #home-showrooom{
     width:100%;
     float:left;
     position:relative;
-    
 }
 #home-showroom .home-showroom-wrap{
     position: relative;
@@ -589,13 +591,22 @@ html {
     background-color: #fafafa;
     border-radius: 10px;
     margin-top:30px;
-    margin-bottom:30px;
 }
-#home-showroom .home-showroom-wrap img{
-    width: 100%;
-    border-radius: 10px;
+#home-showroom .home-showroom-wrap .home-showroom-img-wrap1{
+    width:33%;
+    position:relative;
     float:left;
-    margin-bottom:30px;
+    text-align: right;
+}
+#home-showroom .home-showroom-wrap .home-showroom-img-wrap1 img:nth-child(1){
+    width:55px;
+    margin-top:22px;
+    opacity: .8;
+}
+#home-showroom .home-showroom-wrap .home-showroom-txt-wrap{
+    width:33%;
+    float:left;
+    position: relative;
 }
 #home-showroom .home-showroom-wrap .home-showroom-txt{
     color:#292929;
@@ -616,6 +627,7 @@ html {
     width:100px;
     height:30px;
     margin:0 auto;
+    margin-top:5px;
     border-radius: 17px;
     transition-duration: .5s;
     cursor: pointer;
@@ -624,27 +636,20 @@ html {
     border:0.5px solid #003478;
     color:#fff;
     background-color: #003478;
+   
 }
-#home-showroom .home-showroom-wrap .home-showroom-img-wrap{
-    width:100%;
-    position:absolute;
+#home-showroom .home-showroom-wrap .home-showroom-img-wrap2{
+    width:33%;
+    position:relative;
+    float:left;
 }
-#home-showroom .home-showroom-wrap .home-showroom-img-wrap img:nth-child(1){
+#home-showroom .home-showroom-wrap .home-showroom-img-wrap2 img:nth-child(1){
     width:60px;
-    margin-top:10px;
-    margin-left:100px;
-}
-#home-showroom .home-showroom-wrap .home-showroom-img-wrap img:nth-child(2){
-    width:60px;
-    float:right;
-    margin-top:10px;
-    margin-right:100px;
+    margin-top:20px;
+    text-align: left;
+    opacity: .8;
 }
 
-
-
-
-/* -------------------------------HOME SHOWROOM----------------------------- */
 
 /* -------------------------------//HOME SHOWROOM----------------------------- */
 

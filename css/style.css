@@ -54,13 +54,13 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #292929;
 
 }
 
 p {
     text-decoration: none;
-    color: #000;
+    color: #292929;
     -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -264,7 +264,7 @@ html {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #000;
+    background: #292929;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -303,7 +303,7 @@ html {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-color: #000;
+    background-color: #292929;
     position: absolute;
     top: 60px;
     opacity: .0;
@@ -345,7 +345,7 @@ html {
     position: fixed;
     width: 100%;
     height: 50px;
-    background-color: #000;
+    background-color: #292929;
 
     bottom: 0px;
     opacity: 1;
@@ -417,7 +417,7 @@ html {
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    background-color: #000;
+    background-color: #292929;
     bottom: 40px;
     right: 15px;
     z-index: 3;
@@ -436,7 +436,7 @@ html {
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    background-color: #000;
+    background-color: #292929;
     bottom: 40px;
     right: 15px;
     z-index: 3;
@@ -457,7 +457,7 @@ html {
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    background-color: #000;
+    background-color: #292929;
     bottom: 40px;
     right: 15px;
     z-index: -2;
@@ -477,7 +477,7 @@ html {
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    background-color: #000;
+    background-color: #292929;
     bottom: 40px;
     right: 15px;
     z-index: -2;
@@ -489,8 +489,8 @@ html {
 
 .mobile-small-button3 .finder {
     text-align: center;
-    background-color: #000;
-    border: #000;
+    background-color: #292929;
+    border: #292929;
     padding-left: 5px;
     margin-top: 15px;
     font-size: 15px;
@@ -956,10 +956,11 @@ html {
     margin:30px 60px 0;
     color:#003478;
     height:30px;
-    line-height: 2;
+    line-height: 2.5;
     border-radius: 20px;
     cursor: pointer;
     transition-duration: .3s;
+    font-size: .8em;
 }
 .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p:hover{
     color:#fff;
@@ -994,7 +995,7 @@ html {
 .contact-info .contact-button-box .contact-button {
     border-radius: 7px;
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #292929;
     width: 80px;
     height: 38px;
     font-size: 16px;
@@ -1003,7 +1004,7 @@ html {
 }
 
 .contact-info .contact-button-box .contact-button:hover {
-    background-color: #000;
+    background-color: #292929;
     transition: .2s;
     color: #fff;
 }
@@ -1027,7 +1028,7 @@ footer {
     bottom: 0px;
     overflow: none;
     padding-bottom: 50px;
-    background-color: #000;
+    background-color: #292929;
 }
 
 footer .footer-slogan {
@@ -2060,24 +2061,20 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------CONTACT----------------------------- */
-    .contact-info {
-        display: none;
-        opacity: 0;
-        transition-duration: 1s;
-        overflow: hidden;
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox img{
+        width:34px;
     }
-
-    .contact-info .contact-box .contact-control:nth-last-child(1) {
-        height: 100px;
-    }
-
-    .contact-info .contact-txt-box .contact-txt1 {
-        margin-top: -80px;
-    }
-
-    .contact-info .contact-button-box {
-        margin-bottom: -60px;
-    }
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
+    border:1px solid #003478;
+    margin:30px 5px 0;
+    color:#003478;
+    height:30px;
+    line-height: 2.8;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .3s;
+    font-size: .7em;
+    } 
 
     /* -----------------------------CONTACT----------------------------- */
 
@@ -2223,7 +2220,7 @@ footer .footer-copy .footer-txt1 {
         bottom: 0;
         overflow: none;
         padding-bottom: 30px;
-        background-color: #000;
+        background-color: #292929;
     }
 
     footer .footer-slogan {
@@ -2356,9 +2353,7 @@ footer .footer-copy .footer-txt1 {
         display: none;
     }
 
-    #home-box .contact-info {
-        display: none;
-    }
+
 
     /* -----------------------------//HOME INFO----------------------------- */
 
@@ -2377,7 +2372,6 @@ footer .footer-copy .footer-txt1 {
         margin-top: 10px;
         float: left;
         margin-bottom: 30px;
-        overflow: hidden;
     }
 
     #home-banner .home-banner-wrap .home-banner-left {
@@ -2395,25 +2389,19 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* -----------------------------//HOME BANNER----------------------------- */
-    .contact-info {
-        display: none;
-        opacity: 0;
-        transition-duration: 1s;
-        overflow: hidden;
-    }
-
-    .contact-info .contact-box .contact-control:nth-last-child(1) {
-        height: 100px;
-    }
-
-    .contact-info .contact-txt-box .contact-txt1 {
-        margin-top: -70px;
-    }
-
-    .contact-info .contact-button-box {
-        margin-bottom: -60px;
-    }
-
+    
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
+    border:1px solid #003478;
+    margin:30px 10px 0;
+    color:#003478;
+    height:30px;
+    line-height: 2.5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .3s;
+    font-size: .8em;
+    } 
+    
     /* --------------------------SUPPORT---------------------------- */
 
     #support .support-caution {
@@ -2548,7 +2536,7 @@ footer .footer-copy .footer-txt1 {
         bottom: 0;
         overflow: none;
         padding-bottom: 30px;
-        background-color: #000;
+        background-color: #292929;
         margin-top: -10px;
     }
 
@@ -2689,26 +2677,24 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME BANNER----------------------------- */
+    
+    
+    
+    /* -----------------------------HOME CONTACT----------------------------- */
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
+    border:1px solid #003478;
+    margin:30px 35px 0;
+    color:#003478;
+    height:30px;
+    line-height: 2.5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .3s;
+    font-size: .8em;
+    }    
+    /* -----------------------------//HOME CONTACT----------------------------- */
 
-    .contact-info {
-        display: none;
-        opacity: 0;
-        transition-duration: 1s;
-        overflow: hidden;
-    }
-
-    .contact-info .contact-box .contact-control:nth-last-child(1) {
-        height: 100px;
-    }
-
-    .contact-info .contact-txt-box .contact-txt1 {
-        margin-top: -70px;
-    }
-
-    .contact-info .contact-button-box {
-        margin-bottom: -60px;
-    }
-
+    
     /* --------------------------SUPPORT---------------------------- */
 
     #support .support-caution {
@@ -2841,7 +2827,7 @@ footer .footer-copy .footer-txt1 {
         bottom: 0;
         overflow: none;
         padding-bottom: 30px;
-        background-color: #000;
+        background-color: #292929;
     }
 
     footer .footer-slogan {
@@ -3060,7 +3046,7 @@ footer .footer-copy .footer-txt1 {
         bottom: 0;
         overflow: none;
         padding-bottom: 100px;
-        background-color: #000;
+        background-color: #292929;
     }
 
     footer .footer-wrap {
@@ -3278,7 +3264,7 @@ footer .footer-copy .footer-txt1 {
         bottom: 0;
         overflow: none;
         padding-bottom: 100px;
-        background-color: #000;
+        background-color: #292929;
     }
 
     footer .footer-wrap {
@@ -3507,7 +3493,7 @@ footer .footer-copy .footer-txt1 {
         bottom: 0;
         overflow: none;
         padding-bottom: 100px;
-        background-color: #000;
+        background-color: #292929;
     }
 
     footer .footer-wrap {
@@ -3723,7 +3709,7 @@ footer .footer-copy .footer-txt1 {
     #home-box .contact-info .contact-button-box .contact-button {
         border-radius: 7px;
         background-color: #fff;
-        border: 1px solid #000;
+        border: 1px solid #292929;
         width: 80px;
         height: 38px;
         font-size: 16px;
@@ -3731,7 +3717,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     #home-box .contact-info .contact-button-box .contact-button:hover {
-        background-color: #000;
+        background-color: #292929;
         transition: .2s;
         color: #fff;
     }
@@ -3853,7 +3839,7 @@ footer .footer-copy .footer-txt1 {
         bottom: 0;
         overflow: none;
         padding-bottom: 100px;
-        background-color: #000;
+        background-color: #292929;
     }
 
     footer .footer-wrap {

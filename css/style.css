@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400&Teko:wght@500&family=Fugaz+One&family=Anton&family=Noto+Serif+KR:wght@200&family=Fjalla+One&family=Bebas+Neue&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
+
+/*   Apple SD Gothic Neo(폰트)   */
 @font-face {
     src: url("../fonts/AppleSDGothicNeoB.ttf");
     font-family: "AppleSDGothicNeoB";
@@ -14,15 +16,34 @@
 }
 
 @font-face {
-    src: url(../fonts/AppleSDGothicNeoR.woff2) format("woff2"), url(../fonts/AppleSDGothicNeoR.woff) format("woff"), url(../fonts/AppleSDGothicNeoR.ttf) format("truetype");
-    src: local("AppleSDGothicNeoR");
-    font-family: "AppleSDGothicNeoR";
-}
-@font-face {
-    src: url(../fonts/AppleSDGothicNeoT.woff2) format("woff2"), url(../fonts/AppleSDGothicNeoT.woff) format("woff"), url(../fonts/AppleSDGothicNeoT.ttf) format("truetype");
-    src: local("AppleSDGothicNeoT");
+    src: url("../fonts/AppleSDGothicNeoT.ttf");
     font-family: "AppleSDGothicNeoT";
 }
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff");
+    font-family: "AppleSDGothicNeoT";
+}
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff2");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff");
+    font-family: "AppleSDGothicNeoM";
+}
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff2");
+    font-family: "AppleSDGothicNeoM";
+}
+/*  //Apple SD Gothic Neo(폰트)  */
+
+
+
 
 a {
     text-decoration: none;
@@ -165,9 +186,9 @@ html {
 }
 
 .menu-wrap .etc-menu .mobile-ko {
-    font-family: "AppleSDGothicNeoM";
+    font-family: "AppleSDGothicNeoB";
     font-size: 0.8em;
-    font-weight: 500;
+    font-weight:300;
 }
 
 
@@ -333,9 +354,10 @@ html {
 }
 
 .tablet-pc-btn .tablet-pc-ko {
-    font-family: "AppleSD-R";
+    font-family: "AppleSDGothicNeoM";
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 600;
+    margin-top:14px;
 }
 
 .tablet-pc-btn .tablet-pc-en {
@@ -560,9 +582,10 @@ html {
     
 }
 #home-showroom .home-showroom-wrap{
+    position: relative;
     width:95%;
     margin:0 auto;
-    height:auto;
+    height:100px;
     background-color: #fafafa;
     border-radius: 10px;
     margin-top:30px;
@@ -577,17 +600,52 @@ html {
 #home-showroom .home-showroom-wrap .home-showroom-txt{
     color:#292929;
     font-size: 25px;
-    font-family: "AppleSD-R";
+    font-family: "AppleSDGothicNeoT";
     text-align: center;
-    line-height: 3;
-    font-weight: bold;
+    line-height: 2;
+    font-weight: 400;
+}
+#home-showroom .home-showroom-wrap .home-showroom-btn{
+    color:#292929;
+    font-size: 15px;
+    font-family: "AppleSDGothicNeoM";
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.8;
+    border:0.5px solid #292929;
+    width:100px;
+    height:30px;
+    margin:0 auto;
+    border-radius: 17px;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+#home-showroom .home-showroom-wrap .home-showroom-btn:hover{
+    border:0.5px solid #003478;
+    color:#fff;
+    background-color: #003478;
+}
+#home-showroom .home-showroom-wrap .home-showroom-img-wrap{
+    width:100%;
+    position:absolute;
+}
+#home-showroom .home-showroom-wrap .home-showroom-img-wrap img:nth-child(1){
+    width:60px;
+    margin-top:10px;
+    margin-left:100px;
+}
+#home-showroom .home-showroom-wrap .home-showroom-img-wrap img:nth-child(2){
+    width:60px;
+    float:right;
+    margin-top:10px;
+    margin-right:100px;
 }
 
 
 
 
 /* -------------------------------HOME SHOWROOM----------------------------- */
-.ho
+
 /* -------------------------------//HOME SHOWROOM----------------------------- */
 
 
@@ -957,7 +1015,7 @@ footer .footer-copy .footer-txt1 {
     color: #777;
     border-bottom: 0.5px solid #777;
     width: 90px;
-    font-family: "AppleSDGothicNeoB";
+    font-family: "AppleSDGothicNeoM";
 }
 
 .car-info-wrapper .car-1 .car-img-wrap {
@@ -2661,6 +2719,17 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-under-1280 {
         display: none;
     }
+    
+    .click-to-black{
+        width:0;
+        
+    }
+    .sidebar-menu{
+        width:0;
+        overflow-x: auto;
+        overflow-y: visible;
+    }
+    
 
     /* --------------------------SUPPORT---------------------------- */
 

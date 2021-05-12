@@ -61,6 +61,11 @@ a {
 p {
     text-decoration: none;
     color: #000;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 li {
@@ -70,11 +75,21 @@ li {
 body {
     overflow-x: hidden;
     text-decoration: none;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 
 html {
     overflow-x: hidden;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /* MODEL-FORM */
@@ -617,16 +632,22 @@ html {
     line-height: 2;
     font-weight: 400;
     transition-duration: .5s;
+    cursor: default;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-btn {
     color: #292929;
     font-size: 15px;
     font-family: "AppleSDGothicNeoM";
-    font-weight: 800;
+    font-weight: 200;
     text-align: center;
     line-height: 1.8;
-    border: 0.5px solid #292929;
+    border: 1px solid #292929;
     width: 100px;
     height: 30px;
     margin: 0 auto;
@@ -634,10 +655,15 @@ html {
     border-radius: 17px;
     transition-duration: .5s;
     cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-btn:hover {
-    border: 0.5px solid #003478;
+    border: 1px solid #003478;
     color: #fff;
     background-color: #003478;
 
@@ -738,6 +764,69 @@ html {
 }
 
 /* -------------------------------//HOME BANNER----------------------------- */
+
+
+
+
+/* -------------------------------HOME PROMOTION----------------------------- */
+#home-promotion{
+    float:left;
+    width:100%;
+    position:relative;
+}
+
+#home-promotion .home-promotion-wrap{
+    width:95%;
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap{
+    width:33%;
+    text-align: center;
+}
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box{
+    width:100%;
+    height:100px;
+    border:1px solid #fafafa;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box:nth-child(3){
+    margin-bottom: 0px;
+}
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .box-title{
+    font-size: 14px;
+    font-family: "AppleSDGothicNeoT";
+    text-align: left;
+    margin-left:25px;
+    margin-top:20px;
+    color:#292929;
+    opacity: .7;
+}
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .box-txt{
+    font-size: 20px;
+    font-family: "AppleSDGothicNeoT";
+    font-weight: 800;
+    margin-top:10px;
+    color:#292929;
+}
+#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .promotion-line{
+    width:90%;
+    height:10px;
+    margin:0 auto;
+    border-top:0.5px solid #f1f1f1;
+}
+
+#home-promotion .home-promotion-wrap .home-promotion-explain-wrap{
+    width:60%;
+    float:right;
+}
+/* -------------------------------//HOME PROMOTION----------------------------- */
+
 
 
 
@@ -1819,13 +1908,13 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME INFO----------------------------- */
-    
-    
-/* --------------------------HOME-SHOWROOM---------------------------- */
 
-    #home-showroom .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt{
+
+    /* --------------------------HOME-SHOWROOM---------------------------- */
+
+    #home-showroom .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt {
         font-size: 20px;
-        margin-top:6px;
+        margin-top: 6px;
     }
 
     /* --------------------------//HOME-SHOWROOM---------------------------- */
@@ -2160,13 +2249,13 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* -----------------------------//HOME INFO----------------------------- */
-    
-    
-     /* --------------------------HOME-SHOWROOM---------------------------- */
 
-    #home-showroom .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt{
+
+    /* --------------------------HOME-SHOWROOM---------------------------- */
+
+    #home-showroom .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt {
         font-size: 20px;
-        margin-top:6px;
+        margin-top: 6px;
     }
 
     /* --------------------------//HOME-SHOWROOM---------------------------- */
@@ -2762,7 +2851,7 @@ footer .footer-copy .footer-txt1 {
     }
 
 
-   
+
 
 
     /* --------------------------SUPPORT---------------------------- */

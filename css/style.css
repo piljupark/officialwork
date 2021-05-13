@@ -108,7 +108,14 @@ html {
     overflow: hidden;
     transition: 1s;
 }
-
+.header .user-btn{
+    width:20%;
+    position:absolute;
+}
+.header .user-btn a img{
+    width:30px;
+    margin:15px;
+}
 .header .logo-btn {
     width: 100%;
     float: left;
@@ -116,8 +123,8 @@ html {
 }
 
 .header .logo-btn a img {
-    width: 110px;
-    margin: 8px;
+    width: 90px;
+    margin: 12px;
     z-index: 10;
     text-align: center;
 }
@@ -187,6 +194,7 @@ html {
     background-color: #f1f1f1;
     border-radius: 10px;
     float: left;
+    text-align: center;
 }
 
 .menu-wrap {

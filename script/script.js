@@ -2,32 +2,36 @@ $(document).ready(function () {
 
     $(".menu-btn>a").on("click", function () {
         $(".click-to-black").show();
-        $(".sidebar-menu").show();
+
+
+        /* 메뉴 버튼 이전 방식
+        /*$(".sidebar-menu").show();
         $(".sidebar-menu").animate({
             right: 0
-        });
+        });*/
+
         $("body").css("overflow-y", "hidden");
         $("html").css("overflow-y", "hidden");
         $(".header").css("z-index", "8");
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
+
     });
     $(".close-btn>a").on("click", function () {
         $(".click-to-black").hide();
-        $(".sidebar-menu").hide();
+
+        /* 메뉴 버튼 이전 방식
+        /*$(".sidebar-menu").hide();
         $(".sidebar-menu").animate({
             right: "-" + 65 + "%"
-        });
+        });*/
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
-    $(".click-to-black").on("click", function () {
-        $(".click-to-black").hide();
-        $(".sidebar-menu").hide();
-        $(".sidebar-menu").animate({
-            right: "-" + 65 + "%"
-        });
-        $("body").css("overflow-y", "auto");
-        $("html").css("overflow-y", "auto");
-    })
 
 
     $("#home-box > .swiper-container > .swiper-wrapper > .home-b").click(function () {
@@ -41,7 +45,9 @@ $(document).ready(function () {
 
     $(".sidebar-menu > .menu-wrap > li > .car").click(function () {
         $("#car-info").css("display", "block");
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").show();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -59,12 +65,22 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
+
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
+
+        /* 메뉴 버튼 이전 방식
+        /* $(".sidebar-menu").css({
             right: "-" + 50 + "%"
-        });
+        });*/
+
+
     });
     $(".sidebar-menu > .menu-wrap > li > .suv").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").css("display", "block");
         $("#suv-info").show();
@@ -83,12 +99,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > li > .commercial").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").css("display", "block");
@@ -107,12 +125,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > li > .hybrid").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -131,13 +151,15 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
 
     });
     $(".sidebar-menu > .menu-wrap > li > .performance").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -156,12 +178,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > li > .truck").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -180,12 +204,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > li > .future").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -204,12 +230,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .parts-service").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -227,12 +255,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .maintain").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -250,13 +280,15 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
 
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .sync3-ecoboost").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -274,12 +306,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .promotion").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -297,12 +331,14 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
     $(".sidebar-menu > .menu-wrap > .etc-menu > ul > li > .drive-test").click(function () {
-        $(".sidebar-menu").hide(100);
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
         $("#car-info").hide();
         $("#suv-info").hide();
         $("#commercial-info").hide();
@@ -320,9 +356,9 @@ $(document).ready(function () {
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
-        $(".sidebar-menu").animate({
-            right: "-" + 50 + "%"
-        });
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
     });
 
     $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .car").click(function () {
@@ -531,40 +567,40 @@ $(document).ready(function () {
         $("#drive-test").css("display", "block");
         $("#home-box").hide();
     });
-    
-    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder").click(function(){
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity","0");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("transition-duration",".2s");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("opacity","1");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("z-index","2");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("transition-duration","1s");
-        $(".finder-place").css("height","50px");
-         $(".finder-place > .finder").css("transition-duration","2.5s");
-        $(".finder-place > p").css("transition-duration","2.5s");
-        $(".finder-place > .finder").css("opacity","1");
-        $(".finder-place > .finder").css("cursor","text");
-        $(".finder-place > p").css("opacity","1");
-        $(".finder-shadow").css("opacity",".7");
-        $(".finder-shadow").css("z-index","9");
-        $("html, body").css("overflow","hidden");
+
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder").click(function () {
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity", "0");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("transition-duration", ".2s");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("opacity", "1");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("z-index", "2");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("transition-duration", "1s");
+        $(".finder-place").css("height", "50px");
+        $(".finder-place > .finder").css("transition-duration", "2.5s");
+        $(".finder-place > p").css("transition-duration", "2.5s");
+        $(".finder-place > .finder").css("opacity", "1");
+        $(".finder-place > .finder").css("cursor", "text");
+        $(".finder-place > p").css("opacity", "1");
+        $(".finder-shadow").css("opacity", ".7");
+        $(".finder-shadow").css("z-index", "9");
+        $("html, body").css("overflow", "hidden");
     });
-    
-    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").click(function(){
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("transition-duration","1s");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity","1");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("transition-duration",".2s");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("opacity","0");
-        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("z-index","-1");
-        
-        $(".finder-place").css("height","0px");
-        $(".finder-place > .finder").css("transition-duration",".3s");
-        $(".finder-place > .finder").css("opacity","0");
-        $(".finder-place > .finder").css("cursor","default");
-        $(".finder-place > p").css("opacity","0");
-        $(".finder-place > p").css("transition-duration",".3s");
-        $(".finder-shadow").css("opacity","0");
-        $(".finder-shadow").css("z-index","0");
-        $("html, body").css("overflow","auto");
+
+    $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").click(function () {
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("transition-duration", "1s");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity", "1");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("transition-duration", ".2s");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("opacity", "0");
+        $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("z-index", "-1");
+
+        $(".finder-place").css("height", "0px");
+        $(".finder-place > .finder").css("transition-duration", ".3s");
+        $(".finder-place > .finder").css("opacity", "0");
+        $(".finder-place > .finder").css("cursor", "default");
+        $(".finder-place > p").css("opacity", "0");
+        $(".finder-place > p").css("transition-duration", ".3s");
+        $(".finder-shadow").css("opacity", "0");
+        $(".finder-shadow").css("z-index", "0");
+        $("html, body").css("overflow", "auto");
     });
 
     $(".mobile-small-button").click(function () {
@@ -594,7 +630,7 @@ $(document).ready(function () {
         $(".mobile-small-button3 > .finder").css("opacity", "0");
         $(".mobile-small-button3 > .finder").css("transition-duration", "0.1s");
         $(".mobile-small-button3").css("z-index", "-2");
-        
+
 
 
         $(".mobile-small-ex").css("display", "none");
@@ -611,7 +647,7 @@ $(document).ready(function () {
         $(".mobile-small-button2 > .contact-info").css("opacity", "1");
         $(".mobile-small-button2 > .contact-info").css("transition-duration", "1s");
         $(".mobile-small-button2 > .contact-info").css("overflow", "visible");
-        
+
         $(".mobile-small-button3").css("width", "50px");
         $(".mobile-small-button3 > .finder").css("opacity", "0");
         $(".mobile-small-button3 > .finder").css("transition-duration", "0.1s");
@@ -630,7 +666,7 @@ $(document).ready(function () {
         $(".mobile-small-button2").css("opacity", ".8");
 
         $(".mobile-small-button3").css("width", "250px");
-        
+
         $(".mobile-small-button3 > .finder").css("transition-duration", "3s");
         $(".mobile-small-button3 > .finder").css("opacity", "1");
 
@@ -638,8 +674,8 @@ $(document).ready(function () {
         $(".mobile-small-button3 > img").css("float", "right");
         $(".mobile-small-button3 > img").css("margin-right", "10px");
     });
-    
-    $('.header, #home-box, footer').mouseover(function(){
+
+    $('.header, #home-box, footer').mouseover(function () {
         $(".mobile-small-button2").css("width", "50px");
         $(".mobile-small-button2").css("height", "50px");
         $(".mobile-small-button2").css("right", "15px");
@@ -650,19 +686,19 @@ $(document).ready(function () {
         $(".mobile-small-button2 > .contact-info").css("overflow", "hidden");
         $(".mobile-small-button2").css("opacity", ".8");
         $(".mobile-small-button2").css("bottom", "40px");
-        
+
         $(".mobile-small-button3").css("width", "50px");
         $(".mobile-small-button3 > .finder").css("opacity", "0");
         $(".mobile-small-button3 > .finder").css("transition-duration", "0.1s");
         $(".mobile-small-button3").css("bottom", "40px");
-        
-        $(".mobile-small-ex").css("display","none");
-        $(".mobile-small-button").css("display","block");
+
+        $(".mobile-small-ex").css("display", "none");
+        $(".mobile-small-button").css("display", "block");
     });
-    
-   
-    
-   
+
+
+
+
 
 
     $("#maintain > .maintain-menu > a > .menu1").click(function () {

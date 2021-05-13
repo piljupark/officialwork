@@ -115,6 +115,7 @@ html {
     position: fixed;
     z-index: 10;
     overflow: hidden;
+    transition:1s;
 }
 
 .header .menu-btn {
@@ -145,23 +146,28 @@ html {
 }
 
 .sidebar-menu {
-    width: 60%;
-    height: 100%;
-    background: #f1f1f1;
-    /* 컬러1 */
+    /*width: 60%;*/
+    /*height: 100%;*/
+    width:100%;
+    height:0%;
     position: fixed;
-    top: 0;
-    right: -65%;
+    top:60px;
+    /*top: 0;*/
+    right: 0;
     z-index: 20;
-    display: none;
+    display: block;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y:inherit;
+    transition-duration: 1s;
+    background: #292929;
+
 }
 
 .sidebar-menu .close-btn {
     position: relative;
-    background-color: #eee;
-    /* 컬러2 */
+    
+    /*background-color: #eee;*/
+    
 }
 
 .sidebar-menu .close-btn a img {
@@ -185,23 +191,25 @@ html {
 }
 
 .menu-wrap li {
+    width:90%;
+    margin:0 auto;
     height: 35px;
-    border-bottom: 0.5px solid #777;
+    border-bottom: 0.5px solid #f1f1f1;
     /* 컬러3 */
     margin-top: 15px;
+}
+.menu-wrap li:nth-last-child(1){
+    border-bottom: none;
 }
 
 .menu-wrap li a {
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
-    color: #444;
-    /* 컬러4 */
-    margin-left: 20px;
+    color: #fff;
 }
 
 .menu-wrap .etc-menu {
-    background: #e1e1e1;
-    /* 컬러5 */
+    /*background: #e1e1e1;*/
     width: 100%;
     float: left;
     padding-top: 0px;
@@ -412,98 +420,6 @@ html {
 
 
 
-.mobile-small-button {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: #292929;
-    bottom: 40px;
-    right: 15px;
-    z-index: 3;
-    border: 2px solid #fff;
-    text-align: center;
-    transition: .3s;
-}
-
-.mobile-small-button img {
-    width: 30px;
-    margin-top: 10px;
-}
-
-.mobile-small-ex {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: #292929;
-    bottom: 40px;
-    right: 15px;
-    z-index: 3;
-    border: 2px solid #fff;
-    text-align: center;
-    transition: .1s;
-    display: none;
-    opacity: .8;
-}
-
-.mobile-x {
-    width: 30px;
-    margin-top: 10px;
-}
-
-.mobile-small-button2 {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: #292929;
-    bottom: 40px;
-    right: 15px;
-    z-index: -2;
-    border: 2px solid #fff;
-    text-align: center;
-    transition: .1s;
-    opacity: .8;
-}
-
-.mobile-small-button2 img {
-    width: 30px;
-    margin-top: 10px;
-}
-
-.mobile-small-button3 {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: #292929;
-    bottom: 40px;
-    right: 15px;
-    z-index: -2;
-    border: 2px solid #fff;
-    text-align: center;
-    transition: .1s;
-    opacity: .8;
-}
-
-.mobile-small-button3 .finder {
-    text-align: center;
-    background-color: #292929;
-    border: #292929;
-    padding-left: 5px;
-    margin-top: 15px;
-    font-size: 15px;
-    color: #fff;
-    opacity: 0;
-    margin-left: 20px;
-    transition-duration: 2s;
-}
-
-.mobile-small-button3 img {
-    width: 30px;
-    margin-top: 10px;
-}
 
 /* -------------------------------HOME TEST----------------------------- */
 #home-box {
@@ -768,135 +684,6 @@ html {
 
 
 
-/* -------------------------------HOME PROMOTION----------------------------- */
-
-
-/*
-
-
-#home-promotion{
-    float:left;
-    width:100%;
-    position:relative;
-}
-
-#home-promotion .home-promotion-wrap{
-    width:95%;
-    height:300px;
-    margin:0 auto;
-    position: relative;
-    text-align: center;
-    background-color: #fafafa;
-    border-radius: 10px;
-}
-#home-promotion .home-promotion-wrap .promotion-line{
-    width:95%;
-    position: absolute;
-    top:50%;
-    left:2.5%;
-    margin:0 auto;
-    border-top:0.5px solid #292929;
-    opacity: .2;
-    text-align: center;
-}
-
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap{
-    width:33%;
-    float:left;
-    text-align: center;
-}
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box .box-txt{
-    margin-top:20px;
-}
-#home-promotion .home-promotion-wrap .box{
-    width:100%;
-    height:143px;
-    border:1px solid #fafafa;
-    border-radius: 10px;
-    margin-bottom:10px;
-}
-
-#home-promotion .home-promotion-wrap .home-promotion-box-wrap .box:nth-child(2){
-    margin-bottom: 0px;
-}
-
-#home-promotion .home-promotion-wrap .box .box-title{
-    font-size: 14px;
-    font-family: "AppleSDGothicNeoT";
-    text-align: left;
-    margin-left:25px;
-    margin-top:20px;
-    color:#292929;
-    opacity: .7;
-    float
-}
-#home-promotion .home-promotion-wrap .box .box-txt{
-    font-size: 20px;
-    font-family: "AppleSDGothicNeoT";
-    font-weight: 800;
-    margin-top:10px;
-    color:#292929;
-}
-
-
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap{
-    width:50%;
-    float:right;
-}
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box{
-    width:100%;
-    margin:0 auto;
-    float:left;
-}
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box .box-txt{
-    float:left;
-    width:25%;
-    border-radius: 20px;
-    margin-top:0px;
-    line-height: 2;
-    color:#003478;
-    font-size:25px;
-}
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box:nth-child(2) .explain-box .box-txt{
-    width:20%;
-}
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .explain-box .box-txt2{
-    font-size: 12px;
-    font-weight: 100;
-    line-height: 1.4;
-    color:#292929;
-}
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box .box-title{
-    float:left;
-}
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box .box-title2{
-    float:right;
-    border:1px solid #003478;
-    margin-right:30px;
-    width:80px;
-    height:30px;
-    text-align: center;
-    color:#003478;
-    border-radius: 50px;
-    line-height: 2.5;
-    font-family: "AppleSDGothicNeoM";
-    font-size: 12px;
-    margin-top:15px;
-    cursor: pointer;
-    transition-duration: .3s;
-    opacity: 1;
-}
-#home-promotion .home-promotion-wrap .home-promotion-explain-wrap .box .box-title2:hover{
-    color:#fff;
-    background-color: #003478;
-}
-
-
-*/
-
-/* -------------------------------//HOME PROMOTION----------------------------- */
-
-
 
 
 /* -------------------------------HOME CONTACT----------------------------- */
@@ -929,7 +716,7 @@ html {
 
 .contact-info .contact-txt-box .contact-txt2 {
     font-size: 12px;
-    font-family: "AppleSDGothicNeoT";
+    font-family: "AppleSDGothicNeoM";
 }
 .contact-info .contact-info-wrap .contact-minibox{
     width:100%;
@@ -956,11 +743,12 @@ html {
     margin:30px 60px 0;
     color:#003478;
     height:30px;
-    line-height: 2.5;
+    line-height: 2.3;
     border-radius: 20px;
     cursor: pointer;
     transition-duration: .3s;
     font-size: .8em;
+    font-family: "AppleSDGothicNeoM";
 }
 .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p:hover{
     color:#fff;
@@ -2325,20 +2113,6 @@ footer .footer-copy .footer-txt1 {
 
     .tablet-pc-btn {
         display: none;
-    }
-
-    .sidebar-menu {
-        width: 60%;
-        height: 100%;
-        background: #f1f1f1;
-        /* 컬러1 */
-        position: fixed;
-        top: 0;
-        right: -65%;
-        z-index: 20;
-        display: none;
-        overflow-x: hidden;
-        overflow-y: auto;
     }
 
     #home-box .swiper-container .swiper-wrapper .swiper-slide .over-1280 {

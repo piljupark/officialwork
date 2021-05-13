@@ -157,10 +157,9 @@ html {
     z-index: 20;
     display: block;
     overflow-x: hidden;
-    overflow-y:inherit;
+    overflow-y:auto;
     transition-duration: 1s;
     background: #292929;
-
 }
 
 .sidebar-menu .close-btn {
@@ -182,12 +181,34 @@ html {
     width: 100%;
     height: 60px;
 }
+.sidebar-menu .sidebar-search{
+    width:100%;
+    position: relative;
+    float:left;
+    margin-bottom:30px;
+}
+.sidebar-menu .sidebar-search .search-wrap{
+    width:90%;
+    margin:0 auto;
+}
+.sidebar-menu .sidebar-search .search-wrap .txt{
+    width:95%;
+    height:40px;
+    font-family: "AppleSDGothicNeoM";
+    border: 1px solid #292929;
+    background-color:#f1f1f1;
+    border-radius: 10px;
+    padding-left:10px;
+    float:left;
+}
 
 .menu-wrap {
     list-style: none;
     height: 900px;
     overflow-x: hidden;
     overflow-y: auto;
+    float:left;
+    width:100%;
 }
 
 .menu-wrap li {

@@ -93,15 +93,6 @@ html {
 }
 
 /* MODEL-FORM */
-.click-to-black {
-    width: 100%;
-    height: 200%;
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    display: none;
-    z-index: 13;
-}
 
 .header {
     position: relative;
@@ -115,91 +106,87 @@ html {
     position: fixed;
     z-index: 10;
     overflow: hidden;
-    transition:1s;
-}
-
-.header .menu-btn {
-    width: 49%;
-    float: right;
-    height: 100%;
-}
-
-.header .menu-btn a img {
-    width: 80px;
-    float: right;
-    margin-top: 20px;
-    margin-right: 10px;
-    z-index: 2;
+    transition: 1s;
 }
 
 .header .logo-btn {
-    width: 49%;
+    width: 100%;
     float: left;
-    height: 100%;
+    text-align: center;
 }
 
 .header .logo-btn a img {
-    width: 180px;
-    float: left;
-    margin-left: 10px;
-    margin-top: 13px;
+    width: 110px;
+    margin: 8px;
+    z-index: 10;
+    text-align: center;
 }
+
+.header .menu-btn {
+    top:0;
+    position: absolute;
+    width: 100%;
+    float: right;
+}
+
+.header .menu-btn a img {
+    position: absolute;
+    width: 40px;
+    float: right;
+    margin-top: 10px;
+    opacity:0;
+    right:10px;
+    z-index: 1;
+    transition-duration: .5s;
+}
+.header .menu-btn a img:nth-child(1){
+    z-index: 2;
+    opacity: 2;
+}
+
+
+
+
 
 .sidebar-menu {
     /*width: 60%;*/
     /*height: 100%;*/
-    width:100%;
-    height:0%;
+    width: 100%;
+    height: 0%;
     position: fixed;
-    top:60px;
+    top: 60px;
     /*top: 0;*/
     right: 0;
     z-index: 20;
     display: block;
     overflow-x: hidden;
-    overflow-y:auto;
+    overflow-y: auto;
     transition-duration: 1s;
     background: #292929;
+    transition: top, 3s ease-in-out;
 }
 
-.sidebar-menu .close-btn {
-    position: relative;
-    
-    /*background-color: #eee;*/
-    
-}
-
-.sidebar-menu .close-btn a img {
-    position: absolute;
-    top: 15px;
-    left: 18px;
-    width: 30px;
-}
-
-.close-btn > a {
-    display: block;
+.sidebar-menu .sidebar-search {
     width: 100%;
-    height: 60px;
-}
-.sidebar-menu .sidebar-search{
-    width:100%;
     position: relative;
-    float:left;
-    margin-bottom:30px;
+    float: left;
+    margin-bottom: 20px;
+    margin-top:20px;
 }
-.sidebar-menu .sidebar-search .search-wrap{
-    width:90%;
-    margin:0 auto;
+
+.sidebar-menu .sidebar-search .search-wrap {
+    width: 90%;
+    margin: 0 auto;
 }
-.sidebar-menu .sidebar-search .search-wrap .txt{
-    width:95%;
-    height:40px;
+
+.sidebar-menu .sidebar-search .search-wrap .txt {
+    width: 100%;
+    height: 40px;
     font-family: "AppleSDGothicNeoM";
     border: 1px solid #292929;
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
     border-radius: 10px;
-    padding-left:10px;
-    float:left;
+    float: left;
 }
 
 .menu-wrap {
@@ -207,19 +194,20 @@ html {
     height: 900px;
     overflow-x: hidden;
     overflow-y: auto;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
 }
 
 .menu-wrap li {
-    width:90%;
-    margin:0 auto;
+    width: 90%;
+    margin: 0 auto;
     height: 35px;
     border-bottom: 0.5px solid #f1f1f1;
     /* 컬러3 */
     margin-top: 15px;
 }
-.menu-wrap li:nth-last-child(1){
+
+.menu-wrap li:nth-last-child(1) {
     border-bottom: none;
 }
 
@@ -715,17 +703,18 @@ html {
     text-align: center;
     overflow-y: none;
     border-radius: 10px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 
 }
 
 .contact-info .contact-info-wrap {
     width: 95%;
-    height:270px;
+    height: 270px;
     margin: 0 auto;
     background-color: #fafafa;
     border-radius: 10px;
 }
+
 .contact-info .contact-txt-box {
     padding: 30px 0;
 }
@@ -739,31 +728,36 @@ html {
     font-size: 12px;
     font-family: "AppleSDGothicNeoM";
 }
-.contact-info .contact-info-wrap .contact-minibox{
-    width:100%;
-    position:relative;
+
+.contact-info .contact-info-wrap .contact-minibox {
+    width: 100%;
+    position: relative;
     float: left;
     text-align: center;
 }
-.contact-info .contact-info-wrap .contact-minibox .minibox-wrap{
-    width:33%;
-    margin:0 auto;
-    float:left;
+
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap {
+    width: 33%;
+    margin: 0 auto;
+    float: left;
     text-align: center;
 }
-.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox{
-    height:150px;
+
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox {
+    height: 150px;
     text-align: center;
 }
-.contact-info .contact-info-wrap .contact-minibox .minibox-wrap img{
-    width:50px;
+
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap img {
+    width: 50px;
     text-align: center;
 }
-.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
-    border:1px solid #003478;
-    margin:30px 60px 0;
-    color:#003478;
-    height:30px;
+
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p {
+    border: 1px solid #003478;
+    margin: 30px 60px 0;
+    color: #003478;
+    height: 30px;
     line-height: 2.3;
     border-radius: 20px;
     cursor: pointer;
@@ -771,8 +765,9 @@ html {
     font-size: .8em;
     font-family: "AppleSDGothicNeoM";
 }
-.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p:hover{
-    color:#fff;
+
+.contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p:hover {
+    color: #fff;
     background-color: #003478;
 }
 
@@ -1863,27 +1858,28 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME BANNER----------------------------- */
-    
-    
-    
+
+
+
 
 
 
     /* -----------------------------CONTACT----------------------------- */
-    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox img{
-        width:34px;
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox img {
+        width: 34px;
     }
-    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
-    border:1px solid #003478;
-    margin:30px 5px 0;
-    color:#003478;
-    height:30px;
-    line-height: 2.8;
-    border-radius: 20px;
-    cursor: pointer;
-    transition-duration: .3s;
-    font-size: .7em;
-    } 
+
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p {
+        border: 1px solid #003478;
+        margin: 30px 5px 0;
+        color: #003478;
+        height: 30px;
+        line-height: 2.8;
+        border-radius: 20px;
+        cursor: pointer;
+        transition-duration: .3s;
+        font-size: .7em;
+    }
 
     /* -----------------------------CONTACT----------------------------- */
 
@@ -2184,19 +2180,19 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* -----------------------------//HOME BANNER----------------------------- */
-    
-    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
-    border:1px solid #003478;
-    margin:30px 10px 0;
-    color:#003478;
-    height:30px;
-    line-height: 2.5;
-    border-radius: 20px;
-    cursor: pointer;
-    transition-duration: .3s;
-    font-size: .8em;
-    } 
-    
+
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p {
+        border: 1px solid #003478;
+        margin: 30px 10px 0;
+        color: #003478;
+        height: 30px;
+        line-height: 2.5;
+        border-radius: 20px;
+        cursor: pointer;
+        transition-duration: .3s;
+        font-size: .8em;
+    }
+
     /* --------------------------SUPPORT---------------------------- */
 
     #support .support-caution {
@@ -2472,24 +2468,25 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME BANNER----------------------------- */
-    
-    
-    
+
+
+
     /* -----------------------------HOME CONTACT----------------------------- */
-    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p{
-    border:1px solid #003478;
-    margin:30px 35px 0;
-    color:#003478;
-    height:30px;
-    line-height: 2.5;
-    border-radius: 20px;
-    cursor: pointer;
-    transition-duration: .3s;
-    font-size: .8em;
-    }    
+    .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p {
+        border: 1px solid #003478;
+        margin: 30px 35px 0;
+        color: #003478;
+        height: 30px;
+        line-height: 2.5;
+        border-radius: 20px;
+        cursor: pointer;
+        transition-duration: .3s;
+        font-size: .8em;
+    }
+
     /* -----------------------------//HOME CONTACT----------------------------- */
 
-    
+
     /* --------------------------SUPPORT---------------------------- */
 
     #support .support-caution {
@@ -2731,18 +2728,6 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-under-1280 {
         display: none;
     }
-
-    .click-to-black {
-        width: 0;
-
-    }
-
-    .sidebar-menu {
-        width: 0;
-        overflow-x: auto;
-        overflow-y: visible;
-    }
-
 
 
 

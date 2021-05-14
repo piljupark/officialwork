@@ -162,11 +162,8 @@ html {
     height: 0%;
     position: fixed;
     top: 60px;
-    /*top: 0;*/
-    right: 0;
     z-index: 20;
     display: block;
-    overflow-x: hidden;
     overflow-y: auto;
     transition-duration: 1s;
     background: #292929;
@@ -186,16 +183,22 @@ html {
     margin: 0 auto;
 }
 
-.sidebar-menu .sidebar-search .search-wrap .txt {
-    width: 100%;
+.sidebar-menu .sidebar-search .search-wrap .search-txt {
+    width:88%;
     height: 40px;
     font-family: "AppleSDGothicNeoM";
     border: 1px solid #292929;
     background-color: #f1f1f1;
     border-radius: 10px;
-    float: left;
-    text-align: center;
+    text-align: left;
+    padding-left:10px;
+    overflow: hidden;
 }
+.sidebar-menu .sidebar-search .search-wrap img:nth-child(2){
+    width:25px;
+    float:right;
+    margin-top:7px;
+} 
 
 .menu-wrap {
     list-style: none;
@@ -1790,22 +1793,6 @@ footer .footer-copy .footer-txt1 {
 
     .tablet-pc-btn {
         display: none;
-    }
-
-
-
-    .header .menu-btn a img {
-        width: 60px;
-        margin-top: 22px;
-    }
-
-    .header .logo-btn a img {
-        width: 150px;
-        margin-top: 15px;
-    }
-
-    .sidebar-menu {
-        width: 60%;
     }
 
     /* ------------------------------//MODEL-FORM--------------------------- */

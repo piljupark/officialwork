@@ -194,10 +194,11 @@ html {
     padding-left:10px;
     overflow: hidden;
 }
-.sidebar-menu .sidebar-search .search-wrap img:nth-child(2){
+.sidebar-menu .sidebar-search .search-wrap a img{
     width:25px;
     float:right;
     margin-top:7px;
+    cursor: pointer;
 } 
 
 .menu-wrap {

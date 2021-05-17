@@ -485,19 +485,6 @@ html {
     margin: 0 10px;
 }
 
-#home-box .swiper-container .swiper-button-prev {
-    background-image: url('../images/arrow-prev1.png');
-    width: 40px;
-    opacity: .7;
-}
-
-#home-box .swiper-container .swiper-button-next {
-    background-image: url('../images/arrow-next1.png');
-    width: 40px;
-    opacity: .7;
-}
-
-
 #home-box .home-txt-en {
     position: absolute;
     color: #fff;
@@ -515,21 +502,13 @@ html {
     width: 100%;
     position: absolute;
     text-align: center;
-    font-family: "AppleSD-R";
+    font-family: "AppleSDGothicNeoM";
     color: #fff;
     font-size: 15px;
     font-weight: bold;
     opacity: 1;
     float: left;
 }
-
-/*
-
-#home-box .home-b .home-txt-en {
-    opacity: 0.7;
-}
-
-*/
 
 
 
@@ -951,10 +930,10 @@ footer .footer-copy .footer-txt1 {
     padding:10px;
     margin-bottom: 30px;
     background-color: #fafafa;
-    
     border-radius: 10px;
-    
 }
+
+
 .car-right{
     float:right;
 }
@@ -1026,115 +1005,23 @@ footer .footer-copy .footer-txt1 {
     margin: 0 auto;
     display: none;
     padding-top: 60px;
-    margin-bottom: -10px;
-    overflow: hidden;
 }
-
-.parts-main-img {
-    margin: 0 auto;
+#parts .parts-wrapper{
+    width:90%;
+    margin:0 auto;
+    height:500px;
+    margin-top:40px;
+    margin-bottom:40px;
+    border-radius: 10px;
+    background-color: #fafafa;
     position: relative;
-    overflow: hidden;
-}
-
-.parts-txt-wrapper {
-    width: 100%;
-    float: left;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.parts-title-wrap {
-    width: 100%;
-    float: left;
-    position: absolute;
-    top: 100px;
-
-}
-
-.parts-title {
-    margin: 0 auto;
-    width: 50%;
-    height: auto;
-    float: left;
-    padding-left: 60px;
-    overflow: hidden;
-}
-
-.parts-title p {
-    color: #fff;
-    font-family: "Bebas Neue", cursive;
-    font-size: 3em;
-    overflow: hidden;
-}
-
-.parts-txt-wrap {
-    width: 100%;
-    float: right;
-    position: absolute;
-    top: 300px;
-}
-
-.parts-pure-txt {
-    position: relative;
-    margin: 0 auto;
-    text-align: left;
-    font-size: 14px;
-    width: 400px;
-    margin-top: 20px;
-    font-family: "AppleSD-R";
-}
-
-.parts-pure-txt h2 {
-    color: #fff;
-    font-weight: bold;
-}
-
-.parts-pure-txt .parts-txt1 {
-    margin-bottom: 10px;
-}
-
-.parts-pure-txt p {
-    color: #fff;
-    line-height: 1.3
-}
-
-.parts-warning {
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 8px;
-}
-
-.warning2 {
-    margin-top: 10px;
-}
-
-.parts-button-wrap {
-    position: relative;
-    width: 430px;
-    margin: 0 auto;
-}
-
-.parts-button-place {
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-    top: -680px;
     text-align: center;
+    overflow: hidden;
 }
-
-.parts-button {
-    width: 43.1%;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 20px;
-    border: 2px solid #fff;
-    font-weight: bold;
-    font-family: "AppleSD-R";
-    margin: 0 10px;
-    text-align: center;
-    color: #fff;
-    float: left;
-    line-height: 2.5;
+#parts .parts-wrapper img{
+    bottom:0;
+    width:300px;
+    margin-top:300px;
 }
 
 /* --------------------------//PARTS---------------------------- */
@@ -1777,7 +1664,7 @@ footer .footer-copy .footer-txt1 {
     }
    
     #home-box .swiper-slide .home-txt-wrap .home-txt-wrapper .home-txt-ko{
-        font-family: "AppleSDGothicNeoT";
+        font-family: "AppleSDGothicNeoM";
         font-size: 10px;
         text-align: center;
         position: absolute;
@@ -1880,59 +1767,6 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* --------------------------//SUPPORT---------------------------- */
-
-    #parts {
-        height: 800px;
-    }
-
-    .parts-title-wrap .parts-title {
-        width: 90%;
-        padding-left: 20px;
-    }
-
-    .parts-pure-txt {
-        width: 80%;
-    }
-
-    .parts-pure-txt h2 {
-        font-size: 1.8em
-    }
-
-    .parts-main-img img {
-        margin-left: -300px;
-    }
-
-    .parts-button-wrap {
-        position: relative;
-        width: 250px;
-        margin: 0 auto;
-    }
-
-    .parts-button-place {
-        margin: 0 auto;
-        width: 100%;
-        position: absolute;
-        top: -780px;
-        text-align: center;
-    }
-
-    .parts-button {
-        width: 40%;
-        height: 40px;
-        margin-top: 20px;
-        border-radius: 20px;
-        border: 2px solid #fff;
-        font-weight: bold;
-        font-family: "AppleSD-R";
-        margin: 0 10px;
-        text-align: center;
-        color: #fff;
-        float: left;
-        line-height: 3.5;
-        font-size: .7em;
-    }
-
-
     /* -------------------------PROMOTION---------------------------- */
     #promotion {
         float: left;
@@ -2135,7 +1969,7 @@ footer .footer-copy .footer-txt1 {
         opacity: 1;
     }
     #home-box .swiper-slide .home-txt-wrap .home-txt-wrapper .home-txt-ko{
-        font-family: "AppleSDGothicNeoT";
+        font-family: "AppleSDGothicNeoM";
         font-size: 13px;
         text-align: center;
         position: absolute;
@@ -2217,58 +2051,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* --------------------------//SUPPORT---------------------------- */
-    #parts {
-        height: 800px;
-    }
-
-    .parts-title-wrap .parts-title {
-        width: 90%;
-        padding-left: 20px;
-    }
-
-    .parts-pure-txt {
-        width: 90%;
-    }
-
-    .parts-pure-txt h2 {
-        font-size: 1.8em
-    }
-
-    .parts-main-img img {
-        margin-left: -300px;
-    }
-
-    .parts-button-wrap {
-        position: relative;
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    .parts-button-place {
-        margin: 0 auto;
-        width: 100%;
-        position: absolute;
-        top: -780px;
-        text-align: center;
-
-    }
-
-    .parts-button {
-        width: 42%;
-        height: 40px;
-        margin-top: 20px;
-        border-radius: 20px;
-        border: 2px solid #fff;
-        font-weight: bold;
-        font-family: "AppleSD-R";
-        margin: 0 10px;
-        text-align: center;
-        color: #fff;
-        float: left;
-        line-height: 2.8;
-        font-size: .9em;
-    }
-
+   
     /* -------------------------PROMOTION---------------------------- */
     #promotion {
         float: left;
@@ -2468,7 +2251,7 @@ footer .footer-copy .footer-txt1 {
         opacity: 1;
     }
     #home-box .swiper-slide .home-txt-wrap .home-txt-wrapper .home-txt-ko{
-        font-family: "AppleSDGothicNeoT";
+        font-family: "AppleSDGothicNeoM";
         font-size: 15px;
         text-align: center;
         position: absolute;
@@ -2554,56 +2337,6 @@ footer .footer-copy .footer-txt1 {
 
     /* --------------------------//SUPPORT---------------------------- */
 
-    #parts {
-        height: 800px;
-    }
-
-    .parts-title-wrap .parts-title {
-        width: 90%;
-        padding-left: 20px;
-    }
-
-    .parts-pure-txt {
-        width: 90%;
-    }
-
-    .parts-pure-txt h2 {
-        font-size: 1.8em
-    }
-
-    .parts-main-img img {
-        margin-left: -300px;
-    }
-
-    .parts-button-wrap {
-        position: relative;
-        width: 450px;
-        margin: 0 auto;
-    }
-
-    .parts-button-place {
-        margin: 0 auto;
-        width: 100%;
-        position: absolute;
-        top: -880px;
-        text-align: center;
-    }
-
-    .parts-button {
-        width: 44%;
-        height: 40px;
-        margin-top: 20px;
-        border-radius: 20px;
-        border: 2px solid #fff;
-        font-weight: bold;
-        font-family: "AppleSD-R";
-        margin: 0 10px;
-        text-align: center;
-        color: #fff;
-        float: left;
-        line-height: 2.8;
-        font-size: .9em;
-    }
 
     /* -------------------------PROMOTION---------------------------- */
     #promotion {

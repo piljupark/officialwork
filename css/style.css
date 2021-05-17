@@ -2724,6 +2724,13 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-under-1280 {
         display: none;
     }
+    
+    .header .user-btn{
+        display: none;
+    }
+    .header .logo-btn{
+        width:10%;
+    }
 
 
 
@@ -2922,6 +2929,13 @@ footer .footer-copy .footer-txt1 {
 @media screen and (max-width:1023px) and (min-width:881px) {
     .header .menu-btn {
         display: none;
+    }
+    
+    .header .user-btn{
+        display: none;
+    }
+    .header .logo-btn{
+        width:10%;
     }
 
     .header .tablet-pc-vehicle-menu .tablet-pc-vehicle-menu-wrap {
@@ -3134,6 +3148,12 @@ footer .footer-copy .footer-txt1 {
 @media screen and (max-width:1280px) and (min-width:1024px) {
     .header .menu-btn {
         display: none;
+    }
+    .header .user-btn{
+        display: none;
+    }
+    .header .logo-btn{
+        width:10%;
     }
 
     .header .tablet-pc-vehicle-menu .tablet-pc-vehicle-menu-wrap {
@@ -3359,6 +3379,12 @@ footer .footer-copy .footer-txt1 {
 @media screen and (max-width:3280px) and (min-width:1281px) {
     .header .menu-btn {
         display: none;
+    }
+    .header .user-btn{
+        display: none;
+    }
+    .header .logo-btn{
+        width:10%;
     }
 
     .header .tablet-pc-vehicle-menu .tablet-pc-vehicle-menu-wrap {

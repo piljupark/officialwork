@@ -1005,23 +1005,59 @@ footer .footer-copy .footer-txt1 {
     margin: 0 auto;
     display: none;
     padding-top: 60px;
+    background-color: #fafafa;
 }
 #parts .parts-wrapper{
     width:90%;
     margin:0 auto;
-    height:500px;
+    height:700px;
     margin-top:40px;
     margin-bottom:40px;
     border-radius: 10px;
-    background-color: #fafafa;
+    background-color: #fff;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
+#parts .parts-wrapper .parts-txt-place{
+    width:90%;
+    margin:0 auto;
+    position: relative;
+}
+#parts .parts-wrapper .parts-txt-place .parts-title{
+    font-family: "AppleSDGothicNeoB";
+    font-size: 35px;
+    margin-top:70px;
+    margin-bottom:10px;
+    color:#292929;
+    padding:10px;
+}
+#parts .parts-wrapper .parts-txt-place .parts-txt{
+    font-family: "AppleSDGothicNeoM";
+    font-size: 20px;
+    padding:10px;
+    color:#292929;
+}
+#parts .parts-wrapper .parts-txt-place .parts-button{
+    width:130px;
+    height:40px;
+    border:1px solid #003478;
+    margin:10px auto;
+    line-height: 2.3;
+    color:#003478;
+    border-radius: 15px;
+    font-family: "AppleSDGothicNeoM";
+    transition-duration: .3s;
+    cursor: pointer;
+}
+#parts .parts-wrapper .parts-txt-place .parts-button:hover{
+    color:#fff;
+    background-color: #003478;
+}
 #parts .parts-wrapper img{
     bottom:0;
     width:300px;
-    margin-top:300px;
+    margin-top:30px;
 }
 
 /* --------------------------//PARTS---------------------------- */
@@ -1729,6 +1765,30 @@ footer .footer-copy .footer-txt1 {
     }
     
     /* -----------------------------//CAR INFO----------------------------- */
+    
+    
+    
+    /* -----------------------------PARTS----------------------------- */
+    #parts .parts-wrapper{
+        height:530px;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-title{
+        font-size: 18px;
+        margin-bottom:0px;
+        margin-top:30px;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-txt{
+        font-size: 10px;
+        padding-top:0;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-button{
+        font-size:14px;
+        height:35px;
+    }
+    #parts .parts-wrapper img{
+        width:220px;
+    }
+    /* -----------------------------//PARTS----------------------------- */
 
 
 
@@ -2029,7 +2089,31 @@ footer .footer-copy .footer-txt1 {
     }
     
     /* -----------------------------//CAR INFO----------------------------- */
+    
+    
+    
+    
+    /* -----------------------------PARTS----------------------------- */
+    #parts .parts-wrapper{
+        height:600px;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-title{
+        font-size: 24px;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-txt{
+        font-size: 13px;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-button{
+        font-size:14px;
+        height:35px;
+    }
+    #parts .parts-wrapper img{
+        width:240px;
+    }
+    /* -----------------------------//PARTS----------------------------- */
 
+    
+    
     .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p {
         border: 1px solid #003478;
         margin: 30px 10px 0;

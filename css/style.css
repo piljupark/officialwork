@@ -2041,10 +2041,10 @@ footer .footer-copy .footer-txt1 {
         float: left;
         margin: 0 auto;
         text-align: center;
-        padding-top: 60px;
+        padding-top: 30px;
         bottom: 0;
         overflow: none;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         background-color: #292929;
     }
 
@@ -2364,10 +2364,10 @@ footer .footer-copy .footer-txt1 {
         float: left;
         margin: 0 auto;
         text-align: center;
-        padding-top: 60px;
+        padding-top: 30px;
         bottom: 0;
         overflow: none;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         background-color: #292929;
         margin-top: -10px;
     }
@@ -2404,7 +2404,7 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box img {
-        width: 35px;
+        width: 40px;
         opacity: .5;
         margin-right: 18px;
         transition: .3s;
@@ -2434,10 +2434,10 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap a {
-        margin: 0 4px;
+        margin: 0 3px;
         transition: .3s;
         opacity: .7;
-        font-size: 12px;
+        font-size: 13.5px;
         color: #fff;
     }
 
@@ -2446,7 +2446,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 11px;
+        font-size: 12.5px;
     }
 
     footer .footer-copy {
@@ -2457,7 +2457,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-copy .footer-txt1 {
         margin-top: 0px;
         opacity: .7;
-        font-size: 12.7px;
+        font-size: 14px;
         text-align: center;
         margin-right: 0;
         color: #fff;
@@ -2681,10 +2681,10 @@ footer .footer-copy .footer-txt1 {
         float: left;
         margin: 0 auto;
         text-align: center;
-        padding-top: 60px;
+        padding-top: 30px;
         bottom: 0;
         overflow: none;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         background-color: #292929;
     }
 
@@ -2720,7 +2720,7 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box img {
-        width: 35px;
+        width: 40px;
         opacity: .5;
         margin-right: 18px;
         transition: .3s;
@@ -2753,7 +2753,7 @@ footer .footer-copy .footer-txt1 {
         margin: 0 4px;
         transition: .3s;
         opacity: .7;
-        font-size: 12px;
+        font-size: 13.5px;
         color: #fff;
     }
 
@@ -2762,7 +2762,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 11px;
+        font-size: 12.5px;
     }
 
     footer .footer-copy {
@@ -2773,7 +2773,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-copy .footer-txt1 {
         margin-top: 0px;
         opacity: .7;
-        font-size: 12.7px;
+        font-size: 14px;
         text-align: center;
         margin-right: 0;
         color: #fff;

@@ -932,11 +932,11 @@ footer .footer-copy .footer-txt1 {
 #performance-info,
 #truck-info,
 #future-info {
-    width: 100%;
-    margin: 0 auto;
-    float: left;
-    padding-top: 80px;
     display: none;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    padding-top: 60px;
     margin-bottom:30px;
 }
 .car-info-wrap{
@@ -945,27 +945,19 @@ footer .footer-copy .footer-txt1 {
 }
 
 .car-info-wrapper {
+    position: relative;
+    float:left;
     width: 45%;
-    float: left;
-    padding-bottom: 40px;
+    padding:10px;
     margin-bottom: 30px;
     background-color: #fafafa;
-    padding:10px;
+    
     border-radius: 10px;
-    position: relative;
+    
 }
 .car-right{
     float:right;
 }
-
-.car-info-wrapper-first {
-}
-
-.ford-sport .car-txt-wrap .car-title {
-    font-style: italic;
-    color: #003478;
-}
-
 .car-info-wrapper .car-1 .car-txt-wrap {
     width: 30%;
     float: left;
@@ -976,16 +968,16 @@ footer .footer-copy .footer-txt1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
     width: 300%;
-    margin-left: 10px;
-
+    color:#003478;
 }
 
 .car-info-wrapper .car-1 .car-txt-wrap .car-txt {
     line-height: 3.3;
     font-size: 14px;
-    text-align: right;
-    color: #777;
-    border-bottom: 0.5px solid #777;
+    text-align: left;
+    color: #292929;
+    opacity: .8;
+    border-bottom: 0.5px solid #292929;
     width: 90px;
     font-family: "AppleSDGothicNeoM";
 }
@@ -1838,6 +1830,18 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME BANNER----------------------------- */
+    
+    
+    
+    /* -----------------------------CAR INFO----------------------------- */
+    .car-info-wrap .car-info-wrapper{
+        width:95%;
+    }
+    .car-right{
+        float:left;
+    }
+    
+    /* -----------------------------//CAR INFO----------------------------- */
 
 
 
@@ -2181,6 +2185,16 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* -----------------------------//HOME BANNER----------------------------- */
+    
+    /* -----------------------------CAR INFO----------------------------- */
+    .car-info-wrap .car-info-wrapper{
+        width:95%;
+    }
+    .car-right{
+        float:left;
+    }
+    
+    /* -----------------------------//CAR INFO----------------------------- */
 
     .contact-info .contact-info-wrap .contact-minibox .minibox-wrap .minibox p {
         border: 1px solid #003478;
@@ -2467,6 +2481,10 @@ footer .footer-copy .footer-txt1 {
     #home-box .home-b .home-txt-wrap .home-txt-wrapper .home-txt-en, #home-box .home-b .home-txt-wrap .home-txt-wrapper .home-txt-ko{
         opacity: .7;
     }
+    
+   .finder-place .finder{
+        display: none;
+    }
     /* -----------------------------//HOME INFO----------------------------- */
     
     
@@ -2511,8 +2529,22 @@ footer .footer-copy .footer-txt1 {
     }
 
     /* -----------------------------//HOME CONTACT----------------------------- */
+    
+    
+    
+    /* -----------------------------CAR INFO----------------------------- */
+   
+    .car-info-wrap .car-info-wrapper{
+        width:95%;
+    }
+    .car-right{
+        float:left;
+    }
+    /* -----------------------------//CAR INFO----------------------------- */
 
 
+    
+    
     /* --------------------------SUPPORT---------------------------- */
 
     #support .support-caution {

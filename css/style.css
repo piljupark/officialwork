@@ -405,7 +405,7 @@ html {
 }
 
 .tablet-pc-btn .tablet-pc-ko {
-    font-family: "AppleSDGothicNeoM";
+    font-family: "AppleSDGothicNeoB";
     font-size: 13px;
     font-weight: 400;
     margin-top: 14px;
@@ -784,51 +784,6 @@ html {
 }
 
 
-
-/*
-
-.contact-info .contact-box .contact-control {
-    width: 75%;
-    border-radius: 7px;
-    padding-left: 10px;
-    margin-bottom: 5px;
-    border: 1px solid #dbdbdb;
-    height: 30px;
-    font-family: "AppleSD-R";
-}
-
-.contact-info .contact-box .contact-control:nth-last-child(1) {
-    height: 300px;
-}
-
-.contact-info .contact-button-box {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-.contact-info .contact-button-box .contact-button {
-    border-radius: 7px;
-    background-color: #fff;
-    border: 1px solid #292929;
-    width: 80px;
-    height: 38px;
-    font-size: 16px;
-    transition: .2s;
-    font-family: "AppleSD-R";
-}
-
-.contact-info .contact-button-box .contact-button:hover {
-    background-color: #292929;
-    transition: .2s;
-    color: #fff;
-}
-
-
-*/
-
-
 /* -------------------------------//HOME CONTACT----------------------------- */
 
 
@@ -982,25 +937,28 @@ footer .footer-copy .footer-txt1 {
     float: left;
     padding-top: 80px;
     display: none;
+    margin-bottom:30px;
+}
+.car-info-wrap{
+    width:90%;
+    margin: 0 auto;
 }
 
 .car-info-wrapper {
-
-    width: 100%;
-    margin: 0 auto;
+    width: 45%;
     float: left;
     padding-bottom: 40px;
-    margin-bottom: 40px;
-    border-bottom: 0.5px solid #777;
+    margin-bottom: 30px;
+    background-color: #fafafa;
+    padding:10px;
+    border-radius: 10px;
+    position: relative;
+}
+.car-right{
+    float:right;
 }
 
 .car-info-wrapper-first {
-    margin-top: 40px;
-}
-
-.car-info-wrapper-last {
-    border: none;
-    margin-bottom: 0;
 }
 
 .ford-sport .car-txt-wrap .car-title {
@@ -1036,28 +994,37 @@ footer .footer-copy .footer-txt1 {
     width: 65%;
     float: right;
     padding-top: 65px;
+    overflow: hidden;
 }
 
 .car-info-wrapper .car-1 .car-img-wrap img {
-    width: 450px;
-    overflow-x: hidden;
+    width: 350px;
 }
 
 .car-info-wrapper .car-1 .car-img-wrap .more {
-    text-align: right;
-    margin-right: 20px;
-    margin-top: 35px;
+    position: absolute;
+    text-align: center;
+    width:100px;
+    height:30px;
+    font-family: "AppleSDGothicNeoM";
     font-size: 14px;
     color: #003478;
+    border:1px solid #003478;
+    border-radius: 20px;
+    line-height: 2;
+    bottom:10px;
+    right:10px;
+    transition-duration: .3s;
+}
+.car-info-wrapper .car-1 .car-img-wrap .more:hover{
+    background-color: #003478;
+    color:#fff;
 }
 
 
-
-
-
-
-
 /* --------------------------//VEHICLE INFO---------------------------- */
+
+
 
 
 /* --------------------------PARTS---------------------------- */
@@ -2888,10 +2855,10 @@ footer .footer-copy .footer-txt1 {
         float: left;
         margin: 0 auto;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
         bottom: 0;
         overflow: none;
-        padding-bottom: 100px;
+        padding-bottom: 70px;
         background-color: #292929;
     }
 
@@ -2908,12 +2875,12 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 220px;
+        width: 250px;
         margin-right: 10px;
     }
 
     footer .footer-sns-img-box img {
-        width: 36px;
+        width: 45px;
         opacity: .7;
         margin-right: 18px;
         transition: .3s;
@@ -2937,7 +2904,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 230px;
+        width: 250px;
         float: right;
         padding-right: 7px;
     }
@@ -2945,7 +2912,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-txt-box-wrap a {
         transition: .3s;
         opacity: .7;
-        font-size: 11px;
+        font-size: 13.5px;
         color: #fff;
         margin: 0 6px;
     }
@@ -2955,8 +2922,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 10px;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 12.5px;
     }
 
     footer .footer-txt-box-wrap .ko2 {
@@ -2972,7 +2938,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-copy .footer-txt1 {
         color: #fff;
         font-family: 'Bebas Neue', cursive;
-        font-size: 12.7px;
+        font-size: 14.5px;
         pointer-events: none;
         float: right;
         text-align: right;
@@ -3106,17 +3072,17 @@ footer .footer-copy .footer-txt1 {
     /* --------------------------//PROMOTION---------------------------- */
 
 
-    footer {
+   footer {
         /*position:relative;*/
         position: relative;
         width: 100%;
         float: left;
         margin: 0 auto;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
         bottom: 0;
         overflow: none;
-        padding-bottom: 100px;
+        padding-bottom: 70px;
         background-color: #292929;
     }
 
@@ -3133,14 +3099,14 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 260px;
+        width: 250px;
         margin-right: 10px;
     }
 
     footer .footer-sns-img-box img {
         width: 45px;
         opacity: .7;
-        margin-right: 21px;
+        margin-right: 18px;
         transition: .3s;
         margin-top: 10px;
     }
@@ -3162,7 +3128,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 260px;
+        width: 250px;
         float: right;
         padding-right: 7px;
     }
@@ -3170,7 +3136,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-txt-box-wrap a {
         transition: .3s;
         opacity: .7;
-        font-size: 14px;
+        font-size: 13.5px;
         color: #fff;
         margin: 0 6px;
     }
@@ -3180,9 +3146,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 12px;
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: bold;
+        font-size: 12.5px;
     }
 
     footer .footer-txt-box-wrap .ko2 {
@@ -3198,7 +3162,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-copy .footer-txt1 {
         color: #fff;
         font-family: 'Bebas Neue', cursive;
-        font-size: 15px;
+        font-size: 14.5px;
         pointer-events: none;
         float: right;
         text-align: right;
@@ -3348,10 +3312,10 @@ footer .footer-copy .footer-txt1 {
         float: left;
         margin: 0 auto;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
         bottom: 0;
         overflow: none;
-        padding-bottom: 100px;
+        padding-bottom: 70px;
         background-color: #292929;
     }
 
@@ -3368,7 +3332,7 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 260px;
+        width: 250px;
         margin-right: 10px;
     }
 
@@ -3397,7 +3361,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 260px;
+        width: 250px;
         float: right;
         padding-right: 7px;
     }
@@ -3405,7 +3369,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-txt-box-wrap a {
         transition: .3s;
         opacity: .7;
-        font-size: 14px;
+        font-size: 13.5px;
         color: #fff;
         margin: 0 6px;
     }
@@ -3415,8 +3379,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 12px;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 12.5px;
     }
 
     footer .footer-txt-box-wrap .ko2 {
@@ -3432,7 +3395,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-copy .footer-txt1 {
         color: #fff;
         font-family: 'Bebas Neue', cursive;
-        font-size: 14.7px;
+        font-size: 14.5px;
         pointer-events: none;
         float: right;
         text-align: right;
@@ -3474,50 +3437,7 @@ footer .footer-copy .footer-txt1 {
 
 
 
-    /*
     
-    
-    
-    #home-box .swiper-container .swiper-wrapper .home-b .home-txt-en-1280 {
-        opacity: 1;
-    }
-
-    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-wrap {
-        width: 100%;
-        position: absolute;
-        top: 0;
-    }
-
-    #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-wrapper {
-        width: 1280px;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    #home-box .home-txt-en {
-        color: #fff;
-        font-size: 70px;
-        font-family: 'Bebas Neue', cursive;
-    }
-
-    #home-box .home-txt-ko {
-
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-        opacity: 1;
-    }
-
-    #home-box .home-txt-ko {
-        font-size: 17px;
-    }
-
-    #home-box .home-d .home-txt-ko {
-        color: #fff;
-    }
-    
-    
-    */
 
 
 
@@ -3525,88 +3445,6 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------------//HOME BANNER----------------------------- */
-
-    /* -------------------------------HOME CONTACT----------------------------- */
-
-
-    /*
-    #home-box .contact-info {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        background-color: #fff;
-    }
-
-    #home-box .contact-info .contact-info-wrapper {
-        width: 1280px;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    #home-box .contact-info .contact-info-wrap {
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: #fafafa;
-    }
-
-    #home-box .contact-info .contact-box .contact-control {
-        width: 50%;
-        border-radius: 7px;
-        padding-left: 10px;
-        margin-bottom: 5px;
-        border: 1px solid #dbdbdb;
-        height: 30px;
-    }
-
-    #home-box .contact-info .contact-box .contact-control:nth-last-child(1) {
-        height: 300px;
-    }
-
-    #home-box .contact-info .contact-button-box {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-
-    #home-box .contact-info .contact-button-box .contact-button {
-        border-radius: 7px;
-        background-color: #fff;
-        border: 1px solid #292929;
-        width: 80px;
-        height: 38px;
-        font-size: 16px;
-        transition: .2s;
-    }
-
-    #home-box .contact-info .contact-button-box .contact-button:hover {
-        background-color: #292929;
-        transition: .2s;
-        color: #fff;
-    }
-
-    #home-box .contact-info .contact-txt-box {
-        margin-bottom: 40px;
-    }
-
-    #home-box .contact-info .contact-txt-box .contact-txt1 {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 40px;
-    }
-
-    #home-box .contact-info .contact-txt-box .contact-txt2 {
-        font-size: 11px;
-    }
-    
-    
-    */
-
-
-
-
-    /* -------------------------------//HOME CONTACT----------------------------- */
 
     /* --------------------------SUPPORT---------------------------- */
 
@@ -3692,18 +3530,17 @@ footer .footer-copy .footer-txt1 {
 
     /* --------------------------//PROMOTION---------------------------- */
 
-
-    footer {
+footer {
         /*position:relative;*/
         position: relative;
         width: 100%;
         float: left;
         margin: 0 auto;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
         bottom: 0;
         overflow: none;
-        padding-bottom: 100px;
+        padding-bottom: 70px;
         background-color: #292929;
     }
 
@@ -3720,7 +3557,7 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 260px;
+        width: 250px;
         margin-right: 10px;
     }
 
@@ -3749,7 +3586,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 270px;
+        width: 250px;
         float: right;
         padding-right: 7px;
     }
@@ -3757,7 +3594,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-txt-box-wrap a {
         transition: .3s;
         opacity: .7;
-        font-size: 14px;
+        font-size: 13.5px;
         color: #fff;
         margin: 0 6px;
     }
@@ -3767,8 +3604,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-ko {
-        font-size: 12px;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 12.5px;
     }
 
     footer .footer-txt-box-wrap .ko2 {
@@ -3784,7 +3620,7 @@ footer .footer-copy .footer-txt1 {
     footer .footer-copy .footer-txt1 {
         color: #fff;
         font-family: 'Bebas Neue', cursive;
-        font-size: 14.7px;
+        font-size: 14.5px;
         pointer-events: none;
         float: right;
         text-align: right;

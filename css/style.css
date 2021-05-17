@@ -1065,71 +1065,48 @@ footer .footer-copy .footer-txt1 {
 
 /* --------------------------MAINTAIN---------------------------- */
 #maintain {
-    float: left;
     width: 100%;
-    margin: 0 auto;
-    top: 70px;
-    display: none;
-    padding-top: 40px;
-}
-
-.maintain-main-img {
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 20px;
+    height:800px;
+    float:left;
     position: relative;
-}
-
-.maintain-main-img img {
-    width: 100%;
-}
-
-#maintain .maintain-main-img .maintain-title {
-    font-family: "AppleSD-R";
-    color: #fff;
-    position: absolute;
-    top: 40px;
-    left: 20px;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#maintain .maintain-menu {
-    margin: 20px 0 20px 0;
-}
-
-#maintain .maintain-menu a p {
-    width: 85%;
-    height: 40px;
-    text-align: left;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    background-color: #f0f0f0;
-    font-weight: bold;
-    font-family: 'Noto Sans KR', sans-serif;
-    border-bottom: 0.5px solid #e1e1e1;
-}
-
-#maintain .maintain-menu a .menu1 {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#maintain .maintain-menu .maintain-mention {
-    width: 80%;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #f9f9f9;
-    font-size: 14px;
     display: none;
+    padding-top: 60px;
+    background-color: #f1f1f1;
 }
-
-#maintain .maintain-menu .maintain-mention h4 {
-    text-decoration: underline;
+#maintain .maintain-title-wrap{
+    width:90%;
+    margin:30px auto;
+    position:relative;
+    background-color: #fff;
+    height:300px;
+    border-radius: 10px;
+}
+#maintain .maintain-title-wrap .maintain-txt-wrap{
+    float:left;
+    width:60%;
+}
+#maintain .maintain-title-wrap .maintain-title{
+    width:90%;
+    font-family: "AppleSDGothicNeoB";
+    font-size:50px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top:90px;
+    color:#292929;
+}
+#maintain .maintain-title-wrap .maintain-txt{
+    width:90%;
+    font-family: "AppleSDGothicNeoM";
+    font-size:18px;
+    margin: 0 auto;
+    text-align: center;
+    color:#292929;
+    margin-top:10px;
+}
+#maintain .maintain-title-wrap img{
+    width:170px;
+    float:right;
+    margin:28px;
 }
 
 /* --------------------------//MAINTAIN---------------------------- */

@@ -947,7 +947,7 @@ footer .footer-txt-box-wrap a:hover {
 
 footer .footer-txt-box-wrap .footer-txt-ko {
     font-size: 10px;
-    font-family: "AppleSDGothicNeoM";
+    font-family: "AppleSDGothicNeoB";
 }
 
 footer .footer-txt-box-wrap .ko2 {
@@ -1800,14 +1800,7 @@ footer .footer-copy .footer-txt1 {
 
     /* -----------------------------HOME INFO----------------------------- */
 
-    #home-box .home-txt-en {
-        font-size: 50px;
-    }
-
-    #home-box .home-txt-ko {
-        font-size: 13px;
-    }
-
+   
     #home-box .swiper-container .swiper-wrapper .swiper-slide .over-1280 {
         display: none;
     }
@@ -1894,7 +1887,7 @@ footer .footer-copy .footer-txt1 {
         margin: 30px 5px 0;
         color: #003478;
         height: 30px;
-        line-height: 2.8;
+        line-height: 2.6;
         border-radius: 20px;
         cursor: pointer;
         transition-duration: .3s;

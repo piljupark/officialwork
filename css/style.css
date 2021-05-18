@@ -1066,7 +1066,7 @@ footer .footer-copy .footer-txt1 {
 /* --------------------------MAINTAIN---------------------------- */
 #maintain {
     width: 100%;
-    height:800px;
+    height:auto;
     float:left;
     position: relative;
     display: none;
@@ -1097,19 +1097,82 @@ footer .footer-copy .footer-txt1 {
 #maintain .maintain-title-wrap .maintain-txt{
     width:90%;
     font-family: "AppleSDGothicNeoM";
-    font-size:18px;
+    font-size:15px;
     margin: 0 auto;
     text-align: center;
     color:#292929;
     margin-top:10px;
 }
 #maintain .maintain-title-wrap img{
-    width:170px;
+    width:270px;
     float:right;
-    margin:28px;
+    margin:10px;
+    margin-top:55px;
 }
 
+#maintain .maintain-explain-wrapper{
+    width:100%;
+    float:left;
+    position:relative;
+}
+
+#maintain .maintain-explain-wrapper .maintain-explain-wrap{
+    width:90%;
+    margin:0 auto;
+    height:700px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom:30px;
+    overflow-y: scroll;
+}
+#maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title{
+    width:20%;
+    margin:0 auto;
+    height:auto;
+    text-align: center;
+    float:left;
+    overflow-y: hidden;
+}
+#maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title p{
+    margin:50px 10px 0 20px;
+    text-align: center;
+    font-family: "AppleSDGothicNeoM";
+    border:1px solid #003478;
+    color:#003478;
+    width:130px;
+    height:30px;
+    line-height:1.8;
+    border-radius: 7px;
+    cursor:pointer;
+}
+#maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title p:hover{
+    background-color: #003478;
+    color:#fff;
+}
+#maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-txt{
+    width:70%;
+    float:right;
+    position: relative;
+    padding:10px;
+
+}
+#maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-txt .maintain-mention{
+    font-family: "AppleSDGothicNeoT";
+    overflow: hidden;
+    font-size:13px;
+    color:#292929;
+}
+#maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-txt .maintain-mention h4{
+    font-family: "AppleSDGothicNeoB";
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom:5px;
+    border-bottom:0.5px solid #292929;
+}
 /* --------------------------//MAINTAIN---------------------------- */
+
+
+
 
 
 /* --------------------------SUPPORT---------------------------- */

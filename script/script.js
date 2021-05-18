@@ -721,109 +721,46 @@ $(document).ready(function () {
 
 
 
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").click(function(){
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("background-color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color","#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("background-color","#fff");
+        
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention1").css("opacity","1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(n+2)").css("opacity","0");
+    });
+    
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").click(function(){
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("background-color","#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").css("background-color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").css("color","#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("background-color","#fff");
+        
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention1").css("opacity","0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(2)").css("opacity","1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(n+3)").css("opacity","0");
+    });
+    
+    
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").click(function(){
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+2)").css("background-color","#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+2)").css("color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").css("background-color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").css("color","#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("color","#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("background-color","#fff");
+        
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention1").css("opacity","0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention2").css("opacity","1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(n+3)").css("opacity","0");
+    });
 
 
-
-    $("#maintain > .maintain-menu > a > .menu1").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention1").css("transition-delay", ".4s");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu2").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu3").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu4").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu5").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu6").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu7").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu8").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "block");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "none");
-    });
-    $("#maintain > .maintain-menu > a > .menu9").click(function () {
-        $("#maintain > .maintain-menu > a > .mention1").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention2").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention3").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention4").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention5").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention6").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention7").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention8").css("display", "none");
-        $("#maintain > .maintain-menu > a > .mention9").css("display", "block");
-    });
+    
+    
     $("#support > .support-main-img-wrap > .support-img2").click(function () {
         $("#support > .support-main-img-wrap > .support-img1").css("width", "25%");
         $("#support > .support-main-img-wrap > .support-img1").css("opacity", "0.3");

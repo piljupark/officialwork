@@ -1,18 +1,18 @@
 $(document).ready(function () {
 
     $(".menu-btn > a > .mob-menu").click(function () {
-         $("body").css("overflow-y", "hidden");
-         $("html").css("overflow-y", "hidden");
-         $(".sidebar-menu").css("height", "100%");
-         $(".sidebar-menu").css("transition-duration", "1s");
-         $(".header").css("background", "rgb(41,41,41)");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","2");
-     });
+        $("body").css("overflow-y", "hidden");
+        $("html").css("overflow-y", "hidden");
+        $(".sidebar-menu").css("height", "100%");
+        $(".sidebar-menu").css("transition-duration", "1s");
+        $(".header").css("background", "rgb(41,41,41)");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "2");
+    });
 
-    
+
 
 
     $(".menu-btn > a > .mob-close").on("click", function () {
@@ -21,10 +21,10 @@ $(document).ready(function () {
         $(".sidebar-menu").css("height", "0%");
         $(".sidebar-menu").css("transition-duration", ".4s");
         $(".header").css("background", "rgba(255,255,255,0.2)");
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
     });
 
     $("#home-box > .swiper-container > .swiper-wrapper > .home-b").click(function () {
@@ -61,10 +61,10 @@ $(document).ready(function () {
         $(".sidebar-menu").css("height", "0%");
         $(".sidebar-menu").css("transition-duration", ".4s");
         $(".header").css("background", "rgba(255,255,255,0.2)");
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
 
     });
     $(".sidebar-menu > .menu-wrap > li > .suv").click(function () {
@@ -85,10 +85,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -114,10 +114,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -143,10 +143,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -173,10 +173,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -202,10 +202,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -231,10 +231,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -259,10 +259,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -287,10 +287,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -316,10 +316,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -344,10 +344,10 @@ $(document).ready(function () {
         $("#promotion").css("display", "block");
         $("#drive-test").hide();
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -372,10 +372,10 @@ $(document).ready(function () {
         $("#promotion").hide();
         $("#drive-test").css("display", "block");
         $("#home-box").hide();
-        $(".menu-btn > a > img:nth-child(2)").css("opacity","0");
-        $(".menu-btn > a > img:nth-child(2)").css("z-index","1");
-        $(".menu-btn > a > img:nth-child(1)").css("opacity","1");
-        $(".menu-btn > a > img:nth-child(1)").css("z-index","2");
+        $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
         $("body").css("overflow-y", "auto");
         $("html").css("overflow-y", "auto");
         $("body").css("overflow-x", "hidden");
@@ -719,48 +719,141 @@ $(document).ready(function () {
         $(".mobile-small-button").css("display", "block");
     });
 
+    /*     maintain     */
 
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("background-color", "#fff");
+        
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y","scroll");
 
-    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").click(function(){
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("background-color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color","#fff");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("background-color","#fff");
-        
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention1").css("opacity","1");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(n+2)").css("opacity","0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention1").css("opacity", "1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+2)").css("opacity", "0");
     });
-    
-    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").click(function(){
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("background-color","#fff");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").css("background-color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").css("color","#fff");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("background-color","#fff");
+
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("background-color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").css("color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("background-color", "#fff");
         
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention1").css("opacity","0");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(2)").css("opacity","1");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(n+3)").css("opacity","0");
-    });
-    
-    
-    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").click(function(){
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+2)").css("background-color","#fff");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+2)").css("color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").css("background-color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").css("color","#fff");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("color","#292929");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("background-color","#fff");
         
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention1").css("opacity","0");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > mention2").css("opacity","1");
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > maintain-mention:nth-child(n+3)").css("opacity","0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y","scroll");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention1").css("opacity", "0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention2").css("opacity", "1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+3)").css("opacity", "0");
     });
 
 
-    
-    
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+2)").css("background-color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+2)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").css("color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("background-color", "#fff");
+
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+2)").css("opacity", "0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention3").css("opacity", "1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+4)").css("opacity", "0");
+    });
+
+
+
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(4)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+3)").css("background-color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+3)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(4)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(4)").css("color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+5)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+5)").css("background-color", "#fff");
+
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+3)").css("opacity", "0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention4").css("opacity", "1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+5)").css("opacity", "0");
+    });
+
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(5)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+4)").css("background-color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+4)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(5)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(5)").css("color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+6)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+6)").css("background-color", "#fff");
+
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+4)").css("opacity", "0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention5").css("opacity", "1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+6)").css("opacity", "0");
+    });
+
+
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(6)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+5)").css("background-color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+5)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(6)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(6)").css("color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+7)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+7)").css("background-color", "#fff");
+
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+5)").css("opacity", "0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention6").css("opacity", "1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+7)").css("opacity", "0");
+    });
+
+
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(7)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+6)").css("background-color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+6)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(7)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(7)").css("color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("background-color", "#fff");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+6)").css("opacity", "0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention7").css("opacity", "1");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(8)").css("opacity", "0");
+    });
+
+
+    $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").click(function () {
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+7)").css("background-color", "#fff");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+7)").css("color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("background-color", "#292929");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("color", "#fff");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
+
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+7)").css("opacity", "0");
+        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention8").css("opacity", "1");
+    });
+
+
+
+    /*     //maintain     */
+
+
+
+
+
+
     $("#support > .support-main-img-wrap > .support-img2").click(function () {
         $("#support > .support-main-img-wrap > .support-img1").css("width", "25%");
         $("#support > .support-main-img-wrap > .support-img1").css("opacity", "0.3");

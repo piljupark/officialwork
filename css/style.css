@@ -1821,6 +1821,54 @@ footer .footer-copy .footer-txt1 {
     /* -----------------------------//CAR INFO----------------------------- */
     
     
+    /* ----------------------------- MAINTAIN ----------------------------- */
+    #maintain .maintain-title-wrap{
+        height:320px;
+        overflow: hidden;
+    }
+    #maintain .maintain-title-wrap .maintain-txt-wrap{
+        width:100%;
+    }
+    
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
+        font-size:28px;
+        width:100%;
+        margin-top:40px;
+    }
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-txt{
+        font-size: 13px;
+    }
+    #maintain .maintain-title-wrap img{
+        width:200px;
+    }
+    
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap{
+        width:100%;
+        height:70px;
+        overflow-x: scroll;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title p{
+        float:left;
+        width:70px;
+        font-size: 13px;
+        margin:20px 20px 0 20px;
+        line-height: 2;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title{
+        width:900px;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-txt{
+        width:100%;
+        height:600px;
+        margin-bottom:30px;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-txt .maintain-mention h4{
+        padding-top:0px;
+        font-size: 17px;
+    }
+    /* -----------------------------// MAINTAIN ----------------------------- */
+    
+    
     
     /* -----------------------------PARTS----------------------------- */
     #parts .parts-wrapper{
@@ -2165,6 +2213,52 @@ footer .footer-copy .footer-txt1 {
         width:240px;
     }
     /* -----------------------------//PARTS----------------------------- */
+    
+    /* ----------------------------- MAINTAIN ----------------------------- */
+    #maintain .maintain-title-wrap{
+        height:400px;
+        overflow: hidden;
+    }
+    #maintain .maintain-title-wrap .maintain-txt-wrap{
+        width:100%;
+    }
+    
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
+        font-size:35px;
+        width:100%;
+        margin-top:40px;
+    }
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-txt{
+        font-size: 13px;
+    }
+    #maintain .maintain-title-wrap img{
+        width:280px;
+    }
+    
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap{
+        width:100%;
+        height:70px;
+        overflow-x: scroll;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title p{
+        float:left;
+        width:70px;
+        font-size: 13px;
+        margin:20px 20px 0 20px;
+        line-height: 2;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title{
+        width:900px;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-txt{
+        width:100%;
+        height:400px;
+        margin-bottom:30px;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-txt .maintain-mention h4{
+        padding-top:0px;
+    }
+    /* -----------------------------// MAINTAIN ----------------------------- */
 
     
     
@@ -2433,6 +2527,49 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME BANNER----------------------------- */
+    
+    
+    
+    /* ----------------------------- MAINTAIN ----------------------------- */
+    #maintain .maintain-title-wrap{
+        height:250px;
+        overflow: hidden;
+    }
+    
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
+        font-size:30px;
+        width:100%;
+    }
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-txt{
+        font-size: 13px;
+    }
+    #maintain .maintain-title-wrap img{
+        width:170px;
+        position: absolute;
+        margin-top:70px;
+    }
+    
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap{
+        width:100%;
+        height:80px;
+        overflow-x: scroll;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title p{
+        float:left;
+        width:70px;
+        font-size: 13px;
+        margin:16px 20px 0 20px;
+        line-height: 2;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title{
+        width:900px;
+    }
+    #maintain .maintain-explain-wrapper .maintain-explain-txt{
+        width:100%;
+        height:400px;
+        margin-bottom:30px;
+    }
+    /* -----------------------------// MAINTAIN ----------------------------- */
 
 
 

@@ -726,8 +726,7 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color", "#fff");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("background-color", "#fff");
-        
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y","scroll");
+    
 
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention1").css("opacity", "1");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+2)").css("opacity", "0");
@@ -741,9 +740,7 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("background-color", "#fff");
         
-        
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y","scroll");
-
+    
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention1").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention2").css("opacity", "1");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+3)").css("opacity", "0");
@@ -757,9 +754,6 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(3)").css("color", "#fff");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+4)").css("background-color", "#fff");
-
-
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
 
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+2)").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention3").css("opacity", "1");
@@ -776,9 +770,6 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+5)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+5)").css("background-color", "#fff");
 
-
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
-
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+3)").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention4").css("opacity", "1");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+5)").css("opacity", "0");
@@ -791,9 +782,6 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(5)").css("color", "#fff");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+6)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+6)").css("background-color", "#fff");
-
-
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
 
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+4)").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention5").css("opacity", "1");
@@ -810,7 +798,6 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+7)").css("background-color", "#fff");
 
 
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+5)").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention6").css("opacity", "1");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+7)").css("opacity", "0");
@@ -825,8 +812,6 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("background-color", "#fff");
 
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
-
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+6)").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention7").css("opacity", "1");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(8)").css("opacity", "0");
@@ -838,8 +823,6 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+1):nth-child(-n+7)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("background-color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(8)").css("color", "#fff");
-
-        $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt").css("overflow-y", "hidden");
 
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+1):nth-child(-n+7)").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention8").css("opacity", "1");

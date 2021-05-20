@@ -1200,173 +1200,50 @@ footer .footer-copy .footer-txt1 {
     display: none;
     background-color: #fafafa;
 }
-
-#support .support-main-img-wrap {
-    width: 90%;
+#support .support-wrap{
+    width:90%;
     margin: 0 auto;
-    padding-top: 30px;
-}
-
-#support .support-main-img-wrap .support-img1 {
-    background-image: url(../images/support3.png);
-    width: 70%;
-    height: 280px;
-    float: left;
+    margin-top:30px;
+    margin-bottom:30px;
     border-radius: 10px;
-    transition: .3s;
-    position: relative;
-}
-
-#support .support-main-img-wrap .support-img2 {
-    background-image: url(../images/ecoboost3.png);
-    width: 25%;
-    height: 280px;
-    background-size: cover;
-    float: left;
-    border-radius: 10px;
-    float: right;
-    transition: .3s;
-    position: relative;
-    opacity: 0.3;
-}
-
-#support .support-main-img-wrap .support-img1 p {
-    position: absolute;
-    font-family: 'Fjalla One', sans-serif;
-    color: #fff;
-    margin: 0 auto;
-    width: 100%;
     text-align: center;
-    font-size: 40px;
-    margin-top: 115px;
-    transition: .3s;
 }
-
-#support .support-main-img-wrap .support-img2 p {
-    position: absolute;
-    font-family: 'Fjalla One', sans-serif;
-    color: #fff;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 115px;
-    transition: .3s;
-}
-
-#support .support-ex-wrapper1,
-.support-ex-wrapper2 {
-    float: left;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#support .support-ex-wrapper2 {
-    display: none;
-    margin-bottom: 60px;
-}
-
-#support .support-ex-wrap {
-    margin: 0 auto;
-    width: 90%;
-    border: 0.5px solid #ccc;
-    border-radius: 10px;
-    padding-bottom: 40px;
-    margin-top: 40px;
-}
-
-#support .sync3-wrap {
-    width: 20%;
-    margin: 0 auto;
-}
-
-#support .sync3-wrap .sync3 {
-    text-align: center;
+#support .support-wrap .support-sync-wrap{
+    width:100%;
     background-color: #fff;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    color: #003478;
-    margin-top: -13px;
+    border-radius: 10px;
 }
-
-#support .ecoboost-wrap {
-    width: 30%;
+#support .support-wrap .support-sync-wrap .support-sync-title{
+    width:100%;
     margin: 0 auto;
-}
-
-#support .support-ex-wrapper1 .support-ex-wrap .support-ex .support-ex-title {
-    margin-bottom: 5px;
-}
-
-#support .support-ex-wrapper1 .support-ex-wrap .support-ex .support-ex-text {
-    line-height: 1.4;
-}
-
-#support .support-caution-wrap {
-    float: left;
-    width: 100%;
-    background-color: #f5f5f5;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-
-#support .support-caution {
-    padding-top: 25px;
-    padding-bottom: 20px;
-    color: #666;
-    margin: 0 auto;
-}
-
-#support .ecoboost-wrap .ecoboost {
+    font-family: "Bebas Neue",cursive;
+    font-size:70px;
     text-align: center;
-    background-color: #fff;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    color: #003478;
-    margin-top: -13px;
+    padding-top:30px;
+    color:#292929;
 }
-
-#support .support-ex {
-    width: 80%;
+#support .support-wrap .support-sync-wrap .support-sync-txt{
+    width:100%;
     margin: 0 auto;
-    margin-top: 40px;
-    font-family: 'AppleSD-R';
+    font-family: "AppleSDGothicNeoM";
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color:#292929;
+}
+#support .support-wrap .support-sync-wrap img{
+    width:100%;
+    margin-top:40px;
+    border-radius: 10px;
+}
+#support .support-wrap .support-sync-wrap .support-sync-explain-wrap{
+    width:90%;
+    margin:0 auto;
     position: relative;
 }
-
-#support .support-ex h1 {
-    position: absolute;
-    color: #ccc;
-    font-size: 40px;
-    left: -15px;
-    opacity: 0.3;
-    position: absolute;
-    top: -4px;
-}
-
-#support .support-ex-wrap .support-ex .support-ex-title h1 {
-    left: -12px;
-}
-
-#support .support-ex .support-ex-title {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 20px;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-#support .support-ex .support-ex-text {
-    font-size: 13px;
-    padding-left: 20px;
-    color: #444;
-    line-height: 1.4;
-}
-
-#support .support-caution {
-    font-size: 0.9em;
-    width: 370px;
-    line-height: 1.5;
+#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain{
+    float:left;
+    width:45%;
 }
 
 /* --------------------------//SUPPORT---------------------------- */

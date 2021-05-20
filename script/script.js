@@ -539,6 +539,8 @@ $(document).ready(function () {
         $("#drive-test").hide();
 
         $("#home-box").hide();
+        
+       
     });
 
     $(".tablet-pc-btn > .tablet-pc-btn-menu-wrap > .sync3-ecoboost").click(function () {

@@ -1071,7 +1071,7 @@ footer .footer-copy .footer-txt1 {
     position: relative;
     display: none;
     padding-top: 60px;
-    background-color: #f1f1f1;
+    background-color: #fafafa;
 }
 #maintain .maintain-title-wrap{
     width:90%;
@@ -1088,7 +1088,7 @@ footer .footer-copy .footer-txt1 {
 #maintain .maintain-title-wrap .maintain-title{
     width:90%;
     font-family: "AppleSDGothicNeoB";
-    font-size:50px;
+    font-size:45px;
     margin: 0 auto;
     text-align: center;
     margin-top:90px;
@@ -1133,10 +1133,13 @@ footer .footer-copy .footer-txt1 {
     overflow-y: hidden;
     overflow-x: hidden;
 }
+#maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title p:nth-child(1){
+    background-color: #292929;
+    color:#fff;
+}
 #maintain .maintain-explain-wrapper .maintain-explain-wrap .maintain-explain-title p{
     text-align: center;
     font-family: "AppleSDGothicNeoM";
-    border:1px solid #292929;
     color:#292929;
     width:80%;
     height:30px;
@@ -1193,14 +1196,15 @@ footer .footer-copy .footer-txt1 {
 #support {
     float: left;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 60px;
     display: none;
+    background-color: #fafafa;
 }
 
 #support .support-main-img-wrap {
     width: 90%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 #support .support-main-img-wrap .support-img1 {
@@ -2200,7 +2204,7 @@ footer .footer-copy .footer-txt1 {
         height:600px;
     }
     #parts .parts-wrapper .parts-txt-place .parts-title{
-        font-size: 24px;
+        font-size: 35px;
     }
     #parts .parts-wrapper .parts-txt-place .parts-txt{
         font-size: 13px;
@@ -2218,6 +2222,7 @@ footer .footer-copy .footer-txt1 {
     #maintain .maintain-title-wrap{
         height:400px;
         overflow: hidden;
+        
     }
     #maintain .maintain-title-wrap .maintain-txt-wrap{
         width:100%;
@@ -2232,7 +2237,7 @@ footer .footer-copy .footer-txt1 {
         font-size: 13px;
     }
     #maintain .maintain-title-wrap img{
-        width:280px;
+        width:270px;
     }
     
     #maintain .maintain-explain-wrapper .maintain-explain-wrap{
@@ -2801,6 +2806,17 @@ footer .footer-copy .footer-txt1 {
     .header .logo-btn{
         width:10%;
     }
+    
+    
+    /* --------------------------MAINTAIN---------------------------- */
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
+        font-size: 44px;
+    }
+    #maintain .maintain-title-wrap img{
+        position: absolute;
+    }
+    
+    /* --------------------------//MAINTAIN---------------------------- */
 
 
 
@@ -3045,6 +3061,22 @@ footer .footer-copy .footer-txt1 {
         z-index: -2;
     }
 
+    
+    
+    /* -------------------------MAINTAIN---------------------------- */
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
+        font-size: 50px;
+    }
+    #maintain .maintain-title-wrap img{
+        width:330px;
+        position: absolute;
+        margin-top:40px;
+        right:0px;
+    }
+    /* -------------------------//MAINTAIN---------------------------- */
+    
+    
+    
 
 
     /* -------------------------PROMOTION---------------------------- */
@@ -3256,6 +3288,21 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------------//HOME BANNER----------------------------- */
+    
+    
+    
+    
+    /* -------------------------MAINTAIN---------------------------- */
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
+        font-size: 50px;
+    }
+    #maintain .maintain-title-wrap img{
+        width:400px;
+        position: absolute;
+        margin-top:10px;
+        right:0px;
+    }
+    /* -------------------------//MAINTAIN---------------------------- */
 
 
 
@@ -3485,6 +3532,22 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------------//HOME BANNER----------------------------- */
+    
+    
+    
+    /* -------------------------MAINTAIN---------------------------- */
+    #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
+        font-size: 50px;
+    }
+    #maintain .maintain-title-wrap img{
+        width:400px;
+        position: absolute;
+        margin-top:10px;
+        right:10%;
+    }
+    /* -------------------------//MAINTAIN---------------------------- */
+    
+    
 
     /* --------------------------SUPPORT---------------------------- */
 

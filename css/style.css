@@ -1211,6 +1211,7 @@ footer .footer-copy .footer-txt1 {
 }
 #support .support-wrap .support-sync-wrap{
     width:100%;
+    float:left;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -1226,36 +1227,41 @@ footer .footer-copy .footer-txt1 {
 #support .support-wrap .support-sync-wrap .support-sync-txt{
     width:100%;
     margin: 0 auto;
-    font-family: "AppleSDGothicNeoM";
+    font-family: "AppleSDGothicNeoT";
     text-align: center;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     color:#292929;
 }
-#support .support-wrap .support-sync-wrap img{
+#support .support-wrap .support-sync-wrap .sync-main-img{
     width:100%;
-    margin-top:40px;
-    border-radius: 10px;
+    margin-top:50px;
     
 }
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap{
-    width:90%;
+    width:100%;
     margin:0 auto;
     position: relative;
+    margin-top:40px;
+    float:left;
     
 }
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain{
     width:45%;
+    height:200px;
     font-family: "AppleSDGothicNeoM";
     background-color: #fff;
+    display: inline-block;
+    margin:20px 10px;
     float:left;
-    height:100px;
 }
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap .right{
     float:right;
 }
+
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-title img{
     width:50px;
+    padding: 10px;
 }
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-title p{
     font-size: 20px;

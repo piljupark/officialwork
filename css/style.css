@@ -1207,6 +1207,7 @@ footer .footer-copy .footer-txt1 {
     margin-bottom:30px;
     border-radius: 10px;
     text-align: center;
+    height: auto;
 }
 #support .support-wrap .support-sync-wrap{
     width:100%;
@@ -1235,15 +1236,40 @@ footer .footer-copy .footer-txt1 {
     width:100%;
     margin-top:40px;
     border-radius: 10px;
+    
 }
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap{
     width:90%;
     margin:0 auto;
     position: relative;
+    
 }
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain{
-    float:left;
     width:45%;
+    font-family: "AppleSDGothicNeoM";
+    background-color: #fff;
+    float:left;
+    height:100px;
+}
+#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .right{
+    float:right;
+}
+#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-title img{
+    width:50px;
+}
+#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-title p{
+    font-size: 20px;
+    font-weight: 600;
+    color:#292929;
+    margin-top:10px;
+}
+#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-txt p{
+    font-family: "AppleSDGothicNeoT";
+    color:#292929;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top:20px;
+    
 }
 
 /* --------------------------//SUPPORT---------------------------- */

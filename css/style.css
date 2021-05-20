@@ -1254,6 +1254,7 @@ footer .footer-copy .footer-txt1 {
     display: inline-block;
     margin:20px 10px;
     float:left;
+    display: inline-block;
 }
 #support .support-wrap .support-sync-wrap .support-sync-explain-wrap .right{
     float:right;

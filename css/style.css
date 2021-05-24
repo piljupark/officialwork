@@ -1240,37 +1240,90 @@ footer .footer-copy .footer-txt1 {
     margin-top:50px;
     
 }
-#support .support-wrap .support-sync-wrap .support-sync-explain-wrap{
+#support .support-wrap .support-sync-wrap .support-explain-wrap{
     width:100%;
     margin:0 auto;
     position: relative;
     margin-top:40px;
 }
-#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain{
-    width:33%;
+#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain:nth-child(n+1):nth-child(-n+4){
+    width:50%;
     height:200px;
     font-family: "AppleSDGothicNeoM";
-    background-color: #fff;
-    display: inline-block;
     float:left;
 }
+#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain:nth-child(5){
+    display: inline-block;
+    width:50%;
+    height:200px;
+    font-family: "AppleSDGothicNeoM";
+}
 
-#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-title img{
+#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-title img{
     width:50px;
     padding: 10px;
 }
-#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-title p{
+#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-title p{
     font-size: 20px;
     color:#292929;
     margin-top:10px;
     font-family: "AppleSDGothicNeoB";
 }
-#support .support-wrap .support-sync-wrap .support-sync-explain-wrap .support-sync-explain .support-sync-explain-txt p{
+#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-txt p{
     font-family: "AppleSDGothicNeoM";
     color:#292929;
     font-size: 15px;
-    padding:10px 20px;
-    
+    padding:10px 20px;  
+}
+#support .support-wrap .support-sync-caution{
+    width:90%;
+    margin:0 auto;
+    position: relative;
+    height:80px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    margin-bottom:100px;
+    text-align: center;
+}
+#support .support-wrap .support-sync-caution p{
+    font-family: "AppleSDGothicNeoM";
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 2.2;
+    color:#292929;
+}
+#support .support-wrap .support-ecoboost-wrap{
+    width:100%;
+    position: relative;
+    height:auto;
+    background-color: #292929;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 30px;
+}
+#support .support-wrap .support-ecoboost-wrap .support-ecoboost-title{
+    width:100%;
+    margin: 0 auto;
+    font-family: "Bebas Neue",cursive;
+    font-size:70px;
+    text-align: center;
+    padding-top:30px;
+    color:#fff;
+}
+#support .support-wrap .support-ecoboost-wrap .support-ecoboost-txt{
+    width:100%;
+    margin: 0 auto;
+    font-family: "AppleSDGothicNeoM";
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    color:#fff;
+}
+#support .support-wrap .support-ecoboost-wrap img{
+    width:100%;
+}
+#support .support-wrap .support-ecoboost-wrap .support-explain p{
+    color:#fff;
 }
 
 /* --------------------------//SUPPORT---------------------------- */

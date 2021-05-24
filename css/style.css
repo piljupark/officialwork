@@ -1212,10 +1212,10 @@ footer .footer-copy .footer-txt1 {
 #support .support-wrap .support-sync-wrap{
     width:100%;
     margin:0 auto;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     float:left;
     background-color: #fff;
-    margin-bottom:30px;
 }
 #support .support-wrap .support-sync-wrap .support-sync-title{
     width:100%;
@@ -1238,7 +1238,6 @@ footer .footer-copy .footer-txt1 {
 #support .support-wrap .support-sync-wrap .sync-main-img{
     width:100%;
     margin-top:50px;
-    
 }
 #support .support-wrap .support-sync-wrap .support-explain-wrap{
     width:100%;
@@ -1246,17 +1245,11 @@ footer .footer-copy .footer-txt1 {
     position: relative;
     margin-top:40px;
 }
-#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain:nth-child(n+1):nth-child(-n+4){
-    width:50%;
+#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
+    width:100%;
     height:200px;
     font-family: "AppleSDGothicNeoM";
     float:left;
-}
-#support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain:nth-child(5){
-    display: inline-block;
-    width:50%;
-    height:200px;
-    font-family: "AppleSDGothicNeoM";
 }
 
 #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-title img{
@@ -1273,19 +1266,25 @@ footer .footer-copy .footer-txt1 {
     font-family: "AppleSDGothicNeoM";
     color:#292929;
     font-size: 15px;
-    padding:10px 20px;  
-}
-#support .support-wrap .support-sync-caution{
-    width:90%;
+    padding:10px 20px;
+    width:50%;
     margin:0 auto;
+}
+#support .support-wrap .support-sync-caution-wrap{
+    width:100%;
+    float:left;
     position: relative;
     height:80px;
-    border-radius: 10px;
-    background-color: #f1f1f1;
     margin-bottom:100px;
     text-align: center;
 }
-#support .support-wrap .support-sync-caution p{
+#support .support-wrap .support-sync-caution-wrap .support-sync-caution {
+    width:90%;
+    margin:0 auto;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+#support .support-wrap .support-sync-caution-wrap .support-sync-caution p{
     font-family: "AppleSDGothicNeoM";
     font-weight: 200;
     font-size: 12px;
@@ -1300,6 +1299,8 @@ footer .footer-copy .footer-txt1 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-bottom: 30px;
+    float:left;
+    margin-bottom:30px;
 }
 #support .support-wrap .support-ecoboost-wrap .support-ecoboost-title{
     width:100%;
@@ -1307,7 +1308,7 @@ footer .footer-copy .footer-txt1 {
     font-family: "Bebas Neue",cursive;
     font-size:70px;
     text-align: center;
-    padding-top:30px;
+    padding-top:100px;
     color:#fff;
 }
 #support .support-wrap .support-ecoboost-wrap .support-ecoboost-txt{
@@ -1322,8 +1323,63 @@ footer .footer-copy .footer-txt1 {
 #support .support-wrap .support-ecoboost-wrap img{
     width:100%;
 }
-#support .support-wrap .support-ecoboost-wrap .support-explain p{
+#support .support-wrap .support-ecoboost-wrap .support-sync-title{
+    width:100%;
+    margin: 0 auto;
+    font-family: "Bebas Neue",cursive;
+    font-size:70px;
+    text-align: center;
+    padding-top:30px;
+    color:#292929;
+}
+#support .support-wrap .support-ecoboost-wrap .support-sync-txt{
+    width:100%;
+    margin: 0 auto;
+    font-family: "AppleSDGothicNeoM";
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    color:#292929;
+}
+#support .support-wrap .support-ecoboost-wrap .sync-main-img{
+    width:100%;
+    margin-top:50px;
+    
+}
+#support .support-wrap .support-ecoboost-wrap .support-explain-wrap{
+    width:100%;
+    margin:0 auto;
+    position: relative;
+    margin-top:40px;
+}
+#support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
+    width:50%;
+    height:280px;
+    font-family: "AppleSDGothicNeoM";
+    float:left;
+    margin-bottom:30px;
+}
+
+#support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-title img{
+    width:50px;
+    padding: 10px;
+}
+#support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-title p{
+    font-size: 20px;
     color:#fff;
+    margin-top:10px;
+    font-family: "AppleSDGothicNeoB";
+}
+#support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-txt{
+    width:100%;
+}
+#support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-txt p{
+    font-family: "AppleSDGothicNeoM";
+    color:#fff;
+    font-size: 15px;
+    padding:10px 20px;
+    width:50%;
+    margin:0 auto;
 }
 
 /* --------------------------//SUPPORT---------------------------- */
@@ -2779,11 +2835,6 @@ footer .footer-copy .footer-txt1 {
 
 
     /* --------------------------SUPPORT---------------------------- */
-
-    #support .support-caution {
-        font-size: 0.7em;
-        width: 300px;
-    }
 
     /* --------------------------//SUPPORT---------------------------- */
 

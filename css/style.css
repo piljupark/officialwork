@@ -1918,9 +1918,13 @@ footer .footer-copy .footer-txt1 {
     }
     #support .support-wrap .support-sync-wrap .support-sync-txt{
         font-size: 12px;
+        width:90%;
     }
     #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
         width:100%;
+    }
+    #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-title p{
+        font-size: 18px;
     }
     #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-txt p{
         font-size: 12px;
@@ -1947,9 +1951,16 @@ footer .footer-copy .footer-txt1 {
     #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
         width:100%;
     }
+    #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-title p{
+        font-size: 18px;
+    }
     #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-txt p{
         font-size: 12px;
         width:60%;
+    }
+    
+    #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-title .icon, #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-title .icon{
+        width:30px;
     }
 
     /* --------------------------//SUPPORT---------------------------- */
@@ -2305,6 +2316,7 @@ footer .footer-copy .footer-txt1 {
     }
     #support .support-wrap .support-sync-wrap .support-sync-txt{
         font-size: 12px;
+        width:90%;
     }
     #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
         width:100%;
@@ -2328,6 +2340,10 @@ footer .footer-copy .footer-txt1 {
     #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-txt p{
         font-size: 12px;
         width:60%;
+    }
+    
+    #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain .support-explain-title .icon, #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain .support-explain-title .icon{
+        width:40px;
     }
 
     /* --------------------------//SUPPORT---------------------------- */
@@ -2654,6 +2670,7 @@ footer .footer-copy .footer-txt1 {
     /* --------------------------SUPPORT---------------------------- */
     #support .support-wrap .support-sync-wrap .support-sync-txt{
         font-size: 14px;
+        width:90%;
     }
     #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
         width:100%;
@@ -2882,6 +2899,12 @@ footer .footer-copy .footer-txt1 {
 
 
     /* --------------------------SUPPORT---------------------------- */
+    #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
+        height:200px;
+    }
+    #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
+        height:200px;
+    }
 
     /* --------------------------//SUPPORT---------------------------- */
 
@@ -3099,13 +3122,17 @@ footer .footer-copy .footer-txt1 {
 
 
     /* --------------------------SUPPORT---------------------------- */
-
-    #support .support-caution {
-        font-size: 0.7em;
-        width: 300px;
+    #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
+        height:200px;
+        width:33%;
+    }
+    #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
+        height:200px;
+        width:33%;
     }
 
     /* --------------------------//SUPPORT---------------------------- */
+    
 
     .mobile-small-button,
     .mobile-small-ex,
@@ -3129,6 +3156,9 @@ footer .footer-copy .footer-txt1 {
         right:0px;
     }
     /* -------------------------//MAINTAIN---------------------------- */
+    
+    
+    
     
     
     
@@ -3363,10 +3393,13 @@ footer .footer-copy .footer-txt1 {
 
 
     /* --------------------------SUPPORT---------------------------- */
-
-    #support .support-caution {
-        font-size: 0.7em;
-        width: 300px;
+    #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
+        height:200px;
+        width:33%;
+    }
+    #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
+        height:200px;
+        width:33%;
     }
 
     /* --------------------------//SUPPORT---------------------------- */
@@ -3604,11 +3637,14 @@ footer .footer-copy .footer-txt1 {
     
     
 
-    /* --------------------------SUPPORT---------------------------- */
-
-    #support .support-caution {
-        font-size: 0.7em;
-        width: 300px;
+   /* --------------------------SUPPORT---------------------------- */
+    #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
+        height:200px;
+        width:25%;
+    }
+    #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
+        height:200px;
+        width:33%;
     }
 
     /* --------------------------//SUPPORT---------------------------- */

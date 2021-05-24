@@ -401,11 +401,11 @@ html {
     font-family: "AppleSDGothicNeoB";
     font-size: 13px;
     font-weight: 400;
-    margin-top: 14px;
+    margin-top: 16px;
 }
 
 .tablet-pc-btn .tablet-pc-en {
-    margin-top: 14.5px;
+    margin-top: 18px;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -2045,7 +2045,7 @@ footer .footer-copy .footer-txt1 {
         font-size: 40px;
     }
     #support .support-wrap .support-sync-wrap .support-sync-txt{
-        font-size: 12px;
+        font-size: 17px;
         width:90%;
     }
     #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
@@ -2055,13 +2055,15 @@ footer .footer-copy .footer-txt1 {
         font-size: 12px;
         width:60%;
     }
-    
+    #support .support-wrap .support-ecoboost-wrap{
+        padding-bottom: 0px;
+    }
     #support .support-wrap .support-ecoboost-wrap .support-ecoboost-title{
         font-size: 40px;
     }
     
     #support .support-wrap .support-ecoboost-wrap .support-ecoboost-txt{
-        font-size: 12px;
+        font-size: 17px;
     }
     
     #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
@@ -2398,8 +2400,9 @@ footer .footer-copy .footer-txt1 {
     
     
     /* --------------------------SUPPORT---------------------------- */
+    
     #support .support-wrap .support-sync-wrap .support-sync-txt{
-        font-size: 14px;
+        font-size: 18px;
         width:90%;
     }
     #support .support-wrap .support-sync-wrap .support-explain-wrap .support-explain{
@@ -2409,9 +2412,11 @@ footer .footer-copy .footer-txt1 {
         font-size: 12px;
         width:60%;
     }
-    
+    #support .support-wrap .support-ecoboost-wrap{
+        padding-bottom: 0px;
+    }
     #support .support-wrap .support-ecoboost-wrap .support-ecoboost-txt{
-        font-size: 14px;
+        font-size: 18px;
     }
     
     #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
@@ -2634,6 +2639,9 @@ footer .footer-copy .footer-txt1 {
     }
     #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain{
         height:200px;
+    }
+    #support .support-wrap .support-ecoboost-wrap{
+        padding-bottom: 0px;
     }
 
     /* --------------------------//SUPPORT---------------------------- */

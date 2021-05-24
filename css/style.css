@@ -1002,7 +1002,6 @@ footer .footer-copy .footer-txt1 {
     line-height: 1.5;
 }
 
-
 /* --------------------------//VEHICLE INFO---------------------------- */
 
 
@@ -1017,11 +1016,12 @@ footer .footer-copy .footer-txt1 {
     padding-top: 60px;
     background-color: #fafafa;
 }
+
 #parts .parts-wrapper{
     width:90%;
     margin:0 auto;
     height:700px;
-    margin-top:40px;
+    margin-top:30px;
     margin-bottom:40px;
     border-radius: 10px;
     background-color: #fff;
@@ -1379,6 +1379,14 @@ footer .footer-copy .footer-txt1 {
     width: 100%;
     padding-top: 80px;
     display: none;
+    background-color: #f1f1f1;
+}
+#promotion .promotion-main-wrap{
+    width:90%;
+    margin:0 auto;
+    height:200px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 #promotion .promotion-wrap {
@@ -2617,6 +2625,12 @@ footer .footer-copy .footer-txt1 {
     }
     .header .logo-btn{
         width:10%;
+    }
+    .header .tablet-pc-vehicle-menu .tablet-pc-vehicle-menu-wrap .tablet-pc-vehicle-menu-wrapper a p {
+        font-size: 15px;
+    }
+    .header .tablet-pc-vehicle-menu{
+        width:100%;
     }
     
     

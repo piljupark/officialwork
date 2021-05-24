@@ -375,33 +375,26 @@ html {
     width: 100%;
     height: 50px;
     background-color: #292929;
-
     bottom: 0px;
     opacity: 1;
     overflow: hidden;
     transition: .6s;
     z-index: 100;
-    border-top: 0.5px solid #333;
 }
-
-
-.tablet-pc-btn-menu-wrap {
-    position: absolute;
-    width: 600px;
-    right: 0;
-
+.tablet-pc-btn .tablet-pc-btn-menu-wrap{
+    width:95%;
+    margin:0 auto;
 }
 
 .tablet-pc-btn a {
-    float: left;
-    margin: 0 10px;
+    margin:0 auto;
+    width:12.5%;
     color: #fff;
+    float:left;
     font-size: 15px;
-    margin-top: 15px;
     transition: .3s;
-    font-family: 'Bebas Neue', cursive;
-    display: inline-block;
     position: relative;
+    text-align: center;
 }
 
 .tablet-pc-btn .tablet-pc-ko {
@@ -413,10 +406,7 @@ html {
 
 .tablet-pc-btn .tablet-pc-en {
     margin-top: 14.5px;
-}
-
-.tablet-pc-btn .en-last {
-    margin-right: 0px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .tablet-pc-btn a:after {
@@ -971,6 +961,22 @@ footer .footer-copy .footer-txt1 {
 .car-info-wrapper .car-1 .car-img-wrap img {
     width: 350px;
 }
+.car-info-wrapper .car-1 .car-img-wrap .test {
+    position: absolute;
+    text-align: center;
+    width:100px;
+    height:30px;
+    font-family: "AppleSDGothicNeoM";
+    font-size: 14px;
+    color: #fff;
+    border:1px solid #003478;
+    background-color: #003478;
+    border-radius: 20px;
+    line-height: 2;
+    bottom:10px;
+    right:120px;
+    transition-duration: .3s;
+}
 
 .car-info-wrapper .car-1 .car-img-wrap .more {
     position: absolute;
@@ -990,6 +996,10 @@ footer .footer-copy .footer-txt1 {
 .car-info-wrapper .car-1 .car-img-wrap .more:hover{
     background-color: #003478;
     color:#fff;
+}
+.car-info-wrapper .car-1 .car-img-wrap .test:hover{
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 
@@ -1434,310 +1444,6 @@ footer .footer-copy .footer-txt1 {
 
 
 /* --------------------------//PROMOTION---------------------------- */
-
-
-
-
-
-/* --------------------------DRIVE-TEST---------------------------- */
-#drive-test {
-    width: 100%;
-    float: left;
-    display: none;
-    padding-top: 80px;
-    position: relative;
-    overflow-x: hidden;
-    background-color: #f1f1f1;
-}
-#drive-test .drive-test-wrapper{
-    width:90%;
-    margin:0 auto;
-    position: relative;
-    height:auto;
-}
-#drive-test .drive-test-wrapper .drive-test-wrap{
-    width:100%;
-    float:left;
-    position: relative;
-    height:800px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-#drive-test .drive-test-wrapper .drive-test-wrap .test-title{
-    width:100%;
-    margin:0 auto;
-    text-align: center;
-    font-family: "AppleSDGothicNeoB";
-    font-size: 40px;
-    margin-top:30px;
-    color:#292929;
-}
-#drive-test .drive-test-wrapper .drive-test-wrap .test-caution{
-    width:100%;
-    text-align: center;
-    font-family: "AppleSDGothicNeoM";
-    font-size: 13px;
-    color:#003478;
-    margin-top:10px;
-}
-#drive-test .drive-test-wrapper .drive-test-wrap .drive-model-wrap{
-    width:90%;
-    margin:0 auto;
-}
-#drive-test .drive-test-wrapper .drive-test-wrap .drive-model-wrap .model-left{
-    width:50%;
-    float:left;
-    font-family: "Bebas Neue", cursive;
-    font-size:40px;
-}
-#drive-test .drive-test-wrapper .drive-test-wrap .drive-model-wrap .model-right{
-    width:50%;
-    float:left;
-    font-family: "Bebas Neue", cursive;
-    font-size:25px;
-}
-
-/*
-#drive-test .drive-test-wrapper{
-    width:90%;
-    margin:0 auto;
-    border-radius: 10px;
-    margin-bottom:30px;
-    
-}
-#drive-test .drive-test-wrapper .drive-test-wrap {
-    width: 100%;
-    margin:0 auto;
-    height:auto;
-    transition: .3s;
-    transition-delay: 1s;
-    float:left;
-    background-color: #fff;
-}
-
-#drive-test .drive-test-wrap .test-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top:30px;
-}
-#drive-test .drive-test-wrap .into-wrap{
-    float:left;
-    width:100%;
-}
-#drive-test .drive-test-wrap .into-wrap .test-caution {
-    text-align: center;
-    font-size: 12px;
-    color: #003478;
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
-
-#drive-test .drive-test-wrap .into-wrap .title {
-    float: left;
-    width: 55%;
-    margin: :0 auto;
-    margin-bottom: 80px;
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-    margin-left:20px;
-}
-
-#drive-test .drive-test-wrap:nth-child(2) .into-wrap .title {
-    margin-bottom: 80px;
-}
-
-#drive-test .drive-test-wrap:nth-child(6) .into-wrap .title {
-    margin-bottom: 150px;
-}
-
-#drive-test .drive-test-wrap:nth-child(7) .into-wrap .title {
-    margin-bottom: 90px;
-}
-
-#drive-test .drive-test-wrap:nth-child(n+8):nth-child(-n+12) .into-wrap .title {
-    margin-bottom: 40px;
-}
-
-#drive-test .drive-test-wrap .into-wrap .model-detail {
-    float: right;
-    width: 35%;
-    margin: 0 auto;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 17px;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-#drive-test .drive-test-wrap .into-wrap .model-detail .detail {
-    position: relative;
-}
-
-#drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text {
-    color: #888;
-    margin-top: 5px;
-}
-
-#drive-test .drive-test-wrap .into-wrap .model-detail .detail .detail-text:hover {
-    color: #003478;
-    transition: .3s;
-}
-
-#drive-test .into-wrap .model-detail .detail .choose {
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #003478;
-    position: absolute;
-    right: 0px;
-    top: 8px;
-    opacity: 0;
-    transition: .3s;
-}
-
-#drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline {
-    width: 100%;
-    border-bottom: 0.5px solid #ccc;
-    margin-top: 4px;
-}
-
-#drive-test .drive-test-wrap .into-wrap .model-detail .detail .underline-color {
-    border-bottom: 0.5px solid #003478;
-    width: 0%;
-    transition: .3s;
-    position: absolute;
-    bottom: 0;
-    transition: .5s;
-}
-
-#drive-test .drive-test-wrap .into-wrap .model-detail .detail:hover .underline-color {
-    width: 100%;
-}
-
-
-#drive-test .drive-test-prev {
-    bottom: 0;
-    width: 49%;
-    float: left;
-    text-align: right;
-    color: #888;
-    margin-bottom: 40px;
-
-}
-
-#drive-test .drive-test-next {
-    bottom: 0;
-    width: 49%;
-    float: right;
-    text-align: left;
-    color: #003478;
-    margin-bottom: 40px;
-
-}
-
-
-#drive-test .drive-test-model-wrap .drive-test-next {
-    bottom: 0;
-    width: 100%;
-    float: right;
-    right: 0;
-    text-align: center;
-    color: #003478;
-}
-
-
-
-
-#drive-test .drive-test-area {
-    margin: 0 auto;
-    margin-top: 40px;
-    display: none;
-    transition: .3s;
-    opacity: 0;
-}
-
-#drive-test .drive-test-area .into-wrap .title {
-    margin-bottom: 190px;
-}
-
-#drive-test .drive-test-area .into-wrap:nth-child(2) .title {
-    margin-bottom: 220px;
-}
-
-#drive-test .drive-test-area .into-wrap:nth-child(3) .title {
-    margin-bottom: 110px;
-}
-
-#drive-test .drive-test-area .into-wrap:nth-child(n+4):nth-child(-n+7) .title {
-    margin-bottom: 50px;
-}
-
-
-#drive-test .drive-test-information {
-    margin: 0 auto;
-    margin-top: 40px;
-    display: none;
-    transition: .3s;
-    opacity: 0;
-}
-
-#drive-test .drive-test-information .test-title {
-    margin-bottom: 40px;
-}
-
-#drive-test .drive-test-information {
-    display: none;
-    opacity: 0;
-    transition: .3s;
-}
-
-#drive-test .drive-test-information .into-wrap .drive-inform-wrap {
-    float: left;
-    width: 100%;
-}
-
-#drive-test .drive-test-information .into-wrap .title {
-    float: left;
-    margin-bottom: 50px;
-}
-
-#drive-test .drive-test-information .into-wrap .detail-wrap {
-    width: 41%;
-    float: right;
-}
-
-#drive-test .drive-test-information .detail-text {
-    border: none;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
-
-#drive-test .drive-test-information .drive-test-prev {
-    bottom: 0;
-    width: 45%;
-    float: left;
-    text-align: right;
-    color: #888;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-
-#drive-test .drive-test-information .drive-test-next {
-    bottom: 0;
-    width: 49%;
-    float: right;
-    text-align: left;
-    color: #003478;
-    margin-bottom: 40px;
-    font-weight: bold;
-    margin-top: 40px;
-}
-
-*/
-
-/* --------------------------//DRIVE-TEST---------------------------- */
 
 
 @media screen and (max-width:329px) and (min-width:100px) {

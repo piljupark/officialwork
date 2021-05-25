@@ -1899,17 +1899,28 @@ footer .footer-copy .footer-txt1 {
     
     #home-box .swiper-slide .home-txt-wrap .home-txt-wrapper .home-txt-en{
         top:30px;
-        font-size: 30px;
+        font-size: 40px;
         color:#f1f1f1;
         opacity: 1;
+        display: none;
+    }
+    #home-box .swiper-slide .home-txt-wrap .home-txt-wrapper .home-txt-en-under-1280{
+        top:30px;
+        font-size: 40px;
+        color:#f1f1f1;
+        opacity: 1;
+        display: block;
     }
     #home-box .swiper-slide .home-txt-wrap .home-txt-wrapper .home-txt-ko{
         font-family: "AppleSDGothicNeoM";
         font-size: 13px;
         text-align: center;
         position: absolute;
-        top:70px;
+        top:75px;
         
+    }
+    #home-box .home-e .home-txt-wrap .home-txt-ko{
+        top:90px;
     }
     #home-box .home-e .home-txt-wrap .home-txt-wrapper .home-txt-en,#home-box .home-e .home-txt-wrap .home-txt-wrapper .home-txt-ko{
         color:#292929;
@@ -1970,10 +1981,12 @@ footer .footer-copy .footer-txt1 {
     
     /* -----------------------------PARTS----------------------------- */
     #parts .parts-wrapper{
-        height:600px;
+        height:650px;
     }
+    
     #parts .parts-wrapper .parts-txt-place .parts-title{
-        font-size: 35px;
+        font-size: 28px;
+        padding:0px;
     }
     #parts .parts-wrapper .parts-txt-place .parts-txt{
         font-size: 13px;
@@ -1998,7 +2011,7 @@ footer .footer-copy .footer-txt1 {
     }
     
     #maintain .maintain-title-wrap .maintain-txt-wrap .maintain-title{
-        font-size:35px;
+        font-size:28px;
         width:100%;
         margin-top:40px;
     }

@@ -906,7 +906,7 @@ footer .footer-copy .footer-txt1 {
     float: left;
     margin: 0 auto;
     padding-top: 60px;
-    margin-bottom:30px;
+    background-color: #fafafa;
 }
 .car-info-wrap{
     width:90%;
@@ -918,8 +918,9 @@ footer .footer-copy .footer-txt1 {
     float:left;
     width: 45%;
     padding:10px;
+    padding-bottom:20px;
     margin-bottom: 30px;
-    background-color: #fafafa;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -927,44 +928,58 @@ footer .footer-copy .footer-txt1 {
 .car-right{
     float:right;
 }
-.car-info-wrapper .car-1 .car-txt-wrap {
-    width: 30%;
-    float: left;
-    position: relative;
-}
 
-.car-info-wrapper .car-1 .car-txt-wrap .car-title {
+.car-info-wrapper .car-1 .car-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
-    width: 300%;
-    color:#003478;
+    color:#292929;
+    text-align: center;
+    line-height: 1.5;
 }
+.car-info-wrapper .car-1 .car-txt-wrap {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom:20px;
+    background-color: #f1f1f1;
+    padding-top:20px;
+    padding-bottom:10px;
+    border-radius: 10px;
+}
+
+
 
 .car-info-wrapper .car-1 .car-txt-wrap .car-txt {
     line-height: 3.3;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     color: #292929;
-    opacity: .8;
-    border-bottom: 0.5px solid #292929;
-    width: 90px;
-    font-family: "AppleSDGothicNeoM";
+    width: 20%;
+    font-family: "AppleSDGothicNeoB";
+    float:left;
+}
+.car-info-wrapper .car-1 .car-txt-wrap .icon img{
+    width:15px;
+}
+.car-info-wrapper .car-1 .car-txt-wrap .icon {
+    line-height: 0;
+    border:0px;
 }
 
 .car-info-wrapper .car-1 .car-img-wrap {
-    width: 65%;
+    width: 100%;
     float: right;
-    padding-top: 65px;
+    padding-top: 30px;
     overflow: hidden;
 }
 
 .car-info-wrapper .car-1 .car-img-wrap img {
-    width: 350px;
+    width: 100%;
 }
-.car-info-wrapper .car-1 .car-img-wrap .test {
-    position: absolute;
+.car-info-wrapper .car-1 .test {
+    position: relative;
     text-align: center;
-    width:100px;
+    width:45%;
     height:30px;
     font-family: "AppleSDGothicNeoM";
     font-size: 14px;
@@ -973,15 +988,14 @@ footer .footer-copy .footer-txt1 {
     background-color: #003478;
     border-radius: 20px;
     line-height: 2;
-    bottom:10px;
-    right:120px;
     transition-duration: .3s;
+    float:left;
 }
 
-.car-info-wrapper .car-1 .car-img-wrap .more {
-    position: absolute;
+.car-info-wrapper .car-1 .more {
+    position: relative;
     text-align: center;
-    width:100px;
+    width:45%;
     height:30px;
     font-family: "AppleSDGothicNeoM";
     font-size: 14px;
@@ -989,17 +1003,17 @@ footer .footer-copy .footer-txt1 {
     border:1px solid #003478;
     border-radius: 20px;
     line-height: 2;
-    bottom:10px;
-    right:10px;
     transition-duration: .3s;
+    float:right;
 }
-.car-info-wrapper .car-1 .car-img-wrap .more:hover{
+.car-info-wrapper .car-1 .more:hover{
     background-color: #003478;
     color:#fff;
 }
-.car-info-wrapper .car-1 .car-img-wrap .test:hover{
+.car-info-wrapper .car-1 .test:hover{
     font-size: 18px;
     line-height: 1.5;
+    font-weight: 800;
 }
 
 /* --------------------------//VEHICLE INFO---------------------------- */

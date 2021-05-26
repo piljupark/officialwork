@@ -822,7 +822,7 @@ footer .footer-wrap {
 }
 
 footer .footer-img-box-wrap {
-    float: left;
+    float: left; 
     width: 100%;
     position: relative;
 }
@@ -1048,7 +1048,7 @@ footer .footer-copy .footer-txt1 {
 #parts .parts-wrapper {
     width: 90%;
     margin: 0 auto;
-    height: 700px;
+    height: 300px;
     margin-top: 30px;
     margin-bottom: 40px;
     border-radius: 10px;
@@ -1059,28 +1059,27 @@ footer .footer-copy .footer-txt1 {
 }
 
 #parts .parts-wrapper .parts-txt-place {
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
+    float:left;
     position: relative;
 }
 
 #parts .parts-wrapper .parts-txt-place .parts-title {
     font-family: "AppleSDGothicNeoB";
-    font-size: 35px;
-    margin-top: 70px;
-    margin-bottom: 10px;
+    font-size: 50px;
+    margin-top: 80px;
     color: #292929;
     padding: 10px;
 }
 
 #parts .parts-wrapper .parts-txt-place .parts-txt {
     font-family: "AppleSDGothicNeoM";
-    font-size: 20px;
-    padding: 10px;
+    font-size: 15px;
     color: #292929;
 }
 
-#parts .parts-wrapper .parts-txt-place .parts-button {
+#parts .parts-button {
     width: 130px;
     height: 40px;
     border: 1px solid #003478;
@@ -1091,9 +1090,10 @@ footer .footer-copy .footer-txt1 {
     font-family: "AppleSDGothicNeoM";
     transition-duration: .3s;
     cursor: pointer;
+    text-align: center;
 }
 
-#parts .parts-wrapper .parts-txt-place .parts-button:hover {
+#parts .parts-button:hover {
     color: #fff;
     background-color: #003478;
 }
@@ -1432,7 +1432,7 @@ footer .footer-copy .footer-txt1 {
     font-family: "AppleSDGothicNeoM";
     color: #fff;
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     width: 80%;
     margin: 0 auto;
 }
@@ -1445,79 +1445,34 @@ footer .footer-copy .footer-txt1 {
 #promotion {
     float: left;
     width: 100%;
-    padding-top: 80px;
+    padding-top:90px;
+    padding-bottom:30px;
     display: none;
-    background-color: #f1f1f1;
+    background-color: #fafafa;
 }
 
 #promotion .promotion-main-wrap {
     width: 90%;
     margin: 0 auto;
-    height: 200px;
+    height: 300px;
     background-color: #fff;
     border-radius: 10px;
+    overflow: hidden;
 }
 #promotion .promotion-main-wrap img{
-    width:50%;
-    float:right;
+    width:120%;
+    float:left;
+    margin-top:100px;
+    opacity: .8;
 }
-
-#promotion .promotion-wrap {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-#promotion .promotion-wrap .promotion-img-wrap {
-    width: 600px;
-    text-align: center;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    height: 450px;
-    border-radius: 10px;
-    transition: .7s;
-    position: relative;
-}
-
-#promotion .promotion-wrap .promotion-img-wrap3 {
-    margin-bottom: 10px;
-}
-
-#promotion .promotion-wrap .promotion-img-wrap img {
-    width: 600px;
-    border-radius: 10px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
-#promotion .promotion-wrap .promotion-img-wrap1:hover {
-    height: 695px;
-}
-
-#promotion .promotion-wrap .promotion-img-wrap2:hover {
-    height: 787px;
-}
-
-#promotion .promotion-wrap .promotion-img-wrap3:hover {
-    height: 695px;
-}
-
-#promotion .promotion-txt {
-    color: #f1f1f1;
-    margin-bottom: 50px;
-    font-size: 40px;
+#promotion .promotion-main-wrap p{
     position: absolute;
-    top: 0;
+    width:90%;
     text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    line-height: 11;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "AppleSDGothicNeoB";
+    font-size: 45px;
+    margin-top:50px;
+    color:#292929;   
 }
 
 
@@ -1802,67 +1757,7 @@ footer .footer-copy .footer-txt1 {
 
     /* --------------------------//SUPPORT---------------------------- */
     /* -------------------------PROMOTION---------------------------- */
-    #promotion {
-        float: left;
-        width: 100%;
-        padding-top: 80px;
-        display: none;
-    }
-
-    #promotion .promotion-wrap {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap {
-        width: 240px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        height: 220px;
-        border-radius: 10px;
-        transition: .7s;
-        position: relative;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3 {
-        margin-bottom: 10px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap:hover {
-        height: 315px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap1:hover {
-        height: 270px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3:hover {
-        height: 270px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap img {
-        width: 240px;
-        border-radius: 10px;
-    }
-
-    #promotion .promotion-txt {
-        color: #f1f1f1;
-        margin-bottom: 50px;
-        font-size: 40px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        line-height: 5.5;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: .8s;
-    }
-
+    
 
     /* --------------------------//PROMOTION---------------------------- */
 
@@ -2228,63 +2123,7 @@ footer .footer-copy .footer-txt1 {
     /* --------------------------//SUPPORT---------------------------- */
 
     /* -------------------------PROMOTION---------------------------- */
-    #promotion {
-        float: left;
-        width: 100%;
-        padding-top: 80px;
-        display: none;
-    }
-
-    #promotion .promotion-wrap {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap {
-        width: 300px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        height: 220px;
-        border-radius: 10px;
-        transition: .7s;
-        position: relative;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap:hover {
-        height: 392px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap1:hover {
-        height: 340px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3:hover {
-        height: 340px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap img {
-        width: 300px;
-        border-radius: 10px;
-    }
-
-    #promotion .promotion-txt {
-        color: #f1f1f1;
-        margin-bottom: 50px;
-        font-size: 40px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        line-height: 5.5;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: .8s;
-    }
+   
 
     /* --------------------------//PROMOTION---------------------------- */
 
@@ -2597,63 +2436,7 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------PROMOTION---------------------------- */
-    #promotion {
-        float: left;
-        width: 100%;
-        padding-top: 80px;
-        display: none;
-    }
-
-    #promotion .promotion-wrap {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap {
-        width: 450px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        height: 300px;
-        border-radius: 10px;
-        transition: .7s;
-        position: relative;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap img {
-        width: 450px;
-        border-radius: 10px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap1:hover {
-        height: 508px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap2:hover {
-        height: 588px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3:hover {
-        height: 508px;
-    }
-
-    #promotion .promotion-txt {
-        color: #f1f1f1;
-        margin-bottom: 50px;
-        font-size: 40px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        line-height: 7;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: .8s;
-    }
+    
 
     /* -------------------------//PROMOTION---------------------------- */
 
@@ -2835,66 +2618,7 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------PROMOTION---------------------------- */
-    #promotion {
-        float: left;
-        width: 100%;
-        padding-top: 80px;
-        display: none;
-    }
-
-    #promotion .promotion-wrap {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap {
-        width: 600px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        height: 450px;
-        border-radius: 10px;
-        transition: .7s;
-        position: relative;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap img {
-        width: 600px;
-        border-radius: 10px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
-    #promotion .promotion-wrap .promotion-img-wrap1:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap2:hover {
-        height: 787px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-txt {
-        color: #f1f1f1;
-        margin-bottom: 50px;
-        font-size: 40px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        line-height: 11;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+    
 
     /* --------------------------//PROMOTION---------------------------- */
 
@@ -3085,66 +2809,7 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------PROMOTION---------------------------- */
-    #promotion {
-        float: left;
-        width: 100%;
-        padding-top: 80px;
-        display: none;
-    }
-
-    #promotion .promotion-wrap {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap {
-        width: 600px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        height: 450px;
-        border-radius: 10px;
-        transition: .7s;
-        position: relative;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap img {
-        width: 600px;
-        border-radius: 10px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
-    #promotion .promotion-wrap .promotion-img-wrap1:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap2:hover {
-        height: 787px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-txt {
-        color: #f1f1f1;
-        margin-bottom: 50px;
-        font-size: 40px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        line-height: 11;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+    
 
     /* --------------------------//PROMOTION---------------------------- */
 
@@ -3341,66 +3006,7 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------PROMOTION---------------------------- */
-    #promotion {
-        float: left;
-        width: 100%;
-        padding-top: 80px;
-        display: none;
-    }
-
-    #promotion .promotion-wrap {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap {
-        width: 600px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        height: 450px;
-        border-radius: 10px;
-        transition: .7s;
-        position: relative;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap img {
-        width: 600px;
-        border-radius: 10px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
-    #promotion .promotion-wrap .promotion-img-wrap1:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap2:hover {
-        height: 787px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-txt {
-        color: #f1f1f1;
-        margin-bottom: 50px;
-        font-size: 40px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        line-height: 11;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+    
 
     /* --------------------------//PROMOTION---------------------------- */
 
@@ -3591,67 +3197,7 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------PROMOTION---------------------------- */
-    #promotion {
-        float: left;
-        width: 100%;
-        padding-top: 80px;
-        display: none;
-    }
-
-    #promotion .promotion-wrap {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap {
-        width: 600px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        height: 450px;
-        border-radius: 10px;
-        transition: .7s;
-        position: relative;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap img {
-        width: 600px;
-        border-radius: 10px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
-    #promotion .promotion-wrap .promotion-img-wrap1:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap2:hover {
-        height: 787px;
-    }
-
-    #promotion .promotion-wrap .promotion-img-wrap3:hover {
-        height: 695px;
-    }
-
-    #promotion .promotion-txt {
-        color: #f1f1f1;
-        margin-bottom: 50px;
-        font-size: 40px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        line-height: 11;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
+    
     /* --------------------------//PROMOTION---------------------------- */
 
     footer {

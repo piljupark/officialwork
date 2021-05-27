@@ -1079,31 +1079,61 @@ footer .footer-copy .footer-txt1 {
     color: #292929;
 }
 
-#parts .parts-button {
-    width: 130px;
-    height: 40px;
-    border: 1px solid #003478;
-    margin: 10px auto;
-    line-height: 2.3;
-    color: #003478;
-    border-radius: 15px;
-    font-family: "AppleSDGothicNeoM";
-    transition-duration: .3s;
-    cursor: pointer;
-    text-align: center;
-}
-
-#parts .parts-button:hover {
-    color: #fff;
-    background-color: #003478;
-}
-
 #parts .parts-wrapper img {
     bottom: 0;
     width: 300px;
-    margin-top: 30px;
+    margin-top:20px;
 }
-
+#parts .parts-explain-wrapper{
+    width:100%;
+    float:left;
+    position: relative;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap{
+    width:90%;
+    margin:0 auto;
+    position: relative;
+    height:500px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom:30px;
+    
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-title-wrap{
+    width:100%;
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+    
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-title-wrap p{
+    font-family: "AppleSDGothicNeoB";
+    font-size:35px;
+    padding:60px 0 30px 0;
+    color:#292929;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-txt-wrap{
+    width:100%;
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-txt-wrap p{
+    font-family: "AppleSDGothicNeoM";
+    font-size:15px;
+    color:#292929;
+    width:520px;
+    margin: 0 auto;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap{
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap img{
+    width:300px;
+    margin-top:40px;
+}
 /* --------------------------//PARTS---------------------------- */
 
 
@@ -1644,30 +1674,7 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------PARTS----------------------------- */
-    #parts .parts-wrapper {
-        height: 530px;
-    }
-
-    #parts .parts-wrapper .parts-txt-place .parts-title {
-        font-size: 18px;
-        margin-bottom: 0px;
-        margin-top: 30px;
-    }
-
-    #parts .parts-wrapper .parts-txt-place .parts-txt {
-        font-size: 10px;
-        padding-top: 0;
-    }
-
-    #parts .parts-wrapper .parts-txt-place .parts-button {
-        font-size: 14px;
-        height: 35px;
-    }
-
-    #parts .parts-wrapper img {
-        width: 220px;
-    }
-
+    
     /* -----------------------------//PARTS----------------------------- */
 
 
@@ -1982,30 +1989,13 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------PARTS----------------------------- */
-    #parts .parts-wrapper {
-        height: 650px;
-    }
-
-    #parts .parts-wrapper .parts-txt-place .parts-title {
-        font-size: 28px;
-        padding: 0px;
-    }
-
-    #parts .parts-wrapper .parts-txt-place .parts-txt {
-        font-size: 13px;
-    }
-
-    #parts .parts-wrapper .parts-txt-place .parts-button {
-        font-size: 14px;
-        height: 35px;
-    }
-
-    #parts .parts-wrapper img {
-        width: 240px;
-    }
+   
 
     /* -----------------------------//PARTS----------------------------- */
 
+    
+    
+    
     /* ----------------------------- MAINTAIN ----------------------------- */
     #maintain .maintain-title-wrap {
         height: 400px;

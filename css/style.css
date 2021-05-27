@@ -1097,7 +1097,7 @@ footer .footer-copy .footer-txt1 {
     background-color: #fff;
     border-radius: 10px;
     margin-bottom:30px;
-    
+    padding-bottom:30px;
 }
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-title-wrap{
     width:100%;
@@ -1134,11 +1134,39 @@ footer .footer-copy .footer-txt1 {
     width:300px;
     margin-top:40px;
 }
-#parts .parts-explain-wrapper .parts-explain-wrap .parts-img{
-    width:30%;
-    margin:0 auto;
-    margin-top:40px;
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrapper{
+    width:90%;
+    margin:40px 10px 0 10px;
+    border-radius: 10px;
+    display: inline-block;
 }
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrap{
+    width:60%;
+    float:right;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img{
+    width:40%;
+    float:left;
+    border-radius: 10px;
+    margin-top:0;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrap h2{
+    float:left;
+    width:100%;
+    padding:20px;
+    color:#292929;
+    font-family: "AppleSDGothicNeoM";
+    text-align: left;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrap h4{
+    width:100%;
+    font-family: "AppleSDGothicNeoM"; 
+    color:#292929;
+    font-weight: 200;
+    text-align: left;
+    margin-left:20px;
+}
+
 /* --------------------------//PARTS---------------------------- */
 
 

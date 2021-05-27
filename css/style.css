@@ -1108,6 +1108,7 @@ footer .footer-copy .footer-txt1 {
     float:left;
     padding-bottom: 30px;
     margin-bottom:30px;
+    border-radius: 10px;
 }
 
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-title-wrap {
@@ -1203,6 +1204,7 @@ footer .footer-copy .footer-txt1 {
     width:50%;
     float:left;
 }
+
 #parts .parts-explain-wrapper .parts-explain-wrap .part-repair-title p, #parts .parts-explain-wrapper .parts-explain-wrap .part-repair-txt p{
     width:100%;
     margin:0;
@@ -1211,10 +1213,12 @@ footer .footer-copy .footer-txt1 {
     width: 100%;
     position: relative;
     margin-top:30px;
+    float:left;
+    text-align: center;
 }
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-repair-wrap p{
     font-size: 14px;
-    padding:20px;
+    padding:10px;
 }
 
 /* --------------------------//PARTS---------------------------- */

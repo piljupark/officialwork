@@ -1093,7 +1093,7 @@ footer .footer-copy .footer-txt1 {
     width:90%;
     margin:0 auto;
     position: relative;
-    height:500px;
+    height:auto;
     background-color: #fff;
     border-radius: 10px;
     margin-bottom:30px;
@@ -1132,6 +1132,11 @@ footer .footer-copy .footer-txt1 {
 }
 #parts .parts-explain-wrapper .parts-explain-wrap img{
     width:300px;
+    margin-top:40px;
+}
+#parts .parts-explain-wrapper .parts-explain-wrap .parts-img{
+    width:30%;
+    margin:0 auto;
     margin-top:40px;
 }
 /* --------------------------//PARTS---------------------------- */

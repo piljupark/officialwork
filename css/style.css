@@ -829,13 +829,13 @@ footer .footer-img-box-wrap {
 
 
 footer .footer-sns-img-box {
-    width: 220px;
+    width: 300px;
     margin: 0 auto;
 
 }
 
 footer .footer-sns-img-box img {
-    width: 36px;
+    width: 20%;
     opacity: .7;
     margin-right: 18px;
     transition: .3s;
@@ -2728,8 +2728,8 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 250px;
-        margin-right: 10px;
+        width: 100%;
+        text-align: right;
     }
 
     footer .footer-sns-img-box img {
@@ -2741,7 +2741,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-sns-img-box .sns-img-last {
-        margin-right: 0px;
+        margin-right: 10px;
     }
 
     footer .footer-sns-img-box img:hover {
@@ -2920,8 +2920,8 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 250px;
-        margin-right: 10px;
+        width: 100%;
+        text-align: right;
     }
 
     footer .footer-sns-img-box img {
@@ -2933,7 +2933,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-sns-img-box .sns-img-last {
-        margin-right: 0px;
+        margin-right: 10px;
     }
 
     footer .footer-sns-img-box img:hover {
@@ -3117,8 +3117,8 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 250px;
-        margin-right: 10px;
+        width: 100%;
+        text-align: right;
     }
 
     footer .footer-sns-img-box img {
@@ -3130,7 +3130,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-sns-img-box .sns-img-last {
-        margin-right: 0px;
+        margin-right: 10px;
     }
 
     footer .footer-sns-img-box img:hover {
@@ -3318,8 +3318,8 @@ footer .footer-copy .footer-txt1 {
 
 
     footer .footer-sns-img-box {
-        width: 250px;
-        margin-right: 10px;
+        width: 100%;
+        text-align: right;
     }
 
     footer .footer-sns-img-box img {
@@ -3331,7 +3331,7 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-sns-img-box .sns-img-last {
-        margin-right: 0px;
+        margin-right: 10px;
     }
 
     footer .footer-sns-img-box img:hover {

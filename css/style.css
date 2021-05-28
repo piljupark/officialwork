@@ -632,7 +632,7 @@ html {
 
 #home-banner .home-banner-wrap .home-banner-right .banner-2-wrap {
     float: left;
-    width: 49%;
+    width: 48%;
     overflow: hidden;
     border-radius: 10px;
     margin-left: 3px;
@@ -640,7 +640,7 @@ html {
 }
 
 #home-banner .home-banner-wrap .home-banner-right .banner-3-wrap {
-    width: 49%;
+    width: 48%;
     float: right;
     overflow: hidden;
     border-radius: 10px;
@@ -649,12 +649,12 @@ html {
 }
 
 #home-banner .home-banner-wrap .home-banner-right .banner-4-wrap {
-    width: 99%;
+    width: 98%;
     float: left;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
-    margin: 0 3px;
+    margin: 10px 3px 0 3px;
 }
 
 

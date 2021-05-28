@@ -539,10 +539,10 @@ html {
 #home-showroom .home-showroom-wrap .home-showroom-txt {
     color: #292929;
     font-size: 25px;
-    font-family: "AppleSDGothicNeoT";
+    font-family: "AppleSDGothicNeoM";
     text-align: center;
     line-height: 2;
-    font-weight: 400;
+    font-weight: 700;
     transition-duration: .5s;
     cursor: default;
     -ms-user-select: none;
@@ -624,7 +624,7 @@ html {
 
 #home-banner .home-banner-wrap .home-banner-right {
     width: 50%;
-    float: left;
+    float: right;
     position: relative;
     overflow: hidden;
 }
@@ -635,7 +635,7 @@ html {
     width: 48%;
     overflow: hidden;
     border-radius: 10px;
-    margin-left: 3px;
+    margin-left: 2%;
     position: relative;
 }
 
@@ -644,17 +644,16 @@ html {
     float: right;
     overflow: hidden;
     border-radius: 10px;
-    margin-right: 3px;
     position: relative;
 }
 
 #home-banner .home-banner-wrap .home-banner-right .banner-4-wrap {
     width: 98%;
-    float: left;
+    float: right;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
-    margin: 10px 3px 0 3px;
+    margin: 10px 0 0 0;
 }
 
 
@@ -1676,6 +1675,7 @@ footer .footer-copy .footer-txt1 {
 
     #home-banner .home-banner-wrap .home-banner-left {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     #home-banner .home-banner-wrap .home-banner-right {
@@ -1684,10 +1684,15 @@ footer .footer-copy .footer-txt1 {
 
     #home-banner .home-banner-wrap .home-banner-right .banner-2-wrap,
     #home-banner .home-banner-wrap .home-banner-right .banner-3-wrap {
-        width: 48%;
+        width: 48.5%;
         margin-top: 5px;
+        margin-left:0px;
+        margin-right:0px;
     }
-
+    #home-banner .home-banner-wrap .home-banner-right .banner-4-wrap{
+        width:100%;
+        margin:10px 0 0 0 ;
+    }
 
     /* -----------------------------//HOME BANNER----------------------------- */
 
@@ -2049,6 +2054,7 @@ footer .footer-copy .footer-txt1 {
 
     #home-banner .home-banner-wrap .home-banner-left {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     #home-banner .home-banner-wrap .home-banner-right {
@@ -2057,8 +2063,14 @@ footer .footer-copy .footer-txt1 {
 
     #home-banner .home-banner-wrap .home-banner-right .banner-2-wrap,
     #home-banner .home-banner-wrap .home-banner-right .banner-3-wrap {
-        width: 48%;
+        width: 48.5%;
         margin-top: 5px;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    #home-banner .home-banner-wrap .home-banner-right .banner-4-wrap{
+        width:100%;
+        margin:10px 0 0 0 ;
     }
 
     /* -----------------------------//HOME BANNER----------------------------- */
@@ -2380,6 +2392,7 @@ footer .footer-copy .footer-txt1 {
 
     #home-banner .home-banner-wrap .home-banner-left {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     #home-banner .home-banner-wrap .home-banner-right {
@@ -2388,8 +2401,14 @@ footer .footer-copy .footer-txt1 {
 
     #home-banner .home-banner-wrap .home-banner-right .banner-2-wrap,
     #home-banner .home-banner-wrap .home-banner-right .banner-3-wrap {
-        width: 48%;
+        width: 48.5%;
         margin-top: 5px;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    #home-banner .home-banner-wrap .home-banner-right .banner-4-wrap{
+        width:100%;
+        margin:10px 0 0 0 ;
     }
 
 

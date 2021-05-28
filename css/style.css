@@ -518,16 +518,21 @@ html {
     float: left;
     position: relative;
 }
-
+#home-showroom .home-showroom-wrapper{
+    width:95%;
+    margin:0 auto;
+}
 #home-showroom .home-showroom-wrap {
     position: relative;
-    width: 95%;
-    margin: 0 auto;
-    height: 100px;
+    width: 49%;
+    float:left;
     height: 100px;
     background-color: #fafafa;
     border-radius: 10px;
     margin-top: 30px;
+}
+#home-showroom .home-showroom-wrap:nth-child(2){
+    float:right;
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-txt-wrap {
@@ -538,11 +543,11 @@ html {
 
 #home-showroom .home-showroom-wrap .home-showroom-txt {
     color: #292929;
-    font-size: 25px;
+    font-size: 23px;
     font-family: "AppleSDGothicNeoM";
     text-align: center;
     line-height: 2;
-    font-weight: 700;
+    font-weight: 400;
     transition-duration: .5s;
     cursor: default;
     -ms-user-select: none;

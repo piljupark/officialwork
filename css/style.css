@@ -3187,7 +3187,7 @@ footer .footer-copy .footer-txt1 {
     }
 }
 
-@media screen and (max-width:3280px) and (min-width:1281px) {
+@media screen and (max-width:3440px) and (min-width:1281px) {
     .header .menu-btn {
         display: none;
     }
@@ -3220,6 +3220,18 @@ footer .footer-copy .footer-txt1 {
 
     #home-box .swiper-container .swiper-wrapper .swiper-slide .home-txt-en-under-1280 {
         display: none;
+    }
+    #home-box .swiper-container{
+        width:1280px;
+    }
+    #home-showroom .home-showroom-wrap{
+        width:1280px;
+    }
+    #home-banner .home-banner-wrap{
+        width:1280px;
+    }
+    .contact-info .contact-info-wrapper .contact-info-wrap{
+        width:1280px;
     }
 
 

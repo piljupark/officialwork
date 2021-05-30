@@ -1218,12 +1218,15 @@ footer .footer-copy .footer-txt1 {
     margin-top:10px;
 }
 
-.parts-line {
-    border-bottom: 0.5px solid #f1f1f1;
-    width: 90%;
-    margin: 0 auto;
+.parts-line-wrap {
+    width: 100%;
     margin-top: 50px;
     float:left;
+}
+.parts-line-wrap .parts-line{
+     border-bottom: 0.5px solid #f1f1f1;
+    margin: 0 auto;
+    width:90%;
 }
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-repair-wrapper{
     width:50%;
@@ -1233,17 +1236,21 @@ footer .footer-copy .footer-txt1 {
 #parts .parts-explain-wrapper .parts-explain-wrap .part-repair-title p, #parts .parts-explain-wrapper .parts-explain-wrap .part-repair-txt p{
     width:100%;
     margin:0;
+    font-family: "AppleSDGothicNeoM";
+    font-weight: 800;
 }
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-repair-wrap {
-    width: 100%;
+    width: 80%;
     position: relative;
     margin-top:30px;
-    float:left;
     text-align: center;
+    margin:0 auto;
 }
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-repair-wrap p{
-    font-size: 14px;
+    font-size: 20px;
     padding:10px;
+    font-family: "AppleSDGothicNeoM";
+    text-align: left;
 }
 
 /* --------------------------//PARTS---------------------------- */
@@ -2431,6 +2438,25 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------//HOME BANNER----------------------------- */
+    
+    #parts .parts-wrapper{
+        height: 250px;
+        overflow: hidden;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-title{
+        font-size: 30px;
+        width: 100%;
+        padding: 0;
+        margin-bottom:10px;
+    }
+
+    #parts .parts-wrapper .parts-txt-place .parts-txt {
+        font-size: 13px;
+    }
+    #parts .parts-wrapper img{
+        width:200px;
+        margin-top:35px;
+    }
 
 
 

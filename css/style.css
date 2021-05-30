@@ -1181,7 +1181,6 @@ footer .footer-copy .footer-txt1 {
     width: 33.33%;
     float:left;
     text-align: center;
-    transition-duration: .5s;
     padding-top:30px;
 }
 
@@ -1795,10 +1794,65 @@ footer .footer-copy .footer-txt1 {
     /* -----------------------------// MAINTAIN ----------------------------- */
 
 
+/* -----------------------------PARTs----------------------------- */
+    
+    #parts .parts-wrapper{
+        height: 400px;
+        overflow: hidden;
+    }
+    #parts .parts-wrapper .parts-txt-place{
+        width:100%;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-title{
+        font-size: 30px;
+        width: 100%;
+        padding: 0;
+        margin-bottom:10px;
+    }
 
-    /* -----------------------------PARTS----------------------------- */
+    #parts .parts-wrapper .parts-txt-place .parts-txt {
+        font-size: 13px;
+        width:90%;
+        margin:0 auto;
+    }
+    #parts .parts-wrapper img{
+        width:200px;
+        margin-top:35px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-title-wrap p{
+        font-size:30px;
+        width:80%;
+        margin: 0 auto;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-txt-wrap p{
+        width:90%;
+        font-size:14px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper{
+        width:100%;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img{
+        width:90%;
+        margin:0 auto;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap{
+        width:100%;
+        margin-top:20px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap h2{
+        text-align: center;
+        margin-left:2%;
 
-    /* -----------------------------//PARTS----------------------------- */
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap h4{
+        text-align: center;
+        width:80%;
+    }
+    #parts .parts-explain-wrapper .parts-explain-into-wrap .parts-repair-wrapper{
+        width:100%;
+    }
+    
+    /* ----------------------------- //PARTS ----------------------------- */
 
 
 
@@ -2114,10 +2168,65 @@ footer .footer-copy .footer-txt1 {
 
 
 
-    /* -----------------------------PARTS----------------------------- */
+     /* -----------------------------PARTs----------------------------- */
+    
+    #parts .parts-wrapper{
+        height: 400px;
+        overflow: hidden;
+    }
+    #parts .parts-wrapper .parts-txt-place{
+        width:100%;
+    }
+    #parts .parts-wrapper .parts-txt-place .parts-title{
+        font-size: 30px;
+        width: 100%;
+        padding: 0;
+        margin-bottom:10px;
+    }
 
+    #parts .parts-wrapper .parts-txt-place .parts-txt {
+        font-size: 13px;
+        width:90%;
+        margin:0 auto;
+    }
+    #parts .parts-wrapper img{
+        width:200px;
+        margin-top:35px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-title-wrap p{
+        font-size:30px;
+        width:80%;
+        margin: 0 auto;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-txt-wrap p{
+        width:90%;
+        font-size:14px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper{
+        width:100%;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img{
+        width:90%;
+        margin:0 auto;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap{
+        width:100%;
+        margin-top:20px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap h2{
+        text-align: center;
+        margin-left:2%;
 
-    /* -----------------------------//PARTS----------------------------- */
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap h4{
+        text-align: center;
+        width:80%;
+    }
+    #parts .parts-explain-wrapper .parts-explain-into-wrap .parts-repair-wrapper{
+        width:100%;
+    }
+    
+    /* ----------------------------- //PARTS ----------------------------- */
 
 
 
@@ -2439,6 +2548,10 @@ footer .footer-copy .footer-txt1 {
 
     /* -----------------------------//HOME BANNER----------------------------- */
     
+    
+    
+    /* -----------------------------PARTs----------------------------- */
+    
     #parts .parts-wrapper{
         height: 250px;
         overflow: hidden;
@@ -2452,11 +2565,45 @@ footer .footer-copy .footer-txt1 {
 
     #parts .parts-wrapper .parts-txt-place .parts-txt {
         font-size: 13px;
+        width:90%;
+        margin:0 auto;
     }
     #parts .parts-wrapper img{
         width:200px;
         margin-top:35px;
     }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-title-wrap p{
+        font-size:30px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-txt-wrap p{
+        width:90%;
+        font-size:14px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper{
+        width:100%;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img{
+        width:48%;
+        float:left;
+        margin-left:2%;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap{
+        float:right;
+        width:48%;
+        margin-top:20px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap h2{
+        text-align: left;
+        margin-left:2%;
+
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-into-wrap .parts-explain-img-wrap .parts-img-wrapper .parts-img-wrap h4{
+        text-align: left;
+        width:90%;
+        margin: 2%;
+    }
+    
+    /* ----------------------------- //PARTS ----------------------------- */
 
 
 

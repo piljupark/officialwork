@@ -633,6 +633,7 @@ html {
 #home-banner .home-banner-wrap {
     width: 95%;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 #home-banner .home-banner-wrap .home-banner-left {
@@ -640,6 +641,7 @@ html {
     float: left;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 #home-banner .home-banner-wrap .home-banner-right {
@@ -647,6 +649,7 @@ html {
     float: right;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 
@@ -1175,19 +1178,21 @@ footer .footer-copy .footer-txt1 {
 }
 
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrapper {
-    width: 90%;
-    margin: 40px 10px 0 10px;
-    display: inline-block;
+    width: 33.33%;
+    float:left;
+    text-align: center;
+    transition-duration: .5s;
+    padding-top:30px;
 }
 
+
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrap {
-    width: 55%;
-    float: right;
+    width: 100%;
+    text-align: center;
 }
 
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img {
-    width: 300px;
-    float: left;
+    width: 90%;
     border-radius: 10px;
     margin-top: 0;
 }
@@ -1195,21 +1200,22 @@ footer .footer-copy .footer-txt1 {
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrap h2 {
     float: left;
     width: 100%;
-    padding: 20px;
     color: #292929;
     font-family: "AppleSDGothicNeoM";
-    text-align: left;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-explain-img-wrap .parts-img-wrap h4 {
-    width: 93%;
-    float: left;
+    width: 90%;
     font-family: "AppleSDGothicNeoM";
     color: #292929;
     font-weight: 200;
-    text-align: left;
-    margin-left: 20px;
+    text-align:center;
     line-height: 1.8;
+    font-size:13px;
+    margin:0 auto;
+    margin-top:10px;
 }
 
 .parts-line {
@@ -2788,9 +2794,10 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 250px;
+        width: 300px;
         float: right;
         padding-right: 7px;
+        text-align: right;
     }
 
     footer .footer-txt-box-wrap a {
@@ -2980,9 +2987,10 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 250px;
+        width: 300px;
         float: right;
         padding-right: 7px;
+        text-align: right;
     }
 
     footer .footer-txt-box-wrap a {
@@ -3177,9 +3185,10 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 250px;
+        width: 300px;
         float: right;
         padding-right: 7px;
+        text-align: right;
     }
 
     footer .footer-txt-box-wrap a {
@@ -3275,6 +3284,17 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -------------------------------//HOME BANNER----------------------------- */
+    
+    
+    /* -------------------------------PARTS----------------------------- */
+    
+    #parts .parts-wrapper{
+        width:1280px;
+    }
+    #parts .parts-explain-wrapper .parts-explain-wrap{
+        width:1280px;
+    }
+    /* -------------------------------//PARTS----------------------------- */
 
 
 
@@ -3288,6 +3308,12 @@ footer .footer-copy .footer-txt1 {
         position: absolute;
         margin-top: 10px;
         right: 10%;
+    }
+    #maintain .maintain-title-wrap{
+        width:1280px;
+    }
+    #maintain .maintain-explain-wrapper{
+        width:1280px;
     }
 
     /* -------------------------//MAINTAIN---------------------------- */
@@ -3303,6 +3329,9 @@ footer .footer-copy .footer-txt1 {
     #support .support-wrap .support-ecoboost-wrap .support-explain-wrap .support-explain {
         height: 200px;
         width: 33.3%;
+    }
+    #support .support-wrap{
+        width:1280px;
     }
 
     /* --------------------------//SUPPORT---------------------------- */
@@ -3378,9 +3407,10 @@ footer .footer-copy .footer-txt1 {
     }
 
     footer .footer-txt-box-wrap .footer-txt-box {
-        width: 250px;
+        width: 300px;
         float: right;
         padding-right: 7px;
+        text-align: right;
     }
 
     footer .footer-txt-box-wrap a {

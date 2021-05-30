@@ -530,23 +530,35 @@ html {
     background-color: #fafafa;
     border-radius: 10px;
     margin-top: 30px;
+    overflow: hidden;
 }
 #home-showroom .home-showroom-wrap:nth-child(2){
     float:right;
+}
+#home-showroom .home-showroom-wrap:nth-child(2) img{
+    top:-30px;
+}
+
+#home-showroom .home-showroom-wrap img{
+    position: absolute;
+    top:-70px;
+    width:100%;
+    z-index: -1;
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-txt-wrap {
     width: 100%;
     float: left;
     position: relative;
+    z-index: 10;
+
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-txt {
-    color: #292929;
-    font-size: 23px;
+    color: #fff;
+    font-size: 18px;
     font-family: "AppleSDGothicNeoM";
     text-align: center;
-    line-height: 2;
     font-weight: 400;
     transition-duration: .5s;
     cursor: default;
@@ -555,16 +567,18 @@ html {
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    margin-top:15px;
+    z-index: 10;
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-btn {
-    color: #292929;
-    font-size: 15px;
+    color: #fff;
+    font-size: 13px;
     font-family: "AppleSDGothicNeoM";
     font-weight: 200;
     text-align: center;
-    line-height: 1.8;
-    border: 1px solid #292929;
+    line-height: 2;
+    border: 1px solid #fff;
     width: 100px;
     height: 30px;
     margin: 0 auto;
@@ -577,12 +591,13 @@ html {
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    margin-top:15px;
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-btn:hover {
-    border: 1px solid #003478;
-    color: #fff;
-    background-color: #003478;
+    border: 1px solid #fff;
+    color: #003478;
+    background-color: #fff;
 
 }
 
@@ -1662,10 +1677,6 @@ footer .footer-copy .footer-txt1 {
 
     /* --------------------------HOME-SHOWROOM---------------------------- */
 
-    #home-showroom .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt {
-        font-size: 20px;
-        margin-top: 6px;
-    }
 
     /* --------------------------//HOME-SHOWROOM---------------------------- */
 
@@ -2043,10 +2054,6 @@ footer .footer-copy .footer-txt1 {
 
     /* --------------------------HOME-SHOWROOM---------------------------- */
 
-    #home-showroom .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt {
-        font-size: 20px;
-        margin-top: 6px;
-    }
 
     /* --------------------------//HOME-SHOWROOM---------------------------- */
 
@@ -3248,7 +3255,7 @@ footer .footer-copy .footer-txt1 {
     #home-box .swiper-container{
         width:1280px;
     }
-    #home-showroom .home-showroom-wrap{
+    #home-showroom .home-showroom-wrapper{
         width:1280px;
     }
     #home-banner .home-banner-wrap{

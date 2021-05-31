@@ -784,6 +784,9 @@ html {
 /* -------------------------------//HOME CONTACT----------------------------- */
 
 
+
+
+
 /* -------------------------------FOOTER----------------------------- */
 footer {
     /*position:relative;*/
@@ -1246,7 +1249,7 @@ footer .footer-copy .footer-txt1 {
     margin:0 auto;
 }
 #parts .parts-explain-wrapper .parts-explain-wrap .parts-repair-wrap p{
-    font-size: 20px;
+    font-size: 18px;
     padding:10px;
     font-family: "AppleSDGothicNeoM";
     text-align: left;

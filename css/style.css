@@ -523,28 +523,13 @@ html {
 }
 #home-showroom .home-showroom-wrap {
     position: relative;
-    width: 49%;
+    width: 100%;
     float:left;
     height: 100px;
-    background-color: #fafafa;
+    background-color: #f1f1f1;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 28px;
     overflow: hidden;
-}
-#home-showroom .home-showroom-wrap:nth-child(2){
-    float:right;
-}
-#home-showroom .home-showroom-wrap:nth-child(2) img{
-    top:-30px;
-}
-
-#home-showroom .home-showroom-wrap img{
-    position: absolute;
-    top:-40px;
-    width:100%;
-    z-index: -1;
-    text-align: center;
-    
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-txt-wrap {
@@ -555,7 +540,7 @@ html {
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-txt {
-    color: #fff;
+    color: #292929;
     font-size: 20px;
     font-family: "AppleSDGothicNeoM";
     text-align: center;
@@ -567,18 +552,18 @@ html {
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    margin-top:18px;
+    margin-top:13px;
     z-index: 10;
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-btn {
-    color: #fff;
+    color: #292929;
     font-size: 13px;
     font-family: "AppleSDGothicNeoM";
     font-weight: 200;
     text-align: center;
     line-height: 2;
-    border: 1px solid #fff;
+    border: 1px solid #292929;
     width: 100px;
     height: 30px;
     margin: 0 auto;
@@ -595,9 +580,9 @@ html {
 }
 
 #home-showroom .home-showroom-wrap .home-showroom-btn:hover {
-    border: 1px solid #fff;
-    color: #003478;
-    background-color: #fff;
+    border: 1px solid #292929;
+    color: #fff;
+    background-color: #292929;
 
 }
 
@@ -1593,40 +1578,6 @@ footer .footer-copy .footer-txt1 {
 
 
 /* -------------------------PROMOTION---------------------------- */
-#promotion {
-    float: left;
-    width: 100%;
-    padding-top: 90px;
-    padding-bottom: 30px;
-    display: none;
-    background-color: #fafafa;
-}
-
-#promotion .promotion-main-wrap {
-    width: 90%;
-    margin: 0 auto;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#promotion .promotion-main-wrap img {
-    width: 120%;
-    float: left;
-    margin-top: 100px;
-    opacity: .8;
-}
-
-#promotion .promotion-main-wrap p {
-    position: absolute;
-    width: 90%;
-    text-align: center;
-    font-family: "AppleSDGothicNeoB";
-    font-size: 45px;
-    margin-top: 50px;
-    color: #292929;
-}
 
 
 
@@ -1691,29 +1642,8 @@ footer .footer-copy .footer-txt1 {
 
 
     /* -----------------------------HOME SHOWROOM----------------------------- */
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap{
-        height:120px;
-    }
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt{
-        font-size: 13px;
-        margin-top:20px;
-    }
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-btn{
-        font-size: 10px;
-        width:70px;
-        line-height: 2.9
-    }
+   
     
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(1) .home-showroom-txt-wrap img{
-        top:-20px;
-        width:300px;
-    }
-    
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(2) .home-showroom-txt-wrap img{
-        top:-10px;
-        width:400px;
-        left:-170px;
-    }
     /* -----------------------------//HOME SHOWROOM----------------------------- */
 
 
@@ -2143,26 +2073,7 @@ footer .footer-copy .footer-txt1 {
 
 
    /* -----------------------------HOME SHOWROOM----------------------------- */
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-txt{
-        font-size: 13px;
-        margin-top:20px;
-    }
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap .home-showroom-txt-wrap .home-showroom-btn{
-        font-size: 10px;
-        width:70px;
-        line-height: 2.9
-    }
-    
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(1) .home-showroom-txt-wrap img{
-        top:-20px;
-        width:300px;
-    }
-    
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(2) .home-showroom-txt-wrap img{
-        top:-10px;
-        width:400px;
-        left:-170px;
-    }
+   
     /* -----------------------------//HOME SHOWROOM----------------------------- */
 
     /* -----------------------------HOME BANNER----------------------------- */
@@ -2559,15 +2470,6 @@ footer .footer-copy .footer-txt1 {
     
     /* -----------------------------HOME SHOWROOM----------------------------- */
     
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(1) .home-showroom-txt-wrap img{
-        top:-20px;
-    }
-    
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(2) .home-showroom-txt-wrap img{
-        top:-10px;
-        width:400px;
-        left:-60px;
-    }
     /* -----------------------------//HOME SHOWROOM----------------------------- */
 
 
@@ -3302,15 +3204,7 @@ footer .footer-copy .footer-txt1 {
     }
     
     
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(1) .home-showroom-txt-wrap img{
-        top:-70px;
-    }
-    
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(2) .home-showroom-txt-wrap img{
-        top:-10px;
-    }
-    
-    
+   
     
 
 
@@ -3514,19 +3408,7 @@ footer .footer-copy .footer-txt1 {
         width:1280px;
     }
     
-    
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap .home-showroom-txt-wrap img{
-    position: absolute;
-    top:-100px;
-    width:100%;
-    z-index: -1;
-    text-align: center;
-    }
-    
-    #home-showroom .home-showroom-wrapper .home-showroom-wrap:nth-child(2) .home-showroom-txt-wrap img{
-        top:-30px;
-    }
-
+   
 
 
 

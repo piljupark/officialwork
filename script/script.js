@@ -539,8 +539,8 @@ $(document).ready(function () {
         $("#drive-test").hide();
 
         $("#home-box").hide();
-        
-       
+
+
     });
 
     $(".tablet-pc-btn > .tablet-pc-btn-menu-wrap > .sync3-ecoboost").click(function () {
@@ -593,6 +593,38 @@ $(document).ready(function () {
         $("#home-box").hide();
     });
 
+
+    $(window).resize(function () {
+        if ($(window).width() > 701) {
+            $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("opacity", "0");
+            $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder2").css("z-index", "-1");
+            $(".finder-place").css("height", "0px");
+            $(".finder-place > .finder").css("opacity", "0");
+            $(".finder-place > .finder").css("cursor", "default");
+            $(".finder-place > p").css("opacity", "0");
+            $(".finder-shadow").css("opacity", "0");
+            $(".finder-shadow").css("z-index", "0");
+            $("html, body").css("overflow", "auto");
+            $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity", "1");
+        }
+    });
+    
+     $(window).resize(function () {
+        if ($(window).width() > 701 ) {
+            $("body").css("overflow-y", "auto");
+        $("html").css("overflow-y", "auto");
+        $("body").css("overflow-x", "hidden");
+        $(".sidebar-menu").css("height", "0%");
+        $(".sidebar-menu").css("transition-duration", ".4s");
+        $(".header").css("background", "rgba(255,255,255,0.2)");
+        }
+         $(".menu-btn > a > img:nth-child(2)").css("opacity", "0");
+        $(".menu-btn > a > img:nth-child(2)").css("z-index", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("opacity", "1");
+        $(".menu-btn > a > img:nth-child(1)").css("z-index", "2");
+    });
+    
+    
     $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder").click(function () {
         $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("opacity", "0");
         $(".header > .tablet-pc-vehicle-menu > .tablet-pc-vehicle-menu-wrap > .tablet-pc-vehicle-menu-wrapper > .finder > img").css("transition-duration", ".2s");
@@ -728,7 +760,7 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(1)").css("color", "#fff");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+2)").css("background-color", "#fff");
-    
+
 
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention1").css("opacity", "1");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+2)").css("opacity", "0");
@@ -741,8 +773,8 @@ $(document).ready(function () {
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(2)").css("color", "#fff");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("color", "#292929");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-wrap > .maintain-explain-title > p:nth-child(n+3)").css("background-color", "#fff");
-        
-    
+
+
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention1").css("opacity", "0");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .mention2").css("opacity", "1");
         $("#maintain > .maintain-explain-wrapper > .maintain-explain-txt > .maintain-mention:nth-child(n+3)").css("opacity", "0");

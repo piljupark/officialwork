@@ -5,17 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="taxi-css/reset.css">
-    
+
     <style>
         @charset "utf-8";
         @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900|Comfortaa:wght@300;400;500;600;700|Syncopate|Questrial&display=swap');
 
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoT.woff2");
+            font-family: "AppleSDGothicNeoT";
+        }
+
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoM.ttf");
+            font-family: "AppleSDGothicNeoM";
+        }
+
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoM.woff");
+            font-family: "AppleSDGothicNeoM";
+        }
+        @keyframes slideBottom{
+            from{
+                margin-top:-500px;
+            }
+            to{
+                margin-top:0px;
+            }
+        }
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+        
+
         body {
             text-decoration: none;
             max-width: 500px;
-            margin:0 auto;
+            margin: 0 auto;
+            
         }
 
         a {
@@ -24,76 +57,114 @@
             font-family: "Questrial", sans-serif;
             font-size: 40px;
             text-align: center;
+            
         }
 
         #main {
-            width: 200px;
+            width: 100px;
             height: 100%;
+            margin-left: 15px;
         }
-        #main a div {
+
+        #main a div{
             width: 130px;
             height: 130px;
-            border:1px solid rgba(255,255,255,0);
+            border: 1px solid rgba(255, 255, 255, 0);
             border-radius: 100px;
-            margin:20px auto;
+            margin: 20px auto;
+            opacity: 0;
+            
         }
-        #main a div p{
-            margin-top:45px;
+
+        #main a div p {
+            margin-top: 45px;
         }
-        #main a:nth-child(1) div{
-            color:#fff;
+
+        #main a div .txt {
+            font-size: 12px;
+            margin-top: 0;
+            font-family: "AppleSDGothicNeoM";
+        }
+
+        #main a:nth-child(1) div {
+            color: #fff;
             background-color: #003478;
-            opacity: .8;
+            animation: fadeIn 2s forwards;
+
         }
-        #main a:nth-child(2) div{
-            color:#fff;
+
+        #main a:nth-child(2) div {
+            color: #fff;
             background-color: #F5dF4D;
+            animation: fadeIn 2s forwards;
+            animation-delay: .5s;
+            
         }
-        #main a:nth-child(3) div{
+
+        #main a:nth-child(3) div {
             background-color: #cebda3;
-            color:#fff;
+            color: #fff;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1.2s;
+            
         }
-        #main a:nth-child(4) div{
+
+        #main a:nth-child(4) div {
             background-color: #292929;
-            color:#fff;
+            color: #fff;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1.9s;
+            
         }
-        
-        #name{
-            float:right;
+
+        #name {
+            float: right;
+            animation: slideBottom 2s forwards;
         }
-        #name p{
+
+        #name p {
             font-family: "Questrial", sans-serif;
             font-size: 50px;
             writing-mode: vertical-rl;
-            margin-right:10px;
-            margin-top:20px;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width:500px) and (min-width:100px) {
+            body {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-   <div id="name">
+    <div id="name">
         <p>Pilju Park's Portfolio</p>
-   </div>
+    </div>
     <div id="main">
         <a href="ford.html">
             <div class="ford">
                 <p>Ford</p>
+                <p class="txt">반응형</p>
             </div>
         </a>
         <a href="taxi.html">
             <div class="taxi">
                 <p>Taxi</p>
+                <p class="txt">모바일(미완성)</p>
             </div>
         </a>
         <a href="klairs.html">
             <div class="klairs">
                 <p>Klairs</p>
+                <p class="txt">모바일(미완성)</p>
             </div>
         </a>
         <a href="ilcorso.html">
             <div class="ilcorso">
                 <p>Ilcorso</p>
+                <p class="txt">PC(max-width:500px)</p>
             </div>
         </a>
 

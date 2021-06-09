@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+
+
+/*   Apple SD Gothic Neo(폰트)   */
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff2");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.ttf");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff2");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff2");
+    font-family: "AppleSDGothicNeoM";
+}
+
+/*  //Apple SD Gothic Neo(폰트)  */
+
+
+
+
+a {
+    text-decoration: none;
+    color: #292929;
+
+}
+
+p {
+    text-decoration: none;
+    color: #292929;
+}
+
+li {
+    list-style: none;
+}
+
+body{ 
+    -ms-overflow-style: none; 
+} 
+::-webkit-scrollbar {
+    display: none; 
+}
+
+
+
+
+
+header{
+    width:100%;
+    position:fixed;
+    margin:0 auto;
+    height:60px;
+    position: relative;
+    z-index: 30;
+    top:0;
+    overflow: hidden;
+    /*background-color: #f1f1f1;*/
+}
+header .logo{
+    width:50%;
+    position:fixed;
+    z-index: 31;
+    height:60px;
+}
+header .logo img{
+    width:100px;
+    margin:0 auto;
+    z-index: 10;
+    padding:10px;
+}
+header .top-menu{
+    width:50%;
+    z-index: 31;
+    height:60px;
+    float: right;
+}
+
+header .top-menu a img{
+    width:30px;
+    float: right;
+    padding:13px;
+    position: absolute;
+    right:0px;
+    z-index: 32;
+}
+header .top-menu a:nth-child(1) {
+    z-index: 33;
+}
+header .top-menu a:nth-child(2) {
+    opacity: 0;
+    z-index: 32;
+}
+
+header .category{
+    width:100%;
+    float:left;
+    position:relative;
+}
+header .category .category1{
+    width:90%;
+    margin:0 auto;
+    position:relative;
+}
+header .category .category1 .category-title{
+    font-family: "AppleSDGothicNeoT";
+    font-size: 25px;
+    float:left;
+    width:80%;
+    margin-top:10px;
+    transition-duration: .10s;
+    color:#292929;
+}
+header .category .category1 .category-title:nth-child(n+2):nth-child(-n+6){
+    margin-top:30px;
+}
+
+#main-img{
+    width:100%;
+    float:left;
+    position:absolute;
+    top:0;
+    
+}
+#main-img a img{
+    width:100%;
+    position: absolute;
+    z-index: 9;
+    transition-duration: .4s;
+}
+#main-img a:nth-child(n+2):nth-child(-n+4) img{
+   opacity: 0;
+}
+
+
+#main-btn{
+    width:50px;
+    height:200px;
+    position: fixed;
+    right:0;
+    top:200px;
+    overflow-y: hidden;
+    z-index: 10;
+}
+#main-btn .button{
+    font-family: "AppleSDGothicNeoM";
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #292929;
+    color:#292929;
+    border-radius: 50px;
+    width:30px;
+    height:30px;
+    line-height:1.8;
+    margin-top:10px;
+    margin-right:10px;
+    overflow: hidden;
+    float: right;
+    transition-duration: .4s;
+}
+#main-btn .button:nth-child(1){
+    background-color: #292929;
+    color:#fff;
+}

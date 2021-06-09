@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Taxi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="taxi-css/reset.css">
+    <link rel="stylesheet" href="taxi-css/style.css">
+
+
+
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mn7cwsrvym"></script>
+    <script src="taxi-script/jquery-1.11.2.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <p>Hello</p>
+    </div>
+    <div id="stage">
+        <div class="main-wrap">
+            <div class="myinfo">
+                <img src="taxi-img/prev.png" alt="prev" class="prev">
+                <div class="sign-up">
+                    <p>Sign up</p>
+                </div>
+                <div class="into-sign-up">
+                    <p>Welcome! User4145</p>
+                </div>
+                <div class="login-wrap">
+                    <div class="login">
+                        <img src="taxi-img/google.png">
+                        <p>Continue with Google</p>
+                    </div>
+                    <div class="login">
+                        <img src="taxi-img/apple.png">
+                        <p>Continue with Apple</p>
+                    </div>
+                    <div class="login">
+                        <img src="taxi-img/kakao.png">
+                        <p>Continue with Kakao</p>
+                    </div>
+                </div>
+                <div class="into-info">
+                    <div class="info-box reservation">
+                        <div class="info-title">
+                            <img src="taxi-img/clock.png" alt="reservation">
+                            <p class="title">Reservation</p>
+                        </div>
+                        <p class="txt reservation-time">12:45 PM</p>
+                         <p class="txt reservation-departure">Songjung station</p>
+                         <p class="txt reservation-to"><img src="taxi-img/next-arrow.png"></p>
+                        <p class="txt reservation-arival">Gangnam station</p>
+                    </div>
+                    <div class="info-box reservation">
+                        <div class="info-title">
+                            <img src="taxi-img/coupon.png" alt="coupon">
+                            <p class="title">Coupon</p>
+                        </div>
+                        <p class="txt">Empty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="myinfo-btn">
+                <img src="taxi-img/user2.png" alt="user">
+            </div>
+            <div class="taxiinfo">
+                <p class="title">Where is your destination ?</p>
+                <input type="text" name="now" placeholder="Departure" class="now">
+                <input type="text" name="now" placeholder="Destination" class="arival">
+            </div>
+
+        </div>
+        <div id="naverMap"></div>
+    </div>
+
+    <p class="caution">PC로는 이용하실 수 없습니다.</p>
+
+
+
+    <script src="taxi-script/script.js"></script>
+    <script>
+        var nmap = new naver.maps.Map('naverMap', { // naverMap 값은 div 의 id 값
+            center: new naver.maps.LatLng(37.5782709, 126.9770043), // 지도 중앙 위치 : 위도, 경도 설정
+            zoom: 10, // 줌 설정 : 1~14, 수치가 클수록 지도 확대(줌인), 이 옵션 생략시 기본값 9
+            zoomControl: false, // 줌 컨트롤 표시 (기본값 표시안함)
+            zoomControlOptions: { // 줌 컨트롤 오른쪽 위로 위치 설정
+                position: naver.maps.Position.TOP_RIGHT // 오른쪽 위로 설정값
+            },
+            mapTypeControl: false, // 일반ㆍ위성 지도보기 컨트롤 표시 (기본값 표시안함)
+        });
+
+
+        // 클릭이벤트를 적용하여 경고창으로 위도 경도를 봅니다.
+        //naver.maps.Event.addListener(nmap, 'click', function(e) {
+        // 지도를 클릭하면 아래 내용이 실행됩니다.
+        //alert(e.coord.lat() + ', ' + e.coord.lng());
+        // e 는 클릭시 넘어오는 이벤트 (네이밍은 원하는 대로 해도 무방)
+        // e 에서 필요한 것을 꺼내서 쓰면 됩니다.
+        // e.coord.lat() 는 위도 (Latitude)  보통 약어로 lat
+        // e.coord.lng() 는 경도 (Longitude) 보퉁 약어로 lng
+        // });
+    </script>
+</body></html>
+
+
+
+

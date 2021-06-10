@@ -55,12 +55,8 @@
             float: left;
             position: relative;
             margin: 0 auto;
-            background-image: url(img/background.jpg);
-            height: 2000px;
-            background-size: cover;
-            overflow-y: hidden;
             -ms-overflow-style: none;
-            min-width:700px;
+            height: 1000px;
         }
 
         ::-webkit-scrollbar {
@@ -78,6 +74,15 @@
             font-family: "Questrial", sans-serif;
         }
 
+        #background {
+            width: 100%;
+            height: 100%;
+            float: left;
+            z-index: 5;
+            position: absolute;
+            overflow: hidden;
+        }
+
         #main {
             position: relative;
             width: 95%;
@@ -89,6 +94,7 @@
             -moz-backdrop-filter: blur(20px);
             margin-top: 30px;
             border-radius: 20px;
+            z-index: 10;
         }
 
         #main .header {
@@ -160,13 +166,13 @@
             height: 300px;
             border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
             overflow-x: hidden;
-            
+
         }
 
         #main .middle-wrap {
             width: 90%;
             margin: 0 auto;
-            padding-bottom:40px;
+            padding-bottom: 40px;
         }
 
         #main .middle .explain {
@@ -176,148 +182,306 @@
             background-color: rgba(255, 255, 255, 0.3);
             float: left;
             border-radius: 20px;
-            margin-top:30px;
+            margin-top: 30px;
         }
-        #main .middle .explain:nth-child(1){
-            margin-top:50px;
+
+        #main .middle .explain:nth-child(1) {
+            margin-top: 50px;
         }
-        #main .middle .explain p{
-            color:#000;
+
+        #main .middle .explain p {
+            color: #000;
         }
 
         #main .bottom {
             width: 100%;
-            float:left;
+            float: left;
         }
-        #main .bottom .bottom-portfolio{
-            width:90%;
-            margin:0 auto;
-            margin-top:30px;
+
+        #main .bottom .bottom-portfolio {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 30px;
             color: rgba(255, 255, 255, 0.7);
         }
-        #main .bottom .project-wrap{
-            width:90%;
-            height:220px;
-            margin:0 auto;
+
+        #main .bottom .project-wrap {
+            width: 90%;
+            height: 220px;
+            margin: 0 auto;
             background-color: rgba(30, 30, 30, 0.3);
             border-radius: 20px;
-            margin-top:20px;
+            margin-top: 20px;
         }
-        #main .bottom .project-wrap .project{
-            float:left;
-            width:100%;
-            height:25%;
-            border-bottom:1px solid rgba(255, 255, 255, 0.1);
+
+        #main .bottom .project-wrap .project {
+            float: left;
+            width: 100%;
+            height: 25%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        #main .bottom .project-wrap .project:nth-child(4){
-            border-bottom:none;
+
+        #main .bottom .project-wrap .project:nth-child(4) {
+            border-bottom: none;
+            height:23%;
         }
-        #main .bottom .project-wrap .project .project-title{
-            font-size:19px;
-            color:#fff;
-            width:150px;
-            height:100%;
+        #main .bottom .project-wrap .project:hover{
+            background-color: rgba(255, 255, 255, 0.1);
+            transition-duration: .2s;
+        }
+
+        #main .bottom .project-wrap .project .project-title {
+            font-size: 19px;
+            color: #fff;
+            width: 150px;
+            height: 100%;
             text-align: left;
-            margin-left:40px;
+            margin-left: 40px;
             line-height: 2.9;
-            float:left;
+            float: left;
         }
-        #main .bottom .project-wrap .project:nth-child(4) .project-title{
+
+        #main .bottom .project-wrap .project:nth-child(4) .project-title {
             line-height: 2.5;
         }
-        
-        
-        
-        
-        #main .bottom .project-wrap .project .condition-color{
-            width:8px;
-            height:8px;
-            float:left;
+
+
+
+
+        #main .bottom .project-wrap .project .condition-color {
+            width: 8px;
+            height: 8px;
+            float: left;
             border-radius: 10px;
-            margin-top:22px;
-            margin-right:5px;
-            margin-left:30px;
+            margin-top: 22px;
+            margin-right: 5px;
+            margin-left: 30px;
         }
-        #main .bottom .project-wrap .project:nth-child(1) .condition-color{
+
+        #main .bottom .project-wrap .project:nth-child(1) .condition-color {
             background-color: #4dabf7;
         }
-        #main .bottom .project-wrap .project:nth-child(2) .condition-color{
+
+        #main .bottom .project-wrap .project:nth-child(2) .condition-color {
             background-color: #a9e34b;
         }
-        #main .bottom .project-wrap .project:nth-child(3) .condition-color{
+
+        #main .bottom .project-wrap .project:nth-child(3) .condition-color {
             background-color: #ffa94d;
         }
-        #main .bottom .project-wrap .project:nth-child(4) .condition-color{
-            margin-top:20px;
+
+        #main .bottom .project-wrap .project:nth-child(4) .condition-color {
+            margin-top: 20px;
             background-color: #ffa94d;
         }
-        
-        
-        
-        #main .bottom .project-wrap .project .condition{
-            float:left;
+
+
+
+        #main .bottom .project-wrap .project .condition {
+            float: left;
             text-align: left;
             line-height: 4.5;
             font-size: 12px;
-            width:50px;
+            width: 50px;
         }
-        #main .bottom .project-wrap .project:nth-child(4) .condition{
+
+        #main .bottom .project-wrap .project:nth-child(4) .condition {
             line-height: 4.1;
         }
-        
-        
-        
-        
-        #main .bottom .project-wrap .project .type{
-            float:left;
-            margin-left:50px;
+
+
+
+
+        #main .bottom .project-wrap .project .type {
+            float: left;
+            margin-left: 50px;
             text-align: left;
-            width:150px;
+            width: 150px;
             line-height: 3.7;
-            font-size:15px;
+            font-size: 15px;
         }
-        #main .bottom .project-wrap .project:nth-child(2) .type{
+
+        #main .bottom .project-wrap .project:nth-child(2) .type {
             line-height: 3.6;
         }
-        #main .bottom .project-wrap .project:nth-child(3) .type{
+
+        #main .bottom .project-wrap .project:nth-child(3) .type {
             line-height: 3.6;
         }
-        #main .bottom .project-wrap .project:nth-child(4) .type{
+
+        #main .bottom .project-wrap .project:nth-child(4) .type {
             line-height: 3.4;
         }
 
-        
-        
-        
-        
-        #main .bottom .project-wrap .project a{
-            float:right;
-            width:100px;
-            height:35px;
+
+
+
+
+        #main .bottom .project-wrap .project a {
+            float: right;
+            width: 100px;
+            height: 35px;
             border-radius: 20px;
-            border:1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
-            margin-top:10px;
-            margin-right:40px;
+            margin-top: 10px;
+            margin-right: 40px;
+        }
+
+        #main .bottom .project-wrap .project a:hover {
+            border: 1px solid #fff;
+        }
+
+        #main .bottom .project-wrap .project a:hover p {
+            color: #fff;
+        }
+
+        #main .bottom .project-wrap .project:nth-child(4) a {
+            margin-top: 8px;
+        }
+
+        #main .bottom .project-wrap .project a p {
+            margin-top: 10px;
             transition-duration: .3s;
         }
-        #main .bottom .project-wrap .project a:hover{
-            border:1px solid #fff;
+
+        @media screen and (max-width:755px) and (min-width:636px) {
+            #main .header .left .thanksto {
+                width: 200px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #main .bottom .project-wrap .project .project-title {
+                width: 50px;
+            }
         }
-        #main .bottom .project-wrap .project a:hover p{
-            color:#fff;
+        
+        
+        
+        @media screen and (max-width:510px) and (min-width:100px){
+            #main .header .left .thanksto{
+                display: none;
+            }
         }
-        #main .bottom .project-wrap .project:nth-child(4) a{
-            margin-top:8px;
-        }
-        #main .bottom .project-wrap .project a p{
-            margin-top:10px;
-            transition-duration: .3s;
+        
+        
+        
+        
+        
+        @media screen and (max-width:635px) and (min-width:300px) {
+            #main {
+                height: 940px;
+            }
+
+            #main .header .left .thanksto {
+                width: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #main .bottom .project-wrap .project .project-title {
+                width: 50px;
+            }
+
+            #main .bottom .project-wrap {
+                background-color: rgba(255, 255, 255, 0.0);
+            }
+
+            #main .bottom .project-wrap .project {
+                width: 48%;
+                height: 180px;
+                border-bottom: none;
+                border-radius: 10px;
+                background-color: rgba(30, 30, 30, 0.3);
+            }
+
+            #main .bottom .project-wrap .project:nth-child(2) {
+                float: right;
+            }
+
+            #main .bottom .project-wrap .project:nth-child(3) {
+                margin-top: 40px;
+            }
+
+            #main .bottom .project-wrap .project:nth-child(4) {
+                float: right;
+                margin-top: 40px;
+            }
+
+            #main .bottom .project-wrap .project .project-title {
+                margin-left: 0;
+                height: 40px;
+                width: 100%;
+                text-align: center;
+                line-height: 3;
+            }
+            
+
+            #main .bottom .project-wrap .project:nth-child(4) .project-title {
+                line-height: 3;
+            }
+            #main .bottom .project-wrap .project .condition-color-wrap{
+                float:left;
+                width:40%;
+                
+                height:40px;
+            }
+            #main .bottom .project-wrap .project .condition-color {
+                float: right;
+                margin-top: 13px;
+                margin-left: 0;
+            }
+            #main .bottom .project-wrap .project:nth-child(4) .condition-color{
+                margin-top:13px;
+            }
+
+            #main .bottom .project-wrap .project .condition {
+                float: right;
+                width: 60%;
+                height: 40px;
+                line-height: 3;
+            }
+
+            #main .bottom .project-wrap .project:nth-child(4) .condition {
+                line-height: 3;
+            }
+
+            #main .bottom .project-wrap .project .type {
+                height: 20px;
+                line-height: 1;
+                width: 100%;
+                margin:0 auto;
+                text-align: center;
+                font-size: 12px;
+            }
+            #main .bottom .project-wrap .project:nth-child(n+2):nth-child(-n+4) .type{
+                line-height: 1;
+            }
+
+            #main .bottom .project-wrap .project:nth-child(n+1):nth-child(-n+4) a {
+                
+                width:100%;
+                margin:0 auto;
+                margin-top:20px;
+                border:none;
+            }
+            #main .bottom .project-wrap .project a .button{
+                width:80%;
+                height:35px;
+                margin:0 auto;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 20px;
+                
+            }
         }
     </style>
 </head>
 
 <body>
+    <div id="background">
+        <img src="img/background.jpg">
+    </div>
     <div id="main">
         <div class="header">
             <div class="left">
@@ -342,35 +506,55 @@
             </div>
         </div>
         <div class="bottom">
-           <p class="bottom-portfolio">Portfolio</p>
+            <p class="bottom-portfolio">Portfolio</p>
             <div class="project-wrap">
                 <div class="project 1">
                     <p class="project-title">Ford</p>
-                    <div class="condition-color"></div>
+                    <div class="condition-color-wrap">
+                        <div class="condition-color"></div>
+                    </div>
                     <p class="condition">Updated</p>
                     <p class="type">PC / Tablet / Mobile</p>
-                    <a href="ford.html"><p>Enter</p></a>
+                    <a href="ford.html"><div class="button">
+                        <p>Enter</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="project 2">
                     <p class="project-title">Taxi</p>
-                    <div class="condition-color"></div>
+                    <div class="condition-color-wrap">
+                        <div class="condition-color"></div>
+                    </div>
                     <p class="condition">Creating</p>
                     <p class="type">Mobile</p>
-                    <a href="taxi.html"><p>Enter</p></a>
+                    <a href="taxi.html"><div class="button">
+                        <p>Enter</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="project 3">
                     <p class="project-title">Klairs</p>
-                    <div class="condition-color"></div>
+                    <div class="condition-color-wrap">
+                        <div class="condition-color"></div>
+                    </div>
                     <p class="condition">Incomplete</p>
                     <p class="type">Mobile</p>
-                    <a href="klairs.html"><p>Enter</p></a>
+                    <a href="klairs.html"><div class="button">
+                        <p>Enter</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="project 4">
                     <p class="project-title">Ilcorso</p>
-                    <div class="condition-color"></div>
+                    <div class="condition-color-wrap">
+                        <div class="condition-color"></div>
+                    </div>
                     <p class="condition">Incomplete</p>
                     <p class="type">PC / Tablet</p>
-                    <a href="ilcorso.html"><p>Enter</p></a>
+                    <a href="ilcorso.html"><div class="button">
+                        <p>Enter</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

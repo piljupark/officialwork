@@ -26,151 +26,354 @@
             src: url("fonts/AppleSDGothicNeoM.woff");
             font-family: "AppleSDGothicNeoM";
         }
-        @keyframes slideBottom{
-            from{
-                margin-top:-500px;
+
+        @keyframes slideBottom {
+            from {
+                margin-top: -500px;
             }
-            to{
-                margin-top:0px;
-            }
-        }
-        @keyframes fadeIn{
-            from{
-                opacity:0;
-            }
-            to{
-                opacity:1;
+
+            to {
+                margin-top: 0px;
             }
         }
-        
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
 
         body {
             text-decoration: none;
-            width: 500px;
+            width: 100%;
+            float: left;
+            position: relative;
             margin: 0 auto;
-            transition:.5s;
-            overflow-x:hidden;
-            
+            background-image: url(img/background.jpg);
+            height: 2000px;
+            background-size: cover;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            min-width:700px;
         }
 
-        a {
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        a,
+        p,
+        h1,
+        h2,
+        h3,
+        h4 {
             text-decoration: none;
-            color: #000;
+            color: rgba(255, 255, 255, 0.4);
             font-family: "Questrial", sans-serif;
-            font-size: 40px;
-            text-align: center;
-            
         }
 
         #main {
+            position: relative;
+            width: 95%;
+            height: 860px;
+            background-color: rgba(10, 10, 10, 0.4);
+            margin: 0 auto;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            -moz-backdrop-filter: blur(20px);
+            margin-top: 30px;
+            border-radius: 20px;
+        }
+
+        #main .header {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #main .header .left {
+            float: left;
+        }
+
+        #main .header .left .title {
+            font-size: 16px;
+            line-height: 4;
             width: 100px;
-            height: 100%;
-            margin-left: 15px;
+            height: 60px;
+            text-align: center;
+            margin-left: 30px;
+            transition-duration: .4s;
+            cursor: pointer;
+            float: left;
         }
 
-        #main a div{
-            width: 130px;
-            height: 130px;
-            border: 1px solid rgba(255, 255, 255, 0);
-            border-radius: 100px;
-            margin: 20px auto;
-            opacity: 0;
-            
-        }
-
-        #main a div p {
-            margin-top: 45px;
-        }
-
-        #main a div .txt {
-            font-size: 12px;
-            margin-top: 0;
-            font-family: "AppleSDGothicNeoM";
-        }
-
-        #main a:nth-child(1) div {
+        #main .header .left .title:hover {
             color: #fff;
-            background-color: #003478;
-            animation: fadeIn 2s forwards;
-
+            border-bottom: 1px solid #fff;
         }
 
-        #main a:nth-child(2) div {
+        #main .header .left .portfolio {
             color: #fff;
-            background-color: #F5dF4D;
-            animation: fadeIn 2s forwards;
-            animation-delay: .5s;
-            
+            border-bottom: 1px solid #fff;
         }
 
-        #main a:nth-child(3) div {
-            background-color: #cebda3;
-            color: #fff;
-            animation: fadeIn 2s forwards;
-            animation-delay: 1.2s;
-            
+        #main .header .left .profile {
+            margin-left: 0px;
         }
 
-        #main a:nth-child(4) div {
-            background-color: #292929;
-            color: #fff;
-            animation: fadeIn 2s forwards;
-            animation-delay: 1.9s;
-            
-        }
-
-        #name {
-            float: right;
-            animation: slideBottom 2s forwards;
-        }
-
-        #name p {
+        #main .header .left .thanksto {
+            width: 300px;
+            height: 45px;
+            border: none;
+            padding: 0;
+            margin: 0;
+            background-color: rgba(10, 10, 10, 0.4);
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 7.5px;
+            margin-left: 50px;
             font-family: "Questrial", sans-serif;
-            font-size: 50px;
-            writing-mode: vertical-rl;
-            margin-right: 10px;
-            margin-top: 20px;
+            color: #fff;
         }
 
-        @media screen and (max-width:500px) and (min-width:100px) {
-            body {
-                width: 300px;
-                
-            }
+        #main .header .right {
+            float: right;
+            position: relative;
+        }
+
+        #main .header .right .profile-img {
+            width: 40px;
+            margin-top: 10px;
+            margin-right: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 40px;
+        }
+
+        #main .middle {
+            width: 100%;
+            height: 300px;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+            overflow-x: hidden;
+            
+        }
+
+        #main .middle-wrap {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom:40px;
+        }
+
+        #main .middle .explain {
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.3);
+            float: left;
+            border-radius: 20px;
+            margin-top:30px;
+        }
+        #main .middle .explain:nth-child(1){
+            margin-top:50px;
+        }
+        #main .middle .explain p{
+            color:#000;
+        }
+
+        #main .bottom {
+            width: 100%;
+            float:left;
+        }
+        #main .bottom .bottom-portfolio{
+            width:90%;
+            margin:0 auto;
+            margin-top:30px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        #main .bottom .project-wrap{
+            width:90%;
+            height:220px;
+            margin:0 auto;
+            background-color: rgba(30, 30, 30, 0.3);
+            border-radius: 20px;
+            margin-top:20px;
+        }
+        #main .bottom .project-wrap .project{
+            float:left;
+            width:100%;
+            height:25%;
+            border-bottom:1px solid rgba(255, 255, 255, 0.1);
+        }
+        #main .bottom .project-wrap .project:nth-child(4){
+            border-bottom:none;
+        }
+        #main .bottom .project-wrap .project .project-title{
+            font-size:19px;
+            color:#fff;
+            width:150px;
+            height:100%;
+            text-align: left;
+            margin-left:40px;
+            line-height: 2.9;
+            float:left;
+        }
+        #main .bottom .project-wrap .project:nth-child(4) .project-title{
+            line-height: 2.5;
+        }
+        
+        
+        
+        
+        #main .bottom .project-wrap .project .condition-color{
+            width:8px;
+            height:8px;
+            float:left;
+            border-radius: 10px;
+            margin-top:22px;
+            margin-right:5px;
+            margin-left:30px;
+        }
+        #main .bottom .project-wrap .project:nth-child(1) .condition-color{
+            background-color: #4dabf7;
+        }
+        #main .bottom .project-wrap .project:nth-child(2) .condition-color{
+            background-color: #a9e34b;
+        }
+        #main .bottom .project-wrap .project:nth-child(3) .condition-color{
+            background-color: #ffa94d;
+        }
+        #main .bottom .project-wrap .project:nth-child(4) .condition-color{
+            margin-top:20px;
+            background-color: #ffa94d;
+        }
+        
+        
+        
+        #main .bottom .project-wrap .project .condition{
+            float:left;
+            text-align: left;
+            line-height: 4.5;
+            font-size: 12px;
+            width:50px;
+        }
+        #main .bottom .project-wrap .project:nth-child(4) .condition{
+            line-height: 4.1;
+        }
+        
+        
+        
+        
+        #main .bottom .project-wrap .project .type{
+            float:left;
+            margin-left:50px;
+            text-align: left;
+            width:150px;
+            line-height: 3.7;
+            font-size:15px;
+        }
+        #main .bottom .project-wrap .project:nth-child(2) .type{
+            line-height: 3.6;
+        }
+        #main .bottom .project-wrap .project:nth-child(3) .type{
+            line-height: 3.6;
+        }
+        #main .bottom .project-wrap .project:nth-child(4) .type{
+            line-height: 3.4;
+        }
+
+        
+        
+        
+        
+        #main .bottom .project-wrap .project a{
+            float:right;
+            width:100px;
+            height:35px;
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            margin-top:10px;
+            margin-right:40px;
+            transition-duration: .3s;
+        }
+        #main .bottom .project-wrap .project a:hover{
+            border:1px solid #fff;
+        }
+        #main .bottom .project-wrap .project a:hover p{
+            color:#fff;
+        }
+        #main .bottom .project-wrap .project:nth-child(4) a{
+            margin-top:8px;
+        }
+        #main .bottom .project-wrap .project a p{
+            margin-top:10px;
+            transition-duration: .3s;
         }
     </style>
 </head>
 
 <body>
-    <div id="name">
-        <p>Pilju Park's Portfolio</p>
-    </div>
     <div id="main">
-        <a href="ford.html">
-            <div class="ford">
-                <p>Ford</p>
-                <p class="txt">반응형</p>
+        <div class="header">
+            <div class="left">
+                <p class="title portfolio">Portfolio</p>
+                <p class="title profile">My profile</p>
+                <input type="text" placeholder="Thank you for coming to see my portfolio." class="thanksto">
             </div>
-        </a>
-        <a href="taxi.html">
-            <div class="taxi">
-                <p>Taxi</p>
-                <p class="txt">모바일(미완성)</p>
+            <div class="right">
+                <a href="#">
+                    <img src="img/profile.png" alt="profile" class="profile-img">
+                </a>
             </div>
-        </a>
-        <a href="klairs.html">
-            <div class="klairs">
-                <p>Klairs</p>
-                <p class="txt">모바일(미완성)</p>
+        </div>
+        <div class="middle">
+            <div class="middle-wrap">
+                <div class="explain middle1">
+                    <p></p>
+                </div>
+                <div class="explain middle2"></div>
+                <div class="explain middle3"></div>
+                <div class="explain middle4"></div>
             </div>
-        </a>
-        <a href="ilcorso.html">
-            <div class="ilcorso">
-                <p>Ilcorso</p>
-                <p class="txt">PC(max-width:500px)</p>
+        </div>
+        <div class="bottom">
+           <p class="bottom-portfolio">Portfolio</p>
+            <div class="project-wrap">
+                <div class="project 1">
+                    <p class="project-title">Ford</p>
+                    <div class="condition-color"></div>
+                    <p class="condition">Updated</p>
+                    <p class="type">PC / Tablet / Mobile</p>
+                    <a href="ford.html"><p>Enter</p></a>
+                </div>
+                <div class="project 2">
+                    <p class="project-title">Taxi</p>
+                    <div class="condition-color"></div>
+                    <p class="condition">Creating</p>
+                    <p class="type">Mobile</p>
+                    <a href="taxi.html"><p>Enter</p></a>
+                </div>
+                <div class="project 3">
+                    <p class="project-title">Klairs</p>
+                    <div class="condition-color"></div>
+                    <p class="condition">Incomplete</p>
+                    <p class="type">Mobile</p>
+                    <a href="klairs.html"><p>Enter</p></a>
+                </div>
+                <div class="project 4">
+                    <p class="project-title">Ilcorso</p>
+                    <div class="condition-color"></div>
+                    <p class="condition">Incomplete</p>
+                    <p class="type">PC / Tablet</p>
+                    <a href="ilcorso.html"><p>Enter</p></a>
+                </div>
             </div>
-        </a>
-
+        </div>
     </div>
 
 

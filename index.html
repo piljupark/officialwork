@@ -13,6 +13,31 @@
         @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900|Comfortaa:wght@300;400;500;600;700|Syncopate|Questrial&display=swap');
 
         @font-face {
+            src: url("fonts/AppleSDGothicNeoB.ttf");
+            font-family: "AppleSDGothicNeoB";
+        }
+
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoB.woff");
+            font-family: "AppleSDGothicNeoB";
+        }
+
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoB.woff2");
+            font-family: "AppleSDGothicNeoB";
+        }
+
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoT.ttf");
+            font-family: "AppleSDGothicNeoT";
+        }
+
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoT.woff");
+            font-family: "AppleSDGothicNeoT";
+        }
+
+        @font-face {
             src: url("fonts/AppleSDGothicNeoT.woff2");
             font-family: "AppleSDGothicNeoT";
         }
@@ -24,6 +49,11 @@
 
         @font-face {
             src: url("fonts/AppleSDGothicNeoM.woff");
+            font-family: "AppleSDGothicNeoM";
+        }
+
+        @font-face {
+            src: url("fonts/AppleSDGothicNeoM.woff2");
             font-family: "AppleSDGothicNeoM";
         }
 
@@ -183,16 +213,50 @@
             float: left;
             border-radius: 20px;
             margin-top: 30px;
+            overflow: hidden;
+            position: relative;
         }
 
         #main .middle .explain:nth-child(1) {
             margin-top: 50px;
+            overflow: hidden;
+            /*background-color: rgba(24, 100, 171, 0.5);*/
         }
 
-        #main .middle .explain p {
-            color: #000;
+        #main .middle .explain .explain-title {
+            font-size: 40px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+            margin-left: 50px;
+            margin-top: 40px;
+            color: #fff;
+            z-index: 10;
         }
 
+        #main .middle .explain .explain-txt {
+            font-family: "AppleSDGothicNeoM";
+            width:100%;
+            margin:0 auto;
+            margin-top:20px;
+            margin-left:50px;
+            color:#fff;
+            z-index: 10;
+            position: relative;
+        }
+        #main .middle .explain .mustang{
+            width:300px;
+            position:absolute;
+            bottom:0;
+            right:-50px;
+            opacity: .5;
+            z-index: 1;
+        }
+
+        
+        
+        
+        
         #main .bottom {
             width: 100%;
             float: left;
@@ -352,19 +416,19 @@
                 width: 50px;
             }
         }
-        
-        
-        
-        @media screen and (max-width:510px) and (min-width:100px){
-            #main .header .left .thanksto{
+
+
+
+        @media screen and (max-width:510px) and (min-width:100px) {
+            #main .header .left .thanksto {
                 display: none;
             }
         }
-        
-        
-        
-        
-        
+
+
+
+
+
         @media screen and (max-width:635px) and (min-width:300px) {
             #main {
                 height: 940px;
@@ -375,7 +439,14 @@
                 padding-left: 20px;
                 padding-right: 20px;
             }
-
+            
+            
+            #main .middle .explain img{
+                display: none;
+            }
+            
+            
+            
             #main .bottom .project-wrap .project .project-title {
                 width: 50px;
             }
@@ -412,24 +483,27 @@
                 text-align: center;
                 line-height: 3;
             }
-            
+
 
             #main .bottom .project-wrap .project:nth-child(4) .project-title {
                 line-height: 3;
             }
-            #main .bottom .project-wrap .project .condition-color-wrap{
-                float:left;
-                width:40%;
-                
-                height:40px;
+
+            #main .bottom .project-wrap .project .condition-color-wrap {
+                float: left;
+                width: 40%;
+
+                height: 40px;
             }
+
             #main .bottom .project-wrap .project .condition-color {
                 float: right;
                 margin-top: 13px;
                 margin-left: 0;
             }
-            #main .bottom .project-wrap .project:nth-child(4) .condition-color{
-                margin-top:13px;
+
+            #main .bottom .project-wrap .project:nth-child(4) .condition-color {
+                margin-top: 13px;
             }
 
             #main .bottom .project-wrap .project .condition {
@@ -447,28 +521,30 @@
                 height: 20px;
                 line-height: 1;
                 width: 100%;
-                margin:0 auto;
+                margin: 0 auto;
                 text-align: center;
                 font-size: 12px;
             }
-            #main .bottom .project-wrap .project:nth-child(n+2):nth-child(-n+4) .type{
+
+            #main .bottom .project-wrap .project:nth-child(n+2):nth-child(-n+4) .type {
                 line-height: 1;
             }
 
             #main .bottom .project-wrap .project:nth-child(n+1):nth-child(-n+4) a {
-                
-                width:100%;
-                margin:0 auto;
-                margin-top:20px;
-                border:none;
+
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 20px;
+                border: none;
             }
-            #main .bottom .project-wrap .project a .button{
-                width:80%;
-                height:35px;
-                margin:0 auto;
+
+            #main .bottom .project-wrap .project a .button {
+                width: 80%;
+                height: 35px;
+                margin: 0 auto;
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 border-radius: 20px;
-                
+
             }
         }
     </style>
@@ -494,11 +570,22 @@
         <div class="middle">
             <div class="middle-wrap">
                 <div class="explain middle1">
-                    <p></p>
+                    <p class="explain-title">Ford</p>
+                    <p class="explain-txt">자동차 브랜드인<br> 포드 사이트를 리뉴얼 하였습니다.</p>
+                    <img src="img/mustang.png" alt="mustang" class="mustang">
                 </div>
-                <div class="explain middle2"></div>
-                <div class="explain middle3"></div>
-                <div class="explain middle4"></div>
+                <div class="explain middle2">
+                    <p class="explain-title">Taxi</p>
+                    <p class="explain-txt">택시 어플을 바탕으로<br>자유롭게 만들어 보았습니다.</p>
+                </div>
+                <div class="explain middle3">
+                    <p class="explain-title">Klairs</p>
+                    <p class="explain-txt">화장품 브랜드인 <br> Klairs의 사이트를 리뉴얼 해보았습니다.</p>
+                </div>
+                <div class="explain middle4">
+                    <p class="explain-title">Ilcorso</p>
+                    <p class="explain-txt">의류 브랜드인 <br> Ilcorso의 사이트를 리뉴얼 해보았습니다.</p>
+                </div>
             </div>
         </div>
         <div class="bottom">
@@ -511,8 +598,9 @@
                     </div>
                     <p class="condition">Updated</p>
                     <p class="type">PC / Tablet / Mobile</p>
-                    <a href="ford.html"><div class="button">
-                        <p>Enter</p>
+                    <a href="ford.html">
+                        <div class="button">
+                            <p>Enter</p>
                         </div>
                     </a>
                 </div>
@@ -523,8 +611,9 @@
                     </div>
                     <p class="condition">Creating</p>
                     <p class="type">Mobile</p>
-                    <a href="taxi.html"><div class="button">
-                        <p>Enter</p>
+                    <a href="taxi.html">
+                        <div class="button">
+                            <p>Enter</p>
                         </div>
                     </a>
                 </div>
@@ -535,8 +624,9 @@
                     </div>
                     <p class="condition">Incomplete</p>
                     <p class="type">Mobile</p>
-                    <a href="klairs.html"><div class="button">
-                        <p>Enter</p>
+                    <a href="klairs.html">
+                        <div class="button">
+                            <p>Enter</p>
                         </div>
                     </a>
                 </div>
@@ -547,8 +637,9 @@
                     </div>
                     <p class="condition">Incomplete</p>
                     <p class="type">PC / Tablet</p>
-                    <a href="ilcorso.html"><div class="button">
-                        <p>Enter</p>
+                    <a href="ilcorso.html">
+                        <div class="button">
+                            <p>Enter</p>
                         </div>
                     </a>
                 </div>

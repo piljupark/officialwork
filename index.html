@@ -6,6 +6,12 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    
+    <script src="ford-script/jquery.fadethis.min.js"></script>
+    <script src="ford-script/jquery-1.11.2.min.js"></script>
+
     <link rel="stylesheet" href="taxi-css/reset.css">
 
     <style>
@@ -86,7 +92,7 @@
             position: relative;
             margin: 0 auto;
             -ms-overflow-style: none;
-            height: 1000px;
+            height: 100%;
         }
 
         ::-webkit-scrollbar {
@@ -107,10 +113,14 @@
         #background {
             width: 100%;
             height: 100%;
-            float: left;
             z-index: 5;
             position: absolute;
-            overflow: hidden;
+            overflow-y: hidden;
+
+        }
+
+        #background img {
+            height: 2000px;
         }
 
         #main {
@@ -125,6 +135,7 @@
             margin-top: 30px;
             border-radius: 20px;
             z-index: 10;
+            max-width: 1280px;
         }
 
         #main .header {
@@ -191,72 +202,111 @@
             border-radius: 40px;
         }
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
         #main .middle {
             width: 100%;
             height: 300px;
             border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
-            overflow-x: hidden;
-
         }
-
-        #main .middle-wrap {
-            width: 90%;
-            margin: 0 auto;
-            padding-bottom: 40px;
-        }
-
-        #main .middle .explain {
-            width: 100%;
-            height: 200px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.3);
-            float: left;
-            border-radius: 20px;
-            margin-top: 30px;
-            overflow: hidden;
+        #main .middle .swiper-container {
+            width:100%;
+            height:100%;
             position: relative;
         }
-
-        #main .middle .explain:nth-child(1) {
-            margin-top: 50px;
-            overflow: hidden;
-            /*background-color: rgba(24, 100, 171, 0.5);*/
+        #main .middle .swiper-container .swiper-wrapper{
+            width:90%;
+            margin:0 auto;
         }
-
-        #main .middle .explain .explain-title {
-            font-size: 40px;
-            width: 100%;
-            margin: 0 auto;
-            text-align: left;
-            margin-left: 50px;
-            margin-top: 40px;
-            color: #fff;
-            z-index: 10;
-        }
-
-        #main .middle .explain .explain-txt {
-            font-family: "AppleSDGothicNeoM";
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide{
             width:100%;
             margin:0 auto;
-            margin-top:20px;
-            margin-left:50px;
-            color:#fff;
-            z-index: 10;
             position: relative;
+            justify-content: center;
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+            align-items: center;
+            background-color: rgba(30, 30, 30, 0.1);
         }
-        #main .middle .explain .mustang{
-            width:300px;
-            position:absolute;
-            bottom:0;
-            right:-50px;
-            opacity: .5;
-            z-index: 1;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .type{
+            width:70px;
+            height:20px;
+            background-color:#9775fa;
+            border-radius: 10px;
+            color:#000;
+            text-align: center;
+            margin-top:40px;
+            line-height: 2;
+            font-size: 10px;
+            
+            
         }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .title{
+            font-size:40px;
+            margin-top:3px;
+            color:#fff;
+            float:left;
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .txt{
+            margin-top:7px;
+            float:left;
+            margin-left:10px;
+        }
+        
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle{
+            width:250px;
+            height:250px;
+            border-radius: 300px;
+            background-color: rgba(151,117,250,0.6);
+            float:right;
+            margin-right:100px;
+            position: absolute;
+            right:0;
+            top:25px;
+            overflow: hidden;
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle img{
+            width:400px;
+            margin-top:0px;
+            margin-left:-40px;
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle img{
+            width:200px;
+            margin-left:25px;
+            margin-top:25px;
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle img{
+            width:200px;
+            margin-left:25px;
+            margin-top:25px;
+        }
+         #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(5) .img-circle img{
+            width:200px;
+            margin-left:25px;
+            margin-top:60px;
+        }
+        
+        
+        
+
 
         
         
         
         
+        
+        
+        
+
+
+
         #main .bottom {
             width: 100%;
             float: left;
@@ -439,14 +489,14 @@
                 padding-left: 20px;
                 padding-right: 20px;
             }
-            
-            
-            #main .middle .explain img{
+
+
+            #main .middle .explain img {
                 display: none;
             }
-            
-            
-            
+
+
+
             #main .bottom .project-wrap .project .project-title {
                 width: 50px;
             }
@@ -551,6 +601,11 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+
     <div id="background">
         <img src="img/background.jpg">
     </div>
@@ -568,26 +623,44 @@
             </div>
         </div>
         <div class="middle">
-            <div class="middle-wrap">
-                <div class="explain middle1">
-                    <p class="explain-title">Ford</p>
-                    <p class="explain-txt">자동차 브랜드인<br> 포드 사이트를 리뉴얼 하였습니다.</p>
-                    <img src="img/mustang.png" alt="mustang" class="mustang">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="type">RENEWAL</p>
+                            <p class="title">Ford</p>
+                            <p class="txt">I tried redesigning <br>Ford's website.</p>
+                            <div class="img-circle">
+                                <img src="img/ford-all.png" alt="ford">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <p class="type">CREATE</p>
+                            <p class="title">Taxi</p>
+                            <p class="txt">I tried creating <br>taxi app's main screen.</p>
+                            <div class="img-circle">
+                                <img src="img/taxi.png" alt="taxi">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <p class="type">RENEWAL</p>
+                            <p class="title">Klairs</p>
+                            <p class="txt">I tried redesigning <br>Klairs's website.</p>
+                            <div class="img-circle">
+                                <img src="img/klairs.png" alt="klairs">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <p class="type">RENEWAL</p>
+                            <p class="title">Ilcorso</p>
+                            <p class="txt">I tried redesigning <br>Ilcorso's website.</p>
+                            <div class="img-circle">
+                                <img src="img/ilcorso.png" alt="ilcorso">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="explain middle2">
-                    <p class="explain-title">Taxi</p>
-                    <p class="explain-txt">택시 어플을 바탕으로<br>자유롭게 만들어 보았습니다.</p>
-                </div>
-                <div class="explain middle3">
-                    <p class="explain-title">Klairs</p>
-                    <p class="explain-txt">화장품 브랜드인 <br> Klairs의 사이트를 리뉴얼 해보았습니다.</p>
-                </div>
-                <div class="explain middle4">
-                    <p class="explain-title">Ilcorso</p>
-                    <p class="explain-txt">의류 브랜드인 <br> Ilcorso의 사이트를 리뉴얼 해보았습니다.</p>
-                </div>
-            </div>
-        </div>
+
+     </div>
         <div class="bottom">
             <p class="bottom-portfolio">Portfolio</p>
             <div class="project-wrap">
@@ -646,6 +719,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var mySwiper = new Swiper('#main > .middle > .swiper-container', {
+
+            navigation: {
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            effect: 'slide',
+            autoplay: 1000,
+            autoplayDisableOnInteraction: true,
+            loop: true,
+            speed: 1000,
+        });
+        new Swiper('#main > .middle > .swiper-container');
+
+    </script>
 
 
 

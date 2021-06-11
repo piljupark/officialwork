@@ -63,15 +63,6 @@
             font-family: "AppleSDGothicNeoM";
         }
 
-        @keyframes slideBottom {
-            from {
-                margin-top: -500px;
-            }
-
-            to {
-                margin-top: 0px;
-            }
-        }
 
         @keyframes fadeIn {
             from {
@@ -83,6 +74,7 @@
 
             }
         }
+
         @keyframes fadeOut {
             from {
                 opacity: 1;
@@ -96,7 +88,6 @@
             }
         }
 
-      
 
 
 
@@ -139,15 +130,15 @@
             height: 2000px;
         }
 
-        
-        
-        
+
+
+
         #loading {
             width: 100%;
             height: 860px;
             border-radius: 20px;
             position: relative;
-            z-index:11;
+            z-index: 11;
             margin: 0 auto;
             margin-top: 30px;
             text-align: center;
@@ -176,24 +167,24 @@
             opacity: 0;
             animation-fill-mode: forwards;
             width: 100%;
-            margin:0 auto;
+            margin: 0 auto;
         }
 
-       
+
         #loading .button {
             width: 100px;
             height: 50px;
             background-color: #fff;
-            margin:0 auto;
+            margin: 0 auto;
             position: relative;
             text-align: center;
             border-radius: 50px;
-            border:none;
+            border: none;
             font-family: "Questrial", sans-serif;
             font-size: 30px;
-            margin-top:50px;
+            margin-top: 50px;
             background-color: #228be6;
-            color:#fff;
+            color: #fff;
             animation: fadeIn 2s;
             animation-delay: 1.5s;
             opacity: 0;
@@ -223,7 +214,10 @@
             max-width: 1280px;
             min-width: 380px;
         }
-        .header, .middle, .bottom{
+
+        .header,
+        .middle,
+        .bottom {
             opacity: 0;
         }
 
@@ -428,6 +422,27 @@
             width: 200px;
             margin-left: 25px;
             margin-top: 60px;
+        }
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .finger-wrap{
+            width:100%;
+            height: 50px;
+            margin:0 auto;
+            position: absolute;
+            text-align: center;
+            z-index: 40;
+            
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .slide-finger {
+            width: 40px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top:60px;
+            z-index: 60;
+            animation: fadeIn .5s forwards;
+            animation-direction: alternate;
+            animation-iteration-count: 1000;
+            
         }
 
 
@@ -817,6 +832,9 @@
                             <p class="title">Ford</p>
                             <p class="txt">I tried redesigning <br>Ford's website.</p>
                         </div>
+                        <div class="finger-wrap">
+                            <img src="img/slide2.png" alt="slide" class="slide-finger">
+                        </div>
                         <div class="circle-wrap">
                             <div class="img-circle">
                                 <img src="img/ford-all.png" alt="ford" class="ford">
@@ -936,18 +954,21 @@
         new Swiper('#main > .middle > .swiper-container');
     </script>
     <script>
-        $(document).ready(function () {
-            $("#loading > .button").click(function(){
-                $("#loading").css("animation-delay","1.2s");
-                $("#loading").css("animation-fill-mode","forwards");
-                $("#loading").css("animation-name","fadeOut");
-                $("#loading > p:nth-child(1)").css("animation","fadeOut .3s forwards");
-                $("#loading > p:nth-child(2)").css("animation","fadeOut .6s forwards");
-                $("#loading > .button").css("animation","fadeOut 1s forwards");
-                
-                $(".header, .middle, .bottom").css("animation","fadeIn .5s forwards");
-                $(".header, .middle, .bottom").css("animation-delay","1s");
-                
+        $(document).ready(function() {
+            $("#loading > .button").click(function() {
+                $("#loading").css("animation-delay", "1.2s");
+                $("#loading").css("animation-fill-mode", "forwards");
+                $("#loading").css("animation-name", "fadeOut");
+                $("#loading > p:nth-child(1)").css("animation", "fadeOut .3s forwards");
+                $("#loading > p:nth-child(2)").css("animation", "fadeOut .6s forwards");
+                $("#loading > .button").css("animation", "fadeOut 1s forwards");
+
+                $(".header, .middle, .bottom").css("animation", "fadeIn .5s forwards");
+                $(".header, .middle, .bottom").css("animation-delay", "1s");
+
+            });
+            $("#main > .middle").hover(function(){
+                $("#main > .middle > .swiper-container > .swiper-wrapper > .swiper-slide > .finger-wrap").css("animation","fadeOut .5s forwards");
             });
         });
     </script>

@@ -93,12 +93,13 @@
 
         body {
             text-decoration: none;
-            width: 100%;
-            float: left;
-            position: relative;
-            margin: 0 auto;
+            width: 100vw;
             -ms-overflow-style: none;
-            height: 100%;
+            height: 100vh;
+            background-image: url(img/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
         }
 
         ::-webkit-scrollbar {
@@ -116,26 +117,12 @@
             font-family: "Questrial", sans-serif;
         }
 
-        #background {
-            width: 100%;
-            height: 100%;
-            z-index: 5;
-            position: absolute;
-            overflow-y: hidden;
-            min-width: 380px;
-
-        }
-
-        #background img {
-            height: 2000px;
-        }
 
 
 
 
         #loading {
             width: 100%;
-            height: 860px;
             border-radius: 20px;
             position: relative;
             z-index: 11;
@@ -147,7 +134,7 @@
 
         #loading p:nth-child(1) {
             font-size: 80px;
-            margin-top: 290px;
+            margin-top: 220px;
             font-family: "AppleSDgothicNeoM";
             color: #fff;
             animation: fadeIn 2s;
@@ -202,7 +189,7 @@
         #main {
             position: relative;
             width: 95%;
-            height: 860px;
+            height: 95vh;
             background-color: rgba(10, 10, 10, 0.4);
             margin: 0 auto;
             backdrop-filter: blur(20px);
@@ -212,7 +199,7 @@
             border-radius: 20px;
             z-index: 10;
             max-width: 1280px;
-            min-width: 380px;
+            overflow-y: scroll;
         }
 
         .header,
@@ -284,6 +271,9 @@
             margin-right: 20px;
             border: 2px solid rgba(255, 255, 255, 0.5);
             border-radius: 40px;
+            position: absolute;
+            top:0;
+            right:0;
         }
 
 
@@ -462,6 +452,9 @@
         #main .bottom {
             width: 100%;
             float: left;
+            overflow:scroll;
+            position: relative;
+            padding-bottom:50px;
         }
 
         #main .bottom .bottom-portfolio {
@@ -478,6 +471,7 @@
             background-color: rgba(30, 30, 30, 0.3);
             border-radius: 20px;
             margin-top: 20px;
+            position: relative;
         }
 
         #main .bottom .project-wrap .project {
@@ -607,6 +601,11 @@
             transition-duration: .3s;
         }
 
+        
+        
+        
+        
+        
         @media screen and (max-width:755px) and (min-width:636px) {
             #main .header .left .thanksto {
                 width: 200px;
@@ -645,9 +644,6 @@
                 margin-left: 0;
             }
 
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide {
-                overflow: hidden;
-            }
 
             #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle {
                 margin-top: 50px;
@@ -673,12 +669,41 @@
 
 
 
-
+        @media screen and (max-width:450px) and (min-width:300px) {
+            #loading p:nth-child(1){
+                font-size: 60px;
+                margin-top:260px;
+            }
+            #loading p:nth-child(2){
+                font-size: 27px;
+            }
+            #loading .button{
+                margin-top:20px;
+            }
+        }
+        @media screen and (max-width:299px) and (min-width:100px) {
+            #loading p:nth-child(1){
+                font-size: 40px;
+                margin-top:260px;
+            }
+            #loading p:nth-child(2){
+                font-size: 17px;
+            }
+            #loading .button{
+                margin-top:20px;
+                width:50px;
+                font-size: 20px;
+            }
+            
+            
+            #main .header .right .profile-img {
+                width:30px;
+                right:-10px;
+                top:3px;
+            }
+        }
 
         @media screen and (max-width:635px) and (min-width:100px) {
-            #main {
-                height: 940px;
-            }
 
             #main .header .left .thanksto {
                 width: 100px;
@@ -802,9 +827,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
 
-    <div id="background">
-        <img src="img/background.jpg">
-    </div>
+
     <div id="loading">
         <p>반갑습니다!</p>
         <p>버튼을 눌러 시작해주세요</p>

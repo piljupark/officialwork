@@ -84,17 +84,30 @@
 
             to {
                 opacity: 0;
-                z-index: 1;
+                z-index: -1;
+            }
+        }
+
+        @keyframes fadeOut2 {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
             }
         }
 
 
 
+        html {
+            height: 100%;
+        }
 
         body {
             text-decoration: none;
             width: 100vw;
-            -ms-overflow-style: none;
+
             height: 100vh;
             background-image: url(img/background.jpg);
             background-size: cover;
@@ -121,30 +134,28 @@
 
 
 
-        #loading {
-            width: 100%;
-            border-radius: 20px;
-            position: relative;
-            z-index: 11;
-            margin: 0 auto;
-            margin-top: 30px;
-            text-align: center;
+        .center {
             position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            margin: -200px 0 0 -200px;
+            z-index: 11;
+            text-align: center;
         }
 
-        #loading p:nth-child(1) {
+        .center p:nth-child(1) {
             font-size: 80px;
-            margin-top: 220px;
+
             font-family: "AppleSDgothicNeoM";
             color: #fff;
             animation: fadeIn 2s;
             opacity: 0;
             animation-fill-mode: forwards;
-            width: 100%;
-            text-align: center;
         }
 
-        #loading p:nth-child(2) {
+        .center p:nth-child(2) {
             font-family: "AppleSDgothicNeoM";
             font-size: 36px;
             color: #fff;
@@ -153,17 +164,14 @@
             animation-delay: 1s;
             opacity: 0;
             animation-fill-mode: forwards;
-            width: 100%;
-            margin: 0 auto;
+
         }
 
 
-        #loading .button {
+        .center .button {
             width: 100px;
             height: 50px;
             background-color: #fff;
-            margin: 0 auto;
-            position: relative;
             text-align: center;
             border-radius: 50px;
             border: none;
@@ -177,6 +185,12 @@
             opacity: 0;
             animation-fill-mode: forwards;
             cursor: pointer;
+            text-align: center;
+
+        }
+
+        .center .button a {
+            color: #fff;
         }
 
 
@@ -199,7 +213,7 @@
             border-radius: 20px;
             z-index: 10;
             max-width: 1280px;
-            overflow-y: scroll;
+            overflow: hidden;
         }
 
         .header,
@@ -272,8 +286,8 @@
             border: 2px solid rgba(255, 255, 255, 0.5);
             border-radius: 40px;
             position: absolute;
-            top:0;
-            right:0;
+            top: 0;
+            right: 0;
         }
 
 
@@ -414,25 +428,24 @@
             margin-top: 60px;
         }
 
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .finger-wrap{
-            width:100%;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .finger-wrap {
+            width: 100%;
             height: 50px;
-            margin:0 auto;
+            margin: 0 auto;
             position: absolute;
             text-align: center;
-            z-index: 40;
-            
+
         }
+
         #main .middle .swiper-container .swiper-wrapper .swiper-slide .slide-finger {
             width: 40px;
             margin: 0 auto;
             text-align: center;
-            margin-top:60px;
-            z-index: 60;
+            margin-top: 60px;
             animation: fadeIn .5s forwards;
             animation-direction: alternate;
             animation-iteration-count: 1000;
-            
+
         }
 
 
@@ -452,9 +465,9 @@
         #main .bottom {
             width: 100%;
             float: left;
-            overflow:scroll;
+            overflow: scroll;
             position: relative;
-            padding-bottom:50px;
+            padding-bottom: 50px;
         }
 
         #main .bottom .bottom-portfolio {
@@ -601,11 +614,95 @@
             transition-duration: .3s;
         }
 
-        
-        
-        
-        
-        
+
+
+
+        #main .bottom .skill {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            float: left;
+            margin-top: 40px;
+        }
+
+        #main .bottom .skill .title {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        #main .bottom .skill .skill-wrap {
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+            background-color: rgba(10, 10, 10, 0.4);
+            border-radius: 20px;
+        }
+
+        #main .bottom .skill .skill-wrap .kind-of-skill {
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition-duration: .3s;
+        }
+
+        #main .bottom .skill .skill-wrap .kind-of-skill:hover {
+            background-color: rgba(10, 10, 10, 0.4);
+        }
+
+        #main .bottom .skill .skill-wrap .kind-of-skill:hover p {
+            font-size: 25px;
+            line-height: 2;
+        }
+
+        #main .bottom .skill .skill-wrap .kind-of-skill:nth-child(1) {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        #main .bottom .skill .skill-wrap .kind-of-skill:nth-child(7) {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #main .bottom .skill .skill-wrap .kind-of-skill:nth-child(7) {
+            border-bottom: none;
+        }
+
+        #main .bottom .skill .skill-wrap .kind-of-skill p {
+            width: 70%;
+            margin: 0 auto;
+            margin-left: 40px;
+            color: #fff;
+            line-height: 2.9;
+            transition-duration: .3s;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         @media screen and (max-width:755px) and (min-width:636px) {
             #main .header .left .thanksto {
                 width: 200px;
@@ -670,36 +767,36 @@
 
 
         @media screen and (max-width:450px) and (min-width:300px) {
-            #loading p:nth-child(1){
+            .center p:nth-child(1) {
                 font-size: 60px;
-                margin-top:260px;
             }
-            #loading p:nth-child(2){
+
+            .center p:nth-child(2) {
                 font-size: 27px;
             }
-            #loading .button{
-                margin-top:20px;
-            }
+
         }
+
         @media screen and (max-width:299px) and (min-width:100px) {
-            #loading p:nth-child(1){
+            .center p:nth-child(1) {
                 font-size: 40px;
-                margin-top:260px;
+
             }
-            #loading p:nth-child(2){
+
+            .center p:nth-child(2) {
                 font-size: 17px;
             }
-            #loading .button{
-                margin-top:20px;
-                width:50px;
+
+            .center .button {
+                width: 50px;
                 font-size: 20px;
             }
-            
-            
+
+
             #main .header .right .profile-img {
-                width:30px;
-                right:-10px;
-                top:3px;
+                width: 30px;
+                right: -10px;
+                top: 3px;
             }
         }
 
@@ -828,12 +925,13 @@
 
 
 
-    <div id="loading">
-        <p>반갑습니다!</p>
-        <p>버튼을 눌러 시작해주세요</p>
-        <button type="button" class="button">Go</button>
-    </div>
+
     <div id="main">
+        <div class="center">
+            <p>반갑습니다!</p>
+            <p>버튼을 눌러 시작해주세요</p>
+            <button type="button" class="button"><a href="#">Go</a></button>
+        </div>
         <div class="header">
             <div class="left">
                 <p class="title portfolio">Portfolio</p>
@@ -846,6 +944,10 @@
                 </a>
             </div>
         </div>
+
+
+
+
         <div class="middle">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -896,8 +998,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+
+
+
+
+
         <div class="bottom">
             <p class="bottom-portfolio">Portfolio</p>
             <div class="project-wrap">
@@ -954,6 +1061,40 @@
                     </a>
                 </div>
             </div>
+
+
+
+            <div class="skill">
+                <div class="title">
+                    <p>Skill</p>
+                </div>
+                <div class="skill-wrap">
+
+                    <div class="kind-of-skill">
+                        <p>Html</p>
+                    </div>
+                    <div class="kind-of-skill">
+                        <p>CSS</p>
+                    </div>
+                    <div class="kind-of-skill">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="kind-of-skill">
+                        <p>Jquery</p>
+                    </div>
+                    <div class="kind-of-skill">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                    <div class="kind-of-skill">
+                        <p>Adobe Illustrator</p>
+                    </div>
+                    <div class="kind-of-skill">
+                        <p>Adobe Premere</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
@@ -978,19 +1119,22 @@
     </script>
     <script>
         $(document).ready(function() {
-            $("#loading > .button").click(function() {
-                $("#loading").css("animation-delay", "1.2s");
-                $("#loading").css("animation-fill-mode", "forwards");
-                $("#loading").css("animation-name", "fadeOut");
-                $("#loading > p:nth-child(1)").css("animation", "fadeOut .3s forwards");
-                $("#loading > p:nth-child(2)").css("animation", "fadeOut .6s forwards");
-                $("#loading > .button").css("animation", "fadeOut 1s forwards");
+            $(".center > .button").click(function() {
+                $(".center").css("animation-delay", "1.2s");
+                $(".center").css("animation-fill-mode", "forwards");
+                $(".center").css("animation-name", "fadeOut");
+                $(".center > p:nth-child(1)").css("animation", "fadeOut .3s forwards");
+                $(".center > p:nth-child(2)").css("animation", "fadeOut .6s forwards");
+                $(".center > .button").css("animation", "fadeOut 1s forwards");
 
                 $(".header, .middle, .bottom").css("animation", "fadeIn .5s forwards");
                 $(".header, .middle, .bottom").css("animation-delay", "1s");
 
+                $("#main").css("overflow", "scroll");
+
+
             });
-            $("#main > .middle").hover(function(){
+            $("#main > .middle").hover(function() {
                 $("#main > .middle > .swiper-container > .swiper-wrapper > .swiper-slide > .finger-wrap").css("animation","fadeOut .5s forwards");
             });
         });

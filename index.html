@@ -80,8 +80,23 @@
 
             to {
                 opacity: 1;
+
             }
         }
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                z-index: 11;
+
+            }
+
+            to {
+                opacity: 0;
+                z-index: 1;
+            }
+        }
+
+      
 
 
 
@@ -116,13 +131,82 @@
             z-index: 5;
             position: absolute;
             overflow-y: hidden;
-            min-width:380px;
+            min-width: 380px;
 
         }
 
         #background img {
             height: 2000px;
         }
+
+        
+        
+        
+        #loading {
+            width: 100%;
+            height: 860px;
+            border-radius: 20px;
+            position: relative;
+            z-index:11;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            position: absolute;
+        }
+
+        #loading p:nth-child(1) {
+            font-size: 80px;
+            margin-top: 290px;
+            font-family: "AppleSDgothicNeoM";
+            color: #fff;
+            animation: fadeIn 2s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            width: 100%;
+            text-align: center;
+        }
+
+        #loading p:nth-child(2) {
+            font-family: "AppleSDgothicNeoM";
+            font-size: 36px;
+            color: #fff;
+            margin-top: 10px;
+            animation: fadeIn 2s;
+            animation-delay: 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            width: 100%;
+            margin:0 auto;
+        }
+
+       
+        #loading .button {
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            margin:0 auto;
+            position: relative;
+            text-align: center;
+            border-radius: 50px;
+            border:none;
+            font-family: "Questrial", sans-serif;
+            font-size: 30px;
+            margin-top:50px;
+            background-color: #228be6;
+            color:#fff;
+            animation: fadeIn 2s;
+            animation-delay: 1.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
 
         #main {
             position: relative;
@@ -137,7 +221,10 @@
             border-radius: 20px;
             z-index: 10;
             max-width: 1280px;
-            min-width:380px;
+            min-width: 380px;
+        }
+        .header, .middle, .bottom{
+            opacity: 0;
         }
 
         #main .header {
@@ -257,16 +344,20 @@
             font-size: 10px;
             margin-left: 5%;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .type{
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .type {
             background-color: #4dabf7;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .type{
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .type {
             background-color: #a9e34b;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .type{
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .type {
             background-color: #ffa94d;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .type{
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .type {
             background-color: #ffa94d;
         }
 
@@ -293,23 +384,27 @@
             top: 25px;
             overflow: hidden;
             right: 5%;
-            transition:.4s;
+            transition: .4s;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle{
-            background-color: rgba(77,171,247,1);
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle {
+            background-color: rgba(77, 171, 247, 1);
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle{
-            background-color: rgba(169,227,75,1);
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle {
+            background-color: rgba(169, 227, 75, 1);
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle{
-            background-color: rgba(255,169,77,1);
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle {
+            background-color: rgba(255, 169, 77, 1);
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle{
-            background-color: rgba(255,169,77,1);
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle {
+            background-color: rgba(255, 169, 77, 1);
         }
-        
-        
-        
+
+
+
 
         #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .ford {
             width: 400px;
@@ -516,45 +611,53 @@
                 display: none;
             }
         }
-        
-        
+
+
 
         @media screen and (max-width:600px) and (min-width:100px) {
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap{
-                width:90%;
-                margin:0 auto;
-                height:60px;
-                
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap {
+                width: 90%;
+                margin: 0 auto;
+                height: 60px;
+
             }
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .title{
-                margin-left:0;
+
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .title {
+                margin-left: 0;
             }
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .type{
-                margin-left:0;
+
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .type {
+                margin-left: 0;
             }
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide{
+
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide {
                 overflow: hidden;
             }
+
             #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle {
-                margin-top:50px;
+                margin-top: 50px;
             }
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle{
-            background-color: rgba(77,171,247,.2);
-        }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle{
-            background-color: rgba(169,227,75,.2);
-        }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle{
-            background-color: rgba(255,169,77,.2);
-        }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle{
-            background-color: rgba(255,169,77,.2);
-        }
+
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle {
+                background-color: rgba(77, 171, 247, .2);
+            }
+
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle {
+                background-color: rgba(169, 227, 75, .2);
+            }
+
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle {
+                background-color: rgba(255, 169, 77, .2);
+            }
+
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle {
+                background-color: rgba(255, 169, 77, .2);
+            }
 
         }
 
-        
-        
+
+
 
 
         @media screen and (max-width:635px) and (min-width:100px) {
@@ -686,6 +789,11 @@
 
     <div id="background">
         <img src="img/background.jpg">
+    </div>
+    <div id="loading">
+        <p>반갑습니다!</p>
+        <p>버튼을 눌러 시작해주세요</p>
+        <button type="button" class="button">Go</button>
     </div>
     <div id="main">
         <div class="header">
@@ -826,6 +934,22 @@
             speed: 1000,
         });
         new Swiper('#main > .middle > .swiper-container');
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#loading > .button").click(function(){
+                $("#loading").css("animation-delay","1.2s");
+                $("#loading").css("animation-fill-mode","forwards");
+                $("#loading").css("animation-name","fadeOut");
+                $("#loading > p:nth-child(1)").css("animation","fadeOut .3s forwards");
+                $("#loading > p:nth-child(2)").css("animation","fadeOut .6s forwards");
+                $("#loading > .button").css("animation","fadeOut 1s forwards");
+                
+                $(".header, .middle, .bottom").css("animation","fadeIn .5s forwards");
+                $(".header, .middle, .bottom").css("animation-delay","1s");
+                
+            });
+        });
     </script>
 
 

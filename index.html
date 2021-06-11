@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    
-    
+
+
     <script src="ford-script/jquery.fadethis.min.js"></script>
     <script src="ford-script/jquery-1.11.2.min.js"></script>
 
@@ -116,6 +116,7 @@
             z-index: 5;
             position: absolute;
             overflow-y: hidden;
+            min-width:380px;
 
         }
 
@@ -136,6 +137,7 @@
             border-radius: 20px;
             z-index: 10;
             max-width: 1280px;
+            min-width:380px;
         }
 
         #main .header {
@@ -187,6 +189,7 @@
             margin-left: 50px;
             font-family: "Questrial", sans-serif;
             color: #fff;
+            transition-duration: .3s;
         }
 
         #main .header .right {
@@ -202,108 +205,147 @@
             border-radius: 40px;
         }
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
         #main .middle {
             width: 100%;
             height: 300px;
             border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(30, 30, 30, 0.1);
         }
+
         #main .middle .swiper-container {
-            width:100%;
-            height:100%;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+
+        #main .middle .swiper-container .swiper-wrapper {
+            width: 100%;
+            margin: 0 auto;
             position: relative;
         }
-        #main .middle .swiper-container .swiper-wrapper{
-            width:90%;
-            margin:0 auto;
-        }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide{
-            width:100%;
-            margin:0 auto;
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide {
+            width: 100%;
+            margin: 0 auto;
             position: relative;
             justify-content: center;
             -webkit-box-pack: center;
             -webkit-box-align: center;
             align-items: center;
-            background-color: rgba(30, 30, 30, 0.1);
+
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .type{
-            width:70px;
-            height:20px;
-            background-color:#9775fa;
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .type {
+            width: 70px;
+            height: 20px;
+            background-color: #9775fa;
             border-radius: 10px;
-            color:#000;
+            color: #000;
             text-align: center;
-            margin-top:40px;
+            margin-top: 40px;
             line-height: 2;
             font-size: 10px;
-            
-            
+            margin-left: 5%;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .title{
-            font-size:40px;
-            margin-top:3px;
-            color:#fff;
-            float:left;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .type{
+            background-color: #4dabf7;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .txt{
-            margin-top:7px;
-            float:left;
-            margin-left:10px;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .type{
+            background-color: #a9e34b;
         }
-        
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle{
-            width:250px;
-            height:250px;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .type{
+            background-color: #ffa94d;
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .type{
+            background-color: #ffa94d;
+        }
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .title {
+            font-size: 40px;
+            margin-top: 3px;
+            color: #fff;
+            float: left;
+            margin-left: 5%;
+        }
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .txt {
+            margin-top: 7px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle {
+            width: 250px;
+            height: 250px;
             border-radius: 300px;
-            background-color: rgba(151,117,250,0.6);
-            float:right;
-            margin-right:100px;
+            background-color: rgba(151, 117, 250, 0.6);
             position: absolute;
-            right:0;
-            top:25px;
+            top: 25px;
             overflow: hidden;
+            right: 5%;
+            transition:.4s;
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle img{
-            width:400px;
-            margin-top:0px;
-            margin-left:-40px;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle{
+            background-color: rgba(77,171,247,1);
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle img{
-            width:200px;
-            margin-left:25px;
-            margin-top:25px;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle{
+            background-color: rgba(169,227,75,1);
         }
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle img{
-            width:200px;
-            margin-left:25px;
-            margin-top:25px;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle{
+            background-color: rgba(255,169,77,1);
         }
-         #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(5) .img-circle img{
-            width:200px;
-            margin-left:25px;
-            margin-top:60px;
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle{
+            background-color: rgba(255,169,77,1);
         }
         
         
         
 
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .ford {
+            width: 400px;
+            margin-top: 0px;
+            margin-left: -40px;
+        }
 
-        
-        
-        
-        
-        
-        
-        
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .taxi {
+            width: 200px;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .klairs {
+            width: 200px;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .ilcorso {
+            width: 200px;
+            margin-left: 25px;
+            margin-top: 60px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -474,12 +516,48 @@
                 display: none;
             }
         }
+        
+        
+
+        @media screen and (max-width:600px) and (min-width:100px) {
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap{
+                width:90%;
+                margin:0 auto;
+                height:60px;
+                
+            }
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .title{
+                margin-left:0;
+            }
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .type{
+                margin-left:0;
+            }
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide{
+                overflow: hidden;
+            }
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle {
+                margin-top:50px;
+            }
+            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle{
+            background-color: rgba(77,171,247,.2);
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle{
+            background-color: rgba(169,227,75,.2);
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle{
+            background-color: rgba(255,169,77,.2);
+        }
+        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle{
+            background-color: rgba(255,169,77,.2);
+        }
+
+        }
+
+        
+        
 
 
-
-
-
-        @media screen and (max-width:635px) and (min-width:300px) {
+        @media screen and (max-width:635px) and (min-width:100px) {
             #main {
                 height: 940px;
             }
@@ -623,44 +701,54 @@
             </div>
         </div>
         <div class="middle">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="text-wrap">
                             <p class="type">RENEWAL</p>
                             <p class="title">Ford</p>
                             <p class="txt">I tried redesigning <br>Ford's website.</p>
-                            <div class="img-circle">
-                                <img src="img/ford-all.png" alt="ford">
-                            </div>
                         </div>
-                        <div class="swiper-slide">
-                           <p class="type">CREATE</p>
-                            <p class="title">Taxi</p>
-                            <p class="txt">I tried creating <br>taxi app's main screen.</p>
+                        <div class="circle-wrap">
                             <div class="img-circle">
-                                <img src="img/taxi.png" alt="taxi">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <p class="type">RENEWAL</p>
-                            <p class="title">Klairs</p>
-                            <p class="txt">I tried redesigning <br>Klairs's website.</p>
-                            <div class="img-circle">
-                                <img src="img/klairs.png" alt="klairs">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <p class="type">RENEWAL</p>
-                            <p class="title">Ilcorso</p>
-                            <p class="txt">I tried redesigning <br>Ilcorso's website.</p>
-                            <div class="img-circle">
-                                <img src="img/ilcorso.png" alt="ilcorso">
+                                <img src="img/ford-all.png" alt="ford" class="ford">
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="type">CREATE</p>
+                            <p class="title">Taxi</p>
+                            <p class="txt">I tried creating <br>taxi app's main screen.</p>
+                        </div>
+                        <div class="img-circle">
+                            <img src="img/taxi.png" alt="taxi" class="taxi">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="type">RENEWAL</p>
+                            <p class="title">Klairs</p>
+                            <p class="txt">I tried redesigning <br>Klairs's website.</p>
+                        </div>
+                        <div class="img-circle">
+                            <img src="img/klairs.png" alt="klairs" class="klairs">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="type">RENEWAL</p>
+                            <p class="title">Ilcorso</p>
+                            <p class="txt">I tried redesigning <br>Ilcorso's website.</p>
+                        </div>
+                        <div class="img-circle">
+                            <img src="img/ilcorso.png" alt="ilcorso" class="ilcorso">
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-     </div>
+        </div>
         <div class="bottom">
             <p class="bottom-portfolio">Portfolio</p>
             <div class="project-wrap">
@@ -734,11 +822,10 @@
             effect: 'slide',
             autoplay: 1000,
             autoplayDisableOnInteraction: true,
-            loop: true,
+            loop: false,
             speed: 1000,
         });
         new Swiper('#main > .middle > .swiper-container');
-
     </script>
 
 

@@ -112,6 +112,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             overflow: hidden;
+            overflow-x: hidden;
         }
 
         ::-webkit-scrollbar {
@@ -202,7 +203,7 @@
         #main {
             position: relative;
             width: 95%;
-            height: 95vh;
+            height: 100%;
             background-color: rgba(10, 10, 10, 0.4);
             margin: 0 auto;
             backdrop-filter: blur(20px);
@@ -213,7 +214,7 @@
             z-index: 10;
             max-width: 1280px;
             overflow-x: hidden;
-            overflow-y: scroll;
+            overflow-y: hidden;
         }
 
         .header,
@@ -405,9 +406,10 @@
 
 
         #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .ford {
-            width: 400px;
-            margin-top: 0px;
-            margin-left: -40px;
+            width: 280px;
+            margin-top: 50px;
+            margin-left: 0px;
+            position: absolute;
         }
 
         #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .taxi {
@@ -721,11 +723,26 @@
             #main .header .left .thanksto {
                 display: none;
             }
+            #main{
+                width:100%;
+                margin:0;
+                height:100%;
+                border-radius: 0;
+                overflow-x: hidden;
+            }
+            #main .middle{
+                overflow-x: hidden;
+            }
+            #main .bottom{
+                overflow-x: hidden;
+            }
+            
         }
 
 
 
         @media screen and (max-width:600px) and (min-width:100px) {
+           
             #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap {
                 width: 90%;
                 margin: 0 auto;
@@ -935,7 +952,7 @@
         <div class="header">
             <div class="left">
                 <p class="title portfolio">Portfolio</p>
-                <p class="title profile">My profile</p>
+                <p class="title profile" onclick="profile();">My profile</p>
                 <input type="text" placeholder="Thank you for coming to see my portfolio." class="thanksto">
             </div>
             <div class="right">
@@ -962,7 +979,7 @@
                         </div>
                         <div class="circle-wrap">
                             <div class="img-circle">
-                                <img src="img/ford-all.png" alt="ford" class="ford">
+                                <img src="img/ford-all2.png" alt="ford" class="ford">
                             </div>
                         </div>
                     </div>
@@ -1070,7 +1087,7 @@
                 </div>
                 <div class="skill-wrap">
 
-                    <div class="kind-of-skill">
+                    <div class="kind-of-skill" onclick="background-color: rgba(10, 10, 10, 0.4);">
                         <p>Html</p>
                     </div>
                     <div class="kind-of-skill">
@@ -1136,6 +1153,24 @@
             });
             $("#main > .middle").hover(function() {
                 $("#main > .middle > .swiper-container > .swiper-wrapper > .swiper-slide > .finger-wrap").css("animation","fadeOut .5s forwards");
+            });
+            
+            
+            
+            $("#main > .header > .left > .profile").click(function(){
+                $("#main > .header > .left > .profile").css("color","#fff");
+                $("#main > .header > .left > .profile").css("border-bottom","1px solid #fff");
+                
+                $("#main > .header > .left > .portfolio").css("color","rgba(255, 255, 255, 0.4)");
+                $("#main > .header > .left > .portfolio").css("border-bottom","none");
+            });
+            
+              $("#main > .header > .left > .portfolio").click(function(){
+                $("#main > .header > .left > .profile").css("color","rgba(255, 255, 255, 0.4)");
+                $("#main > .header > .left > .profile").css("border-bottom","none");
+                
+                $("#main > .header > .left > .portfolio").css("color","#fff");
+                $("#main > .header > .left > .portfolio").css("border-bottom","1px solid #fff");
             });
         });
     </script>

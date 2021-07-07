@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+
+/*   Apple SD Gothic Neo(폰트)   */
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff2");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.ttf");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff2");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff2");
+    font-family: "AppleSDGothicNeoM";
+}
+
+/*  //Apple SD Gothic Neo(폰트)  */
+
+body{
+    margin:0 auto;
+    padding:0;
+    width:100vw; 
+    font-family: "AppleSDGothicNeoB";
+    font-size: 14px;
+}
+a,p,li{
+    padding:0;
+    margin:0 auto;
+    text-decoration: none;
+    color:#3A4E58;
+}
+
+/* nav */
+nav{
+    position: relative;
+    float:left;
+    width:100%;
+    height:60px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+nav .nav-wrap{
+    position:relative;
+    margin: 0 auto;
+    max-width: 1600px;
+    width:80%;
+}
+nav .nav-wrap .logo{
+    position: relative;
+    float:left;
+    width:120px;
+    margin-top:20px;
+}
+nav .nav-wrap .nav-menu{
+    position: relative;
+    float:right;
+    font-size: 18px;
+}
+nav .nav-wrap .nav-menu .menu-title{
+    float:left;
+    font-family: "AppleSDGothicNeoM";
+    margin-top:18px;
+    margin-right:67px;
+    padding:0;
+}
+nav .nav-wrap .nav-menu .log-out{
+    position: relative;
+    float:right;
+    width:30px;
+    margin-top:15px;
+}
+/* //nav 종료*/
+
+

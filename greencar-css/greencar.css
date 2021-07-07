@@ -47,6 +47,24 @@
     font-family: "AppleSDGothicNeoM";
 }
 
+@keyframes slideDown{
+    from{
+        height:0;
+    }
+    to{
+        height:300px;
+    }
+}
+@keyframes slideUp{
+    from{
+        height:300px;
+    }
+    to{
+        height:0;
+    }
+}
+
+
 /*  //Apple SD Gothic Neo(폰트)  */
 
 body{
@@ -55,6 +73,7 @@ body{
     width:100vw; 
     font-family: "AppleSDGothicNeoB";
     font-size: 14px;
+    overflow-x: hidden;
 }
 a,p,li{
     padding:0;
@@ -71,6 +90,7 @@ nav{
     height:60px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
+    text-align: center;
 }
 nav .nav-wrap{
     position:relative;
@@ -87,14 +107,19 @@ nav .nav-wrap .logo{
 nav .nav-wrap .nav-menu{
     position: relative;
     float:right;
-    font-size: 18px;
 }
 nav .nav-wrap .nav-menu .menu-title{
     float:left;
-    font-family: "AppleSDGothicNeoM";
-    margin-top:18px;
+    width:100px;
+    height:60px;
     margin-right:67px;
-    padding:0;
+    font-family: "AppleSDGothicNeoM";
+    font-size: 18px;
+    line-height: 3;
+}
+nav .nav-wrap .nav-menu .menu-title:hover{
+    color:#56B37A;
+    transition:.1s;
 }
 nav .nav-wrap .nav-menu .log-out{
     position: relative;
@@ -102,6 +127,96 @@ nav .nav-wrap .nav-menu .log-out{
     width:30px;
     margin-top:15px;
 }
+
+
+
+nav .nav-second-menu{
+    position: relative;
+    width:100%;
+    height:0px;
+    margin-top:61px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+nav .nav-second-menu .nav-second-menu-wrap{
+    position: relative;
+    width:80%;
+    margin: 0 auto;
+    display: none;
+}
+nav .nav-second-menu .nav-second-menu-wrap .nav-second-title-wrap{
+    float:right;
+    width:100px;
+    margin-top:20px;
+    margin-right:67px;
+    font-family: "AppleSDGothicNeoM";
+    font-size: 18px;
+    
+}
+nav .nav-second-menu .nav-second-menu-wrap .nav-second-title-wrap:nth-child(1){
+    margin-right:97px;
+}
+nav .nav-second-menu .nav-second-menu-wrap .nav-second-title-wrap .second-title {
+    line-height: 2.3;
+}
+
+nav .nav-second-menu .nav-second-menu-wrap .nav-second-title-wrap .second-title p:hover{
+    color:#56B37A;
+    transition:.1s;
+}
 /* //nav 종료*/
+
+
+
+
+
+
+#main{
+    position: relative;
+    float:left;
+    width:100vw;
+    height:100vh;
+    background-image: url(../greencar-img/greencar-background-slogan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+#main .main-wrap{
+    position: relative;
+    margin:0 auto;
+    width: 960px;
+    height:740px;
+}
+#main .main-wrap .greencar-main{
+    position: absolute;
+    width:100%;
+    height:320px;
+    bottom:0;
+    background-color: #56B37A;
+    border-radius: 40px;
+}
+#main .main-wrap .greencar-main .main-title{
+    position: absolute;
+    top:68px;
+    left:68px;
+    color:#fff;
+    font-size: 55px;
+}
+#main .main-wrap .greencar-main .main-txt{
+    position: absolute;
+    bottom:88px;
+    left:68px;
+    font-family: "AppleSDGothicNeoM";
+    color:#fff;
+    font-size: 25px;
+}
+#main .main-wrap .greencar-main .greencar-mobile{
+    position: absolute;
+    width:276px;
+    bottom:68px;
+    right:68px;
+}
 
 

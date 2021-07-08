@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Almost</title>
+    
+    <script src="yj-script/jquery-1.11.2.min.js"></script>
+    <script src="yj-script/yj.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="yj-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="yj-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="yj-css/yj.css">
+    <link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div id="title">
+        <p>INFORMATION</p>
+    </div>
+
+    <div id="yj-img-wrap" class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper yj-img-wrap2">
+            <div class="swiper-slide">
+                <img src="yj-img/yj1.png" alt="yj1">
+                <p class="type">Type 1</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="yj-img/yj2.png" alt="yj2">
+                <p class="type">Type 2</p>
+            </div>
+            
+        </div>
+        <div class="swiper-pagination swiper-pagination-progress">
+            <span class="swiper-pagination-progressbar"></span>
+        </div>
+    </div>
+
+    <article id="text-place">
+        <div class="text-place-wrap">
+            <p class="text1">"Actually,<br> it's not a photo exhibition<br> but a portfolio."</p>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer-wrap">
+            <p class="txt1">exhibición de fotografías</p>
+            <p class="txt2">Designed by P.</p>
+            <p class="txt3">para los derechos de autor</p>
+        </div>
+    </footer>
+    <script src="yj-script/swiper.min.js"></script>
+    
+    <script>
+        
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerview:1,
+        paginationType: 'progress',
+        mousewheelControl:true
+    });
+    
+    </script>
+</body></html>

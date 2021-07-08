@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url(//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold);
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;600&display=swap');
+
+
+@font-face {font-family: "Druk Wide Bold"; src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot"); src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff") format("woff"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.svg#Druk Wide Bold") format("svg"); }
+
+
+body{
+    font-family: "Druk Wide Bold";
+    font-size:14px;
+    width:100vw;
+    height:100vh;
+    padding:0;
+    margin:0 auto;
+    background-image: url(../yj-img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#title{
+    position: absolute;
+    float:left;
+    width:100%;
+    margin:0 auto;
+    padding-top:200px;
+    padding-left:40px;
+    font-size:60px;
+    z-index: 10;
+}
+
+
+
+.swiper-container{
+    position: relative;
+    margin:0 auto;
+    width:1000px;
+    margin-top:50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.swiper-slide{
+    position: relative;
+    text-align: center;
+}
+
+#yj-img-wrap img{
+    width:100%;
+    margin:0 auto;
+    opacity: .8;
+}
+#yj-img-wrap .type{
+    position:relative;
+    margin:0 auto;
+    width:970px;
+    font-size: 30px;
+    text-align: right;
+}
+.swiper-pagination .swiper-pagination-progressbar{
+    background:#292929;
+}
+
+
+
+
+#text-place{
+    position: relative;
+    float:left;
+    width:100%;
+    margin:0 auto;
+}
+#text-place .text-place-wrap{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+}
+#text-place .text-place-wrap .text1{
+    float:left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size:25px;
+    margin-top:30px;
+    margin-left:20px;
+}
+
+
+
+footer{
+    position:fixed;
+    float:left;
+    width:100%;
+    height:30px;
+    bottom:0;
+}
+footer .footer-wrap{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+}
+footer .footer-wrap .txt1{
+    float:left;
+    width:33%;
+}
+footer .footer-wrap .txt2{
+    float:left;
+    width:33%;
+    text-align: center;
+}
+footer .footer-wrap .txt3{
+    float:right;
+    width:33%;
+    text-align: right;
+}

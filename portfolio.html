@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio</title>
+
+    <script src="portfolio-script/jquery-1.11.2.min.js"></script>
+    <script src="portfolio-script/portfolio.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="portfolio-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="portfolio-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="portfolio-css/portfolio.css">
+
+    <link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <script src="portfolio-script/portfolio.js"></script>
+    
+    <nav>
+        <div class="nav-wrap">
+            <a href="#"><p class="logo">PFOLIO .</p></a>
+        </div>
+    </nav>
+    <div class="main-box">
+        <div class="main-wrap">
+            <div class="txt-box info">
+                <div class="info-wrap">
+                    <p>안녕하세요! 포트폴리오를 제작자 박필주입니다. </p>
+                    <p>본 페이지는 저를 알리는 첫 페이지입니다.</p>
+                    <p>해당 포트폴리오는 모바일로도 확인 가능합니다.</p>
+                    
+                </div>
+                <img src="portfolio-img/face2.png" alt="face">
+            </div>
+            
+            <div class="txt-box mode">
+                <div class="button-wrap">
+                    <div class="button">
+                        <div class="dark-btn"></div>
+                        <div class="light-btn"></div>
+                    </div>
+                    <p class="dark mode-txt"> DARK MODE</p>
+                    <p class="light mode-txt"> LIGHT MODE</p>
+                </div>
+            </div>
+            
+            <div class="txt-box contact"></div>
+            
+            <div class="txt-box github">
+                <img src="portfolio-img/github.png" alt="github">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="portfolio-script/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerview: 1,
+            paginationType: 'progress',
+            mousewheelControl: true,
+            loop: false,
+            direction: 'vertical',
+            /*effect:'fade',*/
+        });
+    </script>
+    <script>
+        
+    </script>
+</body></html>

@@ -1,0 +1,270 @@
+@charset "utf-8";
+@import url(//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold);
+
+@font-face {
+    font-family: "Druk Wide Bold";
+    src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot");
+    src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff") format("woff"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.svg#Druk Wide Bold") format("svg");
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff2");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.ttf");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoT.woff2");
+    font-family: "AppleSDGothicNeoT";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff2");
+    font-family: "AppleSDGothicNeoM";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Druk Wide Bold";
+    color: #292929;
+    overflow: hidden;
+    transition-duration: .3s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #ebf9ff;
+}
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+nav{
+    position: relative;
+    float:left;
+    width:100%;
+    height:60px;
+    margin: 0 auto;
+    padding:0;
+    
+}
+nav .nav-wrap{
+    position: relative;
+    width:1280px;
+    height:auto;
+    margin:0 auto;
+    padding:0;
+}
+nav .logo{
+    font-size: 25px;
+    color:#0073a3;
+    margin-top:30px;
+    text-align: center;
+}
+
+
+
+
+
+.main-box{
+    position: relative;
+    float:left;
+    width:100%;
+    height:auto;
+    margin-top:50px;
+    padding:0;
+}
+.main-box .main-wrap{
+    position: relative;
+    width:1280px;
+    height:auto;
+    margin: 0 auto;
+    padding:0;
+}
+.main-box .main-wrap .txt-box{
+    position: relative;
+    margin:15px;
+    background-color: #fff;
+    border-radius: 40px;
+}
+.main-box .main-wrap .info{
+    float:left;
+    width:870px;
+    height:300px;
+    text-align: center;
+}
+.main-box .main-wrap .info .info-wrap{
+    position: relative;
+    width:800px;
+    height:auto;
+    margin:0 auto;
+    font-family: "AppleSDGothicNeoM";
+    font-size:18px;
+    text-align: center;
+    margin-top:55px;
+    line-height: 2;
+}
+.main-box .main-wrap .info img{
+    position: absolute;
+    width:70px;
+    bottom:20px;
+    right:20px;
+}
+.main-box .main-wrap .info .info-wrap p:nth-child(1){
+    font-family: "AppleSDGothicNeoB";
+    font-size: 40px;
+}
+
+
+
+
+.main-box .main-wrap .mode{
+    float:right;
+    width:345px;
+    height:135px;
+    background-color: #abe9fc;
+    z-index: 5;
+}
+.main-box .main-wrap .mode .button-wrap{
+    position: relative;
+    width:150px;
+    height:50px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+    background-color: #fff;
+    transition-duration: .6s;
+    z-index: 5;
+}
+.main-box .main-wrap .mode .button-wrap .button{
+    position: absolute;
+    width:40px;
+    height:40px;
+    background-color: #292929;
+    border-radius: 40px;
+    left:5px;
+    top:5px;
+    z-index: 10;
+    cursor:pointer;
+}
+.main-box .main-wrap .mode .button-wrap .dark-btn{
+    position: absolute;
+    width:40px;
+    height:40px;
+    background-color: #292929;
+    border-radius: 40px;
+    left:0px;
+    top:0px;
+    cursor:pointer;
+    z-index: 11;
+}
+.main-box .main-wrap .mode .button-wrap .light-btn{
+    position: absolute;
+    width:40px;
+    height:40px;
+    background-color: #fafafa;
+    border-radius: 40px;
+    left:0px;
+    top:0px;
+    transition-delay: .8s;
+    z-index: -1;
+}
+@keyframes darkMode{
+    from{
+        left:5px;
+        background-color: #292929;
+    }
+    to{
+        left:105px;
+        background-color: #fafafa;
+    }
+}
+
+@keyframes lightMode{
+    from{
+        left:105px;
+        background-color: #fafafa;
+    }
+    to{
+        left:5px;
+        background-color: #292929;
+    }
+}
+.main-box .main-wrap .mode .button-wrap .mode-txt{
+    position: absolute;
+    font-size:10px; 
+    right:9px;
+    top:17px;
+    transition-duration: .3s;
+}
+.main-box .main-wrap .mode .button-wrap .dark{
+    opacity: 1;
+}
+.main-box .main-wrap .mode .button-wrap .light{
+    left:9px;
+    top:17px;
+    opacity: 0;
+}
+
+
+
+
+.main-box .main-wrap .contact{
+    float:right;
+    width:345px;
+    height:135px;
+    margin-top:20px;
+}
+
+
+
+.main-box .main-wrap .github{
+    position: relative;
+    float:left;
+    width:300px;
+    height:300px;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.main-box .main-wrap .github img{
+    position: absolute;
+    width:40%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}

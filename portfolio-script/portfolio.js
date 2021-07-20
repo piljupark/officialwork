@@ -23,6 +23,8 @@ $(document).ready(function () {
 
         $(".dark").css("opacity", "0");
         $(".light").css("opacity", "1");
+        $(".button-wrap").css("background-color", "#ccc");
+        
     });
 
 
@@ -56,6 +58,7 @@ $(document).ready(function () {
 
         $(".dark").css("opacity", "1");
         $(".light").css("opacity", "0");
+        $(".button-wrap").css("background-color", "#fff");
 
         $(".ford").css("background-color", "#b9d7ff");
 
@@ -82,7 +85,7 @@ $(document).ready(function () {
 
     /* email button */
     $(".ford").mouseenter(function () {
-        $(".intro-ford").css("top", "75%");
+        $(".intro-ford").css("top", "0");
     });
     $(".txt-box").mouseleave(function () {
         $(".intro-ford").css("top", "150%");

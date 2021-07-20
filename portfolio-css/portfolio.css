@@ -52,6 +52,21 @@
     font-family: "AppleSDGothicNeoM";
 }
 
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.ttf");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff2");
+    font-family: "AppleSDGothicNeoUL";
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -212,6 +227,7 @@ nav .logo {
     transition-duration: .3s;
     overflow: hidden;
     z-index: 10;
+    box-shadow: 1px 10px 30px 1px rgba(0, 0, 0, 0.07);
 }
 
 .btn .txt {
@@ -260,7 +276,7 @@ nav .logo {
     background-color: #fffcd8;
 }
 
-.taxi img {
+.taxi .taxi-main {
     position: absolute;
     width: 150px;
     top: 50%;
@@ -271,7 +287,7 @@ nav .logo {
 }
 
 .taxi .intro .intro-txt-box p:nth-child(2) {
-    width: 9%;
+    width: 40px;
     background-color: #fffcd8;
 }
 
@@ -293,7 +309,6 @@ nav .logo {
     float: left;
     width: 46%;
     height: 135px;
-    z-index: 5;
     margin-bottom: 35px;
 }
 
@@ -389,10 +404,12 @@ nav .logo {
     top: 17px;
     opacity: 0;
 }
-.mode-pc{
+
+.mode-pc {
     display: block;
 }
-.mode-mobile{
+
+.mode-mobile {
     display: none;
 }
 
@@ -464,21 +481,20 @@ nav .logo {
 .intro {
     position: absolute;
     width: 100%;
-    height: 240px;
-    background-color: #fff;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
     border-radius: 40px;
-    top: 140%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition-duration: .3s;
+    
 }
 
 .intro-txt-box {
-    position: absolute;
+    position: relative;
     width: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin:0 auto;
     text-align: center;
 }
 
@@ -486,18 +502,34 @@ nav .logo {
     float: left;
     text-align: left;
     font-size: 30px;
+    color:#fff;
 }
 
 .intro-txt-box p:nth-child(2) {
     float: left;
     text-align: left;
-    width: 16%;
+    width: 76px;
     padding: 5px 7px;
     margin-top: 7px;
     margin-left: 10px;
     font-size: 12px;
     background-color: #b9d7ff;
     border-radius: 20px;
+}
+
+.intro-txt-box .arrow {
+    float: right;
+    width: 20px;
+    margin-top: 9px;
+}
+
+.intro-txt-box p:nth-child(n+4):nth-child(-n+6) {
+    font-family: "AppleSDGothicNeoUL";
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    color:#fff;
 }
 
 /* //ford */
@@ -523,6 +555,7 @@ nav .logo {
     }
 
 }
+
 /* //tablet */
 
 
@@ -597,5 +630,12 @@ nav .logo {
         right: 10px;
     }
 
+    .intro-txt-box {
+        width: 80%;
+        padding-top: 20px;
+
+    }
+
 }
+
 /* //mobile */

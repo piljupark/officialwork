@@ -97,9 +97,13 @@ $(document).ready(function () {
     /* //email button */
 
 
+
+
+
+    /* mobile */
     if (document.body.clientWidth < 531) {
-        
-        
+
+
         /* github button */
         $(".github").mouseenter(function () {
             $(".git-btn").css("top", "77%");
@@ -108,17 +112,16 @@ $(document).ready(function () {
             $(".git-btn").css("top", "125%");
         });
         /* //github button */
-        
-        
+
+
         /* email button */
-    $(".email").mouseenter(function () {
-        $(".email-btn").css("top", "77%");
-    });
-    $(".txt-box").mouseleave(function () {
-        $(".email-btn").css("top", "125%");
-    });
-    /* //email button */
-        
+        $(".email").mouseenter(function () {
+            $(".email-btn").css("top", "77%");
+        });
+        $(".txt-box").mouseleave(function () {
+            $(".email-btn").css("top", "125%");
+        });
+        /* //email button */
 
     }
 

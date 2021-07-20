@@ -216,9 +216,9 @@ nav .logo {
 
 .btn .txt {
     float: left;
-    line-height: 3.5;
     padding-left: 20px;
     font-size: 14px;
+    margin-top: 15px;
 }
 
 .btn .arrow {
@@ -240,7 +240,7 @@ nav .logo {
     background-color: #ffe5b9;
 }
 
-.email .email-img{
+.email .email-img {
     position: absolute;
     z-index: 3;
     width: 70px;
@@ -269,8 +269,9 @@ nav .logo {
     border-radius: 20px;
     box-shadow: 4px 10px 30px 1px rgba(0, 0, 0, 0.1);
 }
-.taxi .intro .intro-txt-box p:nth-child(2){
-    width:9%;
+
+.taxi .intro .intro-txt-box p:nth-child(2) {
+    width: 9%;
     background-color: #fffcd8;
 }
 
@@ -298,7 +299,7 @@ nav .logo {
 
 .mode .button-wrap {
     position: relative;
-    width: 150px;
+    width: 100px;
     height: 50px;
     left: 50%;
     top: 50%;
@@ -343,7 +344,7 @@ nav .logo {
     border-radius: 40px;
     left: 0px;
     top: 0px;
-    transition-delay: .8s;
+    transition-duration: .8s;
     z-index: -1;
 }
 
@@ -354,14 +355,14 @@ nav .logo {
     }
 
     to {
-        left: 105px;
+        left: 55px;
         background-color: #fafafa;
     }
 }
 
 @keyframes lightMode {
     from {
-        left: 105px;
+        left: 55px;
         background-color: #fafafa;
     }
 
@@ -387,6 +388,12 @@ nav .logo {
     left: 9px;
     top: 17px;
     opacity: 0;
+}
+.mode-pc{
+    display: block;
+}
+.mode-mobile{
+    display: none;
 }
 
 /* //mode */
@@ -453,101 +460,142 @@ nav .logo {
     box-shadow: 4px 10px 30px 1px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
-.intro{
+
+.intro {
     position: absolute;
-    width:100%;
-    height:240px;
+    width: 100%;
+    height: 240px;
     background-color: #fff;
     border-radius: 40px;
-    top:75%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition-duration: .3s;
 }
-.intro-txt-box{
+
+.intro-txt-box {
     position: absolute;
-    width:90%;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-.intro-txt-box p:nth-child(1){
-    float:left;
+
+.intro-txt-box p:nth-child(1) {
+    float: left;
     text-align: left;
     font-size: 30px;
 }
-.intro-txt-box p:nth-child(2){
-    float:left;
+
+.intro-txt-box p:nth-child(2) {
+    float: left;
     text-align: left;
-    width:16%;
-    padding:5px 7px;
-    margin-top:7px;
-    margin-left:10px;
+    width: 16%;
+    padding: 5px 7px;
+    margin-top: 7px;
+    margin-left: 10px;
     font-size: 12px;
     background-color: #b9d7ff;
     border-radius: 20px;
 }
+
 /* //ford */
-
-
 
 /* //right */
 
 
 
+
+
+
+
 /* tablet */
 @media screen and (max-width:1150px) and (min-width:531px) {
-    
-    .main-box .main-wrap{
-        width:530px;
+
+    .main-box .main-wrap {
+        width: 530px;
     }
-    
-    .left, .right{
-        width:100%;
+
+    .left,
+    .right {
+        width: 100%;
     }
 
 }
+/* //tablet */
 
+
+
+
+/* mobile */
 @media screen and (max-width:530px) and (min-width:300px) {
-    
-    .main-box .main-wrap{
-        width:350px;
+
+    .main-box .main-wrap {
+        width: 350px;
     }
-    
-    .left, .right{
-        width:100%;
+
+    .left,
+    .right {
+        width: 100%;
     }
-    .info img{
-        width:90px;
+
+    .info img {
+        width: 90px;
     }
-    .info .info-wrap{
-        margin-top:30px;
+
+    .info .info-wrap {
+        margin-top: 30px;
     }
-    .info .info-wrap p{
+
+    .info .info-wrap p {
         font-size: 14px;
     }
-    .info .info-wrap p:nth-child(1){
+
+    .info .info-wrap p:nth-child(1) {
         font-size: 26px;
     }
-    
-    
-    .github, .email{
-        width:44.5%;
-        height:150px;
+
+
+    .github,
+    .email {
+        width: 44.5%;
+        height: 150px;
     }
-    
-    .ford{
-        height:350px;
+
+    .btn {
+        border-radius: 30px;
     }
-    .ford img:nth-child(1){
-        width:200px;
-        top:80px;
+
+    .btn .txt {
+        font-size: 10px;
+        width: 70px;
+        margin-top: 12px;
     }
-    
-    .ford img:nth-child(2){
-        width:140px;
-        right:10px;
+
+    .git-btn .txt {
+        margin-top: 18px;
+    }
+
+
+
+
+
+
+
+    .ford {
+        height: 350px;
+    }
+
+    .ford img:nth-child(1) {
+        width: 200px;
+        top: 80px;
+    }
+
+    .ford img:nth-child(2) {
+        width: 140px;
+        right: 10px;
     }
 
 }
+/* //mobile */

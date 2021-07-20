@@ -92,7 +92,7 @@ $(document).ready(function () {
     });
 
     $(".taxi").mouseenter(function () {
-        $(".intro-taxi").css("top", "75%");
+        $(".intro-taxi").css("top", "0");
     });
     $(".txt-box").mouseleave(function () {
         $(".intro-taxi").css("top", "150%");

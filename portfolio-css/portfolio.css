@@ -286,7 +286,7 @@ nav .logo {
     box-shadow: 4px 10px 30px 1px rgba(0, 0, 0, 0.1);
 }
 
-.taxi .intro .intro-txt-box p:nth-child(2) {
+.taxi .intro .intro-txt-box .kind {
     width: 40px;
     background-color: #fffcd8;
 }
@@ -482,13 +482,14 @@ nav .logo {
     position: absolute;
     width: 100%;
     height: 100vh;
+    padding-top:20px;
+    top:150%;
     background-color: rgba(10, 10, 10, 0.2);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     -moz-backdrop-filter: blur(20px);
     border-radius: 40px;
-    transition-duration: .3s;
-    
+    transition-duration: .6s;
 }
 
 .intro-txt-box {
@@ -497,15 +498,19 @@ nav .logo {
     margin:0 auto;
     text-align: center;
 }
-
-.intro-txt-box p:nth-child(1) {
+.intro-txt-box-top{
+    float: left;
+    width:100%;
+    margin-bottom:30px;
+}
+.intro-txt-box .title {
     float: left;
     text-align: left;
     font-size: 30px;
     color:#fff;
 }
 
-.intro-txt-box p:nth-child(2) {
+.intro-txt-box .kind {
     float: left;
     text-align: left;
     width: 76px;
@@ -522,14 +527,34 @@ nav .logo {
     width: 20px;
     margin-top: 9px;
 }
-
-.intro-txt-box p:nth-child(n+4):nth-child(-n+6) {
+.intro-txt-box-wrap {
+    float:left;
+    width:47%;
+}
+.intro-txt-box-wrap p{
     font-family: "AppleSDGothicNeoUL";
-    float: left;
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
     color:#fff;
+}
+.intro-txt-box-wrap .point{
+    width:100px;
+    margin:0 auto;
+    margin-top
+     margin-bottom:30px;
+    font-family: "Druk Wide Bold";
+    font-size: 18px;
+}
+.able{
+    position: relative;
+    float:right;
+    width:47%;
+    color:#fff;
+}
+.able-wrap p{
+
+    margin:20px;
 }
 
 /* //ford */

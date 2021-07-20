@@ -10,8 +10,10 @@ $(document).ready(function () {
 
         $(".main-box > .main-wrap > .left > .info > .info-wrap > p").css("color", "#fafafa");
 
-
-
+        $(".github .github-logo:nth-child(1)").css("opacity","0");
+        $(".github .github-logo:nth-child(2)").css("opacity","1");
+        
+        
 
 
         $(".dark-btn").css("z-index", "-1");
@@ -38,10 +40,11 @@ $(document).ready(function () {
         $(".txt-box").css("background-color", "#fff");
         $(".txt-box").css("border", "none");
 
-        $(".github").css("background-color", "#fef2ff");
         $(".main-box > .main-wrap > .left > .info > .info-wrap > p").css("color", "#292929");
 
-        $(".github").css("background-color", "#fef2ff");
+        $(".github .github-logo:nth-child(1)").css("opacity","1");
+        $(".github .github-logo:nth-child(2)").css("opacity","0");
+        $(".github").css("background-color","#ddb4ff");
 
         $(".taxi").css("background-color", "#fffcd8");
 
@@ -50,6 +53,8 @@ $(document).ready(function () {
 
         $(".light-btn").css("z-index", "-1");
         $(".dark-btn").css("z-index", "11");
+        
+        
 
 
         $(".main-box > .main-wrap > .right > .mode > .button-wrap > .button").css("animation-name", "lightMode");
@@ -67,23 +72,23 @@ $(document).ready(function () {
 
     /* github button */
     $(".github").mouseenter(function () {
-        $(".git-btn").css("top", "85%");
+        $(".git-btn").css("bottom", "10px");
     });
     $(".txt-box").mouseleave(function () {
-        $(".git-btn").css("top", "125%");
+        $(".git-btn").css("bottom", "-100px");
     });
     /* //github button */
 
     /* email button */
     $(".email").mouseenter(function () {
-        $(".email-btn").css("top", "85%");
+        $(".email-btn").css("bottom", "10px");
     });
     $(".txt-box").mouseleave(function () {
-        $(".email-btn").css("top", "125%");
+        $(".email-btn").css("bottom", "-100px");
     });
     /* //email button */
 
-    /* email button */
+    /*  */
     $(".ford").mouseenter(function () {
         $(".intro-ford").css("top", "0");
     });
@@ -107,24 +112,6 @@ $(document).ready(function () {
     if (document.body.clientWidth < 531) {
 
 
-        /* github button */
-        $(".github").mouseenter(function () {
-            $(".git-btn").css("top", "77%");
-        });
-        $(".txt-box").mouseleave(function () {
-            $(".git-btn").css("top", "125%");
-        });
-        /* //github button */
-
-
-        /* email button */
-        $(".email").mouseenter(function () {
-            $(".email-btn").css("top", "77%");
-        });
-        $(".txt-box").mouseleave(function () {
-            $(".email-btn").css("top", "125%");
-        });
-        /* //email button */
 
     }
 

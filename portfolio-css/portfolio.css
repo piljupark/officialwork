@@ -202,26 +202,31 @@ nav .logo {
     width: 47%;
     height: 250px;
     margin-bottom: 35px;
-    background-color: #fef2ff;
     transition-duration: .4s;
     cursor: pointer;
+    text-align: center;
+    background-color: #ddb4ff;
 }
 
 .github .github-logo {
     position: absolute;
-    width: 40%;
+    width: 70px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.github .github-logo:nth-child(2){
+    opacity: 0;
 }
 
 .btn {
     position: absolute;
     width: 90%;
     height: 50px;
-    top: 125%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin:0 auto;
+    left:12px;
+    bottom:-100px;
     border-radius: 40px;
     background: #fff;
     transition-duration: .3s;
@@ -538,10 +543,9 @@ nav .logo {
     margin-top: 10px;
     color:#fff;
 }
-.intro-txt-box-wrap .point{
-    width:100px;
+.intro-txt-box-wrap .explain{
+    width:100%;
     margin:0 auto;
-    margin-top
      margin-bottom:30px;
     font-family: "Druk Wide Bold";
     font-size: 18px;
@@ -623,6 +627,7 @@ nav .logo {
 
     .btn {
         border-radius: 30px;
+        left:8px;
     }
 
     .btn .txt {

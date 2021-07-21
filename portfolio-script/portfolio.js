@@ -13,7 +13,9 @@ $(document).ready(function () {
 
         $(".github .github-logo:nth-child(1)").css("opacity", "0");
         $(".github .github-logo:nth-child(2)").css("opacity", "1");
-
+        
+        $(".tool img").css("opacity","0");
+        
 
 
 
@@ -27,6 +29,8 @@ $(document).ready(function () {
         $(".dark").css("opacity", "0");
         $(".light").css("opacity", "1");
         $(".button-wrap").css("background-color", "#ccc");
+        
+        $(".skill img").css("opacity","0");
         
         $(".call-img:nth-child(1)").css("opacity","0");
         $(".call-img:nth-child(2)").css("opacity","1");
@@ -58,6 +62,7 @@ $(document).ready(function () {
         $(".light-btn").css("z-index", "-1");
         $(".dark-btn").css("z-index", "11");
 
+        $(".tool img").css("opacity","1");
 
 
 
@@ -68,6 +73,8 @@ $(document).ready(function () {
         $(".dark").css("opacity", "1");
         $(".light").css("opacity", "0");
         $(".button-wrap").css("background-color", "#fff");
+        
+        $(".skill img").css("opacity","1");
 
         $(".ford").css("background-color", "#a5d8ff");
         

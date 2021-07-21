@@ -103,12 +103,18 @@ nav .nav-wrap {
     height: auto;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
 }
 
 nav .logo {
     font-size: 25px;
     color: #0073a3;
     margin-top: 30px;
+    text-align: center;
+}
+nav .logo-img{
+    width:70px;
+    margin:0 auto;
     text-align: center;
 }
 
@@ -232,7 +238,8 @@ nav .logo {
     transition-duration: .4s;
     cursor: pointer;
     text-align: center;
-    background-color: #ddb4ff;
+    /*background-color: #ddb4ff;*/
+    background-color: #f3d9fa;
 }
 
 .github .github-logo {
@@ -285,7 +292,8 @@ nav .logo {
     width: 46%;
     height: 250px;
     overflow: hidden;
-    background-color: #ffe5b9;
+    /*background-color: #ffe5b9;*/
+    background-color: #ffe3e3;
 }
 
 .email .email-img {
@@ -305,7 +313,8 @@ nav .logo {
     width: 100%;
     height: 300px;
     overflow: hidden;
-    background-color: #fffcd8;
+    /*background-color: #fffcd8;*/
+    background-color: #fff3bf;
     margin-bottom: 35px;
 }
 
@@ -343,11 +352,15 @@ nav .logo {
 
 .tool .tool-wrap p {
     float: left;
-    background-color: #eee;
+    background-color: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
     padding: 5px 10px;
     border-radius: 40px;
     margin: 4px;
     font-size: 20px;
+    color:#fff;
 }
 /* //tool */
 
@@ -528,7 +541,8 @@ nav .logo {
     height: 415px;
     margin-bottom: 35px;
     overflow: hidden;
-    background-color: #b9d7ff;
+    /*background-color: #b9d7ff;*/
+    background-color: #a5d8ff;
 }
 
 .ford .ford-pc {
@@ -629,6 +643,7 @@ nav .logo {
     width:100%;
     height:300px;
     margin-bottom:35px;
+    background-color: #ffe8cc;
 }
 
 /* //klairs */
@@ -640,7 +655,8 @@ nav .logo {
     float:left;
     width:46%;
     height:250px;
-    background-color: #8ce99a;
+    /*background-color: #8ce99a;*/
+    background-color: #d3f9d8;
     text-align: center;
 }
 .call .call-img{

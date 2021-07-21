@@ -48,11 +48,11 @@ $(document).ready(function () {
 
         $(".github .github-logo:nth-child(1)").css("opacity", "1");
         $(".github .github-logo:nth-child(2)").css("opacity", "0");
-        $(".github").css("background-color", "#ddb4ff");
+        $(".github").css("background-color", "#f3d9fa");
 
-        $(".taxi").css("background-color", "#fffcd8");
+        $(".taxi").css("background-color", "#fff3bf");
 
-        $(".email").css("background-color", "#ffe5b9");
+        $(".email").css("background-color", "#ffe3e3");
 
 
         $(".light-btn").css("z-index", "-1");
@@ -69,9 +69,11 @@ $(document).ready(function () {
         $(".light").css("opacity", "0");
         $(".button-wrap").css("background-color", "#fff");
 
-        $(".ford").css("background-color", "#b9d7ff");
+        $(".ford").css("background-color", "#a5d8ff");
         
-        $(".call").css("background-color", "#8ce99a");
+        $(".klairs").css("background-color", "#ffe8cc");
+        
+        $(".call").css("background-color", "#d3f9d8");
         $(".call-img:nth-child(1)").css("opacity","1");
         $(".call-img:nth-child(2)").css("opacity","0");
 

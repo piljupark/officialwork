@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $(".main-box > .main-wrap > .right > .mode > .button-wrap > .button > .dark-btn").click(function () {
 
         $("body").css("background-color", "#292929");
@@ -10,10 +11,10 @@ $(document).ready(function () {
 
         $(".main-box > .main-wrap > .left > .info > .info-wrap > p").css("color", "#fafafa");
 
-        $(".github .github-logo:nth-child(1)").css("opacity","0");
-        $(".github .github-logo:nth-child(2)").css("opacity","1");
-        
-        
+        $(".github .github-logo:nth-child(1)").css("opacity", "0");
+        $(".github .github-logo:nth-child(2)").css("opacity", "1");
+
+
 
 
         $(".dark-btn").css("z-index", "-1");
@@ -27,6 +28,9 @@ $(document).ready(function () {
         $(".light").css("opacity", "1");
         $(".button-wrap").css("background-color", "#ccc");
         
+        $(".call-img:nth-child(1)").css("opacity","0");
+        $(".call-img:nth-child(2)").css("opacity","1");
+
     });
 
 
@@ -42,9 +46,9 @@ $(document).ready(function () {
 
         $(".main-box > .main-wrap > .left > .info > .info-wrap > p").css("color", "#292929");
 
-        $(".github .github-logo:nth-child(1)").css("opacity","1");
-        $(".github .github-logo:nth-child(2)").css("opacity","0");
-        $(".github").css("background-color","#ddb4ff");
+        $(".github .github-logo:nth-child(1)").css("opacity", "1");
+        $(".github .github-logo:nth-child(2)").css("opacity", "0");
+        $(".github").css("background-color", "#ddb4ff");
 
         $(".taxi").css("background-color", "#fffcd8");
 
@@ -53,8 +57,8 @@ $(document).ready(function () {
 
         $(".light-btn").css("z-index", "-1");
         $(".dark-btn").css("z-index", "11");
-        
-        
+
+
 
 
         $(".main-box > .main-wrap > .right > .mode > .button-wrap > .button").css("animation-name", "lightMode");
@@ -66,6 +70,10 @@ $(document).ready(function () {
         $(".button-wrap").css("background-color", "#fff");
 
         $(".ford").css("background-color", "#b9d7ff");
+        
+        $(".call").css("background-color", "#8ce99a");
+        $(".call-img:nth-child(1)").css("opacity","1");
+        $(".call-img:nth-child(2)").css("opacity","0");
 
     });
 
@@ -87,32 +95,54 @@ $(document).ready(function () {
         $(".email-btn").css("bottom", "-100px");
     });
     /* //email button */
+    
+    /* call button */
+    $(".call").mouseenter(function () {
+        $(".call-btn").css("bottom", "10px");
+    });
+    $(".txt-box").mouseleave(function () {
+        $(".call-btn").css("bottom", "-100px");
+    });
+    
+    $(".call").click(function () {
+        $(".call").css("animation", "shake 1s");
+        $(".call").css("-webkit-animation", "shake 1s");
+    });
+    /* //call button */
 
-    /*  */
+    
+    /* ford slideup */
     $(".ford").mouseenter(function () {
-        $(".intro-ford").css("top", "0");
-    });
-    $(".txt-box").mouseleave(function () {
-        $(".intro-ford").css("top", "150%");
-    });
+        $(".intro-ford").css("height", "165px");
+        $(".intro-txt-box-wrap-ford").css("opacity", "1");
+        $(".intro-txt-box-wrap-ford").css("transition-duration", ".5s");
 
+    });
+    $(".ford").mouseleave(function () {
+        $(".intro-ford").css("height", "50px");
+        $(".intro-txt-box-wrap-ford").css("opacity", "0");
+        $(".intro-txt-box-wrap-ford").css("transition-duration", ".1s");
+    });
+    /* //ford slideup */
+    
+    
+    /* taxi slideup */
     $(".taxi").mouseenter(function () {
-        $(".intro-taxi").css("top", "0");
+        $(".intro-taxi").css("height", "165px");
+        $(".intro-txt-box-wrap-taxi").css("opacity", "1");
+        $(".intro-txt-box-wrap-taxi").css("transition-duration", ".5s");
+
     });
-    $(".txt-box").mouseleave(function () {
-        $(".intro-taxi").css("top", "150%");
+    $(".taxi").mouseleave(function () {
+        $(".intro-taxi").css("height", "50px");
+        $(".intro-txt-box-wrap-taxi").css("opacity", "0");
+        $(".intro-txt-box-wrap-taxi").css("transition-duration", ".1s");
     });
-    /* //email button */
-
-
-
+    /* //taxi slideup */
 
 
     /* mobile */
-    if (document.body.clientWidth < 531) {
 
 
-
-    }
 
 });

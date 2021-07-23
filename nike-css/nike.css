@@ -97,6 +97,7 @@ nav {
     border-bottom: 1px solid #eee;
     z-index: 10;
     text-align: center;
+    background: #fff;
 }
 
 .nav-wrap {
@@ -216,6 +217,7 @@ nav {
     float:left;
     width:100%;
     margin-top:100px;
+    
 }
 .main-wrap {
     position: relative;
@@ -223,43 +225,41 @@ nav {
     margin:0 auto;
     max-width: 1280px;
 }
-.left{
+.text-place{
     position: relative;
     float:left;
-    width:100%;
+    width:28%;
 }
-.left .title-box{
+.text-place .title-box{
     position: relative;
     float: left;
-    width:30%;
-    height:80px;
+    width:25%;
+    margin-bottom:30px;
+    text-align: center;
 }
-.left .title{
+.text-place .title{
     float:left;
     width:100%;
     font-size: 35px;
     text-align: left;
     font-family: "AppleSDGothicNeoB";
-    text-align: left;
 }
-.left .txt-box{
+.text-place .txt-box{
     position: relative;
     float:left;
-    width:70%;
-    text-align: right;
+    width:60%;
 }
-.left .txt{
+.text-place .txt{
     float:left;
     width:100%;
     margin:2px 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.left .btn{
-    position: absolute;
-    bottom:0;
+.text-place .btn{
+    position: relative;
+    float:right;
     padding:7px 15px;
-    margin-top:20px;
     background:none;
     border:1px solid #292929;
     border-radius: 40px;
@@ -267,19 +267,69 @@ nav {
     transition-duration: .2s;
     cursor: pointer;
 }
-.left .buy-btn{
-    left:0;
+.text-place .buy-btn{
     background: #292929;
     color:#fff;
 }
-.left .detail-btn{
-    left:90px;
+.text-place .detail-btn{
+    margin-left:10px;
 }
-.right{
+.video-place{
     position: relative;
-    float:right;
-    width:100%;
+    float:left;
+    width:70%;
     text-align: right;
 }
 
+
+
+/* main1 */
+.main1-top{
+    width:100%;
+    border-radius: 40px;
+}
+.main1-bottom{
+    width:100%;
+    margin-top:40px;
+}
+.main1-bottom .title-box .title{
+    text-align: center;
+}
+.main1-bottom .txt-box{
+    margin-top:10px;
+    text-align: center;
+}
+.main1-bottom .btn{
+    margin-top:30px;
+}
+.main1-bottom .btn:hover{
+    background: #292929;
+    color:#fff;
+}
+/* //main1 */
+
+
+
+
+/* main2 */
+.main2{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.main2 img{
+    float:left;
+    width:100%;
+}
+.main2 .txt-box{
+    width:80%;
+    text-align: left;
+}
+.main2 .btn{
+    width:110px;
+    margin-top:10px;
+    float:right;
+}
 /* //main */

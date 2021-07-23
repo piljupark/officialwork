@@ -71,14 +71,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    font-family:"AppleSDGothicNeoUL";
+    font-family: "AppleSDGothicNeoUL";
     font-size: 14px;
+    
+    overflow-x: hidden;
 }
 
 a,
 p,
 li {
+    color: #292929;
     text-decoration: none;
 }
 
@@ -86,67 +88,198 @@ li {
 
 
 /* nav */
-nav{
-    position: relative;
-    float:left;
-    width:100%;
-    height:40px;
+nav {
+    position: fixed;
+    float: left;
+    width: 100%;
+    height: 40px;
+    top: 0;
     border-bottom: 1px solid #eee;
+    z-index: 10;
+    text-align: center;
 }
+
 .nav-wrap {
     position: relative;
-    width:90%;
-    margin:0 auto;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
 }
-.nike-logo{
-    float:left;
-    margin-top:7px;
-}
-.menu{
+
+
+
+.nav-left {
     position: relative;
-    float:left;
+    float: left;
+    width: 100px;
 }
-.sub-menu1 li{
-    float:left;
-    font-size: 20px;
+
+.nike-logo {
+    float: left;
+    margin-top: 7px;
+    z-index: 2;
+}
+
+
+.menu-wrap{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+
+.menu {
+    position:relative;
+    width: 400px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.sub-menu1 li {
+    float: left;
+    font-size: 18px;
     font-family: "AppleSDGothicNeoM";
-    margin:0 15px;
-    margin-top: 2.5px;
-    padding:3px 12px 6px 12px;
+    margin: 0 15px;
+    margin-top: 2.7px;
+    padding: 3px 12px 6px 12px;
     border-radius: 40px;
     transition-duration: .2s;
     cursor: pointer;
 }
-.sub-menu1 li:hover{
+
+.sub-menu1 li:hover {
     background-color: #292929;
-    color:#fff;
+    color: #fff;
 }
 
+.sub-menu1 .search {
+    width: 18px;
+    margin-top:4px;
+}
 
-.right-button{
-    position: relative;
-    float:right;
+.sub-menu1 li:nth-child(1):hover {
+    background: none;
 }
-.right-button .button-wrap{
-    position: relative;
-    float:right;
-    width:34px;
-    height:34px;
-    margin:3px 10px;
-    border-radius: 40px;
-    background-color: #999;
-}
-.right-button img{
+
+.right-button {
     position: absolute;
-    width:20px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    float: right;
+    width: 220px;
+    right:0;
+}
+
+.button-wrap {
+    position: relative;
+    float: right;
+    width: 34px;
+    height: 34px;
+    margin: 3px 10px;
+    border-radius: 40px;
+    transition-duration: .2s;
+}
+
+.right-button img {
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    transition-duration: .2s;
 }
-.right-button .button-wrap:nth-child(1){
-    margin-right:0;
+
+.button-black {
+    opacity: 1;
 }
+
+.button-white {
+    opacity: 0;
+}
+
+.button-wrap:nth-child(1) {
+    margin-right: 0;
+}
+
 
 /* //nav */
 
+
+
+
+
+/* main */
+.main{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:100px;
+}
+.main-wrap {
+    position: relative;
+    width:90%;
+    margin:0 auto;
+    max-width: 1280px;
+}
+.left{
+    position: relative;
+    float:left;
+    width:100%;
+}
+.left .title-box{
+    position: relative;
+    float: left;
+    width:30%;
+    height:80px;
+}
+.left .title{
+    float:left;
+    width:100%;
+    font-size: 35px;
+    text-align: left;
+    font-family: "AppleSDGothicNeoB";
+    text-align: left;
+}
+.left .txt-box{
+    position: relative;
+    float:left;
+    width:70%;
+    text-align: right;
+}
+.left .txt{
+    float:left;
+    width:100%;
+    margin:2px 0;
+    font-size: 18px;
+}
+
+.left .btn{
+    position: absolute;
+    bottom:0;
+    padding:7px 15px;
+    margin-top:20px;
+    background:none;
+    border:1px solid #292929;
+    border-radius: 40px;
+    font-size: 15px;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+.left .buy-btn{
+    left:0;
+    background: #292929;
+    color:#fff;
+}
+.left .detail-btn{
+    left:90px;
+}
+.right{
+    position: relative;
+    float:right;
+    width:100%;
+    text-align: right;
+}
+
+/* //main */

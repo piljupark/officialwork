@@ -1,1217 +1,279 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Portfolio</title>
+    
+    <script src="portfolio-script/swiper.min.js"></script>
 
+    <script src="portfolio-script/jquery-1.11.2.min.js"></script>
+    <script src="portfolio-script/portfolio.js"></script>
 
-    <script src="ford-script/jquery.fadethis.min.js"></script>
-    <script src="ford-script/jquery-1.11.2.min.js"></script>
 
-    <link rel="stylesheet" href="taxi-css/reset.css">
 
-    <style>
-        @charset "utf-8";
-        @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900|Comfortaa:wght@300;400;500;600;700|Syncopate|Questrial&display=swap');
+    <link rel="stylesheet" type="text/css" href="portfolio-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="portfolio-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="portfolio-css/portfolio.css">
 
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoB.ttf");
-            font-family: "AppleSDGothicNeoB";
-        }
 
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoB.woff");
-            font-family: "AppleSDGothicNeoB";
-        }
 
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoB.woff2");
-            font-family: "AppleSDGothicNeoB";
-        }
+    <link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css" />
 
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoT.ttf");
-            font-family: "AppleSDGothicNeoT";
-        }
-
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoT.woff");
-            font-family: "AppleSDGothicNeoT";
-        }
-
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoT.woff2");
-            font-family: "AppleSDGothicNeoT";
-        }
-
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoM.ttf");
-            font-family: "AppleSDGothicNeoM";
-        }
-
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoM.woff");
-            font-family: "AppleSDGothicNeoM";
-        }
-
-        @font-face {
-            src: url("fonts/AppleSDGothicNeoM.woff2");
-            font-family: "AppleSDGothicNeoM";
-        }
-
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-
-            }
-        }
-
-        @keyframes fadeOut {
-            from {
-                opacity: 1;
-                z-index: 11;
-
-            }
-
-            to {
-                opacity: 0;
-                z-index: -1;
-            }
-        }
-
-        @keyframes fadeOut2 {
-            from {
-                opacity: 1;
-            }
-
-            to {
-                opacity: 0;
-            }
-        }
-
-
-
-        html {
-            height: 100%;
-        }
-
-        body {
-            text-decoration: none;
-            width: 100vw;
-            height: 100vh;
-            background-image: url(img/background.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            overflow-x: hidden;
-        }
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
-
-        a,
-        p,
-        h1,
-        h2,
-        h3,
-        h4 {
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.4);
-            font-family: "Questrial", sans-serif;
-        }
-
-
-
-
-
-        .center {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 400px;
-            height: 400px;
-            margin: -200px 0 0 -200px;
-            z-index: 11;
-            text-align: center;
-        }
-
-        .center p:nth-child(1) {
-            font-size: 80px;
-
-            font-family: "AppleSDgothicNeoM";
-            color: #fff;
-            animation: fadeIn 2s;
-            opacity: 0;
-            animation-fill-mode: forwards;
-        }
-
-        .center p:nth-child(2) {
-            font-family: "AppleSDgothicNeoM";
-            font-size: 36px;
-            color: #fff;
-            margin-top: 10px;
-            animation: fadeIn 2s;
-            animation-delay: 1s;
-            opacity: 0;
-            animation-fill-mode: forwards;
-
-        }
-
-
-        .center .button {
-            width: 100px;
-            height: 50px;
-            background-color: #fff;
-            text-align: center;
-            border-radius: 50px;
-            border: none;
-            font-family: "Questrial", sans-serif;
-            font-size: 30px;
-            margin-top: 50px;
-            background-color: #228be6;
-            color: #fff;
-            animation: fadeIn 2s;
-            animation-delay: 1.5s;
-            opacity: 0;
-            animation-fill-mode: forwards;
-            cursor: pointer;
-            text-align: center;
-
-        }
-
-        .center .button a {
-            color: #fff;
-        }
-
-
-
-
-
-
-
-
-        #main {
-            position: relative;
-            width: 95%;
-            height: 100%;
-            margin: 0 auto;
-            background-color: rgba(10, 10, 10, 0.4);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            -moz-backdrop-filter: blur(20px);
-            margin-top: 30px;
-            border-radius: 20px;
-            z-index: 10;
-            max-width: 1280px;
-            overflow-x: hidden;
-            overflow-y: hidden;
-        }
-
-        .header,
-        .middle,
-        .bottom {
-            opacity: 0;
-        }
-
-        #main .header {
-            width: 100%;
-            height: 60px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        #main .header .left {
-            float: left;
-        }
-
-        #main .header .left .title {
-            font-size: 16px;
-            line-height: 4;
-            width: 100px;
-            height: 60px;
-            text-align: center;
-            margin-left: 30px;
-            transition-duration: .4s;
-            cursor: pointer;
-            float: left;
-        }
-
-        #main .header .left .title:hover {
-            color: #fff;
-            border-bottom: 1px solid #fff;
-        }
-
-        #main .header .left .portfolio {
-            color: #fff;
-            border-bottom: 1px solid #fff;
-        }
-
-        #main .header .left .profile {
-            margin-left: 0px;
-        }
-
-        #main .header .left .thanksto {
-            width: 300px;
-            height: 45px;
-            border: none;
-            padding: 0;
-            margin: 0;
-            background-color: rgba(10, 10, 10, 0.4);
-            border-radius: 30px;
-            text-align: center;
-            margin-top: 7.5px;
-            margin-left: 50px;
-            font-family: "Questrial", sans-serif;
-            color: #fff;
-            transition-duration: .3s;
-        }
-
-        #main .header .right {
-            float: right;
-            position: relative;
-        }
-
-        #main .header .right .profile-img {
-            width: 40px;
-            margin-top: 10px;
-            margin-right: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            border-radius: 40px;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-
-
-
-
-
-
-
-
-
-        #main .middle {
-            width: 100%;
-            height: 300px;
-            border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
-            background-color: rgba(30, 30, 30, 0.1);
-        }
-
-        #main .middle .swiper-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-
-        }
-
-        #main .middle .swiper-container .swiper-wrapper {
-            width: 100%;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide {
-            width: 100%;
-            margin: 0 auto;
-            position: relative;
-            justify-content: center;
-            -webkit-box-pack: center;
-            -webkit-box-align: center;
-            align-items: center;
-
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .type {
-            width: 70px;
-            height: 20px;
-            background-color: #9775fa;
-            border-radius: 10px;
-            color: #000;
-            text-align: center;
-            margin-top: 40px;
-            line-height: 2;
-            font-size: 10px;
-            margin-left: 5%;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .type {
-            background-color: #4dabf7;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .type {
-            background-color: #a9e34b;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .type {
-            background-color: #ffa94d;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .type {
-            background-color: #ffa94d;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .title {
-            font-size: 40px;
-            margin-top: 3px;
-            color: #fff;
-            float: left;
-            margin-left: 5%;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .txt {
-            margin-top: 7px;
-            float: left;
-            margin-left: 10px;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle {
-            width: 250px;
-            height: 250px;
-            border-radius: 300px;
-            background-color: rgba(151, 117, 250, 0.6);
-            position: absolute;
-            top: 25px;
-            overflow: hidden;
-            right: 5%;
-            transition: .4s;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle {
-            background-color: rgba(77, 171, 247, 1);
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle {
-            background-color: rgba(169, 227, 75, 1);
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle {
-            background-color: rgba(255, 169, 77, 1);
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle {
-            background-color: rgba(255, 169, 77, 1);
-        }
-
-
-
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .ford {
-            width: 280px;
-            margin-top: 50px;
-            margin-left: 0px;
-            position: absolute;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .taxi {
-            width: 200px;
-            margin-left: 25px;
-            margin-top: 25px;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .klairs {
-            width: 200px;
-            margin-left: 25px;
-            margin-top: 25px;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle .ilcorso {
-            width: 200px;
-            margin-left: 25px;
-            margin-top: 60px;
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .finger-wrap {
-            width: 100%;
-            height: 50px;
-            margin: 0 auto;
-            position: absolute;
-            text-align: center;
-
-        }
-
-        #main .middle .swiper-container .swiper-wrapper .swiper-slide .slide-finger {
-            width: 40px;
-            margin: 0 auto;
-            text-align: center;
-            margin-top: 60px;
-            animation: fadeIn .5s forwards;
-            animation-direction: alternate;
-            animation-iteration-count: 1000;
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #main .bottom {
-            width: 100%;
-            float: left;
-            overflow: scroll;
-            position: relative;
-            padding-bottom: 50px;
-        }
-
-        #main .bottom .bottom-portfolio {
-            width: 90%;
-            margin: 0 auto;
-            margin-top: 30px;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        #main .bottom .project-wrap {
-            width: 90%;
-            height: 220px;
-            margin: 0 auto;
-            background-color: rgba(30, 30, 30, 0.3);
-            border-radius: 20px;
-            margin-top: 20px;
-            position: relative;
-        }
-
-        #main .bottom .project-wrap .project {
-            float: left;
-            width: 100%;
-            height: 25%;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        #main .bottom .project-wrap .project:nth-child(4) {
-            border-bottom: none;
-        }
-
-
-        #main .bottom .project-wrap .project .project-title {
-            font-size: 19px;
-            color: #fff;
-            width: 150px;
-            height: 100%;
-            text-align: left;
-            margin-left: 40px;
-            line-height: 2.9;
-            float: left;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(4) .project-title {
-            line-height: 2.5;
-        }
-
-
-
-
-        #main .bottom .project-wrap .project .condition-color {
-            width: 8px;
-            height: 8px;
-            float: left;
-            border-radius: 10px;
-            margin-top: 22px;
-            margin-right: 5px;
-            margin-left: 30px;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(1) .condition-color {
-            background-color: #4dabf7;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(2) .condition-color {
-            background-color: #a9e34b;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(3) .condition-color {
-            background-color: #ffa94d;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(4) .condition-color {
-            margin-top: 20px;
-            background-color: #ffa94d;
-        }
-
-
-
-        #main .bottom .project-wrap .project .condition {
-            float: left;
-            text-align: left;
-            line-height: 4.5;
-            font-size: 12px;
-            width: 50px;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(4) .condition {
-            line-height: 4.1;
-        }
-
-
-
-
-        #main .bottom .project-wrap .project .type {
-            float: left;
-            margin-left: 50px;
-            text-align: left;
-            width: 150px;
-            line-height: 3.7;
-            font-size: 15px;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(2) .type {
-            line-height: 3.6;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(3) .type {
-            line-height: 3.6;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(4) .type {
-            line-height: 3.4;
-        }
-
-
-
-
-
-        #main .bottom .project-wrap .project a {
-            float: right;
-            width: 100px;
-            height: 35px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            margin-top: 10px;
-            margin-right: 40px;
-        }
-
-        #main .bottom .project-wrap .project a:hover {
-            border: 1px solid #fff;
-        }
-
-        #main .bottom .project-wrap .project a:hover p {
-            color: #fff;
-        }
-
-        #main .bottom .project-wrap .project:nth-child(4) a {
-            margin-top: 8px;
-        }
-
-        #main .bottom .project-wrap .project a p {
-            margin-top: 10px;
-            transition-duration: .3s;
-        }
-
-
-
-
-        #main .bottom .skill {
-            width: 100%;
-            margin: 0 auto;
-            position: relative;
-            float: left;
-            margin-top: 40px;
-        }
-
-        #main .bottom .skill .title {
-            width: 90%;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-
-        #main .bottom .skill .skill-wrap {
-            width: 90%;
-            margin: 0 auto;
-            height: auto;
-            background-color: rgba(10, 10, 10, 0.4);
-            border-radius: 20px;
-        }
-
-        #main .bottom .skill .skill-wrap .kind-of-skill {
-            width: 100%;
-            height: 50px;
-            margin: 0 auto;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            transition-duration: .3s;
-        }
-
-        #main .bottom .skill .skill-wrap .kind-of-skill:hover {
-            background-color: rgba(10, 10, 10, 0.4);
-        }
-
-        #main .bottom .skill .skill-wrap .kind-of-skill:hover p {
-            font-size: 25px;
-            line-height: 2;
-        }
-
-        #main .bottom .skill .skill-wrap .kind-of-skill:nth-child(1) {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-
-        #main .bottom .skill .skill-wrap .kind-of-skill:nth-child(7) {
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-        }
-
-        #main .bottom .skill .skill-wrap .kind-of-skill:nth-child(7) {
-            border-bottom: none;
-        }
-
-        #main .bottom .skill .skill-wrap .kind-of-skill p {
-            width: 70%;
-            margin: 0 auto;
-            margin-left: 40px;
-            color: #fff;
-            line-height: 2.9;
-            transition-duration: .3s;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        @media screen and (max-width:755px) and (min-width:636px) {
-            #main .header .left .thanksto {
-                width: 200px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            #main .bottom .project-wrap .project .project-title {
-                width: 50px;
-            }
-        }
-
-
-
-        @media screen and (max-width:510px) and (min-width:100px) {
-            #main .header .left .thanksto {
-                display: none;
-            }
-            #main{
-                width:100%;
-                margin:0;
-                height:100%;
-                border-radius: 0;
-                overflow-x: hidden;
-            }
-            #main .middle{
-                overflow-x: hidden;
-            }
-            #main .bottom{
-                overflow-x: hidden;
-            }
-            
-        }
-
-
-
-        @media screen and (max-width:600px) and (min-width:100px) {
-           
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap {
-                width: 90%;
-                margin: 0 auto;
-                height: 60px;
-
-            }
-
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .title {
-                margin-left: 0;
-            }
-
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .text-wrap .type {
-                margin-left: 0;
-            }
-
-
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .img-circle {
-                margin-top: 50px;
-            }
-
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .img-circle {
-                background-color: rgba(77, 171, 247, .2);
-            }
-
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .img-circle {
-                background-color: rgba(169, 227, 75, .2);
-            }
-
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .img-circle {
-                background-color: rgba(255, 169, 77, .2);
-            }
-
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) .img-circle {
-                background-color: rgba(255, 169, 77, .2);
-            }
-
-        }
-
-
-
-        @media screen and (max-width:450px) and (min-width:300px) {
-            .center p:nth-child(1) {
-                font-size: 60px;
-            }
-
-            .center p:nth-child(2) {
-                font-size: 27px;
-            }
-            
-            
-            #main .middle .swiper-container .swiper-wrapper .swiper-slide .circle-wrap .img-circle .ford{
-                width:230px;
-                margin-left:20px;
-                margin-top:60px;
-            }
-            #main .center{
-                width:100%;
-                left:0;
-                top:0;
-                margin:0 auto;
-                margin-top:230px;
-            }
-
-        }
-
-        @media screen and (max-width:299px) and (min-width:100px) {
-            .center p:nth-child(1) {
-                font-size: 40px;
-
-            }
-
-            .center p:nth-child(2) {
-                font-size: 17px;
-            }
-
-            .center .button {
-                width: 50px;
-                font-size: 20px;
-            }
-
-
-            #main .header .right .profile-img {
-                width: 30px;
-                right: -10px;
-                top: 3px;
-            }
-            
-            
-            
-             #main .middle .swiper-container .swiper-wrapper .swiper-slide .circle-wrap .img-circle .ford{
-                width:230px;
-                margin-left:20px;
-                margin-top:60px;
-            }
-            #main .center{
-                width:100%;
-                left:0;
-                top:0;
-                margin:0 auto;
-                margin-top:230px;
-            }
-
-        }
-
-        @media screen and (max-width:635px) and (min-width:100px) {
-
-            #main .header .left .thanksto {
-                width: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-
-            #main .middle .explain img {
-                display: none;
-            }
-
-
-
-            #main .bottom .project-wrap .project .project-title {
-                width: 50px;
-            }
-
-            #main .bottom .project-wrap {
-                background-color: rgba(255, 255, 255, 0.0);
-            }
-
-            #main .bottom .project-wrap .project {
-                width: 48%;
-                height: 180px;
-                border-bottom: none;
-                border-radius: 10px;
-                background-color: rgba(30, 30, 30, 0.3);
-            }
-
-            #main .bottom .project-wrap .project:nth-child(2) {
-                float: right;
-            }
-
-            #main .bottom .project-wrap .project:nth-child(3) {
-                margin-top: 40px;
-            }
-
-            #main .bottom .project-wrap .project:nth-child(4) {
-                float: right;
-                margin-top: 40px;
-            }
-
-            #main .bottom .project-wrap .project .project-title {
-                margin-left: 0;
-                height: 40px;
-                width: 100%;
-                text-align: center;
-                line-height: 3;
-            }
-
-
-            #main .bottom .project-wrap .project:nth-child(4) .project-title {
-                line-height: 3;
-            }
-
-            #main .bottom .project-wrap .project .condition-color-wrap {
-                float: left;
-                width: 40%;
-
-                height: 40px;
-            }
-
-            #main .bottom .project-wrap .project .condition-color {
-                float: right;
-                margin-top: 13px;
-                margin-left: 0;
-            }
-
-            #main .bottom .project-wrap .project:nth-child(4) .condition-color {
-                margin-top: 13px;
-            }
-
-            #main .bottom .project-wrap .project .condition {
-                float: right;
-                width: 60%;
-                height: 40px;
-                line-height: 3;
-            }
-
-            #main .bottom .project-wrap .project:nth-child(4) .condition {
-                line-height: 3;
-            }
-
-            #main .bottom .project-wrap .project .type {
-                height: 20px;
-                line-height: 1;
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-                font-size: 12px;
-            }
-
-            #main .bottom .project-wrap .project:nth-child(n+2):nth-child(-n+4) .type {
-                line-height: 1;
-            }
-
-            #main .bottom .project-wrap .project:nth-child(n+1):nth-child(-n+4) a {
-
-                width: 100%;
-                margin: 0 auto;
-                margin-top: 20px;
-                border: none;
-            }
-
-            #main .bottom .project-wrap .project a .button {
-                width: 80%;
-                height: 35px;
-                margin: 0 auto;
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                border-radius: 20px;
-
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="portfolio-script/portfolio.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-
-
-
-
-    <div id="main">
-        <div class="center">
-            <p>반갑습니다!</p>
-            <p>버튼을 눌러 시작해주세요</p>
-            <button type="button" class="button"><a href="#">Go</a></button>
+    <nav>
+        <div class="nav-wrap">
+            <a href="#">
+                <p class="logo">PFOLIO .</p>
+                <!--<p><img src="portfolio-img/logo.png" alt="logo" class="logo-img"></p>-->
+            </a>
         </div>
-        <div class="header">
+    </nav>
+    <div class="main-box">
+        <div class="main-wrap">
             <div class="left">
-                <p class="title portfolio">Portfolio</p>
-                <p class="title profile" onclick="profile();">My profile</p>
-                <input type="text" placeholder="Thank you for coming to see my portfolio." class="thanksto">
-            </div>
-            <div class="right">
-                <a href="#">
-                    <img src="img/profile.png" alt="profile" class="profile-img">
+                <div class="txt-box info">
+                    <div class="info-wrap">
+                        <p>안녕하세요! UI/UX 디자이너 박필주입니다. </p>
+                        <p>본 페이지는 저를 알리는 첫 페이지입니다.</p>
+                        <p>해당 포트폴리오는 모바일로도 확인 가능합니다.</p>
+
+                    </div>
+                    <img src="portfolio-img/hand.png" alt="hand">
+                </div>
+
+
+                <a href="http://github.com/piljupark" target="_blank">
+                    <div class="txt-box github">
+                        <img src="portfolio-img/github.png" alt="github" class="github-logo">
+                        <img src="portfolio-img/github6.png" alt="github" class="github-logo">
+                        <div class="btn git-btn">
+                            <p class="txt">Github
+                            </p>
+                            <img src="portfolio-img/arrow2.png" alt="arrow" class="arrow">
+                        </div>
+                    </div>
                 </a>
-            </div>
-        </div>
 
-
-
-
-        <div class="middle">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="text-wrap">
-                            <p class="type">RENEWAL</p>
-                            <p class="title">Ford</p>
-                            <p class="txt">I tried redesigning <br>Ford's website.</p>
+                <a href="mailto:bakpiljoo@naver.com">
+                    <div class="txt-box email">
+                        <img src="portfolio-img/mail.png" alt="email" class="email-img">
+                        <div class="btn email-btn">
+                            <p class="txt">Send to E-mail
+                            </p>
+                            <img src="portfolio-img/arrow2.png" alt="arrow" class="arrow">
                         </div>
-                        <div class="finger-wrap">
-                            <img src="img/slide2.png" alt="slide" class="slide-finger">
-                        </div>
-                        <div class="circle-wrap">
-                            <div class="img-circle">
-                                <img src="img/ford-all2.png" alt="ford" class="ford">
+                    </div>
+                </a>
+
+                <a href="https://piljupark.github.io/Ford-m/taxi.html" target="_blank">
+                    <div class="txt-box taxi">
+                        <img src="portfolio-img/taxi.png" alt="taxi" class="taxi-main">
+
+                        <div class="intro intro-taxi">
+                            <div class="intro-txt-box">
+                                <div class="intro-txt-box-top">
+                                    <p class="title">TAXI</p>
+                                    <img src="portfolio-img/arrow2.png" alt="arrow" class="arrow">
+                                </div>
+                                <div class="intro-txt-box-wrap intro-txt-box-wrap-taxi">
+                                    <p class="txt-explain">택시 앱을 이용하면서 불편했던 점을 보완하고, 더 다양한 서비스를 제공하기 위해 만들고 있습니다.
+                                    </p>
+                                    <p class="txt-explain">업데이트 진행 중에 있습니다.</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="text-wrap">
-                            <p class="type">CREATE</p>
-                            <p class="title">Taxi</p>
-                            <p class="txt">I tried creating <br>taxi app's main screen.</p>
-                        </div>
-                        <div class="img-circle">
-                            <img src="img/taxi.png" alt="taxi" class="taxi">
-                        </div>
+                </a>
+                
+                
+                
+                    <div class="txt-box tool">
+                       <img src="portfolio-img/filter3.png" alt="bg">
+                        <div class="tool-wrap">
+                        <p>Photoshop</p>
+                        <p>Illustrator</p>
+                        <p>Figma</p>
+                        <p>Protopie</p>
+                        <p>Brackets</p>
+                        <p>VScode</p>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="text-wrap">
-                            <p class="type">RENEWAL</p>
-                            <p class="title">Klairs</p>
-                            <p class="txt">I tried redesigning <br>Klairs's website.</p>
-                        </div>
-                        <div class="img-circle">
-                            <img src="img/klairs.png" alt="klairs" class="klairs">
-                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="text-wrap">
-                            <p class="type">RENEWAL</p>
-                            <p class="title">Ilcorso</p>
-                            <p class="txt">I tried redesigning <br>Ilcorso's website.</p>
-                        </div>
-                        <div class="img-circle">
-                            <img src="img/ilcorso.png" alt="ilcorso" class="ilcorso">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="bottom">
-            <p class="bottom-portfolio">Portfolio</p>
-            <div class="project-wrap">
-                <div class="project 1">
-                    <p class="project-title">Ford</p>
-                    <div class="condition-color-wrap">
-                        <div class="condition-color"></div>
-                    </div>
-                    <p class="condition">Updated</p>
-                    <p class="type">PC / Tablet / Mobile</p>
-                    <a href="ford.html">
-                        <div class="button">
-                            <p>Enter</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project 2">
-                    <p class="project-title">Taxi</p>
-                    <div class="condition-color-wrap">
-                        <div class="condition-color"></div>
-                    </div>
-                    <p class="condition">Creating</p>
-                    <p class="type">Mobile</p>
-                    <a href="taxi.html">
-                        <div class="button">
-                            <p>Enter</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project 3">
-                    <p class="project-title">Klairs</p>
-                    <div class="condition-color-wrap">
-                        <div class="condition-color"></div>
-                    </div>
-                    <p class="condition">Incomplete</p>
-                    <p class="type">Mobile</p>
-                    <a href="klairs.html">
-                        <div class="button">
-                            <p>Enter</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project 4">
-                    <p class="project-title">Ilcorso</p>
-                    <div class="condition-color-wrap">
-                        <div class="condition-color"></div>
-                    </div>
-                    <p class="condition">Incomplete</p>
-                    <p class="type">PC / Tablet</p>
-                    <a href="ilcorso.html">
-                        <div class="button">
-                            <p>Enter</p>
-                        </div>
-                    </a>
-                </div>
+                
             </div>
 
 
+            <!-- //left -->
 
-            <div class="skill">
-                <div class="title">
-                    <p>Skill</p>
+
+
+            <!-- right -->
+            <div class="right">
+
+                <div class="txt-box mode">
+                    <div class="button-wrap">
+                        <div class="button">
+                            <div class="dark-btn"></div>
+                            <div class="light-btn"></div>
+                        </div>
+
+                        <p class="dark mode-txt"> DARK</p>
+                        <p class="light mode-txt"> LIGHT</p>
+                    </div>
                 </div>
-                <div class="skill-wrap">
 
-                    <div class="kind-of-skill" onclick="background-color: rgba(10, 10, 10, 0.4);">
-                        <p>Html</p>
-                    </div>
-                    <div class="kind-of-skill">
-                        <p>CSS</p>
-                    </div>
-                    <div class="kind-of-skill">
+                <div class="txt-box skill">
+                   <img src="portfolio-img/filter-skill.png" alt="filter">
+                    <div class="skill-wrap">
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>Vue.js</p>
                         <p>Javascript</p>
-                    </div>
-                    <div class="kind-of-skill">
                         <p>Jquery</p>
                     </div>
-                    <div class="kind-of-skill">
-                        <p>Adobe Photoshop</p>
-                    </div>
-                    <div class="kind-of-skill">
-                        <p>Adobe Illustrator</p>
-                    </div>
-                    <div class="kind-of-skill">
-                        <p>Adobe Premere</p>
-                    </div>
                 </div>
+
+                <a href="https://piljupark.github.io/Ford-m/ford.html" target="_blank">
+                    <div class="txt-box ford">
+                        <img src="portfolio-img/ford-pc.png" alt="ford" class="ford-pc">
+                        <img src="portfolio-img/ford-mobile.png" alt="ford" class="ford-mobile">
+
+
+                        <div class="intro-wrap">
+                            <div class="intro intro-ford">
+                                <div class="intro-txt-box">
+                                    <div class="intro-txt-box-top">
+                                        <p class="title">FORD</p>
+                                        <img src="portfolio-img/arrow2.png" alt="arrow" class="arrow">
+                                    </div>
+                                    <div class="intro-txt-box-wrap intro-txt-box-wrap-ford">
+
+                                        <p class="txt-explain">기존 포드 공식 홈페이지에서 나타나던 이미지 깨짐, 컨텐츠의 중복을 없앴습니다.</p>
+                                        <p class="txt-explain">미니멀한 이미지, 아이콘과 컨텐츠 박스의 곡선을 활용해 부드럽고 깔끔한 이미지를 보여주고자 합니다.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://piljupark.github.io/Ford-m/klairs.html" target="_blank">
+                    <div class="txt-box klairs">
+                        <div class="intro intro-klairs">
+                            <div class="intro-txt-box">
+                                <div class="intro-txt-box-top">
+                                    <p class="title">KLAIRS</p>
+                                    <img src="portfolio-img/arrow2.png" alt="arrow" class="arrow">
+                                </div>
+                                <div class="intro-txt-box-wrap">
+                                    <p class="txt-explain"></p>
+                                    <p class="txt-explain"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#none" id="callbutton">
+                    <div  class="txt-box call" >
+                        <img src="portfolio-img/call2.png" alt="call" class="call-img">
+                        <img src="portfolio-img/call3.png" alt="call" class="call-img">
+                        <div class="btn call-btn">
+                            <p class="txt">010-4618-3442
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+
+                <div id="map" class="txt-box">
+                </div>
+                
+                
             </div>
-
-
         </div>
     </div>
 
-    <script>
-        var mySwiper = new Swiper('#main > .middle > .swiper-container', {
+    <!-- 카카오지도 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3f35a233f7afa9e5b27a017bb19b9936"></script>
 
-            navigation: {
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            effect: 'slide',
-            autoplay: 1000,
-            autoplayDisableOnInteraction: true,
+    
+    <!-- 카카오지도 // 내 위치 -->
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.530632763895404, 126.84142455501399), // 지도의 중심좌표
+                level: 7 // 지도의 확대 레벨
+            };
+
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var imageSrc = 'portfolio-img/location3.png', // 마커이미지의 주소입니다    
+            imageSize = new kakao.maps.Size(60), // 마커이미지의 크기입니다
+            imageOption = {
+                offset: new kakao.maps.Point(27, 69)
+            }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new kakao.maps.LatLng(37.530632763895404, 126.84142455501399); // 마커가 표시될 위치입니다
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition,
+            image: markerImage // 마커이미지 설정 
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
+        // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        var content = '<div class="customoverlay">' +
+            '  <a href="https://map.kakao.com/link/map/11394059" target="_blank">' +
+            '    <span class="title">구의야구공원</span>' +
+            '  </a>' +
+            '</div>';
+
+        // 커스텀 오버레이가 표시될 위치입니다 
+        var position = new kakao.maps.LatLng(37.54699, 127.09598);
+
+        // 커스텀 오버레이를 생성합니다
+        var customOverlay = new kakao.maps.CustomOverlay({
+            map: map,
+            position: position,
+            content: content,
+            yAnchor: 1
+        });
+    </script>
+    <!-- //카카오지도 -->
+
+   
+   
+    <!-- 이미지 슬라이드 하기 위함 //대비용 -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerview: 1,
+            paginationType: 'progress',
+            mousewheelControl: true,
             loop: false,
-            speed: 1000,
-        });
-        new Swiper('#main > .middle > .swiper-container');
-    </script>
-    <script>
-        $(document).ready(function() {
-            $(".center > .button").click(function() {
-                $(".center").css("animation-delay", "1.2s");
-                $(".center").css("animation-fill-mode", "forwards");
-                $(".center").css("animation-name", "fadeOut");
-                $(".center > p:nth-child(1)").css("animation", "fadeOut .3s forwards");
-                $(".center > p:nth-child(2)").css("animation", "fadeOut .6s forwards");
-                $(".center > .button").css("animation", "fadeOut 1s forwards");
-
-                $(".header, .middle, .bottom").css("animation", "fadeIn .5s forwards");
-                $(".header, .middle, .bottom").css("animation-delay", "1s");
-
-                $("#main").css("overflow", "scroll");
-
-
-            });
-            $("#main > .middle").hover(function() {
-                $("#main > .middle > .swiper-container > .swiper-wrapper > .swiper-slide > .finger-wrap").css("animation","fadeOut .5s forwards");
-            });
-            
-            
-            
-            $("#main > .header > .left > .profile").click(function(){
-                $("#main > .header > .left > .profile").css("color","#fff");
-                $("#main > .header > .left > .profile").css("border-bottom","1px solid #fff");
-                
-                $("#main > .header > .left > .portfolio").css("color","rgba(255, 255, 255, 0.4)");
-                $("#main > .header > .left > .portfolio").css("border-bottom","none");
-            });
-            
-              $("#main > .header > .left > .portfolio").click(function(){
-                $("#main > .header > .left > .profile").css("color","rgba(255, 255, 255, 0.4)");
-                $("#main > .header > .left > .profile").css("border-bottom","none");
-                
-                $("#main > .header > .left > .portfolio").css("color","#fff");
-                $("#main > .header > .left > .portfolio").css("border-bottom","1px solid #fff");
-            });
+            direction: 'vertical',
+            /*effect:'fade',*/
         });
     </script>
-
-
-
+    <!-- //이미지 슬라이드 하기 위함 //대비용 -->
+    
+    
 
 
 
 </body></html>
-
-
-
-

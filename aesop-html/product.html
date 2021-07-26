@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aesop-product</title>
+
+
+
+
+    <script src="../aesop-script/jquery-1.11.2.min.js"></script>
+    <script src="../aesop-script/aesop.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../aesop-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../aesop-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../aesop-css/product.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="nav-wrap">
+            <video src="../aesop-img/bg-video.mp4" autoplay muted loop></video>
+
+            <div class="menu-wrap">
+                <a href="#">
+                    <img src="../aesop-img/logo.png" alt="logo" class="logo">
+                </a>
+                <ul>
+                    <li><a href="#none">제품</a></li>
+                    <li><a href="#none">읽기</a></li>
+                    <li><a href="#none">스토어</a></li>
+                    <li><a href="#none">검색</a></li>
+                    <li><a href="#none">로그인</a></li>
+                    <li><a href="#none">카트</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="top-menu">
+        <div class="menu-wrap">
+            <a href="#">
+                <div class="menu-circle">
+                    <img src="../aesop-img/skin.png" alt="skin"> 
+                    <p class="product-title">스킨</p>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="menu-circle">
+                    <img src="../aesop-img/shampoo.png" alt="shampoo" style="width: 59px;">
+                    <p class="product-title">헤어</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-circle">
+                    <img src="../aesop-img/body.png" alt="body_hand" style="width: 61.5px;">
+                    <p class="product-title">바디 &amp; 핸드</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-circle">
+                    <img src="../aesop-img/perfume.png" alt="perfume" style="width: 67px; margin-top: 15px;">
+                    <p class="product-title">향수</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-circle">
+                    <img src="../aesop-img/home.png" alt="home" style="width: 55px; margin-top: 15px;">
+                    <p class="product-title">홈</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-circle">
+                    <img src="../aesop-img/kit.png" alt="kit" style="width: 90px; margin-top: 17px;">
+                    <p class="product-title">키트</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-circle">
+                    <img src="../aesop-img/gift.png" alt="home" style="width: 90px; margin-top: 20px;">
+                    <p class="product-title">기프트</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="product">
+        <div class="product-wrap"></div>
+    </div>
+    
+    <!--
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+            </div>
+            <div class="swiper-slide">
+               
+            </div>
+            <div class="swiper-slide">
+                
+
+            </div>
+
+        </div>
+    </div>
+    -->
+
+    <script src="../aesop-script/swiper.min.js"></script>
+    <!-- 이미지 슬라이드 하기 위함 //대비용 -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerview: 1,
+            paginationType: 'progress',
+            mousewheelControl: true,
+            loop: false,
+            direction: 'horizontal',
+            effect: 'fade',
+        });
+    </script>
+    <!-- //이미지 슬라이드 하기 위함 //대비용 -->
+
+
+
+
+
+</body></html>

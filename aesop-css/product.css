@@ -247,6 +247,30 @@ ul li:nth-child(5){
 .product-title{
     color:#292929;
 }
+.product-price{
+    color:#999;
+    font-size: 12px;
+    margin-top:5px;
+}
+.product-info{
+    position: relative;
+    width:150px;
+    text-align: center;
+    margin:0 auto;
+    margin-top:10px;
+    padding-top:10px;
+    border-top:1.3px solid #292929;
+}
+.product-info .info1{
+    float:left;
+    color:#292929;
+    font-family: "AppleSDGothicNeoM";
+}
+
+.product-info .info2{
+    color:#999;
+    float: right;
+}
 /* //product */
 
 

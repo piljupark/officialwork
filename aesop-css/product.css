@@ -91,6 +91,7 @@ nav{
     position: fixed;
     float:left;
     width:20%;
+    max-width: 240px;
     height:100vh;
     padding:0;
     left:0;

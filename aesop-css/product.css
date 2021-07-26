@@ -73,7 +73,7 @@ body {
     font-family: "AppleSDGothicNeoUL";
     font-size: 14px;
     background: #fffef3;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a,
@@ -160,6 +160,7 @@ ul li:nth-child(5){
     width:820px;
     height:200px;
     margin:0 auto;
+    overflow-y: hidden;
 }
 .menu-circle{
     position: relative;
@@ -181,13 +182,13 @@ ul li:nth-child(5){
     text-align: center;
     margin-top:10px;
 }
-.menu-circle .product-title{
+.menu-circle .menu-title{
     position: absolute;
     width:100%;
     bottom:-35px;
     font-family: "AppleSDGothicNeoM";
     line-height: 2.5;
-    font-size: 15px;
+    font-size: 14px;
     color:#292929;
 }
 /* //top-menu */
@@ -197,12 +198,54 @@ ul li:nth-child(5){
 
 
 /* product */
+.product-place{
+    position: relative;
+    float:right;
+    width:80%;
+    height: auto;
+    margin-top:80px;
+    padding:0;
+}
+.product-wrap{
+    position: relative;
+    width:95%;
+    margin:0 auto;
+    text-align: center;
+}
+.product-top{
+    position: relative;
+    float:left;
+    width:100%;
+    height:30px;
+    margin-bottom:30px;
+}
+.product-top .title{
+    text-align: left;
+    font-size: 20px;
+    color:#292929;
+    margin-left:10px;
+}
 .product{
     position: relative;
     float:left;
-    width:80%;
-    height: auto;
-    padding:0;
+    width:50%;
+    height:450px;
+    text-align: center;
+    margin-bottom:30px;
+}
+.product img{
+    width:70%;
+    max-width: 300px;
+    margin-top:60px;
+}
+
+
+.product:hover{
+    background: rgba(0,0,0,0.07);
+}
+
+.product-title{
+    color:#292929;
 }
 /* //product */
 

@@ -524,7 +524,8 @@ input:focus {
 
     nav video {
         position: absolute;
-        top: 0;
+        width:100%;
+        top: -80px;
         z-index: 1;
     }
 

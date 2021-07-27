@@ -32,20 +32,41 @@
             <video src="../aesop-img/bg-video.mp4" autoplay muted loop></video>
 
             <div class="menu-wrap">
-                <a href="../aesop.html">
+                <a href="aesop.html">
                     <img src="../aesop-img/logo.png" alt="logo" class="logo">
                 </a>
                 <ul>
-                    <li><a href="#none">제품</a></li>
+                    <li><a href="#none" target="_blank">제품</a></li>
                     <li><a href="../aesop-html/read.html" target="_blank">읽기</a></li>
-                    <li><a href="#none">스토어</a></li>
-                    <li><a href="#none">검색</a></li>
-                    <li><a href="#none">로그인</a></li>
-                    <li><a href="#none">카트</a></li>
+                    <li id="store"><a href="#none">스토어</a></li>
+                    <li id="search"><a href="#none">검색</a></li>
+                    
+                    <div id="search-place">
+                       <a href="#none">
+                           <img src="../aesop-img/close.png" alt="close" class="close-img">
+                       </a>
+                        <input type="search" name="search">
+                        <a href="#none">
+                        <img src="../aesop-img/search.png" alt="search" class="search-img" style="width:15px;">
+                        </a>
+                    </div>
+                    
+                    <li id="login"><a href="#none">로그인</a></li>
+                    <li id="cart"><a href="#none">카트</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
+
+    <div id="cart-alarm">
+        <p>카트가 비었습니다.</p>
+    </div>
+    
+    
+    
+    
     <div class="top-menu">
         <div class="menu-wrap">
             <a href="#">
@@ -57,37 +78,37 @@
             </a>
             <a href="#">
                 <div class="menu-circle">
-                    <img src="../aesop-img/shampoo.png" alt="shampoo" style="width: 59px;">
+                    <img src="../aesop-img/shampoo.png" alt="shampoo" style="width: 65%;">
                     <p class="menu-title">헤어</p>
                 </div>
             </a>
             <a href="#">
                 <div class="menu-circle">
-                    <img src="../aesop-img/body.png" alt="body_hand" style="width: 61.5px;">
+                    <img src="../aesop-img/body.png" alt="body_hand" style="width: 70%;">
                     <p class="menu-title">바디 &amp; 핸드</p>
                 </div>
             </a>
             <a href="#">
                 <div class="menu-circle">
-                    <img src="../aesop-img/perfume.png" alt="perfume" style="width: 67px; margin-top: 15px;">
+                    <img src="../aesop-img/perfume.png" alt="perfume" style="width: 70%; margin-top: 15px;">
                     <p class="menu-title">향수</p>
                 </div>
             </a>
             <a href="#">
                 <div class="menu-circle">
-                    <img src="../aesop-img/home.png" alt="home" style="width: 55px; margin-top: 15px;">
+                    <img src="../aesop-img/home.png" alt="home" style="width: 60%; margin-top: 15px;">
                     <p class="menu-title">홈</p>
                 </div>
             </a>
             <a href="#">
                 <div class="menu-circle">
-                    <img src="../aesop-img/kit.png" alt="kit" style="width: 90px; margin-top: 17px;">
+                    <img src="../aesop-img/kit.png" alt="kit" style="width: 90%; margin-top: 17px;">
                     <p class="menu-title">키트</p>
                 </div>
             </a>
             <a href="#">
                 <div class="menu-circle">
-                    <img src="../aesop-img/gift.png" alt="home" style="width: 90px; margin-top: 20px;">
+                    <img src="../aesop-img/gift.png" alt="home" style="width: 90%; margin-top: 20px;">
                     <p class="menu-title">기프트</p>
                 </div>
             </a>

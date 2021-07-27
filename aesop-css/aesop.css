@@ -225,6 +225,19 @@ ul #login{
     width:70%;
     height:100%;
     overflow: hidden;
+    transition-duration: .4s;
+    display: block;
+    z-index: 2;
+}
+@keyframes otherfadeOut{
+    from{
+        display: block;
+        z-index: 1;
+    }
+    to{
+        display: none;
+        z-index: -1;
+    }
 }
 .mouse{
     position: absolute;
@@ -238,6 +251,7 @@ ul #login{
     opacity: 0;
     animation-iteration-count:infinite;
     animation-direction: alternate;
+
 }
 @keyframes fadeIn{
     from{
@@ -247,6 +261,19 @@ ul #login{
         opacity: 0;
     }
 }
+@keyframes fadeOut{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+
+
 .swiper-wrapper{
     position: relative;
     float:left;
@@ -337,6 +364,85 @@ ul #login{
     font-family: "AppleSDGothicNeoB";
 }
 
-/* slide */
+/* //slide */
 
+
+/* store */
+.store-place{
+    position: absolute;
+    float:right;
+    width:70%;
+    height:100%;
+    overflow: hidden;
+    z-index: 1;
+    top:0;
+    right:0;
+    transition-duration:.5s;
+}
+.store-place .store-title{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:220px;
+    color:#292929;
+    font-size: 24px;
+}
+.store-search{
+    position: relative;
+    float:left;
+    width:400px;
+    margin-top:20px;
+    background: none;
+    border:none;
+    border-bottom: 1px solid #292929;
+    font-size:14px;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+input:focus{
+    outline: none;
+}
+
+.store-box{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:60px;
+}
+.store-info-txt{
+    position: relative;
+    float:left;
+    width:25%;
+    text-align: center;
+}
+.store-name{
+    float:left;
+    width:100%;
+    color:#292929;
+    font-size: 17px;
+    text-align: left;
+}
+.store-address{
+    float:left;
+    width:100%;
+    margin-top:10px;
+    color:#666;
+    font-size: 12px;
+    text-align: left;
+}
+.number{
+    margin-top:5px;
+}
+.store-info-img{
+    position: relative;
+    float:left;
+    width:73%;
+    margin-left:10px;
+}
+.store-info-img .store1{
+    width:100%;
+    max-width: 800px;
+}
+
+/* //store */
 

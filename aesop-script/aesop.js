@@ -1,12 +1,11 @@
 $(document).ready(function () {
 
-    
-    /*
-    $(".cart").click(function(){
-       $(".cart-alarm").css("animation-name","cartSlide"); 
-       $(".cart-alarm").css("animation-duration","3s"); 
+    $("#search").click(function(){
+       $("#search-place").css("height","40px"); 
     });
-    
-    */
+
+    $(".close-img").click(function(){
+       $("#search-place").css("height","0px"); 
+    });
     
 });

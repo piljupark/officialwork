@@ -11,7 +11,20 @@
 
 
 
-    <script src="aesop-script/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#cart').click(function() {
+                $('#cart-alarm').animate({
+                    top: '0px'
+                }, 1500, function() {
+                    $(this).animate({
+                        top: '-30px'
+                    }, 2000);
+                });
+            });
+        });
+    </script>
     <script src="aesop-script/aesop.js"></script>
 
 
@@ -40,23 +53,36 @@
                     <li><a href="aesop-html/product.html" target="_blank">제품</a></li>
                     <li><a href="aesop-html/read.html" target="_blank">읽기</a></li>
                     <li><a href="#none">스토어</a></li>
-                    <li><a href="#none">검색</a></li>
-                    <li><a href="#none">로그인</a></li>
+                    <li id="search"><a href="#none">검색</a></li>
+                    
+                    <div id="search-place">
+                       <a href="#none">
+                           <img src="aesop-img/close.png" alt="close" class="close-img">
+                       </a>
+                        <input type="search" name="search">
+                        <a href="#none">
+                        <img src="aesop-img/search.png" alt="search" class="search-img" style="width:15px;">
+                        </a>
+                    </div>
+                    
+                    <li id="login"><a href="#none">로그인</a></li>
                     <li id="cart"><a href="#none">카트</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    
-    
+
+
+
     <div id="cart-alarm">
         <p>카트가 비었습니다.</p>
     </div>
 
-   
-   
-   
+
+
+
+
+
     <div class="swiper-container swiper-container-horizontal">
         <img src="aesop-img/mouse-wheel.png" alt="mouse" class="mouse">
         <div class="swiper-wrapper">
@@ -110,6 +136,8 @@
     </div>
 
 
+
+
     <script src="aesop-script/swiper.min.js"></script>
     <!-- 이미지 슬라이드 하기 위함 //대비용 -->
     <script>
@@ -126,11 +154,7 @@
     <!-- //이미지 슬라이드 하기 위함 //대비용 -->
 
 
-    <script>
-        cart.onclick = function() {
-            cart-alarm.style.animation = 'cartSlide .5s 3s';
-        };
-    </script>
+
 
 
 

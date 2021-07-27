@@ -135,11 +135,47 @@ ul li{
 ul li:hover{
     text-decoration: underline;
 }
-ul li:nth-child(5){
+ul #login{
     margin-top: 200px;
 }
 
 /* //nav */
+
+
+#search-place{
+    position: relative;
+    opacity: 1;
+    transition-duration: .3s;
+    width:80%;
+    height:0px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.close-img{
+    position: absolute;
+    width:10px;
+    bottom:15px;
+    z-index: 2;
+}
+.search-img{
+    position: absolute;
+    bottom: 15px;
+    right:13px;
+    z-index: 2;
+}
+#search-place input{
+    position: relative;
+    background: none;
+    border:0;
+    border-bottom:1px solid #fff;
+    color:#fff;
+    padding-top:10px;
+    padding-left:25px;
+    padding-bottom:10px;
+    z-index: 1;
+}
+
+
 
 #cart-alarm{
     position: fixed;
@@ -172,6 +208,10 @@ ul li:nth-child(5){
         top:-30px;
     }
     
+}
+.slideInAnimation{
+    animation-name: cartSlide;
+    animation-duration: 3s;
 }
 
 

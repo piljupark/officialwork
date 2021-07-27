@@ -277,6 +277,7 @@ ul #login {
     width: 80%;
     height: 150px;
     text-align: center;
+    transition-duration: .4s;
 }
 
 .top-menu .menu-wrap {
@@ -359,6 +360,18 @@ ul #login {
 /* //top-menu */
 
 
+@keyframes otherfadeOut {
+    from {
+        display: block;
+        z-index: 1;
+    }
+
+    to {
+        display: none;
+        z-index: -1;
+    }
+}
+
 
 
 
@@ -368,6 +381,7 @@ ul #login {
     float: right;
     width: 80%;
     margin-top: 70px;
+    transition-duration: .4s;
 }
 
 .athenaeum-wrap {
@@ -521,17 +535,115 @@ ul #login {
 
 /* slide */
 
+/* store */
+.store-place {
+    position: absolute;
+    float: right;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+@keyframes storefadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.store-place .store-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 220px;
+    color: #292929;
+    font-size: 24px;
+}
+
+.store-search {
+    position: relative;
+    float: left;
+    width: 400px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #292929;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.store-box {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.store-info-txt {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.store-name {
+    float: left;
+    width: 100%;
+    color: #292929;
+    font-size: 17px;
+    text-align: left;
+}
+
+.store-address {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+}
+
+.number {
+    margin-top: 5px;
+}
+
+.store-info-img {
+    position: relative;
+    float: left;
+    width: 73%;
+    margin-left: 10px;
+}
+
+.store-info-img .store1 {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* //store */
 
 
 
 
 
-@media screen and (max-width: 840px) and (min-width:550px) {
+
+@media screen and (max-width: 900px) and (min-width:550px) {
 
     /* nav */
     nav {
         position: fixed;
-        float:left;
+        float: left;
         width: 100%;
         height: 90px;
         top: 0;
@@ -548,9 +660,9 @@ ul #login {
     nav video {
         position: absolute;
         top: -80px;
-        width:100%;
+        width: 100%;
         z-index: 1;
-        
+
     }
 
     .nav-wrap .menu-wrap {
@@ -612,23 +724,23 @@ ul #login {
 
     /* //nav */
 
-    
-    
-    
+
+
+
     /**/
     .top-menu {
         position: relative;
         float: left;
         width: 100%;
         height: 150px;
-        margin-top:90px;
+        margin-top: 90px;
         text-align: center;
         z-index: 1;
     }
 
     .top-menu .menu-wrap {
         position: relative;
-        width:480px;
+        width: 480px;
         height: 200px;
         margin: 0 auto;
         overflow-y: auto;
@@ -646,12 +758,13 @@ ul #login {
         text-align: center;
         transition-duration: .3s;
     }
+
     /**/
-    
-    
-    
-    
-    
+
+
+
+
+
 
     /* athenaeum */
     .athenaeum {
@@ -660,15 +773,68 @@ ul #login {
         width: 100%;
         margin-top: 70px;
     }
-    
+
     .athenaeum-wrap {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-}
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .img-wrap .img-box img {
+        width: 90%;
+    }
+    .athenaeum .athenaeum-wrap .img-wrap a:nth-child(3) .img-box img{
+        width:90%;
+    }
 
     /* //athenaeum */
 
 
+    /* store */
+    .store-place {
+        position: absolute;
+        float: right;
+        width: 90%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    .store-info-txt {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .store-name {
+        position: relative;
+        float: left;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .store-address {
+        position: absolute;
+        width: 150px;
+        margin-top: 10px;
+        right: 80px;
+    }
+
+    .number {
+        float: right;
+        width: 70px;
+        right: 0px;
+    }
+
+    .store-info-img {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* //store */
 
 }

@@ -74,6 +74,7 @@ body {
     font-size: 14px;
     background: #fffef3;
     overflow-x: hidden;
+    z-index: 1;
 }
 
 a,
@@ -97,6 +98,7 @@ nav {
     left: 0;
     top: 0;
     overflow: hidden;
+    z-index: 4;
 }
 
 nav .nav-wrap {
@@ -231,6 +233,20 @@ ul #login {
 
 
 
+@keyframes otherfadeOut {
+    from {
+        display: block;
+        z-index: 1;
+    }
+
+    to {
+        display: none;
+        z-index: -1;
+    }
+}
+
+
+
 
 
 /* top-menu */
@@ -240,11 +256,12 @@ ul #login {
     width: 80%;
     height: 150px;
     text-align: center;
+    transition-duration: .4s;
 }
 
 .top-menu .menu-wrap {
     position: relative;
-    width: 820px;
+    width: 630px;
     height: 200px;
     margin: 0 auto;
     overflow-y: hidden;
@@ -254,10 +271,10 @@ ul #login {
     position: relative;
     float: left;
     background: #d5d2b4;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
-    margin: 35px 13px 0 13px;
+    margin: 35px 10px 0 10px;
     text-align: center;
     transition-duration: .3s;
 }
@@ -297,6 +314,7 @@ ul #login {
     height: auto;
     margin-top: 80px;
     padding: 0;
+    transition-duration: .4s;
 
 }
 
@@ -320,7 +338,7 @@ ul #login {
     text-align: left;
     font-size: 20px;
     color: #292929;
-    margin-left: 10px;
+    margin-left: 90px;
 }
 
 .product {
@@ -463,6 +481,110 @@ ul #login {
 
 
 
+/* store */
+.store-place {
+    position: absolute;
+    float: right;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+@keyframes storefadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.store-place .store-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 220px;
+    color: #292929;
+    font-size: 24px;
+}
+
+.store-search {
+    position: relative;
+    float: left;
+    width: 400px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #292929;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.store-box {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.store-info-txt {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.store-name {
+    float: left;
+    width: 100%;
+    color: #292929;
+    font-size: 17px;
+    text-align: left;
+}
+
+.store-address {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+}
+
+.number {
+    margin-top: 5px;
+}
+
+.store-info-img {
+    position: relative;
+    float: left;
+    width: 73%;
+    margin-left: 10px;
+}
+
+.store-info-img .store1 {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* //store */
+
+
+
+
+
+
+
 
 
 @media screen and (min-width:1440px) {
@@ -497,7 +619,7 @@ ul #login {
         z-index: 1;
     }
 
-    .menu-wrap {
+    nav .menu-wrap {
         position: relative;
         float: left;
         width: 100%;
@@ -555,17 +677,90 @@ ul #login {
     }
 
     /* //nav */
-    
-    
-    
+
+
+
     /* */
-    .top-menu{
+    .top-menu {
         position: relative;
-        width:100%;
-        margin-top:90px;
+        float: left;
+        width: 100%;
+        margin-top: 110px;
+        text-align: center;
+
     }
-    .menu-circle{
-        width:70px;
-        height:70px;
+
+    .top-menu .menu-wrap {
+        position: relative;
+        width: 630px;
+        margin: 0 auto;
+        height: 130px;
+    }
+
+    .menu-circle {
+        position: relative;
+        float: left;
+        background: #d5d2b4;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        margin: 0 10px;
+        text-align: center;
+        transition-duration: .3s;
+
+    }
+
+    .product-place {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    .store-place {
+        position: absolute;
+        float: right;
+        width: 90%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    .store-info-txt {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .store-name {
+        position: relative;
+        float: left;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .store-address {
+        position: absolute;
+        width: 150px;
+        margin-top: 10px;
+        right: 80px;
+    }
+
+    .number {
+        float: right;
+        width: 70px;
+        right: 0px;
+    }
+
+    .store-info-img {
+        width: 100%;
+        max-width: none;
     }
 }

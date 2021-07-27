@@ -11,6 +11,19 @@
 
 
     <script src="../aesop-script/jquery-1.11.2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#cart').click(function() {
+                $('#cart-alarm').animate({
+                    top: '0px'
+                }, 1500, function() {
+                    $(this).animate({
+                        top: '-30px'
+                    }, 2000);
+                });
+            });
+        });
+    </script>
     <script src="../aesop-script/aesop.js"></script>
 
 
@@ -40,17 +53,17 @@
                     <li><a href="../aesop-html/read.html" target="_blank">읽기</a></li>
                     <li id="store"><a href="#none">스토어</a></li>
                     <li id="search"><a href="#none">검색</a></li>
-                    
+
                     <div id="search-place">
-                       <a href="#none">
-                           <img src="../aesop-img/close.png" alt="close" class="close-img">
-                       </a>
+                        <a href="#none">
+                            <img src="../aesop-img/close.png" alt="close" class="close-img">
+                        </a>
                         <input type="search" name="search">
                         <a href="#none">
-                        <img src="../aesop-img/search.png" alt="search" class="search-img" style="width:15px;">
+                            <img src="../aesop-img/search.png" alt="search" class="search-img" style="width:15px;">
                         </a>
                     </div>
-                    
+
                     <li id="login"><a href="#none">로그인</a></li>
                     <li id="cart"><a href="#none">카트</a></li>
                 </ul>
@@ -63,10 +76,10 @@
     <div id="cart-alarm">
         <p>카트가 비었습니다.</p>
     </div>
-    
-    
-    
-    
+
+
+
+
     <div class="top-menu">
         <div class="menu-wrap">
             <a href="#">
@@ -115,128 +128,128 @@
         </div>
     </div>
 
-   
-   
-   
+
+
+
     <div class="product-place">
         <div class="product-wrap">
             <div class="product-top">
                 <p class="title">모든 제품</p>
             </div>
             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/eremia.png" alt="perfume">
-                
-                <div class="product-txt-box">
-                <p class="product-title">에레미아 오 드 퍼퓸</p>
-                <p class="product-price">50ml / &#8361; 210,000</p>
-                <div class="product-info">
-                    <p class="info1">향</p>
-                    <p class="info2">그린, 플로럴, 시트러스</p>
+                <div class="product">
+                    <img src="../aesop-img/eremia.png" alt="perfume">
+
+                    <div class="product-txt-box">
+                        <p class="product-title">에레미아 오 드 퍼퓸</p>
+                        <p class="product-price">50ml / &#8361; 210,000</p>
+                        <div class="product-info">
+                            <p class="info1">향</p>
+                            <p class="info2">그린, 플로럴, 시트러스</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </a>
-            
+
             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/karst.png" alt="perfume">
-                
-                <div class="product-txt-box">
-                <p class="product-title">카르스트 오 드 퍼퓸</p>
-                <p class="product-price">50ml / &#8361; 210,000</p>
-                
-                <div class="product-info">
-                    <p class="info1">향</p>
-                    <p class="info2">상쾌한, 허브, 마린</p>
+                <div class="product">
+                    <img src="../aesop-img/karst.png" alt="perfume">
+
+                    <div class="product-txt-box">
+                        <p class="product-title">카르스트 오 드 퍼퓸</p>
+                        <p class="product-price">50ml / &#8361; 210,000</p>
+
+                        <div class="product-info">
+                            <p class="info1">향</p>
+                            <p class="info2">상쾌한, 허브, 마린</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </a>
-            
+
             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/miraceti.png" alt="perfume">
-                
-                <div class="product-txt-box">
-                <p class="product-title">미라세티 오 드 퍼퓸</p>
-                <p class="product-price">50ml / &#8361; 210,000</p>
-                
-                <div class="product-info">
-                    <p class="info1">향</p>
-                    <p class="info2">유향, 우디, 스파이시</p>
+                <div class="product">
+                    <img src="../aesop-img/miraceti.png" alt="perfume">
+
+                    <div class="product-txt-box">
+                        <p class="product-title">미라세티 오 드 퍼퓸</p>
+                        <p class="product-price">50ml / &#8361; 210,000</p>
+
+                        <div class="product-info">
+                            <p class="info1">향</p>
+                            <p class="info2">유향, 우디, 스파이시</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </a>
-            
+
             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/skin.png" alt="skin" style="width: 80%;">
-                
-                <div class="product-txt-box">
-                <p class="product-title">파슬리 씨드 안티 옥시던트 세럼</p>
-                <p class="product-price">100ml / &#8361; 85,000</p>
-                
-                
+                <div class="product">
+                    <img src="../aesop-img/skin.png" alt="skin" style="width: 80%;">
+
+                    <div class="product-txt-box">
+                        <p class="product-title">파슬리 씨드 안티 옥시던트 세럼</p>
+                        <p class="product-price">100ml / &#8361; 85,000</p>
+
+
+                    </div>
                 </div>
-            </div>
             </a>
-            
+
             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/body.png" alt="handcream">
-                
-                <div class="product-txt-box">
-                <p class="product-title">레저렉션 아로마틱 핸드 밤</p>
-                <p class="product-price">3 사이즈 / &#8361; 31,000 부터</p>
-                
-               
+                <div class="product">
+                    <img src="../aesop-img/body.png" alt="handcream">
+
+                    <div class="product-txt-box">
+                        <p class="product-title">레저렉션 아로마틱 핸드 밤</p>
+                        <p class="product-price">3 사이즈 / &#8361; 31,000 부터</p>
+
+
+                    </div>
                 </div>
-            </div>
             </a>
-            
+
             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/hand1.png" alt="handbalm">
-                
-                
-                <div class="product-txt-box">
-                <p class="product-title">레버런스 아로마틱 핸드 밤</p>
-                <p class="product-price">2 사이즈 / &#8361; 31,000 부터</p>
-                
-               
+                <div class="product">
+                    <img src="../aesop-img/hand1.png" alt="handbalm">
+
+
+                    <div class="product-txt-box">
+                        <p class="product-title">레버런스 아로마틱 핸드 밤</p>
+                        <p class="product-price">2 사이즈 / &#8361; 31,000 부터</p>
+
+
+                    </div>
                 </div>
-            </div>
             </a>
-            
-             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/intense.png" alt="intense">
-                
-                <div class="product-txt-box">
-                <p class="product-title">인텐스 하이드레이팅 시트러스 듀오</p>
-                <p class="product-price">&#8361; 75,000</p>
-                
-                
+
+            <a href="#none">
+                <div class="product">
+                    <img src="../aesop-img/intense.png" alt="intense">
+
+                    <div class="product-txt-box">
+                        <p class="product-title">인텐스 하이드레이팅 시트러스 듀오</p>
+                        <p class="product-price">&#8361; 75,000</p>
+
+
+                    </div>
                 </div>
-            </div>
             </a>
-            
-             <a href="#none">
-            <div class="product">
-                <img src="../aesop-img/handwash1.png" alt="handwash">
-                
-                <div class="product-txt-box">
-                <p class="product-title">레저렉션 아로마틱 핸드 워시</p>
-                <p class="product-price">2 사이즈 / &#8361; 49,000 부터</p>
-                
-                
+
+            <a href="#none">
+                <div class="product">
+                    <img src="../aesop-img/handwash1.png" alt="handwash">
+
+                    <div class="product-txt-box">
+                        <p class="product-title">레저렉션 아로마틱 핸드 워시</p>
+                        <p class="product-price">2 사이즈 / &#8361; 49,000 부터</p>
+
+
+                    </div>
                 </div>
-            </div>
             </a>
-            
-            
+
+
         </div>
     </div>
 
@@ -257,6 +270,28 @@
         </div>
     </div>
     -->
+
+    <div class="store-place">
+        <p class="store-title">스토어 검색</p>
+        <input type="search" alt="search" class="store-search" placeholder="도시 또는 도로명">
+
+        <div class="store-box">
+            <div class="store-info-txt">
+                <a href="#none">
+                    <p class="store-name">이솝 삼청</p>
+                </a>
+                <p class="store-address">서울시 종로구 삼청로 58-3 1층</p>
+                <p class="store-address number">02&#41; 736-1987</p>
+
+            </div>
+            <div class="store-info-img">
+                <img src="../aesop-img/store.jpeg" alt="store" class="store1">
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="../aesop-script/swiper.min.js"></script>
     <!-- 이미지 슬라이드 하기 위함 //대비용 -->

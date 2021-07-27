@@ -400,6 +400,8 @@ ul #login {
 /* //slide */
 
 
+
+
 /* store */
 .store-place {
     position: absolute;
@@ -512,26 +514,26 @@ input:focus {
         float: left;
         width: 100%;
         height: 90px;
-        top:0;
+        top: 0;
         z-index: 3;
     }
 
     nav .nav-wrap {
         position: relative;
         width: 100%;
-        float:left;
+        float: left;
     }
 
     nav video {
         position: absolute;
-        width:100%;
+        width: 100%;
         top: -80px;
         z-index: 1;
     }
 
     .menu-wrap {
         position: relative;
-        float:left;
+        float: left;
         width: 100%;
         height: 50px;
         text-align: center;
@@ -544,87 +546,144 @@ input:focus {
         float: left;
         z-index: 2;
         width: 140px;
-        margin-top:20px;
-        margin-left:20px;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     ul {
         position: relative;
-        float:right;
-        width:380px;
+        float: right;
+        width: 380px;
         margin-top: 0px;
     }
 
     ul li {
         width: 50px;
-        float:left;
+        float: left;
         margin: 0 auto;
-        margin-top:30px;
+        margin-top: 30px;
     }
 
     ul li:hover {
         text-decoration: underline;
     }
-    ul #login{
-        margin-top:30px;
-        margin-left:70px;
+
+    ul #login {
+        margin-top: 30px;
+        margin-left: 70px;
     }
-    #search-place{
+
+    #search-place {
         position: absolute;
-        top:50px;
-        width:100%;
+        top: 50px;
+        width: 100%;
     }
-    #search-place input{
-        width:350px;
-        right:4px;
+
+    #search-place input {
+        width: 350px;
+        right: 4px;
     }
-    #search-place .search-img{
-        right:22px;
+
+    #search-place .search-img {
+        right: 22px;
     }
 
     /* //nav */
-    
-    .swiper-container{
+
+    .swiper-container {
         position: relative;
-        float:left;
-        width:100%;
-        margin-top:90px;
+        float: left;
+        width: 100%;
+        margin-top: 90px;
         text-align: center;
     }
-    .swiper-slide{
-        padding-top:80px;
+
+    .swiper-slide {
+        padding-top: 80px;
     }
-    .swiper-slide .title{
-        width:90%;
-        margin:0 auto;
+
+    .swiper-slide .title {
+        width: 90%;
+        margin: 0 auto;
         text-align: left;
-        margin-bottom:30px;
+        margin-bottom: 30px;
     }
-    .swiper-slide .txt{
-        width:90%;
-        margin:0 auto;
+
+    .swiper-slide .txt {
+        width: 90%;
+        margin: 0 auto;
         text-align: left;
-        margin-bottom:15px;
+        margin-bottom: 15px;
     }
-    .swiper-slide .main-img{
-        width:100%;
-        margin-top:90px;
+
+    .swiper-slide .main-img {
+        width: 100%;
+        margin-top: 90px;
     }
-    .swiper-slide .button-wrap{
+
+    .swiper-slide .button-wrap {
         float: none;
-        width:90%;
+        width: 90%;
         margin: 0 auto;
     }
+
     .swiper-slide .slide4-txt-box {
-    position: relative;
-    width: 100%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-    
-    
-    .mouse{
+        position: relative;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .mouse {
         display: none;
     }
+
+
+
+
+
+    .store-place {
+        position: absolute;
+        float: right;
+        width: 90%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+    }
+    .store-info-txt{
+        position: relative;
+        width:100%;
+        margin-bottom:10px;
+    }
+    .store-name{
+        position: relative;
+        float:left;
+        width:100px;
+        margin-left:10px;
+    }
+    .store-address{
+        position: absolute;
+        width:150px;
+        margin-top:10px;
+        right:80px;
+    }
+    .number{
+        float:right;
+        width:70px;
+        right:0px;
+    }
+    .store-info-img{
+        width:100%;
+        max-width: none;
+    }
+    
+    
+    
+    
 }

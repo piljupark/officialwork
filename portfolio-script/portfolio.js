@@ -147,6 +147,19 @@ $(document).ready(function () {
         $(".intro-txt-box-wrap-taxi").css("opacity", "0");
         $(".intro-txt-box-wrap-taxi").css("transition-duration", ".1s");
     });
+    
+    
+    
+    $(".aesop").mouseenter(function () {
+        $(".intro-aesop").css("height", "165px");
+        $(".intro-txt-box-wrap-aesop").css("opacity", "1");
+        $(".intro-txt-box-wrap-aesop").css("transition-duration", ".5s");
+    });
+    $(".aesop").mouseleave(function () {
+        $(".intro-aesop").css("height", "50px");
+        $(".intro-txt-box-wrap-aesop").css("opacity", "0");
+        $(".intro-txt-box-wrap-aesop").css("transition-duration", ".1s");
+    });
     /* //taxi slideup */
 
 

@@ -42,17 +42,23 @@
                     <li><a href="#none">스토어</a></li>
                     <li><a href="#none">검색</a></li>
                     <li><a href="#none">로그인</a></li>
-                    <li class="cart"><a href="#none">카트</a></li>
+                    <li id="cart"><a href="#none">카트</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="cart-alarm">
+    
+    
+    
+    <div id="cart-alarm">
         <p>카트가 비었습니다.</p>
     </div>
 
-    <div class="swiper-container swiper-container-horizontal"> 
-       <img src="aesop-img/mouse-wheel.png" alt="mouse" class="mouse">
+   
+   
+   
+    <div class="swiper-container swiper-container-horizontal">
+        <img src="aesop-img/mouse-wheel.png" alt="mouse" class="mouse">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <p class="title">더 아테네움</p>
@@ -116,14 +122,17 @@
             direction: 'horizontal',
             effect: 'fade',
         });
-
     </script>
     <!-- //이미지 슬라이드 하기 위함 //대비용 -->
 
 
+    <script>
+        cart.onclick = function() {
+            cart-alarm.style.animation = 'cartSlide .5s 3s';
+        };
+    </script>
 
 
 
-</body>
 
-</html>
+</body></html>

@@ -14,6 +14,12 @@ $(document).ready(function () {
        $(".swiper-container").css("animation-delay",".5s"); 
        $(".swiper-container").css("animation-fill-mode","forwards"); 
        $(".mouse").css("animation-name","fadeOut"); 
+        
+        
+        $(".store-place").css("animation-name","storefadeIn");
+        $(".store-place").css("animation-duration",".8s");
+        $(".store-place").css("animation-delay",".4s");
+        $(".store-place").css("animation-fill-mode","forwards");
     });
     
 });

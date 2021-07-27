@@ -66,8 +66,8 @@
 body {
     width: 100vw;
     height: 100vh;
-    padding:0;
-    margin:0 auto;
+    padding: 0;
+    margin: 0 auto;
     color: #292929;
     transition-duration: .3s;
     font-family: "AppleSDGothicNeoUL";
@@ -79,65 +79,73 @@ body {
 a,
 p,
 li {
-    color:#fff;
+    color: #fff;
     text-decoration: none;
 }
-button{
-    border:none;
+
+button {
+    border: none;
     background: none;
 }
 
-nav{
+nav {
     position: fixed;
-    float:left;
-    width:20%;
+    float: left;
+    width: 20%;
     max-width: 240px;
-    height:100vh;
-    padding:0;
-    left:0;
-    top:0;
+    height: 100vh;
+    padding: 0;
+    left: 0;
+    top: 0;
     overflow: hidden;
     z-index: 10;
 }
-nav .nav-wrap{
+
+nav .nav-wrap {
     position: relative;
-    width:100%;
-    
+    width: 100%;
+
 }
 
-nav video{
+nav video {
     position: absolute;
-    top:0;
+    top: 0;
     z-index: 1;
 }
-.menu-wrap{
+
+.menu-wrap {
     position: relative;
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     text-align: center;
     z-index: 2;
 
 }
-.logo{
+
+.logo {
     position: relative;
     z-index: 2;
-    width:140px;
-    margin-top:220px;
+    width: 140px;
+    margin-top: 220px;
 }
-ul{
-    margin-top:50px;
+
+ul {
+    margin-top: 50px;
 }
-ul li{
-    width:50px;
-    margin:0 auto;
-    margin-bottom:10px;
+
+ul li {
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
     font-size: 16px;
     transition-duration: .3s;
 }
-ul li:hover{
+
+ul li:hover {
     text-decoration: underline;
 }
-ul li:nth-child(5){
+
+ul li:nth-child(5) {
     margin-top: 200px;
 }
 
@@ -148,49 +156,55 @@ ul li:nth-child(5){
 
 
 /* top-menu */
-.top-menu{
+.top-menu {
     position: relative;
-    float:right;
-    width:80%;
-    height:150px;
+    float: right;
+    width: 80%;
+    height: 150px;
     text-align: center;
 }
-.top-menu .menu-wrap{
+
+.top-menu .menu-wrap {
     position: relative;
-    width:820px;
-    height:200px;
-    margin:0 auto;
+    width: 820px;
+    height: 200px;
+    margin: 0 auto;
     overflow-y: hidden;
 }
-.menu-circle{
+
+.menu-circle {
     position: relative;
-    float:left;
+    float: left;
     background: #d5d2b4;
-    width:90px;
+    width: 90px;
     height: 90px;
     border-radius: 100%;
     margin: 35px 13px 0 13px;
     text-align: center;
     transition-duration: .3s;
 }
-.menu-circle:hover{
+
+.menu-circle:hover {
     background: #a6a387;
 }
-.menu-circle img{
+
+.menu-circle img {
     position: relative;
-    width:80%;
+    width: 80%;
     text-align: center;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.menu-circle .menu-title{
+
+.menu-circle .menu-title {
     position: absolute;
-    width:100%;
-    bottom:-35px;
+    width: 100%;
+    bottom: -35px;
     font-family: "AppleSDGothicNeoM";
     line-height: 2.5;
     font-size: 14px;
-    color:#292929;
+    color: #292929;
 }
+
 /* //top-menu */
 
 
@@ -198,87 +212,98 @@ ul li:nth-child(5){
 
 
 /* product */
-.product-place{
+.product-place {
     position: relative;
-    float:right;
-    width:80%;
+    float: right;
+    width: 80%;
     height: auto;
-    margin-top:80px;
-    padding:0;
-    
+    margin-top: 80px;
+    padding: 0;
+
 }
-.product-wrap{
+
+.product-wrap {
     position: relative;
-    width:95%;
-    margin:0 auto;
+    width: 95%;
+    margin: 0 auto;
     text-align: center;
 }
-.product-top{
+
+.product-top {
     position: relative;
-    float:left;
-    width:100%;
-    height:30px;
-    margin-bottom:15px;
-    padding-bottom:15px;
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
-.product-top .title{
+
+.product-top .title {
     text-align: left;
     font-size: 20px;
-    color:#292929;
-    margin-left:10px;
+    color: #292929;
+    margin-left: 10px;
 }
-.product{
+
+.product {
     position: relative;
-    float:left;
-    width:50%;
-    height:550px;
+    float: left;
+    width: 50%;
+    height: 550px;
     text-align: center;
-    margin-bottom:30px;
-    background: rgba(0,0,0,0.0);
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.0);
     transition-duration: .3s;
 }
-.product img{
-    width:70%;
+
+.product img {
+    width: 70%;
     max-width: 300px;
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 
-.product:hover{
-    background: rgba(0,0,0,0.07);
+.product:hover {
+    background: rgba(0, 0, 0, 0.07);
 }
-.product-txt-box{
+
+.product-txt-box {
     position: absolute;
     width: 100%;
-    bottom:50px;
+    bottom: 50px;
 }
-.product-title{
-    color:#292929;
+
+.product-title {
+    color: #292929;
 }
-.product-price{
-    color:#999;
+
+.product-price {
+    color: #999;
     font-size: 12px;
-    margin-top:5px;
+    margin-top: 5px;
 }
-.product-info{
+
+.product-info {
     position: relative;
-    width:150px;
+    width: 150px;
     text-align: center;
-    margin:0 auto;
-    margin-top:10px;
-    padding-top:10px;
-    border-top:1.3px solid #292929;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1.3px solid #292929;
 }
-.product-info .info1{
-    float:left;
-    color:#292929;
+
+.product-info .info1 {
+    float: left;
+    color: #292929;
     font-family: "AppleSDGothicNeoM";
 }
 
-.product-info .info2{
-    color:#999;
+.product-info .info2 {
+    color: #999;
     float: right;
 }
+
 /* //product */
 
 
@@ -363,8 +388,149 @@ ul li:nth-child(5){
 
 
 @media screen and (min-width:1440px) {
-    .product{
-        width:33%;
+    .product {
+        width: 33%;
     }
 }
 
+
+
+@media screen and (max-width: 840px) and (min-width:550px) {
+
+    /* nav */
+    nav {
+        position: fixed;
+        float: left;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        z-index: 3;
+    }
+
+    nav .nav-wrap {
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+
+    nav video {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    .menu-wrap {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        z-index: 2;
+
+    }
+
+    .logo {
+        position: relative;
+        float: left;
+        z-index: 2;
+        width: 140px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    ul {
+        position: relative;
+        float: right;
+        width: 380px;
+        margin-top: 0px;
+    }
+
+    ul li {
+        width: 50px;
+        float: left;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    ul li:hover {
+        text-decoration: underline;
+    }
+
+    ul #login {
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    #search-place {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
+    #search-place input {
+        width: 350px;
+        right: 4px;
+    }
+
+    #search-place .search-img {
+        right: 22px;
+    }
+
+    /* //nav */
+
+    
+    
+    /* slide */
+    .swiper-container {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    .swiper-slide {
+        padding-top: 80px;
+    }
+
+    .swiper-slide .title {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .swiper-slide .txt {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .swiper-slide .main-img {
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    .swiper-slide .button-wrap {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .swiper-slide .slide4-txt-box {
+        position: relative;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* //slide */
+    
+    
+    
+    /* */
+    .product-place{
+        margin-top:90px;
+    }
+}

@@ -87,7 +87,7 @@ $(document).ready(function () {
 
     
     /* 모바일 스크립트*/
-            if (document.body.clientWidth < 550) 
+            if (document.body.clientWidth < 560) 
             {
                 
                 $(".mob-hamburger").click(function(){

@@ -448,7 +448,7 @@ input::-webkit-search-results-decoration {
     position: relative;
     float: right;
     width: 80%;
-    height: 150px;
+    height: 200px;
     text-align: center;
     transition-duration: .4s;
     overflow-y: hidden;
@@ -472,6 +472,14 @@ input::-webkit-search-results-decoration {
     margin: 35px 13px 0 13px;
     text-align: center;
     transition-duration: .3s;
+}
+
+.menu-wrap a:nth-child(1) .menu-circle {
+    margin-left: 0;
+}
+
+.menu-wrap a:nth-child(4) .menu-circle {
+    margin-right: 0;
 }
 
 .menu-circle:hover {
@@ -668,7 +676,7 @@ input::-webkit-search-results-decoration {
 
 
 
-@media screen and (max-width: 1020px) and (min-width:550px) {
+@media screen and (max-width: 1020px) and (min-width:560px) {
 
     /* nav */
     nav {
@@ -888,6 +896,7 @@ input::-webkit-search-results-decoration {
         margin-top: 70px;
         text-align: center;
         z-index: 1;
+        overflow-y: hidden;
         overflow-x: auto;
         -ms-overflow-style: none;
     }
@@ -898,7 +907,7 @@ input::-webkit-search-results-decoration {
 
     .top-menu .menu-wrap {
         position: relative;
-        width: 400px;
+        width: 380px;
         height: 200px;
         margin: 0 auto;
         overflow-y: auto;
@@ -915,6 +924,14 @@ input::-webkit-search-results-decoration {
         margin: 35px 13px 0 13px;
         text-align: center;
         transition-duration: .3s;
+    }
+
+    .menu-wrap a:nth-child(1) .menu-circle {
+        margin-left: 0;
+    }
+
+    .menu-wrap a:nth-child(4) .menu-circle {
+        margin-right: 0;
     }
 
     .top-menu .menu-circle .circle-txt {
@@ -1006,7 +1023,7 @@ input::-webkit-search-results-decoration {
 
 
 /* mobile */
-@media screen and (max-width: 549px) and (min-width:200px) {
+@media screen and (max-width: 559px) and (min-width:200px) {
 
     /* nav */
     nav {
@@ -1303,6 +1320,7 @@ input::-webkit-search-results-decoration {
         z-index: 1;
         overflow-x: auto;
         -ms-overflow-style: none;
+        overflow-y: hidden;
     }
 
     .top-menu::-webkit-scrollbar {
@@ -1311,7 +1329,7 @@ input::-webkit-search-results-decoration {
 
     .top-menu .menu-wrap {
         position: relative;
-        width: 400px;
+        width: 380px;
         height: 200px;
         margin: 0 auto;
         overflow-y: auto;
@@ -1328,6 +1346,12 @@ input::-webkit-search-results-decoration {
         margin: 35px 13px 0 13px;
         text-align: center;
         transition-duration: .3s;
+    }
+    .menu-wrap a:nth-child(1) .menu-circle{
+        margin-left:0;
+    }
+    .menu-wrap a:nth-child(4) .menu-circle{
+        margin-right:0;
     }
 
     .top-menu .menu-circle .circle-txt {

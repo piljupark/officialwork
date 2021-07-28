@@ -157,41 +157,46 @@ ul #login {
 
 
 /* store */
-.store-place {
-    position: absolute;
-    float: right;
-    width: 70%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    opacity: 0;
+.store-place-mob {
+    display: none;
 }
 
-@keyframes storefadeIn {
-    from {
-        opacity: 0;
-    }
+.store-place {
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    left: -240px;
+    background: #fffef3;
+    z-index: 5;
+    transition-duration: .4s;
+    display: block;
+}
 
-    to {
-        opacity: 1;
-    }
+.store-wrap .prev {
+    width: 20px;
+    margin-top: 30px;
 }
 
 .store-place .store-title {
     position: relative;
     float: left;
     width: 100%;
-    margin-top: 220px;
+    margin-top: 180px;
     color: #292929;
-    font-size: 24px;
+    font-size: 26px;
+}
+
+.store-wrap {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .store-search {
     position: relative;
     float: left;
-    width: 400px;
+    width: 100%;
     margin-top: 20px;
     background: none;
     border: none;
@@ -209,19 +214,19 @@ input:focus {
     position: relative;
     float: left;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 120px;
 }
 
 .store-info-txt {
     position: relative;
     float: left;
-    width: 25%;
+    width: 100%;
     text-align: center;
 }
 
 .store-name {
     float: left;
-    width: 100%;
+    width: 100px;
     color: #292929;
     font-size: 17px;
     text-align: left;
@@ -237,19 +242,20 @@ input:focus {
 }
 
 .number {
-    margin-top: 5px;
+    float: right;
+    width: 100px;
+    text-align: right;
 }
 
 .store-info-img {
     position: relative;
     float: left;
-    width: 73%;
-    margin-left: 10px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .store-info-img .store1 {
     width: 100%;
-    max-width: 800px;
 }
 
 /* //store */
@@ -346,6 +352,7 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {
     display: none;
 }
+
 /* //search */
 
 
@@ -719,63 +726,76 @@ input::-webkit-search-results-decoration {
         margin-top: 30px;
         margin-left: 70px;
     }
+
     /* //nav */
 
     
     
-    
     /* store */
-    .store-place {
-        position: relative;
-        float: right;
-        width: 90%;
-        height: 100%;
-        overflow: hidden;
-        z-index: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-    }
-
-    .store-info-txt {
-        position: relative;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .store-name {
-        position: relative;
-        float: left;
-        width: 100px;
-        margin-left: 10px;
-    }
-
-    .store-address {
-        position: absolute;
-        width: 150px;
-        margin-top: 10px;
-        right: 80px;
-    }
-
-    .number {
-        float: right;
-        width: 70px;
-        right: 0px;
-    }
     
-    .store-info-img {
-        width: 100%;
-        max-width: none;
-    }
-    /* //store */
-    
-    
-    /* search-mob */
-    .search-place{
+    .store-place{
         display: none;
     }
     
+    
+    .store-place-mob {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: -460px;
+        left: 0px;
+        background: #fffef3;
+        z-index: 5;
+        transition-duration: .4s;
+        display: block;
+    }
+    .store-wrap .prev {
+        width: 20px;
+        margin-top: 30px;
+    }
+
+    .store-title {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        color: #292929;
+        font-size: 26px;
+    }
+
+    .store-wrap {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .store-search {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #292929;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    /* //store */
+
+
+
+
+    /* search-mob */
+    .search-place {
+        display: none;
+    }
+
     .search-place-mob {
         position: absolute;
         width: 100%;
@@ -832,9 +852,10 @@ input::-webkit-search-results-decoration {
         color: #292929;
         margin-bottom: 10px;
     }
-     /* //search-mob */
 
-    
+    /* //search-mob */
+
+
 
     /* */
     .top-menu {
@@ -876,5 +897,5 @@ input::-webkit-search-results-decoration {
 
 
 
-    
+
 }

@@ -51,12 +51,14 @@ $(document).ready(function () {
             $(".search-place-mob").css("top", "90px");
             $(".search-place-mob").css("left", "0px");
             $(".bg-black").css("display", "block");
+            $("body").css("overflow","hidden");
         });
 
         $(".prev").click(function () {
             $(".search-place-mob").css("top", "-460px");
             $(".search-place-mob").css("left", "0px");
             $(".bg-black").css("display", "none");
+            $("body").css("overflow-y","scroll");
         });
     }
 

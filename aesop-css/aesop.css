@@ -69,7 +69,6 @@ body {
     padding: 0;
     margin: 0 auto;
     color: #292929;
-    transition-duration: .3s;
     font-family: "AppleSDGothicNeoUL";
     font-size: 14px;
     background: #fffef3;
@@ -97,6 +96,7 @@ nav {
     left: 0;
     top: 0;
     overflow: hidden;
+    z-index: 10;
 }
 
 nav .nav-wrap {
@@ -150,44 +150,192 @@ ul #login {
 /* //nav */
 
 
-#search-place {
+
+
+/* store */
+.store-place {
     position: relative;
-    opacity: 1;
-    transition-duration: .3s;
-    width: 80%;
-    height: 0px;
-    margin: 0 auto;
+    float: right;
+    width: 70%;
+    height: 100%;
     overflow: hidden;
-}
-
-.close-img {
-    position: absolute;
-    width: 10px;
-    bottom: 15px;
-    z-index: 2;
-}
-
-.search-img {
-    position: absolute;
-    bottom: 15px;
-    right: 13px;
-    z-index: 2;
-}
-
-#search-place input {
-    position: relative;
-    background: none;
-    border: 0;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-bottom: 10px;
     z-index: 1;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+@keyframes storefadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.store-place .store-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 220px;
+    color: #292929;
+    font-size: 24px;
+}
+
+.store-search {
+    position: relative;
+    float: left;
+    width: 400px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #292929;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.store-box {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.store-info-txt {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.store-name {
+    float: left;
+    width: 100%;
+    color: #292929;
+    font-size: 17px;
+    text-align: left;
+}
+
+.store-address {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+}
+
+.number {
+    margin-top: 5px;
+}
+
+.store-info-img {
+    position: relative;
+    float: left;
+    width: 73%;
+    margin-left: 10px;
+}
+
+.store-info-img .store1 {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* //store */
+
+
+
+
+
+
+
+/* search */
+input {
+    font-family: "AppleSDGothicNeoUL"
 }
 
 
+.search-place-mob {
+    display: none;
+}
 
+.search-place {
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    left: -240px;
+    background: #fffef3;
+    z-index: 5;
+    transition-duration: .4s;
+    display: block;
+}
+
+.search-wrap {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.search-wrap .search-title {
+    float: left;
+    width: 100%;
+    color: #292929;
+    font-size: 26px;
+    margin-top: 220px;
+    margin-bottom: 20px;
+}
+
+.search-wrap .prev {
+    width: 20px;
+    margin-top: 30px;
+}
+
+.search-wrap input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #292929;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background: #fffef3;
+}
+
+.search-wrap .popular-search {
+    float: left;
+    width: 100%;
+    color: #999;
+    font-size: 20px;
+}
+
+.search-wrap .popular1 {
+    font-size: 14px;
+    color: #292929;
+    margin-bottom: 10px;
+}
+
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+/* //search */
+
+
+
+
+/* cart */
 #cart-alarm {
     position: fixed;
     top: -30px;
@@ -202,31 +350,21 @@ ul #login {
 #cart-alarm p {
     line-height: 1.8;
 }
+/* //cart */
 
-@keyframes cartSlide {
-    0% {
-        top: -30px;
-    }
 
-    10%,
-    30%,
-    40%,
-    60% {
-        top: 0px;
-    }
 
-    70%,
-    80%,
-    90%,
-    100% {
-        top: -30px;
-    }
 
-}
 
-.slideInAnimation {
-    animation-name: cartSlide;
-    animation-duration: 3s;
+.bg-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
 }
 
 
@@ -234,6 +372,17 @@ ul #login {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* slide */
 .swiper-container {
     position: relative;
     float: right;
@@ -402,103 +551,6 @@ ul #login {
 
 
 
-/* store */
-.store-place {
-    position: absolute;
-    float: right;
-    width: 70%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    opacity: 0;
-}
-
-@keyframes storefadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.store-place .store-title {
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-top: 220px;
-    color: #292929;
-    font-size: 24px;
-}
-
-.store-search {
-    position: relative;
-    float: left;
-    width: 400px;
-    margin-top: 20px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #292929;
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-input:focus {
-    outline: none;
-}
-
-.store-box {
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-top: 60px;
-}
-
-.store-info-txt {
-    position: relative;
-    float: left;
-    width: 25%;
-    text-align: center;
-}
-
-.store-name {
-    float: left;
-    width: 100%;
-    color: #292929;
-    font-size: 17px;
-    text-align: left;
-}
-
-.store-address {
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    color: #666;
-    font-size: 12px;
-    text-align: left;
-}
-
-.number {
-    margin-top: 5px;
-}
-
-.store-info-img {
-    position: relative;
-    float: left;
-    width: 73%;
-    margin-left: 10px;
-}
-
-.store-info-img .store1 {
-    width: 100%;
-    max-width: 800px;
-}
-
-/* //store */
 
 
 
@@ -506,7 +558,13 @@ input:focus {
 
 
 
-@media screen and (max-width: 840px) and (min-width:550px) {
+
+
+
+
+
+
+@media screen and (max-width: 1020px) and (min-width:550px) {
 
     /* nav */
     nav {
@@ -515,7 +573,7 @@ input:focus {
         width: 100%;
         height: 90px;
         top: 0;
-        z-index: 3;
+        z-index: 10;
     }
 
     nav .nav-wrap {
@@ -573,20 +631,11 @@ input:focus {
         margin-left: 70px;
     }
 
-    #search-place {
-        position: absolute;
-        top: 50px;
-        width: 100%;
-    }
 
-    #search-place input {
-        width: 350px;
-        right: 4px;
-    }
 
-    #search-place .search-img {
-        right: 22px;
-    }
+
+
+
 
     /* //nav */
 
@@ -652,38 +701,110 @@ input:focus {
         overflow: hidden;
         z-index: 1;
         top: 50%;
-        left:50%;
-        transform: translate(-50%,-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
         opacity: 0;
     }
-    .store-info-txt{
+
+    .store-info-txt {
         position: relative;
-        width:100%;
-        margin-bottom:10px;
+        width: 100%;
+        margin-bottom: 10px;
     }
-    .store-name{
+
+    .store-name {
         position: relative;
-        float:left;
-        width:100px;
-        margin-left:10px;
+        float: left;
+        width: 100px;
+        margin-left: 10px;
     }
-    .store-address{
+
+    .store-address {
         position: absolute;
-        width:150px;
-        margin-top:10px;
-        right:80px;
+        width: 150px;
+        margin-top: 10px;
+        right: 80px;
     }
-    .number{
-        float:right;
-        width:70px;
-        right:0px;
+
+    .number {
+        float: right;
+        width: 70px;
+        right: 0px;
     }
-    .store-info-img{
-        width:100%;
+
+    .store-info-img {
+        width: 100%;
         max-width: none;
     }
+
+
+
+
+
+    /* search-mob */
+    .search-place{
+        display: none;
+    }
     
-    
-    
-    
+    .search-place-mob {
+        position: absolute;
+        width: 100%;
+        height: 380px;
+        top: -460px;
+        left: 0px;
+        background: #fffef3;
+        z-index: 5;
+        transition-duration: .4s;
+        display: block;
+    }
+
+    .search-wrap {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .search-wrap .search-title {
+        float: left;
+        width: 100%;
+        color: #292929;
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .search-wrap .prev {
+        width: 20px;
+        margin-top: 30px;
+    }
+
+    .search-wrap input {
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #292929;
+        margin-bottom: 40px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        background: #fffef3;
+    }
+
+    .search-wrap .popular-search {
+        float: left;
+        width: 100%;
+        color: #999;
+        font-size: 20px;
+    }
+
+    .search-wrap .popular1 {
+        font-size: 14px;
+        color: #292929;
+        margin-bottom: 10px;
+    }
+     /* //search-mob */
+
+
+
+
 }

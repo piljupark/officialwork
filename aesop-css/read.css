@@ -187,41 +187,81 @@ ul #login {
 /* //nav */
 
 
-#search-place {
+/* search */
+input {
+    font-family: "AppleSDGothicNeoUL"
+}
+
+
+.search-place-mob {
+    display: none;
+}
+
+.search-place {
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    left: -240px;
+    background: #fffef3;
+    z-index: 5;
+    transition-duration: .4s;
+    display: block;
+}
+
+.search-wrap {
     position: relative;
-    opacity: 1;
-    transition-duration: .3s;
-    width: 80%;
-    height: 0px;
+    width: 90%;
     margin: 0 auto;
-    overflow: hidden;
 }
 
-.close-img {
-    position: absolute;
-    width: 10px;
-    bottom: 15px;
-    z-index: 2;
+.search-wrap .search-title {
+    float: left;
+    width: 100%;
+    color: #292929;
+    font-size: 26px;
+    margin-top: 220px;
+    margin-bottom: 20px;
 }
 
-.search-img {
-    position: absolute;
-    bottom: 15px;
-    right: 13px;
-    z-index: 2;
+.search-wrap .prev {
+    width: 20px;
+    margin-top: 30px;
 }
 
-#search-place input {
-    position: relative;
-    background: none;
-    border: 0;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    padding-top: 10px;
-    padding-left: 25px;
+.search-wrap input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #292929;
+    margin-bottom: 40px;
+    padding-left: 10px;
     padding-bottom: 10px;
-    z-index: 1;
+    font-size: 20px;
+    background: #fffef3;
 }
+
+.search-wrap .popular-search {
+    float: left;
+    width: 100%;
+    color: #999;
+    font-size: 20px;
+}
+
+.search-wrap .popular1 {
+    font-size: 14px;
+    color: #292929;
+    margin-bottom: 10px;
+}
+
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+/* //search */
 
 
 
@@ -382,6 +422,7 @@ ul #login {
     width: 80%;
     margin-top: 70px;
     transition-duration: .4s;
+    z-index: 2;
 }
 
 .athenaeum-wrap {
@@ -537,12 +578,12 @@ ul #login {
 
 /* store */
 .store-place {
-    position: absolute;
+    position: relative;
     float: right;
     width: 70%;
     height: 100%;
     overflow: hidden;
-    z-index: 1;
+    z-index: -1;
     top: 0;
     right: 0;
     opacity: 0;
@@ -638,7 +679,7 @@ input:focus {
 
 
 
-@media screen and (max-width: 900px) and (min-width:550px) {
+@media screen and (max-width: 1020px) and (min-width:550px) {
 
     /* nav */
     nav {
@@ -783,8 +824,9 @@ input:focus {
     .img-wrap .img-box img {
         width: 90%;
     }
-    .athenaeum .athenaeum-wrap .img-wrap a:nth-child(3) .img-box img{
-        width:90%;
+    
+    .athenaeum-wrap .title-wrap{
+        
     }
 
     /* //athenaeum */

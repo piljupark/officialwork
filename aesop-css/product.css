@@ -315,7 +315,7 @@ ul #login {
     margin-top: 80px;
     padding: 0;
     transition-duration: .4s;
-
+    z-index: 2;
 }
 
 .product-wrap {
@@ -595,7 +595,7 @@ input:focus {
 
 
 
-@media screen and (max-width: 840px) and (min-width:550px) {
+@media screen and (max-width: 1020px) and (min-width:550px) {
 
     /* nav */
     nav {
@@ -721,7 +721,7 @@ input:focus {
 
 
     .store-place {
-        position: absolute;
+        position: relative;
         float: right;
         width: 90%;
         height: 100%;
@@ -758,7 +758,7 @@ input:focus {
         width: 70px;
         right: 0px;
     }
-
+    
     .store-info-img {
         width: 100%;
         max-width: none;

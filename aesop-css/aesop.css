@@ -913,9 +913,9 @@ input::-webkit-search-results-decoration {
 
     .mob-hamburger {
         position: absolute;
-        width: 20px;
+        width: 15px;
         right: 0;
-        top: 25px;
+        top: 27px;
         display: block;
     }
 
@@ -1005,7 +1005,7 @@ input::-webkit-search-results-decoration {
         margin: 0 auto;
         text-align: left;
         margin-bottom: 30px;
-        margin-top:100px;
+        margin-top:70px;
     }
 
     .swiper-slide .txt {
@@ -1017,7 +1017,7 @@ input::-webkit-search-results-decoration {
 
     .swiper-slide .main-img {
         width: 100%;
-        margin-top: 90px;
+        margin-top: 50px;
     }
 
     .swiper-slide .button-wrap {

@@ -987,9 +987,9 @@ input::-webkit-search-results-decoration {
 
     .mob-hamburger {
         position: absolute;
-        width: 20px;
+        width: 15px;
         right: 0;
-        top: 25px;
+        top: 27px;
         display: block;
     }
 

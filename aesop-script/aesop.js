@@ -85,6 +85,43 @@ $(document).ready(function () {
     }
     /* //태블릿 스크립트 */
 
+    
+    /* 모바일 스크립트*/
+            if (document.body.clientWidth < 550) 
+            {
+                
+                $(".mob-hamburger").click(function(){
+                    $(".mob-video-wrap").css("opacity","0");
+                    
+                    $(".mob-logo-black").css("opacity","1");
+                    $(".mob-logo-white").css("opacity","0");
+                    
+                    $(".mob-hamburger").css("display","none");
+                    
+                    $(".mob-menu-close").css("display","block");
+                    
+                    $(".mobile-menu").css("height","100vh");
+                    
+                    $("body").css("overflow-y","hidden");
+                });
+                
+                
+                $(".mob-menu-close").click(function(){
+                    $(".mob-video-wrap").css("opacity","1");
+                    
+                    $(".mob-logo-black").css("opacity","0");
+                    $(".mob-logo-white").css("opacity","1");
+                    
+                    $(".mob-hamburger").css("display","block");
+                    
+                    $(".mob-menu-close").css("display","none");
+                    
+                    $(".mobile-menu").css("height","0vh");
+                    
+                    $("body").css("overflow-y","auto");
+                });
+            }
+            /* //모바일 스크립트 */
 
 
 });

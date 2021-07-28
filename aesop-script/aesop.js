@@ -45,7 +45,7 @@ $(document).ready(function () {
         
         
         $("#store").click(function () {
-            $(".store-place-mob").css("top", "90px");
+            $(".store-place-mob").css("top", "70px");
             $(".store-place-mob").css("left", "0px");
             
             $(".search-place-mob").css("top", "-460px");
@@ -65,7 +65,7 @@ $(document).ready(function () {
         
 
         $("#search").click(function () {
-            $(".search-place-mob").css("top", "90px");
+            $(".search-place-mob").css("top", "70px");
             $(".search-place-mob").css("left", "0px");
             
             $(".store-place-mob").css("top", "-460px");

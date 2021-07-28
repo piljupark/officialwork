@@ -723,7 +723,7 @@ input::-webkit-search-results-decoration {
         position: fixed;
         float: left;
         width: 100%;
-        height: 90px;
+        height: 70px;
         top: 0;
         z-index: 10;
     }
@@ -758,7 +758,7 @@ input::-webkit-search-results-decoration {
         float: left;
         z-index: 2;
         width: 140px;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 20px;
     }
 
@@ -773,7 +773,7 @@ input::-webkit-search-results-decoration {
         width: 50px;
         float: left;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     ul li:hover {
@@ -781,7 +781,7 @@ input::-webkit-search-results-decoration {
     }
 
     ul #login {
-        margin-top: 30px;
+        margin-top: 25px;
         margin-left: 70px;
     }
 
@@ -1140,59 +1140,6 @@ input::-webkit-search-results-decoration {
 
 
 
-    /* //nav */
-
-    .swiper-container {
-        position: relative;
-        float: left;
-        width: 100%;
-        margin-top: 90px;
-        text-align: center;
-    }
-
-    .swiper-slide {
-        padding-top: 80px;
-    }
-
-    .swiper-slide .title {
-        width: 90%;
-        margin: 0 auto;
-        text-align: left;
-        margin-bottom: 30px;
-    }
-
-    .swiper-slide .txt {
-        width: 90%;
-        margin: 0 auto;
-        text-align: left;
-        margin-bottom: 15px;
-    }
-
-    .swiper-slide .main-img {
-        width: 100%;
-        margin-top: 90px;
-    }
-
-    .swiper-slide .button-wrap {
-        float: none;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .swiper-slide .slide4-txt-box {
-        position: relative;
-        width: 100%;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-    .mouse {
-        display: none;
-    }
-
-
 
 
 
@@ -1322,5 +1269,68 @@ input::-webkit-search-results-decoration {
     }
 
     /* //search-mob */
+    
+    
+    /**/
+    .top-menu {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 150px;
+        margin-top: 90px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .top-menu .menu-wrap {
+        position: relative;
+        width: 480px;
+        height: 200px;
+        margin: 0 auto;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    .menu-circle {
+        position: relative;
+        float: left;
+        background: #d5d2b4;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        margin: 35px 13px 0 13px;
+        text-align: center;
+        transition-duration: .3s;
+    }
+
+    /**/
+
+
+
+
+
+
+    /* athenaeum */
+    .athenaeum {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .athenaeum-wrap {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .img-wrap .img-box img {
+        width: 90%;
+    }
+
+    .athenaeum-wrap .title-wrap {}
+
+    /* //athenaeum */
+
 
 }

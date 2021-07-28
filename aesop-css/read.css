@@ -451,6 +451,7 @@ input::-webkit-search-results-decoration {
     height: 150px;
     text-align: center;
     transition-duration: .4s;
+    overflow-y: hidden;
 }
 
 .top-menu .menu-wrap {
@@ -556,6 +557,7 @@ input::-webkit-search-results-decoration {
     margin-top: 70px;
     transition-duration: .4s;
     z-index: 2;
+    overflow-x: hidden;
 }
 
 .athenaeum-wrap {
@@ -658,80 +660,6 @@ input::-webkit-search-results-decoration {
 /* //athenaeum */
 
 
-
-
-
-
-/*
-
-.swiper-container{
-    position: relative;
-    float:right;
-    width:70%;
-    height:100%;
-    overflow: hidden;
-}
-.swiper-wrapper{
-    position: relative;
-    float:left;
-    width:100%;
-    height:100%;
-    display: flex;
-}
-.swiper-slide{
-    position: relative;
-    width:100%;
-    height: 100%;
-    background: #fffef3;
-}
-.swiper-slide .title{
-    color:#292929;
-    font-size: 25px;
-    margin-top:100px;
-    margin-bottom:30px;
-}
-.swiper-slide .txt{
-    color:#292929;
-    font-size: 15px;
-    margin-bottom:10px;
-}
-.swiper-slide video{
-    float:left;
-    width: 900px;
-    margin-top:50px;
-}
-.swiper-slide .main-img{
-    float:left;
-    width:900px;
-    margin-top:50px;
-}
-.swiper-slide .button-wrap{
-    position: relative;
-    float:left;
-    width:100%;
-}
-.swiper-slide button{
-    position: relative;
-    float:left;
-    padding:15px 60px 15px 15px;
-    border:0.5px solid #ccc;
-    margin-top:25px;
-    color:#292929;
-    text-align: right;
-    cursor: pointer;
-}
-
-.swiper-slide .arrow{
-    position: absolute;
-    width:12px;
-    right:12px;
-    top:16px;
-}
-
-*/
-
-
-/* slide */
 
 
 

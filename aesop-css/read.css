@@ -1039,8 +1039,8 @@ input::-webkit-search-results-decoration {
 
     .mob-logo {
         float: left;
-        width: 140px;
-        margin-top: 15px;
+        width: 90px;
+        margin-top: 20px;
     }
 
     .mob-logo-black {
@@ -1148,6 +1148,9 @@ input::-webkit-search-results-decoration {
     .store-place {
         display: none;
     }
+    .store-place-mob{
+        display: none;
+    }
 
 
     .store-place-mob {
@@ -1208,6 +1211,9 @@ input::-webkit-search-results-decoration {
 
     /* search-mob */
     .search-place {
+        display: none;
+    }
+    .search-place-mob {
         display: none;
     }
 

@@ -403,11 +403,10 @@ input::-webkit-search-results-decoration {
     position: relative;
     float: right;
     width: 70%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
     transition-duration: .4s;
-    display: block;
     z-index: 2;
+    display: block;
 }
 
 @keyframes otherfadeOut {
@@ -472,7 +471,7 @@ input::-webkit-search-results-decoration {
 .swiper-slide {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #fffef3;
 }
 
@@ -667,15 +666,13 @@ input::-webkit-search-results-decoration {
         text-align: center;
     }
 
-    .swiper-slide {
-        padding-top: 80px;
-    }
 
     .swiper-slide .title {
         width: 90%;
         margin: 0 auto;
         text-align: left;
         margin-bottom: 30px;
+        margin-top:30px;
     }
 
     .swiper-slide .txt {
@@ -683,6 +680,7 @@ input::-webkit-search-results-decoration {
         margin: 0 auto;
         text-align: left;
         margin-bottom: 15px;
+        
     }
 
     .swiper-slide .main-img {
@@ -890,8 +888,8 @@ input::-webkit-search-results-decoration {
 
     .mob-logo {
         float: left;
-        width: 140px;
-        margin-top: 15px;
+        width: 90px;
+        margin-top: 20px;
     }
 
     .mob-logo-black {
@@ -998,12 +996,8 @@ input::-webkit-search-results-decoration {
         position: relative;
         float: left;
         width: 100%;
-        margin-top: 90px;
+        margin-top: 40px;
         text-align: center;
-    }
-
-    .swiper-slide {
-        padding-top: 80px;
     }
 
     .swiper-slide .title {
@@ -1011,6 +1005,7 @@ input::-webkit-search-results-decoration {
         margin: 0 auto;
         text-align: left;
         margin-bottom: 30px;
+        margin-top:100px;
     }
 
     .swiper-slide .txt {
@@ -1053,6 +1048,10 @@ input::-webkit-search-results-decoration {
     .store-place {
         display: none;
     }
+    .store-place-mob{
+        display: none;
+    }
+
 
 
     .store-place-mob {
@@ -1113,6 +1112,9 @@ input::-webkit-search-results-decoration {
 
     /* search-mob */
     .search-place {
+        display: none;
+    }
+    .search-place-mob{
         display: none;
     }
 

@@ -807,6 +807,9 @@ input::-webkit-search-results-decoration {
     .search-place {
         display: none;
     }
+    .search-place-mob {
+        display: none;
+    }
 
     .search-place-mob {
         position: absolute;
@@ -959,8 +962,8 @@ input::-webkit-search-results-decoration {
 
     .mob-logo {
         float: left;
-        width: 140px;
-        margin-top: 15px;
+        width: 90px;
+        margin-top: 20px;
     }
 
     .mob-logo-black {

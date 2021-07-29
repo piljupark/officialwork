@@ -25,12 +25,12 @@
             });
         });
     </script>
-    
-    
+
+
     <script>
         $(document).ready(function() {
 
-            $("#search").click(function() {
+            $("#search-pc").click(function() {
                 $(".search-place").css("left", "240px");
                 $(".bg-black").css("display", "block");
 
@@ -47,7 +47,7 @@
 
 
 
-            $("#store").click(function() {
+            $("#store-pc").click(function() {
                 $(".store-place").css("left", "240px");
                 $(".bg-black").css("display", "block");
 
@@ -70,7 +70,7 @@
             if (document.body.clientWidth < 1021) {
 
 
-                $("#store").click(function() {
+                $("#store-pc").click(function() {
                     $(".store-place-mob").css("top", "70px");
                     $(".store-place-mob").css("left", "0px");
 
@@ -89,7 +89,7 @@
 
 
 
-                $("#search").click(function() {
+                $("#search-pc").click(function() {
                     $(".search-place-mob").css("top", "70px");
                     $(".search-place-mob").css("left", "0px");
 
@@ -109,36 +109,76 @@
             }
             /* //태블릿 스크립트 */
 
-            
+
             /* 모바일 스크립트*/
-            if (document.body.clientWidth < 560) 
-            {
-                
-                $(".mob-hamburger").click(function(){
-                    $(".mob-video-wrap").css("opacity","0");
-                    
-                    $(".mob-logo-black").css("opacity","1");
-                    $(".mob-logo-white").css("opacity","0");
-                    
-                    $(".mob-hamburger").css("display","none");
-                    
-                    $(".mob-menu-close").css("display","block");
-                    
-                    $(".mobile-menu").css("height","100vh");
+            if (document.body.clientWidth < 560) {
+
+                $(".mob-hamburger").click(function() {
+                    $(".mob-video-wrap").css("opacity", "0");
+
+                    $(".mob-logo-black").css("opacity", "1");
+                    $(".mob-logo-white").css("opacity", "0");
+
+                    $(".mob-hamburger").css("display", "none");
+
+                    $(".mob-menu-close").css("display", "block");
+
+                    $(".mobile-menu").css("height", "100vh");
                 });
-                
-                
-                $(".mob-menu-close").click(function(){
-                    $(".mob-video-wrap").css("opacity","1");
+
+
+                $(".mob-menu-close").click(function() {
+                    $(".mob-video-wrap").css("opacity", "1");
+
+                    $(".mob-logo-black").css("opacity", "0");
+                    $(".mob-logo-white").css("opacity", "1");
+
+                    $(".mob-hamburger").css("display", "block");
+
+                    $(".mob-menu-close").css("display", "none");
+
+                    $(".mobile-menu").css("height", "0vh");
                     
-                    $(".mob-logo-black").css("opacity","0");
-                    $(".mob-logo-white").css("opacity","1");
                     
-                    $(".mob-hamburger").css("display","block");
-                    
-                    $(".mob-menu-close").css("display","none");
-                    
-                    $(".mobile-menu").css("height","0vh");
+                    $(".store-place-mob2").css("left", "-100%");
+                    $(".search-place-mob2").css("left", "-100%");
+                    $(".bg-black").css("display", "none");
+                });
+
+
+                $("#store-mob > a").click(function() {
+                    $(".store-place-mob2").css("top", "0px");
+                    $(".store-place-mob2").css("left", "0px");
+
+                    $(".search-place-mob2").css("top", "0px");
+                    $(".search-place-mob2").css("left", "-100%");
+
+                    $("body").css("overflow", "hidden");
+                });
+
+                $(".prev").click(function() {
+                    $(".store-place-mob2").css("top", "0px");
+                    $(".store-place-mob2").css("left", "-100%");
+                    $(".bg-black").css("display", "none");
+                });
+
+
+
+
+                $("#search-mob > a").click(function() {
+                    $(".search-place-mob2").css("top", "0px");
+                    $(".search-place-mob2").css("left", "0px");
+
+                    $(".store-place-mob2").css("top", "0px");
+                    $(".store-place-mob2").css("left", "-100%");
+
+                    $("body").css("overflow", "hidden");
+                });
+
+                $(".prev").click(function() {
+                    $(".search-place-mob2").css("top", "0px");
+                    $(".search-place-mob2").css("left", "-100%");
+                    $(".bg-black").css("display", "none");
                 });
             }
         });
@@ -169,8 +209,8 @@
                 <ul>
                     <li><a href="aesop-html/product.html" target="_blank">제품</a></li>
                     <li><a href="aesop-html/read.html" target="_blank">읽기</a></li>
-                    <li id="store"><a href="#none">스토어</a></li>
-                    <li id="search"><a href="#none">검색</a></li>
+                    <li id="store-pc"><a href="#none">스토어</a></li>
+                    <li id="search-pc"><a href="#none">검색</a></li>
 
 
 
@@ -196,42 +236,78 @@
                 <img src="aesop-img/logo.png" alt="logo" class="mob-logo mob-logo-white">
             </a>
 
-            <a href="#none">
+            <a href="#">
                 <p class="mob-menu-close">닫기</p>
             </a>
-            <a href="#none">
+            <a href="#">
                 <img src="aesop-img/mobile-menu-white.png" alt="mob-hamburger" class="mob-hamburger">
             </a>
         </div>
     </div>
-    
+
+
     <div class="mobile-menu">
         <div class="mobile-menu-wrap">
             <div class="mobile-menu-kind">
                 <ul>
-                    <a href="aesop-html/product.html">
-                        <li>제품</li>
-                    </a>
-                    <a href="aesop-html/read.html">
-                        <li>읽기</li>
-                    </a>
-                    <a href="#">
-                        <li>스토어</li>
-                    </a>
-                    <a href="#">
-                        <li>검색</li>
-                    </a>
-                    <a href="#">
-                        <li>로그인</li>
-                    </a>
-                    <a href="#">
-                        <li>카트</li>
-                    </a>
+
+                    <li><a href="aesop-html/product.html">제품</a></li>
+
+
+                    <li><a href="aesop-html/read.html">읽기</a></li>
+
+
+                    <li id="store-mob"><a href="#none">스토어</a></li>
+
+
+                    <li id="search-mob"><a href="#none">검색</a></li>
+
+
+                    <li><a href="#">로그인</a></li>
+
+
+                    <li><a href="#">카트</a></li>
+
                 </ul>
             </div>
         </div>
+        <!-- 스토어 검색 모바일-->
+    <div class="store-place-mob2">
+        <div class="store-wrap">
+            <a href="#none">
+                <img src="aesop-img/prev-arrow.png" alt="prev" class="prev">
+            </a>
+            <p class="store-title">스토어 검색</p>
+            <input type="search" alt="search" class="store-search" placeholder="도시 또는 도로명">
+        </div>
+    </div>
+    <!-- //스토어 검색 모바일-->
+
+    <!-- 모바일 검색 -->
+    <div class="search-place-mob2">
+        <div class="search-wrap">
+            <a href="#none">
+                <img src="aesop-img/prev-arrow.png" alt="prev" class="prev">
+            </a>
+            <p class="search-title">검색</p>
+
+            <input type="search">
+
+            <p class="popular-search popular1">인기 검색어</p>
+            <p class="popular-search popular2">클렌저</p>
+            <p class="popular-search popular3">페뷸러스</p>
+            <p class="popular-search popular4">파슬리</p>
+            <p class="popular-search popular5">향수</p>
+        </div>
+    </div>
+    <!-- //모바일 검색 -->
     </div>
     <!-- 모바일 메뉴 -->
+
+
+    
+
+
 
 
 
@@ -284,6 +360,12 @@
         </div>
     </div>
     <!-- //스토어 검색 태블릿-->
+
+
+
+
+
+
     <!-- //스토어 -->
 
 
@@ -327,6 +409,8 @@
         </div>
     </div>
     <!-- //태블릿 검색 -->
+
+
 
 
 
@@ -395,19 +479,12 @@
 
     <!-- 스크립트 -->
     <script src="aesop-script/swiper.min.js"></script>
-    <!-- 이미지 슬라이드 하기 위함 //대비용 -->
+    
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            slidesPerview: 1,
-            paginationType: 'progress',
-            mousewheelControl: true,
-            loop: false,
-            direction: 'vertical',
-            effect: 'slide',
-        });
+        window.onresize = function(){
+            document.location.reload();
+        }; //해상도가 변할 때 마다 새로고침
     </script>
-    <!-- //이미지 슬라이드 하기 위함 //대비용 -->
     <!-- //스크립트 -->
 
 

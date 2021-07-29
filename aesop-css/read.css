@@ -204,6 +204,9 @@ ul #login {
 .store-place-mob {
     display: none;
 }
+.store-place-mob2 {
+    display: none;
+}
 
 .store-place {
     position: absolute;
@@ -328,6 +331,9 @@ input {
 .search-place-mob {
     display: none;
 }
+.search-place-mob2 {
+    display: none;
+}
 
 .search-place {
     position: absolute;
@@ -448,7 +454,7 @@ input::-webkit-search-results-decoration {
     position: relative;
     float: right;
     width: 80%;
-    height: 200px;
+    height: 140px;
     text-align: center;
     transition-duration: .4s;
     overflow-y: hidden;
@@ -457,7 +463,7 @@ input::-webkit-search-results-decoration {
 .top-menu .menu-wrap {
     position: relative;
     width: 470px;
-    height: 200px;
+    height: 140px;
     margin: 0 auto;
     overflow-y: hidden;
 }
@@ -765,6 +771,9 @@ input::-webkit-search-results-decoration {
     .store-place {
         display: none;
     }
+    .store-place-mob2 {
+        display: none;
+    }
 
 
     .store-place-mob {
@@ -824,6 +833,9 @@ input::-webkit-search-results-decoration {
 
     /* search-mob */
     .search-place {
+        display: none;
+    }
+    .search-place-mob2 {
         display: none;
     }
 
@@ -950,7 +962,7 @@ input::-webkit-search-results-decoration {
         position: relative;
         float: left;
         width: 100%;
-        margin-top: 70px;
+        margin-top: 20px;
     }
 
     .athenaeum-wrap {
@@ -1145,6 +1157,9 @@ input::-webkit-search-results-decoration {
         font-size: 24px;
         cursor: pointer;
     }
+    a{
+        color:#292929;
+    }
 
     .mobile-menu-kind ul li:hover {
         text-decoration: none;
@@ -1162,38 +1177,33 @@ input::-webkit-search-results-decoration {
             opacity: 1;
         }
     }
-
-    /* //mobile menu */
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
     /* store */
 
     .store-place {
         display: none;
     }
-
-    .store-place-mob {
+    .store-place-mob{
         display: none;
     }
 
 
-    .store-place-mob {
+
+    .store-place-mob2 {
         position: absolute;
         width: 100%;
-        height: 200px;
-        top: -460px;
-        left: 0px;
+        height: 100vh;
+        top: 0px;
+        left: -100%;
         background: #fffef3;
-        z-index: 5;
+        z-index: 10;
         transition-duration: .4s;
         display: block;
+        margin-top:100px;
     }
 
     .store-wrap .prev {
@@ -1212,7 +1222,7 @@ input::-webkit-search-results-decoration {
 
     .store-wrap {
         position: relative;
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -1244,26 +1254,26 @@ input::-webkit-search-results-decoration {
     .search-place {
         display: none;
     }
-
-    .search-place-mob {
+    .search-place-mob{
         display: none;
     }
 
-    .search-place-mob {
+    .search-place-mob2 {
         position: absolute;
         width: 100%;
-        height: 380px;
-        top: -460px;
-        left: 0px;
+        height: 100vh;
+        left: -100%;
+        top:0;
         background: #fffef3;
         z-index: 5;
         transition-duration: .4s;
         display: block;
+        margin-top:100px;
     }
 
     .search-wrap {
         position: relative;
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -1307,6 +1317,11 @@ input::-webkit-search-results-decoration {
     }
 
     /* //search-mob */
+
+    /* //mobile menu */
+
+
+
 
 
     /**/

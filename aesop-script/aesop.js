@@ -120,6 +120,44 @@ $(document).ready(function () {
                     
                     $("body").css("overflow-y","auto");
                 });
+                
+                
+                
+                
+                $("#store-mob > a").click(function() {
+                    $(".store-place-mob2").css("top", "0px");
+                    $(".store-place-mob2").css("left", "0px");
+
+                    $(".search-place-mob2").css("top", "0px");
+                    $(".search-place-mob2").css("left", "-100%");
+
+                    $("body").css("overflow", "hidden");
+                });
+
+                $(".prev").click(function() {
+                    $(".store-place-mob2").css("top", "0px");
+                    $(".store-place-mob2").css("left", "-100%");
+                    $(".bg-black").css("display", "none");
+                });
+
+
+
+
+                $("#search-mob > a").click(function() {
+                    $(".search-place-mob2").css("top", "0px");
+                    $(".search-place-mob2").css("left", "0px");
+
+                    $(".store-place-mob2").css("top", "0px");
+                    $(".store-place-mob2").css("left", "-100%");
+
+                    $("body").css("overflow", "hidden");
+                });
+
+                $(".prev").click(function() {
+                    $(".search-place-mob2").css("top", "0px");
+                    $(".search-place-mob2").css("left", "-100%");
+                    $(".bg-black").css("display", "none");
+                });
             }
             /* //모바일 스크립트 */
 

@@ -47,6 +47,25 @@
     font-family: "AppleSDGothicNeoM";
 }
 
+
+
+
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.ttf");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff2");
+    font-family: "AppleSDGothicNeoUL";
+}
+
 /*  //Apple SD Gothic Neo(폰트)  */
 
 @keyframes fadeIn {
@@ -88,8 +107,8 @@
 
 
 body {
-    width: 100%;
-    height:100%;
+    width: 100vw;
+    height:100vh;
     opacity: 0;
     animation: fadeIn 2s forwards;
     margin:0 auto;
@@ -97,6 +116,8 @@ body {
     -webkit-overflow-style: none;
     -moz-overflow-style: none;
     overflow-y: hidden;
+    font-family: "AppleSDGothicNeoUL";
+    font-size: 14px;
 }
 ::-webkit-scrollbar{
     display: none; 
@@ -108,384 +129,93 @@ body {
     display: none; 
 }
 
-a {
-    color: #F5dF4D;
+a,p,li {
+    color: #292929;
     text-decoration: none;
 }
 
-
-#loading{
-    width:100%;
-    height:100%;
-    background-color: #fff;
-    position: absolute;
-    z-index: 10;
-    animation-delay:3s;
-    animation-name:disappear;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    -ms-overflow-style: none;
-    -webkit-overflow-style: none;
-    -moz-overflow-style: none;
-}
-#loading p{
-    font-family: 'Questrial', sans-serif;
-    font-size: 130px;
-    width:100%;
-    margin:0 auto;
-    text-align: center;
-    margin-top:200px;
-    
-}
-
-#stage{
-    width:100%;
-    height:650px;
-    margin:0 auto;
-    position: relative;
-    top:0;
-    text-align: center;
-    z-index: 2;
-    transition:1s;
-}
-#stage .main-wrap{
-    width:100%;
-    height:100%;
-    margin:0 auto;
-    overflow-y: hidden;
-    transition:1s;
-}
-
-
-
-/* 내 정보 */
-#stage .main-wrap .myinfo{
-    width:100%;
-    height:200px;
-    background-color: #fff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 1px 0px 10px 1px #939597;
-    transition-duration:.6s;
-    margin-top:-250px;
-    z-index: 2;
-    position: absolute;
-    transition-duration: .6s;
-}
-#stage .main-wrap .myinfo .prev{
-    width:30px;
-    margin:20px;
-    margin-left:0;
-    float:right;
-    border-radius: 50px;
-    background: rgba(0, 0, 0, 0.2);
-}
-#stage .main-wrap .myinfo .sign-up{
-    width:30%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    margin:0 auto;
-    transition-duration: .3s;
-    opacity: 1;
-}
-#stage .main-wrap .myinfo .sign-up p{
-    font-family: 'Questrial', sans-serif;
-    position: absolute;
-    text-align: center;
-    width:100%;
-    top:20px;
-    font-size: 25px;
-    z-index: 1;
-    transition-duration: .3s;
-}
-#stage .main-wrap .myinfo .into-sign-up{
-    width:60%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    margin:0 auto;
-    transition-duration: .8s;
-    opacity: 0;
-    
-}
-#stage .main-wrap .myinfo .into-sign-up p{
-    font-family: 'Questrial', sans-serif;
-    position: absolute;
-    text-align: center;
-    width:100%;
-    top:25px;
-    font-size: 20px;
-    z-index: 1;
-    transition-duration: .8s;
-}
-
-
-
-/* 로그인 */
-#stage .main-wrap .myinfo .login-wrap{
-    width:200px;
-    height:auto;
-    position:relative;
-    margin:0 auto;
-    margin-top:60px;
-    transition-duration: .3s;
-    opacity: 1;
-    animation-fill-mode: forwards;
-    
-}
-#stage .main-wrap .myinfo .login-wrap .login{
-    width:100%;
-    height:30px;
-    float:left;
-    border-radius: 10px;
-    margin-top:10px;
-    border:1px solid #939597;
-    cursor:pointer;
-    transition-duration: .3s;
-    margin-left:0px;
-}
-#stage .main-wrap .myinfo .login-wrap .login p{
-    font-family: 'Questrial', sans-serif;
-    line-height: 2.2;
-    font-size: 14px;
-    float:right;
-    margin-right:20px;
-}
-#stage .main-wrap .myinfo .login-wrap .login img{
-    width:15px;
-    float:left;
-    margin-left:10px;
-    margin-top:7px;
-}
-/* //로그인 */
-
-
-/* 로그인 후 정보 */
-#stage .main-wrap .myinfo .into-info{
-   position: relative;
-    margin:0 auto;
-    width:95%;
-    height:120px;
-    overflow-x: scroll;
-    text-align: center;
-    -ms-overflow-style: none;
-    opacity: 0;
-    transition-duration: 3s;
-}
-
-#stage .main-wrap .myinfo .into-info .info-box{
-    width:160px;
-    height:110px;
-    text-align: center;
-    background-color: #F5dF4D;
-    border-radius: 10px;
-    margin-top:0px;
-    position: absolute;
-    left:50px;
-    top:0;
-}
-#stage .main-wrap .myinfo .into-info .info-box:nth-child(2){
-    background-color: rgba(233,210,220,1);
-    margin-left:180px;
-}
-#stage .main-wrap .myinfo .into-info .info-box .info-title{
-    width:80%;
-    margin:0 auto;
-}
-#stage .main-wrap .myinfo .into-info .info-box img{
-    width:15%;
-    float:left;
-    margin-top:9px;
-    text-align: center;
-}
-
-#stage .main-wrap .myinfo .into-info .info-box .title{
-    font-family: 'Questrial', sans-serif;
-    font-size: 18px;
-    padding-top:9px;
-    float:left;
-    width:85%;
-    text-align: center;
-}
-#stage .main-wrap .myinfo .into-info .info-box .txt{
-    font-family: 'Questrial', sans-serif;
-    font-size: 15px;
-    margin-top:30px;
-    float:left;
-    opacity: .4;
-    text-align: center;
-    width:100%;
-}
-#stage .main-wrap .myinfo .into-info .info-box .reservation-time{
-    font-size:25px;
-    text-align: center;
-    color:#e67700;
-    opacity: 1;
-    margin-top:5px;
-}
-
-#stage .main-wrap .myinfo .into-info .info-box .reservation-departure{
-    margin-top:7px;
-    text-align: left;
-    opacity: 1;
-    float:left;
-    width:120px;
-    margin-left:15px;
-}
-
-#stage .main-wrap .myinfo .into-info .info-box .reservation-to{
-    float:left;
-    opacity: 1;
-    width:20px;
-    margin-left:10px;
-    margin-top:0px;
-    margin-left:0;
-    margin-right:0;
-}
-#stage .main-wrap .myinfo .into-info .info-box .reservation-to img{
-    width:8px;
-    text-align: center;
-    background-color: #e67700;
-    border-radius: 50px;
-    float:left;
-    padding:2px;
-    margin-top:8.5px;
-}
-
-#stage .main-wrap .myinfo .into-info .info-box .reservation-arival{
-    margin-top:5px;
-    text-align: center;
-    opacity: 1;
-}
-
-/* //로그인 후 정보 */
-
-
-
-
-
-#stage .main-wrap .myinfo-btn{
-    width:50px;
-    height:50px;
-    border-radius: 50px;
-    background-color: #939597;
-    margin:10px;
-    cursor: pointer;
-    box-shadow: 0px 1px 5px 0px gray;
-    position:absolute;
-    top:0;
-    transition-duration:.6s;
-    z-index: 2;
-    opacity:.8;
-}
-#stage .main-wrap .myinfo-btn img{
-    width:25px;
-    margin:0 auto;
-    margin-top:11px;
-    opacity:.8;
-}
-
-/* //내 정보 */
-/* //내 정보 */
-
-
-
-/* 택시 호출하기 */
-#stage .main-wrap .taxiinfo{
-    width:100%;
-    height:200px;
-    background-color: #F5dF4D;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    transition-duration:.6s;
-    bottom:0;
-    z-index: 2;
-    position: absolute;
-    overflow-y: hidden;
-}
-
-#stage .main-wrap .taxiinfo .title{
-    font-family: 'Questrial', sans-serif;
-    font-size: 30px;
-    margin:0 auto;
-    text-align: left;
-    width:80%;
-    margin-top:20px;
-    padding-bottom:10px;
-    line-height: 1.2;
-}
-
-#stage .main-wrap .taxiinfo .now{
-    width:80%;
-    font-family: 'Questrial', sans-serif;
-    border:none;
-    background-color: rgba(255,255,255,0.1);
-    height:30px;
-    padding-left:10px;
-    margin-bottom:10px;
-    border-bottom:1px solid #939597;
-}
-
-#stage .main-wrap .taxiinfo .arival{
-    width:80%;
-    font-family: 'Questrial', sans-serif;
-    border:none;
-    background-color: rgba(255,255,255,0.1);
-    height:30px;
-    padding-left:10px;
-    border-bottom:1px solid #939597;
-}
-
-/* //택시 호출하기 */
 
 
 
 /* 지도 */
 #naverMap{
-    margin:0 auto;
-    width:100%;
-    height:650px;
-    z-index: 1;
     position: absolute;
-    top:-650px;
+    margin:0 auto;
+    width:100vw;
+    height:100vh;
+    top:0px;
+    z-index: 1;
+    
 }
 /* //지도 */
-
-
-/* PC 진입 불가 메세지 */
-.caution{
-    font-size:40px;
+.left-menu{
+    position: absolute;
+    width:60px;
+    height:auto;
+    top:50%;
+    left:50%;
+    transform: translate(-5px,-50%);
+    left:20px;
+    z-index: 2;
     text-align: center;
-    font-family: "Applesdgothicneom";
-    margin-top:300px;
 }
-/* //PC 진입 불가 메세지 */
-
-
-
-
-
-@media screen and (max-width:500px) and (min-width:100px) {
-    #loading{
-        display: block;
-    }
-    #stage{
-        display: block;
-    }
-    .caution{
-        display: none;
-    }
+.left-menu-wrap{
+    position: relative;
+    width:100%;
+    height:300px;
+    margin: 0 auto;
+    background-color: rgba(100,100,100,0.1);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    -moz-backdrop-filter:blur(5px);
+    border-radius: 15px;
 }
-@media screen and (max-width:3440px) and (min-width:501px) {
-    #loading{
-        display: none;
-    }
-    #stage{
-        display: none;
-    }
-    .caution{
-        display: block;
-    }
+.all-img-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height:90%;
+    margin:0 auto;
+    margin-top:20px;
+    text-align: center;
+}
+.menu-img{
+    position: relative;
+    float:left;
+    width:90%;
+    height:25%;
+    margin-left:5%;
+    margin-right:5%;
+    text-align: center;
+}
+.all-img-wrap img{
+    position: relative;
+    width:50%;
+    text-align: center;
+    transition-duration: .2s;
+}
+.all-img-wrap .menu-white{
+    opacity: 1;
+    z-index: 2;
+}
+.all-img-wrap .menu-black{
+    position: absolute;
+    width:50%;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0);
+    opacity: 0;
+    z-index: 1;
+}
+.all-img-wrap .home-black{
+    opacity: 01;
+    z-index: 2;
+}
+
+.all-img-wrap p{
+    margin-top:5px;
+    margin-bottom: 18px;
+    color:#292929;
+    font-size: 12px;
 }
 

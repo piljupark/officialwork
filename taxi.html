@@ -20,67 +20,52 @@
 
 <body>
 
-    <div id="loading">
-        <p>Hello</p>
-    </div>
-    <div id="stage">
-        <div class="main-wrap">
-            <div class="myinfo">
-                <img src="taxi-img/prev.png" alt="prev" class="prev">
-                <div class="sign-up">
-                    <p>Sign up</p>
-                </div>
-                <div class="into-sign-up">
-                    <p>Welcome! User4145</p>
-                </div>
-                <div class="login-wrap">
-                    <div class="login">
-                        <img src="taxi-img/google.png">
-                        <p>Continue with Google</p>
-                    </div>
-                    <div class="login">
-                        <img src="taxi-img/apple.png">
-                        <p>Continue with Apple</p>
-                    </div>
-                    <div class="login">
-                        <img src="taxi-img/kakao.png">
-                        <p>Continue with Kakao</p>
-                    </div>
-                </div>
-                <div class="into-info">
-                    <div class="info-box reservation">
-                        <div class="info-title">
-                            <img src="taxi-img/clock.png" alt="reservation">
-                            <p class="title">Reservation</p>
-                        </div>
-                        <p class="txt reservation-time">12:45 PM</p>
-                         <p class="txt reservation-departure">Songjung station</p>
-                         <p class="txt reservation-to"><img src="taxi-img/next-arrow.png"></p>
-                        <p class="txt reservation-arival">Gangnam station</p>
-                    </div>
-                    <div class="info-box reservation">
-                        <div class="info-title">
-                            <img src="taxi-img/coupon.png" alt="coupon">
-                            <p class="title">Coupon</p>
-                        </div>
-                        <p class="txt">Empty</p>
-                    </div>
-                </div>
-            </div>
-            <div class="myinfo-btn">
-                <img src="taxi-img/user2.png" alt="user">
-            </div>
-            <div class="taxiinfo">
-                <p class="title">Where is your destination ?</p>
-                <input type="text" name="now" placeholder="Departure" class="now">
-                <input type="text" name="now" placeholder="Destination" class="arival">
-            </div>
+    <div id="naverMap"></div>
 
+
+
+    <div class="left-menu">
+        <div class="left-menu-wrap">
+            <div class="all-img-wrap">
+               
+                <div class="menu-img">
+                    <a href="#none">
+                        <img src="taxi-img/home-black.png" alt="home" class="menu-black home-black">
+                        <img src="taxi-img/home-white.png" alt="home" class="menu-white home-white">
+                        <p>홈</p>
+                    </a>
+                </div>
+                
+                <div class="menu-img">
+                    <a href="#none">
+                        <img src="taxi-img/business-white.png" alt="business" class="menu-white business-white">
+                        <img src="taxi-img/business-black'.png" alt="business" class="menu-black business-black">
+                        <p>비즈니스</p>
+                    </a>
+                </div>
+
+                <div class="menu-img">
+                    <a href="#none">
+                        <img src="taxi-img/alarm-white.png" alt="alarm" class="menu-white alarm-white">
+                        <img src="taxi-img/alarm-black.png" alt="alarm" class="menu-black alarm-black">
+                        <p>알림</p>
+                    </a>
+                </div>
+
+                <div class="menu-img">
+                    <a href="#none">
+                        <img src="taxi-img/user-white.png" alt="user" class="menu-white user-white">
+                        <img src="taxi-img/user-black.png" alt="user" class="menu-black user-black">
+                        <p>내 정보</p>
+                    </a>
+                </div>
+                
+            </div>
         </div>
-        <div id="naverMap"></div>
+
     </div>
 
-    <p class="caution">PC로는 이용하실 수 없습니다.</p>
+
 
 
 
@@ -88,7 +73,7 @@
     <script>
         var nmap = new naver.maps.Map('naverMap', { // naverMap 값은 div 의 id 값
             center: new naver.maps.LatLng(37.5782709, 126.9770043), // 지도 중앙 위치 : 위도, 경도 설정
-            zoom: 10, // 줌 설정 : 1~14, 수치가 클수록 지도 확대(줌인), 이 옵션 생략시 기본값 9
+            zoom: 13, // 줌 설정 : 1~14, 수치가 클수록 지도 확대(줌인), 이 옵션 생략시 기본값 9
             zoomControl: false, // 줌 컨트롤 표시 (기본값 표시안함)
             zoomControlOptions: { // 줌 컨트롤 오른쪽 위로 위치 설정
                 position: naver.maps.Position.TOP_RIGHT // 오른쪽 위로 설정값

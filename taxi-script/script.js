@@ -1,37 +1,59 @@
 $(document).ready(function () {
-    $("#stage > .main-wrap > .myinfo-btn").click(function () {
-        $("#stage > .main-wrap > .myinfo").css("margin-top", "0px");
-        $("#stage > .main-wrap > .myinfo-btn").css("background-color", "#292929");
-        $("#stage > .main-wrap > .myinfo-btn > img").css("opacity", "1");
-    });
+    $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img > a > .business-white").click(function () {
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("z-index", "1");
 
-    $("#stage > .main-wrap > .myinfo > .prev").click(function () {
-        $("#stage > .main-wrap > .myinfo").css("margin-top", "-250px");
-        $("#stage > .main-wrap > .myinfo-btn").css("background-color", "#939597");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("z-index", "2");
+
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .business-black").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .business-black").css("z-index", "2");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .business-white").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .business-white").css("z-index", "1");
     });
     
-    $("#naverMap").hover(function(){
-        $("#stage > .main-wrap > .taxiinfo").css("height","200px");
+    
+    
+    $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img > a > .home-white").click(function () {
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("z-index", "1");
+
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("z-index", "2");
+
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .home-black").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .home-black").css("z-index", "2");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .home-white").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .home-white").css("z-index", "1");
     });
     
-    $("#stage > .main-wrap > .taxiinfo").hover(function(){
-        $("#stage > .main-wrap > .taxiinfo").css("height","300px");
+    
+    
+    $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img > a > .alarm-white").click(function () {
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("z-index", "1");
+
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("z-index", "2");
+
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .alarm-black").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .alarm-black").css("z-index", "2");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .alarm-white").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .alarm-white").css("z-index", "1");
     });
     
-    $("#stage > .main-wrap > .myinfo > .login-wrap > .login").click(function(){
-        $("#stage > .main-wrap > .myinfo").css("background","rgba(255, 255, 255, 0.2)");
-        $("#stage > .main-wrap > .myinfo").css("backdrop-filter","blur(5px)");
-        $("#stage > .main-wrap > .myinfo").css("-webkit-backdrop-filter","blur(5px)");
-        $("#stage > .main-wrap > .myinfo").css("-moz-backdrop-filter","blur(5px)");
-        
-        
-        $("#stage > .main-wrap > .myinfo > .login-wrap").css("animation-duration",".6s");
-        $("#stage > .main-wrap > .myinfo > .login-wrap").css("animation-name","slideLeft");
-        
-        
-        $("#stage > .main-wrap > .myinfo > .sign-up > p").css("opacity","0");
-        $("#stage > .main-wrap > .myinfo > .into-sign-up").css("opacity","1");
-        
-        $("#stage > .main-wrap > .myinfo > .into-info").css("opacity","1");
+    
+    
+    $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img > a > .user-white").click(function () {
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-black").css("z-index", "1");
+
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .menu-white").css("z-index", "2");
+
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .user-black").css("opacity", "1");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .user-black").css("z-index", "2");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .user-white").css("opacity", "0");
+        $(".left-menu > .left-menu-wrap > .all-img-wrap > .menu-img >  a > .user-white").css("z-index", "1");
     });
 });

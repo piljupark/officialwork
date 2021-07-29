@@ -166,6 +166,9 @@ ul #login {
 .store-place-mob {
     display: none;
 }
+.store-place-mob2 {
+    display: none;
+}
 
 .store-place {
     position: absolute;
@@ -293,6 +296,9 @@ input {
 .search-place-mob {
     display: none;
 }
+.search-place-mob2 {
+    display: none;
+}
 
 .search-place {
     position: absolute;
@@ -417,6 +423,67 @@ input::-webkit-search-results-decoration {
         z-index: -1;
     }
 }
+
+
+
+/* login */
+.login-place{
+    position: absolute;
+    width:600px;
+    height:00px;
+    background: #fffef3;
+    z-index: 14;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    transition: .5s;
+}
+.login-title{
+    position: relative;
+    float:left;
+    width:345px;
+    margin-top: 100px;
+    margin-bottom:70px;
+    margin-left: 20px;
+    color:#292929;
+    font-size: 30px;
+}
+.login-close{
+    position: relative;
+    float:right;
+    width:25px;
+    margin-top:44px;
+    margin-right:30px;
+    color:#292929;
+    font-size: 14px;
+}
+.login-place input{
+    position: relative;
+    float:left;
+    width:540px;
+    margin-left:20px;
+    border:none;
+    background: #fffef3;
+    border-bottom:1px solid #292929;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.login-next{
+    position: absolute;
+    width:20px;
+    right:27px;
+    top:10px;
+}
+.input-wrap{
+    position: relative;
+    width:100%;
+    float:left;
+}
+
+
+/* //login */
 
 
 
@@ -748,6 +815,9 @@ input::-webkit-search-results-decoration {
     .store-place{
         display: none;
     }
+    .store-place-mob2{
+        display: none;
+    }
     
     
     .store-place-mob {
@@ -807,7 +877,7 @@ input::-webkit-search-results-decoration {
     .search-place {
         display: none;
     }
-    .search-place-mob {
+    .search-place-mob2 {
         display: none;
     }
 
@@ -1038,6 +1108,9 @@ input::-webkit-search-results-decoration {
         font-size: 24px;
         cursor: pointer;
     }
+    a{
+        color:#292929;
+    }
 
     .mobile-menu-kind ul li:hover {
         text-decoration: none;
@@ -1055,35 +1128,31 @@ input::-webkit-search-results-decoration {
             opacity: 1;
         }
     }
-
-    /* //mobile menu */
-
     
     
     
-    
-
-
-
-
-
     /* store */
 
     .store-place {
         display: none;
     }
+    .store-place-mob{
+        display: none;
+    }
 
 
-    .store-place-mob {
+
+    .store-place-mob2 {
         position: absolute;
         width: 100%;
-        height: 200px;
-        top: -460px;
-        left: 0px;
+        height: 100vh;
+        top: 0px;
+        left: -100%;
         background: #fffef3;
-        z-index: 5;
+        z-index: 10;
         transition-duration: .4s;
         display: block;
+        margin-top:100px;
     }
 
     .store-wrap .prev {
@@ -1102,7 +1171,7 @@ input::-webkit-search-results-decoration {
 
     .store-wrap {
         position: relative;
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -1134,22 +1203,26 @@ input::-webkit-search-results-decoration {
     .search-place {
         display: none;
     }
+    .search-place-mob{
+        display: none;
+    }
 
-    .search-place-mob {
+    .search-place-mob2 {
         position: absolute;
         width: 100%;
-        height: 380px;
-        top: -460px;
-        left: 0px;
+        height: 100vh;
+        left: -100%;
+        top:0;
         background: #fffef3;
         z-index: 5;
         transition-duration: .4s;
         display: block;
+        margin-top:100px;
     }
 
     .search-wrap {
         position: relative;
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -1193,6 +1266,35 @@ input::-webkit-search-results-decoration {
     }
 
     /* //search-mob */
+
+    /* //mobile menu */
+
+    
+    /* login-mob */
+    
+    .login-place{
+        width:100%;
+        left:50%;
+        background: none;
+    }
+    .login-wrap{
+        position: relative;
+        width:90%;
+        height:100%;
+        margin:0 auto;
+        background: #fffef3;
+    }
+    .login-place input{
+        width:87%;
+    }
+    /* //login-mob */
+    
+    
+
+
+
+
+
     
     
     

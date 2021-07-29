@@ -14,7 +14,7 @@
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#cart').click(function() {
+            $('#cart > a').click(function() {
                 $('#cart-alarm').animate({
                     top: '0px'
                 }, 1500, function() {
@@ -59,6 +59,19 @@
             $(".prev").click(function() {
                 $(".store-place").css("left", "-240px");
                 $(".bg-black").css("display", "none");
+            });
+
+            $("#login > a").click(function() {
+                $(".login-place").css("height", "400px");
+                $(".bg-black").css("display", "block");
+                $(".bg-black").css("z-index", "13");
+            });
+
+            $(".login-close").click(function() {
+                $(".login-place").css("height", "00px");
+                $(".bg-black").css("display", "none");
+                $(".bg-black").css("z-index", "-1");
+
             });
 
 
@@ -138,8 +151,8 @@
                     $(".mob-menu-close").css("display", "none");
 
                     $(".mobile-menu").css("height", "0vh");
-                    
-                    
+
+
                     $(".store-place-mob2").css("left", "-100%");
                     $(".search-place-mob2").css("left", "-100%");
                     $(".bg-black").css("display", "none");
@@ -179,6 +192,21 @@
                     $(".search-place-mob2").css("top", "0px");
                     $(".search-place-mob2").css("left", "-100%");
                     $(".bg-black").css("display", "none");
+                });
+
+
+
+                $("#login-mob > a").click(function() {
+                    $(".login-place").css("height", "400px");
+                    $(".bg-black").css("display", "block");
+                    $(".bg-black").css("z-index", "13");
+                });
+
+                $(".login-close").click(function() {
+                    $(".login-place").css("height", "00px");
+                    $(".bg-black").css("display", "none");
+                    $(".bg-black").css("z-index", "-1");
+
                 });
             }
         });
@@ -263,50 +291,65 @@
                     <li id="search-mob"><a href="#none">검색</a></li>
 
 
-                    <li><a href="#">로그인</a></li>
+                    <li id="login-mob"><a href="#">로그인</a></li>
 
 
-                    <li><a href="#">카트</a></li>
+                    <li id="cart"><a href="#none">카트</a></li>
 
                 </ul>
             </div>
         </div>
         <!-- 스토어 검색 모바일-->
-    <div class="store-place-mob2">
-        <div class="store-wrap">
-            <a href="#none">
-                <img src="aesop-img/prev-arrow.png" alt="prev" class="prev">
-            </a>
-            <p class="store-title">스토어 검색</p>
-            <input type="search" alt="search" class="store-search" placeholder="도시 또는 도로명">
+        <div class="store-place-mob2">
+            <div class="store-wrap">
+                <a href="#none">
+                    <img src="aesop-img/prev-arrow.png" alt="prev" class="prev">
+                </a>
+                <p class="store-title">스토어 검색</p>
+                <input type="search" alt="search" class="store-search" placeholder="도시 또는 도로명">
+            </div>
         </div>
-    </div>
-    <!-- //스토어 검색 모바일-->
+        <!-- //스토어 검색 모바일-->
 
-    <!-- 모바일 검색 -->
-    <div class="search-place-mob2">
-        <div class="search-wrap">
-            <a href="#none">
-                <img src="aesop-img/prev-arrow.png" alt="prev" class="prev">
-            </a>
-            <p class="search-title">검색</p>
+        <!-- 모바일 검색 -->
+        <div class="search-place-mob2">
+            <div class="search-wrap">
+                <a href="#none">
+                    <img src="aesop-img/prev-arrow.png" alt="prev" class="prev">
+                </a>
+                <p class="search-title">검색</p>
 
-            <input type="search">
+                <input type="search">
 
-            <p class="popular-search popular1">인기 검색어</p>
-            <p class="popular-search popular2">클렌저</p>
-            <p class="popular-search popular3">페뷸러스</p>
-            <p class="popular-search popular4">파슬리</p>
-            <p class="popular-search popular5">향수</p>
+                <p class="popular-search popular1">인기 검색어</p>
+                <p class="popular-search popular2">클렌저</p>
+                <p class="popular-search popular3">페뷸러스</p>
+                <p class="popular-search popular4">파슬리</p>
+                <p class="popular-search popular5">향수</p>
+            </div>
         </div>
-    </div>
-    <!-- //모바일 검색 -->
+        <!-- //모바일 검색 -->
     </div>
     <!-- 모바일 메뉴 -->
 
 
-    
 
+    <!-- 로그인 -->
+    <div class="login-place">
+        <div class="login-wrap">
+            <p class="login-title">이메일 주소를 입력해주세요.</p>
+            <a href="#none">
+                <p class="login-close">닫기</p>
+            </a>
+            <div class="input-wrap">
+            <input type="email" placeholder="aesop@aesop.com">
+            <a href="#none">
+                <img src="aesop-img/login-next-arrow.png" alt="login-next" class="login-next">
+            </a>
+            </div>
+        </div>
+    </div>
+    <!-- //로그인 -->
 
 
 
@@ -479,9 +522,20 @@
 
     <!-- 스크립트 -->
     <script src="aesop-script/swiper.min.js"></script>
-    
     <script>
-        window.onresize = function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerview: 1,
+            paginationType: 'progress',
+            mousewheelControl: true,
+            loop: false,
+            direction: 'vertical',
+            effect: 'slide',
+        });
+    </script>
+
+    <script>
+        window.onresize = function() {
             document.location.reload();
         }; //해상도가 변할 때 마다 새로고침
     </script>

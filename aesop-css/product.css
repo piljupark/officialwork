@@ -154,18 +154,19 @@ ul #login {
 /* //nav */
 
 .mob-top {
-        display: none;
-    }
+    display: none;
+}
 
-    .mobile-menu {
-        display: none;
-    }
+.mobile-menu {
+    display: none;
+}
 
 
 /* store */
 .store-place-mob {
     display: none;
 }
+
 .store-place-mob2 {
     display: none;
 }
@@ -296,6 +297,7 @@ input {
 .search-place-mob {
     display: none;
 }
+
 .search-place-mob2 {
     display: none;
 }
@@ -427,59 +429,64 @@ input::-webkit-search-results-decoration {
 
 
 /* login */
-.login-place{
+.login-place {
     position: absolute;
-    width:600px;
-    height:00px;
+    width: 600px;
+    height: 00px;
     background: #fffef3;
     z-index: 14;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
     transition: .5s;
 }
-.login-title{
+
+.login-title {
     position: relative;
-    float:left;
-    width:345px;
+    float: left;
+    width: 345px;
     margin-top: 100px;
-    margin-bottom:70px;
+    margin-bottom: 70px;
     margin-left: 20px;
-    color:#292929;
+    color: #292929;
     font-size: 30px;
 }
-.login-close{
+
+.login-close {
     position: relative;
-    float:right;
-    width:25px;
-    margin-top:44px;
-    margin-right:30px;
-    color:#292929;
+    float: right;
+    width: 25px;
+    margin-top: 44px;
+    margin-right: 30px;
+    color: #292929;
     font-size: 14px;
 }
-.login-place input{
+
+.login-place input {
     position: relative;
-    float:left;
-    width:540px;
-    margin-left:20px;
-    border:none;
+    float: left;
+    width: 540px;
+    margin-left: 20px;
+    border: none;
     background: #fffef3;
-    border-bottom:1px solid #292929;
+    border-bottom: 1px solid #292929;
     font-size: 20px;
     padding-left: 10px;
     padding-bottom: 10px;
 }
-.login-next{
+
+.login-next {
     position: absolute;
-    width:20px;
-    right:27px;
-    top:10px;
+    width: 20px;
+    right: 27px;
+    top: 10px;
 }
-.input-wrap{
+
+.input-wrap {
     position: relative;
-    width:100%;
-    float:left;
+    width: 100%;
+    float: left;
 }
 
 
@@ -809,17 +816,18 @@ input::-webkit-search-results-decoration {
     .mobile-menu {
         display: none;
     }
-    
+
     /* store */
-    
-    .store-place{
+
+    .store-place {
         display: none;
     }
-    .store-place-mob2{
+
+    .store-place-mob2 {
         display: none;
     }
-    
-    
+
+
     .store-place-mob {
         position: absolute;
         width: 100%;
@@ -831,6 +839,7 @@ input::-webkit-search-results-decoration {
         transition-duration: .4s;
         display: block;
     }
+
     .store-wrap .prev {
         width: 20px;
         margin-top: 30px;
@@ -877,6 +886,7 @@ input::-webkit-search-results-decoration {
     .search-place {
         display: none;
     }
+
     .search-place-mob2 {
         display: none;
     }
@@ -952,16 +962,18 @@ input::-webkit-search-results-decoration {
         overflow-x: auto;
         -ms-overflow-style: none;
     }
-    .top-menu::-webkit-scrollbar{
+
+    .top-menu::-webkit-scrollbar {
         display: none;
     }
+
     .top-menu .menu-wrap {
         position: relative;
         width: 630px;
         margin: 0 auto;
         height: 130px;
     }
-    
+
 
     .menu-circle {
         position: relative;
@@ -1103,13 +1115,14 @@ input::-webkit-search-results-decoration {
         position: relative;
         float: left;
         width: 100%;
-        margin-top:20px;
+        margin-top: 20px;
         color: #292929;
         font-size: 24px;
         cursor: pointer;
     }
-    a{
-        color:#292929;
+
+    a {
+        color: #292929;
     }
 
     .mobile-menu-kind ul li:hover {
@@ -1128,15 +1141,16 @@ input::-webkit-search-results-decoration {
             opacity: 1;
         }
     }
-    
-    
-    
+
+
+
     /* store */
 
     .store-place {
         display: none;
     }
-    .store-place-mob{
+
+    .store-place-mob {
         display: none;
     }
 
@@ -1152,7 +1166,7 @@ input::-webkit-search-results-decoration {
         z-index: 10;
         transition-duration: .4s;
         display: block;
-        margin-top:100px;
+        margin-top: 100px;
     }
 
     .store-wrap .prev {
@@ -1203,7 +1217,8 @@ input::-webkit-search-results-decoration {
     .search-place {
         display: none;
     }
-    .search-place-mob{
+
+    .search-place-mob {
         display: none;
     }
 
@@ -1212,12 +1227,12 @@ input::-webkit-search-results-decoration {
         width: 100%;
         height: 100vh;
         left: -100%;
-        top:0;
+        top: 0;
         background: #fffef3;
         z-index: 5;
         transition-duration: .4s;
         display: block;
-        margin-top:100px;
+        margin-top: 100px;
     }
 
     .search-wrap {
@@ -1269,8 +1284,8 @@ input::-webkit-search-results-decoration {
 
     /* //mobile menu */
 
-    
-    /* login-mob */
+
+     /* login-mob */
     
     .login-place{
         width:100%;
@@ -1284,21 +1299,26 @@ input::-webkit-search-results-decoration {
         margin:0 auto;
         background: #fffef3;
     }
+    .login-title{
+        width:230px;
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
     .login-place input{
-        width:87%;
+        width:90%;
     }
     /* //login-mob */
-    
-    
 
 
 
 
 
-    
-    
-    
-    
+
+
+
+
+
+
     /* circle-menu */
     .top-menu {
         position: relative;
@@ -1309,7 +1329,8 @@ input::-webkit-search-results-decoration {
         overflow-x: scroll;
         -ms-overflow-style: none;
     }
-    .top-menu::-webkit-scrollbar{
+
+    .top-menu::-webkit-scrollbar {
         display: none;
     }
 
@@ -1331,26 +1352,31 @@ input::-webkit-search-results-decoration {
         text-align: center;
         transition-duration: .3s;
     }
+
     /* //circle-menu */
 
-    
-    
-    
+
+
+
     /* product */
     .product-place {
         width: 100%;
     }
-    .product{
-        height:400px;
+
+    .product {
+        height: 400px;
     }
-    .product-wrap{
-        width:100%;
+
+    .product-wrap {
+        width: 100%;
     }
-    .product-top .title{
-        margin-left:0;
-        width:80%;
-        margin:0 auto;
+
+    .product-top .title {
+        margin-left: 0;
+        width: 80%;
+        margin: 0 auto;
     }
+
     /* //product */
 
 }

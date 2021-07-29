@@ -447,8 +447,6 @@ input::-webkit-search-results-decoration {
 
 
 
-
-
 /* login */
 .login-place{
     position: absolute;
@@ -481,10 +479,15 @@ input::-webkit-search-results-decoration {
     color:#292929;
     font-size: 14px;
 }
+.input-wrap{
+    position: relative;
+    width:90%;
+    float:left;
+}
 .login-place input{
     position: relative;
     float:left;
-    width:540px;
+    width:100%;
     margin-left:20px;
     border:none;
     background: #fffef3;
@@ -496,17 +499,11 @@ input::-webkit-search-results-decoration {
 .login-next{
     position: absolute;
     width:20px;
-    right:27px;
+    right:-30px;
     top:10px;
 }
-.input-wrap{
-    position: relative;
-    width:100%;
-    float:left;
-}
-
-
 /* //login */
+
 
 
 
@@ -1385,7 +1382,7 @@ input::-webkit-search-results-decoration {
 
 
 
-    /* login-mob */
+     /* login-mob */
     
     .login-place{
         width:100%;
@@ -1399,8 +1396,13 @@ input::-webkit-search-results-decoration {
         margin:0 auto;
         background: #fffef3;
     }
+    .login-title{
+        width:230px;
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
     .login-place input{
-        width:87%;
+        width:95%;
     }
     /* //login-mob */
 

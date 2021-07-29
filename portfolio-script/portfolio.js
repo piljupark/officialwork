@@ -78,7 +78,7 @@ $(document).ready(function () {
 
         $(".ford").css("background-color", "#a5d8ff");
         
-        $(".klairs").css("background-color", "#ffe8cc");
+        $(".aesop").css("background-color", "#ffe8cc");
         
         $(".call").css("background-color", "#d3f9d8");
         $(".call-img:nth-child(1)").css("opacity","1");

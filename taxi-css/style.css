@@ -257,8 +257,22 @@ input{
     font-size: 14px;
     background: #292929;
     color:#fff;
-    padding:3px 10px 4px;
+    padding:4px 10px 5px 10px;
     border-radius: 10px;
+    font-family: "AppleSDGothicNeoM";
+    animation-name: spendStart;
+    animation-delay: 3s;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes spendStart{
+    from{
+        padding:4px 10px 5px 10px;
+    }
+    to{
+        padding: 4px 20px 5px 20px;
+    }
 }
 /* //스타트 */
 

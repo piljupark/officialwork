@@ -18,31 +18,28 @@
 </head>
 
 <body>
-    <div id="title">
-        <p>INFORMATION</p>
-    </div>
 
-    <div id="yj-img-wrap" class="swiper-container swiper-container-horizontal">
+    <div id="yj-img-wrap" class="swiper-container swiper-container-vertical">
         <div class="swiper-wrapper yj-img-wrap2">
            <div class="swiper-slide">
                 <img src="yj-img/yj6.png" alt="yj6">
-                <p class="type">1</p>
+                
             </div>
             <div class="swiper-slide">
                 <img src="yj-img/yj1.png" alt="yj1">
-                <p class="type">2</p>
+                
             </div>
             <div class="swiper-slide">
                 <img src="yj-img/yj3.png" alt="yj3">
-                <p class="type">3</p>
+                
             </div>
             <div class="swiper-slide">
                 <img src="yj-img/yj5.png" alt="yj5">
-                <p class="type">4</p>
+                
             </div>
             <div class="swiper-slide">
                 <img src="yj-img/yj4.png" alt="yj4">
-                <p class="type">5</p>
+                
             </div>
             
             
@@ -53,31 +50,16 @@
         </div>
     </div>
 
-    <article id="text-place">
-        <div class="text-place-wrap">
-            <p class="text1">"Actually,<br> it's not a photo exhibition<br> but a portfolio."</p>
-        </div>
-    </article>
-
-    <footer>
-        <div class="footer-wrap">
-            <p class="txt1">It's made for a portfolio</p>
-            <p class="txt2">Designed by P.</p>
-            <p class="txt3">I have the copyright on the photo</p>
-        </div>
-    </footer>
     <script src="yj-script/swiper.min.js"></script>
-    
     <script>
-        
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        slidesPerview:1,
-        paginationType: 'progress',
-        mousewheelControl:true,
-        loop:true,
-        effect:'fade',
-    });
-    
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerview: 1,
+            paginationType: 'progress',
+            mousewheelControl: true,
+            loop: false,
+            direction: 'vertical',
+            effect: 'slide',
+        });
     </script>
 </body></html>

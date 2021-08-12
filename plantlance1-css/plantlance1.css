@@ -79,6 +79,7 @@ a,
 p,
 li {
     text-decoration: none;
+    color:#292929;
 }
 
 
@@ -111,8 +112,9 @@ nav{
     width:11.1%;
     font-size: 14px;
     padding: 15px 0;
-    transition-duration: .2s;
+    color:#fff;
     opacity: .7;
+    transition-duration: .2s;
 }
 .nav-wrap ul li:hover{
     opacity: 1;
@@ -128,6 +130,7 @@ nav{
 .nav-wrap .login-img, .search-img{
     width:18px;
 }
+
 
 /* //nav */
 
@@ -162,7 +165,20 @@ nav{
     font-size: 40px;
 }
 #main .main-txt{
-    font-family: "AppleSDGothicNeoUL";
+    font-family: "AppleSDGothicNeoB";
     font-size: 20px;
+    color:#666;
+}
+
+#main .main-button{
+    position: relative;
+    width:100px;
+    margin: 0 auto;
+    margin-top:30px;
+    padding:10px;
+    border-radius:40px;
+    color:#bab86c;
+    border:2px solid #bab86c;
+    text-align: center;
 }
 

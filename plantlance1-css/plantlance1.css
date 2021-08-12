@@ -101,7 +101,10 @@ nav{
     height:50px;
     margin:0 auto;
     text-align: center;
-    background-color: #292929;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
 }
 .nav-wrap ul{
     position: relative;
@@ -150,7 +153,7 @@ nav{
     width:100%;
     margin: 0 auto;
 }
-#main .main-wrap .main1, .main2{
+#main .main-wrap .main1, .main2, .main3{
     position: relative;
     float:left;
     width:100%;
@@ -186,11 +189,15 @@ nav{
     border-radius:40px;
     text-align: center;
     transition-duration: .2s;
+    cursor: pointer;
 }
 #main .main-button:hover{
     color:#fff;
     border:1px solid #bab86c;
     background: #bab86c;
+}
+#main .main-button:hover a{
+    color:#fff;
 }
 
 .main2{

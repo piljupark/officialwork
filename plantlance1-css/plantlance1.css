@@ -73,6 +73,7 @@ body {
     font-family: "AppleSDGothicNeoUL";
     font-size: 14px;
     overflow-x: hidden;
+    z-index: 1;
 }
 
 a,
@@ -92,7 +93,7 @@ nav{
     width:100%;
     height:auto;
     top:0;
-    
+    z-index: 10;
 }
 .nav-wrap{
     position: relative;
@@ -149,25 +150,29 @@ nav{
     width:100%;
     margin: 0 auto;
 }
-#main .main-wrap .main1{
+#main .main-wrap .main1, .main2{
     position: relative;
     float:left;
     width:100%;
-    margin-top:50px;
+    margin-top:30px;
+    padding-top:50px;
     text-align: center;
 }
-#main .mainimg1{
+#main .mainimg{
     width:700px;
     margin-top:50px;
 }
 #main .main-title{
     font-family: "AppleSDGothicNeoB";
-    font-size: 40px;
+    font-size: 50px;
 }
 #main .main-txt{
     font-family: "AppleSDGothicNeoB";
     font-size: 20px;
     color:#666;
+}
+#main .main-txt-top{
+    color:#292929;
 }
 
 #main .main-button{
@@ -175,10 +180,22 @@ nav{
     width:100px;
     margin: 0 auto;
     margin-top:30px;
-    padding:10px;
+    padding:7px;
+    color:#292929;
+    border:1px solid #292929;
     border-radius:40px;
-    color:#bab86c;
-    border:2px solid #bab86c;
     text-align: center;
+    transition-duration: .2s;
+}
+#main .main-button:hover{
+    color:#fff;
+    border:1px solid #bab86c;
+    background: #bab86c;
 }
 
+.main2{
+    background: #F9F6F0;
+}
+#main .mainimg2{
+    width:1000px;
+}

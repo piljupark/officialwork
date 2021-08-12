@@ -119,10 +119,10 @@ nav{
 }
 .nav-wrap a{
     color:#fff;
-    font-family: "AppleSDGothicNeoB";
+    font-family: "AppleSDGothicNeoUL";
 }
 .nav-wrap .logo{
-    width:20px;
+    width:18px;
 }
 
 .nav-wrap .login-img, .search-img{
@@ -155,10 +155,14 @@ nav{
 }
 #main .mainimg1{
     width:700px;
+    margin-top:50px;
 }
 #main .main-title{
     font-family: "AppleSDGothicNeoB";
-    font-size: 50px;
-    
+    font-size: 40px;
+}
+#main .main-txt{
+    font-family: "AppleSDGothicNeoUL";
+    font-size: 20px;
 }
 

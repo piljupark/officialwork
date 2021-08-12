@@ -86,10 +86,12 @@ li {
 
 /*nav*/
 nav{
-    position: relative;
+    position: fixed;
     float:left;
     width:100%;
     height:auto;
+    top:0;
+    
 }
 .nav-wrap{
     position: relative;
@@ -125,5 +127,38 @@ nav{
 
 .nav-wrap .login-img, .search-img{
     width:18px;
+}
+
+/* //nav */
+
+
+
+
+#main{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top:50px;
+}
+#main .main-wrap{
+    position: relative;
+    width:100%;
+    margin: 0 auto;
+}
+#main .main-wrap .main1{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:50px;
+    text-align: center;
+}
+#main .mainimg1{
+    width:700px;
+}
+#main .main-title{
+    font-family: "AppleSDGothicNeoB";
+    font-size: 50px;
+    
 }
 

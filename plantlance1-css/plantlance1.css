@@ -200,9 +200,47 @@ nav{
     color:#fff;
 }
 
-.main2{
+#main .main2{
     background: #F9F6F0;
 }
 #main .mainimg2{
     width:1000px;
 }
+
+#main .mainimg3{
+    width:900px;
+}
+
+#main .main-bottom{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:30px;
+    padding:0 15px;
+    text-align: center;
+}
+#main .main-bottom .main-bottom-left{
+    position: relative;
+    float:left;
+    width:48%;
+    text-align: center; 
+}
+#main .main4{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-bottom:15px;
+    padding-top:50px;
+    background: #F9F6F0;
+}
+#main .mainimg4{
+    width:500px;
+}
+
+#main .main-bottom .main-bottom-right{
+    position: relative;
+    float:right;
+    width:48%;
+    text-align: center; 
+}
+

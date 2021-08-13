@@ -165,18 +165,22 @@ nav{
 #main .mainimg{
     width:700px;
     margin-top:50px;
+    z-index: 1;
 }
 #main .main-title{
     font-family: "AppleSDGothicNeoB";
     font-size: 50px;
+    z-index: 5;
 }
 #main .main-txt{
     font-family: "AppleSDGothicNeoB";
     font-size: 20px;
     color:#666;
+    z-index:5;
 }
 #main .main-txt-top{
     color:#292929;
+    z-index: 5;
 }
 
 #main .main-button{
@@ -202,13 +206,42 @@ nav{
 }
 
 #main .main2{
+    position: relative;
     height:450px;
-    background: #F9F6F0;
+    background: #EEEFF1;
 }
 #main .mainimg2{
-    width:1000px;
+    position: absolute;
+    width:1200px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-top:0;
+    z-index: 1;
+}
+#main .main2 .main-title{
+    position: absolute;
+    top:200px;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#main .main2 .main-txt{
+    position: absolute;
+    top:250px;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#main .main2 .main-button{
+    position: absolute;
+    top:270px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
 }
 
+#main .main3{
+    height:450px;
+}
 #main .mainimg3{
     width:900px;
 }
@@ -239,10 +272,10 @@ nav{
     overflow: hidden;
 }
 #main .main4{
-    background: #F9F6F0;
+    background: #EEEFF1;
 }
 #main .main5{
-    background: #EEEFF1;
+    background: #F9F6F0;
 }
 #main .mainimg4, #main .mainimg5{
     width:500px;

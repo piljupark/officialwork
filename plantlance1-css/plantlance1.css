@@ -197,22 +197,30 @@ nav{
     cursor: pointer;
 }
 #main .main-button:hover{
-    color:#fff;
+    /*
     border:1px solid #bab86c;
     background: #bab86c;
+    */
+    border: 1px solid #f2ebde;
+    background:#f2ebde;
 }
 #main .main-button:hover a{
-    color:#fff;
+    color:#292929;
 }
 
 #main .main2{
     position: relative;
     height:450px;
-    background: #EEEFF1;
+    background: #fcfbf9;
 }
 #main .mainimg2{
+    width:1000px;
+    margin:0 auto;
+}
+/*
+#main .mainimg2{
     position: absolute;
-    width:1200px;
+    width:1000px;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -224,6 +232,7 @@ nav{
     top:200px;
     left:50%;
     transform: translate(-50%,-50%);
+    
 }
 #main .main2 .main-txt{
     position: absolute;
@@ -238,7 +247,7 @@ nav{
     transform: translate(-50%,-50%);
     z-index: 5;
 }
-
+*/
 #main .main3{
     height:450px;
 }
@@ -275,7 +284,7 @@ nav{
     background: #EEEFF1;
 }
 #main .main5{
-    background: #F9F6F0;
+    background: #fcfbf9;
 }
 #main .mainimg4, #main .mainimg5{
     width:500px;

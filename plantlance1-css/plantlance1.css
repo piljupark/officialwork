@@ -166,6 +166,7 @@ nav{
     width:700px;
     margin-top:50px;
     z-index: 1;
+
 }
 #main .main-title{
     font-family: "AppleSDGothicNeoB";
@@ -208,7 +209,7 @@ nav{
     background-image: url(../plantlance-img/bespoke4.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
 #main .main2{
     position: relative;
@@ -252,16 +253,19 @@ nav{
     box-sizing: border-box;
 }
 #main .main4, .main5{
+    position: relative;
     float:left;
     width:100%;
     height:500px;
+    margin-bottom: 15px;
     padding-top:50px;
     overflow: hidden;
-    margin-bottom: 15px;
+    transition-duration: .5s;
 }
 #main .main4{
     background: #EEEFF1;
 }
+
 #main .main5{
     background: #fcfbf9;
 }
@@ -318,6 +322,10 @@ nav{
 #main .our-sofa-img{
     width:800px;
 }
+
+
+
+/*
 #main .main7:hover{
     background-image: url(../plantlance-img/our2.png);
     background-position: center;
@@ -328,3 +336,83 @@ nav{
 #main .main7:hover .our-sofa-img{
     opacity: 0;
 }
+*/
+
+
+/* 태블릿 */
+@media screen and (max-width: 767px) and (min-width:376px) {
+    #main .main-title{
+        font-size: 40px;
+    }
+    #main .main-txt{
+        font-size: 18px;
+    }
+    #main .main2 .cloud-sofa-img{
+        position: absolute;
+        width:700px;
+        top:60%;
+        left:50%;
+        transform: translate(-50%);
+    }
+    #main .main3 .mate-stool-img{
+        position: absolute;
+        width:600px;
+        top:58%;
+        left:50%;
+        transform: translate(-50%);
+    }
+    
+    
+    
+    #main .main-bottom .main-title{
+        font-size: 35px;
+    }
+    #main .main-bottom .main-txt{
+        font-size: 16px;
+    }
+    #main .main-bottom .main-button{
+        padding:5px 0;
+    }
+    
+    #main .main-bottom .main-bottom-left .main4, #main .main-bottom .main-bottom-left .main5{
+        height:400px;
+    }
+    
+    #main .main-bottom .main-bottom-right .main6, #main .main-bottom .main-bottom-right .main7{
+        height:400px;
+    }
+    
+    #main .main-bottom .main-bottom-left .main4 .willy-table-img{
+        position: absolute;
+        width:320px;
+        top:75%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    #main .main-bottom .main-bottom-left .main5 .flex-sofa-img{
+        position: absolute;
+        width:420px;
+        top:70%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    
+    #main .main-bottom .main-bottom-right .main7 .our-sofa-img{
+        position: absolute;
+        width:420px;
+        top:70%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+}
+/* //태블릿 */
+
+
+
+
+/* 모바일 */
+@media screen and (max-width: 375px){
+    
+}
+/* //모바일 */

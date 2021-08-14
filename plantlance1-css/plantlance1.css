@@ -146,7 +146,7 @@ nav{
     float: left;
     width: 100%;
     height: auto;
-    margin-top:50px;
+    margin-top:20px;
 }
 #main .main-wrap{
     position: relative;
@@ -203,7 +203,13 @@ nav{
 #main .main-button:hover a{
     color:#fff;
 }
-
+#main .main1{
+    height:800px;
+    background-image: url(../plantlance-img/bespoke4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #main .main2{
     position: relative;
     height:450px;
@@ -297,6 +303,13 @@ nav{
     border:1px solid #fff;
 }
 #main .main6 .main-button a{
+    color:#fff;
+}
+
+#main .main6 .main-button:hover{
+    border:1px solid #bab86c;
+}
+#main .main6 .main-button:hover a{
     color:#fff;
 }
 #main .main7{

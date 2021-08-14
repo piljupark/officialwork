@@ -681,10 +681,10 @@ footer ul li:hover {
     .mobile-menu-img {
         position: absolute;
         float: left;
-        width: 15px;
+        width: 13px;
         left: 0;
         display: block;
-        padding-top: 2px;
+        padding-top: 3px;
     }
 
     .close-img {
@@ -699,29 +699,30 @@ footer ul li:hover {
     .heart-img {
         position: absolute;
         float: left;
-        width: 15px;
-        left: 60px;
-        padding-top: 3px;
+        width: 14px;
+        left: 40px;
+        padding-top: 2.5px;
+    }
+
+    .mobile-login-img {
+        position: absolute;
+        width: 17px;
+        right: 40px;
+        padding-top: 2px;
     }
 
     .mobile-logo {
         position: absolute;
-        width: 20px;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
     }
 
-    .mobile-login-img {
-        position: absolute;
-        width: 20px;
-        right: 60px;
-    }
-
     .bag-img {
         position: absolute;
-        width: 20px;
+        width: 17px;
         right: 0;
+        padding-top:1.5px;
 
     }
 
@@ -902,10 +903,10 @@ footer ul li:hover {
     .mobile-menu-img {
         position: absolute;
         float: left;
-        width: 15px;
+        width: 13px;
         left: 0;
         display: block;
-        padding-top: 2px;
+        padding-top: 3px;
     }
 
     .close-img {
@@ -920,20 +921,20 @@ footer ul li:hover {
     .heart-img {
         position: absolute;
         float: left;
-        width: 17px;
-        left: 60px;
-        padding-top: 1px;
+        width: 14px;
+        left: 40px;
+        padding-top: 2.5px;
     }
 
     .mobile-login-img {
         position: absolute;
-        width: 20px;
-        right: 60px;
+        width: 17px;
+        right: 40px;
+        padding-top: 2px;
     }
 
     .mobile-logo {
         position: absolute;
-        width: 20px;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -941,11 +942,12 @@ footer ul li:hover {
 
     .bag-img {
         position: absolute;
-        width: 20px;
+        width: 17px;
         right: 0;
+        padding-top:1.5px;
 
     }
-
+    
     .nav-wrap ul a li:hover {
         opacity: 1;
     }

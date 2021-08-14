@@ -282,21 +282,23 @@ nav{
 #main .main6{
     background: #fcfbf9;
     transition-duration: .5s;
-}
-#main .oblong-table-img{
-    width:800px;
-}
-#main .main6:hover{
-    background-image: url(../plantlance-img/oblong3.png);
+    background-image: url(../plantlance-img/oblong4.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-duration: .5s;
 }
-#main .main6:hover .oblong-table-img{
-    opacity: 0;
+#main .main6 .main-title{
+    color:#fff;
 }
-
+#main .main6 .main-txt{
+    color:#ddd;
+}
+#main .main6 .main-button{
+    border:1px solid #fff;
+}
+#main .main6 .main-button a{
+    color:#fff;
+}
 #main .main7{
     background: #EEEFF1;
 }

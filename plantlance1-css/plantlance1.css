@@ -150,7 +150,9 @@ nav .nav-wrap .mobile-menu {
     width: 18px;
 }
 
-
+.spread-mobile-menu{
+    display: none;!important
+}
 /* //nav */
 
 
@@ -398,7 +400,6 @@ nav .nav-wrap .mobile-menu {
 
 
 
-
     #main .main-title {
         font-size: 40px;
     }
@@ -497,7 +498,7 @@ nav .nav-wrap .mobile-menu {
     nav .nav-wrap .mobile-menu {
         display: block;
         position: relative;
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         text-align: center;
     }
@@ -516,18 +517,18 @@ nav .nav-wrap .mobile-menu {
     nav .nav-wrap .mobile-menu a li .mobile-menu-img {
         position: absolute;
         float: left;
-        width: 20px;
+        width: 15px;
         left: 0;
-        opacity: 1;
-        z-index:3;
+        display: block;
+        padding-top:2px;
     }
     .close-img {
         position: absolute;
         float: left;
-        width: 20px;
+        width: 13px;
         left: 0;
-        opacity: 0;
-        z-index: 2;
+        display: none;
+        padding-top:3px;
     }
 
     nav .nav-wrap .mobile-menu a li .logo-img {
@@ -538,7 +539,7 @@ nav .nav-wrap .mobile-menu {
         text-align: center;
     }
 
-    nav .nav-wrap .mobile-menu a li .login-img {
+    nav .nav-wrap .mobile-menu a li .bag-img {
         position: absolute;
         width: 20px;
         right: 0;
@@ -556,6 +557,7 @@ nav .nav-wrap .mobile-menu {
 
 
     .spread-mobile-menu {
+        display: block;
         position: absolute;
         width: 100vw;
         height: 0vh;
@@ -567,9 +569,24 @@ nav .nav-wrap .mobile-menu {
         z-index: 9;
         margin-top:50px;
         overflow: hidden;
-        
     }
-
+    .spread-mobile-menu ul a{
+        font-size: 16px;
+        font-family: "AppleSDGothicNeoUL";
+    }
+    .spread-mobile-menu ul a li{
+        position: relative;
+        width:85%;
+        margin:0 auto;
+        padding:15px 0; 
+        border-bottom: 1px solid #ddd;
+    }
+    .spread-mobile-menu ul a li .mobile-next{
+        position: absolute;
+        width:12px;
+        top:19px;
+        right:0;
+    }
 
 
 

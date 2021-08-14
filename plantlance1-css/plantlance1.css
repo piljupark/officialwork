@@ -17,18 +17,18 @@
 }
 
 @font-face {
-    src: url("../fonts/AppleSDGothicNeoT.ttf");
-    font-family: "AppleSDGothicNeoT";
+    src: url("../fonts/AppleSDGothicNeoR.ttf");
+    font-family: "AppleSDGothicNeoR";
 }
 
 @font-face {
-    src: url("../fonts/AppleSDGothicNeoT.woff");
-    font-family: "AppleSDGothicNeoT";
+    src: url("../fonts/AppleSDGothicNeoR.woff");
+    font-family: "AppleSDGothicNeoR";
 }
 
 @font-face {
-    src: url("../fonts/AppleSDGothicNeoT.woff2");
-    font-family: "AppleSDGothicNeoT";
+    src: url("../fonts/AppleSDGothicNeoR.woff2");
+    font-family: "AppleSDGothicNeoR";
 }
 
 @font-face {
@@ -78,6 +78,7 @@
     src: url("../fonts/Jost-400-Book.woff2");
     font-family: "Jost-400-Book";
 }
+
 @font-face {
     src: url("../fonts/Jost-400-Book.otf");
     font-family: "Jost-400-Book";
@@ -98,6 +99,7 @@
     src: url("../fonts/Jost-500-Medium.woff2");
     font-family: "Jost-500-Medium";
 }
+
 @font-face {
     src: url("../fonts/Jost-500-Medium.otf");
     font-family: "Jost-500-Medium";
@@ -117,6 +119,7 @@
     src: url("../fonts/Jost-600-Semi.woff2");
     font-family: "Jost-600-Semi";
 }
+
 @font-face {
     src: url("../fonts/Jost-600-Semi.otf");
     font-family: "Jost-600-Semi";
@@ -135,7 +138,7 @@ body {
     font-size: 14px;
     overflow-x: hidden;
     z-index: 1;
-    
+
 }
 
 a,
@@ -212,9 +215,42 @@ nav .nav-wrap .mobile-menu {
     width: 18px;
 }
 
-.spread-mobile-menu{
-    display: none;!important
+.spread-mobile-menu {
+    display: none;
+     !important
 }
+
+.spread-mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 50px;
+    background: #fff;
+    transition-duration: .4s;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.spread-mobile-menu ul a {
+    font-size: 16px;
+    font-family: "AppleSDGothicNeoR";
+}
+
+.spread-mobile-menu ul a li {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.spread-mobile-menu ul a li .mobile-next {
+    position: absolute;
+    width: 10px;
+    top: 21px;
+    right: 0;
+}
+
 /* //nav */
 
 
@@ -302,9 +338,10 @@ nav .nav-wrap .mobile-menu {
     background-repeat: no-repeat;
     background-size: cover;
 }
-#main .main1 .bespoke-img{
-        display: none;
-    }
+
+#main .main1 .bespoke-img {
+    display: none;
+}
 
 #main .main2 {
     position: relative;
@@ -438,57 +475,65 @@ nav .nav-wrap .mobile-menu {
     width: 800px;
 }
 
-footer{
-    position: relative;
-    float:left;
-    width:100vw;
-    height:240px;
-    background: #292929;
-    box-sizing: border-box;
-    padding:25px 15px 15px 15px;
-}
-footer .footer-logo{
-    color:#fff;
-    font-family: "Jost-500-Medium";
-    font-size: 20px;
-    padding-bottom:25px;
-    border-bottom:1px solid #fff;
-}
-footer ul{
+footer {
     position: relative;
     float: left;
-    width:100%;
+    width: 100vw;
+    height: 240px;
+    background: #292929;
+    box-sizing: border-box;
+    padding: 25px 15px 15px 15px;
+}
+
+footer .footer-logo {
+    color: #fff;
+    font-family: "Jost-500-Medium";
+    font-size: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+}
+
+footer ul {
+    position: relative;
+    float: left;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom:20px;
-    padding-top:25px;
-    
+    margin-bottom: 20px;
+    padding-top: 25px;
+
     text-align: center;
 }
 
-footer ul li{
+footer ul li {
     position: relative;
-    float:left;
-    color:#fff;
+    float: left;
+    color: #fff;
     font-family: "AppleSDGothicNeoM";
-    margin-right:25px;
-    margin-bottom:10px;
+    margin-right: 25px;
+    margin-bottom: 10px;
 }
-footer ul li:hover{
+
+footer ul li:hover {
     text-decoration: underline;
 }
-.footer-bottom{
+
+.footer-bottom {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     font-size: 11px;
-    color:#fff;
-    margin:0 2px;
+    color: #fff;
+    margin: 0 2px;
 }
-.company, .address, .tel-number{
-    float:left;
-} 
+
+.company,
+.address,
+.tel-number {
+    float: left;
+}
 
 
 
@@ -522,8 +567,8 @@ footer ul li:hover{
     #main .main1 {
         height: 500px;
     }
-    
-    #main .main1 .bespoke-img{
+
+    #main .main1 .bespoke-img {
         display: none;
     }
 
@@ -604,7 +649,11 @@ footer ul li:hover{
 
 
 /* 모바일 */
-@media screen and (max-width: 700px) and (min-width:551px){
+@media screen and (max-width: 700px) and (min-width:551px) {
+    .nav-wrap {
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+    }
 
     nav .nav-wrap .pc-tablet-menu {
         display: none;
@@ -620,33 +669,42 @@ footer ul li:hover{
 
     nav .nav-wrap .mobile-menu a li {
         float: left;
-        width: 40px;
+        width: auto;
         font-size: 14px;
-        padding: 15px 0;
-        color: #fff;
-        opacity: .7;
+        color: #292929;
+        opacity: 1;
         transition-duration: .2s;
         text-align: center;
+        font-family: "Jost-500-Medium";
     }
 
-    nav .nav-wrap .mobile-menu a li .mobile-menu-img {
+    .mobile-menu-img {
         position: absolute;
         float: left;
         width: 15px;
         left: 0;
         display: block;
-        padding-top:2px;
+        padding-top: 2px;
     }
+
     .close-img {
         position: absolute;
         float: left;
         width: 13px;
         left: 0;
         display: none;
-        padding-top:3px;
+        padding-top: 3px;
     }
 
-    nav .nav-wrap .mobile-menu a li .logo-img {
+    .heart-img {
+        position: absolute;
+        float: left;
+        width: 15px;
+        left: 60px;
+        padding-top: 3px;
+    }
+
+    .mobile-logo {
         position: absolute;
         width: 20px;
         left: 50%;
@@ -654,7 +712,13 @@ footer ul li:hover{
         text-align: center;
     }
 
-    nav .nav-wrap .mobile-menu a li .bag-img {
+    .mobile-login-img {
+        position: absolute;
+        width: 20px;
+        right: 60px;
+    }
+
+    .bag-img {
         position: absolute;
         width: 20px;
         right: 0;
@@ -670,35 +734,11 @@ footer ul li:hover{
         font-family: "AppleSDGothicNeoUL";
     }
 
-
     .spread-mobile-menu {
         display: block;
-        position: absolute;
-        width: 100%;
-        height: 0vh;
-        background: #fff;
-        transition-duration: .4s;
-        z-index: 9;
-        margin-top:50px;
-        overflow: hidden;
     }
-    .spread-mobile-menu ul a{
-        font-size: 16px;
-        font-family: "AppleSDGothicNeoUL";
-    }
-    .spread-mobile-menu ul a li{
-        position: relative;
-        width:85%;
-        margin:0 auto;
-        padding:15px 0; 
-        border-bottom: 1px solid #ddd;
-    }
-    .spread-mobile-menu ul a li .mobile-next{
-        position: absolute;
-        width:10px;
-        top:21px;
-        right:0;
-    }
+
+
 
 
 
@@ -723,9 +763,10 @@ footer ul li:hover{
 
     #main .main1 {
         height: 500px;
-        
+
     }
-    #main .main1 .bespoke-img{
+
+    #main .main1 .bespoke-img {
         display: none;
     }
 
@@ -814,10 +855,10 @@ footer ul li:hover{
         transform: translate(-50%, -50%);
         margin-top: 20px;
     }
-    
-    
-    footer{
-        height:270px;
+
+
+    footer {
+        height: 270px;
     }
 }
 
@@ -829,7 +870,12 @@ footer ul li:hover{
 
 
 
-@media screen and (max-width: 549px){
+@media screen and (max-width: 549px) {
+    .nav-wrap {
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+
     nav .nav-wrap .pc-tablet-menu {
         display: none;
     }
@@ -844,33 +890,48 @@ footer ul li:hover{
 
     nav .nav-wrap .mobile-menu a li {
         float: left;
-        width: 40px;
+        width: auto;
         font-size: 14px;
-        padding: 15px 0;
-        color: #fff;
-        opacity: .7;
+        color: #292929;
+        opacity: 1;
         transition-duration: .2s;
         text-align: center;
+        font-family: "Jost-500-Medium";
     }
 
-    nav .nav-wrap .mobile-menu a li .mobile-menu-img {
+    .mobile-menu-img {
         position: absolute;
         float: left;
         width: 15px;
         left: 0;
         display: block;
-        padding-top:2px;
+        padding-top: 2px;
     }
+
     .close-img {
         position: absolute;
         float: left;
         width: 13px;
         left: 0;
         display: none;
-        padding-top:3px;
+        padding-top: 3px;
     }
 
-    nav .nav-wrap .mobile-menu a li .logo-img {
+    .heart-img {
+        position: absolute;
+        float: left;
+        width: 17px;
+        left: 60px;
+        padding-top: 1px;
+    }
+
+    .mobile-login-img {
+        position: absolute;
+        width: 20px;
+        right: 60px;
+    }
+
+    .mobile-logo {
         position: absolute;
         width: 20px;
         left: 50%;
@@ -878,7 +939,7 @@ footer ul li:hover{
         text-align: center;
     }
 
-    nav .nav-wrap .mobile-menu a li .bag-img {
+    .bag-img {
         position: absolute;
         width: 20px;
         right: 0;
@@ -894,33 +955,10 @@ footer ul li:hover{
         font-family: "AppleSDGothicNeoUL";
     }
 
-
     .spread-mobile-menu {
         display: block;
-        position: absolute;
-        width: 100%;
-        height: 0vh;
-        background:#fff;
-        transition-duration: .4s;
-        z-index: 9;
-        margin-top:50px;
-        overflow: hidden;
     }
-    .spread-mobile-menu ul a li{
-        position: relative;
-        width:85%;
-        margin:0 auto;
-        padding:15px 0; 
-        border-bottom: 1px solid #ddd;
-        font-size: 16px;
-        font-family: "AppleSDGothicNeoUL";
-    }
-    .spread-mobile-menu ul a li .mobile-next{
-        position: absolute;
-        width:10px;
-        top:19px;
-        right:0;
-    }
+
 
 
 
@@ -942,26 +980,29 @@ footer ul li:hover{
     #main .main-txt {
         font-size: 15px;
     }
-    #main .main-wrap .main1 .main-txt-wrap{
+
+    #main .main-wrap .main1 .main-txt-wrap {
         position: absolute;
-        width:100%;
+        width: 100%;
         z-index: 2;
         text-align: center;
-        margin:0 auto;
+        margin: 0 auto;
     }
+
     #main .main1 {
         height: 500px;
         background-image: none;
     }
-    #main .main1 .bespoke-img{
+
+    #main .main1 .bespoke-img {
         display: block;
         position: absolute;
-        width:700px;
-        margin:0;
-        top:0;
-        left:50%;
+        width: 700px;
+        margin: 0;
+        top: 0;
+        left: 50%;
         transform: translate(-50%);
-        
+
     }
 
     #main .main2,
@@ -1049,12 +1090,12 @@ footer ul li:hover{
         transform: translate(-50%, -50%);
         margin-top: 20px;
     }
-    
-    
-    footer{
-        height:290px;
+
+
+    footer {
+        height: 290px;
     }
-    
+
 }
 
 /* //모바일 */

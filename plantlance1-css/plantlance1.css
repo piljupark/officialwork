@@ -135,6 +135,7 @@ body {
     font-size: 14px;
     overflow-x: hidden;
     z-index: 1;
+    
 }
 
 a,
@@ -230,6 +231,7 @@ nav .nav-wrap .mobile-menu {
 #main .main-wrap {
     position: relative;
     width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
 }
 

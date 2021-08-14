@@ -281,9 +281,20 @@ nav{
 }
 #main .main6{
     background: #fcfbf9;
+    transition-duration: .5s;
 }
 #main .oblong-table-img{
     width:800px;
+}
+#main .main6:hover{
+    background-image: url(../plantlance-img/oblong3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: .5s;
+}
+#main .main6:hover .oblong-table-img{
+    opacity: 0;
 }
 
 #main .main7{
@@ -291,4 +302,14 @@ nav{
 }
 #main .our-sofa-img{
     width:800px;
+}
+#main .main7:hover{
+    background-image: url(../plantlance-img/our2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: .5s;
+}
+#main .main7:hover .our-sofa-img{
+    opacity: 0;
 }

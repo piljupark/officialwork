@@ -209,7 +209,7 @@ nav{
     height:450px;
     background: #fcfbf9;
 }
-#main .mainimg2{
+#main .cloud-sofa-img{
     width:1000px;
     margin:0 auto;
 }
@@ -217,7 +217,7 @@ nav{
 #main .main3{
     height:450px;
 }
-#main .mainimg3{
+#main .mate-stool-img{
     width:900px;
 }
 
@@ -259,9 +259,7 @@ nav{
 #main .main5{
     background: #fcfbf9;
 }
-#main .mainimg4, #main .mainimg5{
-    width:500px;
-}
+
 
 #main .main-bottom .main-bottom-right{
     position: relative;
@@ -284,11 +282,13 @@ nav{
 #main .main6{
     background: #fcfbf9;
 }
-#main .mainimg6{
+#main .oblong-table-img{
     width:800px;
-    margin: 0;
 }
 
 #main .main7{
     background: #EEEFF1;
+}
+#main .our-sofa-img{
+    width:800px;
 }

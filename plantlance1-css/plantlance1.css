@@ -676,7 +676,7 @@ footer ul li:hover{
         position: absolute;
         width: 100vw;
         height: 0vh;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         -moz-backdrop-filter: blur(20px);
@@ -903,7 +903,7 @@ footer ul li:hover{
         position: absolute;
         width: 100vw;
         height: 0vh;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         -moz-backdrop-filter: blur(20px);
@@ -915,6 +915,7 @@ footer ul li:hover{
     .spread-mobile-menu ul a{
         font-size: 16px;
         font-family: "AppleSDGothicNeoUL";
+        color:#fff;
     }
     .spread-mobile-menu ul a li{
         position: relative;
@@ -922,6 +923,7 @@ footer ul li:hover{
         margin:0 auto;
         padding:15px 0; 
         border-bottom: 1px solid #ddd;
+        color:#ddd;
     }
     .spread-mobile-menu ul a li .mobile-next{
         position: absolute;

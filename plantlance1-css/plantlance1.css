@@ -676,10 +676,7 @@ footer ul li:hover{
         position: absolute;
         width: 100%;
         height: 0vh;
-        background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        -moz-backdrop-filter: blur(20px);
+        background: #fff;
         transition-duration: .4s;
         z-index: 9;
         margin-top:50px;
@@ -698,8 +695,8 @@ footer ul li:hover{
     }
     .spread-mobile-menu ul a li .mobile-next{
         position: absolute;
-        width:12px;
-        top:19px;
+        width:10px;
+        top:21px;
         right:0;
     }
 
@@ -903,19 +900,11 @@ footer ul li:hover{
         position: absolute;
         width: 100%;
         height: 0vh;
-        background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        -moz-backdrop-filter: blur(20px);
+        background:#fff;
         transition-duration: .4s;
         z-index: 9;
         margin-top:50px;
         overflow: hidden;
-    }
-    .spread-mobile-menu ul a{
-        font-size: 16px;
-        font-family: "AppleSDGothicNeoUL";
-        color:#fff;
     }
     .spread-mobile-menu ul a li{
         position: relative;
@@ -923,11 +912,12 @@ footer ul li:hover{
         margin:0 auto;
         padding:15px 0; 
         border-bottom: 1px solid #ddd;
-        color:#ddd;
+        font-size: 16px;
+        font-family: "AppleSDGothicNeoUL";
     }
     .spread-mobile-menu ul a li .mobile-next{
         position: absolute;
-        width:12px;
+        width:10px;
         top:19px;
         right:0;
     }

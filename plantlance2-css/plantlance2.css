@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff2");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.ttf");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.woff");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.woff2");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff2");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.ttf");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff2");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Jost-400-Book.ttf");
+    font-family: "Jost-400-Book";
+}
+
+@font-face {
+    src: url("../fonts/Jost-400-Book.woff");
+    font-family: "Jost-400-Book";
+}
+
+@font-face {
+    src: url("../fonts/Jost-400-Book.woff2");
+    font-family: "Jost-400-Book";
+}
+
+@font-face {
+    src: url("../fonts/Jost-400-Book.otf");
+    font-family: "Jost-400-Book";
+}
+
+
+@font-face {
+    src: url("../fonts/Jost-500-Medium.ttf");
+    font-family: "Jost-500-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Jost-500-Medium.woff");
+    font-family: "Jost-500-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Jost-500-Medium.woff2");
+    font-family: "Jost-500-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Jost-500-Medium.otf");
+    font-family: "Jost-500-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Jost-600-Semi.ttf");
+    font-family: "Jost-600-Semi";
+}
+
+@font-face {
+    src: url("../fonts/Jost-600-Semi.woff");
+    font-family: "Jost-600-Semi";
+}
+
+@font-face {
+    src: url("../fonts/Jost-600-Semi.woff2");
+    font-family: "Jost-600-Semi";
+}
+
+@font-face {
+    src: url("../fonts/Jost-600-Semi.otf");
+    font-family: "Jost-600-Semi";
+}
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Jost-600-semi";
+    font-size: 14px;
+    overflow-x: hidden;
+    z-index: 1;
+    box-sizing: border-box;
+    background-image: url(../plantlance-img/main-bespoke1.jpg);
+}
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+nav{
+    position: fixed;
+    float:left;
+    width:100%;
+    top:0;
+    z-index: 10;
+    /*background: #fff;*/
+}
+nav .nav-wrap{
+    position: relative;
+    width:90%;
+    height:40px;
+    margin:0 auto;
+    padding:10px;
+    /*background: #eeeff1;*/
+}
+nav .nav-wrap ul{
+    position: relative;
+    width:340px;
+    float:right;
+}
+nav .nav-wrap ul a li{
+    position: relative;
+    float:left;
+    font-size:13px;
+    margin:10px 15px;
+}
+nav .nav-wrap .main-logo{
+    position: relative;
+    float: left;
+    width:100px;
+    margin-top:10px;
+    font-family: "Jost-600-Semi";
+    font-size: 20px;
+}
+
+#main{
+    position: relative;
+    float: left;
+    width:100%;
+    height:100vh;
+}
+#main .main-wrap{
+    position: relative;
+    width:90%;
+    height:100%;
+    margin:0 auto;
+    z-index: 10;
+}
+#main .main-title{
+    position: absolute;
+    top:40%;
+    left:0;
+    transform: translate(0,-50%);
+    font-size:50px;
+}
+
+
+
+
+
+
+/* 태블릿 */
+@media screen and (max-width: 767px) and (min-width:701px) {
+
+}
+
+/* //태블릿 */
+
+
+
+
+/* 모바일 */
+@media screen and (max-width: 700px) and (min-width:551px) {
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 549px) {
+
+
+}
+
+/* //모바일 */

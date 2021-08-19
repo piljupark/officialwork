@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
     src: url("../fonts/AppleSDGothicNeoB.ttf");
@@ -64,66 +65,7 @@
 
 
 
-@font-face {
-    src: url("../fonts/Jost-400-Book.ttf");
-    font-family: "Jost-400-Book";
-}
 
-@font-face {
-    src: url("../fonts/Jost-400-Book.woff");
-    font-family: "Jost-400-Book";
-}
-
-@font-face {
-    src: url("../fonts/Jost-400-Book.woff2");
-    font-family: "Jost-400-Book";
-}
-
-@font-face {
-    src: url("../fonts/Jost-400-Book.otf");
-    font-family: "Jost-400-Book";
-}
-
-
-@font-face {
-    src: url("../fonts/Jost-500-Medium.ttf");
-    font-family: "Jost-500-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Jost-500-Medium.woff");
-    font-family: "Jost-500-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Jost-500-Medium.woff2");
-    font-family: "Jost-500-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Jost-500-Medium.otf");
-    font-family: "Jost-500-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Jost-600-Semi.ttf");
-    font-family: "Jost-600-Semi";
-}
-
-@font-face {
-    src: url("../fonts/Jost-600-Semi.woff");
-    font-family: "Jost-600-Semi";
-}
-
-@font-face {
-    src: url("../fonts/Jost-600-Semi.woff2");
-    font-family: "Jost-600-Semi";
-}
-
-@font-face {
-    src: url("../fonts/Jost-600-Semi.otf");
-    font-family: "Jost-600-Semi";
-}
 
 
 
@@ -134,12 +76,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Jost-600-semi";
+    font-family: 'Jost', sans-serif;
     font-size: 14px;
     overflow-x: hidden;
     z-index: 1;
     box-sizing: border-box;
-    background-image: url(../plantlance-img/main-bespoke1.jpg);
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
 }
 
 a,
@@ -155,33 +97,46 @@ nav{
     width:100%;
     top:0;
     z-index: 10;
-    /*background: #fff;*/
+    background: #fff;
 }
 nav .nav-wrap{
     position: relative;
     width:90%;
-    height:40px;
+    height:50px;
     margin:0 auto;
-    padding:10px;
+    margin-top:10px;
     /*background: #eeeff1;*/
+    transition-duration: .3s;
 }
+
 nav .nav-wrap ul{
     position: relative;
-    width:340px;
     float:right;
+    width:320px;
+    
 }
 nav .nav-wrap ul a li{
     position: relative;
     float:left;
     font-size:13px;
     margin:10px 15px;
+    font-weight: 600;
+    opacity: .7;
+    transition-duration: .2s;
 }
+nav .nav-wrap ul a:nth-child(4) li{
+    margin-right:0;
+}
+nav .nav-wrap ul a li:hover{
+    opacity: 1;
+}
+
 nav .nav-wrap .main-logo{
     position: relative;
     float: left;
     width:100px;
     margin-top:10px;
-    font-family: "Jost-600-Semi";
+    font-family: 'Jost', sans-serif;
     font-size: 20px;
 }
 
@@ -190,22 +145,100 @@ nav .nav-wrap .main-logo{
     float: left;
     width:100%;
     height:100vh;
+    box-sizing: border-box;
+    padding:60px 5% 5% 5%;
 }
 #main .main-wrap{
     position: relative;
-    width:90%;
+    width:100%;
     height:100%;
     margin:0 auto;
 }
 #main .main-title{
     position: absolute;
-    top:40%;
+    top:50%;
     left:0;
     transform: translate(0,-50%);
     font-size:50px;
+    font-weight: 500;
+}
+#main .main-bespoke{
+    position: relative;
+    float:left;
+    width:100%;
+}
+#main .main-wrap .sub-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+}
+#main .main-wrap .sub-wrap .sub-img-wrap{
+    position: relative;
+    float:left;
+    width:33.3%;
+    box-sizing: border-box;
+}
+#main .main-wrap .sub-wrap .sub-img-wrap:nth-child(1){
+    padding:15px 7.5px 0px 0px;
+}
+#main .main-wrap .sub-wrap .sub-img-wrap:nth-child(2){
+    padding:15px 7.5px 0px 7.5px;
+}
+#main .main-wrap .sub-wrap .sub-img-wrap:nth-child(3){
+    padding:15px 0px 0px 7.5px;
+}
+#main .main-wrap .sub-wrap .sub-img-wrap img{
+    position: relative;
+    float:left;
+    width: 100%;
 }
 
 
+
+/*first-wrap*/
+.first-wrap{
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    left:0;
+    background: #D7D6AA;
+    overflow: hidden;
+    z-index: 20;
+    transition-duration: .2s;
+    animation-name: firstShow;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    
+}
+.first-wrap .main1{
+    position: absolute;
+    width:500px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.first-wrap .say-hello-txt{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 150px;
+    font-weight: 500;
+    color:#fff;
+    opacity: .8;
+}
+@keyframes firstShow{
+    from{
+        left:0;
+    }
+    to{
+        left:100%;
+    }
+}
+/*//first-wrap*/
 
 
 

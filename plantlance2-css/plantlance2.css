@@ -173,20 +173,38 @@ nav .nav-wrap .global-menu-button{
     height:100vh;
     top:0;
     right:-300px;
+    padding:25px 30px;
     background: #fff;
     transition-duration: .5s;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 12;  
 }
+.spread-menu-wrap{
+    position: relative;
+    width:100%;
+    margin:0 auto;
+}
 .close-button{
-    position: absolute;
-    top:25px;
-    left:30px;
+    position: relative;
+    float:left;
+    width:100%;
     font-weight: 500;
     color:#640000;
+}
+
+#spread-menu ul{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:50px;
+}
+#spread-menu ul li{
+    position: relative;
+    float:left;
+    width:100%;
+    padding:15px 0;
+    font-size: 16px;
 }
 /* //spread-menu */
 
@@ -206,14 +224,6 @@ nav .nav-wrap .global-menu-button{
     -moz-backdrop-filter: blur(15px);
     transition-duration: .5s;
     opacity: 0;
-}
-@keyframes blackToback{
-    from{
-        z-index: 9;
-    }
-    to{
-        z-index: -1;
-    }
 }
 /* //click-to-black */
 
@@ -262,6 +272,7 @@ nav .nav-wrap .global-menu-button{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #fff;
 }
 /*
 #main .main-wrap .sub-wrap .sub-img-wrap:nth-child(1){

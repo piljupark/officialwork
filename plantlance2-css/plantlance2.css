@@ -79,9 +79,21 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 14px;
     overflow-x: hidden;
+    overflow-y: hidden;
     z-index: 1;
     box-sizing: border-box;
+    animation-name: firstNowheel;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+@keyframes firstNowheel{
+    from{
+        overflow: hidden;
+    }
+    to{
+        overflow-y: scroll;
+    }
 }
 
 a,
@@ -97,56 +109,125 @@ nav{
     width:100%;
     top:0;
     z-index: 10;
-    background: #fff;
+    /*background: #fff;*/
 }
 nav .nav-wrap{
     position: relative;
-    width:90%;
+    width:100%;
     height:50px;
     margin:0 auto;
-    margin-top:10px;
+    padding-top:10px;
     /*background: #eeeff1;*/
     transition-duration: .3s;
+    /*box-shadow: 10px 1px 20px 10px rgba(0,0,0,0.1);*/
+    overflow: hidden;
 }
-
-nav .nav-wrap ul{
-    position: relative;
-    float:right;
-    width:320px;
-    
-}
-nav .nav-wrap ul a li{
-    position: relative;
-    float:left;
-    font-size:13px;
-    margin:10px 15px;
-    font-weight: 600;
-    opacity: .7;
-    transition-duration: .2s;
-}
-nav .nav-wrap ul a:nth-child(4) li{
-    margin-right:0;
-}
-nav .nav-wrap ul a li:hover{
-    opacity: 1;
-}
-
 nav .nav-wrap .main-logo{
     position: relative;
     float: left;
     width:100px;
     margin-top:10px;
+    margin-left:10px;
     font-family: 'Jost', sans-serif;
     font-size: 20px;
 }
 
+
+nav .nav-wrap .menu-wrap{
+    position: relative;
+    float:right;
+    width:320px;
+    margin-right:10px;
+    
+}
+nav .nav-wrap .global-bag-button{
+    position: absolute;
+    float:left;
+    width:18px;
+    right:150px;
+    top:21px;
+    font-weight: 500;
+}
+
+nav .nav-wrap .global-search-button{
+    position: absolute;
+    float:left;
+    width:15px;
+    right:105px;
+    top:21px;
+    font-weight: 500;
+}
+nav .nav-wrap .global-menu-button{
+    position: absolute;
+    float:left;
+    width:15px;
+    right:35px;
+    top:21px;
+    font-weight: 500;
+}
+
+/* spread-menu */
+#spread-menu{
+    position:absolute;
+    width:300px;
+    height:100vh;
+    top:0;
+    right:-300px;
+    background: #fff;
+    transition-duration: .5s;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;  
+}
+.close-button{
+    position: absolute;
+    top:25px;
+    left:30px;
+    font-weight: 500;
+    color:#640000;
+}
+/* //spread-menu */
+
+
+
+/* click-to-black */
+#click-to-black{
+    position: absolute;
+    z-index: 4;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    -moz-backdrop-filter: blur(15px);
+    transition-duration: .5s;
+    opacity: 0;
+}
+@keyframes blackToback{
+    from{
+        z-index: 9;
+    }
+    to{
+        z-index: -1;
+    }
+}
+/* //click-to-black */
+
+
+
+
+/* main */
 #main{
     position: relative;
     float: left;
     width:100%;
     height:100vh;
     box-sizing: border-box;
-    padding:60px 5% 5% 5%;
+    z-index: 5;
 }
 #main .main-wrap{
     position: relative;
@@ -172,25 +253,32 @@ nav .nav-wrap .main-logo{
     float:left;
     width:100%;
 }
-#main .main-wrap .sub-wrap .sub-img-wrap{
+#main .main-wrap .sub-wrap{
     position: relative;
     float:left;
-    width:33.3%;
+    width:100%;
+    padding:10px 20px 10px 20px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+/*
 #main .main-wrap .sub-wrap .sub-img-wrap:nth-child(1){
     padding:15px 7.5px 0px 0px;
 }
 #main .main-wrap .sub-wrap .sub-img-wrap:nth-child(2){
-    padding:15px 7.5px 0px 7.5px;
+    padding:15px 0px 0px 0px;
 }
 #main .main-wrap .sub-wrap .sub-img-wrap:nth-child(3){
     padding:15px 0px 0px 7.5px;
 }
-#main .main-wrap .sub-wrap .sub-img-wrap img{
+*/
+#main .main-wrap .sub-wrap img{
     position: relative;
     float:left;
-    width: 100%;
+    width: 33%;
+    padding-right:10px;
 }
 
 
@@ -204,7 +292,6 @@ nav .nav-wrap .main-logo{
     background: #D7D6AA;
     overflow: hidden;
     z-index: 20;
-    transition-duration: .2s;
     animation-name: firstShow;
     animation-duration: 1s;
     animation-delay: 5s;

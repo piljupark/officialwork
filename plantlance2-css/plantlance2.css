@@ -77,7 +77,7 @@ body {
     color: #292929;
     font-family: 'Jost', sans-serif;
     font-size: 14px;
-    overflow: hidden;
+    overflow-x: hidden;
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
 }
 
@@ -120,15 +120,18 @@ nav .nav-wrap .main-logo{
 
 .nav-menu{
     position: relative;
-    float:left;
-    width:200px;
+    float:right;
+    width:210px;
 }
 .nav-menu li{
     position: relative;
-    float:right;
+    float:left;
     padding:10px;
     font-weight: 500;
 }
+
+
+
 
 /* spread-menu */
 #spread-menu{
@@ -137,13 +140,14 @@ nav .nav-wrap .main-logo{
     height:100vh;
     top:0;
     right:0px;
-    padding:25px 0px;
+    padding:20px 0px;
     background: #fff;
     transition-duration: .5s;
     box-sizing: border-box;
     display: flex;
     overflow: hidden;
     z-index: 12;
+
 }
 .spread-menu-wrap{
     position: relative;
@@ -171,6 +175,7 @@ nav .nav-wrap .main-logo{
     width:100%;
     padding:15px 30px;
     font-size: 16px;
+    
 }
 #spread-menu .bottom-wrap{
     position: relative;
@@ -211,28 +216,73 @@ nav .nav-wrap .main-logo{
     float: left;
     width:100%;
     height:100vh;
+    margin-top:50px;
     box-sizing: border-box;
     z-index: 5;
 }
+
 #main .main-wrap{
     position: relative;
     width:100%;
     height:100%;
     margin:0 auto;
 }
-#main .main-title{
+#main .main-wrap .bespoke-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    padding:10px 10px 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#main .main-wrap .bespoke-wrap p{
     position: absolute;
-    top:50%;
-    left:0;
-    transform: translate(0,-50%);
-    font-size:50px;
-    font-weight: 500;
+    float:left;
+    width:100%;
+    font-family: "AppleSDGothicNeoB";
 }
-#main .main-bespoke{
+#main .main-wrap .bespoke-wrap .bespoke-title{
+    left:40px;
+    bottom:100px;
+    font-size: 30px;
+    color:#fff;
+}
+#main .main-wrap .bespoke-wrap .bespoke-txt1{
+    width:auto;
+    left:40px;
+    bottom:40px;
+    font-size: 12px;
+    background: #fff;
+    padding:15px 25px;
+    font-family: "AppleSDGothicNeoM";
+    transition-duration: .3s;
+}
+#main .main-wrap .bespoke-wrap .bespoke-txt2{
+    width:auto;
+    left:180px;
+    bottom:40px;
+    font-size: 12px;
+    padding:14px 25px;
+    font-family: "AppleSDGothicNeoM";
+    transition-duration: .3s;
+    background: none;
+    border: 1px solid #292929;
+    color:#292929;
+}
+#main .main-wrap .bespoke-wrap .bespoke-txt:hover{
+    opacity: .7;
+}
+#main .main-wrap .main-bespoke{
     position: relative;
     float:left;
     width:100%;
 }
+
+
+
 #main .main-wrap .sub-wrap{
     position: relative;
     float:left;
@@ -242,28 +292,33 @@ nav .nav-wrap .main-logo{
     position: relative;
     float:left;
     width:100%;
-    padding:10px 10px 10px 20px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #fff;
 }
-/*
-#main .main-wrap .sub-wrap .sub-img-wrap:nth-child(1){
-    padding:15px 7.5px 0px 0px;
+#main .main-wrap .sub-wrap .sub-product-wrap{
+    position: relative;
+    float:left;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#main .main-wrap .sub-wrap .sub-img-wrap:nth-child(2){
-    padding:15px 0px 0px 0px;
+#main .main-wrap .sub-wrap .sub-product-wrap:nth-child(1){
+    padding:10px 10px 10px 15px;
 }
-#main .main-wrap .sub-wrap .sub-img-wrap:nth-child(3){
-    padding:15px 0px 0px 7.5px;
+#main .main-wrap .sub-wrap .sub-product-wrap:nth-child(2){
+    padding:10px 10px 10px 0px;
 }
-*/
+#main .main-wrap .sub-wrap .sub-product-wrap:nth-child(3){
+    padding:0 5px 0 0;
+}
 #main .main-wrap .sub-wrap img{
     position: relative;
     float:left;
-    width: 33%;
+    width: 100%;
     padding-right:10px;
 }
 

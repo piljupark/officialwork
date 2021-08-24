@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="plantlance-img/pabicon2.ico" rel="shortcut icon" type="image/x-icon">
     <title>Plantlance</title>
 
     <script src="plantlance2-script/swiper.min.js"></script>
@@ -27,114 +26,54 @@
 
     <nav>
         <div class="nav-wrap">
-            <!--<a href="#"><p class="main-logo">PLANT LANCE</p></a>-->
             <a href="#">
                 <img src="plantlance-img/logo.png" alt="logo" class="main-logo">
             </a>
-            <ul class="nav-menu">
+            <div class="menu-circle">
                 <a href="#none">
-                    <li class="global-bag-button">CART</li>
+                    <img src="plantlance-img/mobile-menu-black3.png" alt="hamburger" class="menu-btn">
                 </a>
-                <a href="#none">
-                    <li class="global-search-button">SEARCH</li>
-                </a>
-                <a href="#">
-                    <li class="global-menu-button">MENU</li>
-                </a>
-            </ul>
+            </div>
         </div>
+
     </nav>
 
 
-    <div id="spread-menu">
-        <div class="spread-menu-wrap">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide1">
+            </div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+    </div>
+
+<!--
+    <footer>
+        <div class="footer-wrap">
             <a href="#none">
-                <p class="close-button">CLOSE</p>
+                <img src="plantlance-img/logo1.png" alt="logo" class="bottom-logo">
             </a>
-            <ul class="top-menu">
-                <a href="#none">
-                    <li>Wily Table</li>
-                </a>
-                <a href="#none">
-                    <li>Mate Table Series</li>
-                </a>
-                <a href="#none">
-                    <li>Sofa</li>
-                </a>
-                <a href="#none">
-                    <li>Chair</li>
-                </a>
-                <a href="#none">
-                    <li>Light</li>
-                </a>
-                <a href="#none">
-                    <li>Props</li>
-                </a>
-            </ul>
-            <div class="bottom-wrap">
-                <ul class="bottom-menu">
-                    <a href="#none">
-                        <li>Q&amp;A</li>
-                    </a>
-                    <a href="#none">
-                        <li>Showroom</li>
-                    </a>
-                    <a href="#none">
-                        <li>Login / Sign-up</li>
-                    </a>
-                    <a href="#none">
-                        <li>1899-3417</li>
-                    </a>
-                </ul>
+            <div class="footer-txt-wrap">
+                <div class="footer-left">
+                    <p class="footer-txt">(주)PLANT LANCE</p>
+                    <p class="footer-txt">사업장 소재지 : 대구광역시 달서구 진천로18길 30 1,2층</p>
+                    <p class="footer-txt">사업장등록번호 : 427-87-01146</p>
+                    <p class="footer-txt">통신판매업번호 : 2018-대구달서-0779</p>
+                    <p class="footer-txt">대표자 : SE MIN JANG</p>
+                    <p class="footer-txt">E-mail : info@plantlance.kr</p>
+                    <p class="footer-txt">고객센터 : 1899-3417</p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-txt">화 - 토 : 10시 ~ 19시 / 일요일, 공휴일 : 13시 ~ 19시 / 월요일 휴무</p>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
-    <div id="click-to-black">
-
-    </div>
-
-
-    <div id="main">
-        <div class="main-wrap">
-            <!--<p class="main-title">Made in you</p>-->
-            <div class="bespoke-wrap">
-                <img src="plantlance-img/main-bespoke1.jpg" alt="main1" class="main-bespoke main-img">
-                <p class="bespoke-title">당신만의 가구, 나를 위한 집</p>
-                <a href="#none">
-                    <p class="bespoke-txt bespoke-txt1">모든 가구 보기</p>
-                </a>
-            </div>
-            <div class="sub-wrap">
-
-                <!--
-              
-               <div class="sub-img-wrap"><img src="plantlance-img/oblong1.png" alt="oblong"></div>
-               <div class="sub-img-wrap"><img src="plantlance-img/wily1.png" alt="wily"></div>
-               <div class="sub-img-wrap"><img src="plantlance-img/mate1.png" alt="mate"></div>
-               
-               -->
-                <div class="sub-product-wrap">
-                    <img src="plantlance-img/oblong1.png" alt="oblong">
-                </div>
-                <div class="sub-product-wrap">
-                    <img src="plantlance-img/wily1.png" alt="wily">
-                </div>
-                <div class="sub-product-wrap">
-                    <img src="plantlance-img/mate1.png" alt="mate">
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <div class="first-wrap">
-        <img src="plantlance-img/main-bespoke1.jpg" alt="main" class="main1">
-        <p class="say-hello-txt">Your choice</p>
-    </div>
-
-
+   -->
+   
+   
     <!--
     <footer>
         <p class="footer-logo">
@@ -166,11 +105,15 @@
 
 
     <script>
-        /*
-        window.onresize = function(){
-            document.location.reload();
-        };
-        */
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerview: 1,
+            paginationType: 'progress',
+            mousewheelControl: true,
+            loop: false,
+            direction: 'vertical',
+            effect: 'slide',
+        });
     </script>
 
 

@@ -113,7 +113,7 @@
                             <div class="left-contents">
                                 <img src="plantlance-img/plants.png" alt="plant">
                                 <div class="slide-left-white">
-                                <p class="left-title">There's no room for silence.</p>
+                                    <p class="left-title">There's no room for silence.</p>
                                 </div>
                             </div>
                         </a>
@@ -150,6 +150,9 @@
 
         </div>
     </div>
+    <footer>
+
+    </footer>
 
     <!--
     <footer>
@@ -217,7 +220,17 @@
             loop: false,
             direction: 'vertical',
             effect: 'slide',
-            nested: true
+            nested: true,
+            on: {
+                reachEnd: function() {
+                    swiper.mousewheel.disable();
+                }
+            }
+        });
+        window.addEventListener('wheel', function(event) {
+            if (event.deltaY < 0) {
+                swiper.mousewheel.enable();
+            } else if (event.deltaY > 0) {}
         });
 
 

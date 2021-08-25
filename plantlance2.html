@@ -39,7 +39,7 @@
     </nav>
 
 
-    <div class="swiper-container myswiper">
+    <div class="swiper-container swiper-container-h">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide1">
             </div>
@@ -56,7 +56,32 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide"></div>
+            <div class="swiper-slide swiper-slide3">
+
+
+
+                <div class="product-wrap">
+                    <div class="slide-txt-box">
+                        <p>Popular Products</p>
+                    </div>
+                    <div class="swiper-container swiper-container-v">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide into-slide">
+                                <img src="plantlance-img/bespoke-main.png">
+                            </div>
+                            <div class="swiper-slide into-slide"></div>
+                            <div class="swiper-slide into-slide"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -117,16 +142,34 @@
 
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
+        //전체 슬라이드
+        var swiperH = new Swiper('.swiper-container-h', {
+            pagination: '.swiper-pagination-h',
             slidesPerview: 1,
             paginationType: 'progress',
             mousewheelControl: true,
             loop: false,
             direction: 'vertical',
             effect: 'slide',
+            nested: true
         });
-        
+
+
+        //popluar product 슬라이드
+        var swiperV = new Swiper('.swiper-container-v', {
+            pagination: {
+                mode: 'horizontal',
+                el: '.swiper-pagination-v',
+                clickable: true,
+            },
+            slidesPerView: 3,
+            sapceBetween: 30,
+            slidesPerGroup: 3,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
     </script>
 
 

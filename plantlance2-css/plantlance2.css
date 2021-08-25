@@ -223,11 +223,58 @@ nav .nav-wrap .menu-circle:hover {
     float:left;
     width: 900px;
     top:50%;
-    left:40px;
+    left:10px;
+}
+
+.swiper-slide3 .slide-txt-box{
+    position: relative;
+    width:100%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
 }
 /* //main */
 
 
+
+
+/* into-slide */
+.product-wrap{
+    position: absolute;
+    width:90%;
+    margin:0 auto;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.product-wrap .swiper-container-v{
+    position: relative;
+    width:100%;
+    height:350px;
+    margin:0 auto;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-wrap .swiper-container-v .swiper-wrapper .swiper-slide{
+    position: relative;
+    height:300px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: #ddd;
+    overflow: hidden;
+    margin:5px;
+}
+
+.product-wrap .swiper-container-v .swiper-wrapper .swiper-slide img{
+    position: relative;
+    float:left;
+    width:100%;
+}
+/* //into-slide */
 
 
 

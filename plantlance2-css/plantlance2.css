@@ -146,7 +146,7 @@ nav .nav-wrap {
     position: relative;
     width: 90%;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1600px;
     height: 60px;
     /*background: #ccc;*/
 }
@@ -273,7 +273,9 @@ nav .nav-wrap .menu-circle:hover {
 }
 
 
-
+.swiper-slide4{
+    background: #fff;
+}
 .swiper-slide4 .slide-wrap{
     position: relative;
     width:1000px;
@@ -299,7 +301,7 @@ nav .nav-wrap .menu-circle:hover {
 .swiper-slide4 .slide-wrap .slide-left{
     position: relative;
     float:left;
-    width:400px;
+    width:40%;
     height:100%;
 }
 .swiper-slide4 .slide-wrap .slide-left .left-contents{
@@ -343,7 +345,7 @@ nav .nav-wrap .menu-circle:hover {
 .swiper-slide4 .slide-wrap .slide-right{
     position: relative;
     float:left;
-    width:600px;
+    width:60%;
     height:100%;
 }
 .swiper-slide4 .slide-wrap .slide-right .right-top{
@@ -425,12 +427,22 @@ nav .nav-wrap .menu-circle:hover {
     left:-210px;
     top:-80px;
 }
+
+.swiper-slide5{
+    position: relative;
+    width:100%;
+    height:300px!important;
+    background: #ddd;
+}
 /* //main */
 
 
 
 
 /* into-slide */
+.swiper-slide3{
+    background: #fff;
+}
 .product-wrap{
     position: absolute;
     width:1000px;

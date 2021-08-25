@@ -147,12 +147,14 @@
                 </div>
             </div>
             <!-- //slide4 -->
+            <div class="swiper-slide swiper-slide5">
+                <footer>
 
+                </footer>
+            </div>
         </div>
     </div>
-    <footer>
 
-    </footer>
 
     <!--
     <footer>
@@ -219,8 +221,11 @@
             mousewheelControl: true,
             loop: false,
             direction: 'vertical',
-            effect: 'slide',
+            effect: 'fade',
             nested: true,
+            
+            
+            /*
             on: {
                 reachEnd: function() {
                     swiper.mousewheel.disable();
@@ -231,8 +236,9 @@
             if (event.deltaY < 0) {
                 swiper.mousewheel.enable();
             } else if (event.deltaY > 0) {}
+            */
         });
-
+        
 
         //popluar product 슬라이드
         var swiperV = new Swiper('.swiper-container-v', {

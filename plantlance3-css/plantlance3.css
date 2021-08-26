@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff2");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.ttf");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.woff");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.woff2");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff2");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.ttf");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff2");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Black.ttf");
+    font-family: "AvenirLTStd-Black";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Black.woff");
+    font-family: "AvenirLTStd-Black";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Black.woff2");
+    font-family: "AvenirLTStd-Black";
+}
+
+
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Roman.ttf");
+    font-family: "AvenirLTStd-Roman";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Roman.woff");
+    font-family: "AvenirLTStd-Roman";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Roman.woff2");
+    font-family: "AvenirLTStd-Roman";
+}
+
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+
+/* nav */
+
+nav {
+    position: fixed;
+    float: left;
+    width: 100%;
+    height: auto;
+    top:0;
+    z-index: 10;
+}
+
+nav .nav-wrap {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 60px;
+    /*background: #ccc;*/
+}
+
+nav .nav-wrap .main-logo {
+    position: absolute;
+    float: left;
+    width: 130px;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+nav .nav-wrap .menu-circle {
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 100%;
+    transition-duration: .3s;
+}
+
+nav .nav-wrap .menu-btn {
+    position: absolute;
+    float: left;
+    width: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav .nav-wrap .menu-circle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+nav .nav-wrap .sub-btn-wrap{
+    position: absolute;
+    width:90px;
+    right:10px;
+    top:15px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-wrap .sub-btn-wrap img{
+    position: relative;
+    width:18px;
+    
+}
+
+.spread-menu{
+    position: absolute;
+    width:100%;
+    height:300px;
+    margin:0 auto;
+    top:-500px;
+    background: #fff;
+    box-shadow: 1px 10px 30px 1px rgba(0,0,0,0.05);
+    transition-duration: .5s;
+    overflow: hidden;
+}
+.spread-menu-wrap{
+    position: relative;
+    width:90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.spread-menu .menu-close-btn{
+    position: absolute;
+    float:left;
+    width:15px;
+    top:20px;
+    left:12px;
+}
+/* //nav */
+
+
+#fullpage{
+    max-width: 1400px;
+    margin:0 auto;
+}
+.section1{
+    background-image: url(../plantlance-img/main_visual.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section2 .txt-section{
+    position: relative;
+    float:left;
+    width:40%;
+    height:100vh;
+}
+.section2 .txt-section .txt-wrap{
+    position: relative;
+    float:left;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.section2 .txt-section .txt-eng{
+    position: relative;
+    float:left;
+    width:170px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.section2 .txt-section .txt-kor{
+    position: relative;
+    font-family: "AppleSDGothicNeoUL";
+    font-size: 24px;
+}
+.section2 .img-section{
+    position: relative;
+    float:left;
+    width:60%;
+    height:100vh;
+}
+.section2 .img-section .img-box-wrap{
+    position: relative;
+    width:515px;
+    display: flex;
+    justify-content: space-around;
+    top:33%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.section2 .img-section .img-box{
+    position: relative;
+    width:150px;
+    height:150px;
+    margin-bottom:20px;
+    background: #eee;
+    overflow: hidden;
+}
+
+.section3 .left-table{
+    position: relative;
+    float: left;
+    width:50%;
+    height:100vh;
+    background-color: #dddee1;
+    overflow: hidden;
+}
+.section3 .left-table img{
+    position: absolute;
+    width:1100px;
+    bottom:0;
+    left:50px;
+    transform: rotate(0deg);
+    -moz-transform: scaleX(-1);
+    -0-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform:scaleX(-1);
+    filter:FlipH;
+    -ms-filter:"FlipH"; 
+}
+.section3 .right-chair{
+    position: relative;
+    float: left;
+    width:50%;
+    height:50%;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+.section3 .right-chair img {
+    position: absolute;
+    float:left;
+    width:450px;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%);
+    
+}
+.section3 .right-sofa{
+    position: relative;
+    float: left;
+    width:50%;
+    height:50%;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+.section3 .right-sofa img{
+    position: absolute;
+    float:left;
+    width: 900px;
+    top:50%;
+    left:0px;
+}
+.section-title{
+    position: absolute;
+    font-size: 25px;
+    top:55px;
+    left: 55px;
+}
+.fp-auto-height{
+    background: #999;
+}
+.fp-auto-height footer{
+    position: relative;
+    float:left;
+    width: 100%;
+    height:250px;
+}
+
+/* nav */
+/* //nav */
+
+
+
+
+/* footer */
+
+
+/* //footer */
+
+
+
+
+
+
+
+
+/* 태블릿 */
+/*
+@media screen and (max-width: 767px) and (min-width:701px) {
+
+}
+*/
+/* //태블릿 */
+
+
+
+
+/* 모바일 */
+/*
+
+@media screen and (max-width: 700px) and (min-width:551px) {
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 549px) {
+   
+}
+*/
+/* //모바일 */

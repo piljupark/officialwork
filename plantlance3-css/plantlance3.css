@@ -111,7 +111,7 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 14px;
     overflow-x: hidden;
-    
+
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
@@ -133,7 +133,7 @@ nav {
     float: left;
     width: 100%;
     height: auto;
-    top:0;
+    top: 0;
     z-index: 10;
 }
 
@@ -177,188 +177,298 @@ nav .nav-wrap .menu-btn {
 nav .nav-wrap .menu-circle:hover {
     background: rgba(0, 0, 0, 0.05);
 }
-nav .nav-wrap .sub-btn-wrap{
+
+nav .nav-wrap .sub-btn-wrap {
     position: absolute;
-    width:90px;
-    right:10px;
-    top:15px;
+    width: 90px;
+    right: 10px;
+    top: 15px;
     display: flex;
     justify-content: space-between;
 }
-nav .nav-wrap .sub-btn-wrap img{
+
+nav .nav-wrap .sub-btn-wrap img {
     position: relative;
-    width:18px;
-    
+    width: 18px;
+
 }
 
-.spread-menu{
+.spread-menu {
     position: absolute;
-    width:100%;
-    height:300px;
-    margin:0 auto;
-    top:-500px;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    top: -500px;
     background: #fff;
-    box-shadow: 1px 10px 30px 1px rgba(0,0,0,0.05);
+    box-shadow: 1px 10px 30px 1px rgba(0, 0, 0, 0.05);
     transition-duration: .5s;
     overflow: hidden;
     opacity: .9;
 }
-.spread-menu-wrap{
+
+.spread-menu-wrap {
     position: relative;
-    width:90%;
+    width: 90%;
     max-width: 1400px;
     margin: 0 auto;
 }
-.spread-menu .menu-close-btn{
-    position: absolute;
-    float:left;
-    width:15px;
-    top:20px;
-    left:12px;
+
+.spread-menu .menu-close-btn {
+    position: relative;
+    float: left;
+    width: 15px;
+    top: 20px;
+    left: 12px;
+    z-index: 2;
 }
+
+.spread-menu-wrap .all-menu{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    background: #888;
+}
+.spread-menu-wrap .all-menu .title-menu{
+    position: relative;
+    float:left;
+    margin-top:50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.spread-menu-wrap .all-menu .title-menu .sub-menu{
+    position: relative;
+    float:right;
+    margin-left:20px;
+    font-weight:400;
+    font-size: 14px;
+}
+.spread-menu-wrap .all-menu .title-menu .sub-menu a{
+    opacity: .8;
+}
+.spread-menu-wrap .all-menu .title-menu .sub-menu a:hover{
+    opacity: 1;
+}
+.spread-menu-wrap .all-menu .title-menu .sub-menu a:nth-child(n+3) li:nth-child(-n+6){
+    margin-bottom:20px;
+}
+
 /* //nav */
 
 
-#fullpage{
+
+
+/* fullpage */
+#fullpage {
     max-width: 1400px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.section1{
+
+.section1 {
     background-image: url(../plantlance-img/main_visual.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.section2 .txt-section{
+
+.section2 .txt-section {
     position: relative;
-    float:left;
-    width:40%;
-    height:100vh;
+    float: left;
+    width: 40%;
+    height: 100vh;
 }
-.section2 .txt-section .txt-wrap{
+
+.section2 .txt-section .txt-wrap {
     position: relative;
-    float:left;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    
+    float: left;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
 }
-.section2 .txt-section .txt-eng{
+
+.section2 .txt-section .txt-eng {
     position: relative;
-    float:left;
-    width:170px;
+    float: left;
+    width: 280px;
+    margin-bottom: 15px;
     font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
+    line-height: 1.1;
 }
-.section2 .txt-section .txt-kor{
+
+.section2 .txt-section .txt-kor {
     position: relative;
+    width: 100%;
     font-family: "AppleSDGothicNeoUL";
     font-size: 24px;
 }
-.section2 .img-section{
-    position: relative;
-    float:left;
-    width:60%;
-    height:100vh;
+
+.section2 .txt-section .txt-kor:nth-child(4) {
+    font-family: "AppleSDGothicNeoB";
 }
-.section2 .img-section .img-box-wrap{
+
+.section2 .txt-section .section2-button-wrap {
     position: relative;
-    width:515px;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section2 .txt-section .section2-button-wrap .more-button {
+    position: relative;
+    float: left;
+    border: 1px solid #292929;
+    padding: 15px 140px 15px 19px;
+    font-weight: 500;
+    transition-duration: .2s;
+}
+
+.section2 .txt-section .section2-button-wrap .more-arrow {
+    position: absolute;
+    float: right;
+    width: 20px;
+    right: 20px;
+}
+
+
+
+
+.section2 .img-section {
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100vh;
+}
+
+.section2 .img-section .img-box-wrap {
+    position: relative;
+    width: 515px;
     display: flex;
     justify-content: space-around;
-    top:33%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
-.section2 .img-section .img-box{
+
+.section2 .img-section .img-box {
     position: relative;
-    width:150px;
-    height:150px;
-    margin-bottom:20px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
     background: #eee;
     overflow: hidden;
 }
 
-.section3 .left-table{
+.section3 .left-table {
     position: relative;
     float: left;
-    width:50%;
-    height:100vh;
+    width: 50%;
+    height: 100vh;
     background-color: #dddee1;
     overflow: hidden;
 }
-.section3 .left-table img{
+
+.section3 .left-table .wily-table {
     position: absolute;
-    width:1100px;
-    bottom:0;
-    left:50px;
+    width: 1100px;
+    bottom: 0;
+    left: 50px;
     transform: rotate(0deg);
     -moz-transform: scaleX(-1);
     -0-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
-    transform:scaleX(-1);
-    filter:FlipH;
-    -ms-filter:"FlipH"; 
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
-.section3 .right-chair{
+
+.section3 .right-chair {
     position: relative;
     float: left;
-    width:50%;
-    height:50%;
+    width: 50%;
+    height: 50%;
     background-color: #fafafa;
     overflow: hidden;
 }
-.section3 .right-chair img {
+
+.section3 .right-chair .momo-chair {
     position: absolute;
-    float:left;
-    width:450px;
-    bottom:0;
-    left:50%;
+    float: left;
+    width: 700px;
+    left: 50%;
     transform: translate(-50%);
-    
+    bottom:00px;
+
 }
-.section3 .right-sofa{
+
+.section3 .right-sofa {
     position: relative;
     float: left;
-    width:50%;
-    height:50%;
+    width: 50%;
+    height: 50%;
     background-color: #eaeaea;
     overflow: hidden;
 }
-.section3 .right-sofa img{
+
+.section3 .right-sofa .our-sofa{
     position: absolute;
-    float:left;
+    float: left;
     width: 900px;
-    top:50%;
-    right:0px;
+    top: 50%;
+    right: 0px;
 }
-.section-title{
+
+.section-title {
     position: absolute;
-    font-size: 25px;
-    top:55px;
-    left: 55px;
+    font-size: 20px;
+    top: 55px;
+    left: 70px;
+    text-transform: uppercase;
 }
 
-.fp-auto-height footer{
-    position: relative;
-    float:left;
-    width: 100%;
-    height:220px;
-    background: #eee;
+.short-arrow {
+    position: absolute;
+    width:20px;
+    top: 51px;
+    left: 150px;
+    border:1px solid #292929;
+    border-radius: 40px;
+    padding:6px;
 }
 
-/* nav */
-/* //nav */
+.left-table .section-title{
+    left:inherit;
+    right:130px;
+}
+.left-table .short-arrow{
+    left:inherit;
+    right:70px;
+}
+
+
+
+
+
 
 
 
 
 /* footer */
 
+.fp-auto-height footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 220px;
+    background: #eee;
+}
+
 footer {
-    position:relative;
+    position: relative;
     float: left;
     width: 100%;
     padding: 25px 0;
@@ -391,18 +501,20 @@ footer .footer-wrap .footer-left {
     position: relative;
     float: left;
     width: 50%;
-    padding-right:5px;
+    padding-right: 5px;
     box-sizing: border-box;
 }
+
 footer .footer-wrap .footer-right {
     position: relative;
     width: 50%;
-    padding-left:5px;
+    padding-left: 5px;
     box-sizing: border-box;
     display: flex;
     align-content: center;
     text-align: center;
 }
+
 footer .footer-wrap .footer-txt-wrap .footer-txt {
     width: 100%;
     font-family: "AppleSDGothicNeoUL";

@@ -185,6 +185,7 @@ nav .nav-wrap .sub-btn-wrap {
     top: 15px;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 nav .nav-wrap .sub-btn-wrap img {
@@ -218,23 +219,28 @@ nav .nav-wrap .sub-btn-wrap img {
     float: left;
     width: 15px;
     top: 20px;
-    left: 12px;
+    left: 10px;
     z-index: 2;
 }
 
 .spread-menu-wrap .all-menu{
-    position: relative;
-    width:100%;
+    position: absolute;
+    width:800px;
     display: flex;
     justify-content: space-around;
-    background: #888;
+    padding-left:30px;
+    top:70px;
 }
 .spread-menu-wrap .all-menu .title-menu{
     position: relative;
-    float:left;
-    margin-top:50px;
     font-weight: 500;
     font-size: 16px;
+}
+.spread-menu-wrap .all-menu li.refurb{
+    position: absolute;
+    top:30px;
+    right:48px;
+    color:#849172;
 }
 
 .spread-menu-wrap .all-menu .title-menu .sub-menu{
@@ -243,10 +249,12 @@ nav .nav-wrap .sub-btn-wrap img {
     margin-left:20px;
     font-weight:400;
     font-size: 14px;
+    
 }
 .spread-menu-wrap .all-menu .title-menu .sub-menu a{
-    opacity: .8;
+    opacity: .7;
 }
+
 .spread-menu-wrap .all-menu .title-menu .sub-menu a:hover{
     opacity: 1;
 }
@@ -254,6 +262,27 @@ nav .nav-wrap .sub-btn-wrap img {
     margin-bottom:20px;
 }
 
+
+
+
+.spread-menu-wrap .txt-btn-wrap{
+    position: absolute;
+    width:200px;
+    height: 50px;
+    top:250px;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+}
+.spread-menu-wrap .txt-btn-wrap p{
+    font-family: "AppleSDGothicNeoB";
+    font-size: 14px;
+    opacity: .7;
+    transition-duration: .3s;
+}
+.spread-menu-wrap .txt-btn-wrap a p:hover{
+    opacity: 1;
+}
 /* //nav */
 
 

@@ -556,7 +556,10 @@ footer .footer-wrap .footer-txt-wrap .footer-txt {
 /* //footer */
 
 
-
+@media all and (max-width:1000px) {
+	/* (공통)page */
+	.fp-section, .fp-tableCell{height: auto !important;}
+}
 
 
 

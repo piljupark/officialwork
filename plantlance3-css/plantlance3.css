@@ -373,6 +373,7 @@ nav .nav-wrap .sub-btn-wrap img {
     float: left;
     width: 60%;
     height: 100vh;
+
 }
 
 .section2 .img-section .img-box-wrap {
@@ -393,6 +394,59 @@ nav .nav-wrap .sub-btn-wrap img {
     margin-bottom: 20px;
     background: #eee;
     overflow: hidden;
+}
+.section2 .img-section .img1 img{
+    position: absolute;
+    width:200px;
+    top:-60px;
+}
+.section2 .img-section .img2 img{
+    position: absolute;
+    width:350px;
+    top:-120px;
+    left:-95px;
+}
+.section2 .img-section .img3 img{
+    position: absolute;
+    width:380px;
+    top:-340px;
+    left:-120px;
+}
+.section2 .img-section .img4 img{
+    position: absolute;
+    width:230px;
+    top:0px;
+    right:0px;
+}
+.section2 .img-section .img5 img{
+    position: absolute;
+    width:260px;
+    top:-130px;
+    right:0px;
+}
+.section2 .img-section .img6 img{
+    position: absolute;
+    width:200px;
+    top:-70px;
+    right:0px;
+}
+.section2 .img-section .img7 img{
+    position: absolute;
+    width:300px;
+    top:-240px;
+    right:-50px;
+}
+.section2 .img-section .img8 img{
+    position: absolute;
+    width:700px;
+    top:-200px;
+    right:-100px;
+}
+.section2 .img-section .img9 img{
+    position: absolute;
+    width:880px;
+    top:-340px;
+    left:-200px;
 }
 
 .section3 .left-table {

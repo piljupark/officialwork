@@ -303,15 +303,14 @@ nav .nav-wrap .sub-btn-wrap img {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.section2 .txt-section {
+.txt-section {
     position: relative;
     float: left;
     width: 40%;
     height: 100vh;
 }
 
-.section2 .txt-section .txt-wrap {
+.txt-section .txt-wrap {
     position: relative;
     float: left;
     top: 50%;
@@ -320,7 +319,7 @@ nav .nav-wrap .sub-btn-wrap img {
 
 }
 
-.section2 .txt-section .txt-eng {
+.txt-section .txt-eng {
     position: relative;
     float: left;
     width: 280px;
@@ -331,25 +330,26 @@ nav .nav-wrap .sub-btn-wrap img {
     line-height: 1.1;
 }
 
-.section2 .txt-section .txt-kor {
+.txt-section .txt-kor {
     position: relative;
+    float:left;
     width: 100%;
     font-family: "AppleSDGothicNeoUL";
     font-size: 24px;
 }
 
-.section2 .txt-section .txt-kor:nth-child(4) {
+.txt-section .txt-kor:nth-child(4) {
     font-family: "AppleSDGothicNeoB";
 }
 
-.section2 .txt-section .section2-button-wrap {
+.txt-section .section2-button-wrap {
     position: relative;
     float: left;
     width: 100%;
     margin-top: 20px;
 }
 
-.section2 .txt-section .section2-button-wrap .more-button {
+.txt-section .section2-button-wrap .more-button {
     position: relative;
     float: left;
     border: 1px solid #292929;
@@ -358,7 +358,7 @@ nav .nav-wrap .sub-btn-wrap img {
     transition-duration: .2s;
 }
 
-.section2 .txt-section .section2-button-wrap .more-arrow {
+.txt-section .section2-button-wrap .more-arrow {
     position: absolute;
     float: right;
     width: 20px;

@@ -517,14 +517,15 @@ footer .footer-wrap {
 }
 
 footer .footer-wrap .bottom-logo {
-    float: left;
+   position: absolute;
     width: 130px;
+    top:15px;
 }
 
 footer .footer-wrap .footer-txt-wrap {
     position: relative;
     float: left;
-    width: 100%;
+    width: 70%;
     height: auto;
     margin-top: 50px;
 }
@@ -532,34 +533,22 @@ footer .footer-wrap .footer-txt-wrap {
 footer .footer-wrap .footer-left {
     position: relative;
     float:left;
-    width:50%;
-    background: #ddd;
+    width:100%;
+    margin-top:5px;
 }
 
 footer .footer-wrap .footer-right {
     position: relative;
     float:right;
     width: 50%;
-    background:#999;
+    min-width: 580px;
 }
 footer .footer-wrap .footer-right .left{
     position: relative;
     float:left;
     width:50%;
     text-align: center;
-}
-footer .footer-wrap .footer-right .right{
-    position: relative;
-    float:left;
-    width:50%;
-    height:100%;
-    text-align: center;
-}
-footer .footer-wrap .footer-right .left p:nth-child(1){
-    font-size: 14px;
-}
-footer .footer-wrap .footer-right .left p:nth-child(2){
-    font-size: 25px;
+    border-right: 1px solid #292929;
 }
 footer .footer-wrap .footer-txt-wrap .footer-txt {
     position: relative;
@@ -568,6 +557,57 @@ footer .footer-wrap .footer-txt-wrap .footer-txt {
     margin-right:5px;
     font-family: "AppleSDGothicNeoUL";
     font-size: 11px;
+}
+footer .footer-wrap .footer-right .right{
+    position: relative;
+    float:right;
+    width:230px;
+    height:100%;
+    text-align: center;
+}
+footer .footer-wrap .footer-right .left p:nth-child(1){
+    font-size: 14px;
+}
+footer .footer-wrap .footer-right .left p:nth-child(2){
+    font-size: 26px;
+    
+}
+
+footer .footer-wrap .footer-right .right p:nth-child(1){
+    position: absolute;
+    float:left;
+    font-size: 16px;
+}
+footer .footer-wrap .footer-right .right p:nth-child(2){
+    position: absolute;
+    float:left;
+    margin-top:2px;
+    left:80px;
+    padding:1px 7px 1px 7px;
+    color:#fff;
+    font-size: 11px;
+    background: #292929;
+    border-radius: 20px;
+    
+}
+footer .footer-wrap .footer-right .right p:nth-child(3){
+    position: absolute;
+    float:right;
+    right:0;
+    font-size: 14px;
+}
+footer .footer-wrap .footer-right .right p:nth-child(4){
+    position: absolute;
+    float:left;
+    font-size: 14px;
+    top:35px;
+}
+footer .footer-wrap .footer-right .right p:nth-child(5){
+    position: absolute;
+    float:left;
+    font-size: 14px;
+    top:35px;
+    right:0;
 }
 footer .footer-wrap .copyright{
     position: relative;

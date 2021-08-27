@@ -13,10 +13,12 @@ $(function () {
 
     
     $("nav > .nav-wrap > .menu-circle > a > .menu-btn").click(function(){
-       $("nav > .spread-menu").css("width","350px"); 
+       $("nav > .spread-menu").css("left","0"); 
+        
     });
     
-    $("nav > .spread-menu > .spread-menu-wrap > a > .menu-close-btn").click(function(){
-       $("nav > .spread-menu").css("width","0px"); 
+    $("nav > .spread-menu > a > .menu-close-btn").click(function(){
+       $("nav > .spread-menu").css("left","-400px"); 
+       
     });
 });

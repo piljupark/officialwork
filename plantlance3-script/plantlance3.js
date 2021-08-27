@@ -24,12 +24,4 @@ $(function () {
     
     
     
-    $('#fullpage').fullpage({			
-			menu: '#anchors',
-			anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage'],
-			//autoScrolling: false
-			navigation: false,
-			navigationPosition: 'left',
-			responsiveWidth: 1000, // 너비가 1000일때 수동 원페이지 -> 스크롤
-		});	
 });

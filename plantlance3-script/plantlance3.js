@@ -13,7 +13,7 @@ $(function () {
 
     
     $("nav > .nav-wrap > .menu-circle > a > .menu-btn").click(function(){
-       $("nav > .spread-menu").css("width","500px"); 
+       $("nav > .spread-menu").css("width","350px"); 
     });
     
     $("nav > .spread-menu > .spread-menu-wrap > a > .menu-close-btn").click(function(){

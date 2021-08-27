@@ -196,7 +196,7 @@ nav .nav-wrap .sub-btn-wrap img {
 
 .spread-menu {
     position: absolute;
-    width: 500px;
+    width: 350px;
     height: 100vh;
     margin: 0 auto;
     top:0;
@@ -228,23 +228,40 @@ nav .nav-wrap .sub-btn-wrap img {
     float:left;
     width:100%;
     height: auto;
-    margin:0 auto;
-    margin-top:70px;
+    margin-top:80px;
 }
-.menu-box .about{
+.menu-box .main-menu{
     position: relative;
-    width:80%;
+    float:left;
+    width:100%;
+    margin:0 auto;
+    background: #ddd;
+    
+}
+.menu-box .main-menu:nth-child(5) p{
+    position: relative;
+    width:90%;
     margin:0 auto;
 }
-.menu-box .about .menu-title{
+.menu-box .main-menu .menu-title{
     position: relative;
     float:left;
     width:30%;
     font-size: 16px;
     font-weight: 500;
-    text-align: center;
+    margin-left:10%;
 }
-
+.menu-box .sub-menu{
+    position: relative;
+    float:right;
+    width:40%;
+}
+.menu-box .sub-menu p{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-bottom:20px;
+}
 
 
 .spread-menu-wrap .txt-btn-wrap{

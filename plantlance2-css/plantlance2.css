@@ -127,126 +127,160 @@ li {
 
 /* nav */
 
-nav{
-    position: fixed;
-    float:left;
-    width:100%;
-    height: auto;
-    z-index: 10;
-}
-nav .nav-wrap{
-    position: relative;
-    width:90%;
-    max-width: 1400px;
-    height:70px;
-    margin:0 auto;
-}
-nav .nav-wrap .top-logo{
-    position: absolute;
-    float:left;
-    width:100px;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-nav .nav-wrap .menu-button{
-    position: absolute;
-    float:left;
-    width:18px;
-    left:20px;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-nav .nav-wrap .sub-button-wrap{
-    position: absolute;
-    width:120px;
-    height:auto;
-    display: flex;
-    justify-content: space-between;
-    top:50%;
-    right:10px;
-    transform: translate(-0%,-50%);
-}
-nav .nav-wrap .sub-button-wrap img{
-    width:18px;
-}
 
 /* //nav */
 
 
-/* main-top */
-#main-top{
+
+/* main-section */
+
+#main-section{
+    position: relative;
+    width:95%;
+    height: auto;
+    padding:10px;
+    left:50%;
+    transform: translate(-50%);
+}
+.main-section-wrap{
+    position: relative;
+    width:100%;
+    max-width: 1100px;
+    height:730px;
+     margin:0 auto;
+    background: #ddd;
+    overflow: hidden;
+}
+.main-section-wrap .main-bespoke-img{
+    position: relative;
+    width:1100px;
+    left:50%;
+    transform: translate(-50%);
+
+}
+.txt-box{
+    position: relative;
+    width:100%;
+    height:160px;
+    max-width: 1100px;
+    margin:0 auto;
+    background: #e6c191;
+}
+.txt-box .main-section-title{
     position: relative;
     float:left;
     width:100%;
-    margin-top:70px;
-}
-.main-top-wrap{
-    position: relative;
-    width:90%;
-    max-width: 1400px;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-around;
+    font-family: "AppleSDGothicNeoB";
+    font-size: 30px;
+    margin-top:35px;
+    margin-left:50px;
     
 }
-.main-top-wrap .bespoke-title{
-    position: absolute;
-    width:100%;
-    z-index: 1;
-    font-size: 25px;
-    font-weight: 400;
-    left:30px;
-    top:25px;
-}
-.main-top-wrap img{
-    position: relative;
-    width:100%;
-}
-
-.bespoke-txt-wrap{
-    position: relative;
-    width:90%;
-    height:200px;
-    margin:0 auto;
-    background: #e6c091;
-}
-.bespoke-txt-wrap .bespoke-title{
+.txt-box .main-section-txt{
     position: relative;
     float:left;
-    width: auto;
-    margin-top:60px;
-    margin-left:70px;
-    font-family: "AppleSDGothicNeoB";
-    font-size: 24px;
+    width:100%;
+    font-family: "AppleSDGothicNeoM";
+    font-size: 15px;
+    margin-top:5px;
+    margin-left:50px;
 }
-.bespoke-txt-wrap .bespoke-txt{
-    position: relative;
-    float:left;
-    width: 60%;
-    margin-top:10px;
-    margin-left:70px;
-    font-family: "AppleSDGothicNeoUL";
-    font-size: 16px;
-}
-.bespoke-txt-wrap .bespoke-button{
+.txt-box .bespoke-button{
     position: absolute;
-    float:right;
-    font-family: "AppleSDGothicNeoUL";
-    font-size: 12px;
+    float:left;
     border:1px solid #292929;
-    padding:7px 10px;
+    padding:10px 20px 10px 20px;
     border-radius: 30px;
-    transition-duration: .3s;
+    right:10px;
     top:50%;
-    transform: translate(0%,-50%);
+    transform: translate(-20%,-50%);
+    transition-duration: .3s;
 }
-.bespoke-txt-wrap .bespoke-button:hover{
+.txt-box .bespoke-button:hover{
     background: #292929;
     color:#fff;
 }
-/* //main-top */
+/* //main-section */
 
+
+/* showroom-section */
+#showroom-section{
+    position: relative;
+    width:95%;
+    height: auto;
+    padding:10px;
+    left:50%;
+    transform: translate(-50%);
+}
+.showroom-section-wrap{
+    position: relative;
+    width:100%;
+    max-width: 1100px;
+     margin:0 auto;
+    overflow: hidden;
+    display: flex;
+}
+.showroom-section-wrap .showroom-txt-box{
+    position: relative;
+    width:240px;
+    height:240px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #eeeff1;
+}
+.showroom-section-wrap .showroom-txt-box p{
+    position: absolute;
+    float:left;
+    width:100%;
+    font-size: 30px;
+    font-family: "AppleSDGothicNeoB";
+    left:50px;
+}
+.showroom-section-wrap .showroom-txt-box p:nth-child(1){
+    bottom:140px;
+}
+.showroom-section-wrap .showroom-txt-box p:nth-child(2){
+    bottom:100px;
+}
+.showroom-section-wrap .showroom-txt-box p:nth-child(3){
+    bottom:60px;
+}
+.showroom-section-wrap .showroom-txt-box img{
+    position: absolute;
+    width:500px;
+    left:50%;
+    top:10%;
+    transform: translate(-50%,-50%);
+    opacity: .2;
+    
+}
+.showroom-section-wrap .showroom-img-box{
+     position: relative;
+    float:left;
+    height:400px;
+    margin-left:20px;
+    background: #666;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.showroom-section-wrap .showroom-img-box img{
+    position: absolute;
+    width:100%;
+}
+.showroom-section-wrap .showroom-img-box .showroom-place-txt-wrap{
+    position: relative;
+    float:left;
+    width:100px;
+    height:100%;
+}
+.showroom-section-wrap .showroom-img-box .showroom-place-txt-wrap p{
+    font-family: "AppleSDGothicNeoB";
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5;
+    color:#fff;
+}
+/* //showroom-section */
 
 
 

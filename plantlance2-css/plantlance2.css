@@ -245,28 +245,6 @@ li {
 .showroom-section-wrap .showroom-txt-box .showroom-title:nth-child(3){
     top:140px;
 }
-.showroom-section-wrap .showroom-txt-box img{
-    position: absolute;
-    width:500px;
-    left:50%;
-    top:10%;
-    transform: translate(-50%,-50%);
-    opacity: .2;
-    
-}
-.showroom-section-wrap .showroom-img-box{
-     position: relative;
-    float:left;
-    height:400px;
-    margin-left:20px;
-    background: #666;
-    flex-grow: 1;
-    overflow: hidden;
-}
-.showroom-section-wrap .showroom-img-box img{
-    position: absolute;
-    width:100%;
-}
 .showroom-section-wrap .showroom-place-txt-wrap{
     position: absolute;
    width:90%;
@@ -287,12 +265,50 @@ li {
     opacity: .6;
     transition-duration: .2s;
 }
-.showroom-section-wrap .showroom-place-txt-wrap p:hover{
+
+
+
+.showroom-section-wrap .showroom-img-box{
+     position: relative;
+    float:left;
+    height:400px;
+    margin-left:20px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.showroom-section-wrap .showroom-pangyo-img-box img{
+    position: absolute;
+    width:100%;
+    min-width: 400px;
+}
+
+.detail-place{
+    position: absolute;
+    float:left;
+    background: #ddd;
+    opacity: .5;
+    width:200px;
+    height:350px;
+    top:50%;
+    left:30px;
+    transform: translate(0%,-50%);
+    transition-duration: .2s;
+}
+.detail-place .place-title{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    font-family: "AppleSDGothicNeoB";
+    font-size: 20px;
+    margin-top:20px;
+    
+}
+.detail-place:hover{
     opacity: 1;
 }
-.showroom-section-wrap .showroom-place-txt-wrap p:active{
-    background: #292929;
-}
+
+
 /* //showroom-section */
 
 

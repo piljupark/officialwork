@@ -1,30 +1,64 @@
 $(document).ready(function () {
-    $(".global-menu-button").click(function(){
-        $("body").css("overflow-y","hidden");
-        
-        $("nav").css("z-index","8");
-        
-        $("#spread-menu").css("width","300px");
-        
-        $("#click-to-black").css("z-index","9");
-        $("#click-to-black").css("opacity","1");
-        
-      
-        
-    });
-   
-    $(".close-button").click(function(){
-        $("body").css("overflow-y","auto");
-        
-        $("nav").css("z-index","10");
-        
-        $("#spread-menu").css("width","0px");
-        
-        $("#click-to-black").css("opacity","0");
-        $("#click-to-black").css("z-index","4");
-        
-        
-        
-    });
-
+   $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(1) > p").click(function(){
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(1) > p").css("opacity","1");
+       
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(2) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(3) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(4) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(5) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(6) > p").css("opacity",".6");
+   });
+    
+    
+    $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(2) > p").click(function(){
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(1) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(2) > p").css("opacity","1");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(3) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(4) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(5) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(6) > p").css("opacity",".6");
+   });
+    
+    
+    $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(3) > p").click(function(){
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(1) > p").css("opacity",".6");
+       
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(2) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(3) > p").css("opacity","1");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(4) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(5) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(6) > p").css("opacity",".6");
+   });
+    
+    $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(4) > p").click(function(){
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(1) > p").css("opacity",".6");
+       
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(2) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(3) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(4) > p").css("opacity","1");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(5) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(6) > p").css("opacity",".6");
+   });
+    
+    $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(5) > p").click(function(){
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(1) > p").css("opacity",".6");
+       
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(2) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(3) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(4) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(5) > p").css("opacity","1");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(6) > p").css("opacity",".6");
+   });
+    
+    $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(6) > p").click(function(){
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(1) > p").css("opacity",".6");
+       
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(2) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(3) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(4) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(5) > p").css("opacity",".6");
+       $("#showroom-section > .showroom-section-wrap > .showroom-txt-box > .showroom-place-txt-wrap > a:nth-child(6) > p").css("opacity","1");
+   });
+    
+    
 })

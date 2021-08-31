@@ -357,8 +357,10 @@ li {
     transition-duration: .3s;
 }
 .showroom-gimpo-wrap .showroom-gimpo-img{
+    position: absolute;
     width:100%;
     min-width: 500px;
+    top:-160px;
 }
 /* //showroom-gimpo */
 
@@ -422,6 +424,26 @@ li {
 /* //showroom-sejong */
 
 
+
+/* showroom-busan */
+
+.showroom-busan-wrap .busan-open-txt{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: 400;
+}
+.showroom-busan-wrap .busan-open-txt:nth-child(2){
+    top:40%;
+    font-weight: 600;
+}
+.showroom-busan-wrap{
+    display: none;
+    transition-duration: .3s;
+}
+/* //showroom-busan */
 
 /* //showroom-section */
 

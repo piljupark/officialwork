@@ -278,7 +278,7 @@ li {
     font-size: 12px;
     border-radius: 40px;
     transition-duration: .3s;
-    opacity: .7;
+    opacity: .6;
 }
 .product-box .product-img-box .view-button:hover{
     opacity: 1;
@@ -351,6 +351,23 @@ li {
     width:1000px;
     bottom:-40px;
     left:-150px;
+}
+.product-box .mate-box{
+    background: #fdf4e3;
+}
+.product-box .mate-box img{
+    width:600px;
+    bottom:-120px;
+    left:-40px;
+}
+
+.product-box:nth-child(4) .product-img-box:nth-child(2){
+    height:650px;
+}
+.product-box .blomus-box img{
+    width:800px;
+    bottom:-120px;
+    left:-40px;
 }
 /* //main-product */
 

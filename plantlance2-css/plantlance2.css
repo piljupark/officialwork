@@ -421,13 +421,12 @@ input::-webkit-search-results-decoration{
 
 
 .main-menu-slide-wrap .menu-sns{
-    position: relative;
+    position: absolute;
     float:left;
-    width:150px;
+    width:100px;
     height:40px;
-    left:50%;
-    margin-top:50px;
-    transform: translate(-50%);
+    top:43px;
+    right:50px;
     display: flex;
     justify-content: space-between;
 }
@@ -461,6 +460,24 @@ input::-webkit-search-results-decoration{
 
 
 
+
+/* kakao */
+.open-chat-wrap{
+    position: fixed;
+    z-index: 9;
+    bottom:50px;
+    right:40px;
+    border-radius: 40px;
+    box-shadow:1px 1px 16px 11px rgba(0,0,0,0.12);
+}
+
+.open-chat{
+    position: relative;
+    float: left;
+    width:60px; 
+}
+
+/* //kakao */
 
 
 /* main-section */

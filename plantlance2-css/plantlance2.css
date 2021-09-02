@@ -225,6 +225,7 @@ nav{
     bottom:50px;
     right:50px;
     background: #e6c191;
+    border-top-left-radius: 40px;
 }
 .txt-box .main-section-title{
     position: relative;
@@ -232,7 +233,7 @@ nav{
     width:100%;
     font-family: "AppleSDGothicNeoB";
     font-size: 30px;
-    margin-top:35px;
+    margin-top:40px;
     margin-left:50px;
     
 }
@@ -244,26 +245,29 @@ nav{
     float:left;
     width:250px;
     font-family: "AppleSDGothicNeoM";
-    font-size: 18px;
-    margin-top:15px;
+    font-size: 16px;
+    margin-top:40px;
     margin-left:50px;
+    text-align: justify;
     
 }
 .txt-box .bespoke-button{
     position: absolute;
     float:left;
-    border:1px solid #292929;
     padding:10px 20px 10px 20px;
-    border-radius: 30px;
-    right:10px;
     bottom:30px;
     right:50px;
+    color:#fff;
+    background: #292929;
+    border:1px solid #292929;
+    border-radius: 30px;
     transition-duration: .3s;
+    opacity: .8;
+   
     
 }
 .txt-box .bespoke-button:hover{
-    background: #292929;
-    color:#fff;
+    opacity: 1;
 }
 /* //main-section */
 
@@ -306,12 +310,22 @@ nav{
     font-size: 30px;
     margin-left:45px;
 }
+.main-product-view-wrap .title-circle{
+    position: absolute;
+    width:70px;
+    height:70px;
+    background: #fad02c;
+    border-radius: 40px;
+    z-index: -1;
+    left:35px;
+    top:-13px;
+}
 .product-whole-wrap{
     position: relative;
     float:left;
     width:100%;
     height:auto;
-    margin-top:30px;
+    margin-top:50px;
 }
 .product-box{
     position: relative;

@@ -140,6 +140,7 @@ li {
     height:30px;
     background: #292929;
     top:0;
+    z-index: 11;
 }
 .top-info-wrap{
     position: relative;
@@ -169,8 +170,7 @@ nav{
     position: relative;
     float:left;
     width:95%;
-
-    margin-top:35px;
+    height:100px;
     left:50%;
     transform: translate(-50%);
     z-index: 10;
@@ -179,7 +179,7 @@ nav{
     position: relative;
     width:100%;
     max-width: 1440px;
-    height:auto;
+    height:100px;
     margin:0 auto;
     display: flex;
     justify-content: space-between;
@@ -188,20 +188,47 @@ nav{
     position: relative;
     float:left;
     width:100px;
+    margin-top:35px;
     flex-shrink: 1;
-    
 }
-.nav-wrap .whole-search{
+.nav-wrap .search-bg{
+    position: relative;
+    float:left;
     width:100%;
+    height:100px;
+    background: #fff;
+    margin:0 20px;
+    margin-top:5px;
+    border-radius: 7px;
+    transition-duration: .5s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-wrap .whole-search{
+    position: relative;
+    width:95%;
+    height:55px;
+    margin:0 auto;
+    margin-top:20px;
+    padding-left:20px;
     border:none;
     background: #eee;
     border-radius: 40px;
-    margin:0 40px;
-    padding-left:20px;
     font-family: "AppleSDGothicNeoB";
+    left:50%;
+    transform: translate(-50%);
 }
-.nav-wrap .whole-search:active{
-    border:2px solid #fad02c;
+.nav-wrap .close-btn{
+    position: absolute;
+    width:10px;
+    top:33px;
+    padding: 10px;
+    border-radius: 40px;
+    display: none;
+}
+.nav-wrap .close-btn:hover{
+    background: #eee;
 }
 .nav-wrap .whole-search:focus{
     outline: none;
@@ -231,8 +258,19 @@ input::-webkit-search-results-decoration{
     transform: translate(0%,-50%);
 }
 
+
 /* //nav */
 
+
+.bg-black{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100vh;
+    background: rgba(0,0,0,0.3);
+    z-index: 9;
+    display: none;
+}
 
 /* main-section */
 
@@ -244,7 +282,7 @@ input::-webkit-search-results-decoration{
     padding:10px;
     left:50%;
     transform: translate(-50%);
-    margin-top:30px;
+    margin-top:0px;
 }
 .main-section-wrap{
     position: relative;

@@ -812,6 +812,7 @@ input::-webkit-search-results-decoration{
     position: relative;
     float:left;
     width:95%;
+    max-width: 1440px;
     height: auto;
     margin-top:40px;
     margin-bottom: 10px;

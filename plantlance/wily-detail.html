@@ -8,9 +8,9 @@
 
     <title>Plant Lance - Wily Table</title>
 
-    
+
     <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
-    
+
 
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
@@ -24,27 +24,27 @@
 
     <nav>
         <div class="nav-wrap">
-           <a href="#none">
-            <img src="../plantlance-image/icon/menu.png" alt="menu" class="menu-icon">
+            <a href="#none">
+                <img src="../plantlance-image/icon/menu.png" alt="menu" class="menu-icon">
             </a>
             <a href="none">
-            <img src="../plantlance-image/plantlance-logo.png" alt="logo" class="logo">
+                <img src="../plantlance-image/plantlance-logo.png" alt="logo" class="logo">
             </a>
             <div class="sub-button-wrap">
                 <a href="#none">
-                <img src="../plantlance-image/icon/search.png" alt="search" class="search-icon">
+                    <img src="../plantlance-image/icon/search.png" alt="search" class="search-icon">
                 </a>
                 <a href="#none">
-                <img src="../plantlance-image/icon/bag.png" alt="search" class="search-icon">
+                    <img src="../plantlance-image/icon/bag.png" alt="search" class="search-icon">
                 </a>
                 <a href="#none">
-                <img src="../plantlance-image/icon/login.png" alt="search" class="search-icon">
+                    <img src="../plantlance-image/icon/login.png" alt="search" class="search-icon">
                 </a>
             </div>
         </div>
     </nav>
-    
-    
+
+
     <div id="menu-map">
         <div class="menu-map-wrap">
             <a href="#none">
@@ -66,7 +66,7 @@
         </div>
     </div>
 
-    
+
     <div id="product-box">
         <div class="product-box-wrap">
             <div class="product-img-place">
@@ -78,7 +78,7 @@
                         <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
                     </div>
                 </div>
-                
+
                 <div class="swiper-container gallery-thumbs swiper-container-horizontal">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
@@ -88,31 +88,55 @@
                     </div>
                 </div>
             </div>
-            <div class="product-info-place"></div>
+            <div class="product-info-place">
+                <div class="product-info">
+                    <div class="product-info-scroll">
+                        <p class="txt-kor">윌리 테이블 시리즈는 공간마다 다른 성격과 그 쓰임에 맞출 수 있는 단 하나의 비스포크 테이블입니다. 용도에 적합한 소재를 선택하고 다양한 컬러와 엣지, 소재, 레그 타입을 조합하여 나마의 공간에맞는 가구를 선택하세요. 스테인리스 스틸의 레그는 흔들림을 최소화하여 안정적입니다. 매력적인 무광의 알루미늄 캐스트 소재로 마감되어</p>
+                    </div>
+                </div>
+
+                <div class="choice-leg">
+                    <p class="txt-eng-bold">LEG TYPE</p>
+                    <a href="#none">
+                        <p class="txt-eng-bold question">?</p>
+                    </a>
+                    <div class="leg-type-select-wrap">
+                    <a href="#none"><p class="txt-eng">A</p></a>
+                    <a href="#none"><p class="txt-eng">B</p></a>
+                    <a href="#none"><p class="txt-eng">C</p></a>
+                    </div>
+                </div>
+                <div class="choice-edge">
+                    <p class="txt-eng-bold">EDGE</p>
+                </div>
+                <div class="choice-shape"></div>
+                <div class="choice-size"></div>
+                <div class="choice-color"></div>
+            </div>
         </div>
     </div>
 
     <script src="../plantlance-script/swiper.min.js"></script>
-   
-    
+
+
     <script>
         var galleryTop = new Swiper('#product-box .product-box-wrap .product-img-place .gallery-top', {
-            nextButton:'.swiper-button-next',
-            prevButton:'.swiper-button-prev',
-            spaceBetween:10,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 10,
         });
         var galleryThumbs = new Swiper('#product-box .product-box-wrap .product-img-place .gallery-thumbs', {
-           spaceBetween:10,
-            centerSlides:true,
-            slidesPerView:'auto',
-            touchRatio:0.2,
-            slideToClickedSlide:true
+            spaceBetween: 10,
+            centerSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true
         });
         galleryTop.params.control = galleryThumbs;
         galleryThumbs.params.control = galleryTop;
     </script>
-    
-    
+
+
 
 
 </body></html>

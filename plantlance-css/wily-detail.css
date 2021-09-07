@@ -581,6 +581,9 @@ nav{
 .choice-shape .shape-select-wrap p{
     color:#888;
 }
+.txt-eng2, .txt-eng3{
+    display:none;
+}
 .choice-shape .arrow{
     position: relative;
     float:right;
@@ -616,12 +619,31 @@ nav{
     position: relative;
     float:left;
     width:100%;
+    transition-duration: .2s;
 }
 .shape-kind .shape-kind-box .txt-kor{
     position: absolute;
     text-align: right;
     right:50px;
+    border-bottom:0;
 }
+.shape-kind .shape-kind-box .check{
+    position: absolute;
+    width:13px;
+    right:10px;
+    top:21px;
+    opacity: 0;
+    transition-duration: .2s;
+}
+.shape-kind .shape-kind-box .shape-img{
+    position: absolute;
+    width:25px;
+    left:0;
+    margin-left:60px;
+    top:15px;
+}
+
+
 
 
 

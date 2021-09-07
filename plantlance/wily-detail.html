@@ -17,9 +17,13 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/wily-detail.css">
 
+
+
 </head>
 
 <body>
+
+
 
 
     <nav>
@@ -87,6 +91,10 @@
                         <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
                     </div>
                 </div>
+
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
             </div>
             <div class="product-info-place">
                 <div class="product-info">
@@ -101,17 +109,77 @@
                         <p class="txt-eng-bold question">?</p>
                     </a>
                     <div class="leg-type-select-wrap">
-                    <a href="#none"><p class="txt-eng">A</p></a>
-                    <a href="#none"><p class="txt-eng">B</p></a>
-                    <a href="#none"><p class="txt-eng">C</p></a>
+                        <a href="#none">
+                            <p class="txt-eng">A</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng">B</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng">C</p>
+                        </a>
                     </div>
                 </div>
                 <div class="choice-edge">
                     <p class="txt-eng-bold">EDGE</p>
+
+                    <div class="edge-select-wrap">
+                        <label>
+                            <input type="radio" name="edge" value="silver">Silver
+                        </label>
+                        <label>
+                            <input type="radio" name="edge" value="wood">Wood
+                        </label>
+                        <label>
+                            <input type="radio" name="edge" value="black">
+                            Black
+                        </label>
+                    </div>
                 </div>
-                <div class="choice-shape"></div>
-                <div class="choice-size"></div>
-                <div class="choice-color"></div>
+                <div class="choice-shape">
+                    <p class="txt-eng-bold">SHAPE</p>
+                    
+                    <a href="#none">
+                    <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                    </a>
+                    
+                    <div class="shape-select-wrap">
+                        <a href="#none"><p class="txt-eng">Round</p></a>
+                        <a href="#none"><p class="txt-eng"></p></a>
+                        <a href="#none"><p class="txt-eng"></p></a>
+                    </div>
+                </div>
+                <div class="choice-size">
+                     <p class="txt-eng-bold">SIZE</p>
+                    
+                    <a href="#none">
+                    <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                    </a>
+                    
+                    <div class="size-select-wrap">
+                        <a href="#none"><p class="txt-eng">600 X 600</p></a>
+                        <a href="#none"><p class="txt-eng"></p></a>
+                        <a href="#none"><p class="txt-eng"></p></a>
+                    </div>
+                </div>
+                
+                <div class="choice-color">
+                     <p class="txt-eng-bold">COLOR</p>
+                    
+                    <a href="#none">
+                    <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                    </a>
+                    
+                    <div class="color-select-wrap">
+                        <a href="#none"><p class="txt-eng">Shade blue</p></a>
+                        <a href="#none"><p class="txt-eng"></p></a>
+                        <a href="#none"><p class="txt-eng"></p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="also-like">
+
             </div>
         </div>
     </div>
@@ -134,6 +202,41 @@
         });
         galleryTop.params.control = galleryThumbs;
         galleryThumbs.params.control = galleryTop;
+    </script>
+
+
+
+
+    <script>
+        /*
+           $.fn.Scrolling = function(obj,tar){
+               var _this = this;
+               $(window).scroll(function(e){
+                   var end = obj + tar;
+                   $(window).scrollTop() >= obj ? _this.addClass("fixed") : _this.removeClass("fixed");
+                   if($(window).scrollTop() >= end) _this.removeClass("fixed");
+               });
+           };
+            
+            $("#product-box .product-box-wrap .product-info-place").Scrolling($("#product-box .product-box-wrap .product-info-place").offset().top, ($("#product-box").height() - $("#product-box .product-box-wrap .product-info-place").height()));
+            
+            */
+
+        /*
+        const content = document.querySelector('#product-box');
+        const wing = document.querySelector('#product-box > .product-box-wrap > .product-info-place');
+
+        // 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
+        const contentTop = content.getBoundingClientRect().top + window.scrollY;
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY >= contentTop) {
+                wing.classList.add('fixed');
+            } else {
+                wing.classList.remove('fixed');
+            }
+        });
+        */
     </script>
 
 

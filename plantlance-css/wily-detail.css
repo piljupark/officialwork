@@ -170,6 +170,8 @@ li {
 
 
 
+.fixed{position: fixed; top:0; left:0;}
+
 
 
 
@@ -270,6 +272,7 @@ nav{
 .product-name-wrap{
     position: relative;
     width:100%;
+   
     max-width: 1400px;
     margin:0 auto;
 }
@@ -323,15 +326,24 @@ nav{
 }
 .product-box-wrap .product-img-place{
     position: relative;
-    width:600px;
+    width:60%;
+    padding:0 20px;
+}   
+.product-box-wrap .img-box{
+    position: relative;
+    float:left;
+    width:100%;
+    height:400px;
+    background: #eee;
+    margin-bottom:20px;
 }
 .product-box-wrap .product-info-place{
-    position: relative;
-    width:100%;
+    position: sticky;
+    width:500px;
     height:700px;
-    flex-shrink: 1;
-    margin-left:60px;
-    margin-right:50px;
+    margin-left:20px;
+    margin-right:20px;
+    flex-grow: 1;
 }
 
 
@@ -340,29 +352,34 @@ nav{
 
 .swiper-container{
     position: relative;
-    width:600px;
+    width:auto;
     margin:0 auto;
+    display: flex;
+    
 }
 
 .gallery-top{
-    width:600px;
+    width:auto;
     height:480px;
     background: #f8f8f8;
-    margin-left:20px;
+}
+.swiper-wrapper .swiper-slide{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
 }
 .gallery-top .swiper-wrapper .swiper-slide img{
     position: relative;
     width:90%;
     min-width: 500px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-19%);
 }
 .gallery-thumbs{
-    width:600px;
+    width:auto;
     box-sizing: border-box;
     padding:10px 0;
-    margin-left:20px;
+    margin-bottom:50px;
 }
 
 .gallery-thumbs .swiper-slide{
@@ -373,10 +390,7 @@ nav{
 }
 .gallery-thumbs .swiper-slide img{
     position: relative;
-    width:100%;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    width:95%;
 }
 
 
@@ -448,7 +462,7 @@ nav{
 .leg-type-select-wrap{
     position: relative;
     float:right;
-    width:50%;
+    width:60%;
     max-width: 200px;
     margin-top:-7px;
     display: flex;
@@ -471,6 +485,125 @@ nav{
     float:left;
     width:100%;
     margin-top:40px;
+}
+.choice-edge .txt-eng-bold{
+    position: relative;
+    float:left;
+}
+.choice-edge .edge-select-wrap{
+    position: relative;
+    float:right;
+    width:60%;
+    max-width: 200px;
+    font-family: "AvenirLTStd-Roman";
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-edge .edge-select-wrap input{
+    padding:0;
+    margin:0;
+    margin-bottom:3px;
+    margin-right:5px;
+}
+
+
+
+
+.choice-shape{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:40px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-top:2px solid #292929;
+    border-bottom:1px solid #888;
+}
+.choice-shape .txt-eng-bold {
+    position: relative;
+    float:left;
+}
+.choice-shape .shape-select-wrap{
+    position: relative;
+    float:right;
+    width:40%;
+    text-align: right;
+}
+.choice-shape .shape-select-wrap p{
+    color:#888;
+}
+.choice-shape .arrow-down{
+    position: relative;
+    float:right;
+    width:13px;
+    opacity: .6;
+    margin-left:30px;
+    margin-right:10px;
+}
+
+
+
+.choice-size{
+    position: relative;
+    float:left;
+    width:100%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #888;
+}
+.choice-size .txt-eng-bold {
+    position: relative;
+    float:left;
+}
+.choice-size .size-select-wrap{
+    position: relative;
+    float:right;
+    width:40%;
+    text-align: right;
+}
+.choice-size .size-select-wrap p{
+    color:#888;
+}
+.choice-size .arrow-down{
+    position: relative;
+    float:right;
+    width:13px;
+    opacity: .6;
+    margin-left:30px;
+    margin-right:10px;
+}
+
+
+
+.choice-color{
+    position: relative;
+    float:left;
+    width:100%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-bottom:2px solid #292929;
+}
+.choice-color .txt-eng-bold {
+    position: relative;
+    float:left;
+}
+.choice-color .color-select-wrap{
+    position: relative;
+    float:right;
+    width:40%;
+    text-align: right;
+}
+.choice-color .color-select-wrap p{
+    color:#888;
+}
+.choice-color .arrow-down{
+    position: relative;
+    float:right;
+    width:13px;
+    opacity: .6;
+    margin-left:30px;
+    margin-right:10px;
 }
 /* //product-box */
 

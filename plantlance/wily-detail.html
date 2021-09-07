@@ -22,6 +22,8 @@
 </head>
 
 <body onload="init();">
+    
+    <script src="../plantlance-script/wily-detail.js"></script>
 
     <script language="JavaScript">
         var sell_price;
@@ -66,7 +68,7 @@
             .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
     </script>
 
-
+    
 
 
 
@@ -154,13 +156,13 @@
                     </a>
                     <div class="leg-type-select-wrap">
                         <a href="#none">
-                            <p class="txt-eng">A</p>
+                            <p class="txt-eng" id="legtype" onclick="legTypeChange()">A</p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng">B</p>
+                            <p class="txt-eng" id="legtype" onclick="legTypeChange()">B</p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng">C</p>
+                            <p class="txt-eng" id="legtype" onclick="legTypeChange()">C</p>
                         </a>
                     </div>
                 </div>
@@ -184,19 +186,40 @@
                     <p class="txt-eng-bold">SHAPE</p>
 
                     <a href="#none">
-                        <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                        <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down arrow">
+                        <img src="../plantlance-image/icon/arrow-up.png" alt="arrow-down" class="arrow-up arrow">
                     </a>
 
                     <div class="shape-select-wrap">
+                        <p class="txt-eng">Round</p>
+                    </div>
+                    <div class="shape-kind">
+                       <div class="shape-kind-box shape-kind-box1">
                         <a href="#none">
                             <p class="txt-eng">Round</p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng"></p>
+                            <p class="txt-kor">원형</p>
+                        </a>
+                        </div>
+                        
+                       <div class="shape-kind-box shape-kind-box2">
+                        <a href="#none">
+                            <p class="txt-eng">Square</p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng"></p>
+                            <p class="txt-kor">사각</p>
                         </a>
+                        </div>
+                        
+                        <div class="shape-kind-box shape-kind-box3">
+                        <a href="#none">
+                            <p class="txt-eng">Eclips</p>
+                        </a>
+                           <a href="#none">
+                            <p class="txt-kor">둥근사각</p>
+                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="choice-size">
@@ -240,16 +263,20 @@
                 </div>
 
                 <div class="order-wrap">
-                    <form name="form" method="get">
-                        수량 : <input type=hidden name="sell_price" value="330000">
-                        <input type="text" name="amount" value="1" size="3" onchange="change();">
-                        <input type="button" value=" + " onclick="add();"><input type="button" value=" - " onclick="del();"><br>
-
-                        <input type="text" name="sum" size="11" id="number" readonly>원
+                    <form name="form" method="get" class="order-form">
+                        <div class="ea-wrap">
+                            <input type="button" value=" - " onclick="del();" class="del-ea">
+                            <input type=hidden name="sell_price" value="330000">
+                            <input type="text" name="amount" value="1" size="3" onchange="change();" class="num-ea">
+                            <input type="button" value=" + " onclick="add();" class="add-ea">
+                        </div>
+                        <div class="price-wrap">
+                            <input type="text" name="sum" size="11" id="number" class="price" readonly>원
+                        </div>
                     </form>
+
+
                 </div>
-
-
             </div>
 
             <div class="also-like">
@@ -313,6 +340,44 @@
                 wing.classList.remove('fixed');
             }
         });
+    </script>
+
+    <script>
+        /*
+        var $form = $(".order-form");
+        var $input = $form.find(".price-wrap .price");
+
+        $input.on("keyup", function(event) {
+
+            // 1.
+            var selection = window.getSelection().toString();
+            if (selection !== '') {
+                return;
+            }
+
+            // 2.
+            if ($.inArray(event.keyCode, [38, 40, 37, 39]) !== -1) {
+                return;
+            }
+
+            // 3
+            var $this = $(this);
+            var input = $this.val();
+
+            // 4
+            var input = input.replace(/[\D\s\._\-]+/g, "");
+
+            // 5
+            input = input ? parseInt(input, 10) : 0;
+
+            // 6
+            $this.val(function() {
+                return (input === 0) ? "" : input.toLocaleString("en-US");
+            });
+
+        });
+        
+        */
     </script>
 
 

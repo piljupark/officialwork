@@ -127,6 +127,53 @@
 
 
 
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff2");
+    font-family: "Urbanist-Medium";
+}
+@font-face {
+    src: url("../fonts/Urbanist-Medium.otf");
+    font-family: "Urbanist-Medium";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff2");
+    font-family: "Urbanist-ExtraBold";
+}
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.otf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
 /*
 body::-webkit-scrollbar{
     display: none;
@@ -157,10 +204,10 @@ li {
 
 
 .txt-eng{
-    font-family: "AvenirLTStd-Roman";
+    font-family: "Urbanist-Medium";
 }
 .txt-eng-bold{
-    font-family: "AvenirLTStd-Black";
+    font-family: "Urbanist-ExtraBold";
 }
 .txt-kor{
     font-family: "Pretendard-Medium";
@@ -534,7 +581,7 @@ nav{
 .choice-shape .shape-select-wrap p{
     color:#888;
 }
-.choice-shape .arrow-down{
+.choice-shape .arrow{
     position: relative;
     float:right;
     width:13px;
@@ -542,6 +589,40 @@ nav{
     margin-left:30px;
     margin-right:10px;
 }
+.choice-shape .arrow-up{
+    display: none;
+}
+
+
+.shape-kind{
+    position: absolute;
+    width:100%;
+    height:0;
+    top:60px;
+    left:0;
+    z-index: 1;
+    background: #fff;
+    overflow: hidden;
+    transition-duration: .2s;
+}
+.shape-kind p{
+    position: relative;
+    float:left;
+    width:100%;
+    padding:20px 0;
+    border-bottom: 1px solid #888;
+}
+.shape-kind-box{
+    position: relative;
+    float:left;
+    width:100%;
+}
+.shape-kind .shape-kind-box .txt-kor{
+    position: absolute;
+    text-align: right;
+    right:50px;
+}
+
 
 
 
@@ -614,7 +695,43 @@ nav{
     float:left;
     width:100%;
     margin-top:50px;
+    
 }
+.ea-wrap{
+    position: relative;
+    float:left;
+    border: 1px solid #292929;
+}
+.del-ea, .add-ea{
+    width:35px;
+    background: none;
+    border:none;
+    font-family: "AvenirLTStd-Roman";
+    font-size: 20px;
+    cursor: pointer;
+}
+.add-ea{
+    color:#fff;
+    background: #292929;
+}
+.num-ea{
+    border:none;
+    font-size: 18px;
+    font-family: "AvenirLTStd-Roman";
+    text-align: center;
+}
+.price-wrap{
+    position: relative;
+    float:right;
+}
+.price{
+    position: relative;
+    width:90px;
+    border:none;
+    font-size: 20px;
+}
+input:focus {outline:none;}
+
 /* //product-box */
 
 

@@ -21,7 +21,51 @@
 
 </head>
 
-<body>
+<body onload="init();">
+
+    <script language="JavaScript">
+        var sell_price;
+        var amount;
+
+        function init() {
+            sell_price = document.form.sell_price.value;
+            amount = document.form.amount.value;
+            document.form.sum.value = sell_price;
+            change();
+        }
+
+        function add() {
+            hm = document.form.amount;
+            sum = document.form.sum;
+            hm.value++;
+
+            sum.value = parseInt(hm.value) * sell_price;
+        }
+
+        function del() {
+            hm = document.form.amount;
+            sum = document.form.sum;
+            if (hm.value > 1) {
+                hm.value--;
+                sum.value = parseInt(hm.value) * sell_price;
+            }
+        }
+
+        function change() {
+            hm = document.form.amount;
+            sum = document.form.sum;
+
+            if (hm.value < 0) {
+                hm.value = 0;
+            }
+            sum.value = parseInt(hm.value) * sell_price;
+        }
+
+
+        const cn1 = n1.toString()
+            .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    </script>
+
 
 
 
@@ -138,44 +182,74 @@
                 </div>
                 <div class="choice-shape">
                     <p class="txt-eng-bold">SHAPE</p>
-                    
+
                     <a href="#none">
-                    <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                        <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
                     </a>
-                    
+
                     <div class="shape-select-wrap">
-                        <a href="#none"><p class="txt-eng">Round</p></a>
-                        <a href="#none"><p class="txt-eng"></p></a>
-                        <a href="#none"><p class="txt-eng"></p></a>
+                        <a href="#none">
+                            <p class="txt-eng">Round</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
                     </div>
                 </div>
                 <div class="choice-size">
-                     <p class="txt-eng-bold">SIZE</p>
-                    
+                    <p class="txt-eng-bold">SIZE</p>
+
                     <a href="#none">
-                    <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                        <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
                     </a>
-                    
+
                     <div class="size-select-wrap">
-                        <a href="#none"><p class="txt-eng">600 X 600</p></a>
-                        <a href="#none"><p class="txt-eng"></p></a>
-                        <a href="#none"><p class="txt-eng"></p></a>
+                        <a href="#none">
+                            <p class="txt-eng">600 X 600</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
                     </div>
                 </div>
-                
+
                 <div class="choice-color">
-                     <p class="txt-eng-bold">COLOR</p>
-                    
+                    <p class="txt-eng-bold">COLOR</p>
+
                     <a href="#none">
-                    <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                        <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
                     </a>
-                    
+
                     <div class="color-select-wrap">
-                        <a href="#none"><p class="txt-eng">Shade blue</p></a>
-                        <a href="#none"><p class="txt-eng"></p></a>
-                        <a href="#none"><p class="txt-eng"></p></a>
+                        <a href="#none">
+                            <p class="txt-eng">Shade blue</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
                     </div>
                 </div>
+
+                <div class="order-wrap">
+                    <form name="form" method="get">
+                        수량 : <input type=hidden name="sell_price" value="330000">
+                        <input type="text" name="amount" value="1" size="3" onchange="change();">
+                        <input type="button" value=" + " onclick="add();"><input type="button" value=" - " onclick="del();"><br>
+
+                        <input type="text" name="sum" size="11" id="number" readonly>원
+                    </form>
+                </div>
+
+
             </div>
 
             <div class="also-like">
@@ -185,6 +259,9 @@
     </div>
 
     <script src="../plantlance-script/swiper.min.js"></script>
+
+
+
 
 
     <script>
@@ -222,7 +299,7 @@
             
             */
 
-        /*
+
         const content = document.querySelector('#product-box');
         const wing = document.querySelector('#product-box > .product-box-wrap > .product-info-place');
 
@@ -236,8 +313,9 @@
                 wing.classList.remove('fixed');
             }
         });
-        */
     </script>
+
+
 
 
 

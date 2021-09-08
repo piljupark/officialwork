@@ -12,19 +12,51 @@
     <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
 
 
-
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/wily-detail.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
 
 
 
 </head>
 
 <body onload="init();">
-    
-    <script src="../plantlance-script/wily-detail.js"></script>
+   
+   
+   <!-- gnb 불러오기 -->
+    <div data-include-path="gnb.html"></div>
+   
 
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+    
+    
+    
+    <!-- wily-detail 스크립트 -->
+    <script src="../plantlance-script/wily-detail.js"></script>
+     <!-- //wily-detail 스크립트 -->
+   
+   
+    <!-- 수량과 비례한 가격 변동 스크립트 -->
     <script language="JavaScript">
         var sell_price;
         var amount;
@@ -62,35 +94,13 @@
             }
             sum.value = parseInt(hm.value) * sell_price;
         }
-
-
     </script>
-
-    
-
+    <!-- //수량과 비례한 가격 변동 스크립트 -->
 
 
-    <nav>
-        <div class="nav-wrap">
-            <a href="#none">
-                <img src="../plantlance-image/icon/menu.png" alt="menu" class="menu-icon">
-            </a>
-            <a href="none">
-                <img src="../plantlance-image/plantlance-logo.png" alt="logo" class="logo">
-            </a>
-            <div class="sub-button-wrap">
-                <a href="#none">
-                    <img src="../plantlance-image/icon/search.png" alt="search" class="search-icon">
-                </a>
-                <a href="#none">
-                    <img src="../plantlance-image/icon/bag.png" alt="search" class="search-icon">
-                </a>
-                <a href="#none">
-                    <img src="../plantlance-image/icon/login.png" alt="search" class="search-icon">
-                </a>
-            </div>
-        </div>
-    </nav>
+
+
+
 
 
     <div id="menu-map">
@@ -194,43 +204,43 @@
                         <p class="txt-eng txt-eng3">Eclips</p>
                     </div>
                     <div class="shape-kind">
-                       <div class="shape-kind-box shape-kind-box1">
-                        <a href="#none">
-                            <p class="txt-eng">Round</p>
-                            <img src="../plantlance-image/icon/round.png" alt="shape" class="round-img shape-img">
-                        </a>
-                        <a href="#none">
-                            <p class="txt-kor">원형</p>
-                        </a>
-                        <img src="../plantlance-image/icon/check1.png" alt="check" class="check">
+                        <div class="shape-kind-box shape-kind-box1">
+                            <a href="#none">
+                                <p class="txt-eng">Round</p>
+                                <img src="../plantlance-image/icon/round.png" alt="shape" class="round-img shape-img">
+                            </a>
+                            <a href="#none">
+                                <p class="txt-kor">원형</p>
+                            </a>
+                            <img src="../plantlance-image/icon/check1.png" alt="check" class="check">
                         </div>
-                        
-                       <div class="shape-kind-box shape-kind-box2">
-                        <a href="#none">
-                            <p class="txt-eng">Square</p>
-                            <img src="../plantlance-image/icon/square.png" alt="shape" class="round-img shape-img">
-                        </a>
-                        <a href="#none">
-                            <p class="txt-kor">사각</p>
-                        </a>
-                        <img src="../plantlance-image/icon/check1.png" alt="check" class="check">
+
+                        <div class="shape-kind-box shape-kind-box2">
+                            <a href="#none">
+                                <p class="txt-eng">Square</p>
+                                <img src="../plantlance-image/icon/square.png" alt="shape" class="round-img shape-img">
+                            </a>
+                            <a href="#none">
+                                <p class="txt-kor">사각</p>
+                            </a>
+                            <img src="../plantlance-image/icon/check1.png" alt="check" class="check">
                         </div>
-                        
+
                         <div class="shape-kind-box shape-kind-box3">
-                        <a href="#none">
-                            <p class="txt-eng">Eclips</p>
-                            <img src="../plantlance-image/icon/eclips.png" alt="shape" class="round-img shape-img">
-                        </a>
-                           <a href="#none">
-                            <p class="txt-kor">둥근사각</p>
-                        </a>
-                        <img src="../plantlance-image/icon/check1.png" alt="check" class="check">
+                            <a href="#none">
+                                <p class="txt-eng">Eclips</p>
+                                <img src="../plantlance-image/icon/eclips.png" alt="shape" class="round-img shape-img">
+                            </a>
+                            <a href="#none">
+                                <p class="txt-kor">둥근사각</p>
+                            </a>
+                            <img src="../plantlance-image/icon/check1.png" alt="check" class="check">
                         </div>
                     </div>
                 </div>
-                
-                
-                
+
+
+
                 <div class="choice-size">
                     <p class="txt-eng-bold">SIZE</p>
 
@@ -251,10 +261,10 @@
                     </div>
                 </div>
 
-               
-               
-               
-               
+
+
+
+
                 <div class="choice-color">
                     <p class="txt-eng-bold">COLOR</p>
 
@@ -274,10 +284,10 @@
                         </a>
                     </div>
                 </div>
-                
-                
-                
-                
+
+
+
+
 
                 <div class="order-wrap">
                     <form name="form" method="get" class="order-form">
@@ -294,12 +304,14 @@
                 </div>
             </div>
 
-           
+
             <div class="also-like">
 
             </div>
         </div>
     </div>
+    
+     <div data-include-path="footer.html"></div>
 
     <script src="../plantlance-script/swiper.min.js"></script>
 
@@ -396,7 +408,7 @@
         */
     </script>
 
-
+    
 
 
 

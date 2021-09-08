@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.woff2");
+    font-family: "AppleSDGothicNeoB";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.ttf");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.woff");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.woff2");
+    font-family: "AppleSDGothicNeoR";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.woff2");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.ttf");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoUL.woff2");
+    font-family: "AppleSDGothicNeoUL";
+}
+
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Black.ttf");
+    font-family: "AvenirLTStd-Black";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Black.woff");
+    font-family: "AvenirLTStd-Black";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Black.woff2");
+    font-family: "AvenirLTStd-Black";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Black.otf");
+    font-family: "AvenirLTStd-Black";
+}
+
+
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Roman.ttf");
+    font-family: "AvenirLTStd-Roman";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Roman.woff");
+    font-family: "AvenirLTStd-Roman";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Roman.woff2");
+    font-family: "AvenirLTStd-Roman";
+}
+
+@font-face {
+    src: url("../fonts/AvenirLTStd-Roman.otf");
+    font-family: "AvenirLTStd-Roman";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.ttf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff2");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.ttf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff2");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff2");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.otf");
+    font-family: "Urbanist-Medium";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff2");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.otf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+
+
+
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Medium";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.03);
+    display: flex;
+    padding:20px;
+}
+
+.footer-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+
+.footer-logo {
+    position: relative;
+    float: left;
+    width: 155px;
+    margin-top: 50px;
+}
+
+.footer-bottom-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.footer-left {
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.footer-left p {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-left .txt-kor {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-left-bottom {
+    position: relative;
+    float: left;
+    margin-top: 5px;
+}
+.footer-left-bottom .footer-copyright{
+    position: relative;
+    float:left;
+    margin-top:30px;
+}
+.footer-left-bottom .footer-copyright .copyright1{
+    margin-bottom: 5px;
+}
+/* //footer-left*/
+
+
+
+
+/* footer-right */
+.footer-right {
+    position: relative;
+    float: right;
+    width: 50%;
+}
+.tel-wrap{
+    position: relative;
+    float:right;
+    
+}
+.tel-wrap  .tel-txt{
+    position: relative;
+    color:rgba(0,0,0,0.4);
+}
+.tel-wrap  .tel-number{
+    position: relative;
+    font-size: 31px;
+    text-align: center;
+}
+.operation-hour-wrap{
+    position: relative;
+    float:right;
+    width:250px;
+    height:50px;
+    margin-left:50px;
+    background: rgba(0,0,0,0.04);
+    margin-right:40px;
+}
+
+.operation-hour-wrap .operation{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right:10px;
+}
+.operation-hour-wrap .operation p{
+    position: relative;
+    float:left;
+    margin-top:5px;
+}
+.operation-hour-wrap .operation .off{
+    font-size: 11px;
+    color:#fff;
+    background: rgba(0,0,0,0.6);
+    padding:3px 10px 2px 10px;
+    border-radius: 40px;
+    margin-top:5px;
+}
+.operation-hour-wrap .operation .hour{
+    color:rgba(0,0,0,0.4);
+}
+/* //footer-right */
+
+
+
+
+
+@media screen and (max-width:940px) and (min-width:840px) {
+    
+    .footer-left p{
+        font-size: 12px;
+    }
+    
+    .footer-right{
+        width:50%;
+    }
+    .footer-right p{
+        font-size: 12px;
+    }
+    .footer-right .tel-number{
+        font-size: 28px;
+    }
+    .footer-right .off{
+        font-size: 7px;
+    }
+    .operation-hour-wrap{
+        height:44px;
+        margin-left:10px;
+        
+    }
+}
+
+
+@media screen and (max-width:839px) and (min-width:200px){
+    footer{
+        padding-bottom: 0;
+        height:280px;
+    }
+    .footer-logo{
+        margin-top:15px;
+    }
+    .footer-right{
+        float:left;
+        width:100%;
+    }
+    .footer-right .tel-wrap{
+        float:left;
+    }
+    .footer-right p{
+        font-size: 12px;
+    }
+    .footer-right .tel-number{
+        font-size: 28px;
+    }
+    .footer-right .operation-hour-wrap{
+        width:210px;
+        margin-left:0;
+    }
+    .operation-hour-wrap .operation .off{
+        font-size: 9px;
+        margin-top:3px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    
+    
+    
+    .footer-left{
+        width:100%;
+        margin-top:20px;
+    }
+    
+    
+    .footer-left p{
+        font-size: 10px;
+    }
+    
+}

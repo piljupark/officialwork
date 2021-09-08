@@ -341,12 +341,13 @@ footer {
     position: relative;
     font-size: 31px;
     text-align: center;
+    margin-top:10px;
 }
 .operation-hour-wrap{
     position: relative;
     float:right;
     width:250px;
-    height:50px;
+    height:60px;
     margin-left:50px;
     background: rgba(0,0,0,0.04);
     margin-right:40px;
@@ -362,7 +363,7 @@ footer {
 .operation-hour-wrap .operation p{
     position: relative;
     float:left;
-    margin-top:5px;
+    margin-top:9px;
 }
 .operation-hour-wrap .operation .off{
     font-size: 11px;
@@ -370,7 +371,7 @@ footer {
     background: rgba(0,0,0,0.6);
     padding:3px 10px 2px 10px;
     border-radius: 40px;
-    margin-top:5px;
+    margin-top:8px;
 }
 .operation-hour-wrap .operation .hour{
     color:rgba(0,0,0,0.4);
@@ -400,17 +401,16 @@ footer {
         font-size: 7px;
     }
     .operation-hour-wrap{
-        height:44px;
         margin-left:10px;
         
     }
 }
 
 
-@media screen and (max-width:839px) and (min-width:200px){
+@media screen and (max-width:839px) and (min-width:375px){
     footer{
         padding-bottom: 0;
-        height:280px;
+        height:300px;
     }
     .footer-logo{
         margin-top:15px;
@@ -434,7 +434,6 @@ footer {
     }
     .operation-hour-wrap .operation .off{
         font-size: 9px;
-        margin-top:3px;
         padding-left:5px;
         padding-right:5px;
     }
@@ -449,7 +448,68 @@ footer {
     
     
     .footer-left p{
-        font-size: 10px;
+        font-size: 11px;
+    }
+    .footer-copyright{
+        float:left;
+        width:100%;
     }
     
+
+}
+
+
+@media screen and (max-width:374px) and (min-width:200px){
+    footer{
+        padding-bottom: 0;
+        height:300px;
+    }
+    .footer-logo{
+        margin-top:15px;
+    }
+    .footer-right{
+        float:left;
+        width:100%;
+    }
+    .footer-right .tel-wrap{
+        float:left;
+    }
+    .footer-right p{
+        font-size: 10px;
+    }
+    .footer-right .tel-number{
+        font-size: 22px;
+    }
+    .footer-right .operation-hour-wrap{
+        width:210px;
+        margin-left:0;
+        height:50px;
+    }
+    .footer-right .operation-hour-wrap p{
+        margin-top:8px;
+    }
+    .operation-hour-wrap .operation .off{
+        font-size: 9px;
+        padding-left:7px;
+        padding-right:7px;
+        margin-top:6px;
+    }
+    
+    
+    
+    .footer-left{
+        width:100%;
+        margin-top:20px;
+    }
+    
+    
+    .footer-left p{
+        font-size: 10px;
+    }
+    .footer-copyright{
+        float:left;
+        width:100%;
+    }
+    
+
 }

@@ -63,50 +63,6 @@
 }
 
 
-@font-face {
-    src: url("../fonts/AvenirLTStd-Black.ttf");
-    font-family: "AvenirLTStd-Black";
-}
-
-@font-face {
-    src: url("../fonts/AvenirLTStd-Black.woff");
-    font-family: "AvenirLTStd-Black";
-}
-
-@font-face {
-    src: url("../fonts/AvenirLTStd-Black.woff2");
-    font-family: "AvenirLTStd-Black";
-}
-
-@font-face {
-    src: url("../fonts/AvenirLTStd-Black.otf");
-    font-family: "AvenirLTStd-Black";
-}
-
-
-
-@font-face {
-    src: url("../fonts/AvenirLTStd-Roman.ttf");
-    font-family: "AvenirLTStd-Roman";
-}
-
-@font-face {
-    src: url("../fonts/AvenirLTStd-Roman.woff");
-    font-family: "AvenirLTStd-Roman";
-}
-
-@font-face {
-    src: url("../fonts/AvenirLTStd-Roman.woff2");
-    font-family: "AvenirLTStd-Roman";
-}
-
-@font-face {
-    src: url("../fonts/AvenirLTStd-Roman.otf");
-    font-family: "AvenirLTStd-Roman";
-}
-
-
-
 
 @font-face {
     src: url("../fonts/Pretendard-Medium.ttf");
@@ -432,6 +388,9 @@ footer {
         width:210px;
         margin-left:0;
     }
+    .footer-right .operation-hour-wrap p{
+        margin-top:10px;
+    }
     .operation-hour-wrap .operation .off{
         font-size: 9px;
         padding-left:5px;
@@ -486,7 +445,7 @@ footer {
         height:50px;
     }
     .footer-right .operation-hour-wrap p{
-        margin-top:8px;
+        margin-top:10px;
     }
     .operation-hour-wrap .operation .off{
         font-size: 9px;

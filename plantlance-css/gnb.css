@@ -230,10 +230,10 @@ nav {
 
 .nav-wrap .menu-icon {
     position: relative;
-    width: 20px;
+    width: 22px;
     margin-left: 20px;
     background: #fff;
-    padding: 7px;
+    padding: 9px;
     border-radius: 100%;
     box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.05);
 }

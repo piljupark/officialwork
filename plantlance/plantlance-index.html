@@ -27,11 +27,12 @@
                 //페이지 별로 다른 메뉴 css 적용도 가능
                 document.getElementById("sub_nav").classList.add("show");
             });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
         })
     </script>
-
-
-
 </head>
 
 <body onload="init();">
@@ -86,13 +87,22 @@
                 </div>
                 <div class="chair-place"></div>
             </div>
+            
+            
             <div class="right">
                 <div class="table-place">
                     <img src="../plantlance-image/product/willy-table-main-horizontal.png" alt="wily" class="wily-table">
+                    
                     <div class="go-to-table">
-                        
+                        <a href="#none">
+                            <p class="txt-eng">TABLE <img src="../plantlance-image/icon/right-bottom-arrow.png" alt="next" class="next-arrow"></p>
+                        </a>
+                        <a href="#none"></a>
                     </div>
+                    
                 </div>
+                
+                
                 <div class="right-bottom">
                      <div class="new-product-place">
                          <a href="#none">
@@ -102,14 +112,15 @@
                              <img src="../plantlance-image/icon/right-arrow-white.png" alt="next" class="next-arrow">
                          </a>
                      </div>
+                     
                      <div class="point-box-place">
                          <div class="point1"></div>
                          <div class="point2">
                              <div class="point-box">
-                                 
                              </div>
                          </div>
                      </div>
+                     
                 </div>
             </div>
         </div>
@@ -117,20 +128,23 @@
         
         
         <div class="section section3 fp-auto-height-responsive">
-           
+           <div class="showroom-place">
+               <p class="txt-eng-bold section3-title">SHOWROOM</p>
+               
+               <div class="showroom-info">
+                   <a href="#none"><p class="txt-eng">SEONGSU</p></a>
+               </div>
+           </div>
         </div>
         
-        <div class="section section4">
-            
-        </div>
-    
             
         <div class="section section6 fp-auto-height fp-auto-height-responsive">
-           
-    </div>
+            <div id="footer"></div>
+        </div>
+        
     </div>
 
-
+    
 
 
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/plantlance-index.css">
+    <link rel="stylesheet" href="../plantlance-css/jquery.fullpage.css">
+
+
+
+
+    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
+    <script src="../plantlance-script/jquery.fullpage.js"></script>
+    <script src="../plantlance-script/plantlance-index.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+  
+        
+    
+    
+    <!-- fullpage -->
+    
+    <div id="fullpage">
+        <div class="section section1 main-top active fp-auto-height-responsive">
+        
+        </div>
+        <div class="section section2 fp-auto-height-responsive">
+            
+        </div>
+        
+        
+        
+        <div class="section section3 fp-auto-height-responsive">
+           
+        </div>
+        
+        <div class="section section4">
+            
+        </div>
+    
+            
+        <div class="section section6 fp-auto-height fp-auto-height-responsive">
+           
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        new fullpage('#fullpage', {
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['firstPage', 'secondPage', 'thirdPage'],
+
+            css3: true,
+            scrollBar: false,
+        });
+
+        fullpage_api.setAllowScrolling(false);
+    </script>
+
+
+</body></html>

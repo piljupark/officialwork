@@ -1,7 +1,7 @@
 $(document).ready(function () {
 /* 메뉴 - 슬라이드 메뉴 활성화 */
 $("nav > .nav-wrap > a > .menu-icon").click(function () {
-    $("#nav-slide").css("width", "850px");
+    $("#nav-slide").css("width", "100%");
 
     $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
 

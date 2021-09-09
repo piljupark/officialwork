@@ -210,9 +210,10 @@ li {
 
 /* nav */
 nav {
-    position: relative;
+    position: absolute;
     float: left;
     width: 100%;
+    z-index: 5;
 }
 
 
@@ -283,6 +284,7 @@ nav {
     justify-content: center;
     transition-duration: .3s;
     overflow: hidden;
+    z-index: 5;
 }
 
 .nav-slide-wrap {

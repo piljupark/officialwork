@@ -16,18 +16,48 @@
 
 
 
-    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
     <script src="../plantlance-script/jquery.fullpage.js"></script>
     <script src="../plantlance-script/plantlance-index.js"></script>
 
+
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+        })
+    </script>
 
 
 
 </head>
 
-<body>
+<body onload="init();">
 
-  
+   <!-- gnb 불러오기 -->
+    <div id="header"><!-- z-index: 5 --></div>
+    
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
         
     
     
@@ -35,10 +65,53 @@
     
     <div id="fullpage">
         <div class="section section1 main-top active fp-auto-height-responsive">
-        
+            <div class="trolley-box">
+                <div class="trolley-box-wrap">
+                    <p class="txt-eng-bold trolley-title">PET TROLLEY</p>
+                    <a href="#none">
+                    <p class="txt-eng trolley-button">View products <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-arrow"></p>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="section section2 fp-auto-height-responsive">
-            
+            <div class="left">
+                <div class="top-txt-place">
+                   <div class="top-txt-box">
+                    <p class="txt-eng">We provide cutomer oriented</p>
+                    <p class="txt-eng">customized funiture with</p>
+                    <p class="txt-eng">practical and trendy designs</p>
+                    <p class="txt-eng">based on modernity and basicty.</p>
+                    </div>
+                </div>
+                <div class="chair-place"></div>
+            </div>
+            <div class="right">
+                <div class="table-place">
+                    <img src="../plantlance-image/product/willy-table-main-horizontal.png" alt="wily" class="wily-table">
+                    <div class="go-to-table">
+                        
+                    </div>
+                </div>
+                <div class="right-bottom">
+                     <div class="new-product-place">
+                         <a href="#none">
+                             <p class="txt-eng">
+                                 New Product
+                             </p>
+                             <img src="../plantlance-image/icon/right-arrow-white.png" alt="next" class="next-arrow">
+                         </a>
+                     </div>
+                     <div class="point-box-place">
+                         <div class="point1"></div>
+                         <div class="point2">
+                             <div class="point-box">
+                                 
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
         </div>
         
         

@@ -264,9 +264,6 @@ nav {
 
 
 /* //nav */
-.nav-pc {
-    display: block;
-}
 
 
 
@@ -280,8 +277,6 @@ nav {
     background: #444;
     z-index: 2;
     display: flex;
-    align-content: center;
-    justify-content: center;
     transition-duration: .3s;
     overflow: hidden;
     z-index: 5;
@@ -306,6 +301,7 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    flex-shrink: 0;
 }
 .nav-slide-side .close-button {
     position: absolute;
@@ -385,13 +381,15 @@ nav {
 }
 
 
+
+/* nav-slide-top */
 .nav-slide-top {
     position: absolute;
     float: left;
     width: auto;
     right:220px;
     top:40px;
-
+    transition-duration: .3s;
 }
 .user-wrap {
     position: relative;
@@ -428,9 +426,11 @@ nav {
     width:800px;
     top:300px;
     right:100px;
+    transition-duration: .3s;
 }
 .nav-main-menu .title{
     font-size: 17px;
+    transition-duration: .3s;
 }
 .nav-main-menu p, li{
     position: relative;
@@ -469,6 +469,8 @@ nav {
 .shop .title{
     height:500px;
 }
+
+
 /* shop - furniture */
 .shop .furniture{
     position: relative;
@@ -483,6 +485,8 @@ nav {
     margin-bottom:10px;
 }
 /* // shop - furniture */
+
+
 
 /* shop - furniture - sofa */
 .shop .furniture .sofa{
@@ -520,8 +524,8 @@ nav {
     /*height: 100px;*/
 }
 .shop .furniture .table p {
-    width:100%;
-    font-size: 12px;
+    width:120%;
+    font-size: 11px;
     color:#888;
     transition-duration: .2s;
 }
@@ -537,7 +541,7 @@ nav {
 /* community */
 .community{
     position: relative;
-    float:left;
+    float:right;
     width:50%;
 }
 
@@ -553,6 +557,42 @@ nav {
 
 
 
-@media screen and (max-width:850px) and (min-width:375px) {
-   
+@media screen and (max-width:1460px) and (min-width:1210px) {
+    .nav-main-menu{
+        width:600px;
+    }
+    .nav-main-menu .title{
+        width:40%;
+}
+    
+}
+
+@media screen and (max-width:1209px) and (min-width:900px) {
+    .nav-main-menu{
+        width:600px;
+        right:-60px;
+    }
+    .nav-main-menu .title{
+        width:40%;
+}
+    .nav-slide-top{
+        right:50px;
+    }
+}
+
+
+@media screen and (max-width:899px) and (min-width:600px) {
+    .collection, .about, .community, .shop{
+        width:100%;
+    }
+    .nav-main-menu{
+        width:600px;
+        right:-60px;
+    }
+    .nav-main-menu .title{
+        width:40%;
+}
+    .nav-slide-top{
+        right:50px;
+    }
 }

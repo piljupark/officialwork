@@ -286,13 +286,13 @@ nav {
     position: relative;
     width: 100%;
     opacity: 0;
-
+    transition-duration: .3s;
 }
 
 .nav-slide-side {
     position: relative;
     float:left;
-    width: 350px;
+    width: 450px;
     height: 100vh;
     background: rgba(255, 255, 255, 0.1);
     left: 0;
@@ -302,6 +302,7 @@ nav {
     align-items: center;
     z-index: 2;
     flex-shrink: 0;
+    transition-duration: .3s;
 }
 .nav-slide-side .close-button {
     position: absolute;
@@ -313,9 +314,10 @@ nav {
 
 .nav-slide-side .side-wrap {
     position: relative;
-    width: 50%;
+    width: 30%;
     height: 100%;
     z-index: 2;
+    transition-duration: .3s;
 }
 
 .side-left {
@@ -423,9 +425,10 @@ nav {
 .nav-main-menu{
     position: absolute;
     float:left;
-    width:800px;
-    top:300px;
-    right:100px;
+    width:50%;
+    top:250px;
+    left:65%;
+    transform: translate(-50%,0);
     transition-duration: .3s;
 }
 .nav-main-menu .title{
@@ -445,6 +448,7 @@ nav {
     width:50%;
     height:90px;
 }
+
 
 /* about */
 .about{
@@ -558,19 +562,21 @@ nav {
 
 
 @media screen and (max-width:1460px) and (min-width:1210px) {
-    .nav-main-menu{
-        width:600px;
-    }
+  
     .nav-main-menu .title{
         width:40%;
 }
+    .nav-main-menu{
+        left:70%;
+        width:580px;
+    }
     
 }
 
-@media screen and (max-width:1209px) and (min-width:900px) {
+@media screen and (max-width:1209px) and (min-width:950px) {
     .nav-main-menu{
-        width:600px;
-        right:-60px;
+        left:80%;
+        width:580px;
     }
     .nav-main-menu .title{
         width:40%;
@@ -581,18 +587,35 @@ nav {
 }
 
 
-@media screen and (max-width:899px) and (min-width:600px) {
-    .collection, .about, .community, .shop{
+@media screen and (max-width:949px) and (min-width:600px) {
+    #nav-slide{
+        overflow-y: scroll;
+    }
+     .nav-main-menu{
+        left:80%;
+        width:580px;
+    }
+    .nav-main-menu .title{
+        width:40%;
+}
+    .nav-slide-top{
+        right:10px;
+    }
+    
+    .collection, .about, .shop, .community{
         width:100%;
     }
-    .nav-main-menu{
-        width:600px;
-        right:-60px;
+    .shop {
+        height:550px;
     }
-    .nav-main-menu .title{
-        width:40%;
-}
-    .nav-slide-top{
-        right:50px;
+    
+    
+    
+    .nav-slide-side{
+        width:200px;
+        position: fixed;
+    }
+    .nav-slide-side .side-wrap{
+        width:65%;
     }
 }

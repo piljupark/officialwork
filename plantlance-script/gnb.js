@@ -15,7 +15,7 @@ $("nav > .nav-wrap > a > .menu-icon").click(function () {
 
 
 /* 메뉴 - 닫기 - 슬라이드 메뉴 비활성화 */
-$("#nav-slide > .nav-slide-wrap > .nav-slide-top > a > .close-button").click(function () {
+$("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").click(function () {
     $("#nav-slide").css("width", "0");
 
     $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
@@ -44,7 +44,7 @@ $("#nav-slide > .nav-slide-wrap > .nav-slide-top > a > .close-button").click(fun
 
 /* 메뉴 - 퍼니쳐 - 퍼니쳐 하위메뉴 활성화*/
 $("#nav-slide > .nav-slide-wrap > .nav-slide-middle > .middle-left > .shop-wrap > a > .furniture-txt > .arrow-down").click(function () {
-    $("#nav-slide > .nav-slide-wrap > .nav-slide-middle > .middle-left > .shop-wrap > .furniture-wrap").css("height", "100%");
+    $("#nav-slide > .nav-slide-wrap > .nav-slide-middle > .middle-left > .shop-wrap > .furniture-wrap").css("height", "300px");
     $("#nav-slide > .nav-slide-wrap > .nav-slide-middle > .middle-left > .shop-wrap > a > .furniture-txt > .arrow-down").css("display", "none");
     $("#nav-slide > .nav-slide-wrap > .nav-slide-middle > .middle-left > .shop-wrap > a > .furniture-txt > .arrow-up").css("display", "block");
 

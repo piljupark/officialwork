@@ -490,7 +490,6 @@ li {
     position: relative;
     width:100%;
     max-width: 1400px;
-    height:100vh;
     margin:0 auto;
     
 }
@@ -506,14 +505,14 @@ li {
 .showroom-place-wrap{
     position: relative;
     float:left;
-    width:270px;
-    margin-top:50px;
-    
+    width:100%;
+    display: flex;
+    justify-content: space-between;
 }
 .showroom-place{
     position: relative;
-    float:left;
-    margin-left:20px;
+    width:270px;
+    margin-top:50px;
 }
 
 .showroom-name{
@@ -524,6 +523,7 @@ li {
     border:1px solid #ddd;
     transition-duration: .2s;
     cursor: pointer;
+    margin-left:20px;
 }
 .showroom-name .title{
     position: relative;
@@ -600,6 +600,28 @@ li {
 }
 
 
+
+.showroom-img{
+    position: relative;
+    float:left;
+    width:75%;
+    height:630px;
+    margin-top:50px;
+    margin-left:50px;
+}
+.swiper-container{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 427px;
+     background: #eee;
+    margin-left:20px;
+}
+.swiper-slide{
+    position: relative;
+    width:100%;
+    
+}
 /* //section3 */
 
 

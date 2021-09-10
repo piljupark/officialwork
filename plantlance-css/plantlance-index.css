@@ -171,7 +171,7 @@ body {
     color: #292929;
     font-size: 14px;
     overflow-x: hidden;
-
+    font-family: "Urbanist-ExtraBold";
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
@@ -248,12 +248,31 @@ li {
     padding:15px 120px 15px 15px;
     font-size: 12px;
     margin-top:50px;
+    transition-duration: .2s;
 }
+
 .trolley-box-wrap .next-arrow{
     position: absolute;
     float:right;
     width:15px;
     right:15px;
+    transition-duration: .2s;
+}
+.trolley-box-wrap .trolley-button .next-arrow-white{
+    opacity: 0;
+}
+.trolley-box-wrap .trolley-button .next-arrow-black{
+    opacity: 1;
+}
+.trolley-box-wrap .trolley-button:hover{
+    background: #292929;
+    color:#fff;
+}
+.trolley-box-wrap .trolley-button:hover > .next-arrow-black{
+    opacity: 0;
+}
+.trolley-box-wrap .trolley-button:hover > .next-arrow-white{
+    opacity: 1;
 }
 /* //section1 */
 
@@ -296,9 +315,52 @@ li {
     float:left;
     width:100%;
     height:70%;
-    background-image: url(../plantlance-image/main/main-chair.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.left .chair-place .chair{
+    position: relative;
+    width:2100px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.left .chair-place a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.left .chair-place .go-to-chair{
+    position: absolute;
+    float:left;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color: rgba(230, 230, 230, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    transition-duration: .3s;
+    opacity: 0;
+}
+.left .chair-place .go-to-chair .txt-eng{
+    position: relative;
+    float:right;
+    font-size: 30px;
+    border:2px solid #292929;
+    padding:60px 25px;
+    margin-right: 40px;
+    margin-top:40px;
+}
+.left .chair-place .go-to-chair .next-arrow{
+    position: relative;
+    float:right;
+    width:25px;
+    margin-top:4px;
+    margin-left:1px;
+}
+.left .chair-place .go-to-chair:hover{
+    opacity: 1;
 }
 
 
@@ -424,45 +486,121 @@ li {
 
 
 /* section3 */
-
-.showroom-place{
+.showroom-wrap{
     position: relative;
-    width:80%;
-    height:80%;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    width:100%;
+    max-width: 1400px;
+    height:100vh;
+    margin:0 auto;
+    
 }
-.showroom-place .section3-title{
+.section3-title{
     position: relative;
     float:left;
     width:100%;
-    font-size: 25px;
-    margin-bottom:50px;
+    margin: 0 auto;
+    margin-top:200px;
+    margin-left:20px;
+    font-size: 30px;
 }
-.showroom-info{
+.showroom-place-wrap{
     position: relative;
     float:left;
-    width:300px;
+    width:270px;
+    margin-top:50px;
+    
 }
-.showroom-info a{
-    display: block;
-    border:1px solid #e1e1e1;
-    padding:15px;
+.showroom-place{
+    position: relative;
+    float:left;
+    margin-left:20px;
 }
+
+.showroom-name{
+    position:relative;
+    background: #fff;
+    width:270px;
+    height:70px;
+    border:1px solid #ddd;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+.showroom-name .title{
+    position: relative;
+    float:left;
+    width:auto;
+    top:50%;
+    transform: translate(0%,-50%);
+    margin-left:25px;
+    transition-duration: .2s;
+}
+.showroom-name .title2, .showroom-name2 .title2{
+    color:#999;
+    font-size:12px;
+}
+.showroom-icon{
+    position: absolute;
+    float:left;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.right-arrow{
+    position: absolute;
+    float:left;
+    width:12px;
+    top:50%;
+    transform: translate(0,-50%);
+    left:15px;
+}
+.tel-place{
+    position: relative;
+    float:right;
+    width:70px;
+    top:40%;
+    right:10px;
+    display: flex;
+    justify-content: space-around;
+}
+.tel-place .showroom-call{
+    position: relative;
+    width:13px;
+    margin-right:0px;
+    margin-top:2px;
+    z-index: 1;
+    
+}
+.tel-place .line{
+    color:#fff;
+}
+.tel-place .showroom-place{
+    position: relative;
+    width:15px;
+    margin-left:0px;
+    margin-top:1.5px;
+    z-index: 2;
+}
+ 
+.showroom-name .txt-kor{
+    font-size: 12px;
+}
+.showroom-name:hover{
+    background: #292929;
+    border:1px solid #292929;
+}
+.showroom-name:hover > .title1{
+    color:#fff;
+    margin-left:40px;
+}
+
+
+.showroom-name:nth-child(n+2):nth-child(-n+6){
+    border-top:none;
+}
+
+
 /* //section3 */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

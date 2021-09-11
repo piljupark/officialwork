@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+    <script src="../plantlance-script/login.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/login.css">
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    <script src="../plantlance-script/login.js"></script>
+    
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+
+    <div id="login"> 
+        <div class="login-wrap">
+            <p class="txt-eng title-login">LOGIN</p>
+            
+            <div class="login-type">
+                <div class="user">
+                    <a href="#none">
+                        <p class="txt-kor user-button">회원로그인</p>
+                    </a>
+                </div>
+                <div class="not-a-user">
+                    <a href="#none">
+                        <p class="txt-kor not-a-user-button">비회원 주문조회</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="user-login">
+                <input type="text" placeholder="아이디를 입력해주세요" class="id">
+                <input type="password" placeholder="비밀번호를 입력해주세요" class="password">
+                <div class="remember-user-wrap">
+                    <input type="checkbox" class="remember-user" id="remember">
+                    <label class="txt-kor remember-txt" for="remember">아이디 저장</label>
+                </div>
+                
+                
+                <a href="#none">
+                    <p class="txt-eng login-btn">LOGIN</p>
+                </a>
+                <div class="user-help">
+                    <a href="#none">
+                        <p class="txt-kor join">회원가입</p>
+                    </a>
+                    <p class="txt-kor">|</p>
+                    <a href="#none">
+                        <p class="txt-kor find-id">아이디 찾기</p>
+                    </a>
+                    <p class="txt-kor">|</p>
+                    <a href="#none">
+                        <p class="txt-kor find-pw">비밀번호 찾기</p>
+                    </a>
+                </div>
+                <div class="join-sns">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer"></div>
+
+
+</body></html>

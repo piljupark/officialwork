@@ -359,6 +359,15 @@ li {
     float:left;
     width:100%;
     margin-top:40px;
+    display: flex;
+    justify-content: center;
+}
+
+.join-sns img{
+    position: relative;
+    float:left;
+    width:35px;
+    margin: 0 10px;
 }
 /* //login */
 

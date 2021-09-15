@@ -219,6 +219,7 @@ li {
     justify-content: center;
     align-items: center;
     justify-items: center;
+    overflow-x: hidden;
 }
 .login-wrap{
     position: relative;

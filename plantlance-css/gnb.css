@@ -778,9 +778,10 @@ nav {
     height:130px;
     bottom:0;
     background: #555;
-    opacity: 0;
     transition-duration: .3s;
+    display: none;
 }
+
 .nav-mob-bottom .bottom-info{
     position: relative;
     float:left;
@@ -943,9 +944,6 @@ nav {
 
 
 @media screen and (max-width:649px) and (min-width:300px) {
-    body{
-        overflow-y: hidden;
-    }
     /* nav-mob */
     .nav-mob {
         display: block;

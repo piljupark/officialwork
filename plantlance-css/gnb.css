@@ -217,6 +217,7 @@ nav {
 }
 
 
+
 .nav-wrap {
     position: relative;
     width: 100%;
@@ -943,7 +944,26 @@ nav {
 
 
 
-@media screen and (max-width:649px) and (min-width:300px) {
+@media screen and (max-width:550px) and (min-width:300px) {
+    /* nav-wrap */
+    nav .nav-wrap .menu-icon{
+        width:15px;
+        top:-2px;
+    }
+     nav .nav-wrap .logo{
+        width:100px;
+    }
+    nav .nav-wrap .sub-button-wrap{
+        width:80px;
+    }
+    nav .nav-wrap .sub-button-wrap img{
+        width:15px;
+    }
+    /* //nav-wrap */
+    
+    
+    
+    
     /* nav-mob */
     .nav-mob {
         display: block;

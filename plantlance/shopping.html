@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+    <script src="../plantlance-script/shopping.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/shopping.css">
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    <script src="../plantlance-script/shopping.js"></script>
+    
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+    
+    <div id="shopping">
+        <div class="shopping-wrap">
+            <p class="txt-eng-bold shopping-title">
+                SHOPPING CART
+            </p>
+            
+            <div class="cart">
+               <div class="cart-title-top">
+                   <p class="txt-kor title1">장바구니</p>
+                   <p class="txt-kor title2">장바구니</p>
+               </div>
+                <div class="cart-title-wrap">
+                    <p class="txt-kor">상품정보</p>
+                    <p class="txt-kor">옵션</p>
+                    <p class="txt-kor">수량</p>
+                    <p class="txt-kor">가격</p>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer"></div>
+
+
+</body></html>

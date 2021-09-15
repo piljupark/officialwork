@@ -38,7 +38,7 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $("#nav-slide").css("width", "0");
-        $("#nav-slide").css("z-index", "-1");
+        $("#nav-slide").css("z-index", "4");
 
         $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
 
@@ -59,7 +59,7 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $(".nav-mob").css("width", "0");
-        $(".nav-mob").css("z-index", "-1");
+        $(".nav-mob").css("z-index", "4");
 
         $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
 
@@ -110,7 +110,7 @@ $(document).ready(function () {
 
         $(".nav-mob > .nav-mob-wrap").css("transition-duration", ".2s");
         $(".nav-mob > .nav-mob-wrap").css("transition-delay", ".3s");
-        $(".nav-mob > .nav-mob-wrap").css("display", "block");
+        $(".nav-mob > .nav-mob-wrap").css("opacity", "1");
 
         $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "block");
         
@@ -127,7 +127,7 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $(".nav-mob").css("width", "0");
-        $(".nav-mob").css("z-index", "-1");
+        $(".nav-mob").css("z-index", "4");
 
         $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
 
@@ -156,7 +156,7 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $("#nav-slide").css("width", "0");
-        $("#nav-slide").css("z-index", "-1");
+        $("#nav-slide").css("z-index", "4");
 
         $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
 

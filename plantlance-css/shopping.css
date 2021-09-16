@@ -210,6 +210,7 @@ li {
     float:left;
     width:100%;
     margin-top:130px;
+    margin-bottom:100px;
 }
 
 .shopping-wrap{
@@ -240,7 +241,7 @@ li {
     padding:10px 0;
     opacity: .6;
     border-bottom: 1px solid #999;
-    border-top:2px solid #999;
+    border-top:2px solid #292929;
 }
 .cart-title-wrap p{
     font-size: 12px;
@@ -249,11 +250,173 @@ li {
     position: relative;
     float:left;
     width:100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom:10px;
 }
 .cart-title-top p{
     position: relative;
     float:left;
+    width:auto;
+    margin-right:10px;
+    
 }
+
+.cart-title-top .title2{
+    color:#999;
+    font-size: 12px;
+    margin-right:10px;
+}
+.cart-title-top .title3{
+    color:#999;
+    font-size: 12px;
+    margin-left:-10px;
+}
+
+
+.cart-container{
+    position: relative;
+    float:left;
+    width:100%;
+    max-width: 1360px;
+    height:200px;
+    border-bottom: 1px solid #999;
+    margin-bottom:80px;
+    left:50%;
+    transform: translate(-50%);
+}
+.cart-container .no-product{
+    position: relative;
+    float:left;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.cart-container .caution{
+    position: absolute;
+    float:left;
+    width:30px;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: .4;
+}
+
+
+.short-order{
+    position: relative;
+    float:left;
+     width:100%;
+    max-width: 1360px;
+}
+
+.short-order-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    max-width: 1360px;
+    border-top:2px solid #292929;
+    border-bottom:2px solid #292929;
+    margin-top:15px;
+    background: #F8F8F8;
+}
+.order-txt{
+    position: relative;
+    float:left;
+    width:50%;
+}
+.order-txt p{
+    position: relative;
+    float:left;
+    width:100%;
+    padding:10px 0;
+    color:#999;
+    margin-left:20px;
+    font-size: 12px;
+}
+.short-order-wrap .discount{
+    color:#08389A;
+}
+.order-price{
+    position: relative;
+    float:right;
+    width:50%;
+}
+.order-price p{
+    position: relative;
+    float:right;
+    width:100%;
+    padding:10px 0;
+    color:#999;
+    text-align: right;
+    font-size: 12px;
+    margin-right:20px;
+}
+
+
+.whole-order{
+    position: relative;
+    float:left;
+    width:auto;
+    margin-top:20px;
+    margin-left:20px;
+}
+.whole-price{
+    float: right;
+    margin-right:20px;
+}
+
+.buy-button{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:40px;
+    background: #A8A8A8;
+}
+
+.buy-button p{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    padding:15px 0;
+    color:#fff;
+}
+.buy-button .next{
+    position: absolute;
+    width:25px;
+    right:25px;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -174,7 +174,6 @@ body {
 
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
-    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
 }
 
 
@@ -269,7 +268,7 @@ nav {
 
 
 #nav-slide {
-    position: absolute;
+    position: fixed;
     float: left;
     width: 0;
     height: 100vh;
@@ -280,7 +279,10 @@ nav {
     display: flex;
     transition-duration: .3s;
     overflow: hidden;
+    
+    -ms-overflow-style: none;
 }
+#nav-slide::-webkit-scrollbar { display: none; }
 
 @keyframes menuNone {
     from {
@@ -297,8 +299,9 @@ nav {
     width: 100%;
     opacity: 0;
     transition-duration: .3s;
+    -ms-overflow-style: none;
 }
-
+.nav-slide-wrap::-webkit-scrollbar { display: none; }
 /* nav-mob */
 .nav-mob {
     display: none;!important
@@ -610,7 +613,7 @@ nav {
 
 /* nav-mob */
 .nav-mob{
-    position: relative;
+    position: fixed;
     float:left;
     width:0%;
     height: 100vh;
@@ -621,14 +624,25 @@ nav {
     align-items: center;
     transition-duration: .3s;
     background: #444;
+    
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.nav-mob::-webkit-scrollbar{
+    display: none;
 }
 .nav-mob-wrap{
     position: absolute;
     width:100%;
     height:100vh;
     overflow-y: scroll;
+    
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
-
+.nav-mob-wrap::-webkit-scrollbar{
+    display: none;
+}
 /* nav-mob-top*/
 .nav-mob-top{
     

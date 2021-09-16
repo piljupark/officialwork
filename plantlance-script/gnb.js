@@ -13,10 +13,10 @@ $(document).ready(function () {
         $("#nav-slide > .nav-slide-wrap").css("opacity", "1");
 
         $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "block");
-        
-        $("body").css("overflow","hidden");
-        
-        
+
+
+
+
         $(".nav-mob").css("width", "100%");
         $(".nav-mob").css("z-index", "5");
 
@@ -25,6 +25,9 @@ $(document).ready(function () {
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-duration", ".2s");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-delay", ".3s");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "block");
+
+        $("::-webkit-scrollbar").css("display", "none");
+        $("body").css("-ms-overflow-style", "none");
     });
     /* // 메뉴 - 웹 슬라이드 메뉴 활성화 */
 
@@ -66,10 +69,13 @@ $(document).ready(function () {
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-duration", ".2s");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-delay", ".3s");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "none");
-        
-        
-        
-        $("body").css("overflow-y","auto");
+
+
+
+        $("html::-webkit-scrollbar").css("display", "block");
+        $("html").css("-ms-overflow-style", "auto");
+
+
     });
     /* 메뉴 - 닫기 - 슬라이드 메뉴 비활성화 */
 
@@ -113,9 +119,10 @@ $(document).ready(function () {
         $(".nav-mob > .nav-mob-wrap").css("opacity", "1");
 
         $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "block");
-        
-        
-        $("body").css("overflow","hidden");
+
+
+        $("html::-webkit-scrollbar").css("display", "none");
+        $("html").css("-ms-overflow-style", "none");
     });
     /* // 메뉴 - 모바일 슬라이드 메뉴 활성화 */
 
@@ -139,13 +146,13 @@ $(document).ready(function () {
         $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "0");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .table").css("height", "0");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .sofa").css("height", "0");
-        
-        
-        
+
+
+
         $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "block");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "none");
-        
-        
+
+
 
 
 
@@ -167,9 +174,10 @@ $(document).ready(function () {
 
         $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .sofa").css("height", "0px");
         $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .table").css("height", "0px");
-        
-        
-        $("body").css("overflow-y","auto");
+
+
+        $("html::-webkit-scrollbar").css("display", "block");
+        $("html").css("-ms-overflow-style", "auto");
     });
     /* 메뉴 - 닫기 - 모바일 슬라이드 메뉴 비활성화 */
 

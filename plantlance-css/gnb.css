@@ -944,7 +944,7 @@ nav {
 
 
 
-@media screen and (max-width:550px) and (min-width:300px) {
+@media screen and (max-width:650px) and (min-width:300px) {
     /* nav-wrap */
     nav .nav-wrap .menu-icon{
         width:15px;

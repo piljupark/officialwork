@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+    <script src="../plantlance-script/shopping-fill.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/shopping-fill.css">
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+
+
+
+</head>
+
+<body onload="init();">
+    <script src="../plantlance-script/shopping-fill.js"></script>
+
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+    
+    
+    <!-- 수량과 비례한 가격 변동 스크립트 -->
+    <script language="JavaScript">
+        var sell_price;
+        var amount;
+
+        function init() {
+            sell_price = document.form.sell_price.value;
+            amount = document.form.amount.value;
+            document.form.sum.value = sell_price;
+            change();
+        }
+
+        function add() {
+            hm = document.form.amount;
+            sum = document.form.sum;
+            hm.value++;
+
+            sum.value = parseInt(hm.value) * sell_price;
+        }
+
+        function del() {
+            hm = document.form.amount;
+            sum = document.form.sum;
+            if (hm.value > 1) {
+                hm.value--;
+                sum.value = parseInt(hm.value) * sell_price;
+            }
+        }
+
+        function change() {
+            hm = document.form.amount;
+            sum = document.form.sum;
+
+            if (hm.value < 0) {
+                hm.value = 0;
+            }
+            sum.value = parseInt(hm.value) * sell_price;
+        }
+    </script>
+    <!-- //수량과 비례한 가격 변동 스크립트 -->
+    
+    
+    
+
+    <div id="shopping">
+        <div class="shopping-wrap">
+            <p class="txt-eng-bold shopping-title">
+                SHOPPING CART
+            </p>
+
+            <div class="cart">
+                <div class="cart-title-top">
+                    <p class="txt-kor title1">장바구니</p>
+                    <p class="txt-kor title2"> 총 </p>
+                    <p class="txt-kor title2"> (3) </p>
+                    <p class="txt-kor title3"> 개의 상품</p>
+                </div>
+                <div class="cart-choose-cancel">
+                    <a href="#none">
+                        <p class="txt-kor">전체삭제</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-kor">선택삭제</p>
+                    </a>
+                </div>
+                <div class="cart-title-wrap">
+                    <p class="txt-kor">상품정보</p>
+                    <p class="txt-kor">옵션</p>
+                    <p class="txt-kor">수량</p>
+                    <p class="txt-kor">가격</p>
+                    <input type="checkbox" class="choose-product">
+                </div>
+
+                <div class="cart-container">
+                   
+                    <div class="product-box">
+                        <div class="product-info">
+                            <div class="product-img">
+
+
+                            </div>
+                            <div class="product-title">
+                                <p class="txt-eng-bold product-eng">WILY TABLE</p>
+                                <p class="txt-eng type">FENIX</p>
+                                <p class="txt-kor product-kor">윌리 테이블 ( FENIX 소재 )</p>
+                            </div>
+                        </div>
+                        <div class="product-option">
+                            <div class="option leg">
+                                <p class="txt-eng type-title">Leg type</p>
+                                <p class="txt-eng my-type">A</p>
+                            </div>
+                            <div class="option edge">
+                                <p class="txt-eng type-title">Edge</p>
+                                <p class="txt-eng my-type">Silver</p>
+                            </div>
+                            <div class="option shape">
+                                <p class="txt-eng type-title">Shape</p>
+                                <p class="txt-eng my-type">
+                                    <img src="../plantlance-image/icon/square-black.png" alt="shape" class="shape-square">
+                                    <img src="../plantlance-image/icon/eclips-black.png" alt="shape" class="shape-eclips">
+                                    <img src="../plantlance-image/icon/round-black.png" alt="shape" class="shape-round">
+                                </p>
+                            </div>
+                            <div class="option color">
+                                <p class="txt-eng type-title">Color</p>
+                                <p class="txt-eng my-type">Shade Blue</p>
+                            </div>
+                            <div class="option size">
+                                <p class="txt-eng type-title">Size</p>
+                                <p class="txt-eng my-type">600 X 600</p>
+                            </div>
+                        </div>
+                        <div class="product-ea">
+                            <form name="form" method="get" class="order-form">
+                                <div class="ea-wrap">
+                                    <input type="button" value=" - " onclick="del();" class="del-ea">
+                                    <input type=hidden name="sell_price" value="330000">
+                                    <input type="text" name="amount" value="1" size="3" onchange="change();" class="num-ea">
+                                    <input type="button" value=" + " onclick="add();" class="add-ea">
+                                </div>
+                                <div class="price-wrap">
+                                    <input type="text" name="sum" size="11" id="number" class="price" readonly>원
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <input type="checkbox" class="chose">
+                        <p class="txt-kor shipping">배송비 40,000원 별도</p>
+                    </div>
+                    
+                    <div class="product-box">
+                        <div class="product-info">
+                            <div class="product-img">
+
+
+                            </div>
+                            <div class="product-title">
+                                <p class="txt-eng-bold product-eng">WILY TABLE</p>
+                                <p class="txt-eng type">FENIX</p>
+                                <p class="txt-kor product-kor">윌리 테이블 ( FENIX 소재 )</p>
+                            </div>
+                        </div>
+                        <div class="product-option">
+                            <div class="option leg">
+                                <p class="txt-eng type-title">Leg type</p>
+                                <p class="txt-eng my-type">B</p>
+                            </div>
+                            <div class="option edge">
+                                <p class="txt-eng type-title">Edge</p>
+                                <p class="txt-eng my-type">Silver</p>
+                            </div>
+                            <div class="option shape">
+                                <p class="txt-eng type-title">Shape</p>
+                                <p class="txt-eng my-type">
+                                    <img src="../plantlance-image/icon/square-black.png" alt="shape" class="shape-square">
+                                    <img src="../plantlance-image/icon/eclips-black.png" alt="shape" class="shape-eclips">
+                                    <img src="../plantlance-image/icon/round-black.png" alt="shape" class="shape-round">
+                                </p>
+                            </div>
+                            <div class="option color">
+                                <p class="txt-eng type-title">Color</p>
+                                <p class="txt-eng my-type">Burgundy</p>
+                            </div>
+                            <div class="option size">
+                                <p class="txt-eng type-title">Size</p>
+                                <p class="txt-eng my-type">600 X 600</p>
+                            </div>
+                        </div>
+                        <div class="product-ea">
+                            <form name="form" method="get" class="order-form">
+                                <div class="ea-wrap">
+                                    <input type="button" value=" - " onclick="del();" class="del-ea">
+                                    <input type=hidden name="sell_price" value="330000">
+                                    <input type="text" name="amount" value="1" size="3" onchange="change();" class="num-ea">
+                                    <input type="button" value=" + " onclick="add();" class="add-ea">
+                                </div>
+                                <div class="price-wrap">
+                                    <input type="text" name="sum" size="11" id="number" class="price" readonly>원
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <input type="checkbox" class="chose">
+                        <p class="txt-kor shipping">배송비 40,000원 별도</p>
+                    </div>
+                    
+                    <div class="product-box">
+                        <div class="product-info">
+                            <div class="product-img">
+
+
+                            </div>
+                            <div class="product-title">
+                                <p class="txt-eng-bold product-eng">WILY TABLE</p>
+                                <p class="txt-eng type">HPL</p>
+                                <p class="txt-kor product-kor">윌리 테이블 ( HPL 소재 )</p>
+                            </div>
+                        </div>
+                        <div class="product-option">
+                            <div class="option leg">
+                                <p class="txt-eng type-title">Leg type</p>
+                                <p class="txt-eng my-type">A</p>
+                            </div>
+                            <div class="option edge">
+                                <p class="txt-eng type-title">Edge</p>
+                                <p class="txt-eng my-type">Silver</p>
+                            </div>
+                            <div class="option shape">
+                                <p class="txt-eng type-title">Shape</p>
+                                <p class="txt-eng my-type">
+                                    <img src="../plantlance-image/icon/square-black.png" alt="shape" class="shape-square">
+                                    <img src="../plantlance-image/icon/eclips-black.png" alt="shape" class="shape-eclips">
+                                    <img src="../plantlance-image/icon/round-black.png" alt="shape" class="shape-round">
+                                </p>
+                            </div>
+                            <div class="option color">
+                                <p class="txt-eng type-title">Color</p>
+                                <p class="txt-eng my-type">Shade Blue</p>
+                            </div>
+                            <div class="option size">
+                                <p class="txt-eng type-title">Size</p>
+                                <p class="txt-eng my-type">600 X 600</p>
+                            </div>
+                        </div>
+                        <div class="product-ea">
+                            <form name="form" method="get" class="order-form">
+                                <div class="ea-wrap">
+                                    <input type="button" value=" - " onclick="del();" class="del-ea">
+                                    <input type=hidden name="sell_price" value="330000">
+                                    <input type="text" name="amount" value="1" size="3" onchange="change();" class="num-ea">
+                                    <input type="button" value=" + " onclick="add();" class="add-ea">
+                                </div>
+                                <div class="price-wrap">
+                                    <input type="text" name="sum" size="11" id="number" class="price" readonly>원
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <input type="checkbox" class="chose">
+                        <p class="txt-kor shipping">배송비 40,000원 별도</p>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+
+
+                <a href="#none">
+                    <p class="txt-kor change-cart">변경완료</p>
+                </a>
+            </div>
+
+
+            <div class="short-order">
+                <p class="txt-kor">주문 요약</p>
+
+                <div class="short-order-wrap">
+                    <div class="order-txt">
+                        <p class="txt-kor">총 상품 수량</p>
+                        <p class="txt-kor">총 상품 금액</p>
+                        <p class="txt-kor">배송비</p>
+                        <p class="txt-kor discount">할인금액</p>
+                    </div>
+                    <div class="order-price">
+                        <p class="txt-kor">X 2</p>
+                        <p class="txt-kor">660,000 원</p>
+                        <p class="txt-kor">80,000 원</p>
+                        <p class="txt-kor discount">-30,000 원</p>
+                    </div>
+                </div>
+                <p class="txt-kor whole-order whole-order-txt">총 결제 예정 금액</p>
+                <p class="txt-kor whole-order whole-price">710,000 원</p>
+
+                <div class="buy-button">
+                    <a href="#none">
+                        <p class="txt-eng">BUY</p>
+                    </a>
+
+                    <img src="../plantlance-image/icon/right-arrow-white.png" alt="next" class="next">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+
+</body></html>

@@ -35,7 +35,7 @@
 
 <body>
     <script src="../plantlance-script/payment.js"></script>
-    
+
     <!-- gnb 불러오기 -->
     <div id="header">
         <!-- z-index: 5 -->
@@ -60,129 +60,512 @@
         });
     </script>
     <!-- //gnb 불러오기 -->
-    
+
     <div id="payment">
         <div class="payment-wrap">
-            
-             <!-- 결제 정보란 -->
-             <div class="checkout-info">
-                 <p class="txt-eng checkout-title">CHECK OUT</p>
-                 <div class="product-info">
-                     <p class="txt-kor product-info-title">주문상품 정보</p>
-                     <p class="txt-kor product-info-ea">2</p>
-                     <div class="product-box">
-                         <div class="product-wrap">
-                             <div class="product">
-                                 <div class="product-img"></div>
-                                 <div class="product-option">
-                                     <p class="txt-eng-bold product-name">
-                                         WILY TABLE
-                                     </p>
-                                     <div class="my-option">
-                                         <p class="txt-eng">A type</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">Silver</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">Round</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">ShadeBlue</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">600 X 600</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <p class="txt-eng ea">X 1</p>
-                             <p class="txt-eng price"> 330,000 원</p>
-                         </div>
-                         <div class="product-wrap">
-                             <div class="product">
-                                 <div class="product-img"></div>
-                                 <div class="product-option">
-                                     <p class="txt-eng-bold product-name">
-                                         WILY TABLE
-                                     </p>
-                                     <div class="my-option">
-                                         <p class="txt-eng">A type</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">Silver</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">Round</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">ShadeBlue</p>
-                                         <p class="txt-eng">/</p>
-                                         <p class="txt-eng">600 X 600</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <p class="txt-eng ea">X 1</p>
-                             <p class="txt-eng price"> 330,000 원</p>
-                         </div>
-                     </div>
-                 </div>
-                 
-                 
-                 
-                 
-                 <!-- 주문자 정보 -->
-                 <div class="customer-info">
-                     <p class="txt-kor customer-title">주문자 정보</p>
-                     
-                     <div class="customer">
-                         <div class="customer-wrap name-wrap">
-                             <p class="txt-kor">성함</p>
-                         </div>
-                         <div class="customer-wrap number-wrap"></div>
-                         <div class="customer-wrap email-wrap"></div>
-                         <div class="customer-wrap address-wrap"></div>
-                     </div>
-                 </div>
-                 <!-- //주문자 정보 -->
-                 
-             </div>
-             
-             <!-- //결제 정보란-->
-             
-             
-             
-             
-             
-             <!-- 결제 금액란 -->
-             <div class="checkout-price">
-                 <p class="txt-kor checkout-price-title">주문 정보</p>
-                 <div class="checkout-price-box">
-                     <div class="product-price-wrap">
-                         <p class="txt-kor">상품금액</p>
-                         <p class="txt-kor price">660,000 원</p>
-                     </div>
-                     <div class="product-price-wrap">
-                         <p class="txt-kor">할인금액</p>
-                         <p class="txt-kor price">- 0 원</p>
-                     </div>
-                     <div class="product-price-wrap delivery">
-                         <p class="txt-kor">배송비</p>
-                         <p class="txt-kor price">+ 80,000 원</p>
-                     </div>
-                     <div class="product-price-wrap delivery2">
-                         <p class="txt-kor">+ 추가 배송비</p>
-                         <p class="txt-kor price">+ 0 원</p>
-                     </div>
-                     <div class="product-price-wrap last-checkout">
-                         <p class="txt-kor">최종 결제금액</p>
-                         <p class="txt-kor price">740,000 원</p>
-                     </div>
-                 </div>
-             </div>
-             <!-- //결제 금액란 -->
+
+            <!-- 결제 정보란 -->
+            <div class="checkout-info">
+                <p class="txt-eng checkout-title">CHECK OUT</p>
+                <div class="product-info">
+                    <p class="txt-kor product-info-title">주문상품 정보</p>
+                    <p class="txt-kor product-info-ea">2</p>
+                    <div class="product-box">
+                        <div class="product-wrap">
+                            <div class="product">
+                                <div class="product-img"></div>
+                                <div class="product-option">
+                                    <p class="txt-eng-bold product-name">
+                                        WILY TABLE
+                                    </p>
+                                    <div class="my-option">
+                                        <p class="txt-eng">A type</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">Silver</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">Round</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">ShadeBlue</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">600 X 600</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="txt-eng ea">X 1</p>
+                            <p class="txt-eng price"> 330,000 원</p>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product">
+                                <div class="product-img"></div>
+                                <div class="product-option">
+                                    <p class="txt-eng-bold product-name">
+                                        WILY TABLE
+                                    </p>
+                                    <div class="my-option">
+                                        <p class="txt-eng">A type</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">Silver</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">Round</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">ShadeBlue</p>
+                                        <p class="txt-eng">/</p>
+                                        <p class="txt-eng">600 X 600</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="txt-eng ea">X 1</p>
+                            <p class="txt-eng price"> 330,000 원</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- 주문자 정보 -->
+                <div class="customer-info">
+                    <p class="txt-kor customer-title">주문자 정보</p>
+
+                    <div class="customer">
+                        <div class="customer-wrap name-wrap">
+                            <p class="txt-kor name">주문자 성함</p>
+                            <input type="text">
+                        </div>
+                        <div class="customer-wrap number-wrap">
+                            <p class="txt-kor number">휴대폰 번호</p>
+                            <select name="number" class="selection">
+                                <option value="" selected>선택</option>
+                                <option value="02">02</option>
+                                <option value="070">070</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="019">019</option>
+                                <option value="060">060</option>
+                                <option value="080">080</option>
+                            </select>
+                            <input type="number">
+
+                        </div>
+                        <div class="customer-wrap email-wrap">
+                            <p class="txt-kor name">이메일</p>
+                            <input type="email">
+                            <p class="txt-eng at">@</p>
+                            <input type="email" class="email-dot">
+                            <select name="number" class="selection">
+                                <option value="" selected>직접입력</option>
+                                <option value="naver">naver.com</option>
+                                <option value="google">google.com</option>
+                                <option value="hanmail">hanmail.net</option>
+                                <option value="nate">nate.com</option>
+
+                            </select>
+                        </div>
+                        <div class="customer-wrap address-wrap">
+                            <p class="txt-kor name">배송 주소</p>
+                            <input id="member_addr" type="text" readonly>
+                            <p id="member_post" class="address-button" readonly onclick="findAddr()">
+                                우편번호 찾기
+                            </p>
+                            <input type="text" class="other-address" placeholder="나머지 주소">
+                        </div>
+                    </div>
+                </div>
+                <!-- //주문자 정보 -->
+
+
+                <!-- 배송 정보 -->
+                <div class="customer-info delivery-info">
+                    <p class="txt-kor customer-title">배송정보</p>
+
+                    <div class="customer">
+                        <div class="customer-wrap name-wrap">
+                            <p class="txt-kor name">배송지 선택</p>
+                            <input type="checkbox" class="delivery-check">
+                            <p class="txt-kor">주문자와 동일</p>
+                        </div>
+                        <div class="customer-wrap name-wrap">
+                            <p class="txt-kor name">받으시는 분</p>
+                            <input type="text">
+                        </div>
+                        <div class="customer-wrap number-wrap">
+                            <p class="txt-kor number">휴대폰 번호</p>
+                            <select name="number" class="selection">
+                                <option value="" selected>선택</option>
+                                <option value="02">02</option>
+                                <option value="070">070</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="019">019</option>
+                                <option value="060">060</option>
+                                <option value="080">080</option>
+                            </select>
+                            <input type="number">
+
+                        </div>
+                        <div class="customer-wrap number-wrap">
+                            <p class="txt-kor number">전화번호</p>
+                            <select name="number" class="selection">
+                                <option value="" selected>선택</option>
+                                <option value="02">02</option>
+                                <option value="070">070</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="019">019</option>
+                                <option value="060">060</option>
+                                <option value="080">080</option>
+                            </select>
+                            <input type="number">
+
+                        </div>
+                        <div class="customer-wrap email-wrap">
+                            <p class="txt-kor name">이메일</p>
+                            <input type="email">
+                            <p class="txt-eng at">@</p>
+                            <input type="email" class="email-dot">
+                            <select name="number" class="selection">
+                                <option value="" selected>직접입력</option>
+                                <option value="naver">naver.com</option>
+                                <option value="google">google.com</option>
+                                <option value="hanmail">hanmail.net</option>
+                                <option value="nate">nate.com</option>
+
+                            </select>
+                        </div>
+                        <div class="customer-wrap address-wrap">
+                            <p class="txt-kor name">배송 주소</p>
+                            <input id="member_addr" type="text" readonly>
+                            <p id="member_post" class="address-button" readonly onclick="findAddr()">
+                                우편번호 찾기
+                            </p>
+                            <input type="text" class="other-address" placeholder="나머지 주소">
+                        </div>
+                        <div class="customer-wrap message-wrap">
+                            <p class="txt-kor name">배송 메세지</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- //배송 정보 -->
+
+                
+                <!-- 결제 정보 -->
+                <div class="order-info">
+                    <p class="txt-kor order-title">결제정보</p>
+
+                    <div class="order-way">
+
+                        <div class="txt-kor payment-way card"><a href="#none"></a>신용카드</div>
+                        <div class="txt-kor payment-way deposit"><a href="#none"></a>무통장입금</div>
+                        <div class="txt-kor payment-way live"><a href="#none"></a>실시간 계좌이체</div>
+                        <div class="txt-kor payment-way phone"><a href="#none"></a>휴대폰 결제</div>
+                        <div class="txt-kor payment-way easy"><a href="#none"></a>간편 결제</div>
+
+                    </div>
+                    
+                </div>
+                <!-- //결제 정보 -->
+                
+                
+                
+            </div>
+
+            <!-- //결제 정보란-->
+
+
+
+
+
+            <!-- 결제 금액란 -->
+            <div class="checkout-price">
+                <p class="txt-kor checkout-price-title">주문 정보</p>
+                <div class="checkout-price-box">
+                    <div class="product-price-wrap">
+                        <p class="txt-kor">상품금액</p>
+                        <p class="txt-kor price">660,000 원</p>
+                    </div>
+                    <div class="product-price-wrap">
+                        <p class="txt-kor">할인금액</p>
+                        <p class="txt-kor price">- 0 원</p>
+                    </div>
+                    <div class="product-price-wrap delivery">
+                        <p class="txt-kor">배송비</p>
+                        <p class="txt-kor price">+ 80,000 원</p>
+                    </div>
+                    <div class="product-price-wrap delivery2">
+                        <p class="txt-kor">+ 추가 배송비</p>
+                        <p class="txt-kor price">+ 0 원</p>
+                    </div>
+                    <div class="product-price-wrap last-checkout">
+                        <p class="txt-kor">최종 결제금액</p>
+                        <p class="txt-kor price">740,000 원</p>
+                    </div>
+                </div>
+
+                <div class="submit-wrap">
+                    <p class="txt-kor submit">개인정보처리방침 내용을 확인하였으며, 이에 동의합니다.</p>
+                    <input type="checkbox" class="submit-check">
+                </div>
+                <div class="submit-txt">
+                    <div class="submit-txt-wrap">
+                        <p class="txt-kor title">개인정보처리방침</p>
+                        <p class="txt-kor">(주)J&amp;D코퍼레이션은 (이하 '회사'는)
+
+                            고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.
+
+
+
+                            회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+
+
+
+                            회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+
+
+
+                            본 방침은 : 2018 년 05 월 15 일 부터 시행됩니다.
+
+
+
+
+
+
+
+                            1.수집하는 개인정보 항목
+
+                            회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+
+
+
+                            수집항목 : 이름 , 생년월일 , 로그인ID , 비밀번호 , 비밀번호 질문과 답변 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 서비스 이용기록 , 접속 로그 , 쿠키 , 접속 IP 정보 , 결제기록 , 업체명 , 사업자등록번호 , 업태 , 종목 , 담당자명 , 담당자전화번호 , 담당자휴대폰번호 , 사업장주소
+
+
+
+                            개인정보 수집방법 : 홈페이지(회원가입, 상담게시판)
+
+
+
+
+
+
+
+                            개인정보의 수집 및 이용목적
+
+                            회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+
+
+
+                            - 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산
+
+
+
+                            콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송 , 금융거래 본인 인증 및 금융 서비스
+
+
+
+                            - 회원 관리
+
+
+
+                            회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 , 가입 의사 확인 , 연령확인 , 불만처리 등 민원처리 , 고지사항 전달
+
+
+
+                            - 마케팅 및 광고에 활용
+
+
+
+                            신규 서비스(제품) 개발 및 특화 , 이벤트 등 광고성 정보 전달 , 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계
+
+
+
+
+
+
+
+                            2.개인정보의 보유 및 이용기간
+
+                            원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.
+
+
+
+                            - 보존 항목 : 이름 , 생년월일 , 로그인ID , 비밀번호 , 비밀번호 질문과 답변 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 서비스 이용기록 , 접속 로그 , 쿠키 , 접속 IP 정보 , 결제기록 , 업체명 , 사업자등록번호 , 업태 , 종목 , 담당자명 , 담당자전화번호 , 담당자휴대폰번호 , 사업장주소
+
+
+
+                            - 보존 근거 : 회사 내부 방침에 의한 별도 관리
+
+
+
+                            - 보존 기간 : 회원 가입을 탈퇴하거나 회원 등록이 말소된 때
+
+
+
+                            그리고 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.
+
+
+
+                            - 계약 또는 청약철회 등에 관한 기록 : 5년 (전자상거래등에서의 소비자보호에 관한 법률)
+
+                            - 대금결제 및 재화 등의 공급에 관한 기록 : 5년 (전자상거래등에서의 소비자보호에 관한 법률)
+
+                            - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래등에서의 소비자보호에 관한 법률)
+
+
+
+
+
+
+
+                            3.개인정보의 파기절차 및 방법
+
+                            회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.
+
+
+
+                            - 파기절차
+
+
+
+                            회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다.
+
+
+
+                            별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.
+
+
+
+                            - 파기방법
+
+
+
+                            전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+
+
+
+
+
+
+
+                            4.개인정보 제공
+
+                            회사는 회원에 대하여 보다 더 질 높은 서비스 제공 등을 위해 아래와 같이 귀하의 개인정보를 제공하고 있습니다.
+
+
+
+                            - 제공 대상 : 자사 직원
+
+                            - 제공하는 개인정보 항목 : 이름,자택 전화번호,자택 주소,휴대전화번호
+
+                            - 제공정보의 이용 목적 : 상품배송업무, 상품대응업무
+
+                            - 제공 정보의 보유 및 이용 기간 : 즉시파기
+
+
+
+                            다만, 아래의 경우에는 예외로 합니다.
+
+
+
+                            - 이용자들이 사전에 동의한 경우
+
+
+
+                            - 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우
+
+
+
+
+
+
+
+                            5.수집한 개인정보의 위탁
+
+                            회사는 서비스 이행을 위해 아래와 같이 외부 전문업체에 위탁하여 운영하고 있습니다.
+
+
+
+                            위탁 대상자 : 택배사
+
+                            위탁업무 내용 : 상품배송업무
+
+
+
+                            위탁 대상자 : 이니시스
+
+                            위탁업무 내용 : 상품 구매에 필요한 신용카드, 현금결제 등의 결제정보 전송
+
+
+
+
+
+
+
+                            6.이용자 및 법정대리인의 권리와 그 행사방법
+
+                            이용자 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.
+
+
+
+                            이용자 혹은 만 14세 미만 아동의 개인정보 조회 수정을 위해서는 ‘개인정보변경’(또는 ‘회원정보수정’ 등)을 가입해지(동의철회)를 위해서는“회원탈퇴”를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다.
+
+                            혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.
+
+
+
+                            귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다. </p>
+                    </div>
+                </div>
+                <div class="submit-wrap submit-wrap2">
+                    <p class="txt-kor submit">주문하실 상품의 정보를 확인하였으며, 이에 동의합니다.</p>
+                    <input type="checkbox" class="submit-check">
+                </div>
+                <div class="submit-wrap3">
+                    <p class="txt-kor submit">전체동의</p>
+                    <input type="checkbox" class="submit-check">
+                </div>
+
+                <a href="#none">
+                    <p class="txt-kor order-button">주문하기</p>
+                </a>
+            </div>
+            <!-- //결제 금액란 -->
         </div>
-        
+
     </div>
-    
-    
-    
-    
+
+
+
+
     <div id="footer"></div>
 
 
 
 
-</body></html>
+</body>
+
+<script>
+    function findAddr() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+
+                console.log(data);
+
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+                // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var roadAddr = data.roadAddress; // 도로명 주소 변수
+                var jibunAddr = data.jibunAddress; // 지번 주소 변수
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('member_post').value = data.zonecode;
+                if (roadAddr !== '') {
+                    document.getElementById("member_addr").value = roadAddr;
+                } else if (jibunAddr !== '') {
+                    document.getElementById("member_addr").value = jibunAddr;
+                }
+            }
+        }).open();
+    }
+</script>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script></html>

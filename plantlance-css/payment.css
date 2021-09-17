@@ -581,6 +581,20 @@ li {
     top:50%;
     transform: translate(0,-50%);
 } 
+.way-info-wrap .card .selection{
+    position: relative;
+    float:left;
+    width:200px;
+    background: none;
+    border:none;
+    border-bottom:1px solid #777;
+    padding-bottom:5px;
+    color:#a8a8a8;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-left:50px;
+    outline: none;
+}
 
 /* //order-info */
 

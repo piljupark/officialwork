@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+    <script src="../plantlance-script/payment.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/payment.css">
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    <script src="../plantlance-script/payment.js"></script>
+    
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+    
+    <div id="payment">
+        <div class="payment-wrap">
+            
+             <!-- 결제 정보란 -->
+             <div class="checkout-info">
+                 <p class="txt-eng checkout-title">CHECK OUT</p>
+                 <div class="product-info">
+                     <p class="txt-kor product-info-title">주문상품 정보</p>
+                     <p class="txt-kor product-info-ea">2</p>
+                     <div class="product-box">
+                         <div class="product-wrap">
+                             <div class="product">
+                                 <div class="product-img"></div>
+                                 <div class="product-option">
+                                     <p class="txt-eng-bold product-name">
+                                         WILY TABLE
+                                     </p>
+                                     <div class="my-option">
+                                         <p class="txt-eng">A type</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">Silver</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">Round</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">ShadeBlue</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">600 X 600</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <p class="txt-eng ea">X 1</p>
+                             <p class="txt-eng price"> 330,000 원</p>
+                         </div>
+                         <div class="product-wrap">
+                             <div class="product">
+                                 <div class="product-img"></div>
+                                 <div class="product-option">
+                                     <p class="txt-eng-bold product-name">
+                                         WILY TABLE
+                                     </p>
+                                     <div class="my-option">
+                                         <p class="txt-eng">A type</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">Silver</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">Round</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">ShadeBlue</p>
+                                         <p class="txt-eng">/</p>
+                                         <p class="txt-eng">600 X 600</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <p class="txt-eng ea">X 1</p>
+                             <p class="txt-eng price"> 330,000 원</p>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 
+                 
+                 
+                 <!-- 주문자 정보 -->
+                 <div class="customer-info">
+                     <p class="txt-kor customer-title">주문자 정보</p>
+                     
+                     <div class="customer">
+                         <div class="customer-wrap name-wrap">
+                             <p class="txt-kor">성함</p>
+                         </div>
+                         <div class="customer-wrap number-wrap"></div>
+                         <div class="customer-wrap email-wrap"></div>
+                         <div class="customer-wrap address-wrap"></div>
+                     </div>
+                 </div>
+                 <!-- //주문자 정보 -->
+                 
+             </div>
+             
+             <!-- //결제 정보란-->
+             
+             
+             
+             
+             
+             <!-- 결제 금액란 -->
+             <div class="checkout-price">
+                 <p class="txt-kor checkout-price-title">주문 정보</p>
+                 <div class="checkout-price-box">
+                     <div class="product-price-wrap">
+                         <p class="txt-kor">상품금액</p>
+                         <p class="txt-kor price">660,000 원</p>
+                     </div>
+                     <div class="product-price-wrap">
+                         <p class="txt-kor">할인금액</p>
+                         <p class="txt-kor price">- 0 원</p>
+                     </div>
+                     <div class="product-price-wrap delivery">
+                         <p class="txt-kor">배송비</p>
+                         <p class="txt-kor price">+ 80,000 원</p>
+                     </div>
+                     <div class="product-price-wrap delivery2">
+                         <p class="txt-kor">+ 추가 배송비</p>
+                         <p class="txt-kor price">+ 0 원</p>
+                     </div>
+                     <div class="product-price-wrap last-checkout">
+                         <p class="txt-kor">최종 결제금액</p>
+                         <p class="txt-kor price">740,000 원</p>
+                     </div>
+                 </div>
+             </div>
+             <!-- //결제 금액란 -->
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div id="footer"></div>
+
+
+
+
+</body></html>

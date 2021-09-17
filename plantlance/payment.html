@@ -234,8 +234,8 @@
                         </div>
                         <div class="customer-wrap address-wrap">
                             <p class="txt-kor name">배송 주소</p>
-                            <input id="member_addr" type="text" readonly>
-                            <p id="member_post" class="address-button" readonly onclick="findAddr()">
+                            <input id="member_addr2" type="text" readonly>
+                            <p id="member_post2" class="address-button" readonly onclick="findAddr1()">
                                 우편번호 찾기
                             </p>
                             <input type="text" class="other-address" placeholder="나머지 주소">
@@ -248,26 +248,45 @@
                 </div>
                 <!-- //배송 정보 -->
 
-                
+
                 <!-- 결제 정보 -->
                 <div class="order-info">
                     <p class="txt-kor order-title">결제정보</p>
 
                     <div class="order-way">
-
-                        <div class="txt-kor payment-way card"><a href="#none"></a>신용카드</div>
-                        <div class="txt-kor payment-way deposit"><a href="#none"></a>무통장입금</div>
-                        <div class="txt-kor payment-way live"><a href="#none"></a>실시간 계좌이체</div>
-                        <div class="txt-kor payment-way phone"><a href="#none"></a>휴대폰 결제</div>
-                        <div class="txt-kor payment-way easy"><a href="#none"></a>간편 결제</div>
+                        <input type="radio" id="card" name="show" checked />
+                        <input type="radio" id="deposit" name="show" />
+                        <input type="radio" id="live" name="show" />
+                        <input type="radio" id="phone" name="show" />
+                        <input type="radio" id="easy" name="show" />
+                        
+                        <div class="order-way-wrap">
+                            <label for="card" class="txt-kor">신용카드</label>
+                            <label for="deposit" class="txt-kor">무통장입금</label>
+                            <label for="live" class="txt-kor">실시간 계좌이체</label>
+                            <label for="phone" class="txt-kor">휴대폰 결제</label>
+                            <label for="easy" class="txt-kor">간편결제</label>
+                        </div>
+                        
+                        <div class="way-info-wrap">
+                            <div class="way-info card">
+                                <p class="txt-kor title">신용카드</p>
+                                <div class="line"></div>
+                                
+                            </div>
+                            <div class="way-info">321321321</div>
+                            <div class="way-info">321321</div>
+                            <div class="way-info">321321</div>
+                            <div class="way-info">321321</div>
+                        </div>
 
                     </div>
-                    
+
                 </div>
                 <!-- //결제 정보 -->
-                
-                
-                
+
+
+
             </div>
 
             <!-- //결제 정보란-->
@@ -562,6 +581,29 @@
                     document.getElementById("member_addr").value = roadAddr;
                 } else if (jibunAddr !== '') {
                     document.getElementById("member_addr").value = jibunAddr;
+                }
+            }
+        }).open();
+    }
+</script>
+<script>
+    function findAddr1() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+
+                console.log(data);
+
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+                // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var roadAddr = data.roadAddress; // 도로명 주소 변수
+                var jibunAddr = data.jibunAddress; // 지번 주소 변수
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('member_post2').value = data.zonecode;
+                if (roadAddr !== '') {
+                    document.getElementById("member_addr2").value = roadAddr;
+                } else if (jibunAddr !== '') {
+                    document.getElementById("member_addr2").value = jibunAddr;
                 }
             }
         }).open();

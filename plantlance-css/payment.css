@@ -207,22 +207,23 @@ li {
 
 
 /* payment */
-#payment{
+#payment {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:150px;
-    margin-bottom:100px;
+    float: left;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
 }
-.payment-wrap{
+
+.payment-wrap {
     position: relative;
-    width:100%;
+    width: 100%;
     max-width: 1360px;
-    height:auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -232,97 +233,110 @@ li {
 
 
 /* checkout-info */
-.checkout-info{
+.checkout-info {
     position: relative;
-    width:100%;
+    width: 100%;
     padding-left: 10px;
 }
-.checkout-info .checkout-title{
+
+.checkout-info .checkout-title {
     font-size: 20px;
     margin-bottom: 50px;
 }
-.checkout-info .product-info{
+
+.checkout-info .product-info {
     position: relative;
-    float:left;
-    width:100%;
-}
-.checkout-info p{
-    position: relative;
-    float:left;
-    width:auto;
-}
-.checkout-info .product-info-ea{
-    margin-left:10px;
-    color:#0A57BF;
-}
-.product-info .product-box{
-    position: relative;
-    float:left;
-    width:100%;
-    margin-top:10px;
-    border-top:2px solid #292929;
+    float: left;
+    width: 100%;
 }
 
-.product-box .product-wrap{
+.checkout-info p {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: auto;
+}
+
+.checkout-info .product-info-ea {
+    margin-left: 10px;
+    color: #0A57BF;
+}
+
+.product-info .product-box {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 2px solid #292929;
+}
+
+.product-box .product-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
     padding-bottom: 20px;
-    padding-top:20px;
+    padding-top: 20px;
     border-bottom: 1px solid #ddd;
 }
-.product-wrap .product{
+
+.product-wrap .product {
     position: relative;
-    float:left;
-    width:70%;
+    float: left;
+    width: 70%;
 }
-.product .product-img{
+
+.product .product-img {
     position: relative;
-    float:left;
-    width:100px;
-    height:100px;
+    float: left;
+    width: 100px;
+    height: 100px;
     background: #d8d8d8;
-    margin-right:20px;
+    margin-right: 20px;
 }
-.product .product-option{
+
+.product .product-option {
     position: relative;
-    float:left;
+    float: left;
 }
-.product-option .product-name{
+
+.product-option .product-name {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
 }
-.product-option .my-option{
-    position:relative;
-    float:left;
-    width:150px;
-    margin-top:55px;
-}
-.product-option .my-option p{
+
+.product-option .my-option {
     position: relative;
-    float:left;
-    width:auto;
-    color:#999;
+    float: left;
+    width: 150px;
+    margin-top: 55px;
+}
+
+.product-option .my-option p {
+    position: relative;
+    float: left;
+    width: auto;
+    color: #999;
     font-size: 12px;
     margin: 0 3px;
 }
-.product-wrap .ea{
+
+.product-wrap .ea {
     position: relative;
-    float:left;
-    width:15%;
-    height:100px;
+    float: left;
+    width: 15%;
+    height: 100px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
 }
-.product-wrap .price{
+
+.product-wrap .price {
     position: relative;
-    float:left;
-    width:15%;
-    height:100px;
+    float: left;
+    width: 15%;
+    height: 100px;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -333,164 +347,241 @@ li {
 
 
 /* customer-info*/
-.customer-info{
+.customer-info {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:80px;
-}
-.customer-info .customer-title{
-    position: relative;
-    float:left;
-    width:100%;
-    margin-bottom:10px;
+    float: left;
+    width: 100%;
+    margin-top: 80px;
 }
 
-.customer{
+.customer-info .customer-title {
     position: relative;
-    float:left;
-    width:100%;
-    border-top:2px solid #292929;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
 }
-.customer .customer-wrap{
+
+.customer {
     position: relative;
-    float:left;
-    width:100%;
-    padding:10px 0;
-    border-bottom:1px solid #ddd;
+    float: left;
+    width: 100%;
+    border-top: 2px solid #292929;
 }
-.customer-wrap p{
+
+.customer .customer-wrap {
     position: relative;
-    float:left;
-    width:150px;
-    height:30px;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.customer-wrap p {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 30px;
     text-align: left;
-    padding-left:10px; 
-    top:50%;
+    padding-left: 10px;
+    top: 50%;
     display: flex;
     align-content: center;
     align-items: center;
     justify-items: center;
 }
-.customer-wrap input{
+
+.customer-wrap input {
     position: relative;
-    float:left;
-    border:1px solid #d8d8d8;
-    background:#eee;
-    width:200px;
-    height:25px;
-    padding-left:10px;
+    float: left;
+    border: 1px solid #d8d8d8;
+    background: #eee;
+    width: 200px;
+    height: 25px;
+    padding-left: 10px;
     outline: none;
- }
-.customer-wrap .selection{
+}
+
+.customer-wrap .selection {
     position: relative;
-    float:left;
-    width:80px;
-    height:29px;
-    border:1px solid #d8d8d8;
-    background:#eee;
-    padding:0;
-    margin:0;
-    margin-right:10px;
+    float: left;
+    width: 80px;
+    height: 29px;
+    border: 1px solid #d8d8d8;
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
     outline: none;
-    padding-left:10px;
-    color:#777;
+    padding-left: 10px;
+    color: #777;
 }
-.email-wrap .at{
-    width:auto;
-    margin-right:10px;
+
+.email-wrap .at {
+    width: auto;
+    margin-right: 10px;
 }
-.email-wrap .email-dot{
-    width:100px;
-    margin-right:10px;
+
+.email-wrap .email-dot {
+    width: 100px;
+    margin-right: 10px;
 }
-.email-wrap .selection{
-    width:110px;
+
+.email-wrap .selection {
+    width: 110px;
 }
 
 
-.address-wrap .address-button{
-    width:auto;
+.address-wrap .address-button {
+    width: auto;
     background: #292929;
-    color:#fff;
-    padding:0 15px;
+    color: #fff;
+    padding: 0 15px;
     font-size: 12px;
-    margin-left:10px;
+    margin-left: 10px;
     cursor: pointer;
 }
-.address-wrap .other-address{
-    width:50%;
-    margin-left:160px;
-    margin-top:10px;
+
+.address-wrap .other-address {
+    width: 50%;
+    margin-left: 160px;
+    margin-top: 10px;
 }
+
 /* //customer-info*/
 
 
 
 
 /* delivery-info */
-.delivery-info .delivery-check{
-    width:10px;
-    margin-top:4px;
+.delivery-info .delivery-check {
+    width: 10px;
+    margin-top: 4px;
 }
-.delivery-info .message-wrap input{
-    height:40px;
+
+.delivery-info .message-wrap input {
+    height: 40px;
 }
+
 /* //delivery-info */
 
 
 
 /* order-info */
-.order-info{
+.order-info {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:80px;
+    float: left;
+    width: 100%;
+    margin-top: 80px;
 }
-.order-info .order-title{
+
+.order-info .order-title {
     position: relative;
-    float:left;
-    width:100%;
-    margin-left:10px;
+    float: left;
+    width: 100%;
+    margin-left: 10px;
 }
-.order-way{
+
+.order-way {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.order-way input[type=radio] {
+    display: none;
+}
+
+#card:checked ~ .order-way-wrap label:nth-child(1),
+#deposit:checked ~ .order-way-wrap label:nth-child(2),
+#live:checked ~ .order-way-wrap label:nth-child(3),
+#phone:checked ~ .order-way-wrap label:nth-child(4),
+#easy:checked ~ .order-way-wrap label:nth-child(5) {
+    color:#fff;
+    background: #333;
+    border:1px solid #333;
+}
+
+.way-info-wrap > div {
+    display: none;
+}
+
+#card:checked ~ .way-info-wrap div:nth-child(1),
+#deposit:checked ~ .way-info-wrap div:nth-child(2),
+#live:checked ~ .way-info-wrap div:nth-child(3),
+#phone:checked ~ .way-info-wrap div:nth-child(4),
+#easy:checked ~ .way-info-wrap div:nth-child(5) {
+    display: block;
+}
+
+.order-way-wrap {
     position: relative;
     float:left;
     width:100%;
-    margin-top:20px;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
-.order-way .payment-way{
-    position: relative;
-    float:left;
-    width: 100%;
-    height:40px;
-    border:1px solid #292929;
+
+.order-way-wrap label {
+    cursor: pointer;
+    float: left;
+    width: 20%;
     text-align: center;
+    padding: 15px 0;
+    user-select: none;
+    -webkit-user-select: none;
     margin:0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border:1px solid #292929;
     transition-duration: .2s;
 }
-.order-way .card{
+.order-way-wrap label:nth-child(1){
     margin-left:0;
 }
-.order-way .easy{
+.order-way-wrap label:nth-child(5){
     margin-right:0;
 }
-.order-way a{
-    position: absolute;
-    display: block;
+
+
+
+.way-info-wrap {
+    position: relative;
+    float:left;
+    width:100%;
+    height:100px;
+    margin-top:20px;
+    background: #eee;
+    border-top:1px solid #777;
+    border-bottom:1px solid #777;
+}
+.way-info-wrap .way-info{
+    position: relative;
+    float:left;
     width:100%;
     height:100%;
 }
-.order-way .payment-way:hover{
-    color:#fff;
-    background: #555;
-    border:1px solid #555;
-}
+.way-info-wrap .card .title{
+    position: relative;
+    float:left;
+    width:100px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    color:#999;
+} 
+.way-info-wrap .card .line{
+    position: relative;
+    float:left;
+    width:auto;
+    height:40px;
+    border-right:2px solid #999;
+    top:50%;
+    transform: translate(0,-50%);
+} 
+
 /* //order-info */
 
 
@@ -505,147 +596,162 @@ li {
 
 
 /* checkout-price */
-.checkout-price{
+.checkout-price {
     position: relative;
-    width:400px;
-    margin-left:50px;
-    padding-right:10px;
+    width: 400px;
+    margin-left: 50px;
+    padding-right: 10px;
 }
-.checkout-price .checkout-price-title{
+
+.checkout-price .checkout-price-title {
     position: relative;
     float: left;
-    width:100%;
+    width: 100%;
     margin-bottom: 10px;
-    margin-top:73px;
+    margin-top: 73px;
 }
-.checkout-price .checkout-price-box{
+
+.checkout-price .checkout-price-box {
     position: relative;
-    float:left;
-    width:85%;
-    height:180px;
-    border:1px solid #292929;
-    border-top:2px solid #292929;
-    padding:20px;
+    float: left;
+    width: 85%;
+    height: 180px;
+    border: 1px solid #292929;
+    border-top: 2px solid #292929;
+    padding: 20px;
 }
-.checkout-price .product-price-wrap{
+
+.checkout-price .product-price-wrap {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     margin-bottom: 10px;
 }
-.checkout-price .product-price-wrap p{
+
+.checkout-price .product-price-wrap p {
     position: relative;
-    float:left;
-    width:auto;
+    float: left;
+    width: auto;
     font-size: 12px;
 }
-.checkout-price .product-price-wrap .price{
-    float:right;
+
+.checkout-price .product-price-wrap .price {
+    float: right;
 }
 
-.checkout-price .delivery{
-    margin-top:30px;
+.checkout-price .delivery {
+    margin-top: 30px;
     opacity: 1;
-    
+
 }
-.checkout-price .delivery2 p{
+
+.checkout-price .delivery2 p {
     opacity: .5;
     font-size: 11px;
-    
-}
-.checkout-price .delivery2{
-    border-bottom:1px solid #ddd;
-    padding-bottom:10px;
+
 }
 
-.checkout-price .last-checkout{
-    margin-top:20px;
+.checkout-price .delivery2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.checkout-price .last-checkout {
+    margin-top: 20px;
     margin-bottom: 0;
 }
-.checkout-price .last-checkout p{
+
+.checkout-price .last-checkout p {
     font-size: 14px;
 }
-.checkout-price .last-checkout .price{
-    color:#3D82B8;
+
+.checkout-price .last-checkout .price {
+    color: #3D82B8;
 }
 
 
 
 
-.checkout-price .submit-wrap{
+.checkout-price .submit-wrap {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:30px;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
-.checkout-price .submit{
+
+.checkout-price .submit {
     position: relative;
-    width:auto;
+    width: auto;
     font-size: 12px;
-    color:#777;
-}
-.checkout-price .submit-check{
-    position: relative;
-    margin-top:1px;
+    color: #777;
 }
 
-.submit-txt{
+.checkout-price .submit-check {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:10px;
-    height:80px;
+    margin-top: 1px;
+}
+
+.submit-txt {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    height: 80px;
     background: #eee;
     overflow-y: scroll;
 }
-.submit-txt-wrap{
-    position:relative;
-    float:left;
-    width:90%;
-    margin-left:5%;
-    margin-top:5%;
+
+.submit-txt-wrap {
+    position: relative;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
     padding-bottom: 20px;
 }
-.submit-txt-wrap p{
+
+.submit-txt-wrap p {
     position: relative;
-    float:left;
-    color:#999;
+    float: left;
+    color: #999;
     line-height: 1.5;
 }
-.submit-txt-wrap .title{
-    color:#292929;
-    margin-bottom:10px;
+
+.submit-txt-wrap .title {
+    color: #292929;
+    margin-bottom: 10px;
 }
 
-.submit-wrap2{
+.submit-wrap2 {
     padding-bottom: 15px;
-    border-bottom:1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
-.submit-wrap3{
+.submit-wrap3 {
     position: relative;
-    float:right;
-    width:75px;
+    float: right;
+    width: 75px;
     display: flex;
     justify-content: space-between;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 
-.order-button{
+.order-button {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     background: #292929;
-    color:#fff;
+    color: #fff;
     text-align: center;
-    padding:15px 0;
-    margin-top:20px;   
+    padding: 15px 0;
+    margin-top: 20px;
 }
+
 /* //checkout-price */
-  
+
 
 
 
@@ -675,43 +781,4 @@ li {
 
 
 
-@media screen and (max-width:550px) and (min-width:300px) {
-    
-    
-
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:550px) and (min-width:300px) {}

@@ -488,7 +488,7 @@ li {
     margin-top: 20px;
 }
 
-.order-way input[type=radio] {
+.order-way .type-of-payment[type=radio] {
     display: none;
 }
 
@@ -548,7 +548,7 @@ li {
     position: relative;
     float:left;
     width:100%;
-    height:100px;
+    height:auto;
     margin-top:20px;
     background: #eee;
     border-top:1px solid #777;
@@ -558,9 +558,10 @@ li {
     position: relative;
     float:left;
     width:100%;
-    height:100%;
+    height:auto;
 }
-.way-info-wrap .card .title{
+
+.way-info-wrap .title{
     position: relative;
     float:left;
     width:100px;
@@ -570,9 +571,8 @@ li {
     justify-items: center;
     align-content: center;
     align-items: center;
-    color:#999;
 } 
-.way-info-wrap .card .line{
+.way-info-wrap .line{
     position: relative;
     float:left;
     width:auto;
@@ -581,21 +581,197 @@ li {
     top:50%;
     transform: translate(0,-50%);
 } 
+.way-info-wrap .card{
+    height: 100px;
+}
 .way-info-wrap .card .selection{
     position: relative;
     float:left;
-    width:200px;
+    width:30%;
     background: none;
     border:none;
     border-bottom:1px solid #777;
     padding-bottom:5px;
     color:#a8a8a8;
+    margin-left:50px;
+    outline: none;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+.way-info-wrap .card .monthly{
+    float:right;
+    margin-right:50px;
+    margin-left:0;
+}
+
+
+
+.way-info-wrap .deposit{
+    height:150px;
+}
+.way-info-wrap .deposit .line{
+    height:90px;
+}
+.way-info-wrap .deposit .title{
+    height:150px;
+}
+
+.deposit .deposit-wrap{
+    position: relative;
+    float:left;
+    width:auto;
+    height:95px;
+    top:50%;
+    transform: translate(0,-50%);
+    left:50px;
+}
+.deposit-name-account{
+    position: relative;
+    float:left;
+    height: auto;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.deposit-name-account .deposit-name{
+    position: relative;
+    float:left;
+}
+.deposit-name .name-title{
+    position: relative;
+    float:left;
+    width:auto;
+    margin-right:15px;
+    margin-top:4px;
+}
+.deposit-name .name-input{
+    position: relative;
+    float:left;
+    background: #ddd;
+    border: none;
+    height:25px;
+    outline: none;
+    padding-left: 10px;
+}
+.deposit-account{
+    position: relative;
+    float:left;
+    margin-left:50px;
+}
+.deposit-account .account-title{
+    color:#fff;
+    background: #333;
+    padding:5px 10px 7px 10px;
+    font-size: 12px;
+}
+.deposit-account .account-number{
+    position: relative;
+    float:left;
+    margin-left:20px;
+    color:#777;
+    margin-top:3px;
+}
+
+
+.deposit .account-caution{
+    position: absolute;
+    float:left;
+    bottom:50px;
+    left:151px;
+    font-size: 12px;
+    color:#888;
+}
+.deposit .account-caution2{
+    position: absolute;
+    float:left;
+    bottom:30px;
+    left:151px;
+    font-size: 12px;
+    color:#888;
+}
+
+
+
+
+
+.way-info-wrap .live{
+    height:100px;
+}
+.way-info-wrap .live .line{
+    height:40px;
+}
+.way-info-wrap .live .title{
+    height:100px;
+}
+.live-notice{
+    position: relative;
+    float:left;
+    margin-left: 50px;
+    top:50%;
+    transform: translate(0,-50%);
+    color:#888;
+    font-size: 12px;
+}
+
+.way-info-wrap .phone{
+    height:100px;
+}
+.way-info-wrap .phone-notice-wrap{
+    position: relative;
+    float:left;
+    width:75%;
     top:50%;
     transform: translate(0,-50%);
     margin-left:50px;
-    outline: none;
+}
+.phone-notice-wrap .phone-notice{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 12px;
+    line-height: 2;
+    color:#999;
 }
 
+
+.way-info-wrap .easy{
+    height:130px;
+}
+.easy .title{
+    height: 130px;
+}
+.easy-payment-wrap{
+    position: relative;
+    float:left;
+    width:70%;
+    height:40px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-left:50px;
+    display: flex;
+    justify-content:space-between;
+}
+.easy-payment-wrap .easy-payment-type{
+    position: relative;
+    float:left;
+    
+}
+.easy-payment-wrap .easy-payment-type input{
+    position: relative;
+    float:left;
+    padding:0;
+    margin:0;
+    top:5px;
+}
+.easy-payment-wrap .easy-payment-type img{
+    position: absolute;
+    float:left;
+    width:50px;
+    position: relative;
+    top:0px;
+    margin-left:5px;
+}
 /* //order-info */
 
 

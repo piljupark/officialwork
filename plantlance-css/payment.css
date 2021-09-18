@@ -741,12 +741,14 @@ li {
 .easy .title{
     height: 130px;
 }
+.easy .line{
+    height:70px;
+}
 .easy-payment-wrap{
     position: relative;
     float:left;
-    width:70%;
-    height:40px;
-    top:50%;
+    width:72%;
+    top:25%;
     transform: translate(0,-50%);
     margin-left:50px;
     display: flex;
@@ -755,7 +757,9 @@ li {
 .easy-payment-wrap .easy-payment-type{
     position: relative;
     float:left;
-    
+}
+.easy-payment-wrap .easy-payment-type label{
+    cursor: pointer;
 }
 .easy-payment-wrap .easy-payment-type input{
     position: relative;
@@ -765,12 +769,40 @@ li {
     top:5px;
 }
 .easy-payment-wrap .easy-payment-type img{
-    position: absolute;
+    position: relative;
     float:left;
     width:50px;
     position: relative;
-    top:0px;
-    margin-left:5px;
+    top:5px;
+    margin-left:10px;
+}
+.easy-payment-wrap .easy-payment-type:nth-child(3) img{
+    top:2px;
+}
+.easy-payment-wrap .easy-payment-type:nth-child(5) img{
+    top:8px;
+}
+.easy-payment-wrap .easy-payment-type:nth-child(6) img{
+    top:4px;
+}
+
+
+.easy-notice-wrap{
+    position: relative;
+    float:left;
+    width:75%;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-left:50px;
+}
+
+.easy-notice-wrap .easy-notice{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 12px;
+    line-height: 2;
+    color:#999;
 }
 /* //order-info */
 
@@ -838,7 +870,6 @@ li {
 .checkout-price .delivery2 p {
     opacity: .5;
     font-size: 11px;
-
 }
 
 .checkout-price .delivery2 {

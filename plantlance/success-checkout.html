@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+    <script src="../plantlance-script/success-checkout.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/success-checkout.css">
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    <script src="../plantlance-script/success-checkout.js"></script>
+
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+
+
+
+    <div id="success">
+        <div class="success-wrap">
+            <div class="title-shape">
+                <img src="../plantlance-image/icon/check5.png" alt="check">
+            </div>
+            <p class="txt-kor success-title">주문이 완료되었습니다.</p>
+
+            <div class="success-info-wrap">
+                <div class="success-info">
+                    <p class="txt-kor">|</p>
+                    <p class="txt-kor">주문상품</p>
+                    <p class="txt-kor">WILLY TABLE (FENIX)</p>
+                </div>
+                <div class="success-info">
+                    <p class="txt-kor">|</p>
+                    <p class="txt-kor">주문일시</p>
+                    <p class="txt-kor">2021. 10. 08</p>
+                </div>
+                <div class="success-info">
+                    <p class="txt-kor">|</p>
+                    <p class="txt-kor">주문번호</p>
+                    <p class="txt-kor">123A45BC678</p>
+                </div>
+                <div class="success-info success-price">
+                    <p class="txt-kor">|</p>
+                    <p class="txt-kor">결제금액</p>
+                    <p class="txt-kor">740,000 원</p>
+                </div>
+            </div>
+
+            <div class="back-to-shop">
+                
+                    <p class="txt-kor">
+                        SHOP
+                    </p>
+                    <p class="txt-kor">
+                        으로 돌아가기
+                    </p>
+                    <a href="plantlance.html">
+                    </a>
+            </div>
+
+            <div class="success-bottom-menu">
+                <a href="#none">
+                    <p class="txt-kor bottom-menu">배송조회</p>
+                </a>
+                <p class="txt-kor">|</p>
+                <a href="#none">
+                    <p class="txt-kor bottom-menu">주문취소</p>
+                </a>
+                <p class="txt-kor">|</p>
+                <a href="tel:1899-3417">
+                    <p class="txt-kor bottom-menu">고객센터</p>
+                </a>
+                <p class="txt-kor">|</p>
+                <a href="#none">
+                    <p class="txt-kor bottom-menu">카톡 상담문의</p>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--
+    <div id="footer"></div>
+
+    -->
+
+</body></html>

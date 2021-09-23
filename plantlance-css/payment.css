@@ -549,10 +549,12 @@ li {
     border-bottom: 1px solid #777;
 }
 
-.way-info-wrap .way-info {
+
+
+.title-wrap {
     position: relative;
     float: left;
-    width: 100%;
+    width: 140px;
     height: auto;
 }
 
@@ -568,49 +570,69 @@ li {
     align-items: center;
 }
 
+
 .way-info-wrap .line {
-    position: relative;
+    position: absolute;
     float: left;
     width: auto;
-    height: 40px;
     border-right: 2px solid #999;
-    top: 50%;
-    transform: translate(0, -50%);
+    left: 100px;
 }
 
-.way-info-wrap .card {
+
+.way-info .card {
+    position: relative;
+    float: left;
+    width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .title-wrap .line {
+    height: 50px;
+    top: 25px;
+}
+
+.card .card-selection-wrap {
+    position: absolute;
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .way-info-wrap .card .selection {
     position: relative;
     float: left;
-    width: 30%;
+    width: 300px;
     background: none;
     border: none;
     border-bottom: 1px solid #777;
     padding-bottom: 5px;
     color: #a8a8a8;
-    margin-left: 50px;
     outline: none;
-    top: 50%;
-    transform: translate(0, -50%);
+    cursor: pointer;
+    margin: 0 40px;
 }
-
-.way-info-wrap .card .monthly {
-    float: right;
-    margin-right: 50px;
-    margin-left: 0;
-}
-
 
 
 .way-info-wrap .deposit {
+    position: relative;
+    float: left;
+    width: 100%;
     height: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .way-info-wrap .deposit .line {
     height: 90px;
+    top: 30px;
 }
 
 .way-info-wrap .deposit .title {
@@ -620,11 +642,11 @@ li {
 .deposit .deposit-wrap {
     position: relative;
     float: left;
-    width: auto;
+    width: 100%;
     height: 95px;
     top: 50%;
     transform: translate(0, -50%);
-    left: 50px;
+    padding: 0 40px;
 }
 
 .deposit-name-account {
@@ -632,8 +654,6 @@ li {
     float: left;
     height: auto;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -653,6 +673,7 @@ li {
 .deposit-name .name-input {
     position: relative;
     float: left;
+    width: 70px;
     background: #ddd;
     border: none;
     height: 25px;
@@ -662,8 +683,7 @@ li {
 
 .deposit-account {
     position: relative;
-    float: left;
-    margin-left: 50px;
+    float: right;
 }
 
 .deposit-account .account-title {
@@ -678,7 +698,8 @@ li {
     float: left;
     margin-left: 20px;
     color: #777;
-    margin-top: 3px;
+    margin-top: 5px;
+    font-size: 12px;
 }
 
 
@@ -719,6 +740,7 @@ li {
 .live-notice {
     position: relative;
     float: left;
+    width: auto;
     margin-left: 50px;
     top: 50%;
     transform: translate(0, -50%);
@@ -768,8 +790,7 @@ li {
     top: 25%;
     transform: translate(0, -50%);
     margin-left: 50px;
-    display: flex;
-    justify-content: space-between;
+
 }
 
 .easy-payment-wrap .easy-payment-type {
@@ -1032,21 +1053,10 @@ li {
         display: flex;
         justify-content: space-between;
     }
-}
 
-
-
-
-
-@media screen and (max-width:1200px) and (min-width:1030px) {
-    .deposit-account .account-number {
-        font-size: 12px;
-        margin-top: 5px;
-    }
-
-
-    .deposit-name .name-input {
-        width: 70px;
+    .easy-payment-wrap {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -1054,6 +1064,26 @@ li {
 
 
 @media screen and (max-width:1029px) and (min-width:300px) {
+
+    .customer-wrap p {
+        width: 80px;
+    }
+
+    .address-wrap .other-address {
+        margin-left: 90px;
+
+    }
+
+    .message-wrap input {
+        width: 50%;
+        height: 90px;
+    }
+
+
+
+
+
+
     .payment-wrap {
         width: 95%;
     }
@@ -1078,10 +1108,17 @@ li {
         margin: 0 auto;
     }
 
-    
-    .product-wrap{
-        height:140px;
+
+    .product-wrap {
+        height: 140px;
     }
+
+    .product-option .my-option {
+        position: relative;
+        width: 150px;
+        margin-top: 35px;
+    }
+
     .product-wrap .ea {
         position: absolute;
         width: 20px;
@@ -1093,16 +1130,16 @@ li {
     .product-wrap .price {
         position: absolute;
         width: 100px;
-        height:100%;
+        height: 100%;
         display: block;
         top: 140px;
-        right: -35px;
+        right: -33px;
     }
-    
+
     .email-wrap .selection {
-        width: 114.5px;
-        float:left;
-}
+        width: 114px;
+        float: left;
+    }
 
 
 
@@ -1139,4 +1176,139 @@ li {
     }
 
     /* //checkout-price */
+
+
+
+
+
+
+
+
+
+    .way-info-wrap .card-wrap .selection {
+        position: relative;
+        float: left;
+        width: 300px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #777;
+        padding-bottom: 5px;
+        color: #a8a8a8;
+        outline: none;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+
+
+    .easy-payment-wrap .easy-payment-type {
+        position: relative;
+        float: left;
+        width: 33%;
+    }
+
+
+
+
+    /* deposit */
+    .deposit-account .account-number {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .deposit-name .name-input {
+        width: 70px;
+    }
+
+
+    .deposit .deposit-wrap {
+        width: 90%;
+    }
+
+    .deposit-name-account .deposit-name {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .deposit-name-account .deposit-account {
+        float: left;
+    }
+
+    .deposit-account .account-title {
+        color: #292929;
+        background: none;
+        font-size: 14px;
+        padding-left: 1px;
+    }
+
+    .deposit-account .account-number {
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        color: #777;
+        margin-top: 7px;
+    }
+
+    .deposit .notice-wrap p {
+        font-size: 10px;
+        margin-left: -10px;
+    }
+
+    /* //deposit */
+
+}
+
+
+
+
+@media screen and (max-width:550px) and (min-width:300px) {
+    .way-info .title-wrap{
+        display: none;
+    }
+    .way-info-wrap .way-info .card .title-wrap{
+        display: none;
+    }
+    .deposit{
+        height:180px;
+    }
+    .deposit .deposit-wrap{
+        margin-top:-15px;
+    }
+    .deposit .deposit-wrap input{
+       width:70%;
+    }
+    
+
+    .deposit .title-wrap .title {
+        height: 200px;
+    }
+
+    .deposit .title-wrap .line {
+        top: 55px;
+    }
+
+
+    .deposit-account .account-number {
+        position: relative;
+        float: left;
+        margin-left: 2px;
+        color: #777;
+        margin-top: 7px;
+        padding-bottom: 3px;
+    }
+    
+    
+    .deposit .notice-wrap{
+        position: absolute;
+        width:100%;
+        bottom:-15px;
+    }
+    .deposit .notice-wrap p{
+        left:0;
+        width:100%;
+        margin:0 auto;
+        text-align: center;
+    }
+    
 }

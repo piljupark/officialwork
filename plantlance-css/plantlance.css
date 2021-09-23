@@ -175,6 +175,7 @@ body {
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+    overflow: hidden;
 }
 
 

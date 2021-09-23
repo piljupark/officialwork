@@ -8,17 +8,24 @@ $(document).ready(function () {
         $("#nav-slide").css("width", "100%");
         $("#nav-slide").css("z-index", "5");
 
+        $("#nav-slide").css("animation-name", "menuShow");
+        $("#nav-slide").css("animation-delay", ".1s");
+        $("#nav-slide").css("animation-fill-mode", "forwards");
+
         $("#nav-slide > .nav-slide-wrap").css("transition-duration", ".2s");
         $("#nav-slide > .nav-slide-wrap").css("transition-delay", ".3s");
         $("#nav-slide > .nav-slide-wrap").css("opacity", "1");
 
+
         $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "block");
 
 
+        $(".nav-mob").css("animation-name", "menuShow");
+        $(".nav-mob").css("animation-delay", ".1s");
+        $(".nav-mob").css("animation-fill-mode", "forwards");
 
 
         $(".nav-mob").css("width", "100%");
-        $(".nav-mob").css("z-index", "5");
 
         $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
 
@@ -41,7 +48,9 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $("#nav-slide").css("width", "0");
-        $("#nav-slide").css("z-index", "4");
+        $("#nav-slide").css("animation-name", "menuNone");
+        $("#nav-slide").css("animation-delay", ".4s");
+        $("#nav-slide").css("animation-fill-mode", "forwards");
 
         $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
 
@@ -62,7 +71,9 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $(".nav-mob").css("width", "0");
-        $(".nav-mob").css("z-index", "4");
+        $(".nav-mob").css("animation-name", "menuNone");
+        $(".nav-mob").css("animation-delay", ".4s");
+        $(".nav-mob").css("animation-fill-mode", "forwards");
 
         $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
 
@@ -110,6 +121,13 @@ $(document).ready(function () {
         $(".nav-mob").css("width", "100%");
         $(".nav-mob").css("z-index", "5");
 
+        $("#nav-slide").css("animation-name", "menuShow");
+        $("#nav-slide").css("animation-delay", ".1s");
+        $("#nav-slide").css("animation-fill-mode", "forwards");
+        $(".nav-mob").css("animation-name", "menuShow");
+        $(".nav-mob").css("animation-delay", ".1s");
+        $(".nav-mob").css("animation-fill-mode", "forwards");
+
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "block");
         $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("opacity", "1");
 
@@ -134,7 +152,9 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $(".nav-mob").css("width", "0");
-        $(".nav-mob").css("z-index", "4");
+        $(".nav-mob").css("animation-name", "menuNone");
+        $(".nav-mob").css("animation-delay", ".4s");
+        $(".nav-mob").css("animation-fill-mode", "forwards");
 
         $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
 
@@ -163,7 +183,9 @@ $(document).ready(function () {
         $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
 
         $("#nav-slide").css("width", "0");
-        $("#nav-slide").css("z-index", "4");
+        $("#nav-slide").css("animation-name", "menuNone");
+        $("#nav-slide").css("animation-delay", ".4s");
+        $("#nav-slide").css("animation-fill-mode", "forwards");
 
         $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
 
@@ -229,24 +251,35 @@ $(document).ready(function () {
         $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .table").css("height", "110px");
 
         $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "315px");
+
+
     });
     /* //모바일 메뉴 - 퍼니쳐 - 테이블 활성화 */
 
-    
-    
-    
-    $("nav > .nav-wrap > .sub-button-wrap > a > .search-icon").click(function(){
-        $(".search-wrap").css("display","block");
-        
-        $("nav > .nav-wrap > a > .menu-icon").css("opacity","0");
-        $("nav > .nav-wrap > .sub-button-wrap").css("opacity","0");
+
+
+
+    /* 검색 활성화 */
+
+    $("nav > .nav-wrap > .sub-button-wrap > a > .search-icon").click(function () {
+        $(".search-wrap").css("display", "block");
+
+        $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
+        $("nav > .nav-wrap > .sub-button-wrap").css("opacity", "0");
     });
-    
-    $(".search-wrap > .search-tab > a > .search-close").click(function(){
-        $(".search-wrap").css("display","none");
-        
-        
-        $("nav > .nav-wrap > a > .menu-icon").css("opacity","1");
-        $("nav > .nav-wrap > .sub-button-wrap").css("opacity","1");
+
+    /* //검색 활성화 */
+
+
+
+    /* 검색 닫기 */
+    $(".search-wrap > .search-tab > a > .search-close").click(function () {
+        $(".search-wrap").css("display", "none");
+
+
+        $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
+        $("nav > .nav-wrap > .sub-button-wrap").css("opacity", "1");
+
     });
+    /* //검색 닫기 */
 });

@@ -232,4 +232,10 @@ $(document).ready(function () {
     });
     /* //모바일 메뉴 - 퍼니쳐 - 테이블 활성화 */
 
+    
+    
+    
+    $("nav > .nav-wrap > .sub-button-wrap > a > .search-icon").click(function(){
+        $(".search-wrap").css("display","block");
+    });
 });

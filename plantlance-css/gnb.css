@@ -844,6 +844,53 @@ nav {
 
 
 
+/* search-wrap */
+.search-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height:100vh;
+    background: #eee;
+    z-index: 5;
+    opacity: .8;
+    overflow: hidden;
+}
+
+.search-wrap .search-tab{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 140px;
+    background: #fff;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.search-wrap .search-tab input{
+    float:left;
+    border:none;
+    background: #eee;
+    width:500px;
+    height:35px;
+    margin-top:50px;
+    padding-left:40px;
+    outline: none;
+}
+.search-wrap .search-tab .search-img{
+    position:relative;
+    float:left;
+    width:20px;
+    background: #eee;
+    margin-top:50px;
+    padding:8.5px 10px;
+}
+/* search-wrap */
+
+
+
 
 
 

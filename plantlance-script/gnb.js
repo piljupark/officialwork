@@ -237,5 +237,16 @@ $(document).ready(function () {
     
     $("nav > .nav-wrap > .sub-button-wrap > a > .search-icon").click(function(){
         $(".search-wrap").css("display","block");
+        
+        $("nav > .nav-wrap > a > .menu-icon").css("opacity","0");
+        $("nav > .nav-wrap > .sub-button-wrap").css("opacity","0");
+    });
+    
+    $(".search-wrap > .search-tab > a > .search-close").click(function(){
+        $(".search-wrap").css("display","none");
+        
+        
+        $("nav > .nav-wrap > a > .menu-icon").css("opacity","1");
+        $("nav > .nav-wrap > .sub-button-wrap").css("opacity","1");
     });
 });

@@ -352,7 +352,7 @@ li {
 .product-box .product-title{
     position: relative;
     float:left;
-    width:auto;
+    width:130px;
     margin-left:20px;
 }
 .product-box .product-eng{
@@ -362,8 +362,9 @@ li {
     margin-right:10px;
 }
 .product-box .type{
-    position: relative;
+    position: absolute;
     float:left;
+    left:100px;
     font-size: 10px;
     color:#3675CA;
     border:1px solid #3675CA;
@@ -639,7 +640,7 @@ input:focus {
 
 
 
-@media screen and (max-width:550px) and (min-width:300px) {
+@media screen and (max-width:700px) and (min-width:300px) {
     
     
 

@@ -227,6 +227,23 @@ li {
 
 
 
+
+/* 모든 input 타입에 대한 모바일 radius 제거*/
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+/* //모든 input 타입에 대한 모바일 radius 제거*/
+
+
+
+
+
+
+
+
+
 /* payment */
 #payment {
     position: relative;
@@ -472,6 +489,12 @@ li {
     background: #f5f5f5;
 }
 
+.message-wrap input {
+    width: 60%;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
 /* //customer-info*/
 
 
@@ -575,9 +598,9 @@ li {
     width: 100%;
     height: auto;
     margin-top: 20px;
-    background: #eee;
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
+    background: #fcfcfc;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 
@@ -609,6 +632,131 @@ li {
     border-right: 2px solid #999;
     left: 100px;
 }
+
+
+
+
+
+/* way-info */
+.way-info {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.way-info .way-title-wrap {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100%;
+}
+
+.way-info .way-title-wrap .way-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Pretendard-Regular";
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 16px;
+    color: #585858;
+}
+
+.way-info .way-title-wrap .line {
+    position: absolute;
+    width: 0;
+    height: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #707070;
+}
+
+.way-info .way-txt-wrap {
+    position: relative;
+    float: left;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.way-info .way-txt-wrap select {
+    position: relative;
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ddd;
+    margin: 0 15px;
+    padding-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* //way-info */
+
+
+
+
+
+/* card */
+.way-info .card {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* //card */
+
+
+/* deposit */
+.way-info .deposit {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 150px;
+}
+
+/* //deposit */
+
+
+/* live */
+.way-info .live {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+/* //live */
+
+
+/* phone */
+.way-info .phone {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+/* //phone */
+
+
+/* easy */
+.way-info .easy {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+/* //easy */
 
 
 
@@ -831,21 +979,68 @@ li {
         padding: 15px 0;
         margin: 3px 10px;
     }
-    .order-way-wrap label:nth-child(1){
-        margin-left:10px;
+
+    .order-way-wrap label:nth-child(1) {
+        margin-left: 10px;
     }
-    .order-way-wrap label:nth-child(2){
-        float:right;
+
+    .order-way-wrap label:nth-child(2) {
+        float: right;
     }
-    .order-way-wrap label:nth-child(4){
-        float:right;
+
+    .order-way-wrap label:nth-child(4) {
+        float: right;
     }
-    
-    
+
+
 
 }
 
 
 
 
-@media screen and (max-width:550px) and (min-width:300px) {}
+@media screen and (max-width:859px) and (min-width:300px) {
+    .message-wrap input {
+        width: 40%;
+    }
+
+
+
+
+    .customer-wrap .selection {
+        width: 114px;
+        margin-top: 10px;
+    }
+
+
+
+
+    .order-way-wrap label {
+        width: 99%;
+        padding: 15px 0;
+        margin: 3px 0px;
+    }
+
+    .order-way-wrap label:nth-child(1) {
+        margin-left: 00px;
+    }
+
+    .order-way-wrap label:nth-child(2) {
+        float: left;
+    }
+
+    .order-way-wrap label:nth-child(4) {
+        float: left;
+    }
+
+
+    .way-info .way-title-wrap {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .way-info .way-txt-wrap {
+        width: 100%;
+        left: 50%;
+    }
+}

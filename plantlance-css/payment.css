@@ -109,6 +109,27 @@
 }
 
 
+@font-face {
+    src: url("../fonts/Pretendard-Regular.ttf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff2");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+
 
 
 
@@ -221,6 +242,8 @@ li {
     max-width: 1360px;
     margin: 0 auto;
     height: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -270,7 +293,7 @@ li {
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .product-wrap .product {
@@ -326,6 +349,7 @@ li {
     align-items: center;
 }
 
+
 .product-wrap .price {
     position: relative;
     float: left;
@@ -353,6 +377,8 @@ li {
     float: left;
     width: 100%;
     margin-bottom: 10px;
+    font-family: "Pretendard-SemiBold";
+    font-size: 16px;
 }
 
 .customer {
@@ -366,8 +392,8 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .customer-wrap p {
@@ -382,13 +408,14 @@ li {
     align-content: center;
     align-items: center;
     justify-items: center;
+    font-family: "Pretendard-Regular";
 }
 
 .customer-wrap input {
     position: relative;
     float: left;
-    border: 1px solid #d8d8d8;
-    background: #eee;
+    border: 1px solid #f0f0f0;
+    background: #fcfcfc;
     width: 20%;
     height: 25px;
     padding-left: 10px;
@@ -400,8 +427,8 @@ li {
     float: left;
     width: 80px;
     height: 29px;
-    border: 1px solid #d8d8d8;
-    background: #eee;
+    border: 1px solid #f0f0f0;
+    background: #fcfcfc;
     padding: 0;
     margin: 0;
     margin-right: 10px;
@@ -439,6 +466,10 @@ li {
     width: 50%;
     margin-left: 160px;
     margin-top: 10px;
+}
+
+.address-wrap input {
+    background: #f5f5f5;
 }
 
 /* //customer-info*/
@@ -518,7 +549,7 @@ li {
 .order-way-wrap label {
     cursor: pointer;
     float: left;
-    width: 100%;
+    width: 45%;
     text-align: center;
     padding: 15px 0;
     user-select: none;
@@ -580,275 +611,6 @@ li {
 }
 
 
-.way-info .card {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card .title-wrap .line {
-    height: 50px;
-    top: 25px;
-}
-
-.card .card-selection-wrap {
-    position: absolute;
-    width: 50%;
-    margin-left: 30px;
-    margin-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.way-info-wrap .card .selection {
-    position: relative;
-    float: left;
-    width: 300px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #777;
-    padding-bottom: 5px;
-    color: #a8a8a8;
-    outline: none;
-    cursor: pointer;
-    margin: 0 40px;
-}
-
-
-.way-info-wrap .deposit {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.way-info-wrap .deposit .line {
-    height: 90px;
-    top: 30px;
-}
-
-.way-info-wrap .deposit .title {
-    height: 150px;
-}
-
-.deposit .deposit-wrap {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 95px;
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 0 40px;
-}
-
-.deposit-name-account {
-    position: relative;
-    float: left;
-    height: auto;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.deposit-name-account .deposit-name {
-    position: relative;
-    float: left;
-}
-
-.deposit-name .name-title {
-    position: relative;
-    float: left;
-    width: auto;
-    margin-right: 15px;
-    margin-top: 4px;
-}
-
-.deposit-name .name-input {
-    position: relative;
-    float: left;
-    width: 70px;
-    background: #ddd;
-    border: none;
-    height: 25px;
-    outline: none;
-    padding-left: 10px;
-}
-
-.deposit-account {
-    position: relative;
-    float: right;
-}
-
-.deposit-account .account-title {
-    color: #fff;
-    background: #333;
-    padding: 5px 10px 7px 10px;
-    font-size: 12px;
-}
-
-.deposit-account .account-number {
-    position: relative;
-    float: left;
-    margin-left: 20px;
-    color: #777;
-    margin-top: 5px;
-    font-size: 12px;
-}
-
-
-.deposit .account-caution {
-    position: absolute;
-    float: left;
-    bottom: 50px;
-    left: 151px;
-    font-size: 12px;
-    color: #888;
-}
-
-.deposit .account-caution2 {
-    position: absolute;
-    float: left;
-    bottom: 30px;
-    left: 151px;
-    font-size: 12px;
-    color: #888;
-}
-
-
-
-
-
-.way-info-wrap .live {
-    height: 100px;
-}
-
-.way-info-wrap .live .line {
-    height: 40px;
-}
-
-.way-info-wrap .live .title {
-    height: 100px;
-}
-
-.live-notice {
-    position: relative;
-    float: left;
-    width: auto;
-    margin-left: 50px;
-    top: 50%;
-    transform: translate(0, -50%);
-    color: #888;
-    font-size: 12px;
-}
-
-.way-info-wrap .phone {
-    height: 100px;
-}
-
-.way-info-wrap .phone-notice-wrap {
-    position: relative;
-    float: left;
-    width: 75%;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-left: 50px;
-}
-
-.phone-notice-wrap .phone-notice {
-    position: relative;
-    float: left;
-    width: 100%;
-    font-size: 12px;
-    line-height: 2;
-    color: #999;
-}
-
-
-.way-info-wrap .easy {
-    height: 130px;
-}
-
-.easy .title {
-    height: 130px;
-}
-
-.easy .line {
-    height: 70px;
-}
-
-.easy-payment-wrap {
-    position: relative;
-    float: left;
-    width: 72%;
-    top: 25%;
-    transform: translate(0, -50%);
-    margin-left: 50px;
-
-}
-
-.easy-payment-wrap .easy-payment-type {
-    position: relative;
-    float: left;
-}
-
-.easy-payment-wrap .easy-payment-type label {
-    cursor: pointer;
-}
-
-.easy-payment-wrap .easy-payment-type input {
-    position: relative;
-    float: left;
-    padding: 0;
-    margin: 0;
-    top: 5px;
-}
-
-.easy-payment-wrap .easy-payment-type img {
-    position: relative;
-    float: left;
-    width: 50px;
-    position: relative;
-    top: 5px;
-    margin-left: 10px;
-}
-
-.easy-payment-wrap .easy-payment-type:nth-child(3) img {
-    top: 2px;
-}
-
-.easy-payment-wrap .easy-payment-type:nth-child(5) img {
-    top: 8px;
-}
-
-.easy-payment-wrap .easy-payment-type:nth-child(6) img {
-    top: 4px;
-}
-
-
-.easy-notice-wrap {
-    position: relative;
-    float: left;
-    width: 75%;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-left: 50px;
-}
-
-.easy-notice-wrap .easy-notice {
-    position: relative;
-    float: left;
-    width: 100%;
-    font-size: 12px;
-    line-height: 2;
-    color: #999;
-}
 
 /* //order-info */
 
@@ -966,7 +728,7 @@ li {
     width: 100%;
     margin-top: 10px;
     height: 80px;
-    background: #eee;
+    background: #f5f5f5;
     overflow-y: scroll;
 }
 
@@ -1064,251 +826,26 @@ li {
 
 
 @media screen and (max-width:1029px) and (min-width:300px) {
-
-    .customer-wrap p {
-        width: 80px;
-    }
-
-    .address-wrap .other-address {
-        margin-left: 90px;
-
-    }
-
-    .message-wrap input {
-        width: 50%;
-        height: 90px;
-    }
-
-
-
-
-
-
-    .payment-wrap {
-        width: 95%;
-    }
-
-
-    .product .product-img {
-        width: 60px;
-        height: 60px;
-
-    }
-
-
     .order-way-wrap label {
-        margin: 5px 0px;
-        width: 99.5%;
-
-
+        width: 45%;
+        padding: 15px 0;
+        margin: 3px 10px;
     }
-
-    .order-way-wrap {
-        width: 100%;
-        margin: 0 auto;
+    .order-way-wrap label:nth-child(1){
+        margin-left:10px;
     }
-
-
-    .product-wrap {
-        height: 140px;
+    .order-way-wrap label:nth-child(2){
+        float:right;
     }
-
-    .product-option .my-option {
-        position: relative;
-        width: 150px;
-        margin-top: 35px;
+    .order-way-wrap label:nth-child(4){
+        float:right;
     }
-
-    .product-wrap .ea {
-        position: absolute;
-        width: 20px;
-        display: block;
-        top: 20px;
-        right: 0;
-    }
-
-    .product-wrap .price {
-        position: absolute;
-        width: 100px;
-        height: 100%;
-        display: block;
-        top: 140px;
-        right: -33px;
-    }
-
-    .email-wrap .selection {
-        width: 114px;
-        float: left;
-    }
-
-
-
-
-
-
-    /* checkout-price */
-    .checkout-price {
-        position: relative;
-        width: 100%;
-        margin-left: 0px;
-        padding-right: 10px;
-    }
-
-    .checkout-price .checkout-price-box {
-        width: 93%;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .checkout-info {
-        position: relative;
-        width: 100%;
-        padding-left: 0px;
-    }
-
-
-    .order-button {
-        position: fixed;
-        height: 20px;
-        bottom: 0;
-        left: 0;
-
-    }
-
-    /* //checkout-price */
-
-
-
-
-
-
-
-
-
-    .way-info-wrap .card-wrap .selection {
-        position: relative;
-        float: left;
-        width: 300px;
-        background: none;
-        border: none;
-        border-bottom: 1px solid #777;
-        padding-bottom: 5px;
-        color: #a8a8a8;
-        outline: none;
-        cursor: pointer;
-        margin: 0 10px;
-    }
-
-
-
-    .easy-payment-wrap .easy-payment-type {
-        position: relative;
-        float: left;
-        width: 33%;
-    }
-
-
-
-
-    /* deposit */
-    .deposit-account .account-number {
-        font-size: 12px;
-        margin-top: 5px;
-    }
-
-    .deposit-name .name-input {
-        width: 70px;
-    }
-
-
-    .deposit .deposit-wrap {
-        width: 90%;
-    }
-
-    .deposit-name-account .deposit-name {
-        position: relative;
-        float: left;
-        width: 100%;
-    }
-
-    .deposit-name-account .deposit-account {
-        float: left;
-    }
-
-    .deposit-account .account-title {
-        color: #292929;
-        background: none;
-        font-size: 14px;
-        padding-left: 1px;
-    }
-
-    .deposit-account .account-number {
-        position: relative;
-        float: left;
-        margin-left: 10px;
-        color: #777;
-        margin-top: 7px;
-    }
-
-    .deposit .notice-wrap p {
-        font-size: 10px;
-        margin-left: -10px;
-    }
-
-    /* //deposit */
+    
+    
 
 }
 
 
 
 
-@media screen and (max-width:550px) and (min-width:300px) {
-    .way-info .title-wrap{
-        display: none;
-    }
-    .way-info-wrap .way-info .card .title-wrap{
-        display: none;
-    }
-    .deposit{
-        height:180px;
-    }
-    .deposit .deposit-wrap{
-        margin-top:-15px;
-    }
-    .deposit .deposit-wrap input{
-       width:70%;
-    }
-    
-
-    .deposit .title-wrap .title {
-        height: 200px;
-    }
-
-    .deposit .title-wrap .line {
-        top: 55px;
-    }
-
-
-    .deposit-account .account-number {
-        position: relative;
-        float: left;
-        margin-left: 2px;
-        color: #777;
-        margin-top: 7px;
-        padding-bottom: 3px;
-    }
-    
-    
-    .deposit .notice-wrap{
-        position: absolute;
-        width:100%;
-        bottom:-15px;
-    }
-    .deposit .notice-wrap p{
-        left:0;
-        width:100%;
-        margin:0 auto;
-        text-align: center;
-    }
-    
-}
+@media screen and (max-width:550px) and (min-width:300px) {}

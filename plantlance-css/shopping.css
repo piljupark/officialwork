@@ -470,11 +470,15 @@ li {
 
 
 
-@media screen and (max-width:700px) and (min-width:300px) {
+@media screen and (max-width:729px) and (min-width:300px) {
 
     .shopping-wrap {
         width: 95%;
     }
+    .shopping-wrap .shopping-title{
+        font-size: 14px;
+    }
+    
 
     .cart-title-wrap p,
     input {
@@ -485,6 +489,9 @@ li {
     .cart-title-wrap {
         border-bottom: none;
     }
+    .cart-container .no-product{
+        font-size: 12px;
+    }
  
     .buy-button {
         position: fixed;
@@ -494,6 +501,10 @@ li {
         background: #A8A8A8;
         bottom: 0;
         left: 0;
+    }
+    .buy-button p{
+        padding:25px 0;
+        font-size: 18px;
     }
 
     .cart-choose-cancel p {

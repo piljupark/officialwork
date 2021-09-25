@@ -1131,6 +1131,10 @@ select {
     html {
         overflow-x: hidden !important;
     }
+    .payment-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
 
      .easy-wrap .easy-kind-wrap {
         display: flex;

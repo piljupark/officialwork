@@ -766,7 +766,8 @@ input:focus {
         top: 80px;
     }
     .ea-wrap{
-        width:82px;
+        width:90px;
+        margin:0 auto;
     }
     .order-form{
         position: absolute;
@@ -774,6 +775,7 @@ input:focus {
     }
     .num-ea {
         font-size: 14px;
+        text-align: center;
 
     }
 
@@ -786,7 +788,7 @@ input:focus {
         font-family: "AvenirLTStd-Roman";
         font-size: 14px;
         cursor: pointer;
-        padding-right: ;
+        text-align: center;
     }
 
     /* //product-ea */

@@ -869,7 +869,7 @@ select {
 .easy-kind-wrap .easy-kind {
     position: relative;
     float: left;
-    width: 33%;
+    width: 50%;
 }
 
 .easy-kind-wrap .easy-kind input {
@@ -1190,17 +1190,64 @@ select {
 
 
 
-    .way-info .way-title-wrap {
-        opacity: 0;
-        position: absolute;
+
+
+
+
+
+
+
+ 
+    
+    .way-info .card,
+    .way-info .phone {
+        width:100%;
+        height: 130px;
+    }
+    
+        
+    .live .way-txt-wrap,
+    .phone .way-txt-wrap {
+        width:80%;
+        left:50%;
+        transform: translate(-50%);
     }
 
-    .way-info .way-txt-wrap {
-        width: 100%;
-        margin-left: 0;
+    .way-info .phone .way-txt-wrap, .way-info .live .way-txt-wrap{
+        width:80%;
+        margin-left:0px;
     }
+    .way-info .phone .way-txt-wrap p, .way-info .live .way-txt-wrap p{
+        text-align: left;
+    }
+    
+
+    .way-info .way-title-wrap {
+        position: absolute;
+        top: 0;
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .way-info .way-title-wrap .way-title {
+        text-align: left;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .way-info .way-title-wrap .line {
+        opacity: 0;
+    }
+
+  
+
 
     /* deposit */
+    .deposit {
+        height: 250px !important;
+    }
+
     .deposit .deposit-title-wrap {
         position: relative;
         float: left;
@@ -1210,12 +1257,16 @@ select {
         justify-content: center;
     }
 
+    .deposit .deposit-title-wrap input {
+        width: 100px;
+    }
+
     .deposit .deposit-number {
         position: relative;
         float: left;
         width: 100%;
         left: 0 !important;
-        margin-left: 17px;
+        margin-left: 0px;
         text-align: center;
     }
 
@@ -1223,7 +1274,54 @@ select {
         text-align: center;
     }
 
+    .deposit .way-txt-wrap .deposit-notice-wrap {
+        margin-top: 40px;
+    }
+
     /* //deposit */
+    
+
+    
+    
+
+    /* easy */
+    .way-info .easy {
+        height: 260px;
+    }
+
+    .easy .easy-kind-wrap {
+        position: relative;
+        float: left;
+        width: 80% !important;
+        margin-top: 0;
+        top:0;
+
+    }
+
+    .easy-kind {
+        margin-bottom: 10px;
+    }
+
+    .easy-kind .kind {
+        position: relative;
+        float: right;
+    }
+    
+    .easy .easy-kind-wrap {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+   
+    .easy .way-txt-wrap .easy-notice-wrap {
+        width:80%;
+        text-align: left;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+
+    /* //easy */
 
 
 
@@ -1234,16 +1332,7 @@ select {
     }
 
 
-    .easy .easy-kind-wrap {
-        width: 80%;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .easy .way-txt-wrap p {
-        text-align: center;
-    }
-
+    
 
     .checkout-price {
         width: 400px;
@@ -1269,22 +1358,24 @@ select {
 
 
 
-.customer .email-wrap {
+    .customer .email-wrap {
         position: relative;
         float: left;
         width: 100%;
         padding: 20px 0 60px 0;
         border-bottom: 1px solid #f0f0f0;
     }
-    .customer .email-wrap input:nth-child(4){
-        width:70px;
+
+    .customer .email-wrap input:nth-child(4) {
+        width: 70px;
     }
+
     .customer-wrap .selection {
         position: absolute;
         width: 150px;
         margin-top: 0px !important;
-        left:160px;
-        bottom:15px;
+        left: 160px;
+        bottom: 15px;
     }
 
 
@@ -1308,19 +1399,53 @@ select {
         float: left;
     }
 
+    
+    
+    
+    .way-info .card,
+    .way-info .live,
+    .way-info .phone {
+        height: 150px;
+    }
+    
+     .live .way-txt-wrap,
+    .phone .way-txt-wrap {
+        width:80%;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .way-info .phone .way-txt-wrap, .way-info .live .way-txt-wrap{
+        width:80%;
+        margin-left:0px;
+    }
+    .way-info .phone .way-txt-wrap p, .way-info .live .way-txt-wrap p{
+        text-align: left;
+    }
 
     .way-info .way-title-wrap {
-        opacity: 0;
         position: absolute;
-    }
-
-    .way-info .way-txt-wrap {
+        top: 0;
+        height: 40px;
         width: 100%;
-        margin-left: 0;
+        border-bottom: 1px solid #eee;
     }
 
+    .way-info .way-title-wrap .way-title {
+        text-align: left;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .way-info .way-title-wrap .line {
+        opacity: 0;
+    }
 
     /* deposit */
+    .deposit {
+        height: 250px !important;
+    }
+
     .deposit .deposit-title-wrap {
         position: relative;
         float: left;
@@ -1330,12 +1455,16 @@ select {
         justify-content: center;
     }
 
+    .deposit .deposit-title-wrap input {
+        width: 100px;
+    }
+
     .deposit .deposit-number {
         position: relative;
         float: left;
         width: 100%;
         left: 0 !important;
-        margin-left: 17px;
+        margin-left: 0px;
         text-align: center;
     }
 
@@ -1343,26 +1472,56 @@ select {
         text-align: center;
     }
 
+    .deposit .way-txt-wrap .deposit-notice-wrap {
+        margin-top: 40px;
+    }
+
     /* //deposit */
 
 
     .live .way-txt-wrap p,
     .phone .way-txt-wrap p {
-        text-align: center;
+        text-align:left;
     }
 
 
+    /* easy */
+    .way-info .easy {
+        height: 240px;
+    }
+
+    .easy .easy-kind-wrap {
+        position: relative;
+        float: left;
+        width: 80% !important;
+        margin-top: 0;
+
+    }
+
+    .easy-kind {
+        margin-bottom: 10px;
+    }
+
+    .easy-kind .kind {
+        position: relative;
+        float: right;
+    }
+    
     .easy .easy-kind-wrap {
         width: 80%;
         left: 50%;
         transform: translate(-50%);
     }
-
-    .easy .way-txt-wrap p {
-        text-align: center;
+   
+    .easy .way-txt-wrap .easy-notice-wrap {
+        width:80%;
+        text-align: left;
+        left:50%;
+        transform: translate(-50%);
     }
 
 
+    /* //easy */
 
 
     .checkout-price {
@@ -1407,7 +1566,7 @@ select {
         width: 65px;
         height: 65px;
     }
-   
+
 
     .product-info .product-info-title {
         font-size: 16px;
@@ -1445,22 +1604,24 @@ select {
     }
 
 
-   .customer .email-wrap {
+    .customer .email-wrap {
         position: relative;
         float: left;
         width: 100%;
         padding: 20px 0 60px 0;
         border-bottom: 1px solid #f0f0f0;
     }
-    .customer .email-wrap input:nth-child(4){
-        width:70px;
+
+    .customer .email-wrap input:nth-child(4) {
+        width: 70px;
     }
+
     .customer-wrap .selection {
         position: absolute;
         width: 150px;
         margin-top: 0px !important;
-        left:110px;
-        bottom:15px;
+        left: 110px;
+        bottom: 15px;
     }
 
 
@@ -1483,9 +1644,9 @@ select {
     .customer-wrap .number {
         width: 100px;
     }
-    
+
     .address-wrap input {
-        width:60px;
+        width: 60px;
     }
 
 
@@ -1522,22 +1683,39 @@ select {
     /* //order-way-wrap */
 
 
-
+    .way-info .card,
+    .way-info .live,
+    .way-info .phone {
+        height: 160px;
+    }
 
     .way-info .way-title-wrap {
-        opacity: 0;
         position: absolute;
+        top: 0;
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .way-info .way-title-wrap .way-title {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .way-info .way-title-wrap .line {
+        opacity: 0;
     }
 
     .way-info .way-txt-wrap {
         width: 100%;
         margin-left: 0;
+        margin-top: 30px;
     }
 
 
     /* deposit */
     .deposit {
-        height: 210px !important;
+        height: 250px !important;
     }
 
     .deposit .deposit-title-wrap {
@@ -1572,17 +1750,24 @@ select {
 
     /* //deposit */
 
-    /* live phone */
-    .live .way-txt-wrap p,
-    .phone .way-txt-wrap p {
-        text-align: center;
-    }
 
-    /* //live phone */
 
 
 
     /* easy */
+    .way-info .easy {
+        height: 240px;
+    }
+
+    .easy-kind {
+        margin-bottom: 10px;
+    }
+
+    .easy-kind .kind {
+        position: relative;
+        float: right;
+    }
+
     .easy .easy-kind-wrap {
         width: 80%;
         left: 50%;
@@ -1594,11 +1779,34 @@ select {
     }
 
     .easy .way-txt-wrap p {
-        text-align: center;
+        text-align: left;
+    }
+    
+    .easy .way-txt-wrap .easy-notice-wrap {
+        width:80%;
+        text-align: left;
+        left:50%;
+        transform: translate(-50%);
     }
 
     /* //easy */
 
+
+
+
+
+
+    /* live phone */
+    .live .way-txt-wrap p,
+    .phone .way-txt-wrap p {
+        text-align: center;
+    }
+
+    /* //live phone */
+
+
+
+    
 
 
     /* order-info */
@@ -1646,7 +1854,7 @@ select {
         transform: translate(-50%);
     }
 
-    
+
     /* //checkout-price */
 
 
@@ -1705,14 +1913,16 @@ select {
         padding: 20px 0 60px 0;
         border-bottom: 1px solid #f0f0f0;
     }
-    .customer .email-wrap input:nth-child(4){
-        width:70px;
+
+    .customer .email-wrap input:nth-child(4) {
+        width: 70px;
     }
+
     .customer-wrap .selection {
         position: absolute;
         width: 150px;
         margin-top: 0px !important;
-        left:110px;
-        bottom:15px;
+        left: 110px;
+        bottom: 15px;
     }
 }

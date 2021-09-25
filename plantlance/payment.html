@@ -240,162 +240,181 @@
                             <label for="easy" class="txt-kor">간편결제</label>
                         </div>
 
-                        <div class="way-info-wrap">
-                            <div class="way-info">
-                                <div class="card">
-                                    <div class="way-title-wrap">
-                                        <p class="txt-kor way-title">신용카드</p>
-                                        <p class="txt-kor line"></p>
-                                    </div>
-                                    <div class="way-txt-wrap">
-                                        <select name="card" class="selection">
-                                            <option value="" selected>카드선택</option>
-                                            <option value="kb">KB국민카드</option>
-                                            <option value="nh">NH농협카드</option>
-                                            <option value="sh">신한카드</option>
-                                            <option value="hn">하나카드</option>
-                                        </select>
-                                        
-                                        <select name="monthly-choose" class="selection">
-                                            <option value="" selected>할부선택</option>
-                                            <option value="single">일시불</option>
-                                            <option value="monthly">1개월</option>
-                                            <option value="monthly">2개월</option>
-                                            <option value="monthly">3개월</option>
-                                            <option value="monthly">4개월</option>
-                                            <option value="monthly">5개월</option>
-                                            <option value="monthly">6개월</option>
-                                            <option value="monthly">7개월</option>
-                                            <option value="monthly">8개월</option>
-                                            <option value="monthly">9개월</option>
-                                            <option value="monthly">10개월</option>
-                                            <option value="monthly">11개월</option>
-                                            <option value="monthly">12개월</option>
-                                            <option value="monthly">13개월</option>
-                                            <option value="monthly">14개월</option>
-                                            <option value="monthly">15개월</option>
-                                            <option value="monthly">16개월</option>
-                                            <option value="monthly">17개월</option>
-                                            <option value="monthly">18개월</option>
-                                            <option value="monthly">19개월</option>
-                                            <option value="monthly">20개월</option>
-                                            <option value="monthly">21개월</option>
-                                            <option value="monthly">22개월</option>
-                                            <option value="monthly">23개월</option>
-                                            <option value="monthly">24개월</option>
-                                        </select>
-                                    </div>
+
+
+
+                        <div class="way-wrap">
+
+                            <!-- 신용카드 -->
+                            <div class="card-wrap">
+                                <div class="way-kind-title">
+                                    <p class="txt-kor">신용카드</p>
+                                </div>
+                                <div class="way-kind-info">
+                                    <select name="card">
+                                        <option value="" selected>카드선택</option>
+                                        <option value="kb">KB국민카드</option>
+                                        <option value="nh">NH농협카드</option>
+                                        <option value="sh">신한카드</option>
+                                        <option value="hn">하나카드</option>
+                                    </select>
+                                    <select name="monthly">
+                                        <option value="" selected>할부선택</option>
+                                        <option value="single">일시불</option>
+                                        <option value="month">1개월</option>
+                                        <option value="month">2개월</option>
+                                        <option value="month">3개월</option>
+                                        <option value="month">4개월</option>
+                                        <option value="month">5개월</option>
+                                        <option value="month">6개월</option>
+                                        <option value="month">7개월</option>
+                                        <option value="month">8개월</option>
+                                        <option value="month">9개월</option>
+                                        <option value="month">10개월</option>
+                                        <option value="month">11개월</option>
+                                        <option value="month">12개월</option>
+                                        <option value="month">13개월</option>
+                                        <option value="month">14개월</option>
+                                        <option value="month">15개월</option>
+                                        <option value="month">16개월</option>
+                                        <option value="month">17개월</option>
+                                        <option value="month">18개월</option>
+                                        <option value="month">19개월</option>
+                                        <option value="month">20개월</option>
+                                        <option value="month">21개월</option>
+                                        <option value="month">22개월</option>
+                                        <option value="month">23개월</option>
+                                        <option value="month">24개월</option>
+                                    </select>
                                 </div>
                             </div>
 
 
-                            <div class="way-info">
-                                <div class="deposit">
+                            <!-- 무통장입금 -->
+                            <div class="deposit-wrap">
+                                <div class="way-kind-title">
+                                    <p class="txt-kor">무통장입금</p>
+                                </div>
 
-                                    <div class="way-title-wrap">
-                                        <p class="txt-kor way-title">무통장입금</p>
-                                        <p class="txt-kor line"></p>
-                                    </div>
-                                    
-                                    <div class="way-txt-wrap">
-                                       <div class="deposit-title-wrap">
-                                        <p class="txt-kor deposit-name">입금자명</p>
+                                <div class="way-kind-info">
+                                    <div class="way-kind-info-wrap">
+                                        <p class="txt-kor title">입금자명</p>
                                         <input type="text">
-                                        </div>
-                                        
-                                        
-                                        <p class="txt-kor deposit-number">농협 | 301 - 0238 -1529-61 (주식회사 플랜트란스)</p>
-                                        
-                                        <div class="deposit-notice-wrap">
-                                            <p class="txt-kor">- 입금액과 결제 금액이 일치해야 정상 입금되니 금액을 반드시 확인하시기 바랍니다.</p>
-                                            <p class="txt-kor">- 입금기한은 주문완료 후 3일 이내이며, 미입금 시 자동 취소 됩니다.</p>
-                                        </div>
+                                        <p class="txt-kor deposit-number"> 농협 | 301-0238-1529-61 (주식회사 플랜트란스)</p>
+                                    </div>
+
+                                    <div class="way-notice-wrap">
+                                        <p class="txt-kor">- 입금액과 결제 금액이 일치해야 정상 입금완료되니 금액을 반드시 확인 바랍니다.</p>
+                                        <p class="txt-kor">- 입금 기한은 주문 완료 후 3일 이내이며, 미입금 시 자동 취소 됩니다.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="way-info">
-                                <div class="live">
-                                    <div class="way-title-wrap">
-                                        <p class="txt-kor way-title">계좌이체</p>
-                                        <p class="txt-kor line"></p>
-                                    </div>
-                                    <div class="way-txt-wrap">
-                                        <p class="txt-kor">- [결제하기] 버튼을 선택하시면 온라인 계좌이체 화면으로 연결되어 결제를 진행할 수 있습니다.</p>
+
+                            <!-- 계좌이체 -->
+                            <div class="live-wrap">
+                                <div class="way-kind-title">
+                                    <p class="txt-kor">계좌이체</p>
+                                </div>
+
+                                <div class="way-kind-info">
+
+                                    <div class="way-notice-wrap">
+                                        <p class="txt-kor">[결제하기] 버튼을 선택하시면 온라인 계좌이체 화면으로 연결되어 결제를 진행할 수 있습니다.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="way-info">
-                                <div class="phone">
-                                    <div class="way-title-wrap">
-                                        <p class="txt-kor way-title">휴대폰 결제</p>
-                                        <p class="txt-kor line"></p>
-                                    </div>
-                                    
-                                    <div class="way-txt-wrap">
+
+
+                            <!-- 휴대폰결제 -->
+
+                            <div class="phone-wrap">
+                                <div class="way-kind-title">
+                                    <p class="txt-kor">휴대폰 결제</p>
+                                </div>
+
+                                <div class="way-kind-info">
+
+                                    <div class="way-notice-wrap">
                                         <p class="txt-kor">- 휴대폰 결제는 당월에만 결제수단 취소가 가능합니다.</p>
-                                        <p class="txt-kor">- 휴대폰 결제 한도는 통신사 가입상태 및 소액 결제 사용여부와 한도에 따라 다르게 적용됩니다.</p>
+                                        <p class="txt-kor">- 휴대폰 결제 한도는 통신사 가입상태 및 소액결제 사용여부와 한도에 따라 다르게 적용됩니다.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="way-info">
-                                <div class="easy">
-                                    <div class="way-title-wrap">
-                                        <p class="txt-kor way-title">간편결제</p>
-                                        <p class="txt-kor line"></p>
-                                    </div>
-                                    <div class="way-txt-wrap">
-                                        <div class="easy-kind-wrap">
-                                            <div class="easy-kind">
-                                               
-                                                <input type="radio" name="payment">
-                                                <img src="../plantlance-image/payment/kakaopay.png" alt="kakaopay" class="kakao">
-                                                </div>
-                                           
-                                            
-                                            <div class="easy-kind">
-                                               <div class="kind">
-                                                <input type="radio" name="payment">
-                                                <img src="../plantlance-image/payment/payco.png" alt="payco" class="payco">
-                                                 </div>
-                                            </div>
-                                            
-                                            <div class="easy-kind">
-                                                <input type="radio" name="payment">
-                                                <img src="../plantlance-image/payment/toss.png" alt="toss"
-                                                class="toss">
-                                            </div>
-                                            
-                                            <div class="easy-kind">
-                                               <div class="kind">
-                                                <input type="radio" name="payment">
-                                                <img src="../plantlance-image/payment/smile.png" alt="smilepay"
-                                                class="smile">
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="easy-kind">
-                                                <input type="radio" name="payment">
-                                                <img src="../plantlance-image/payment/samsungpay.png" alt="samsungpay" class="samsung">
-                                            </div>
-                                            
-                                            
-                                            <div class="easy-kind">
-                                               <div class="kind">
-                                                <input type="radio" name="payment">
-                                                <img src="../plantlance-image/payment/chaipay.png" alt="chaipay"
-                                                class="chai">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="easy-notice-wrap">
-                                            <p class="txt-kor">- 현금영수증은 해당 결제사가 직접 발행합니다.</p>
-                                            <p class="txt-kor">- 결제 및 사용관련 문의는 해당 고객센터로 문의 주시기 바랍니다.</p>
-                                        </div>
-                                    </div>
+
+
+                            <!-- 간편결제 -->
+                            <div class="easy-wrap">
+                                <div class="way-kind-title">
+                                    <p class="txt-kor">간편결제</p>
                                 </div>
+
+                                <div class="way-kind-info">
+                                    <div class="easy-kind-wrap">
+                                        <div class="easy-kind">
+                                            <input type="radio" name="easy-payment" id="easy-payment-kakao">
+                                            <label for="easy-payment-kakao">
+                                                <img src="../plantlance-image/payment/kakaopay.png" alt="kakaopay" class="kakaopay">
+                                            </label>
+                                        </div>
+
+                                        <div class="easy-kind">
+                                           <div class="mobile-easy">
+                                            <input type="radio" name="easy-payment" id="easy-payment-payco">
+                                            <label for="easy-payment-payco">
+                                                <img src="../plantlance-image/payment/payco.png" alt="payco" class="payco">
+                                            </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="easy-kind">
+                                            <input type="radio" name="easy-payment" id="easy-payment-toss">
+
+                                            <label for="easy-payment-toss">
+                                                <img src="../plantlance-image/payment/toss.png" alt="toss" class="toss">
+                                            </label>
+                                        </div>
+
+                                        <div class="easy-kind">
+                                           <div class="mobile-easy">
+                                            <input type="radio" name="easy-payment" id="easy-payment-smilepay">
+
+                                            <label for="easy-payment-smilepay">
+                                                <img src="../plantlance-image/payment/smile.png" alt="smilepay" class="smilepay">
+                                            </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="easy-kind">
+                                            <input type="radio" name="easy-payment" id="easy-payment-samsungpay">
+
+                                            <label for="easy-payment-samsungpay">
+                                                <img src="../plantlance-image/payment/samsungpay.png" alt="samsungpay" class="samsungpay">
+                                            </label>
+                                        </div>
+
+                                        <div class="easy-kind">
+                                           <div class="mobile-easy">
+                                            <input type="radio" name="easy-payment" id="easy-payment-chaipay">
+
+                                            <label for="easy-payment-chaipay">
+                                                <img src="../plantlance-image/payment/chaipay.png" alt="chaipay" class="chaipay">
+                                            </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="way-notice-wrap">
+                                        <p class="txt-kor">- 휴대폰 결제는 당월에만 결제수단 취소가 가능합니다.</p>
+                                        <p class="txt-kor">- 휴대폰 결제 한도는 통신사 가입상태 및 소액결제 사용여부와 한도에 따라 다르게 적용됩니다.</p>
+                                    </div>
+
+
+                                </div>
+
                             </div>
                         </div>
+
                     </div>
 
                 </div>

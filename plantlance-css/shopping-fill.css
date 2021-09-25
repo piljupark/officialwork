@@ -452,16 +452,18 @@ li {
 .product-ea {
     position: relative;
     float: left;
-    width: 15%;
+    width: 100px;
 }
 
 .ea-wrap {
     position: relative;
     float: left;
+    width:90px;
     border: 1px solid #292929;
     margin-top: 50px;
-
+    padding-top:2px;
 }
+
 
 .del-ea,
 .add-ea {
@@ -760,11 +762,16 @@ input:focus {
     .product-ea {
         position: absolute;
         float: right;
-        width: 100px;
-        right: -18px;
+        right:0px;
         top: 80px;
     }
-
+    .ea-wrap{
+        width:82px;
+    }
+    .order-form{
+        position: absolute;
+        right:0px;
+    }
     .num-ea {
         font-size: 14px;
 
@@ -773,15 +780,13 @@ input:focus {
     .del-ea,
     .add-ea {
         position: relative;
-        width: 10px;
+        width: 20px;
         background: none;
         border: none;
         font-family: "AvenirLTStd-Roman";
-        font-size: 12px;
+        font-size: 14px;
         cursor: pointer;
-    }
-    .add-ea {
-        width:20px;
+        padding-right: ;
     }
 
     /* //product-ea */

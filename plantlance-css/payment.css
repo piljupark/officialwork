@@ -232,20 +232,30 @@ li {
 input[type="text"] {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
+    padding-bottom: 4px;
 }
 
 input[type="number"] {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
+    padding-bottom: 4px;
 }
 
-input[type="text"] {
+input[type="email"] {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
+    padding-bottom: 4px;
+}
+
+input[type="checkbox"] {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: none;
 }
 
 select {
     -webkit-border-radius: 0;
+
 }
 
 /* //모든 input 타입에 대한 모바일 radius 제거*/
@@ -460,7 +470,7 @@ select {
     position: relative;
     float: left;
     width: 80px;
-    height: 29px;
+    height: 32px;
     border: 1px solid #f0f0f0;
     background: #fcfcfc;
     padding: 0;
@@ -469,6 +479,7 @@ select {
     outline: none;
     padding-left: 10px;
     color: #777;
+
 }
 
 .email-wrap .at {
@@ -490,10 +501,11 @@ select {
     width: auto;
     background: #292929;
     color: #fff;
-    padding: 0 15px;
+    padding: 0 15px 2px 15px;
     font-size: 12px;
     margin-left: 10px;
     cursor: pointer;
+
 }
 
 .address-wrap .other-address {
@@ -1257,10 +1269,22 @@ select {
 
 
 
-
+.customer .email-wrap {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 20px 0 60px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .customer .email-wrap input:nth-child(4){
+        width:70px;
+    }
     .customer-wrap .selection {
-        width: 114px;
-        margin-top: 10px;
+        position: absolute;
+        width: 150px;
+        margin-top: 0px !important;
+        left:160px;
+        bottom:15px;
     }
 
 
@@ -1364,7 +1388,6 @@ select {
 
     .checkout-info .checkout-title {
         font-size: 14px;
-        font-family: "Urbanist-SemiBold";
     }
 
 
@@ -1384,6 +1407,7 @@ select {
         width: 65px;
         height: 65px;
     }
+   
 
     .product-info .product-info-title {
         font-size: 16px;
@@ -1391,6 +1415,7 @@ select {
 
 
     .product-option .my-option {
+        position: absolute;
         margin-top: 40px;
     }
 
@@ -1420,11 +1445,22 @@ select {
     }
 
 
-
-
+   .customer .email-wrap {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 20px 0 60px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .customer .email-wrap input:nth-child(4){
+        width:70px;
+    }
     .customer-wrap .selection {
-        width: 114px;
+        position: absolute;
+        width: 150px;
         margin-top: 0px !important;
+        left:110px;
+        bottom:15px;
     }
 
 
@@ -1432,6 +1468,13 @@ select {
         width: 40%;
     }
 
+    input[type="text"] {
+        width: 170px;
+    }
+
+    input[type="number"] {
+        width: 170px;
+    }
 
     .customer-wrap .name {
         width: 100px;
@@ -1440,14 +1483,14 @@ select {
     .customer-wrap .number {
         width: 100px;
     }
+    
+    .address-wrap input {
+        width:60px;
+    }
+
 
     .address-wrap .other-address {
         margin-left: 110px;
-    }
-
-    .customer-wrap .selection {
-        width: 114px;
-        margin-top: 10px !important;
     }
 
     /* //checkout-info */
@@ -1603,6 +1646,7 @@ select {
         transform: translate(-50%);
     }
 
+    
     /* //checkout-price */
 
 
@@ -1649,8 +1693,26 @@ select {
 
     /* //order-button */
 
+}
 
 
+@media screen and (max-width:550px) and (min-width:300px) {
 
-
+    .customer .email-wrap {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 20px 0 60px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .customer .email-wrap input:nth-child(4){
+        width:70px;
+    }
+    .customer-wrap .selection {
+        position: absolute;
+        width: 150px;
+        margin-top: 0px !important;
+        left:110px;
+        bottom:15px;
+    }
 }

@@ -134,6 +134,32 @@
 
 
 
+
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff2");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.otf");
+    font-family: "Urbanist-SemiBold";
+}
+
+
+
+
+
 @font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
     font-family: "Urbanist-ExtraBold";
@@ -363,7 +389,7 @@ footer {
 }
 
 
-@media screen and (max-width:839px) and (min-width:375px){
+@media screen and (max-width:839px) and (min-width:390px){
     footer{
         padding-bottom: 0;
         height:300px;
@@ -411,6 +437,7 @@ footer {
     }
     .footer-copyright{
         float:left;
+        
         width:100%;
     }
     
@@ -418,47 +445,94 @@ footer {
 }
 
 
-@media screen and (max-width:374px) and (min-width:200px){
+@media screen and (max-width:389px) and (min-width:200px){
     footer{
         padding-bottom: 0;
-        height:300px;
+        height:200px;
+        padding-left:0;
     }
     .footer-logo{
         margin-top:15px;
+        width:100px;
+        margin-left:4%;
     }
+    
+    
+    
+    .footer-bottom-wrap{
+        border:none;
+        padding-bottom: 0;
+        margin-bottom:0;
+        margin-top:0;
+    }
+    
+    
     .footer-right{
+        position: absolute;
         float:left;
-        width:100%;
+        width:90%;
+        top:-150px;
+        left:50%;
+        transform: translate(-50%);
     }
     .footer-right .tel-wrap{
         float:left;
+        margin-top:9px;
     }
+
     .footer-right p{
         font-size: 10px;
     }
     .footer-right .tel-number{
         font-size: 22px;
+        margin-top:6px;
+        font-family: "Urbanist-SemiBold";
     }
     .footer-right .operation-hour-wrap{
-        width:210px;
+        float:right;
+        width:200px;
         margin-left:0;
-        height:50px;
+        height:60px;
+        background: none;
+        margin-right:0;
+        border-left:1px solid #292929;
     }
-    .footer-right .operation-hour-wrap p{
-        margin-top:10px;
+    .operation-hour-wrap .operation
+    {
+        justify-content: flex-start;
+        height:30px;
     }
+    
+    .operation-hour-wrap .operation .day
+    {
+       margin-right:15px;
+        font-size: 11px;
+        font-family: "Urbanist-SemiBold";
+    }
+   
+   
     .operation-hour-wrap .operation .off{
+        position: absolute;
         font-size: 9px;
         padding-left:7px;
         padding-right:7px;
         margin-top:6px;
+        right:0;
+    }
+    .operation-hour-wrap .operation:nth-child(2){
+        margin-bottom:0px;
     }
     
     
     
+    
+    
+    
     .footer-left{
-        width:100%;
-        margin-top:20px;
+        width:90%;
+        margin-top:0px;
+        left:50%;
+        transform: translate(-50%);
     }
     
     

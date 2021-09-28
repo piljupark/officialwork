@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
+    <script src="../plantlance-script/jquery.fullpage.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/list-cafetable.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+
+    <script src="../plantlance-script/list-cafetable.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+</head>
+
+
+
+<body onload="init();">
+
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+
+    <div id="product-top-title">
+        <div class="menu-map">
+            <div class="menu-map-wrap">
+                <a href="#none">
+                    <p class="txt-eng">Home</p>
+                    <p class="txt-eng">></p>
+                    <p class="txt-eng">Shop</p>
+                    <p class="txt-eng">></p>
+                    <p class="txt-eng">Furniture</p>
+                </a>
+            </div>
+
+            <p class="txt-eng-bold category-title">TABLE</p>
+        </div>
+    </div>
+
+    <div id="side-and-list">
+        <div class="side-category-wrap">
+            <a href="#none">
+                <p class="txt-eng-bold side-category-title">
+                    SOFA
+                </p>
+            </a>
+
+            <a href="#none">
+                <p class="txt-eng-bold side-category-title">
+                    TABLE
+                </p>
+            </a>
+
+            <a href="#none">
+                <p class="txt-eng-bold side-category-title">
+                    CHAIR
+                </p>
+            </a>
+        </div>
+
+        <div class="product-list">
+            <div class="product-list-wrap">
+                <div class="product-img wily-table-box">
+                    <a href="#none"></a>
+                    <img src="../plantlance-image/product/willy-table-main-horizontal.png" alt="wily-table" class="wily-table">
+
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+
+                </div>
+                
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+
+            </div>
+
+            <div class="product-list-wrap">
+               
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+            </div>
+
+            <div class="product-list-wrap">
+               
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+            </div>
+
+            <div class="product-list-wrap">
+               
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+            </div>
+
+            <div class="product-list-wrap">
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+            </div>
+
+            <div class="product-list-wrap">
+               
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+                <div class="product-img">
+                    <div class="product-info">
+                        <p class="txt-eng product-name-eng">WILY TABLE</p>
+                        <p class="txt-eng product-color">12 COLOR</p>
+                        <p class="txt-kor product-name-kor">윌리 테이블</p>
+                        <p class="txt-kor product-price">330,000 원</p>
+                    </div>
+                    <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="next-button">
+                    <a href="#none"></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="footer"></div>
+
+
+
+
+
+
+</body></html>

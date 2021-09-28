@@ -1,12 +1,5 @@
-$(function () {
-    
-  $('#fullpage').fullpage({
-            //options here
-            autoScrolling: true,
-            scrollHorizontally: true,
-        });
-    //methods
+$(document).ready(function () {
+    $('#main-slider').slick({
+        setting - name: setting - value
+    });
 });
-
-
-

@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/plantlance.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
-    <link rel="stylesheet" href="../plantlance-css/jquery.fullpage.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
 
     <script src="../plantlance-script/plantlance.js"></script>
 
@@ -64,46 +65,103 @@
     <!-- //gnb 불러오기 -->
 
 
-<div id="main-slider">
-    
-    <!-- 슬릭 슬라이더 배너 넣을 섹션-->
-</div>
-
-
-
-<div id="new-product">
-    <div class="new-product-wrap">
-       <div class="new-product-title">
-        <a href="#none">
-            <p class="txt-eng-bold">
-                NEW PRODUCT
-            </p>
-            <img src="../plantlance-image/icon/right-arrow-in-circle1.png" alt="next" class="next-button">
-           </a>
-        </div>  
-        <img src="../plantlance-image/main/new-product1.png" alt="new-product" class="new-product-img">
+    <div id="main-slider">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+        <!-- 슬릭 슬라이더 배너 넣을 섹션-->
     </div>
-</div>
 
 
-<div id="main-product">
-    <div class="main-product-wrap">
-        <div class="chair-wrap">
-            <img src="../plantlance-image/main/chair1.png" alt="chair">
-            <a href="#none" class="chair-button">
-                <div class="chair-button-on">
+
+    <div id="new-product">
+        <div class="new-product-wrap">
+            <div class="new-product-title">
+                <a href="#none">
+                    <p class="txt-eng-bold">
+                        NEW PRODUCT
+                    </p>
+                    <img src="../plantlance-image/icon/right-arrow-in-circle1.png" alt="next" class="next-button">
+                </a>
+            </div>
+            <img src="../plantlance-image/main/new-product1.png" alt="new-product" class="new-product-img">
+        </div>
+    </div>
+
+
+    <div id="main-product">
+
+        <!-- 체어 & 비스포크-->
+        <div class="main-product-wrap">
+            <div class="chair-wrap">
+                <img src="../plantlance-image/main/chair1.png" alt="chair">
+                <a href="#none" class="chair-button">
+                    <div class="chair-button-on">
+                    </div>
+                    <p class="txt-eng-bold">Chairs</p>
+                </a>
+            </div>
+
+            <div class="bespoke-wrap">
+                <p class="txt-eng bespoke-title">WHAT IS YOUR BESPOKE?</p>
+                <div class="bespoke-shape">
                 </div>
-                <p class="txt-eng-bold">Chairs</p>
-            </a>
+            </div>
         </div>
-        
-        <div class="bespoke-wrap">
-            
-        </div>
+        <!-- // 체어 & 비스포크-->
+
     </div>
-</div>
+
+    <div id="plan-and-table">
 
 
+        <div class="plan-and-table-wrap">
+
+            <!-- 플랜 A & 플랜 B-->
+            <div class="plan-wrap">
+                <div class="plan-a">
+                    <p class="txt-kor plan-title">a</p>
+                    <p class="txt-kor plan-number">01</p>
+                    <p class="txt-kor plan-name">Plan A</p>
+                </div>
+                <div class="plan-b">
+                    <p class="txt-kor plan-title">B</p>
+                    <p class="txt-kor plan-number">02</p>
+                    <p class="txt-kor plan-name">Plan B</p>
+                </div>
+            </div>
+            <!-- //플랜 A & 플랜 B-->
+
+
+            <!-- 테이블-->
+            <div class="table-wrap">
+                <img src="../plantlance-image/main/wily-table.png" alt="wily-table" class="table-img">
+                <a href="#none" class="table-button">
+                    <div class="table-button-on">
+                    </div>
+                    <p class="txt-eng-bold">Tables</p>
+                </a>
+            </div>
+            <!-- //테이블-->
+
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="../plantlance-script/slick.min.js"></script>
+
+    <script>
+        $('.variable-width').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        });
+    </script>
 
 
 

@@ -155,6 +155,27 @@
 
 
 
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.ttf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.woff");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.woff2");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+
 
 
 
@@ -300,7 +321,83 @@ li {
 
 
 /* main-slider */
+#main-slider{
+    position: relative;
+    float:left;
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom:200px;
+}
+.main-slider-wrap {
+    position: relative;
+    float:left;
+    width:98%;
+    height:100vh;
+}
+.slide{
+    position: relative;
+    float:left;
+    width:100%;
+    overflow: hidden;
+}
+.slide img{
+    position: relative;
+    width:100%;
+    min-width: 1400px;
+    margin-top:-100px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.slide .kor-text-wrap{
+    position: absolute;
+    z-index: 2;
+    width:100%;
+    top:370px;
+    display: flex;
+    justify-content: center;
+}
+.slide .kor-text-wrap .slide-title:nth-child(1){
+    position: relative;
+    float:left;
+    width:75px;
+    font-size: 22px;
+    font-family: "Pretendard-Medium";
+    color:#5d5d5d;
+}
+.slide .kor-text-wrap .slide-title:nth-child(2){
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 22px;
+    font-family: "Pretendard-Bold";
+    color:#2f2f2f;
+}
+
+.slide .slide-title-eng{
+    position: absolute;
+    top:280px;
+    width:100%;
+    text-align: center;
+    font-family: "Pretendard-ExtraBold";
+    font-size: 50px;
+}
 /* //main-slider */
+
+
+
+
+
+
+
+
 
 
 /* new-product */
@@ -315,7 +412,6 @@ li {
     justify-content: center;
     justify-items: center;
     margin-top:100px;
-    max-width: 1400px;
     left:50%;
     transform: translate(-50%);
 }
@@ -376,7 +472,6 @@ li {
     position: relative;
     float:left;
     width:100%;
-    max-width: 1400px;
     height:auto;
     display: flex;
     justify-content: center;
@@ -399,15 +494,15 @@ li {
 .chair-wrap{
     position: relative;
     float:left;
-    width:100%;
-    height:300px;
+    width:60%;
+    height:500px;
     margin-right:10px;
     overflow: hidden;
 }
 .chair-wrap img{
     position: relative;
     float:left;
-    width: 600px;
+    width: 750px;
     margin-top:-150px;
     left:50%;
     transform: translate(-50%);
@@ -450,10 +545,10 @@ li {
 .bespoke-wrap{
     position: relative;
     float:left;
-    width:300px;
-    height:300px;
-    background: #EBEBEB;
+    width:40%;
+    height:500px;
     overflow: hidden;
+    background: #ebebeb;
 }
 .bespoke-shape{
     position: absolute;
@@ -472,7 +567,15 @@ li {
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    z-index: 2;
 }
+.bespoke-bg{
+    position: absolute;
+    width:100%;
+    bottom:0;
+    z-index: 1;
+}
+
 /* //bespoke-wrap */
 /* //main-product */
 
@@ -485,7 +588,6 @@ li {
     position: relative;
     float:left;
     width:100%;
-    max-width: 1400px;
     height:auto;
     display: flex;
     justify-content: center;
@@ -494,6 +596,7 @@ li {
     align-items: center;
     left:50%;
     transform: translate(-50%);
+    margin-bottom: 500px;
 }
 
 .plan-and-table-wrap{
@@ -509,7 +612,7 @@ li {
 .plan-wrap{
     position: relative;
     float:left;
-    width:300px;
+    width:30%;
     margin-right:10px;
 }
 
@@ -517,7 +620,7 @@ li {
     position: relative;
     float:left;
     width: 100%;
-    height:250px;
+    height:467px;
     background: #000;
     margin-bottom:10px;
 }
@@ -564,7 +667,7 @@ li {
     position: relative;
     float:left;
     width: 100%;
-    height:250px;
+    height:467px;
     background: #E9E9E9;
 }
 .plan-b .plan-title{
@@ -591,14 +694,14 @@ li {
 .table-wrap{
     position: relative;
     float:left;
-    width:100%;
-    height:510px;
+    width:70%;
+    height:100vh;
     overflow: hidden;
 }
 .table-wrap .table-img{
     position: relative;
     float:left;
-    width:1300px;
+    width:1700px;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);

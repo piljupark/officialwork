@@ -78,7 +78,7 @@
 
             <div class="slide">
                 <img src="../plantlance-image/main/slide2.png" alt="slide2" class="slide2-img main-img">
-                 <div class="text-wrap2">
+                <div class="text-wrap2">
                     <p class="slide-title txt-kor-bold">Wily</p>
                     <p class="slide-title txt-kor-bold">low-table</p>
                     <div class="view-button">
@@ -86,12 +86,12 @@
                             <p class="txt-eng">
                                 view product
                             </p>
-                        
+
                         </a>
                         <img src="../plantlance-image/icon/right-arrow.png" alt="next" class="view-next">
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="slide"><img src="../plantlance-image/main/slide1.png" alt="slide1" class="slide1-img main-img"></div>
@@ -104,52 +104,48 @@
 
 
 
-
-    <div id="new-product">
-        <div class="new-product-wrap">
-            <div class="new-product-title">
-                <a href="#none">
-                    <p class="txt-eng-bold">
-                        NEW PRODUCT
-                    </p>
-                    <img src="../plantlance-image/icon/right-arrow-in-circle1.png" alt="next" class="next-button">
-                </a>
-            </div>
-            <img src="../plantlance-image/main/new-product1.png" alt="new-product" class="new-product-img">
-        </div>
-    </div>
-
-
     <div id="main-product">
-
-        <!-- 체어 & 비스포크-->
-        <div class="main-product-wrap">
-            <div class="chair-wrap">
-                <img src="../plantlance-image/main/chair1.png" alt="chair">
-                <a href="#none" class="chair-button">
-                    <div class="chair-button-on">
+        <div class="main-product-left">
+            <div class="bespoke">
+                <p class="txt-eng">WHAT IS YOUR BESPOKE?</p>
+            </div>
+            <div class="chair">
+                <img src="../plantlance-image/main/chair1.png" alt="chair" class="momo-chair">
+                <a href="#none" class="product-button">
+                    <div class="product-button-on">
                     </div>
                     <p class="txt-eng-bold">Chairs</p>
                 </a>
             </div>
+        </div>
 
-            <div class="bespoke-wrap">
-                <p class="txt-eng bespoke-title">WHAT IS YOUR BESPOKE?</p>
-                <!--
-                <div class="bespoke-shape">
-                </div>
+        <div class="main-product-right">
+            <div class="table">
+                <img src="../plantlance-image/main/wily-table.png" alt="wily" class="wily-table">
+                <a href="#none" class="product-button">
+                    <div class="product-button-on">
+                    </div>
+                    <p class="txt-eng-bold">Tables</p>
+                </a>
+            </div>
+            <div class="new-product">
+                <p class="txt-eng new-product-title">NEW</p>
+                <p class="txt-eng new-product-title">PRODUCT</p>
                 
-                -->
-                <img src="../plantlance-image/icon/bespoke-bg.png" alt="bespoke-bg" class="bespoke-bg">
+                <div class="shape1">
+                    <div class="into-shape"></div>
+                </div>
+                <a href="#none">
+                    <img src="../plantlance-image/icon/right-arrow-white.png" alt="next" class="new-product-next">
+                </a>
             </div>
         </div>
-        <!-- // 체어 & 비스포크-->
-
     </div>
 
+
+
+
     <div id="plan-and-table">
-
-
         <div class="plan-and-table-wrap">
 
             <!-- 플랜 A & 플랜 B-->
@@ -171,50 +167,50 @@
             <!-- 테이블-->
             <div class="table-wrap">
                 <img src="../plantlance-image/main/wily-table.png" alt="wily-table" class="table-img">
-                <a href="#none" class="table-button">
-                    <div class="table-button-on">
+                <a href="#none" class="product-button">
+                    <div class="product-button-on">
                     </div>
-                    <p class="txt-eng-bold">Tables</p>
+                    <p class="txt-eng-bold">Sofas</p>
                 </a>
             </div>
             <!-- //테이블-->
 
         </div>
     </div>
-    
-    
-    
+
+
+
     <!-- 쇼룸 -->
     <div id="showroom">
         <div class="showroom-wrap">
             <div class="showroom-kind">
-                
+
             </div>
         </div>
     </div>
     <!-- //쇼룸 -->
-    
-    
-    
-    
+
+
+
+
     <div id="pltl">
         <div class="pltl-wrap">
             <img src="../plantlance-image/main/main-pltl1.png" alt="pltl-bg" class="pltl-bg">
-            
+
             <div class="pltl-text-wrap">
                 <p class="txt-kor-bold">We, plantlance provide</p>
                 <p class="txt-kor-bold">customer oriented customized furniture</p>
                 <p class="txt-kor-bold">with practical and trendy designs</p>
                 <p class="txt-kor-bold">based on modernity and basicity.</p>
             </div>
-            
+
             <a href="#none">
                 <p class="txt-kor pltl-button">Brand Story</p>
             </a>
         </div>
     </div>
-    
-    
+
+
 
     <div id="footer"></div>
 
@@ -229,7 +225,9 @@
                 slidesToShow: 1,
                 arrows: true,
                 prevArrow: "<button type='button' class='slick-prev'>Previous</button>", // 이전 화살표 모양 설정
-                nextArrow: "<button type='button' class='slick-next'>Next</button>", // 다음 화살표 모양 설정
+                nextArrow: "<button type='button' class='slick-next'>Next</button>", // 다음 화살표 모양 설정,
+                autoplay: true,
+                autoplaySpeed: 1000
             });
         });
     </script>

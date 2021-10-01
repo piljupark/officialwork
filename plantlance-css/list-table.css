@@ -335,7 +335,7 @@ li {
     color:#888;
     font-size: 12px;
 }
-.menu-map-wrap p:nth-child(1){
+.menu-map-wrap a:nth-child(1) p{
     margin-left:20px;
 }
 /* //menu-map */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 
     <meta charset="UTF-8">
@@ -25,6 +26,7 @@
                 document.getElementById("sub_nav").classList.add("show");
             });
         })
+
     </script>
 
 </head>
@@ -53,6 +55,7 @@
                 }
             });
         });
+
     </script>
     <!-- //gnb 불러오기 -->
 
@@ -101,6 +104,7 @@
             }
             sum.value = parseInt(hm.value) * sell_price;
         }
+
     </script>
     <!-- //수량과 비례한 가격 변동 스크립트 -->
 
@@ -112,12 +116,24 @@
 
     <div id="menu-map">
         <div class="menu-map-wrap">
-            <a href="#none">
+            <a href="../plantlance/plantlance.html">
                 <p class="txt-eng">Home</p>
-                <p class="txt-eng">></p>
+            </a>
+            <p class="txt-eng">></p>
+            <a href="#none">
                 <p class="txt-eng">Shop</p>
-                <p class="txt-eng">></p>
+            </a>
+            <p class="txt-eng">></p>
+            <a href="#none">
                 <p class="txt-eng">Furniture</p>
+            </a>
+            <p class="txt-eng">></p>
+            <a href="../plantlance/list-table.html">
+                <p class="txt-eng">Table</p>
+            </a>
+            <p class="txt-eng">></p>
+            <a href="../plantlance/wily-detail.html">
+                <p class="txt-eng">Wily Table</p>
             </a>
         </div>
     </div>
@@ -152,7 +168,7 @@
                 <div class="img-box"></div>
             </div>
             <div class="product-info-place">
-                <div id="product-name">
+                <div class="product-name">
                     <div class="product-name-wrap">
                         <p class="txt-eng-bold">wily table</p>
                         <p class="txt-eng">fenix</p>
@@ -165,39 +181,55 @@
                     </div>
                 </div>
 
+                
+    
+                
                 <div class="choice-leg">
                     <p class="txt-eng-bold">LEG TYPE</p>
+
                     <a href="#none">
-                        <p class="txt-eng-bold question">?</p>
+                        <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
                     </a>
-                    <div class="leg-type-select-wrap">
+
+                    <div class="leg-select-wrap">
                         <a href="#none">
-                            <p class="txt-eng" id="legtype" onclick="legTypeChange()">A</p>
+                            <p class="txt-eng">600 X 600</p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng" id="legtype" onclick="legTypeChange()">B</p>
+                            <p class="txt-eng"></p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng" id="legtype" onclick="legTypeChange()">C</p>
+                            <p class="txt-eng"></p>
                         </a>
                     </div>
                 </div>
-                <div class="choice-edge">
+                
+                
+                
+                 <div class="choice-edge">
                     <p class="txt-eng-bold">EDGE</p>
 
+                    <a href="#none">
+                        <img src="../plantlance-image/icon/arrow-down.png" alt="arrow-down" class="arrow-down">
+                    </a>
+
                     <div class="edge-select-wrap">
-                        <label>
-                            <input type="radio" name="edge" value="silver">Silver
-                        </label>
-                        <label>
-                            <input type="radio" name="edge" value="wood">Wood
-                        </label>
-                        <label>
-                            <input type="radio" name="edge" value="black">
-                            Black
-                        </label>
+                        <a href="#none">
+                            <p class="txt-eng">600 X 600</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng"></p>
+                        </a>
                     </div>
                 </div>
+                
+                
+                
+                
+                
                 <div class="choice-shape">
                     <p class="txt-eng-bold">SHAPE</p>
 
@@ -245,7 +277,12 @@
                             <img src="../plantlance-image/icon/check1.png" alt="check" class="check">
                         </div>
                     </div>
+                    
                 </div>
+                
+               
+                
+                
 
 
 
@@ -387,16 +424,24 @@
                 <div class="menu-map-wrap">
                     <a href="#none">
                         <p class="txt-eng">Home</p>
-                        <p class="txt-eng">></p>
+                    </a>
+                    <p class="txt-eng">></p>
+                    <a href="#none">
                         <p class="txt-eng">Shop</p>
-                        <p class="txt-eng">></p>
+                    </a>
+                    <p class="txt-eng">></p>
+                    <a href="#none">
                         <p class="txt-eng">Furniture</p>
+                    </a>
+                    <p class="txt-eng">></p>
+                     <a href="#none">
+                        <p class="txt-eng">Table</p>
                     </a>
                 </div>
             </div>
-            
+
             <p class="txt-eng-bold category-title">TABLE</p>
-            
+
             <div class="side-category">
                 <div class="side-category-wrap">
                     <a href="#none">
@@ -404,13 +449,13 @@
                             SOFA
                         </p>
                     </a>
-                    
+
                     <a href="#none">
                         <p class="txt-eng-bold side-category-title">
                             TABLE
                         </p>
                     </a>
-                    
+
                     <a href="#none">
                         <p class="txt-eng-bold side-category-title">
                             CHAIR
@@ -438,7 +483,7 @@
 
 
 
- 
+
 
     <div data-include-path="footer.html"></div>
 
@@ -463,6 +508,7 @@
         });
         galleryTop.params.control = galleryThumbs;
         galleryThumbs.params.control = galleryTop;
+
     </script>
 
 
@@ -497,6 +543,7 @@
                 wing.classList.remove('fixed');
             }
         });
+
     </script>
 
 
@@ -504,4 +551,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>

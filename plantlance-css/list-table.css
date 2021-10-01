@@ -1,4 +1,4 @@
-\@charset "utf-8";
+@charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -429,7 +429,7 @@ li {
     padding:8px 0;
     cursor: pointer;
 }
-.second-category label input[type="checkbox"]{
+.second-category label input[type="radio"]{
     position: relative;
     float:left;
     padding:0;
@@ -443,7 +443,27 @@ li {
     padding:0;
     margin:0;
     margin-top:-2px;
+    margin-left:2px;
+    color:#808080;
+    font-family: "Urbanist-Medium";
 }
+
+#flex-sofa:checked ~ p,
+#cloud-sofa:checked ~ p,
+#our-sofa:checked ~ p,
+#block-sofa:checked ~ p,
+#grae-sofa:checked ~ p{
+    font-family: "Urbanist-SemiBold";
+    color:#2f2f2f;
+}
+
+#cafe-series:checked ~ p,
+#mate-series:checked ~ p,
+#muah-series:checked ~ p{
+    font-family: "Urbanist-SemiBold";
+    color:#2f2f2f;
+}
+
 /* side-menu */
 
 

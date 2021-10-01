@@ -2,66 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoB.ttf");
-    font-family: "AppleSDGothicNeoB";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoB.woff");
-    font-family: "AppleSDGothicNeoB";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoB.woff2");
-    font-family: "AppleSDGothicNeoB";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoR.ttf");
-    font-family: "AppleSDGothicNeoR";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoR.woff");
-    font-family: "AppleSDGothicNeoR";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoR.woff2");
-    font-family: "AppleSDGothicNeoR";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoM.ttf");
-    font-family: "AppleSDGothicNeoM";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoM.woff");
-    font-family: "AppleSDGothicNeoM";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoM.woff2");
-    font-family: "AppleSDGothicNeoM";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoUL.ttf");
-    font-family: "AppleSDGothicNeoUL";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoUL.woff");
-    font-family: "AppleSDGothicNeoUL";
-}
-
-@font-face {
-    src: url("../fonts/AppleSDGothicNeoUL.woff2");
-    font-family: "AppleSDGothicNeoUL";
-}
-
 
 
 @font-face {
@@ -154,6 +94,26 @@
 }
 
 
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff2");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.otf");
+    font-family: "Urbanist-Regular";
+}
 
 
 
@@ -280,15 +240,15 @@ li {
 
 
 .txt-eng {
-    font-family: "Urbanist-Medium";
+    font-family: "Urbanist-Regular";
 }
 
 .txt-eng-bold {
-    font-family: "Urbanist-ExtraBold";
+    font-family: "Urbanist-Bold";
 }
 
 .txt-kor {
-    font-family: "Pretendard-Medium";
+    font-family: "Pretendard-Regular";
 }
 
 .txt-kor-bold {
@@ -549,10 +509,165 @@ li {
     top:45%;
 }
 
-.product-img .enter-detail:hover ~ .wily-table{
+/* oblong-table */
+.product-img .oblong-table{
+    position: absolute;
+    float:left;
+    width:400px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .3s;
+    opacity: 1;
+}
+
+.product-img .oblong-table-zoom{
+    position: absolute;
+    float:left;
+    width:700px;
+    top:90%;
+    left:95%;
+    transform: translate(-50%,-30%);
+    transition-duration: .3s;
     opacity: 0;
 }
-.product-img .enter-detail:hover ~ .wily-table-zoom{
+
+.oblong-table-box .oblong-table-zoom{
+    top:35%;
+}
+/* //oblong-table */
+
+
+
+/* mate-table */
+.product-img .mate-table{
+    position: absolute;
+    float:left;
+    width:250px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .3s;
+    opacity: 1;
+}
+
+.product-img .mate-table-zoom{
+    position: absolute;
+    float:left;
+    width:500px;
+    top:90%;
+    left:70%;
+    transform: translate(-50%,-30%);
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.mate-table-box .mate-table-zoom{
+    top:35%;
+}
+/* //mate-table */
+
+
+
+
+/* mate-square-table */
+.product-img .mate-table-square{
+    position: absolute;
+    float:left;
+    width:350px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .3s;
+    opacity: 1;
+}
+
+.product-img .mate-table-square-zoom{
+    position: absolute;
+    float:left;
+    width:800px;
+    top:50%;
+    left:70%;
+    transform: translate(-50%,-30%);
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.mate-table-box .mate-table-square-zoom{
+    top:35%;
+}
+/* //mate-square-table */
+
+
+
+
+/* mate-sofa-table */
+.product-img .mate-sofa-table{
+    position: absolute;
+    float:left;
+    width:350px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .3s;
+    opacity: 1;
+}
+
+.product-img .mate-sofa-table-zoom{
+    position: absolute;
+    float:left;
+    width:700px;
+    top:50%;
+    left:70%;
+    transform: translate(-50%,-30%);
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.mate-table-box .mate-sofa-table-zoom{
+    top:35%;
+}
+/* //mate-sofa-table */
+
+
+
+
+/* trolley */
+.product-img .trolley{
+    position: absolute;
+    float:left;
+    width:600px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .3s;
+    opacity: 1;
+}
+
+.product-img .trolley-zoom{
+    position: absolute;
+    float:left;
+    width:1100px;
+    top:40%;
+    left:70%;
+    transform: translate(-36%,-50%);
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.mate-table-box .trolley-zoom{
+    top:35%;
+}
+/* //trolley */
+
+
+
+
+
+.product-img .enter-detail:hover ~ .default{
+    opacity: 0;
+}
+.product-img .enter-detail:hover ~ .zoom{
     opacity: 1;
 }
 
@@ -563,7 +678,7 @@ li {
 .product-img .enter-detail:hover ~ .material{
     opacity: 1;
 }
-.wily-hpl .material, .wily-low-hpl .material{
+.product-img .hpl{
     color: #37683C;
     border-color: #37683C;
 }
@@ -596,15 +711,30 @@ li {
     opacity: .4;
     bottom:0;
 }
-.product-info .product-name-eng{
+.product-info .product-name-wrap{
     position: relative;
     float:left;
     width:100%;
     margin-top:20px;
     margin-bottom:20px;
     margin-left:40px;
+}
+.product-name-wrap .product-name-eng{
+    position: relative;
+    float:left;
+    width:auto;
     font-size: 18px;
     font-family: "Urbanist-Bold";
+    color:#2f2f2f;
+    z-index: 2;
+}
+.product-name-wrap .product-material {
+    position: relative;
+    float:left;
+    width: auto;
+    margin-top:1px;
+    margin-left:5px;
+    font-size: 16px;
     color:#2f2f2f;
     z-index: 2;
 }

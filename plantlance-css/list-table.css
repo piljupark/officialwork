@@ -394,7 +394,6 @@ li {
     position: absolute;
     width:10px;
     padding-left:10px;
-    opacity: .5;
     margin-top:3px;
     z-index: 2;
 }
@@ -402,7 +401,6 @@ li {
     position: absolute;
     width:0px;
     padding-left:10px;
-    opacity: .5;
     margin-top:3px;
     z-index: 2;
 }

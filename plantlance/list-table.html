@@ -31,6 +31,10 @@
                 //페이지 별로 다른 메뉴 css 적용도 가능
                 document.getElementById("sub_footer").classList.add("show");
             });
+            $("#list-mobile").load("list-table-mob.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
         })
     </script>
 </head>
@@ -64,6 +68,8 @@
     </script>
     <!-- //gnb 불러오기 -->
 
+   
+   <div id="pc-product-list">
     <div id="product-top-title">
         <div class="menu-map">
             <div class="menu-map-wrap">
@@ -172,7 +178,9 @@
                 <div class="product product1">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/wily-fenix1.png" alt="wily-table" class="wily-fenix">
+                        <img src="../plantlance-image/shop-table/wily-fenix1.png" alt="wily-table" class="wily-fenix default">
+                        <img src="../plantlance-image/shop-table/wily-fenix1.png" alt="wily-table" class="wily-fenix wily-fenix-zoom img-zoom">
+                        <p class="txt-eng top-material">FENIX</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -189,7 +197,9 @@
                 <div class="product product2">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/wily-hpl1.png" alt="wily-table" class="wily-hpl">
+                        <img src="../plantlance-image/shop-table/wily-hpl1.png" alt="wily-table" class="wily-hpl default">
+                        <img src="../plantlance-image/shop-table/wily-hpl1.png" alt="wily-table" class="wily-hpl wily-hpl-zoom img-zoom">
+                        <p class="txt-eng top-material top-material-hpl">HPL</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -208,7 +218,9 @@
                 <div class="product product3">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/wily-low1.png" alt="wily-table" class="wily-low-fenix">
+                        <img src="../plantlance-image/shop-table/wily-low1.png" alt="wily-table" class="wily-low-fenix default">
+                        <img src="../plantlance-image/shop-table/wily-low1.png" alt="wily-table" class="wily-low-fenix wily-low-fenix-zoom img-zoom">
+                        <p class="txt-eng top-material">FENIX</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -225,7 +237,9 @@
                 <div class="product product4">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/wily-low-hpl.png" alt="wily-table" class="wily-low-hpl">
+                        <img src="../plantlance-image/shop-table/wily-low-hpl.png" alt="wily-table" class="wily-low-hpl default">
+                        <img src="../plantlance-image/shop-table/wily-low-hpl.png" alt="wily-table" class="wily-low-hpl wily-low-hpl-zoom img-zoom">
+                        <p class="txt-eng top-material top-material-hpl">HPL</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -244,7 +258,9 @@
                 <div class="product product5">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/oblong-fenix.png" alt="oblong-table" class="oblong-fenix">
+                        <img src="../plantlance-image/shop-table/oblong-fenix.png" alt="oblong-table" class="oblong-fenix default">
+                        <img src="../plantlance-image/shop-table/oblong-fenix.png" alt="oblong-tabe" class="oblong-fenix oblong-fenix-zoom img-zoom">
+                        <p class="txt-eng top-material">FENIX</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -261,7 +277,9 @@
                 <div class="product product6">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/oblong-hpl.png" alt="oblong-table" class="oblong-hpl">
+                        <img src="../plantlance-image/shop-table/oblong-hpl.png" alt="oblong-table" class="oblong-hpl default">
+                       <img src="../plantlance-image/shop-table/oblong-hpl.png" alt="oblong-table" class="oblong-hpl oblong-zoom img-zoom">
+                        <p class="txt-eng top-material top-material-hpl">HPL</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -280,7 +298,9 @@
                 <div class="product product7">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/mate-table.png" alt="mate-table" class="mate-table">
+                        <img src="../plantlance-image/shop-table/mate-table.png" alt="mate-table" class="mate-table default">
+                        <img src="../plantlance-image/shop-table/mate-table.png" alt="mate-table" class="mate-table mate-table-zoom img-zoom">
+                        <p class="txt-eng top-material">FENIX</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -297,7 +317,9 @@
                 <div class="product product8">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/mate-table-square.png" alt="mate-table" class="mate-table-square">
+                        <img src="../plantlance-image/shop-table/mate-table-square.png" alt="mate-table" class="mate-table-square default">
+                        <img src="../plantlance-image/shop-table/mate-table-square.png" alt="mate-table" class="mate-table-square mate-table-square-zoom img-zoom">
+                        <p class="txt-eng top-material">FENIX</p>
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -316,7 +338,8 @@
                 <div class="product product9">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/mate-sofa-table.png" alt="mate-table" class="mate-sofa-table">
+                        <img src="../plantlance-image/shop-table/mate-sofa-table.png" alt="mate-table" class="mate-sofa-table default">
+                        <img src="../plantlance-image/shop-table/mate-sofa-table.png" alt="mate-table" class="mate-sofa-table mate-sofa-table-zoom img-zoom">
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -332,7 +355,8 @@
                 <div class="product product10">
                     <a href="#none" class="product-button"></a>
                     <div class="product-img">
-                        <img src="../plantlance-image/shop-table/trolley.png" alt="pet-trolley" class="pet-trolley">
+                        <img src="../plantlance-image/shop-table/trolley.png" alt="pet-trolley" class="pet-trolley default">
+                       <img src="../plantlance-image/shop-table/trolley.png" alt="pet-trolley" class="pet-trolley pet-trolley-zoom img-zoom">
                     </div>
                     <div class="product-info">
                         <div class="product-name-wrap">
@@ -354,15 +378,15 @@
 
     </div>
     <!-- //사이드 메뉴 & 제품 리스트 -->
+    </div>
 
 
 
 
 
 
-
-
-
+    
+    <div id="list-mobile"></div>
     <div id="footer"></div>
 
 

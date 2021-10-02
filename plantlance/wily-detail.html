@@ -104,6 +104,11 @@
         }
     </script>
     <!-- //수량과 비례한 가격 변동 스크립트 -->
+    
+    
+    <script>
+        $("#product-box .product-box-wrap .product-info-place").Scrolling($("#product-box .product-box-wrap .product-info-place").offset().top, ($("#product-box .product-box-wrap").height() - $("#product-box .product-box-wrap .product-info-place").height()));
+    </script>
 
 
 
@@ -141,29 +146,14 @@
 
     <div id="product-box">
         <div class="product-box-wrap">
+
+            <!-- 상품 이미지 -->
             <div class="product-img-place">
-                <div class="swiper-container gallery-top swiper-container-horizontal">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                    </div>
-                </div>
 
-                <div class="swiper-container gallery-thumbs swiper-container-horizontal">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                        <div class="swiper-slide"><img src="../plantlance-image/product/willy-table-main.png" alt="wily-table"></div>
-                    </div>
-                </div>
-
-                <div class="img-box"></div>
-                <div class="img-box"></div>
-                <div class="img-box"></div>
             </div>
+            <!-- //상품 이미지 -->
+
+
             <div class="product-info-place">
                 <div class="product-name">
                     <div class="product-name-wrap">
@@ -437,12 +427,12 @@
 
                         <div class="buy">
                             <a href="#none">
-                                <p class="txt-eng-bold">BUY</p>
+                                <p class="txt-eng">BUY</p>
                             </a>
                         </div>
                         <div class="cart">
                             <a href="#none">
-                                <p class="txt-eng-bold">CART</p>
+                                <p class="txt-eng">CART</p>
                             </a>
                         </div>
                     </div>
@@ -574,6 +564,7 @@
 
     <script src="../plantlance-script/swiper.min.js"></script>
 
+    
 
 
 
@@ -595,38 +586,14 @@
         galleryThumbs.params.control = galleryTop;
     </script>
 
+ 
+
+    
 
 
 
     <script>
-        /*
-           $.fn.Scrolling = function(obj,tar){
-               var _this = this;
-               $(window).scroll(function(e){
-                   var end = obj + tar;
-                   $(window).scrollTop() >= obj ? _this.addClass("fixed") : _this.removeClass("fixed");
-                   if($(window).scrollTop() >= end) _this.removeClass("fixed");
-               });
-           };
-            
-            $("#product-box .product-box-wrap .product-info-place").Scrolling($("#product-box .product-box-wrap .product-info-place").offset().top, ($("#product-box").height() - $("#product-box .product-box-wrap .product-info-place").height()));
-            
-            */
 
-
-        const content = document.querySelector('#product-box');
-        const wing = document.querySelector('#product-box > .product-box-wrap > .product-info-place');
-
-        // 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
-        const contentTop = content.getBoundingClientRect().top + window.scrollY;
-
-        window.addEventListener('scroll', function() {
-            if (window.scrollY >= contentTop) {
-                wing.classList.add('fixed');
-            } else {
-                wing.classList.remove('fixed');
-            }
-        });
     </script>
 
 

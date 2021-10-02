@@ -710,10 +710,6 @@ li {
 
 
 
-/* //product-list */
-
-
-
 /* product-button */
 .product-button:hover ~ .product-info{
     opacity: .83;
@@ -723,6 +719,12 @@ li {
 }
 /* //product-button */
 
+
+/* category-button */
+.side-category-wrap .second-category #cafe-series:checked ~ .product-list .product-list-wrap:nth-child(-n+2):nth-child(n+5){
+    display: none;
+}
+/* //category-button */
 
 
 

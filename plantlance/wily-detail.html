@@ -25,6 +25,10 @@
                 //페이지 별로 다른 메뉴 css 적용도 가능
                 document.getElementById("sub_nav").classList.add("show");
             });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
         })
     </script>
 
@@ -560,7 +564,7 @@
 
 
 
-    <div data-include-path="footer.html"></div>
+    <div id="footer"></div>
 
     <script src="../plantlance-script/swiper.min.js"></script>
 

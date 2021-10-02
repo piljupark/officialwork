@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
+    <script src="../plantlance-script/jquery.fullpage.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/list-table-mob.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+
+    <script src="../plantlance-script/list-table-mob.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+</head>
+
+
+
+<body onload="init();">
+
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+    <div id="mob-whole">
+        <div class="mob-whole-wrap">
+
+            <!-- 탑 카테고리 -->
+            <div class="top-category-wrap">
+                <a href="../plantlance/plantlance.html">
+                    <p class="txt-eng">Home</p>
+                </a>
+
+                <p class="txt-eng">></p>
+
+                <a href="#none">
+                    <p class="txt-eng">Shop</p>
+                </a>
+
+                <p class="txt-eng">></p>
+
+                <a href="#none">
+                    <p class="txt-eng">Furniture</p>
+                </a>
+
+                <p class="txt-eng">></p>
+
+                <a href="#none">
+                    <p class="txt-eng">Table</p>
+                </a>
+            </div>
+            <!-- //탑 카테고리 -->
+
+            <div class="mob-product-list">
+                <p class="txt-eng-bold mob-product-title-category">
+                    TABLE
+                </p>
+
+                <!-- 카테고리 버튼 -->
+                <input type="radio" name="furniture" id="mob-table" checked>
+                <input type="radio" name="furniture" id="mob-chair">
+                <input type="radio" name="furniture" id="mob-sofa">
+
+                <label for="mob-table" class="mob-category-button mob-table-button txt-eng">
+                    TABLE
+                </label>
+                <div class="label-underline1 label-underline" for="mob-table"></div>
+
+
+                <label for="mob-chair" class="mob-category-button mob-chair-button txt-eng">
+                    CHAIR
+                </label>
+                <div class="label-underline2 label-underline" for="mob-table"></div>
+
+
+                <label for="mob-sofa" class="mob-category-button mob-sofa-button txt-eng">
+                    SOFA
+                </label>
+                <div class="label-underline3 label-underline" for="mob-table"></div>
+
+                <div class="line"></div>
+                <!-- //카테고리 버튼 -->
+
+
+                <!-- 테이블 버튼 -->
+                <input type="radio" name="table" id="mob-cafe">
+                <input type="radio" name="table" id="mob-mate">
+                <input type="radio" name="table" id="mob-muah">
+
+                <label for="mob-cafe" class="txt-eng mob-table-category-button mob-cafe-button">
+                    Cafe Series
+                </label>
+                <label for="mob-mate" class="txt-eng mob-table-category-button mob-mate-button">
+                    Mate Series
+                </label>
+                <label for="mob-muah" class="txt-eng mob-table-category-button mob-muah-button">
+                    Muah Series
+                </label>
+
+                <!-- //테이블 버튼 -->
+
+
+                <!-- 제품 리스트 -->
+                <div class="mob-product-list">
+                   
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mob-product">
+                           <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img"></div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
+                                    <p class="txt-eng mob-material">( Fenix )</p>
+                                </div>
+                                
+                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                <p class="txt-eng mob-color">12 color</p>
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+                <!-- //제품 리스트 -->
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="footer"></div>
+
+
+
+
+
+</body></html>

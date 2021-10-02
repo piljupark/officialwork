@@ -387,7 +387,7 @@ li {
     padding:8px 0;
     cursor: pointer;
 }
-.second-category label input[type="radio"]{
+.second-category input[type="radio"]{
     position: relative;
     float:left;
     padding:0;
@@ -406,23 +406,27 @@ li {
     font-family: "Urbanist-Medium";
 }
 
-#flex-sofa:checked ~ p,
-#cloud-sofa:checked ~ p,
-#our-sofa:checked ~ p,
-#block-sofa:checked ~ p,
-#grae-sofa:checked ~ p{
+#flex-sofa:checked ~ label:nth-child(6) p,
+#cloud-sofa:checked ~ label:nth-child(7) p,
+#our-sofa:checked ~ label:nth-child(8) p,
+#block-sofa:checked ~ label:nth-child(9) p,
+#grae-sofa:checked ~ label:nth-child(10) p{
     font-family: "Urbanist-SemiBold";
     color:#2f2f2f;
 }
 
-#cafe-series:checked ~ p,
-#mate-series:checked ~ p,
-#muah-series:checked ~ p{
+#cafe-series:checked ~ label:nth-child(4) p,
+#mate-series:checked ~ label:nth-child(5) p,
+#muah-series:checked ~ label:nth-child(6) p{
     font-family: "Urbanist-SemiBold";
     color:#2f2f2f;
 }
 
 /* side-menu */
+
+
+
+
 
 
 
@@ -443,10 +447,106 @@ li {
     position: relative;
     float:left;
     width:100%;
+    height:400px;
     margin-top:10px;
     display: flex;
     justify-content: space-between;
 }
+
+
+
+/* product-info */
+.product-img .enter-detail:hover ~ .product-info{
+    opacity: 1;
+}
+.product-info{
+    position: absolute;
+    float:left;
+    width:100%;
+    height:120px;
+    bottom:0;
+    padding-left:30px;
+    transition-duration: .3s;
+    opacity: 0;
+}
+.product-info .product-bottom-info{
+    position: absolute;
+    float:left;
+    width:100%;
+    height:135px;
+    background: #f5f5f5;
+    z-index: 1;
+    opacity: .83;
+    bottom:0;
+}
+.product-info .product-name-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:40px;
+}
+.product-name-wrap .product-name-eng{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 18px;
+    font-family: "Urbanist-Bold";
+    color:#2f2f2f;
+    z-index: 2;
+}
+.product-name-wrap .product-material {
+    position: relative;
+    float:left;
+    width: auto;
+    margin-top:1px;
+    margin-left:5px;
+    font-size: 16px;
+    color:#2f2f2f;
+    z-index: 2;
+}
+.product-info .product-color{
+    position: relative;
+    float:left;
+    width: auto;
+    font-size: 12px;
+    color:#a4a4a4;
+    font-family: "Urbanist-Regular";
+    z-index: 2;
+    margin-top:1px;
+    margin-left:5px;
+}
+.product-info .product-name-kor{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: #4f4f4f;
+    font-family: "Pretendard-Regular";
+    font-size: 12px;
+    z-index: 2;
+    margin-left:40px;
+}
+.product-info .product-price{
+    position: absolute;
+    float:left;
+    width:auto;
+    font-family: "Pretendard-Regular";
+    margin-top:50px;
+    font-size: 16px;
+    color:#2f2f2f;
+    right:70px;
+    z-index: 2;
+}
+/* //product-info */
+
+
+
+
+
+
+
+
 .product-list-wrap .material{
     position: absolute;
     top:10px;
@@ -683,97 +783,6 @@ li {
     border-color: #37683C;
 }
 /* //material */
-
-
-
-
-/* product-info */
-.product-img .enter-detail:hover ~ .product-info{
-    opacity: 1;
-}
-.product-info{
-    position: absolute;
-    float:left;
-    width:100%;
-    height:120px;
-    bottom:0;
-    padding-left:30px;
-    transition-duration: .3s;
-    opacity: 0;
-}
-.product-info .product-bottom-info{
-    position: absolute;
-    float:left;
-    width:100%;
-    height:135px;
-    background: #ddd;
-    z-index: 1;
-    opacity: .4;
-    bottom:0;
-}
-.product-info .product-name-wrap{
-    position: relative;
-    float:left;
-    width:100%;
-    margin-top:20px;
-    margin-bottom:20px;
-    margin-left:40px;
-}
-.product-name-wrap .product-name-eng{
-    position: relative;
-    float:left;
-    width:auto;
-    font-size: 18px;
-    font-family: "Urbanist-Bold";
-    color:#2f2f2f;
-    z-index: 2;
-}
-.product-name-wrap .product-material {
-    position: relative;
-    float:left;
-    width: auto;
-    margin-top:1px;
-    margin-left:5px;
-    font-size: 16px;
-    color:#2f2f2f;
-    z-index: 2;
-}
-.product-info .product-color{
-    position: relative;
-    float:left;
-    width: auto;
-    font-size: 12px;
-    color:#a4a4a4;
-    font-family: "Urbanist-Regular";
-    z-index: 2;
-    margin-top:1px;
-    margin-left:5px;
-}
-.product-info .product-name-kor{
-    position: relative;
-    float:left;
-    width:auto;
-    font-size: #4f4f4f;
-    font-family: "Pretendard-Regular";
-    font-size: 12px;
-    z-index: 2;
-    margin-left:40px;
-}
-.product-info .product-price{
-    position: absolute;
-    float:left;
-    width:auto;
-    font-family: "Pretendard-Regular";
-    margin-top:50px;
-    font-size: 16px;
-    color:#2f2f2f;
-    right:70px;
-    z-index: 2;
-}
-/* //product-info */
-
-
-
 
 
 

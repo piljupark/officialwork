@@ -160,7 +160,7 @@ footer {
     left: 0;
     background: rgba(0, 0, 0, 0.03);
     display: flex;
-    padding:20px;
+    padding: 20px;
 }
 
 .footer-wrap {
@@ -168,7 +168,7 @@ footer {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    
+
 }
 
 .footer-logo {
@@ -209,14 +209,17 @@ footer {
     float: left;
     margin-top: 5px;
 }
-.footer-left-bottom .footer-copyright{
+
+.footer-left-bottom .footer-copyright {
     position: relative;
-    float:left;
-    margin-top:30px;
+    float: left;
+    margin-top: 30px;
 }
-.footer-left-bottom .footer-copyright .copyright1{
+
+.footer-left-bottom .footer-copyright .copyright1 {
     margin-bottom: 5px;
 }
+
 /* //footer-left*/
 
 
@@ -228,54 +231,62 @@ footer {
     float: right;
     width: 50%;
 }
-.tel-wrap{
+
+.tel-wrap {
     position: relative;
-    float:right;
-    
+    float: left;
+
 }
-.tel-wrap  .tel-txt{
+
+.tel-wrap .tel-txt {
     position: relative;
-    color:rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
-.tel-wrap  .tel-number{
+
+.tel-wrap .tel-number {
     position: relative;
     font-size: 31px;
     text-align: center;
-    margin-top:10px;
-}
-.operation-hour-wrap{
-    position: relative;
-    float:right;
-    width:250px;
-    height:60px;
-    margin-left:50px;
-    background: rgba(0,0,0,0.04);
-    margin-right:40px;
+    margin-top: 10px;
 }
 
-.operation-hour-wrap .operation{
+.operation-hour-wrap {
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 60px;
+    margin-left: 50px;
+    background: rgba(0, 0, 0, 0.04);
+    margin-right: 40px;
+}
+
+.operation-hour-wrap .operation {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.operation-hour-wrap .operation p{
+
+.operation-hour-wrap .operation p {
     position: relative;
-    float:left;
-    margin-top:9px;
+    float: left;
+    margin-top: 9px;
 }
-.operation-hour-wrap .operation .off{
+
+.operation-hour-wrap .operation .off {
     font-size: 11px;
-    color:#fff;
-    background: rgba(0,0,0,0.6);
-    padding:3px 10px 2px 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3px 10px 2px 10px;
     border-radius: 40px;
-    margin-top:8px;
+    margin-top: 8px;
 }
-.operation-hour-wrap .operation .hour{
-    color:rgba(0,0,0,0.4);
+
+.operation-hour-wrap .operation .hour {
+    color: rgba(0, 0, 0, 0.4);
 }
+
 /* //footer-right */
 
 
@@ -283,184 +294,223 @@ footer {
 
 
 @media screen and (max-width:940px) and (min-width:840px) {
-    
-    .footer-left p{
+
+    .footer-left p {
         font-size: 12px;
     }
-    
-    .footer-right{
-        width:50%;
+
+    .footer-right {
+        width: 50%;
     }
-    .footer-right p{
+
+    .footer-right p {
         font-size: 12px;
     }
-    .footer-right .tel-number{
+
+    .footer-right .tel-number {
         font-size: 28px;
     }
-    .footer-right .off{
+
+    .footer-right .off {
         font-size: 7px;
     }
-    .operation-hour-wrap{
-        margin-left:10px;
-        
+
+    .operation-hour-wrap {
+        margin-left: 10px;
+
     }
 }
 
 
-@media screen and (max-width:839px) and (min-width:390px){
-    footer{
+@media screen and (max-width:839px) and (min-width:390px) {
+    footer {
         padding-bottom: 0;
-        height:300px;
+        height: 300px;
     }
-    .footer-logo{
-        margin-top:15px;
+
+    .footer-logo {
+        margin-top: 15px;
     }
-    .footer-right{
-        float:left;
-        width:100%;
+
+    .footer-right {
+        float: left;
+        width: 100%;
     }
-    .footer-right .tel-wrap{
-        float:left;
+
+    .footer-right .tel-wrap {
+        float: left;
     }
-    .footer-right p{
+
+    .footer-right p {
         font-size: 12px;
     }
-    .footer-right .tel-number{
+
+    .footer-right .tel-number {
         font-size: 28px;
     }
-    .footer-right .operation-hour-wrap{
-        width:210px;
-        margin-left:0;
+
+    .footer-right .operation-hour-wrap {
+        width: 210px;
+        margin-left: 0;
     }
-    .footer-right .operation-hour-wrap p{
-        margin-top:10px;
+
+    .footer-right .operation-hour-wrap p {
+        margin-top: 10px;
     }
-    .operation-hour-wrap .operation .off{
+
+    .operation-hour-wrap .operation .off {
         font-size: 9px;
-        padding-left:5px;
-        padding-right:5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
-    
-    
-    
-    
-    .footer-left{
-        width:100%;
-        margin-top:20px;
+
+
+
+
+    .footer-left {
+        width: 100%;
+        margin-top: 20px;
     }
-    
-    
-    .footer-left p{
+
+
+    .footer-left p {
         font-size: 11px;
     }
-    .footer-copyright{
-        float:left;
-        
-        width:100%;
+
+    .footer-copyright {
+        float: left;
+
+        width: 100%;
     }
-    
+
 
 }
 
 
-@media screen and (max-width:389px) and (min-width:200px){
-    footer{
+@media screen and (max-width:389px) and (min-width:200px) {
+    footer {
         padding-bottom: 0;
-        height:200px;
-        padding-left:0;
-    }
-    .footer-logo{
-        margin-top:15px;
-        width:100px;
-        margin-left:4%;
-    }
-    
-    
-    
-    .footer-bottom-wrap{
-        border:none;
-        padding-bottom: 0;
-        margin-bottom:0;
-        margin-top:0;
-    }
-    
-    
-    .footer-right{
-        position: absolute;
-        float:left;
-        width:90%;
-        top:-150px;
-        left:50%;
-        transform: translate(-50%);
-    }
-    .footer-right .tel-wrap{
-        float:left;
-        margin-top:9px;
+        height: 200px;
+        padding-left: 0;
     }
 
-    .footer-right p{
-        font-size: 10px;
+    .footer-logo {
+        margin-top: 15px;
+        width: 100px;
+        margin-left: 4%;
     }
-    .footer-right .tel-number{
+
+
+
+    .footer-bottom-wrap {
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+
+    .footer-right {
+        position: absolute;
+        float: left;
+        width: 95%;
+        top: -150px;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-right .tel-wrap {
+        float: left;
+        width: 50%;
+        margin-top: 9px;
+    }
+
+    .footer-right p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .footer-right .tel-txt {
+        margin-top: 2px;
+    }
+
+    .footer-right .tel-number {
+        width: 100%;
         font-size: 22px;
-        margin-top:6px;
+        margin-top: 6px;
         font-family: "Urbanist-SemiBold";
     }
-    .footer-right .operation-hour-wrap{
-        float:right;
-        width:200px;
-        margin-left:0;
-        height:60px;
+
+    /* operation-hour-wrap */
+    .footer-right .operation-hour-wrap {
+        position: relative;
+        float: right;
+        width: 50%;
+        height: 45px;
+        margin-top:10px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
         background: none;
-        margin-right:0;
-        border-left:1px solid #292929;
+        border-left: 1px solid #292929;
+
     }
-    .operation-hour-wrap .operation
-    {
+
+    .operation-hour-wrap .operation {
         justify-content: flex-start;
-        height:30px;
     }
-    
-    .operation-hour-wrap .operation .day
-    {
-       margin-right:15px;
+
+    .operation-hour-wrap .operation .day {
+        height: 0;
+        margin-top: 0;
+        margin-right: 7px;
         font-size: 11px;
         font-family: "Urbanist-SemiBold";
     }
-   
-   
-    .operation-hour-wrap .operation .off{
+    .operation-hour-wrap .operation .hour{
+        margin-top:0;
+    }
+
+
+    .operation-hour-wrap .operation .off {
         position: absolute;
         font-size: 9px;
-        padding-left:7px;
-        padding-right:7px;
-        margin-top:6px;
-        right:0;
-    }
-    .operation-hour-wrap .operation:nth-child(2){
-        margin-bottom:0px;
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-top:-3px;
+        right: -10px;
     }
     
-    
-    
-    
-    
-    
-    .footer-left{
-        width:90%;
-        margin-top:0px;
-        left:50%;
+    .operation-hour-wrap .operation:nth-child(2) {
+        margin-bottom: 0px;
+        margin-top:20px;
+        height:0;
+    }
+
+    /* //operation-hour-wrap */
+
+
+
+
+
+    .footer-left {
+        width: 90%;
+        margin-top: 0px;
+        left: 50%;
         transform: translate(-50%);
     }
-    
-    
-    .footer-left p{
+
+
+    .footer-left p {
         font-size: 10px;
     }
-    .footer-copyright{
-        float:left;
-        width:100%;
+
+    .footer-copyright {
+        float: left;
+        width: 100%;
     }
-    
+
 
 }

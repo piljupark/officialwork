@@ -1,0 +1,516 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.ttf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff2");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.ttf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff2");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.ttf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff2");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.ttf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff2");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff2");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.otf");
+    font-family: "Urbanist-Regular";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff2");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.otf");
+    font-family: "Urbanist-Medium";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff2");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.otf");
+    font-family: "Urbanist-SemiBold";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.ttf");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff2");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.otf");
+    font-family: "Urbanist-Bold";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff2");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.otf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+
+
+
+.txt-eng {
+    font-family: "Urbanist-Regular";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-Bold";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Regular";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+#mob-whole {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.mob-whole-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0 14px;
+}
+
+
+/* top-category */
+.top-category-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.top-category-wrap p {
+    position: relative;
+    float: left;
+    width: auto;
+    margin-right: 15px;
+    font-size: 10px;
+    color: #888;
+}
+
+/* //top-category */
+
+
+
+/* mob-product-list */
+.mob-product-list {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.mob-product-title-category {
+    position: relative;
+    float: left;
+    font-size: 18px;
+}
+
+
+/* category-button */
+.mob-product-list input[type="radio"] {
+    display: none;
+}
+
+.mob-product-list .mob-category-button {
+    position: absolute;
+    float: left;
+    width: auto;
+    cursor: pointer;
+    top: 3.5px;
+    z-index: 2;
+}
+
+.mob-table-button {
+    right: 115px;
+}
+.mob-chair-button {
+    right: 55px;
+}
+.mob-sofa-button {
+    right: 0;
+}
+
+
+
+
+.label-underline {
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 5px;
+    background: #0A57BF;
+    top: 35px;
+    z-index: 2;
+    display: none;
+}
+
+.label-underline1 {
+    width: 40px;
+    right: 115px;
+}
+
+.label-underline2 {
+    width: 40px;
+    right: 55px;
+}
+
+
+
+
+
+#mob-table:checked ~ .mob-table-button,
+#mob-chair:checked ~ .mob-chair-button,
+#mob-sofa:checked ~ .mob-sofa-button {
+    font-family: "Urbanist-Bold";
+}
+
+#mob-table:checked ~ .label-underline1,
+#mob-chair:checked ~ .label-underline2,
+#mob-sofa:checked ~ .label-underline3 {
+    display: block;
+}
+
+
+.line {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #d0d0d0;
+    z-index: 1;
+    opacity: .6;
+    margin-top: 15px;
+}
+/* //category-button */
+
+
+
+
+/* table-button */
+.mob-table-category-button{
+    position: relative;
+    float:left;
+    width:33.3%;
+    text-align: center;
+    font-size: 11px;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+#mob-cafe:checked ~ .mob-cafe-button,
+#mob-mate:checked ~ .mob-mate-button,
+#mob-muah:checked ~ .mob-muah-button{
+    font-family: "Urbanist-Bold";
+}
+
+/* //table-button */
+
+
+/* product-list */
+.mob-product-list{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    margin-top:30px;
+}
+.mob-product-list-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.mob-product{
+    position: relative;
+    float:left;
+    width:50%;
+    height:auto;
+}
+.mob-product:nth-child(1){
+    margin-right:7px;
+}
+.mob-product:nth-child(2){
+    margin-left:7px;
+}
+.mob-product-button{
+    position: absolute;
+    display: block;
+    width:100%;
+    height:100%;
+    z-index: 2;
+}
+
+
+.mob-product-img{
+    position: relative;
+    float:left;
+    width:100%;
+    padding-bottom: 100%;
+    background: #ddd;
+}
+.mob-product-info{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 70px;
+    margin-top:10px;
+}
+
+.mob-product-name-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.mob-product-name-wrap .mob-name{
+    position: relative;
+    float:left;
+    width:auto;
+    margin-right:10px;
+    font-size: 11px;
+}
+.mob-product-name-wrap .mob-material{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 11px;
+}
+
+.mob-name-kor{
+    position: relative;
+    float:left;
+    width: auto;
+    margin-right:10px;
+    font-size: 10px;
+}
+.mob-color{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 10px;
+    margin-top:2px;
+    color:#808080;
+}
+.mob-price{
+    position: relative;
+    float:right;
+    width:auto;
+    font-size: 10px;
+}
+/* //product-list */
+
+
+/* //mob-product-list */

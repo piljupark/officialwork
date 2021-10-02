@@ -427,7 +427,7 @@ li {
     margin-top:40px;
     padding-top:20px;
     padding-bottom: 20px;
-    border-bottom:1px solid #888;
+    border-bottom:1px solid #f5f5f5;
     border-top:2px solid #292929;
 }
 .choice-leg .txt-eng-bold {
@@ -452,7 +452,7 @@ li {
     width:100%;
     padding-top:20px;
     padding-bottom: 20px;
-    border-bottom:1px solid #888;
+    border-bottom:1px solid #f5f5f5;
 }
 .choice-edge .txt-eng-bold {
     position: relative;
@@ -474,7 +474,7 @@ li {
 
     padding-top:20px;
     padding-bottom: 20px;
-    border-bottom:1px solid #888;
+    border-bottom:1px solid #f5f5f5;
 }
 .choice-shape .txt-eng-bold {
     position: relative;
@@ -497,7 +497,7 @@ li {
     width:100%;
     padding-top:20px;
     padding-bottom: 20px;
-    border-bottom:1px solid #888;
+    border-bottom:1px solid #f5f5f5;
 }
 .choice-size .txt-eng-bold {
     position: relative;
@@ -507,7 +507,7 @@ li {
     font-family: "Urbanist-SemiBold";
 }
 
-
+ 
 
 
 .choice-color{
@@ -516,7 +516,7 @@ li {
     width:100%;
     padding-top:20px;
     padding-bottom: 20px;
-    border-bottom:2px solid #292929;
+   border-bottom:1px solid #f5f5f5;
 }
 .choice-color .txt-eng-bold {
     position: relative;

@@ -215,13 +215,15 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-
+html{
+    overflow-x: hidden!important;
+}
 body {
     width: 100vw;
     height: 100vh;
     color: #292929;
     font-size: 14px;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -255,6 +257,9 @@ li {
     font-family: "Pretendard-SemiBold";
 }
 
+#header{
+    position: relative;
+}
 
 
 #mob-whole {
@@ -264,13 +269,25 @@ li {
     height: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     justify-items: center;
-    
+    animation-name: appEar;
+    animation-delay: .5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes appEar{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .mob-whole-wrap {
@@ -422,15 +439,18 @@ li {
     width:100%;
     height: auto;
     margin-top:30px;
+    transition-duration: .5s;
+    overflow: hidden;
 }
 .mob-product-list-wrap{
     position: relative;
     float:left;
     width:100%;
-    height: auto;
+    height:auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom:10px;
+    overflow: hidden;
+    transition-duration: 1s;
 }
 .mob-product{
     position: relative;
@@ -458,7 +478,12 @@ li {
     float:left;
     width:100%;
     padding-bottom: 100%;
-    background: #ddd;
+    overflow: hidden!important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 .mob-product-info{
     position: relative;
@@ -466,6 +491,7 @@ li {
     width:100%;
     height: 70px;
     margin-top:10px;
+    background: #fff;
 }
 
 .mob-product-name-wrap{
@@ -509,8 +535,78 @@ li {
     float:right;
     width:auto;
     font-size: 10px;
+    margin-top:1.5px;
 }
 /* //product-list */
 
 
 /* //mob-product-list */
+
+
+
+
+/* product-img */
+.mob-product .mob-product-img img{
+    position: absolute;
+    float:left;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+.mob-product1 img{
+    width:60%;
+}
+.mob-product2 img{
+    width:60%;
+}
+.mob-product3 img{
+    width:70%;
+}
+.mob-product4 img{
+    width:70%;
+}
+.mob-product5 img{
+    width:80%;
+}
+.mob-product6 img{
+    width:80%;
+}
+.mob-product7 img{
+    width:60%;
+}
+.mob-product8 img{
+    width:80%;
+}
+.mob-product9 img{
+    width:60%;
+}
+.mob-product10 img{
+    width:120%;
+}
+/* //product-img */
+
+
+
+/* more-product */
+.mob-more-product-button{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    border: 1px solid #2F2F2F;
+    padding:15px 0;
+    box-sizing: border-box;
+    margin-top:50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.mob-more-product-button .more-down{
+    position: relative;
+    float:left;
+    height:10px;
+    text-align: center;
+    margin-top:4px;
+    margin-left:15px;
+}
+/* //more-product */

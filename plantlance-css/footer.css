@@ -107,13 +107,15 @@ body::-webkit-scrollbar{
     display: none;
 }
 */
-
+html {
+    overflow-x: hidden!important;
+}
 body {
     width: 100vw;
     height: 100vh;
     color: #292929;
     font-size: 14px;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
@@ -161,6 +163,7 @@ footer {
     background: rgba(0, 0, 0, 0.03);
     display: flex;
     padding: 20px;
+    padding-right:0;
 }
 
 .footer-wrap {
@@ -423,7 +426,7 @@ footer {
 
     .footer-right .tel-wrap {
         float: left;
-        width: 50%;
+        width: 45%;
         margin-top: 9px;
     }
 
@@ -447,7 +450,7 @@ footer {
     .footer-right .operation-hour-wrap {
         position: relative;
         float: right;
-        width: 50%;
+        width: 55%;
         height: 45px;
         margin-top:10px;
         margin-bottom: 0;
@@ -470,7 +473,7 @@ footer {
         font-family: "Urbanist-SemiBold";
     }
     .operation-hour-wrap .operation .hour{
-        margin-top:0;
+        margin-top:1px;
     }
 
 
@@ -480,7 +483,7 @@ footer {
         padding-left: 7px;
         padding-right: 7px;
         margin-top:-3px;
-        right: -10px;
+        right: 0px;
     }
     
     .operation-hour-wrap .operation:nth-child(2) {

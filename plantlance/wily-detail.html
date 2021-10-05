@@ -18,6 +18,10 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/wily-detail.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+
+    <script src="../plantlance-script/wily-detail.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -108,8 +112,8 @@
         }
     </script>
     <!-- //수량과 비례한 가격 변동 스크립트 -->
-    
-    
+
+
     <script>
         $("#product-box .product-box-wrap .product-info-place").Scrolling($("#product-box .product-box-wrap .product-info-place").offset().top, ($("#product-box .product-box-wrap").height() - $("#product-box .product-box-wrap .product-info-place").height()));
     </script>
@@ -153,7 +157,61 @@
 
             <!-- 상품 이미지 -->
             <div class="product-img-place">
+                <div class="product-img-wrap">
+                    <div class="main-img-wrap slider-for">
+                        <div class="main-img main-img1">
+                            <img src="../plantlance-image/shop-table/wily-fenix.png" alt="wily">
+                        </div>
+                        <div class="main-img main-img2">
+                            <img src="../plantlance-image/shop-table/wily-fenix.png" alt="wily">
+                        </div>
+                        <div class="main-img main-img3">
+                            <img src="../plantlance-image/shop-table/wily-fenix.png" alt="wily">
+                        </div>
+                        <div class="main-img main-img4">
+                            
+                        </div>
+                    </div>
 
+                    <div class="second-img-wrap slider-nav">
+                        <div class="second-img second-img1">
+                            <img src="../plantlance-image/shop-table/wily-fenix.png" alt="wily">
+                        </div>
+                        <div class="second-img second-img2">
+                            <img src="../plantlance-image/shop-table/wily-fenix.png" alt="wily">
+                        </div>
+                        <div class="second-img second-img3">
+                            <img src="../plantlance-image/shop-table/wily-fenix.png" alt="wily">
+                        </div>
+                        <div class="second-img second-img4"></div>
+                    </div>
+                </div>
+                
+                <input type="radio" id="detail">
+                <input type="radio" id="info">
+                <input type="radio" id="delivery">
+                <input type="radio" id="review">
+                
+                
+                <div class="product-info-line"></div>
+                
+                <label for="detail" class="detail-button">
+                    <p class="txt-eng">Product Detail</p>
+                </label>
+                
+                <label for="info" class="info-button">
+                    <p class="txt-eng">Information</p>
+                </label>
+                
+                <label for="delivery" class="delivery-button">
+                    <p class="txt-eng">Delivery</p>
+                </label>
+                
+                <label for="review" class="review-button">
+                    <p class="txt-eng">Review</p>
+                </label>
+                <div class="product-info-line product-info-line2"></div>
+                
             </div>
             <!-- //상품 이미지 -->
 
@@ -566,33 +624,33 @@
 
     <div id="footer"></div>
 
-    <script src="../plantlance-script/swiper.min.js"></script>
-
-    
 
 
 
+
+
+    <script type="text/javascript" src="../plantlance-script/slick.min.js"></script>
 
     <script>
-        var galleryTop = new Swiper('#product-box .product-box-wrap .product-img-place .gallery-top', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 10,
+        $(document).ready(function() {
+
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                centerMode: true,
+                focusOnSelect: true
+            });
         });
-        var galleryThumbs = new Swiper('#product-box .product-box-wrap .product-img-place .gallery-thumbs', {
-            spaceBetween: 10,
-            centerSlides: true,
-            slidesPerView: 'auto',
-            touchRatio: 0.2,
-            slideToClickedSlide: true
-        });
-        galleryTop.params.control = galleryThumbs;
-        galleryThumbs.params.control = galleryTop;
     </script>
 
- 
-
-    
 
 
 

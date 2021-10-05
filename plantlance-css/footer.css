@@ -164,6 +164,7 @@ footer {
     display: flex;
     padding: 20px;
     padding-right:0;
+    z-index: 1;
 }
 
 .footer-wrap {

@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   $(".mob-option-up").click(function(){
-      $(".mob-option-wrap").css("height","400px");
+      $(".mob-option-wrap").css("height","500px");
       $(".mob-option-up").css("display","none");
       $(".mob-option-down").css("display","block");
   });

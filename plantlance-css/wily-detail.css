@@ -226,9 +226,25 @@ li {
 
 
 
+#mob-whole{
+    display: none;
+}
 
 
 
+
+#detail-pc{
+    position: relative;
+    float:left;
+    width:100%;
+    height:auto;
+    animation-name: appEar;
+    animation-delay: .5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 2!important;
+}
 
 /* menu-map */
 #menu-map{
@@ -1231,6 +1247,28 @@ input:focus {
     display: none;
 }
 /* //bg-black */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:830px) and (min-width:300px) {
+    #detail-pc{
+        display: none;
+    }
+    
+    #mob-whole{
+        display: block!important;
+    }
+}
 
 
 

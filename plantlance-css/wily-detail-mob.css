@@ -382,7 +382,28 @@ li {
     float:right;
     font-size: 11px;
 }
+
+
+
+.mob-product-info-txt{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top: 40px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.mob-product-info-txt p{
+    text-align: justify;
+    font-size: 11px;
+}
+
 /* //mob-produc-info-wrap */
+
+
+
+
 
 
 /* mob-product-img-wrap */
@@ -459,4 +480,55 @@ li {
     z-index: 2;
 }
 /* //mob-button */
+
+
+
+/* mob-option-wrap */
+.mob-option-wrap{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:80px;
+    background: #fff;
+    left:0;
+    transition-duration: .3s;
+    box-sizing: border-box;
+    padding:0 12px;
+}
+.mob-option-show{
+    position: absolute;
+    width:50px;
+    height:25px;
+    background: #fff;
+    top:-25px;
+    left:50%;
+    transform: translate(-50%);
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+.mob-option-show-arrow{
+    position: absolute;
+    width:15px;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.mob-option-down{
+    display: none;
+}
+
+
+.mob-option{
+    position: relative;
+    float:left;
+    width:100%;
+    height:40px;
+    margin-bottom: 5px;
+    background: #ebebeb;
+}
+.mob-leg-wrap{
+    margin-top:50px;
+}
+/* //mob-option-wrap */
 

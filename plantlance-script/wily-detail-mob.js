@@ -13,6 +13,12 @@ $(document).ready(function () {
       $(".mob-option-down").css("display","none");
   });
 
+    
+    
+    $(".mob-product-more a").click(function(){
+        $(".mob-product-img-wrap").css("height","auto");
+        $(".mob-product-more").css("display","none");
+    });
 
 
 });

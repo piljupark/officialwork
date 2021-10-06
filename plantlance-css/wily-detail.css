@@ -227,7 +227,7 @@ li {
 
 
 #mob-whole{
-    display: none;
+    display: none!important;
 }
 
 
@@ -1259,7 +1259,6 @@ input:focus {
 
 
 
-
 @media screen and (max-width:830px) and (min-width:300px) {
     #detail-pc{
         display: none;
@@ -1268,6 +1267,7 @@ input:focus {
     #mob-whole{
         display: block!important;
     }
+    
 }
 
 

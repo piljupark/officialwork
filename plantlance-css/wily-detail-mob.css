@@ -274,7 +274,7 @@ li {
     width: 100%;
     height: auto;
     margin-top: 100px;
-    margin-bottom: 350px;
+    margin-bottom: 150px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -659,7 +659,7 @@ li {
 .mob-option select{
     position: relative;
     float:right;
-     width:auto;
+    width:100px;
     margin-right:20px;
     top:50%;
     transform: translate(0,-50%);
@@ -687,7 +687,7 @@ li {
     float:left;
     width:100%;
     margin-top:20px;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 .my-option-title{
     position: relative;

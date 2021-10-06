@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/sort-member.css">
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+
+    <div id="login"> 
+        <div class="login-wrap">
+            
+            
+            <div class="user-login">
+                <input type="text" placeholder="아이디를 입력해주세요" class="id">
+                <input type="password" placeholder="비밀번호를 입력해주세요" class="password">
+                <div class="remember-user-wrap">
+                    <input type="checkbox" class="remember-user" id="remember">
+                    <label class="txt-kor remember-txt" for="remember">아이디 저장</label>
+                </div>
+                
+                
+                <a href="shopping-fill.html">
+                    <p class="txt-eng login-btn">LOGIN</p>
+                </a>
+                <a href="non-member-shopping.html">
+                    <p class="txt-kor non-member-btn">비회원 구매하기</p>
+                </a>
+                <div class="user-help">
+                    <a href="#none">
+                        <p class="txt-kor join">회원가입</p>
+                    </a>
+                    <p class="txt-kor">|</p>
+                    <a href="#none">
+                        <p class="txt-kor find-id">아이디 찾기</p>
+                    </a>
+                    <p class="txt-kor">|</p>
+                    <a href="#none">
+                        <p class="txt-kor find-pw">비밀번호 찾기</p>
+                    </a>
+                </div>
+                <div class="join-sns">
+                    <a href="#none">
+                        <img src="../plantlance-image/icon/naver-icon1.png" alt="naver" class="sns naver">
+                    </a>
+                    <a href="#none">
+                        <img src="../plantlance-image/icon/kakao-icon.png" alt="kakao" class="sns kakao">
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+
+
+</body></html>

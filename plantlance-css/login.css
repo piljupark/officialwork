@@ -333,6 +333,7 @@ li {
     border-bottom:1px solid #d1d1d1;
     padding-bottom: 15px;
     margin-bottom: 20px;
+    -webkit-border-radius: 0;
 }
 .customer-login input:focus{
     outline: none;

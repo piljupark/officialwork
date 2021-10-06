@@ -2,6 +2,48 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    src: url("../fonts/Pretendard-Thin.ttf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff2");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.ttf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff2");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
 
 
 
@@ -28,6 +70,7 @@
 
 
 
+
 @font-face {
     src: url("../fonts/Pretendard-SemiBold.ttf");
     font-family: "Pretendard-SemiBold";
@@ -49,26 +92,57 @@
 }
 
 
+
+
+
+
 @font-face {
-    src: url("../fonts/Pretendard-Regular.ttf");
-    font-family: "Pretendard-Regular";
+    src: url("../fonts/Pretendard-Bold.ttf");
+    font-family: "Pretendard-Bold";
 }
 
 @font-face {
-    src: url("../fonts/Pretendard-Regular.woff");
-    font-family: "Pretendard-Regular";
+    src: url("../fonts/Pretendard-Bold.woff");
+    font-family: "Pretendard-Bold";
 }
 
 @font-face {
-    src: url("../fonts/Pretendard-Regular.woff2");
-    font-family: "Pretendard-Regular";
+    src: url("../fonts/Pretendard-Bold.woff2");
+    font-family: "Pretendard-Bold";
 }
 
 @font-face {
-    src: url("../fonts/Pretendard-Regular.otf");
-    font-family: "Pretendard-Regular";
+    src: url("../fonts/Pretendard-Bold.otf");
+    font-family: "Pretendard-Bold";
 }
 
+
+
+
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff2");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.otf");
+    font-family: "Urbanist-Regular";
+}
 
 
 
@@ -120,6 +194,30 @@
 
 
 
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.ttf");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff2");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.otf");
+    font-family: "Urbanist-Bold";
+}
+
+
 /*
 body::-webkit-scrollbar{
     display: none;
@@ -150,19 +248,19 @@ li {
 
 
 .txt-eng {
-    font-family: "Urbanist-Medium";
+    font-family: "Urbanist-Regular"!important;
 }
 
 .txt-eng-bold {
-    font-family: "Urbanist-ExtraBold";
+    font-family: "Urbanist-Bold"!important;
 }
 
 .txt-kor {
-    font-family: "Pretendard-Medium";
+    font-family: "Pretendard-Regular"!important;
 }
 
 .txt-kor-bold {
-    font-family: "Pretendard-SemiBold";
+    font-family: "Pretendard-Bold"!important;
 }
 
 
@@ -1022,6 +1120,126 @@ select {
 
 
 
+
+
+/* non-menber-notice */
+#non-member-notice{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    top:0;
+    left:0;
+}
+.non-member-notice-wrap{
+    position: absolute;
+    width:700px;
+    height: 700px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    z-index: 6;
+    box-sizing: border-box;
+    padding:40px;
+}
+
+.non-member-close{
+    position: absolute;
+    width:14px;
+    right:30px;
+    top:30px;
+    opacity: .7;
+}
+.non-member-notice-title{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    font-size: 24px;
+    margin-top:30px;
+}
+.non-member-notice-title2{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    margin-top:15px;
+    color:#767676;
+}
+.non-member-notice-title3{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:60px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-left: 5px solid #3D82B8;
+}
+.non-member-notice-info{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+    border:1px solid #d0d0d0;
+    background: #ebebeb;
+    margin-top:15px;
+    overflow-y: scroll;
+}
+.non-member-notice-info p{
+    color:#808080;
+    font-size: 12px;
+    font-family: "Pretendard-Thin"!important;
+}
+.non-member-notice-check-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:10px;
+}
+.non-member-notice-check-wrap label{
+    position: relative;
+    float:left;
+    width:auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.non-member-notice-next{
+    position: relative;
+    float:left;
+    width:100%;
+    height:50px;
+    margin-top:20px;
+    background: #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.non-member-notice-next p{
+    position: relative;
+    float:left;
+    width:100%;
+    color:#fff;
+    text-align: center;
+}
+
+
+.non-member-notice-bg{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: #eee;
+    z-index: 5;
+    opacity: .7;
+}
+
+/* //non-menber-notice */
 
 
 

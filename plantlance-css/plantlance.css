@@ -266,21 +266,22 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    max-height: 100vh;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     justify-items: center;
-    left: 50%;
-    transform: translate(-50%);
+    overflow: hidden;
 }
 
 .main-slider-wrap {
     position: relative;
     float: left;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    max-height: 100vh;
     overflow: hidden;
 }
 
@@ -292,37 +293,53 @@ li {
 }
 
 .slide .main-img {
-    position: relative;
+    position:relative;
     width: 100%;
-    min-width: 1920px;
-    margin-top: -100px;
+    height: auto;
+    /*margin-top: -100px;*/
     left: 50%;
     transform: translate(-50%);
 }
 
 .slide:nth-child(3) .main-img {
-    margin-top: -300px;
+    /*margin-top: -300px;*/
 }
 
 .slide .text-wrap {
     position: absolute;
     z-index: 2;
     width: 100%;
-    top: 370px;
-    display: flex;
-    justify-content: center;
+    top: 24%;
 }
 
-.slide .text-wrap .slide-title:nth-child(1) {
+.text-wrap .slide-title-eng {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: "Pretendard-ExtraBold";
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text-kor-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.text-kor-wrap p:nth-child(1) {
     position: relative;
     float: left;
-    width: 75px;
+    width: auto;
     font-size: 22px;
     font-family: "Pretendard-Medium";
     color: #5d5d5d;
+    margin-right: 10px;
 }
 
-.slide .text-wrap .slide-title:nth-child(2) {
+.text-kor-wrap p:nth-child(2) {
     position: relative;
     float: left;
     width: auto;
@@ -331,24 +348,18 @@ li {
     color: #2f2f2f;
 }
 
-.slide .slide-title-eng {
-    position: absolute;
-    top: 280px;
-    width: 100%;
-    text-align: center;
-    font-family: "Pretendard-ExtraBold";
-    font-size: 50px;
-}
-
 .slide .text-wrap2 {
     position: absolute;
-    z-index: 2;
+    float:left;
     width: 100%;
-    top: 370px;
     max-width: 1360px;
-    left: 50%;
-    transform: translate(-50%);
+    max-height: 100vh;
+    top:50%;
+    z-index: 2;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
+
 
 .slide .text-wrap2 .slide-title {
     text-align: right;

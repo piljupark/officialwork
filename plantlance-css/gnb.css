@@ -1028,16 +1028,20 @@ nav {
 .search-place input[type="reset"]{
     display: none;
 }
-.search-close-btn{
+.search-btn{
     position: absolute;
     float:left;
-    width:10px;
+    width:15px;
     right:20px;
     top:50%;
     transform: translate(0,-50%);
     z-index: 2;
 }
-
+.search-close-btn{
+    position: absolute;
+    top:20px;
+    right:30px;
+}
 
 .search-result{
     position: relative;

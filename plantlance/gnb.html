@@ -225,22 +225,28 @@
     <!-- 검색 -->
     <div class="search-wrap">
         <div class="search-place-wrap">
+           <a href="#none">
+               <p class="txt-eng search-close-btn">Close</p>
+           </a>
             <div class="search-place">
                <form>
                 <input type="text" placeholder="검색어를 입력하세요" class="txt-kor" id="search" onkeyup="printName()" onkeypress="if( event.keyCode == 13){searchData();}">
                 
                 <a href="#none">
-                    <img src="../plantlance-image/icon/close-black.png" alt="close" class="search-close-btn">
+                    <img src="../plantlance-image/icon/search.png" alt="search" class="search-btn">
                    </a>
                 </form>
             </div>
         </div>
+        
+        <!--
         <div class="search-result">
             <div class="search-result-wrap">
                 <div id="result" class="txt-kor-bold"></div>
                 <p class="txt-kor result-txt">에 대한 검색 결과입니다.</p>
             </div>
         </div>
+        -->
         <div class="search-bg"></div>
     </div>
     <!-- //검색 -->

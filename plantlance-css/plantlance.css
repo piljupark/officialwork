@@ -809,10 +809,10 @@ li {
 #daegu:checked ~ .showroom-button-wrap label:nth-child(5),
 #busan:checked ~ .showroom-button-wrap label:nth-child(6) {
     background: #333;
-    border: 1px solid #333;
+    border:1px solid #333;
     width: 100%;
     max-width: 550px;
-    min-width: 470px;
+    min-width: 430px;
 }
 
 #seongsu:checked ~ .showroom-button-wrap label:nth-child(1) p,
@@ -822,6 +822,7 @@ li {
 #daegu:checked ~ .showroom-button-wrap label:nth-child(5) p,
 #busan:checked ~ .showroom-button-wrap label:nth-child(6) p {
     color: #fff;
+    opacity: 1;
 }
 
 
@@ -851,12 +852,16 @@ li {
     float: left;
     width: 80%;
     min-width: 400px;
-    border: 1px solid #a8a8a8;
+    border: 1px solid #ebebeb;
     box-sizing: border-box;
     transition-duration: .2s;
     cursor: pointer;
      box-sizing: border-box;
+    border-bottom: 0;
 
+}
+.showroom-button-wrap label:nth-child(6){
+    border-bottom: 1px solid #ebebeb;
 }
 
 .showroom-button-wrap label .showroom-name {
@@ -870,6 +875,9 @@ li {
     margin-right: 40px;
     margin-left: 200px;
     font-size: 16px;
+    color:#676767;
+    opacity: .7;
+    transition-duration: .2s;
 }
 
 .showroom-button-wrap label .showroom-name-kor {
@@ -883,28 +891,21 @@ li {
 .showroom-contact-wrap{
     position: absolute;
     right:15px;
-    width:65px;
+    width:10px;
     display: flex;
     justify-content: space-between;
     top:50%;
     transform: translate(0,-50%);
     display: none;
+    text-align: right;
 }
-.showroom-contact-wrap .call-button{
+.showroom-contact-wrap img{
     position: relative;
     float:left;
-    width:15px;
+    width:14px;
+    filter: brightness(3.5);
 }
-.showroom-contact-wrap .txt-kor{
-    position: relative;
-    float:left;
-    opacity: .5;
-}
-.showroom-contact-wrap .place-button{
-    position: relative;
-    float:left;
-    width:16px;
-}
+
 /* //showroom-contact-wrap */
 /* //showroom-button-wrap */
 
@@ -912,52 +913,72 @@ li {
 
 
 /* showroom-img-wrap */
-.showroom-img-wrap > .showroom-slider {
-    display: none;
-}
-
-#seongsu:checked ~ .showroom-img-wrap .showroom-slider:nth-child(1),
-#pangyo:checked ~ .showroom-img-wrap .showroom-slider:nth-child(2),
-#gimpo:checked ~ .showroom-img-wrap .showroom-slider:nth-child(3),
-#sejong:checked ~ .showroom-img-wrap .showroom-slider:nth-child(4),
-#daegu:checked ~ .showroom-img-wrap .showroom-slider:nth-child(5),
-#busan:checked ~ .showroom-img-wrap .showroom-slider:nth-child(6) {
+#seongsu:checked ~ .showroom-info-wrap .seongsu-info,
+#pangyo:checked ~ .showroom-info-wrap .pangyo-info,
+#gimpo:checked ~ .showroom-info-wrap .gimpo-info,
+#sejong:checked ~ .showroom-info-wrap .sejong-info,
+#daegu:checked ~ .showroom-info-wrap .daegu-info,
+#busan:checked ~ .showroom-info-wrap .busan-info {
     display: block;
 }
 
 
-.showroom-img-wrap {
+.showroom-info-wrap {
     position: relative;
     float: left;
     width: 100%;
-    height: 515px;
+    height: 360px;
     overflow: hidden;
     background: #ddd;
+    margin-top:150px;
 }
-
-
-.showroom-slider {
+.showroom-info-wrap .showroom-info{
     position: relative;
-    float: left;
-    width: 100%;
-    height: auto;
+    display: none;
+    width:100%;
+    box-sizing: border-box;
+    padding:20px;
 }
-
-.showroom-slider div {
+.showroom-info-wrap .showroom-place{
     position: relative;
-    float: left;
-    width: 100%;
-    height: 490px;
-    overflow: hidden;
+    float:left;
+    width:100%;
+    font-size: 16px;
 }
-
-.showroom-slider div img {
+.showroom-info-wrap .showroom-place-kor{
     position: relative;
-    float: left;
-    width: 1000px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    float:left;
+    width: auto;
+    margin-top:10px;
+    font-size: 12px;
+}
+.showroom-info-wrap .call-btn{
+    position: relative;
+    float:right;
+    width: auto;
+    display: block;
+}
+.showroom-info-wrap .call-img{
+    position: relative;
+    float:left;
+    width:12px;
+    margin-right:5px;
+    margin-top:2px;
+}
+.showroom-info-wrap .number{
+    position: relative;
+    float:left;
+    width:auto;
+}
+.showroom-notice{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:50px;
+}
+.showroom-notice p{
+    position: relative;
+    float:left;
 }
 /* //showroom-img-wrap */
 

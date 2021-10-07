@@ -7,6 +7,52 @@
 
 
 @font-face {
+    src: url("../fonts/Pretendard-Thin.ttf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff2");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.ttf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff2");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+
+
+@font-face {
     src: url("../fonts/Pretendard-Medium.ttf");
     font-family: "Pretendard-Medium";
 }
@@ -51,6 +97,26 @@
 
 
 
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.woff2");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.otf");
+    font-family: "Urbanist-Regular";
+}
+
 
 
 
@@ -77,6 +143,52 @@
 
 
 
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff2");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.otf");
+    font-family: "Urbanist-SemiBold";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.ttf");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff2");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.otf");
+    font-family: "Urbanist-Bold";
+}
+
+
+
 
 @font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
@@ -88,6 +200,7 @@
     font-family: "Urbanist-ExtraBold";
 }
 
+
 @font-face {
     src: url("../fonts/Urbanist-ExtraBold.woff2");
     font-family: "Urbanist-ExtraBold";
@@ -97,6 +210,7 @@
     src: url("../fonts/Urbanist-ExtraBold.otf");
     font-family: "Urbanist-ExtraBold";
 }
+
 
 
 
@@ -129,21 +243,20 @@ li {
 
 
 .txt-eng {
-    font-family: "Urbanist-Medium";
+    font-family: "Urbanist-Regular"!important;
 }
 
 .txt-eng-bold {
-    font-family: "Urbanist-ExtraBold";
+    font-family: "Urbanist-Bold"!important;
 }
 
 .txt-kor {
-    font-family: "Pretendard-Medium";
+    font-family: "Pretendard-Regular"!important;
 }
 
 .txt-kor-bold {
-    font-family: "Pretendard-SemiBold";
+    font-family: "Pretendard-SemiBold"!important;
 }
-
 
 
 
@@ -846,60 +959,118 @@ nav {
 
 
 
+
+
+
 /* search-wrap */
 .search-wrap {
-    position: fixed;
+    position: absolute;
     float: left;
     width: 100%;
     height: 100vh;
-    background: #eee;
     z-index: 5;
     overflow: hidden;
     display: none;
 }
-
-.search-wrap .search-tab {
-    position: relative;
-    float: left;
+.search-bg{
+    position: absolute;
+    float:left;
     width: 100%;
-    height: 140px;
+    height: 100vh;
+    background:#ebebeb;
+    opacity: .8;
+}
+
+.search-place-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 150px;
     background: #fff;
-    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    padding:30px;
     display: flex;
     justify-content: center;
-    align-content: center;
-    justify-items: center;
     align-items: center;
 }
-
-.search-wrap .search-tab input {
-    float: left;
-    border: none;
-    background: #eee;
-    width: 500px;
-    height: 35px;
-    margin-top: 50px;
-    padding-left: 40px;
-    outline: none;
-}
-
-.search-wrap .search-tab .search-img {
+.search-place{
     position: relative;
-    float: left;
-    width: 20px;
-    background: #eee;
-    margin-top: 50px;
-    padding: 8.5px 10px;
+    float:left;
+    width:600px;
+    height: 45px;
+    background: #f5f5f5;
+    box-sizing: border-box;
 }
-
-.search-wrap .search-tab .search-close {
+.search-place form{
+    position: relative;
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+.search-place input[type="text"]{
+   position: relative;
+    float:left;
+    width:70%;
+    height: 100%;
+    box-sizing: border-box;
+    background: none;
+    -webkit-border-radius: 0;
+    -webkit-border: none;
+    outline: none;
+    border: none;
+    padding-left:20px;
+    font-size: 16px;
+}
+.search-place input[type="text"]::placeholder{
+    opacity: .5;
+}
+.search-place input[type="reset"]{
+    display: none;
+}
+.search-close-btn{
     position: absolute;
-    float: left;
-    width: 13px;
-    top: 88px;
-    right: 100px;
+    float:left;
+    width:10px;
+    right:20px;
+    top:50%;
+    transform: translate(0,-50%);
+    z-index: 2;
 }
 
+
+.search-result{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    margin-top:50px;
+    left:0;
+    box-sizing: border-box;
+    padding:0 40px;
+    z-index: 2;
+}
+.search-result-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    position: relative;
+    float:left;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+.result-txt{
+    position: relative;
+    float:left;
+    font-size: 24px;
+}
 /* search-wrap */
 
 

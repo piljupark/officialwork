@@ -221,20 +221,27 @@
     </div>
     <!-- //gnb 웹/태블릿 -->
 
-   
-   <!-- 검색 -->
+
+    <!-- 검색 -->
     <div class="search-wrap">
-        <div class="search-tab">
-           <a href="#">
-               <img src="../plantlance-image/icon/close-black.png" alt="close" class="search-close">
-           </a>
-           
-            <input type="text" placeholder="검색어를 입력하세요" class="txt-kor">
-            <a href="#none">
-                <img src="../plantlance-image/icon/search.png" class="search-img">
-            </a>
-            
+        <div class="search-place-wrap">
+            <div class="search-place">
+               <form>
+                <input type="text" placeholder="검색어를 입력하세요" class="txt-kor" id="search" onkeyup="printName()" onkeypress="if( event.keyCode == 13){searchData();}">
+                
+                <a href="#none">
+                    <img src="../plantlance-image/icon/close-black.png" alt="close" class="search-close-btn">
+                   </a>
+                </form>
+            </div>
         </div>
+        <div class="search-result">
+            <div class="search-result-wrap">
+                <div id="result" class="txt-kor-bold"></div>
+                <p class="txt-kor result-txt">에 대한 검색 결과입니다.</p>
+            </div>
+        </div>
+        <div class="search-bg"></div>
     </div>
     <!-- //검색 -->
 
@@ -302,9 +309,9 @@
                         </a>
                         <a href="#none">
                             <p class="txt-eng title-furniture">FURNITURE <img src="../plantlance-image/icon/arrow-down-white.png" alt="arrow" class="arrow arrow-down">
-                            <img src="../plantlance-image/icon/arrow-up-white.png" alt="arrow" class="arrow arrow-up">
+                                <img src="../plantlance-image/icon/arrow-up-white.png" alt="arrow" class="arrow arrow-up">
                             </p>
-                            
+
                         </a>
                         <div class="furniture">
                             <a href="#none">
@@ -431,6 +438,13 @@
         </div>
 
     </div>
+
+    <script>
+        function printName() {
+            const search = document.getElementById('search').value;
+            document.getElementById("result").innerText = search;
+        }
+    </script>
 
 
     <!-- //gnb 모바일 -->

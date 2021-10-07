@@ -273,7 +273,7 @@ $(document).ready(function () {
 
 
     /* 검색 닫기 */
-    $(".search-wrap > .search-tab > a > .search-close").click(function () {
+    $(".search-close-btn").click(function () {
         $(".search-wrap").css("display", "none");
 
 

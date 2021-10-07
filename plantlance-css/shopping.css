@@ -420,7 +420,7 @@ li {
     
 
     .cart-title-wrap p,
-    input {
+    input[type="checkbox"] {
         display: none;
         border-bottom: none;
     }

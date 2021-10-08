@@ -1485,6 +1485,29 @@ li {
 /* //mob-table */
 
 
+
+/* mob-sofa */
+.mob-sofa{
+    position: relative;
+    float:left;
+    width:100%;
+    padding-bottom: 40%;
+    margin-top:10px;
+    overflow: hidden;
+    background: #0c0c0c;
+    z-index: 2;
+}
+.mob-sofa img{
+    position: absolute;
+    float:left;
+    width:80%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+/* //mob-sofa */
+
 /* //mobile */
 
 

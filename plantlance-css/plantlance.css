@@ -1349,6 +1349,153 @@ li {
 
 
 
+/* mobile */
+#mobile-whole{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+/* mob-bespoke */
+.mob-bespoke{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 140px;
+    background: #ddd;
+    margin-bottom: 10px;
+}
+.mob-bespoke .mob-bespoke-title{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    top:50%;
+    transform: translate(0,-50%);
+}
+/* //mob-bespoke */
+
+
+
+
+/* mob-plan-a */
+.mob-plan-a{
+    position: relative;
+    float:left;
+    width:50%;
+    padding-bottom: 50%;
+    background: #2f2f2f;
+    overflow: hidden;
+}
+.mob-plan-a-wrap{
+    position: absolute;
+    float:left;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mob-plan-a-title{
+    position: relative;
+    float:left;
+    width:100%;
+    color:#fff;
+    font-size: 380px;
+    text-align: center;
+    margin-top:-70px;
+}
+/* //mob-plan-a */
+
+
+
+/* mob-chair */
+.mob-chair{
+    position: relative;
+    float:left;
+    width:50%;
+    padding-bottom: 50%;
+    overflow: hidden;
+}
+.mob-chair img{
+    position: absolute;
+    width:160%;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+/* //mob-chair */
+
+
+
+/* mob-plan-b */
+.mob-plan-b{
+    position: relative;
+    float:left;
+    width:50%;
+    padding-bottom: 50%;
+    background: #e9e9e9;
+    overflow: hidden;
+}
+.mob-plan-b-wrap{
+    position: absolute;
+    float:left;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mob-plan-b .mob-plan-b-title{
+    position: relative;
+    float:left;
+    width:100%;
+    color:#2f2f2f;
+    font-size: 380px;
+    text-align: center;
+    font-family: "Pretendard-Thin"!important;
+}
+/* //mob-plan-a */
+
+
+
+/* mob-table */
+.mob-table{
+    position: relative;
+    float:left;
+    width:50%;
+    padding-bottom: 50%;
+    overflow: hidden;
+}
+.mob-table img{
+    position: absolute;
+    float:left;
+    width:150%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+/* //mob-table */
+
+
+/* //mobile */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1366,6 +1513,19 @@ li {
     }
     
     
+}
+
+
+
+@media screen and (max-width:1069px) and (min-width:300px){
+    .chair, .bespoke, .plan-a, .table, .plan-b, .sofa, #showroom{
+        display: none;
+    }   
+    /* pc-main display none*/
+    
+    
+    /* mobile */
+    /* //mobile */
 }
 
 

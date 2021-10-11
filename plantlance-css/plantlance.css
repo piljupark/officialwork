@@ -1570,6 +1570,134 @@ li {
 }
 /* //mob-sofa */
 
+
+/* mob-showroom */
+.mob-showroom{
+    position: relative;
+    float: left;
+    width:100%;
+    height: auto;
+    margin-top:10px;
+}
+.mob-showroom-title{
+    position: relative;
+    float:left;
+    width: 100%;
+    margin-left:20px;
+    margin-bottom:50px;
+    margin-top:50px;
+    font-size: 20px;
+}
+.mob-showroom input[type="radio"]{
+    display: none;
+}
+
+.mob-showroom-button-wrap{
+    position: relative;
+    float:left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mob-showroom-button-wrap label{
+    position: relative;
+    float:left;
+    width: 100%;
+    border:1px solid #ebebeb;
+    border-right:none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+.mob-showroom-button-wrap label:nth-last-child(1){
+    border-right:1px solid #ebebeb;
+}
+.mob-showroom-button-wrap label p{
+    position: relative;
+    float:left;
+    width: 100%;
+    text-align: center;
+    color:#d0d0d0;
+}
+#mob-seongsu:checked ~ .mob-showroom-button-wrap label:nth-child(1),
+#mob-pangyo:checked ~ .mob-showroom-button-wrap label:nth-child(2),
+#mob-gimpo:checked ~ .mob-showroom-button-wrap label:nth-child(3),
+#mob-sejong:checked ~ .mob-showroom-button-wrap label:nth-child(4),
+#mob-daegu:checked ~ .mob-showroom-button-wrap label:nth-child(5),
+#mob-busan:checked ~ .mob-showroom-button-wrap label:nth-child(6){
+    background: #4f4f4f;
+    border:1px solid #4f4f4f;
+}
+
+#mob-seongsu:checked ~ .mob-showroom-button-wrap label:nth-child(1) p,
+#mob-pangyo:checked ~ .mob-showroom-button-wrap label:nth-child(2) p,
+#mob-gimpo:checked ~ .mob-showroom-button-wrap label:nth-child(3) p,
+#mob-sejong:checked ~ .mob-showroom-button-wrap label:nth-child(4) p,
+#mob-daegu:checked ~ .mob-showroom-button-wrap label:nth-child(5) p,
+#mob-busan:checked ~ .mob-showroom-button-wrap label:nth-child(6) p{
+    color:#fff;
+    
+}
+
+
+
+
+
+
+/* mob-showroom-info-wrap*/
+#mob-seongsu:checked ~ .mob-showroom-info-wrap div:nth-child(1),
+#mob-pangyo:checked ~ .mob-showroom-info-wrap div:nth-child(2),
+#mob-gimpo:checked ~ .mob-showroom-info-wrap div:nth-child(3),
+#mob-sejong:checked ~ .mob-showroom-info-wrap div:nth-child(4),
+#mob-daegu:checked ~ .mob-showroom-info-wrap div:nth-child(5),
+#mob-busan:checked ~ .mob-showroom-info-wrap div:nth-child(6){
+    display: block;
+}
+.mob-showroom-info-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:30px;
+    box-sizing: border-box;
+    padding:20px 15px;
+}
+.mob-showroom-info-wrap .mob-showroom-info-box{
+    position: relative;
+    float:left;
+    width:100%;
+    display: none;
+}
+.mob-showroom-info-wrap .mob-showroom-info-title{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 16px;
+}
+.mob-showroom-call-button{
+    position: absolute;
+    width:15px;
+    right:0;
+    top:-7px;
+    border:1px solid #2f2f2f;
+    border-radius: 40px;
+    padding:8px;
+}
+.mob-showroom-address{
+    position: relative;
+    float:left;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+/* //mob-showroom-info-wrap*/
+/* //mob-showroom */
+
 /* //mobile */
 
 

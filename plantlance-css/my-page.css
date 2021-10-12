@@ -1,0 +1,556 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.ttf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff2");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.ttf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff2");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.ttf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff2");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.ttf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff2");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.ttf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.woff");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.woff2");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff2");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.otf");
+    font-family: "Urbanist-Medium";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff2");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.otf");
+    font-family: "Urbanist-SemiBold";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.ttf");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff2");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.otf");
+    font-family: "Urbanist-Bold";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff2");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.otf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: "Urbanist-ExtraBold";
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+
+
+
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Medium";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+#header {
+    position: relative;
+}
+
+
+
+#my-page-whole{
+    position: relative;
+    float:left;
+    width:100%;
+    max-width: 1360px;
+    height: auto;
+    box-sizing: border-box;
+    padding:0 30px;
+    margin-top:150px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+
+
+.my-page-title{
+    position: relative;
+    float:left;
+    width: auto;
+}
+
+
+#my-page-whole input[type="radio"]{
+    display: none;
+}
+
+
+.my-page-category{
+    position: relative;
+    float:right;
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.my-page-category label{
+    position: relative;
+    float:left;
+    width:auto;
+    text-align: center;
+    margin:0 20px;
+    font-size: 13px;
+}
+
+.my-page-category label:nth-child(1)
+{
+    margin-left:0;
+}
+.my-page-category label:nth-child(4)
+{
+    margin-right:0;
+}
+
+
+
+/* my-page-first */
+.my-page-first{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:15px;
+    border-top:1px solid #2f2f2f;
+    padding-top:50px;
+}
+.hello-to-user{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 20px;
+    margin-bottom:40px;
+}
+
+
+
+
+
+/* my-shopping-first */
+.my-shopping-title{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 13px;  
+}
+.show-past-breakdown{
+    position: relative;
+    float:right;
+    width:auto;
+    font-size: 12px;
+
+}
+.arrow-next{
+    position: relative;
+    float:right;
+    width:10px;
+    top:3px;
+    margin-left:4px;
+    
+}
+.my-shopping-first{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 150px;
+    margin-top:15px;
+    box-sizing: border-box;
+    border:1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-step{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 80px;
+    top:50%;
+    transform: translate(0,-50%);
+    border-left:1px solid #eee;
+}
+.shopping-step:nth-child(1){
+    border:none;
+}
+.shopping-step p{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+}
+.shopping-step p:nth-child(1){
+    margin-top:0px;
+}
+.shopping-step p:nth-child(2){
+    font-size: 25px;
+    margin-top:30px;
+}
+/* //my-shopping-first */
+
+
+.delivery-check-button{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    background: #2f2f2f;
+    color:#fff;
+    margin-top:20px;
+    padding:15px 0;
+}
+
+
+/* my-post-first */
+.my-post-first{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:50px;
+}
+
+.my-post-title{
+    position: relative;
+    float:left;
+    width:auto; 
+}
+.post-management-button{
+    position: relative;
+    float:right;
+    width:auto;
+    font-size: 12px;
+}
+
+
+
+
+/* post-top */
+.post-top{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 50px;
+    background: #f5f5f5;
+    margin-top:10px;
+    border-top:1px solid #ebebeb;
+}
+.post-number{
+    position: relative;
+    float:left;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-left:20px;
+    margin-right:40px;
+}
+.post-kind{
+    position: relative;
+    float:left;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:100px;
+    
+}
+.post-title{
+    position: relative;
+    float:left;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.post-date{
+    position: relative;
+    float:right;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:150px;
+}
+/* //post-top */
+
+
+/* post-number-list */
+.post-list{
+    position: relative;
+    float:left;
+    width:100%;
+}
+
+.post-number-list{
+    position: relative;
+    float:left;
+    width:13px;
+    margin-left:20px;
+    margin-right:28px;
+}
+.post-number-list p{
+    position: relative;
+    float:left;
+    width:100%;
+    padding:10px 5px;
+    text-align: center;
+    font-size: 12px;
+}
+/* //post-number-list */
+
+
+
+
+/* post-kind-list*/
+.post-kind-list{
+    position: relative;
+    float:left;
+    width:50px;
+    margin-right:40px;
+}
+.post-kind-list p{
+    position: relative;
+    float:left;
+    width:100%;
+    padding:10px 5px;
+    text-align: center;
+    font-size: 12px;
+}
+/* //post-kind-list*/
+
+
+
+/* post-title-list */
+.post-title-list{
+    position: relative;
+    float:left;
+    width:120px;
+}
+.post-title-list p{
+    position: relative;
+    float:left;
+    width:100%;
+    padding:10px 5px;
+    font-size: 12px;
+    text-align: center;
+}
+/* //post-title-list */
+
+
+/* //my-post-first */
+
+
+
+/* //my-page-first */

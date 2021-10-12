@@ -489,6 +489,7 @@ nav {
     right: 220px;
     top: 40px;
     transition-duration: .3s;
+    z-index: 3;
 }
 
 .user-wrap {

@@ -665,18 +665,19 @@ li {
         right:40px;
         top:50px;
     }
+    
     .join-ipin-title{
         text-align: left;
         margin-top:60px;
         font-size: 16px;
     }
+    
     .join-ipin-txt{
         width:170px;
         text-align: left;
         left:inherit;
         transform: translate(0%);
         font-size: 11px;
-       
     }
     
     .join-next-button{
@@ -697,10 +698,8 @@ li {
     }
     /* //join-wrap */
     
-    
-    
-    
 }
+
 
 
 

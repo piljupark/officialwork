@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
+    <script src="../plantlance-script/jquery.fullpage.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/my-page.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+
+    <script src="../plantlance-script/join.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+</head>
+
+
+
+<body onload="init();">
+
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+
+
+    <div id="my-page-whole">
+        <p class="txt-eng-bold  my-page-title">MY PAGE</p>
+
+        <input type="radio" name="my-page" id="user-info">
+        <input type="radio" name="my-page" id="order-list">
+        <input type="radio" name="my-page" id="wish-list">
+        <input type="radio" name="my-page" id="posting-management">
+
+
+        <div class="my-page-category">
+            <label for="user-info">
+                <p class="txt-kor">회원정보</p>
+            </label>
+
+            <label for="order-list">
+                <p class="txt-kor">주문내역 조회</p>
+            </label>
+
+            <label for="wish-list">
+                <p class="txt-kor">위시리시트</p>
+            </label>
+
+            <label for="posting-management">
+                <p class="txt-kor">게시물 관리</p>
+            </label>
+        </div>
+
+        <div class="my-page-first">
+            <p class="txt-kor hello-to-user">ABC1234님 안녕하세요</p>
+
+
+            <p class="txt-eng-bold my-shopping-title">My shopping</p>
+            <a href="#none">
+               <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow" class="arrow-next">
+                <p class="txt-kor show-past-breakdown">
+                     주문내역 보기   
+                </p>
+                
+            </a>
+            <div class="my-shopping-first">
+                <div class="shopping-step shopping-step1">
+                    <p class="txt-kor">입금대기</p>
+                    <p class="txt-eng">0</p>
+                </div>
+                
+                <div class="shopping-step shopping-step2">
+                    <p class="txt-kor">주문완료</p>
+                    <p class="txt-eng">2</p>
+                </div>
+                
+                <div class="shopping-step shopping-step3">
+                    <p class="txt-kor">상품준비</p>
+                    <p class="txt-eng">2</p>
+                </div>
+                
+                <div class="shopping-step shopping-step4">
+                    <p class="txt-kor">배송중</p>
+                    <p class="txt-eng">0</p>
+                </div>
+                
+                <div class="shopping-step shopping-step5">
+                    <p class="txt-kor">배송완료</p>
+                    <p class="txt-eng">0</p>
+                </div>
+            </div>
+            
+            <a href="#none">
+                <p class="txt-kor delivery-check-button">
+                    배송조회
+                </p>
+            </a>
+            
+            <div class="my-post-first">
+                <p class="txt-eng-bold my-post-title">My post</p>
+                <a href="#none">
+                   <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow" class="arrow-next">
+                    <p class="txt-kor post-management-button">
+                        게시물 관리
+                    </p>
+                </a>
+                
+                <div class="post-top">
+                    <p class="txt-kor post-number">번호</p>
+                    <p class="txt-kor post-kind">분류</p>
+                    <p class="txt-kor post-title">제목</p>
+                    <p class="txt-kor post-date">작성일자</p>
+                </div>
+                
+                <div class="post-list">
+                    <div class="post-number-list">
+                       
+                        <p class="txt-eng">1</p>
+                        <p class="txt-eng">2</p>
+                        <p class="txt-eng">3</p>
+                    </div>
+                    <div class="post-kind-list">
+                        <p class="txt-eng">Q&amp;A</p>
+                        <p class="txt-eng">Review</p>
+                        <p class="txt-eng">Review</p>
+                    </div>
+                    <div class="post-title-list">
+                        <p class="txt-kor">배송관련 문의 드립니다</p>
+                        <p class="txt-kor">배송관련 문의 드립니다</p>
+                        <p class="txt-kor">배송관련 문의 드립니다</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- 
+    <div id="footer"></div>
+    -->
+
+
+
+
+
+
+
+
+</body></html>

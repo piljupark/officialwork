@@ -370,7 +370,7 @@ li {
     position: absolute;
     float: left;
     width: 800px;
-    height: 500px;
+    height: 520px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -525,7 +525,9 @@ li {
     color: #fff;
     background: #2f2f2f;
 }
-
+.join-next-button2{
+    display: none;
+}
 
 
 
@@ -653,6 +655,7 @@ li {
         margin-left:0;
         margin-top:20px;
         background: #efefef;
+        margin-bottom: 100px;
     }
     
     .join-kind-ipin .join-ipin-img{
@@ -682,6 +685,15 @@ li {
         bottom:0;
         padding:27px 0;
         font-size: 16px;
+        z-index: 6;
+    }
+    
+    .join-next-button1{
+        display: none;
+    }
+    
+    .join-next-button2{
+        display: inherit;
     }
     /* //join-wrap */
     

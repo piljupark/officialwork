@@ -280,7 +280,7 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    height: 100vh;
+    height: auto;
     box-sizing: border-box;
     padding: 0 40px;
 }
@@ -292,14 +292,13 @@ li {
     float: left;
     width: 100%;
     max-width: 1360px;
-    top: 15%;
     left: 50%;
     transform: translate(-50%);
     z-index: 6;
     box-sizing: border-box;
     padding: 0 40px;
+    margin-top:150px;
 }
-
 .join-step-line {
     position: relative;
     float: left;
@@ -307,6 +306,7 @@ li {
     left: 50%;
     transform: translate(-50%);
     box-sizing: border-box;
+    
 }
 
 .step {
@@ -379,14 +379,14 @@ li {
     float: left;
     width: 100%;
     max-width: 1360px;
-    height:auto;
+    height: auto;
     left: 50%;
     transform: translate(-50%);
     background: #fff;
     box-sizing: border-box;
-    margin-top:170px;
+    margin-top: 40px;
 
-    
+
 }
 
 
@@ -435,8 +435,8 @@ li {
     font-size: 10px;
     color: #3D82B8;
     margin-right: 10px;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .call-number .essential {
@@ -449,8 +449,8 @@ li {
     width: auto;
     font-size: 12px;
     top: 6px;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .join-input-data-wrap input {
@@ -466,8 +466,8 @@ li {
     font-size: 12px;
     width: 240px;
     text-align: center;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .join-input-data-wrap input::placeholder {
@@ -485,8 +485,8 @@ li {
     font-size: 11px;
     padding: 8.3px 20px;
     margin-left: 10px;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 
@@ -512,21 +512,24 @@ li {
     outline: none;
     height: 31px;
     background: #fff url('../plantlance-image/icon/arrow-down2.png') no-repeat 98% center;
-    padding-left:10px;
+    padding-left: 10px;
     font-size: 12px;
     background: #f5f5f5;
-    border:1px solid #e0e0e0e0;
+    border: 1px solid #e0e0e0e0;
     cursor: pointer;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
 }
-.address{
+
+.address {
     height: 100px;
 }
-.address input{
-    top:30%;
+
+.address input {
+    top: 30%;
 }
-.address .address-button{
+
+.address .address-button {
     position: relative;
     float: left;
     width: auto;
@@ -535,171 +538,186 @@ li {
     font-size: 11px;
     padding: 8.3px 20px;
     margin-left: 10px;
-    top:30%;
-    transform: translate(0,-50%);
+    top: 30%;
+    transform: translate(0, -50%);
     cursor: pointer;
 }
-.address .other-address{
-    width:400px;
-    margin-top:10px;
+
+.address .other-address {
+    width: 400px;
+    margin-top: 10px;
     position: absolute;
-    left:170px;
-    top:60%;
-    
+    left: 170px;
+    top: 60%;
+
 }
 
 /* //join-input-data-wrap */
 
 
 /* join-submit-wrap */
-.join-submit-wrap{
+.join-submit-wrap {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: auto;
-    margin-top:50px;
-   padding-bottom: 100px;
+    margin-top: 50px;
+    padding-bottom: 100px;
 
 }
-.join-submit-title{
+
+.join-submit-title {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     margin-bottom: 10px;
 }
 
 
-.join-submit-txt{
+.join-submit-txt {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     font-size: 12px;
-    
+
 }
 
-.join-submit-info-wrap{
+.join-submit-info-wrap {
     position: relative;
-    float:left;
-    width:100%;
-    height: auto; 
-    margin-top:10px;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
     border-top: 2px solid #808080;
     border-bottom: 2px solid #e0e0e0;
-    padding:20px 0;
+    padding: 20px 0;
 }
-.text-deco{
+
+.text-deco {
     position: relative;
-    float:left;
-    width:3px;
+    float: left;
+    width: 3px;
     height: 11px;
-    background:#3D82B8;
+    background: #3D82B8;
     margin-right: 10px;
-    top:2px;
+    top: 2px;
 }
-.text-deco2{
-    margin-top:30px;
+
+.text-deco2 {
+    margin-top: 30px;
 }
-.submit-info-title{
+
+.submit-info-title {
     position: relative;
-    float:left;
-    width:auto;
-    font-size: 12px;  
+    float: left;
+    width: auto;
+    font-size: 12px;
 }
-.submit-info-title2{
-    margin-top:30px;
+
+.submit-info-title2 {
+    margin-top: 30px;
 }
-.submit-info-txt-box{
+
+.submit-info-txt-box {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:10px;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
     height: 100px;
     background: #f5f5f5;
     box-sizing: border-box;
-    padding:15px;
+    padding: 15px;
     overflow-y: scroll;
 }
-.submit-info-txt-box p{
+
+.submit-info-txt-box p {
     opacity: .5;
     font-size: 11px;
     line-height: 1.6;
 }
 
 
-.submit-checkbox{
+.submit-checkbox {
     position: absolute;
-    right:0;
-    width:auto;
-    top:20px;
+    right: 0;
+    width: auto;
+    top: 20px;
 }
-.submit-checkbox label{
+
+.submit-checkbox label {
     position: relative;
-    float:left;
-    width:auto;
+    float: left;
+    width: auto;
     font-size: 13px;
 }
 
-.submit-checkbox2{
-    top:175px;
+.submit-checkbox2 {
+    top: 175px;
 }
 
-.submit-checkbox3{
+.submit-checkbox3 {
     position: relative;
-    float:right;
-    margin-top:10px;
+    float: right;
+    margin-top: 10px;
 }
-.submit-checkbox3 label{
+
+.submit-checkbox3 label {
     position: relative;
-    float:left;
+    float: left;
     font-size: 13px;
-    top:1px;
+    top: 1px;
 }
+
 /* //join-submit-wrap */
 
 
 
 /* join-submit-next-button */
-.join-submit-next-button{
+.join-submit-next-button {
     position: relative;
-    float:left;
-    left:50%;
-    margin-top:50px;
-    padding:15px 80px; 
-    transform: translate(-50%);
+    float: left;
+    left: 50%;
+    margin-top: 50px;
+    padding: 15px 80px;
+    transform: translate(-50%,0);
     background: #2f2f2f;
-    color:#fff;
+    color: #fff;
 }
+
 /* //join-submit-next-button */
 
 
 
 @media screen and (max-width:725px) and (min-width:200px) {
-   
-    .join-input-data-wrap .e-mail{
+
+    .join-input-data-wrap .e-mail {
         height: 100px;
     }
-    .join-input-data-wrap .e-mail input{
-        top:30%;
-    }
-    .join-input-data-wrap .e-mail select{
-        margin-left:0;
-        top:40%;
-    }
-    
-    
-    .address .other-address{
-        width:200px;
+
+    .join-input-data-wrap .e-mail input {
+        top: 30%;
     }
 
-    
-    
+    .join-input-data-wrap .e-mail select {
+        margin-left: 0;
+        top: 40%;
+    }
+
+
+    .address .other-address {
+        width: 200px;
+    }
+
+
+
 }
+
 
 
 
 @media screen and (max-width:649px) and (min-width:200px) {
 
-    
+
     /* join-step-wrap */
     .join-step-wrap {
         width: 100%;
@@ -718,18 +736,49 @@ li {
 
     /* //join-step-wrap */
 
-    .join-input-data-wrap input{
-        width:160px;
+
+
+
+    .join-input-data-wrap input {
+        width: 165px;
     }
+
 
 }
 
-
-
-
-@media screen and (max-width:399px) and (min-width:200px) {
-    .join-wrap {
+@media screen and (max-width:560px) and (min-width:200px) {
+    #join-whole {
         padding: 0 20px;
+    }
+    .input-data-txt-wrap {
+        position: relative;
+        float: left;
+        width: 100px;
+        height: 100%;
+    }
+    .join-input-data-wrap input {
+        width:35%;
+    }
+    
+    .address .other-address {
+        width:40%;
+        left:120px;
+    }
+}
+
+
+@media screen and (max-width:415px) and (min-width:200px) {
+    .email-check{
+        width:20%;
+    }
+    
+    .input-data{
+        padding:0;
+    }
+    
+    
+    .address .other-address {
+        left:100px;
     }
 
 }

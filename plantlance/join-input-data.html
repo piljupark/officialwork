@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
+    <script src="../plantlance-script/jquery.fullpage.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/join-input-data.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+
+    <script src="../plantlance-script/join-input-data.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+</head>
+
+
+
+<body onload="init();">
+
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+
+
+    <div id="join-whole">
+
+        <div class="join-step-wrap">
+            <div class="join-step-txt-wrap">
+                <p class="txt-kor">본인인증</p>
+                <p class="txt-kor">정보입력 / 약관동의</p>
+                <p class="txt-kor">가입완료</p>
+            </div>
+            <div class="join-step-line">
+                <div class="step1 step">&bull;</div>
+                <div class="join-step-line2"></div>
+                <div class="step2 step">&bull;</div>
+                <div class="join-step-line3"></div>
+                <div class="step3 step">&bull;</div>
+            </div>
+        </div>
+
+
+        <div class="join-wrap">
+            <p class="txt-kor-bold join-input-data-title">
+                회원정보 입력
+            </p>
+
+            <div class="join-input-data-wrap">
+                <div class="input-data id">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">아이디</p>
+                    </div>
+                    <input type="text" class="txt-kor" placeholder="3자이상, 영문자, 숫자, _만 입력 가능">
+
+                    <a href="#none">
+                        <p class="txt-kor id-check">중복확인</p>
+                    </a>
+                </div>
+                <div class="input-data password">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">비밀번호</p>
+                    </div>
+                    <input type="password" class="txt-kor" placeholder="영문자 + 숫자 4 ~ 16자">
+                </div>
+                <div class="input-data password-check">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">비밀번호 확인</p>
+                    </div>
+                    <input type="password" class="txt-kor">
+                </div>
+                <div class="input-data name">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">이름</p>
+                    </div>
+
+
+                    <input type="text" class="txt-kor">
+                </div>
+                <div class="input-data call-number">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">전화번호</p>
+                    </div>
+
+
+                    <input type="tel" class="txt-kor">
+                </div>
+                <div class="input-data phone-number">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">휴대폰번호</p>
+                    </div>
+
+
+                    <input type="tel" class="txt-kor">
+                </div>
+                <div class="input-data e-mail">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">이메일</p>
+                    </div>
+
+
+                    <input type="email" class="txt-kor">
+                    <input type="text" class="txt-kor email-check" placeholder="@">
+                    <select class="txt-kor" name="email">
+                        <option class="txt-kor" value="" checked>직접 입력</option>
+                        <option class="txt-kor" value="naver">naver.com</option>
+                        <option class="txt-kor" value="google">google.com</option>
+                        <option class="txt-kor" value="hanmail">hanmail.net</option>
+                        <option class="txt-kor" value="nate">nate.com</option>
+
+                    </select>
+
+                </div>
+                <div class="input-data address">
+                    <div class="input-data-txt-wrap">
+                        <p class="txt-kor essential">*</p>
+                        <p class="txt-kor input-data-title">배송 주소</p>
+                    </div>
+
+
+                    <input type="text" class="txt-kor" id="join_addr" readonly>
+                    <p id="join_post" class="address-button" readonly onclick="findAddr()">
+                        우편번호 찾기
+                    </p>
+                    <input type="text" class="txt-kor other-address">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+    <div id="footer"></div>
+    -->
+
+
+
+    <script>
+        function findAddr() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+
+                    console.log(data);
+
+                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+                    // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var roadAddr = data.roadAddress; // 도로명 주소 변수
+                    var jibunAddr = data.jibunAddress; // 지번 주소 변수
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('join_post').value = data.zonecode;
+                    if (roadAddr !== '') {
+                        document.getElementById("join_addr").value = roadAddr;
+                    } else if (jibunAddr !== '') {
+                        document.getElementById("join_addr").value = jibunAddr;
+                    }
+                }
+            }).open();
+        }
+    </script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+
+
+
+
+
+</body></html>

@@ -288,7 +288,7 @@ li {
 
 /* join-step-wrap */
 .join-step-wrap {
-    position: absolute;
+    position: relative;
     float: left;
     width: 100%;
     max-width: 1360px;
@@ -378,15 +378,14 @@ li {
     position: relative;
     float: left;
     width: 100%;
-     max-width: 1360px;
+    max-width: 1360px;
     height:auto;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     background: #fff;
     box-sizing: border-box;
-    margin-top: 100px;
-   
+    margin-top:170px;
+
     
 }
 
@@ -552,10 +551,129 @@ li {
 /* //join-input-data-wrap */
 
 
+/* join-submit-wrap */
+.join-submit-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    margin-top:50px;
+   padding-bottom: 100px;
+
+}
+.join-submit-title{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+
+.join-submit-txt{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 12px;
+    
+}
+
+.join-submit-info-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto; 
+    margin-top:10px;
+    border-top: 2px solid #808080;
+    border-bottom: 2px solid #e0e0e0;
+    padding:20px 0;
+}
+.text-deco{
+    position: relative;
+    float:left;
+    width:3px;
+    height: 11px;
+    background:#3D82B8;
+    margin-right: 10px;
+    top:2px;
+}
+.text-deco2{
+    margin-top:30px;
+}
+.submit-info-title{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 12px;  
+}
+.submit-info-title2{
+    margin-top:30px;
+}
+.submit-info-txt-box{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:10px;
+    height: 100px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    padding:15px;
+    overflow-y: scroll;
+}
+.submit-info-txt-box p{
+    opacity: .5;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+.submit-checkbox{
+    position: absolute;
+    right:0;
+    width:auto;
+    top:20px;
+}
+.submit-checkbox label{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 13px;
+}
+
+.submit-checkbox2{
+    top:175px;
+}
+
+.submit-checkbox3{
+    position: relative;
+    float:right;
+    margin-top:10px;
+}
+.submit-checkbox3 label{
+    position: relative;
+    float:left;
+    font-size: 13px;
+    top:1px;
+}
+/* //join-submit-wrap */
 
 
 
-@media screen and (max-width:730px) and (min-width:200px) {
+/* join-submit-next-button */
+.join-submit-next-button{
+    position: relative;
+    float:left;
+    left:50%;
+    margin-top:50px;
+    padding:15px 80px; 
+    transform: translate(-50%);
+    background: #2f2f2f;
+    color:#fff;
+}
+/* //join-submit-next-button */
+
+
+
+@media screen and (max-width:725px) and (min-width:200px) {
    
     .join-input-data-wrap .e-mail{
         height: 100px;

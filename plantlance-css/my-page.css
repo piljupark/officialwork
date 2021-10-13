@@ -828,7 +828,7 @@ li {
 #user-info:checked ~ .mypage-button-wrap div:nth-child(1),
 #order-list:checked ~ .mypage-button-wrap div:nth-child(2),
 #wish-list:checked ~ .mypage-button-wrap div:nth-child(3),
-#posting-management:checked ~ .mypage-button-wrap .div:nth-child(4){
+#posting-management:checked ~ .mypage-button-wrap div:nth-child(4){
     display: block;
 }
 
@@ -1297,6 +1297,26 @@ li {
 }
 
 
+.history-cancel-box, .history-order-box{
+    display: none;
+}
+
+#history-order:checked ~ .history-order-box,
+#history-cancel:checked ~ .history-cancel-box
+{
+    display: block;
+}
+
+
+
+.history-order-box .wishlist-title-list{
+    width:250px;
+}
+.history-order-box .wishlist-title-list p{
+    width:250px;
+}
+
+
 
 .wishlist-etc{
     position: relative;
@@ -1314,7 +1334,7 @@ li {
     transform: translate(0,-50%);
     margin-right:100px;
 }
-.wishlist-price{
+.history-order-box .wishlist-price, .history-cancel-box .wishlist-price{
     position: relative;
     float:right;
     font-size: 12px;
@@ -1362,7 +1382,7 @@ li {
     float:right;
     width:30px;
 }
-.order-history-info .ea{
+.order-history-info .ea, .wish-list-info .ea{
     position: relative;
     float:left;
     width:100%;
@@ -1381,7 +1401,7 @@ li {
     width:100px;
     margin-left:5px;
 }
-.order-history-info .price{
+.order-history-info .price, .wish-list-info .price{
     position: relative;
     float:left;
     width:100%;
@@ -1399,7 +1419,7 @@ li {
     width:70px;
     margin-left:37px;
 }
-.order-history-info .delivery-condition{
+.order-history-info .delivery-condition, .wish-list-info .delivery-condition{
     position: relative;
     float:left;
     width:100%;
@@ -1412,13 +1432,13 @@ li {
 }
 
 
-.history-history-etc-wrap{
+.history-etc-wrap{
     position: relative;
     float:right;
     width:60px;
     margin-left:65px;
 }
-.order-history-info .history-etc{
+.order-history-info .history-etc, .wish-list-info .history-etc{
     position: relative;
     float:right;
     width:100%;
@@ -1431,6 +1451,24 @@ li {
 /* //order-history-info */
 
 
+
+
+
+
+/* wish-list-info */
+.wish-list-info{
+     position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    border-top: 2px solid #d0d0d0;
+    margin-top:15px;
+    padding-top:40px;
+}
+.wish-list-info .history-order-box{
+    display: block;
+}
+/* //wish-list-info */
 
 /* //mypage-button-wrap */
 

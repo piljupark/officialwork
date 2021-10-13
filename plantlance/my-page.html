@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 
     <meta charset="UTF-8">
@@ -31,6 +32,7 @@
                 document.getElementById("sub_footer").classList.add("show");
             });
         })
+
     </script>
 </head>
 
@@ -60,6 +62,7 @@
                 }
             });
         });
+
     </script>
     <!-- //gnb 불러오기 -->
 
@@ -445,21 +448,24 @@
                         배송조회
                     </p>
                 </a>
-                
-                
+
+
                 <input type="radio" name="history" id="history-order" checked>
                 <input type="radio" name="history" id="history-cancel">
-                
+
                 <label for="history-order" class="history-button history-button1">
                     <p class="txt-kor">주문내역</p>
                 </label>
-                
+
                 <label for="history-cancel" class="history-button history-button2">
                     <p class="txt-kor">취소내역</p>
                 </label>
 
-                <div class="my-wishlist-first">
-                   
+
+
+
+                <div class="my-wishlist-first history-order-box">
+
 
                     <div class="wishlist-top">
                         <p class="txt-kor wishlist-number">번호</p>
@@ -518,49 +524,138 @@
                                 <p class="txt-kor">OBLONG TABLE (FENIX)</p>
                             </a>
                         </div>
-                        
-                        
-                        
-                        <div class="history-history-etc-wrap">
+
+
+
+                        <div class="history-etc-wrap">
                             <p class="txt-eng history-etc">-</p>
                             <p class="txt-eng history-etc">-</p>
                             <p class="txt-eng history-etc">-</p>
                             <p class="txt-eng history-etc">주문취소</p>
                         </div>
-                        
+
                         <div class="history-delivery-condition-wrap">
                             <p class="txt-eng delivery-condition">배송중</p>
                             <p class="txt-eng delivery-condition">입금대기</p>
                             <p class="txt-eng delivery-condition">입금대기</p>
                             <p class="txt-eng delivery-condition">입금확인</p>
                         </div>
-                        
+
                         <div class="history-price-wrap">
                             <p class="txt-kor price">330,000 원</p>
                             <p class="txt-kor price">330,000 원</p>
                             <p class="txt-kor price">330,000 원</p>
                             <p class="txt-kor price">330,000 원</p>
                         </div>
-                        
-                        
-                        
+
+
+
                         <div class="history-ea-wrap">
                             <p class="txt-eng ea">1</p>
                             <p class="txt-eng ea">1</p>
                             <p class="txt-eng ea">1</p>
                             <p class="txt-eng ea">1</p>
                         </div>
-                        
-                        
-                        
-                         
-                        
-                         
-                        
-                         
 
-                        
+
+
+
+
+
+
+
+
+
                     </div>
+                </div>
+
+
+
+                <div class="my-wishlist-first history-cancel-box">
+
+
+                    <div class="wishlist-top">
+                        <p class="txt-kor wishlist-number">번호</p>
+                        <p class="txt-kor wishlist-date">주문일자</p>
+                        <p class="txt-kor wishlist-kind">상품이미지</p>
+                        <p class="txt-kor wishlist-title">상품명</p>
+                        <p class="txt-kor wishlist-etc">기타</p>
+                        <p class="txt-kor wishlist-condition">주문처리</p>
+                        <p class="txt-kor wishlist-price">판매가</p>
+                        <p class="txt-kor wishlist-ea">수량</p>
+                    </div>
+
+                    <div class="wishlist-list">
+                        <div class="wishlist-number-list">
+
+                            <p class="txt-eng">1</p>
+                            <p class="txt-eng">2</p>
+
+                        </div>
+
+                        <div class="wishlist-date-list">
+
+                            <p class="txt-eng">2021.09.01</p>
+                            <p class="txt-eng">2021.09.01</p>
+
+                        </div>
+
+
+                        <div class="wishlist-kind-list">
+                            <div class="wishlist-img">
+
+                            </div>
+                            <div class="wishlist-img">
+
+                            </div>
+                        </div>
+                        <div class="wishlist-title-list">
+                            <a href="#none">
+                                <p class="txt-kor">MATE STOOL (FENIX)</p>
+                            </a>
+                            <a href="#none">
+                                <p class="txt-kor">WILY TABLE (HPL)</p>
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="history-etc-wrap">
+                            <p class="txt-eng history-etc">주문취소</p>
+                            <p class="txt-eng history-etc">주문취소</p>
+                        </div>
+
+                        <div class="history-delivery-condition-wrap">
+                            <p class="txt-eng delivery-condition">주문취소</p>
+                            <p class="txt-eng delivery-condition">주문취소</p>
+                        </div>
+
+                        <div class="history-price-wrap">
+                            <p class="txt-kor price">330,000 원</p>
+                            <p class="txt-kor price">330,000 원</p>
+
+                        </div>
+
+
+
+                        <div class="history-ea-wrap">
+                            <p class="txt-eng ea">1</p>
+                            <p class="txt-eng ea">1</p>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
                 </div>
                 <!-- //주문내역 조회 -->
 
@@ -575,7 +670,101 @@
 
                 <!-- 위시리스트 -->
                 <div class="wish-list-info">
+                    <p class="txt-eng-bold my-wishlist-title">My shopping</p>
+                    <div class="my-wishlist-first history-order-box">
 
+
+                        <div class="wishlist-top">
+                            <p class="txt-kor wishlist-number">번호</p>
+                            <p class="txt-kor wishlist-date">주문일자</p>
+                            <p class="txt-kor wishlist-kind">상품이미지</p>
+                            <p class="txt-kor wishlist-title">상품명</p>
+                            <p class="txt-kor wishlist-etc">기타</p>
+                            <p class="txt-kor wishlist-condition">주문처리</p>
+                            <p class="txt-kor wishlist-price">판매가</p>
+                            <p class="txt-kor wishlist-ea">수량</p>
+                        </div>
+
+                        <div class="wishlist-list">
+                            <div class="wishlist-number-list">
+
+                                <p class="txt-eng">1</p>
+                                <p class="txt-eng">2</p>
+                                <p class="txt-eng">3</p>
+                                <p class="txt-eng">4</p>
+                            </div>
+
+                            <div class="wishlist-date-list">
+
+                                <p class="txt-eng">2021.10.01</p>
+                                <p class="txt-eng">2021.10.01</p>
+                                <p class="txt-eng">2021.10.01</p>
+                                <p class="txt-eng">2021.10.01</p>
+                            </div>
+
+
+                            <div class="wishlist-kind-list">
+                                <div class="wishlist-img">
+
+                                </div>
+                                <div class="wishlist-img">
+
+                                </div>
+                                <div class="wishlist-img">
+
+                                </div>
+                                <div class="wishlist-img">
+
+                                </div>
+                            </div>
+                            <div class="wishlist-title-list">
+                                <a href="#none">
+                                    <p class="txt-kor">WILY TABLE (FENIX)</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">WILY TABLE (HPL)</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">OBLONG TABLE (HPL)</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">OBLONG TABLE (FENIX)</p>
+                                </a>
+                            </div>
+
+
+
+                            <div class="history-etc-wrap">
+                                <p class="txt-eng history-etc">-</p>
+                                <p class="txt-eng history-etc">-</p>
+                                <p class="txt-eng history-etc">-</p>
+                                <p class="txt-eng history-etc">주문취소</p>
+                            </div>
+
+                            <div class="history-delivery-condition-wrap">
+                                <p class="txt-eng delivery-condition">배송중</p>
+                                <p class="txt-eng delivery-condition">입금대기</p>
+                                <p class="txt-eng delivery-condition">입금대기</p>
+                                <p class="txt-eng delivery-condition">입금확인</p>
+                            </div>
+
+                            <div class="history-price-wrap">
+                                <p class="txt-kor price">330,000 원</p>
+                                <p class="txt-kor price">330,000 원</p>
+                                <p class="txt-kor price">330,000 원</p>
+                                <p class="txt-kor price">330,000 원</p>
+                            </div>
+
+
+
+                            <div class="history-ea-wrap">
+                                <p class="txt-eng ea">1</p>
+                                <p class="txt-eng ea">1</p>
+                                <p class="txt-eng ea">1</p>
+                                <p class="txt-eng ea">1</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- //위시리스트 -->
 
@@ -588,7 +777,7 @@
                 <!-- //게시물 관리 -->
 
 
-            </div>
+            
         </div>
 
 
@@ -714,6 +903,7 @@
                     }
                 }).open();
             }
+
         </script>
         <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
@@ -722,4 +912,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>

@@ -316,28 +316,83 @@
             <!-- 회원정보 -->
             <div class="edit-user-info">
                 <div class="user-info-box user-id">
-                    <p class="user-info-title">아이디</p>
+                    <p class="txt-kor user-info-title">아이디</p>
+
+                    <p class="txt-eng show-user-id">
+                        ABCD1234
+                    </p>
                 </div>
                 <div class="user-info-box user-pw">
-                    <p class="user-info-title">비밀번호</p>
+                    <p class="txt-kor user-info-title">비밀번호</p>
+
+                    <a href="#none">
+                        <p class="txt-kor change-pw-button">비밀번호 변경</p>
+                    </a>
                 </div>
                 <div class="user-info-box user-name">
-                    <p class="user-info-title">이름</p>
+                    <p class="txt-kor user-info-title">이름</p>
+
+                    <input type="text" class="txt-kor" placeholder="홍길동">
                 </div>
                 <div class="user-info-box user-call">
-                    <p class="user-info-title">전화번호</p>
+                    <p class="txt-kor user-info-title">전화번호</p>
+
+                    <input type="text" class="txt-kor" placeholder="02-0000-0000">
                 </div>
                 <div class="user-info-box user-phone">
-                    <p class="user-info-title">휴대폰번호</p>
+                    <p class="txt-kor user-info-title">휴대폰번호</p>
+
+                    <input type="text" class="txt-kor" placeholder="010-1234-1234">
+
+                    <a href="#none">
+                        <p class="txt-kor user-certified-button">인증하기</p>
+                    </a>
                 </div>
                 <div class="user-info-box user-email">
-                    <p class="user-info-title">이메일</p>
+                    <p class="txt-kor user-info-title">이메일</p>
+
+                    <input type="text" class="txt-kor" placeholder="Abc123">
+                    <input type="text" class="txt-kor email-input" placeholder="naver.com">
+
+                    <select>
+                        <option value="" checked>직접입력</option>
+                        <option value="naver" checked>naver.com</option>
+                        <option value="google" checked>google.com</option>
+                        <option value="hanmail" checked>hanmail.net</option>
+                        <option value="nate" checked>nate.com</option>
+                    </select>
                 </div>
                 <div class="user-info-box user-address">
-                    <p class="user-info-title">배송 주소</p>
+                    <p class="txt-kor user-info-title">배송 주소</p>
+
+
+                    <input type="text" class="txt-kor" id="join_addr" readonly>
+
+                    <a href="#none">
+                        <p id="join_post" class="address-button" readonly onclick="findAddr()">
+                            우편번호 찾기
+                        </p>
+                    </a>
+                    <input type="text" class="txt-kor" placeholder="">
                 </div>
                 <div class="user-info-box user-delete">
-                    <p class="user-info-title">계정관리</p>
+                    <p class="txt-kor user-info-title">계정관리</p>
+
+                    <a href="#none">
+                        <p class="txt-kor user-delete-button">회원탈퇴</p>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="edit-user-bottom-button-wrap">
+                    <a href="#none">
+                        <p class="txt-kor user-cancel">취소하기</p>
+                    </a>
+                    
+                    <a href="#none">
+                        <p class="txt-kor user-save">저장하기 </p>
+                    </a>
                 </div>
             </div>
             <!-- //회원정보 -->
@@ -369,6 +424,7 @@
 
         </div>
     </div>
+    
 
 
     <!-- 
@@ -376,6 +432,32 @@
     -->
 
 
+
+
+    <script>
+        function findAddr() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+
+                    console.log(data);
+
+                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+                    // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var roadAddr = data.roadAddress; // 도로명 주소 변수
+                    var jibunAddr = data.jibunAddress; // 지번 주소 변수
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('join_post').value = data.zonecode;
+                    if (roadAddr !== '') {
+                        document.getElementById("join_addr").value = roadAddr;
+                    } else if (jibunAddr !== '') {
+                        document.getElementById("join_addr").value = jibunAddr;
+                    }
+                }
+            }).open();
+        }
+    </script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
 
 

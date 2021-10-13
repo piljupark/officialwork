@@ -291,6 +291,7 @@ li {
     float: left;
     width: auto;
     display: none;
+    font-size: 16px;
 }
 
 
@@ -1632,6 +1633,219 @@ li {
 }
 
 /* //wish-list-info */
+
+
+
+
+
+
+/* posting-management-info */
+.posting-management-info{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #d0d0d0;
+    margin-top: 15px;
+    padding-top: 40px;
+}
+
+.qna-button{
+    position: relative;
+    float:left;
+    border:1px solid #2f2f2f;
+    padding:5px 25px;
+    margin-right: 10px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.review-button{
+    position: relative;
+    float:left;
+    border:1px solid #2f2f2f;
+    padding:5px 25px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+.posting{
+    position: relative;
+    float: left;
+    width:100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.posting-top{
+    position: relative;
+    float:left;
+    width: 100%;
+    height: 40px;
+    background: #f5f5f5;
+    margin-top:10px;
+    border-top:1px solid #f4f4f4;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.posting-top p{
+    position: relative;
+    float:left;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+.posting-top p:nth-child(1){
+    margin-right: 100px;
+}
+ 
+.posting-top p:nth-last-child(1){
+    float:right;
+    margin-right: 200px;
+}
+
+.my-posting{
+    position: relative;
+    float:left;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left:20px;
+}
+
+.my-posting p{
+    position: relative;
+    float:left;
+    width: auto;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.my-posting .posting-number{
+    text-align: center;
+    width:20px;
+    margin-right: 100px;
+}
+.my-posting .posting-title{
+    text-align: center;
+    width:auto;
+}
+
+
+.my-posting input{
+    position: relative;
+    float:right;
+    top:50%;
+    transform: translate(0,-50%);
+    margin:0;
+    margin-left:40px;
+}
+
+
+.my-posting .more-post{
+   position: relative;
+    float:right;
+    background: #f5f5f5;
+    padding:5px 10px;
+    font-size: 11px;
+    margin-left: 66px;
+}
+
+
+
+.my-posting .posting-date{
+    position: relative;
+    float:right;
+    font-size: 13px;
+}
+
+
+
+
+
+.posting-right-button{
+    position: relative;
+    float:right;
+   display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+.posting-right-button .posting-choice-delete{
+    position: relative;
+    float:left;
+    border:1px solid #2f2f2f;
+    padding:7px 25px;
+    font-size: 12px;
+    margin-right:10px;
+}
+.posting-right-button .posting-all-delete{
+    position: relative;
+    float:left;
+    border:1px solid #2f2f2f;
+    padding:7px 25px;
+    font-size: 12px;
+    background: #2f2f2f;
+    color:#fff;
+}
+
+
+
+
+/* posting-review */
+.posting-review .my-posting{
+    height: 80px;
+}
+.posting-review .content-title{
+    margin-left:180px;
+}
+
+.posting-content{
+    position: relative;
+    float:left;
+    width: auto;
+    height: 100%;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-left:113px;
+}
+.posting-content .my-review-img-wrap{
+    position: relative;
+    float:left;
+    width:60px;
+    height: 60px;
+    background: #f4f4f4;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.posting-content p{
+    position: relative;
+    float:left;
+    margin-left:20px;
+}
+/* //posting-review */
+
+
+
+.posting{
+    display: none;
+}
+
+#qna:checked ~ .posting-qna,
+#review:checked ~ .posting-review
+{
+    display: block;
+}
+
+#qna:checked ~ label .qna-button,
+#review:checked ~ label .review-button
+{
+    opacity: 1;
+}
+
+/* //posting-management-info */
+
 
 /* //mypage-button-wrap */
 

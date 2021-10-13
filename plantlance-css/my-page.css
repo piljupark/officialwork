@@ -265,87 +265,88 @@ li {
 
 
 
-#my-page-whole{
+#my-page-whole {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     max-width: 1360px;
     height: auto;
     box-sizing: border-box;
-    padding:0 30px;
-    margin-top:150px;
-    left:50%;
+    padding: 0 30px;
+    margin-top: 150px;
+    left: 50%;
     transform: translate(-50%);
 }
 
 
 
-.my-page-title{
+.my-page-title {
     position: relative;
-    float:left;
+    float: left;
     width: auto;
 }
-.mypage-button-title{
+
+.mypage-button-title {
     position: relative;
-    float:left;
+    float: left;
     width: auto;
     display: none;
 }
 
 
-#my-page-whole input[type="radio"]{
+#my-page-whole input[type="radio"] {
     display: none;
 }
 
 
-.my-page-category{
+.my-page-category {
     position: relative;
-    float:right;
-    width:auto;
+    float: right;
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
 
 
 
-.my-page-category label{
+.my-page-category label {
     position: relative;
-    float:left;
-    width:auto;
+    float: left;
+    width: auto;
     text-align: center;
-    margin:0 20px;
+    margin: 0 20px;
     font-size: 13px;
     cursor: pointer;
     opacity: .4;
     transition-duration: .2s;
 }
 
-.my-page-category label:nth-child(1)
-{
-    margin-left:0;
+.my-page-category label:nth-child(1) {
+    margin-left: 0;
 }
-.my-page-category label:nth-child(4)
-{
-    margin-right:0;
+
+.my-page-category label:nth-child(4) {
+    margin-right: 0;
 }
 
 
 
 /* my-page-first */
-.my-page-first{
+.my-page-first {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:15px;
-    border-top:1px solid #2f2f2f;
-    padding-top:50px;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px solid #2f2f2f;
+    padding-top: 50px;
 }
-.hello-to-user{
+
+.hello-to-user {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     font-size: 20px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 
@@ -353,96 +354,105 @@ li {
 
 
 /* my-shopping-first */
-.my-shopping-title{
+.my-shopping-title {
     position: relative;
-    float:left;
-    width:auto;
-    font-size: 13px;  
+    float: left;
+    width: auto;
+    font-size: 13px;
 }
-.show-past-breakdown{
+
+.show-past-breakdown {
     position: relative;
-    float:right;
-    width:auto;
+    float: right;
+    width: auto;
     font-size: 12px;
 
 }
-.arrow-next{
+
+.arrow-next {
     position: relative;
-    float:right;
-    width:10px;
-    top:3px;
-    margin-left:4px;
-    
+    float: right;
+    width: 10px;
+    top: 3px;
+    margin-left: 4px;
+
 }
-.my-shopping-first{
+
+.my-shopping-first {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 150px;
-    margin-top:15px;
+    margin-top: 15px;
     box-sizing: border-box;
-    border:1px solid #e0e0e0;
+    border: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
 }
 
-.shopping-step{
+.shopping-step {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 80px;
-    top:50%;
-    transform: translate(0,-50%);
-    border-left:1px solid #eee;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-left: 1px solid #eee;
 }
-.shopping-step:nth-child(1){
-    border:none;
+
+.shopping-step:nth-child(1) {
+    border: none;
 }
-.shopping-step p{
+
+.shopping-step p {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     text-align: center;
 }
-.shopping-step p:nth-child(1){
-    margin-top:0px;
+
+.shopping-step p:nth-child(1) {
+    margin-top: 0px;
 }
-.shopping-step p:nth-child(2){
+
+.shopping-step p:nth-child(2) {
     font-size: 25px;
-    margin-top:30px;
+    margin-top: 30px;
 }
+
 /* //my-shopping-first */
 
 
-.delivery-check-button{
+.delivery-check-button {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     text-align: center;
     background: #2f2f2f;
-    color:#fff;
-    margin-top:20px;
-    padding:15px 0;
+    color: #fff;
+    margin-top: 20px;
+    padding: 15px 0;
 }
 
 
 /* my-post-first */
-.my-post-first{
+.my-post-first {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:50px;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
 }
 
-.my-post-title{
+.my-post-title {
     position: relative;
-    float:left;
-    width:auto; 
+    float: left;
+    width: auto;
 }
-.post-management-button{
+
+.post-management-button {
     position: relative;
-    float:right;
-    width:auto;
+    float: right;
+    width: auto;
     font-size: 12px;
 }
 
@@ -450,145 +460,159 @@ li {
 
 
 /* post-top */
-.post-top{
+.post-top {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 50px;
     background: #f5f5f5;
-    margin-top:10px;
-    border-top:1px solid #ebebeb;
+    margin-top: 10px;
+    border-top: 1px solid #ebebeb;
 }
-.post-number{
+
+.post-number {
     position: relative;
-    float:left;
+    float: left;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-left:20px;
-    margin-right:40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 20px;
+    margin-right: 40px;
 }
-.post-kind{
+
+.post-kind {
     position: relative;
-    float:left;
+    float: left;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:100px;
-    
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 100px;
+
 }
-.post-title{
+
+.post-title {
     position: relative;
-    float:left;
+    float: left;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
 }
-.post-date{
+
+.post-date {
     position: relative;
-    float:right;
+    float: right;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:155px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 155px;
 }
+
 /* //post-top */
 
 
 /* post-number-list */
-.post-list{
+.post-list {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     border-bottom: 1px solid #f4f4f4;
     padding-bottom: 30px;
 }
 
-.post-number-list{
+.post-number-list {
     position: relative;
-    float:left;
-    width:13px;
-    margin-left:20px;
-    margin-right:28px;
+    float: left;
+    width: 13px;
+    margin-left: 20px;
+    margin-right: 28px;
 }
-.post-number-list p{
+
+.post-number-list p {
     position: relative;
-    float:left;
-    width:100%;
-    padding:10px 5px;
+    float: left;
+    width: 100%;
+    padding: 10px 5px;
     text-align: center;
     font-size: 12px;
 }
+
 /* //post-number-list */
 
- 
+
 
 
 /* post-kind-list*/
-.post-kind-list{
+.post-kind-list {
     position: relative;
-    float:left;
-    width:50px;
-    margin-right:85px;
+    float: left;
+    width: 50px;
+    margin-right: 85px;
 }
-.post-kind-list p{
+
+.post-kind-list p {
     position: relative;
-    float:left;
-    width:100%;
-    padding:10px 5px;
+    float: left;
+    width: 100%;
+    padding: 10px 5px;
     text-align: center;
     font-size: 12px;
 }
+
 /* //post-kind-list*/
 
 
 
 /* post-title-list */
-.post-title-list{
+.post-title-list {
     position: relative;
-    float:left;
-    width:auto;
+    float: left;
+    width: auto;
 }
-.post-title-list p{
+
+.post-title-list p {
     position: relative;
-    float:left;
-    width:100%;
-    padding:10px 5px;
+    float: left;
+    width: 100%;
+    padding: 10px 5px;
     font-size: 12px;
     text-align: left;
 }
+
 /* //post-title-list */
 
 
 /* post-date-list */
-.post-date-list{
+.post-date-list {
     position: absolute;
-    float:right;
-    width:200px;
+    float: right;
+    width: 200px;
     right: 0;
 }
 
-.date-show-post{
+.date-show-post {
     position: relative;
-    float:left;
-    width:200px;
+    float: left;
+    width: 200px;
 }
-.date-show-post .date{
+
+.date-show-post .date {
     position: relative;
-    float:left;
-    width:auto;
-    padding:10px 5px;
+    float: left;
+    width: auto;
+    padding: 10px 5px;
     font-size: 12px;
 }
-.date-show-post .show-post-button{
+
+.date-show-post .show-post-button {
     position: relative;
-    float:right;
+    float: right;
     width: auto;
-    padding:5px 9px;
+    padding: 5px 9px;
     font-size: 11px;
     background: #eee;
-    top:5px;
+    top: 5px;
 }
+
 /* //post-date-list */
 
 /* //my-post-first */
@@ -602,23 +626,24 @@ li {
 
 
 /* my-wishlist-first */
-.my-wishlist-first{
+.my-wishlist-first {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:50px;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.my-wishlist-title{
+.my-wishlist-title {
     position: relative;
-    float:left;
-    width:auto; 
+    float: left;
+    width: auto;
 }
-.wishlist-management-button{
+
+.wishlist-management-button {
     position: relative;
-    float:right;
-    width:auto;
+    float: right;
+    width: auto;
     font-size: 12px;
 }
 
@@ -626,161 +651,175 @@ li {
 
 
 /* wishlist-top */
-.wishlist-top{
+.wishlist-top {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 50px;
     background: #f5f5f5;
-    margin-top:10px;
-    border-top:1px solid #ebebeb;
-}
-.wishlist-number{
-    position: relative;
-    float:left;
-    font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-left:20px;
-    margin-right:40px;
-}
-.wishlist-date{
-    position: relative;
-    float:left;
-    font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:0px;
-}
-.wishlist-kind{
-    position: relative;
-    float:left;
-    font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:80px;
+    margin-top: 10px;
+    border-top: 1px solid #ebebeb;
 }
 
-.wishlist-title{
+.wishlist-number {
     position: relative;
-    float:left;
+    float: left;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 20px;
+    margin-right: 40px;
 }
-.wishlist-price{
+
+.wishlist-date {
     position: relative;
-    float:right;
+    float: left;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:170px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 0px;
 }
+
+.wishlist-kind {
+    position: relative;
+    float: left;
+    font-size: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 80px;
+}
+
+.wishlist-title {
+    position: relative;
+    float: left;
+    font-size: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.wishlist-price {
+    position: relative;
+    float: right;
+    font-size: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 170px;
+}
+
 /* //wishlist-top */
 
 
 /* wishlist-number-list */
-.wishlist-list{
+.wishlist-list {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     border-bottom: 1px solid #f4f4f4;
     padding-bottom: 30px;
 }
 
-.wishlist-number-list{
+.wishlist-number-list {
     position: relative;
-    float:left;
-    width:13px;
-    margin-left:20px;
-    margin-right:45px;
+    float: left;
+    width: 13px;
+    margin-left: 20px;
+    margin-right: 45px;
 }
-.wishlist-number-list p{
+
+.wishlist-number-list p {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
     font-size: 12px;
     line-height: 4.5;
 }
+
 /* //wishlist-number-list */
 
- 
+
 
 
 /* wishlist-kind-list*/
-.wishlist-kind-list{
+.wishlist-kind-list {
     position: relative;
-    float:left;
-    width:50px;
-    margin-right:85px;
+    float: left;
+    width: 50px;
+    margin-right: 85px;
 }
-.wishlist-kind-list .wishlist-img{
+
+.wishlist-kind-list .wishlist-img {
     position: relative;
-    float:left;
-    width:55px;
+    float: left;
+    width: 55px;
     height: 55px;
     background: #eee;
-    margin-top:10px;
+    margin-top: 10px;
 }
+
 /* //wishlist-kind-list*/
 
 
 
 /* wishlist-title-list */
-.wishlist-title-list{
+.wishlist-title-list {
     position: relative;
-    float:left;
-    width:auto;
+    float: left;
+    width: auto;
 }
-.wishlist-title-list p{
+
+.wishlist-title-list p {
     position: relative;
-    float:left;
-    width:55%;
+    float: left;
+    width: 55%;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: left;
     font-size: 12px;
     line-height: 4.5;
 }
+
 /* //wishlist-title-list */
 
 
 /* wishlist-date-list */
-.wishlist-price-list{
+.wishlist-price-list {
     position: absolute;
-    float:right;
-    width:200px;
+    float: right;
+    width: 200px;
     right: 0;
 }
 
-.price-show-wishlist{
+.price-show-wishlist {
     position: relative;
-    float:left;
-    width:200px;
+    float: left;
+    width: 200px;
 }
-.price-show-wishlist .price{
+
+.price-show-wishlist .price {
     position: relative;
-    float:left;
-    width:auto;
+    float: left;
+    width: auto;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: left;
     font-size: 12px;
     line-height: 4.5;
 }
-.price-show-wishlist .show-wishlist-button{
+
+.price-show-wishlist .show-wishlist-button {
     position: relative;
-    float:right;
+    float: right;
     width: auto;
-    padding:5px 9px;
+    padding: 5px 9px;
     font-size: 11px;
     background: #eee;
-    top:5px;
-    margin-top:20px;
+    top: 5px;
+    margin-top: 20px;
 }
+
 /* //post-price-list */
 
 /* //my-post-first */
@@ -790,45 +829,48 @@ li {
 
 
 /* mypage-button-wrap */
-#my-page-whole input[type="radio"]:checked ~ .my-page-first{
+#my-page-whole input[type="radio"]:checked ~ .my-page-first {
     display: none;
 }
 
-#my-page-whole input[type="radio"]:checked ~ .my-page-title{
+#my-page-whole input[type="radio"]:checked ~ .my-page-title {
     display: none;
 }
 
 #user-info:checked ~ .my-page-category label:nth-child(1),
 #order-list:checked ~ .my-page-category label:nth-child(2),
 #wish-list:checked ~ .my-page-category label:nth-child(3),
-#posting-management:checked ~ .my-page-category label:nth-child(4){
+#posting-management:checked ~ .my-page-category label:nth-child(4) {
     opacity: 1;
 }
 
-#user-info:checked ~ .mypage-edit-title{
+#user-info:checked ~ .mypage-edit-title {
     display: block;
 }
 
-#order-list:checked ~ .mypage-history-title{
+#order-list:checked ~ .mypage-history-title {
     display: block;
 }
 
-#wish-list:checked ~ .mypage-wishlist-title{
+#wish-list:checked ~ .mypage-wishlist-title {
     display: block;
 }
 
-#posting-management:checked ~ .mypage-posting-title{
+#posting-management:checked ~ .mypage-posting-title {
     display: block;
 }
 
-.edit-user-info, .order-history-info, .wish-list-info, .posting-management-info{
+.edit-user-info,
+.order-history-info,
+.wish-list-info,
+.posting-management-info {
     display: none;
 }
 
 #user-info:checked ~ .mypage-button-wrap div:nth-child(1),
 #order-list:checked ~ .mypage-button-wrap div:nth-child(2),
 #wish-list:checked ~ .mypage-button-wrap div:nth-child(3),
-#posting-management:checked ~ .mypage-button-wrap div:nth-child(4){
+#posting-management:checked ~ .mypage-button-wrap div:nth-child(4) {
     display: block;
 }
 
@@ -836,280 +878,297 @@ li {
 
 
 /* edit-user-info */
-.edit-user-info{
+.edit-user-info {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: auto;
     border-top: 2px solid #d0d0d0;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
-.edit-user-info .user-info-box{
+.edit-user-info .user-info-box {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 70px;
     border-bottom: 1px solid #fafafa;
     box-sizing: border-box;
-    padding-left:20px;
-}
-.user-info-title{
-    position: relative;
-    float:left;
-    width:180px;
-    top:50%;
-    transform: translate(0,-50%);
-    
-}
-.show-user-id{
-    position: relative;
-    float:left;
-    width:auto;
-    top:50%;
-    transform: translate(0,-50%);
+    padding-left: 20px;
 }
 
-.change-pw-button{
+.user-info-title {
     position: relative;
-    float:left;
-    background: #a0a0a0;
-    color:#fff;
-    font-size: 12px;
-    padding:10px 17px;
-    top:50%;
-    transform: translate(0,-50%);
+    float: left;
+    width: 180px;
+    top: 50%;
+    transform: translate(0, -50%);
+
 }
-.mypage-button-wrap input[type="text"]{
+
+.show-user-id {
     position: relative;
-    float:left;
-    width:25%;
+    float: left;
+    width: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.change-pw-button {
+    position: relative;
+    float: left;
+    background: #a0a0a0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 17px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.mypage-button-wrap input[type="text"] {
+    position: relative;
+    float: left;
+    width: 25%;
     height: 35px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    border:none;
-    border:1px solid #ebebeb;
-    top:50%;
-    transform: translate(0,-50%);
+    border: none;
+    border: 1px solid #ebebeb;
+    top: 50%;
+    transform: translate(0, -50%);
     outline: none;
     box-sizing: border-box;
-    padding-left:10px;
+    padding-left: 10px;
     font-size: 12px;
 }
-.user-phone input{
-    margin-right:10px;
+
+.user-phone input {
+    margin-right: 10px;
 }
-.user-certified-button{
+
+.user-certified-button {
     position: relative;
-    float:left;
+    float: left;
     background: #a0a0a0;
-    color:#fff;
+    color: #fff;
     font-size: 12px;
-    padding:10px 17px;
-    top:50%;
-    transform: translate(0,-50%);
-} 
-.mypage-button-wrap .user-email input:nth-child(2){
-    margin-right:10px;
+    padding: 10px 17px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
-.mypage-button-wrap .user-email .email-input{
-    width:15%;
-    margin-right:10px;
+
+.mypage-button-wrap .user-email input:nth-child(2) {
+    margin-right: 10px;
 }
-.user-email select{
+
+.mypage-button-wrap .user-email .email-input {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.user-email select {
     position: relative;
-    float:left;
+    float: left;
     -webkit-appearance: none;
     -moz-appearance: none;
-    border:1px solid #ebebeb;
-    width:100px;
+    border: 1px solid #ebebeb;
+    width: 100px;
     height: 35px;
     box-sizing: border-box;
     padding-left: 10px;
-    top:50%;
-    transform: translate(0,-50%); 
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 
 
 
-.edit-user-info .user-address{
+.edit-user-info .user-address {
     height: 110px;
 
 }
-.user-address input:nth-child(2){
-    top:30%;
+
+.user-address input:nth-child(2) {
+    top: 30%;
     margin-right: 10px;
 }
-.user-address .address-button{
+
+.user-address .address-button {
     position: relative;
-    float:left;
+    float: left;
     background: #a0a0a0;
-    color:#fff;
+    color: #fff;
     font-size: 12px;
-    padding:10px 17px;
-    top:30%;
-    transform: translate(0,-50%);
-    
+    padding: 10px 17px;
+    top: 30%;
+    transform: translate(0, -50%);
+
 }
 
-.user-address input:nth-child(4){
-    top:70%;
+.user-address input:nth-child(4) {
+    top: 70%;
     position: absolute;
-    left:200px;
+    left: 200px;
 }
 
-.user-delete .user-info-title{
-    color:#A50000;
-}
-.user-delete-button{
-   position: relative;
-    float:left;
-    background: #a0a0a0;
-    color:#fff;
-    font-size: 12px;
-    padding:10px 17px;
-    top:50%;
-    transform: translate(0,-50%);
+.user-delete .user-info-title {
+    color: #A50000;
 }
 
-
-
-.edit-user-bottom-button-wrap{
+.user-delete-button {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:40px;
+    float: left;
+    background: #a0a0a0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 17px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+
+.edit-user-bottom-button-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
-.user-cancel{
+.user-cancel {
     position: relative;
-    float:left;
-    width:125px;
+    float: left;
+    width: 125px;
     height: 43px;
-    margin-right:15px;
+    margin-right: 15px;
     background: #fff;
-    border:1px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     box-sizing: border-box;
     text-align: center;
     line-height: 3;
 }
 
-.user-save{
+.user-save {
     position: relative;
-    float:left;
-    width:125px;
+    float: left;
+    width: 125px;
     height: 43px;
     background: #2f2f2f;
-    border:1px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     box-sizing: border-box;
     text-align: center;
-    line-height:3;
-    color:#fff;
-    
+    line-height: 3;
+    color: #fff;
+
 }
 
 
 /* after-push-delete */
-.after-push-change{
+.after-push-change {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 100vh;
     z-index: 6;
-    display: none; 
+    display: none;
 }
-.after-push-change-bg{
+
+.after-push-change-bg {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 100vh;
     background: #2f2f2f;
     opacity: .8;
 }
-.user-pw-change-box{
+
+.user-pw-change-box {
     position: absolute;
-    float:left;
-    width:500px;
+    float: left;
+    width: 500px;
     height: 400px;
-    top:40%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #fff;
     box-sizing: border-box;
-    padding:20px;
+    padding: 20px;
 }
 
 
-.change-pw-title{
+.change-pw-title {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     text-align: center;
-    margin-top:35px;
+    margin-top: 35px;
     font-size: 16px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
-.change-pw-input-wrap{
+.change-pw-input-wrap {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 40px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.change-pw-input-wrap .change-pw-txt{
+
+.change-pw-input-wrap .change-pw-txt {
     position: relative;
-    float:left;
-    width:130px;
+    float: left;
+    width: 130px;
     line-height: 3;
     font-size: 13px;
 
 }
-.change-pw-input-wrap input{
+
+.change-pw-input-wrap input {
     position: relative;
-    float:left;
-    width:90%;
+    float: left;
+    width: 90%;
     -webkit-appearance: none;
     -moz-appearance: none;
     outline: none;
-    border:1px solid #e0e0e0;
+    border: 1px solid #e0e0e0;
     box-sizing: border-box;
     padding-left: 10px;
 }
-.change-pw-input-wrap input::placeholder{
+
+.change-pw-input-wrap input::placeholder {
     font-size: 12px;
 }
 
 
-.user-pw-change-bottom-button-wrap{
+.user-pw-change-bottom-button-wrap {
     position: relative;
-    float:left;
-    width:100%;
-    margin-top:40px;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
-.user-pw-change-bottom-button-wrap .prev-button{
+
+.user-pw-change-bottom-button-wrap .prev-button {
     position: relative;
-    float:left;
+    float: left;
     border: 1px solid #2f2f2f;
     box-sizing: border-box;
-    padding:15px 50px;
+    padding: 15px 50px;
     margin-right: 15px;
 }
 
-.user-pw-change-bottom-button-wrap .save-button{
+.user-pw-change-bottom-button-wrap .save-button {
     position: relative;
-    float:left;
+    float: left;
     border: 1px solid #2f2f2f;
     box-sizing: border-box;
-    padding:15px 50px;
+    padding: 15px 50px;
     background: #2f2f2f;
-    color:#fff;
+    color: #fff;
 }
 
 
@@ -1122,133 +1181,141 @@ li {
 
 
 /* after-push-delete */
-.after-push-delete{
+.after-push-delete {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 100vh;
     z-index: 6;
     display: none;
 }
-.after-push-delete-bg{
+
+.after-push-delete-bg {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 100vh;
     background: #2f2f2f;
     opacity: .8;
 }
-.user-delete-box{
+
+.user-delete-box {
     position: absolute;
-    float:left;
-    width:500px;
+    float: left;
+    width: 500px;
     height: 430px;
-    top:40%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #fff;
     box-sizing: border-box;
-    padding:20px;
+    padding: 20px;
 }
 
 
-.user-delete-title{
+.user-delete-title {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     text-align: center;
-    margin-top:35px;
+    margin-top: 35px;
     font-size: 16px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 
 
 
-.user-delete-input-wrap{
+.user-delete-input-wrap {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     margin-bottom: 10px;
 }
-.user-delete-input-wrap .user-delete-txt{
+
+.user-delete-input-wrap .user-delete-txt {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     line-height: 3;
     font-size: 13px;
 }
-.user-delete-input-wrap input{
+
+.user-delete-input-wrap input {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     outline: none;
-    border:1px solid #e0e0e0;
+    border: 1px solid #e0e0e0;
     box-sizing: border-box;
-    padding:10px 10px;
+    padding: 10px 10px;
 }
-.user-delete-input-wrap input::placeholder{
+
+.user-delete-input-wrap input::placeholder {
     font-size: 12px;
 }
 
-.user-delete-notice{
+.user-delete-notice {
     position: relative;
-    float:left;
+    float: left;
     width: auto;
     font-size: 11px;
 }
 
-.user-delete-submit-wrap{
+.user-delete-submit-wrap {
     position: relative;
-    float:right;
-    width:auto;
+    float: right;
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
-.user-delete-submit-wrap label{
+
+.user-delete-submit-wrap label {
     position: relative;
-    float:left;
+    float: left;
     font-size: 12px;
     margin-right: 5px;
     cursor: pointer;
 }
-.user-delete-submit-wrap input{
+
+.user-delete-submit-wrap input {
     position: relative;
-    float:left;
-    padding:0;
-    margin:0;
-    margin-top:1.5px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5px;
 }
 
 
- 
-.user-delete-bottom-button-wrap{
-    position: relative;
-    float:left;
 
-    width:100%;
-    margin-top:40px;
+.user-delete-bottom-button-wrap {
+    position: relative;
+    float: left;
+
+    width: 100%;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
-.user-delete-bottom-button-wrap .prev-button{
+
+.user-delete-bottom-button-wrap .prev-button {
     position: relative;
-    float:left;
+    float: left;
     border: 1px solid #2f2f2f;
     box-sizing: border-box;
-    padding:15px 50px;
+    padding: 15px 50px;
     margin-right: 15px;
 }
 
-.user-delete-bottom-button-wrap .delete-button{
+.user-delete-bottom-button-wrap .delete-button {
     position: relative;
-    float:left;
+    float: left;
     border: 1px solid #2f2f2f;
     box-sizing: border-box;
-    padding:15px 50px;
+    padding: 15px 50px;
     background: #2f2f2f;
-    color:#fff;
+    color: #fff;
 }
 
 
@@ -1261,24 +1328,24 @@ li {
 
 
 /* order-history-info */
-.order-history-info{
+.order-history-info {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: auto;
     border-top: 2px solid #d0d0d0;
-    margin-top:15px;
-    padding-top:40px;
+    margin-top: 15px;
+    padding-top: 40px;
 }
 
 
-.history-button{
+.history-button {
     position: relative;
-    float:left;
-    width:auto;
-    padding:7px 14px;
-    border:1px solid #2f2f2f;
-    margin-top:40px;
+    float: left;
+    width: auto;
+    padding: 7px 14px;
+    border: 1px solid #2f2f2f;
+    margin-top: 40px;
     margin-right: 10px;
     font-size: 12px;
     cursor: pointer;
@@ -1287,144 +1354,157 @@ li {
 
 
 #history-order:checked ~ .history-button1,
-#history-cancel:checked ~ .history-button2{
+#history-cancel:checked ~ .history-button2 {
     background: #2f2f2f;
 }
 
 #history-order:checked ~ .history-button1 p,
-#history-cancel:checked ~ .history-button2 p{
-    color:#fff;
+#history-cancel:checked ~ .history-button2 p {
+    color: #fff;
 }
 
 
-.history-cancel-box, .history-order-box{
+.history-cancel-box,
+.history-order-box {
     display: none;
 }
 
 #history-order:checked ~ .history-order-box,
-#history-cancel:checked ~ .history-cancel-box
-{
+#history-cancel:checked ~ .history-cancel-box {
     display: block;
 }
 
 
 
-.history-order-box .wishlist-title-list{
-    width:250px;
-}
-.history-order-box .wishlist-title-list p{
-    width:250px;
+.history-order-box .wishlist-title-list {
+    width: 250px;
 }
 
+.history-order-box .wishlist-title-list p {
+    width: 250px;
+}
 
 
-.wishlist-etc{
+
+.wishlist-etc {
     position: relative;
-    float:right;
+    float: right;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 20px;
 }
-.wishlist-condition{
+
+.wishlist-condition {
     position: relative;
-    float:right;
+    float: right;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:100px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 100px;
 }
-.history-order-box .wishlist-price, .history-cancel-box .wishlist-price{
+
+.history-order-box .wishlist-price,
+.history-cancel-box .wishlist-price {
     position: relative;
-    float:right;
+    float: right;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:100px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 100px;
 }
-.wishlist-ea{
+
+.wishlist-ea {
     position: relative;
-    float:right;
+    float: right;
     font-size: 12px;
-    top:50%;
-    transform: translate(0,-50%);
-    margin-right:30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 30px;
 }
 
 
 
 
 
-.wishlist-date{
-    margin-right:60px;
+.wishlist-date {
+    margin-right: 60px;
 }
-.wishlist-date-list{
+
+.wishlist-date-list {
     position: relative;
-    float:left;
-    width:20px;
-    margin-left:0px;
-    margin-right:82px;
+    float: left;
+    width: 20px;
+    margin-left: 0px;
+    margin-right: 82px;
 }
-.wishlist-date-list p{
+
+.wishlist-date-list p {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: left;
     font-size: 12px;
     line-height: 4.5;
 }
 
 
-.history-ea-wrap{
+.history-ea-wrap {
     position: relative;
-    float:right;
-    width:30px;
+    float: right;
+    width: 30px;
 }
-.order-history-info .ea, .wish-list-info .ea{
+
+.order-history-info .ea,
+.wish-list-info .ea {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
     font-size: 12px;
     line-height: 4.5;
-    margin-right:10px;
+    margin-right: 10px;
 }
- 
 
-.history-price-wrap{
+
+.history-price-wrap {
     position: relative;
-    float:right;
-    width:100px;
-    margin-left:5px;
+    float: right;
+    width: 100px;
+    margin-left: 5px;
 }
-.order-history-info .price, .wish-list-info .price{
+
+.order-history-info .price,
+.wish-list-info .price {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
     font-size: 12px;
     line-height: 4.5;
 }
 
 
-.history-delivery-condition-wrap{
+.history-delivery-condition-wrap {
     position: relative;
-    float:right;
-    width:70px;
-    margin-left:37px;
+    float: right;
+    width: 70px;
+    margin-left: 37px;
 }
-.order-history-info .delivery-condition, .wish-list-info .delivery-condition{
+
+.order-history-info .delivery-condition,
+.wish-list-info .delivery-condition {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
     font-size: 12px;
     line-height: 4.5;
@@ -1432,22 +1512,25 @@ li {
 }
 
 
-.history-etc-wrap{
+.history-etc-wrap {
     position: relative;
-    float:right;
-    width:60px;
-    margin-left:65px;
+    float: right;
+    width: 60px;
+    margin-left: 65px;
 }
-.order-history-info .history-etc, .wish-list-info .history-etc{
+
+.order-history-info .history-etc,
+.wish-list-info .history-etc {
     position: relative;
-    float:right;
-    width:100%;
+    float: right;
+    width: 100%;
     height: 55px;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
     font-size: 12px;
     line-height: 4.5;
 }
+
 /* //order-history-info */
 
 
@@ -1456,18 +1539,98 @@ li {
 
 
 /* wish-list-info */
-.wish-list-info{
-     position: relative;
-    float:left;
-    width:100%;
+.wish-list-info {
+    position: relative;
+    float: left;
+    width: 100%;
     height: auto;
     border-top: 2px solid #d0d0d0;
-    margin-top:15px;
-    padding-top:40px;
+    margin-top: 15px;
+    padding-top: 40px;
 }
-.wish-list-info .history-order-box{
+
+.wish-list-info .history-order-box {
     display: block;
+    margin-bottom: 20px;
+    margin-top:10px;
 }
+
+.history-price-wrap {
+    position: relative;
+    float: right;
+    width: 100px;
+    margin-left: 5px;
+}
+
+.order-history-info .price,
+.wish-list-info .price {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 4.5;
+}
+
+.wishlist-check-wrap {
+    position: relative;
+    float: right;
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.wishlist-check-wrap input {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+
+
+.add-button {
+    position: relative;
+    float: left;
+    border: 1px solid #2f2f2f;
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+
+.check-delete-button {
+    position: relative;
+    float: left;
+    border: 1px solid #2f2f2f;
+    padding: 10px 25px;
+}
+
+.right-button-wrap {
+    position: relative;
+    float: right;
+    display: flex;
+}
+
+.all-delete-button {
+    position: relative;
+    float: left;
+    border: 1px solid #2f2f2f;
+    padding: 10px 25px;
+    margin-right: 10px;
+    background: #2f2f2f;
+    color: #fff;
+}
+
+.all-buy-button {
+    position: relative;
+    float: left;
+    border: 1px solid #2f2f2f;
+    padding: 10px 25px;
+    background: #2f2f2f;
+    color: #fff;
+}
+
 /* //wish-list-info */
 
 /* //mypage-button-wrap */

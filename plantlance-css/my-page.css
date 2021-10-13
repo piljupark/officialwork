@@ -644,6 +644,14 @@ li {
     margin-left:20px;
     margin-right:40px;
 }
+.wishlist-date{
+    position: relative;
+    float:left;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:0px;
+}
 .wishlist-kind{
     position: relative;
     float:left;
@@ -651,8 +659,8 @@ li {
     top:50%;
     transform: translate(0,-50%);
     margin-right:80px;
-    
 }
+
 .wishlist-title{
     position: relative;
     float:left;
@@ -660,7 +668,7 @@ li {
     top:50%;
     transform: translate(0,-50%);
 }
-.wishlist-date{
+.wishlist-price{
     position: relative;
     float:right;
     font-size: 12px;
@@ -730,7 +738,7 @@ li {
 .wishlist-title-list p{
     position: relative;
     float:left;
-    width:100%;
+    width:55%;
     height: 55px;
     margin-top:10px;
     text-align: left;
@@ -741,19 +749,19 @@ li {
 
 
 /* wishlist-date-list */
-.wishlist-date-list{
+.wishlist-price-list{
     position: absolute;
     float:right;
     width:200px;
     right: 0;
 }
 
-.date-show-wishlist{
+.price-show-wishlist{
     position: relative;
     float:left;
     width:200px;
 }
-.date-show-wishlist .date{
+.price-show-wishlist .price{
     position: relative;
     float:left;
     width:auto;
@@ -763,7 +771,7 @@ li {
     font-size: 12px;
     line-height: 4.5;
 }
-.date-show-wishlist .show-wishlist-button{
+.price-show-wishlist .show-wishlist-button{
     position: relative;
     float:right;
     width: auto;
@@ -773,7 +781,7 @@ li {
     top:5px;
     margin-top:20px;
 }
-/* //post-date-list */
+/* //post-price-list */
 
 /* //my-post-first */
 
@@ -1246,6 +1254,154 @@ li {
 /* //after-push-delete */
 
 /* //edit-user-info */
+
+
+
+
+
+/* order-history-info */
+.order-history-info{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    border-top: 2px solid #d0d0d0;
+    margin-top:15px;
+    padding-top:40px;
+}
+
+
+.wishlist-etc{
+    position: relative;
+    float:right;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:20px;
+}
+.wishlist-condition{
+    position: relative;
+    float:right;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:100px;
+}
+.wishlist-price{
+    position: relative;
+    float:right;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:100px;
+}
+.wishlist-ea{
+    position: relative;
+    float:right;
+    font-size: 12px;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:30px;
+}
+
+
+
+
+
+.wishlist-date{
+    margin-right:60px;
+}
+.wishlist-date-list{
+    position: relative;
+    float:left;
+    width:20px;
+    margin-left:0px;
+    margin-right:82px;
+}
+.wishlist-date-list p{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 55px;
+    margin-top:10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 4.5;
+}
+
+
+.history-ea-wrap{
+    position: relative;
+    float:right;
+    width:30px;
+}
+.order-history-info .ea{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 55px;
+    margin-top:10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 4.5;
+    margin-right:10px;
+}
+
+
+.history-price-wrap{
+    position: relative;
+    float:right;
+    width:100px;
+    margin-left:5px;
+}
+.order-history-info .price{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 55px;
+    margin-top:10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 4.5;
+}
+
+
+.history-delivery-condition-wrap{
+    position: relative;
+    float:right;
+    width:70px;
+    margin-left:37px;
+}
+.order-history-info .delivery-condition{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 55px;
+    margin-top:10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 4.5;
+    padding-right: 10px;
+}
+
+
+.history-history-etc-wrap{
+    position: relative;
+    float:right;
+    width:60px;
+    margin-left:65px;
+}
+.order-history-info .history-etc{
+    position: relative;
+    float:right;
+    width:100%;
+    height: 55px;
+    margin-top:10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 4.5;
+}
+/* //order-history-info */
 
 
 

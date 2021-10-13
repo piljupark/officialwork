@@ -66,12 +66,16 @@
 
 
     <div id="my-page-whole">
-        <p class="txt-eng-bold  my-page-title">MY PAGE</p>
-
         <input type="radio" name="my-page" id="user-info">
         <input type="radio" name="my-page" id="order-list">
         <input type="radio" name="my-page" id="wish-list">
         <input type="radio" name="my-page" id="posting-management">
+
+        <p class="txt-eng-bold  my-page-title">MY PAGE</p>
+        <p class="txt-kor-bold  mypage-button-title mypage-edit-title">회원정보 </p>
+        <p class="txt-kor-bold  mypage-button-title mypage-history-title">주문내역</p>
+        <p class="txt-kor-bold  mypage-button-title mypage-wishlist-title">관심상품</p>
+        <p class="txt-kor-bold  mypage-button-title mypage-posting-title">게시물 관리</p>
 
 
         <div class="my-page-category">
@@ -84,7 +88,7 @@
             </label>
 
             <label for="wish-list">
-                <p class="txt-kor">위시리시트</p>
+                <p class="txt-kor">위시리스트</p>
             </label>
 
             <label for="posting-management">
@@ -305,6 +309,65 @@
         </div>
 
 
+
+
+        <div class="mypage-button-wrap">
+
+            <!-- 회원정보 -->
+            <div class="edit-user-info">
+                <div class="user-info-box user-id">
+                    <p class="user-info-title">아이디</p>
+                </div>
+                <div class="user-info-box user-pw">
+                    <p class="user-info-title">비밀번호</p>
+                </div>
+                <div class="user-info-box user-name">
+                    <p class="user-info-title">이름</p>
+                </div>
+                <div class="user-info-box user-call">
+                    <p class="user-info-title">전화번호</p>
+                </div>
+                <div class="user-info-box user-phone">
+                    <p class="user-info-title">휴대폰번호</p>
+                </div>
+                <div class="user-info-box user-email">
+                    <p class="user-info-title">이메일</p>
+                </div>
+                <div class="user-info-box user-address">
+                    <p class="user-info-title">배송 주소</p>
+                </div>
+                <div class="user-info-box user-delete">
+                    <p class="user-info-title">계정관리</p>
+                </div>
+            </div>
+            <!-- //회원정보 -->
+
+
+
+            <!-- 주문내역 조회 -->
+            <div class="order-history-info">
+
+            </div>
+            <!-- //주문내역 조회 -->
+
+
+
+            <!-- 위시리스트 -->
+            <div class="wish-list-info">
+
+            </div>
+            <!-- //위시리스트 -->
+
+
+
+            <!-- 게시물 관리 -->
+            <div class="posting-management-info">
+
+            </div>
+            <!-- //게시물 관리 -->
+
+
+        </div>
     </div>
 
 

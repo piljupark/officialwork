@@ -19,7 +19,6 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
 
-    <script src="../plantlance-script/join.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -38,7 +37,7 @@
 
 
 <body onload="init();">
-
+    <script src="../plantlance-script/my-page.js"></script>
     <!-- gnb 불러오기 -->
     <div id="header">
         <!-- z-index: 5 -->
@@ -382,18 +381,21 @@
                         <p class="txt-kor user-delete-button">회원탈퇴</p>
                     </a>
                 </div>
-                
-                
-                
+
+
+
                 <div class="edit-user-bottom-button-wrap">
                     <a href="#none">
                         <p class="txt-kor user-cancel">취소하기</p>
                     </a>
-                    
+
                     <a href="#none">
                         <p class="txt-kor user-save">저장하기 </p>
                     </a>
                 </div>
+
+
+
             </div>
             <!-- //회원정보 -->
 
@@ -424,7 +426,99 @@
 
         </div>
     </div>
-    
+
+
+
+    <!-- 비밀번호 변경 -->
+    <div class="after-push-change">
+        <div class="after-push-change-bg">
+
+        </div>
+
+        <div class="user-pw-change-box">
+
+
+            <p class="txt-kor-bold change-pw-title">비밀번호 변경</p>
+
+            <div class="change-pw-input-wrap">
+                <p class="txt-kor change-pw-txt">현재 비밀번호</p>
+                <input type="password" placeholder="현재 비밀번호를 입력하세요." class="txt-kor">
+            </div>
+            <div class="change-pw-input-wrap">
+                <p class="txt-kor change-pw-txt">변경 후 비밀번호</p>
+                <input type="password" placeholder="새로운 비밀번호를 입력하세요." class="txt-kor">
+            </div>
+            <div class="change-pw-input-wrap">
+                <p class="txt-kor change-pw-txt">비밀번호 확인</p>
+                <input type="password" placeholder="새로운 비밀번호를 다시 입력하세요. " class="txt-kor">
+            </div>
+
+
+            <div class="user-pw-change-bottom-button-wrap">
+                <a href="#none">
+                    <p class="txt-kor prev-button">돌아가기</p>
+                </a>
+
+                <a href="#none">
+                    <p class="txt-kor save-button">저장하기</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- //비밀번호 변경 -->
+
+
+
+
+
+
+
+    <!-- 회원 탈퇴 -->
+    <div class="after-push-delete">
+        <div class="after-push-delete-bg">
+
+        </div>
+
+        <div class="user-delete-box">
+            <p class="txt-kor-bold user-delete-title">회원탈퇴</p>
+
+
+            <div class="user-delete-input-wrap">
+                <p class="txt-kor user-delete-txt">탈퇴하시려는 이유가 무엇인가요?</p>
+                <input type="text" placeholder="회원 탈퇴사유를 작성해주세요." class="txt-kor">
+            </div>
+            
+            <div class="user-delete-input-wrap">
+                <p class="txt-kor user-delete-txt">비밀번호 확인</p>
+                <input type="password" placeholder="비밀번호 입력" class="txt-kor">
+            </div>
+            
+            <p class="txt-kor user-delete-notice"> * 회원 탈퇴를 결정하시면 이전의 정보를 되돌릴 수 없게 됩니다. 정말 탈퇴하시겠습니까 ?</p>
+            
+            <div class="user-delete-submit-wrap">
+               <label for="delete-submit">
+                    <p class="txt-kor">예</p>
+                </label>
+                <input type="checkbox" id="delete-submit">
+                
+            </div>
+
+
+            <div class="user-delete-bottom-button-wrap">
+                <a href="#none">
+                    <p class="txt-kor prev-button">돌아가기</p>
+                </a>
+                <a href="plantlance.html">
+                    <p class="txt-kor delete-button">탈퇴하기</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- //회원 탈퇴 -->
+
 
 
     <!-- 

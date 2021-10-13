@@ -1226,6 +1226,7 @@ li {
 .user-delete-bottom-button-wrap{
     position: relative;
     float:left;
+
     width:100%;
     margin-top:40px;
     display: flex;
@@ -1269,6 +1270,32 @@ li {
     margin-top:15px;
     padding-top:40px;
 }
+
+
+.history-button{
+    position: relative;
+    float:left;
+    width:auto;
+    padding:7px 14px;
+    border:1px solid #2f2f2f;
+    margin-top:40px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+#history-order:checked ~ .history-button1,
+#history-cancel:checked ~ .history-button2{
+    background: #2f2f2f;
+}
+
+#history-order:checked ~ .history-button1 p,
+#history-cancel:checked ~ .history-button2 p{
+    color:#fff;
+}
+
 
 
 .wishlist-etc{
@@ -1346,7 +1373,7 @@ li {
     line-height: 4.5;
     margin-right:10px;
 }
-
+ 
 
 .history-price-wrap{
     position: relative;

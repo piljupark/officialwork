@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantlance</title>
+
+
+    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
+    <script src="../plantlance-script/jquery.fullpage.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/search-list.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#header").load("gnb.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+            $("#footer").load("footer.html", function() {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_footer").classList.add("show");
+            });
+        })
+    </script>
+</head>
+
+
+
+<body onload="init();">
+
+    <!-- gnb 불러오기 -->
+    <div id="header">
+        <!-- z-index: 5 -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <!-- //gnb 불러오기 -->
+
+
+
+
+    <div id="search-list">
+        <input type="text" class="txt-kor search">
+        
+        
+        <p class="txt-kor-bold my-search"></p>
+        <p class="txt-kor search-txt">에 대한 검색결과</p>
+        <p class="txt-kor-bold search-txt2">0건</p>
+        
+        
+        <div class="search-result-wrap">
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                    <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="search-result-wrap">
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="search-result-wrap">
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+            <div class="search-result-img-box">
+                <div class="search-result-img">
+                     <a href="#none" class="search-result-product"></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- 검색 결과 없을시 -->
+        <!--
+        
+        <div class="not-found">
+            <p class="txt-kor">검색 결과가 존재하지 않습니다.</p>
+        </div>
+        
+        -->
+        <!-- //검색 결과 없을시 -->
+    </div>
+
+
+
+
+
+
+
+</body></html>

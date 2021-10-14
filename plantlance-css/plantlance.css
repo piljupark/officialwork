@@ -488,6 +488,14 @@ li {
     height: 440px;
     overflow: hidden;
 }
+.bespoke-wrap a{
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+}
+
 .bespoke-wrap p{
     position: absolute;
     float:left;
@@ -497,7 +505,16 @@ li {
     left:50%;
     transform: translate(-50%,-50%);
     font-size: 18px;
-    
+    transition-duration: .2s;
+}
+.bespoke-wrap .bespoke-title2{
+    opacity: 0;
+}
+.bespoke-wrap a:hover ~ .bespoke-title2{
+    opacity: 1;
+}
+.bespoke-wrap a:hover ~ .bespoke-title1{
+    opacity: 0;
 }
 .bespoke-wrap img{
     position: absolute;

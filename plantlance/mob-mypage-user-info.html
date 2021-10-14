@@ -65,57 +65,122 @@
     <!-- //gnb 불러오기 -->
 
 
-   
-   
-   <div id="mob-mypage-whole">
-       <p class="txt-eng-bold mob-mypage-title">
-           MY PAGE
-       </p>
-       
+
+
+    <div id="mob-mypage-whole">
+        <p class="txt-eng-bold mob-mypage-title">
+            MY PAGE
+        </p>
+
         <div class="mob-mypage-button-wrap mob-mypage-button-wrap1">
-             <div class="mob-mypage-button">
-                 <a href="#none">
-                     <p class="txt-kor">회원정보</p>
-                 </a>
-             </div>
-             <div class="mob-mypage-button">
-                 <a href="#none">
-                     <p class="txt-kor">주문내역 조회</p>
-                 </a>
-             </div>
+            <div class="mob-mypage-button">
+                <a href="#none">
+                    <p class="txt-kor">회원정보</p>
+                </a>
+            </div>
+            <div class="mob-mypage-button">
+                <a href="#none">
+                    <p class="txt-kor">주문내역 조회</p>
+                </a>
+            </div>
         </div>
         <div class="mob-mypage-button-wrap mob-mypage-button-wrap2">
-             <div class="mob-mypage-button">
-                 <a href="#none">
-                     <p class="txt-kor">위시리스트</p>
-                 </a>
-             </div>
-             <div class="mob-mypage-button">
-                 <a href="#none">
-                     <p class="txt-kor">게시물 관리</p>
-                 </a>
-             </div>
+            <div class="mob-mypage-button">
+                <a href="#none">
+                    <p class="txt-kor">위시리스트</p>
+                </a>
+            </div>
+            <div class="mob-mypage-button">
+                <a href="#none">
+                    <p class="txt-kor">게시물 관리</p>
+                </a>
+            </div>
         </div>
-        
-        
-        
+
+
+
         <div class="mob-user-info-box">
             <p class="txt-kor-bold mob-user-info-title">
                 회원정보
             </p>
-            
+
             <div class="mob-user-info-input-wrap">
                 <div class="mob-user-info-input">
                     <p class="txt-kor-bold mob-user-info-input-title">아이디</p>
-                    
+
                     <p class="txt-eng mob-user-info-input-content">ABCD1234</p>
+                </div>
+
+                <div class="mob-user-info-input">
+                    <p class="txt-kor-bold mob-user-info-input-title">비밀번호</p>
+
+                    <a href="#none">
+                        <p class="txt-kor mob-pw-change">비밀번호 변경 </p>
+                    </a>
+                </div>
+
+                <div class="mob-user-info-input">
+                    <p class="txt-kor-bold mob-user-info-input-title">이름</p>
+
+                    <input type="text" class="txt-kor mob-user-info-input-content mob-text-input" placeholder="홍길동">
+                </div>
+
+                <div class="mob-user-info-input">
+                    <p class="txt-kor-bold mob-user-info-input-title">전화번호</p>
+
+                    <input type="text" class="txt-kor mob-user-info-input-content mob-text-input" placeholder="02-1234-5678">
+                </div>
+
+                <div class="mob-user-info-input">
+                    <p class="txt-kor-bold mob-user-info-input-title">휴대폰번호</p>
+
+                    <input type="text" class="txt-kor mob-user-info-input-content mob-text-input" placeholder="010-1234-5678">
+                    <a href="#none">
+                        <p class="txt-kor mob-certified">인증하기</p>
+                    </a>
+                </div>
+
+                <div class="mob-user-info-input">
+                    <p class="txt-kor-bold mob-user-info-input-title">이메일</p>
+
+                    <input type="text" class="txt-kor mob-user-info-input-content mob-text-input" placeholder="Abc123 @ naver.com">
+                    <select class="txt-kor mob-select">
+                        <option value="" checked>직접입력</option>
+                        <option value="naver">naver.com</option>
+                        <option value="google">google.com</option>
+                        <option value="hanmail">hanmail.net</option>
+                        <option value="nate">nate.com</option>
+                    </select>
+                </div>
+
+                <div class="mob-user-info-input">
+                    <p class="txt-kor-bold mob-user-info-input-title">배송 주소</p>
+
+                    <div class="mob-address-wrap">
+                        <div class="mob-address-box">
+                            <input type="text" class="txt-kor mob-user-info-input-content mob-text-input mob-address-input" id="join_addr" readonly>
+
+                            <a href="#none">
+                                <p class="txt-kor mob-find-address" id="join_post" readonly onclick="findAddr()">우편번호 찾기</p>
+                            </a>
+                        </div>
+                        <input type="text" class="txt-kor mob-user-info-input-content mob-text-input mob-address-input mob-address-input2">
+                    </div>
                 </div>
             </div>
         </div>
-       
-       
-   </div>
-    
+        
+        <a href="#none">
+            <p class="txt-kor mob-user-info-save">저장하기</p>
+        </a>
+        
+        <a href="plantlance.html">
+            <p class="txt-kor mob-user-info-cancel">취소하기</p>
+        </a>
+
+
+    </div>
+
 
     <!-- 
     <div id="footer"></div>

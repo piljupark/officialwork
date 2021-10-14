@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.ttf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.woff2");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.ttf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.woff2");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.ttf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.woff2");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.ttf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.woff2");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.ttf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.woff");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.woff2");
+    font-family: "Pretendard-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.woff2");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.otf");
+    font-family: "Urbanist-Medium";
+}
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.woff2");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.otf");
+    font-family: "Urbanist-SemiBold";
+}
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.ttf");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.woff2");
+    font-family: "Urbanist-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Bold.otf");
+    font-family: "Urbanist-Bold";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.woff2");
+    font-family: "Urbanist-ExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.otf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: "Urbanist-ExtraBold";
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+
+
+
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Medium";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+#header {
+    position: relative;
+}
+
+
+#mob-mypage-whole{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding:10px;
+    margin-top:100px;
+}
+
+
+.mob-mypage-title{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-left:20px;
+}
+
+.mob-myname{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-left:20px;
+    font-size: 18px;
+    margin-top:20px;
+}
+
+
+
+/* mycondition */
+.mob-mycondition-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+
+.mob-mycondition{
+    position: relative;
+    width:33%;
+    padding-bottom: 30%;
+    border:1px solid #f4f4f4;
+    margin:0px 10px;
+}
+.mycondition1, .mycondition4{
+    margin-left:0;
+}
+.mycondition3, .mycondition6{
+    margin-right:0;
+}
+.mob-mycondition-txt-box{
+    position: absolute;
+    width:50%;
+    padding-bottom: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.mob-mycondition-title{
+    position: absolute;
+    float:left;
+    width:auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.mob-mycondition-count{
+    position: absolute;
+    float:left;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    bottom:0;
+}
+
+
+.mob-delivery-condition{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    background: #2f2f2f;
+    color:#fff;
+    padding:20px 0;
+    box-sizing: border-box;
+    margin-top:20px;
+}
+
+
+/* mob-button */
+.mob-mypage-other-button{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    margin-top:30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+.mob-otherpage-button{
+    position: relative;
+    float:left;
+    width:100%;
+    
+}
+.mob-mypage-arrow{
+    position: relative;
+    width:10px;
+    height: 10px;
+}
+/* //mob-button */
+
+
+/* //mycondition */
+
+
+
+
+
+@media screen and (max-width:450px) {
+    .mob-mycondition-txt-box .mob-mycondition-title{
+        font-size: 12px;
+    }
+}

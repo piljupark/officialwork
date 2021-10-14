@@ -387,6 +387,12 @@ li {
 
 
 
+@media screen and (min-width:1025px){
+    
+    #mob-mypage-whole{
+        display: none;
+    }
+}
 
 @media screen and (max-width:450px) {
     .mob-mycondition-txt-box .mob-mycondition-title{

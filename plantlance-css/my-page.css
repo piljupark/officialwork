@@ -1881,3 +1881,12 @@ li {
 
 
 /* //my-page-first */
+
+
+
+@media screen and (max-width:1024px){
+    #my-page-whole{
+        display: none;
+    }
+}
+

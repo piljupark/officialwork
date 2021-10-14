@@ -74,12 +74,12 @@
 
         <div class="mob-mypage-button-wrap mob-mypage-button-wrap1">
             <div class="mob-mypage-button">
-                <a href="#none">
+                <a href="mob-mypage-user-info.html">
                     <p class="txt-kor">회원정보</p>
                 </a>
             </div>
             <div class="mob-mypage-button">
-                <a href="#none">
+                <a href="mob-mypage-history.html">
                     <p class="txt-kor">주문내역 조회</p>
                 </a>
             </div>
@@ -170,17 +170,70 @@
             </div>
         </div>
         
-        <a href="#none">
-            <p class="txt-kor mob-user-info-save">저장하기</p>
+        <a href="#" onClick="top.location='javascript:location.reload()'">
+            <p class="txt-kor  mob-user-info-save">저장하기</p>
         </a>
         
         <a href="plantlance.html">
             <p class="txt-kor mob-user-info-cancel">취소하기</p>
         </a>
 
+    
+    
 
     </div>
-
+    <div class="mob-pw-change-wrap">
+        <div class="mob-pw-change-bg"></div>
+        
+        <div class="mob-pw-change-box">
+            <p class="txt-kor-bold mob-pw-change-box-title">비밀번호 변경</p>
+            
+            <input type="password" placeholder="현재 비밀번호를 입력하세요" class="txt-kor">
+            <input type="password" placeholder="새로운 비밀번호를 입력하세요" class="txt-kor">
+            <input type="password" placeholder="새로운 비밀번호를 다시 입력하세요" class="txt-kor">
+            
+            <a href="#none">
+                <p class="txt-kor mob-pw-change-cancel">돌아가기</p>
+            </a>
+            <a href="#" onClick="top.location='javascript:location.reload()'">
+                <p class="txt-kor mob-pw-change-save">저장하기</p>
+            </a>
+        </div>
+    </div>
+    
+    
+    <div class="mob-user-delete-wrap">
+        <div class="mob-user-delete-bg"></div>
+        
+        <div class="mob-user-delete-box">
+            <p class="txt-kor-bold mob-user-delete-box-title">회원탈퇴</p>
+            
+            <p class="txt-kor-bold mob-user-delete-box-txt">탈퇴하시려는 이유가 무엇인가요?</p>
+            <input type="text" placeholder="회원 탈퇴사유를 작성해주세요" class="txt-kor">
+            
+            <p class="txt-kor-bold mob-user-delete-box-txt">비밀번호 확인</p>
+            <input type="password" placeholder="비밀번호 입력" class="txt-kor">
+            
+            <p class="txt-kor mob-user-delete-box-submit">* 회원탈퇴를 결정하시면 이전의 정보를 되돌릴 수 없게 됩니다. 정말 탈퇴하시겠습니까?</p>
+            
+            <div class="mob-user-delete-box-check-wrap">
+                <p class="txt-kor">예</p>
+                <input type="checkbox">
+            </div>
+            
+            
+            <a href="#none">
+                <p class="txt-kor mob-user-delete-cancel">돌아가기</p>
+            </a>
+            <a href="plantlance.html">
+                <p class="txt-kor mob-user-delete-save">탈퇴하기</p>
+            </a>
+        </div>
+    </div>
+    
+    
+    
+    
 
     <!-- 
     <div id="footer"></div>

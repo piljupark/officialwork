@@ -476,5 +476,206 @@ li {
     border:1px solid #2f2f2f;
     
 }
+
+
+
+.mob-pw-change-wrap{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    display: none;
+}
+.mob-pw-change-bg{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 100vh;
+    background: #2f2f2f;
+    opacity: .8;
+    z-index: 6;
+}
+
+.mob-pw-change-box{
+    position: absolute;
+    top:150px;
+    width:300px;
+    height: 400px;
+    background:#fff;
+    z-index: 7;
+    left:50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    padding:30px;
+}
+.mob-pw-change-box-title{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.mob-pw-change-box input {
+    position: relative;
+    float:left;
+    width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+   padding:10px 0;
+    border:1px solid #ebebeb;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding-left:15px;
+}
+.mob-pw-change-box input::placeholder{
+    opacity: .5;
+    font-size: 11px;
+}
+
+
+.mob-pw-change-cancel{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:50%;
+    text-align: center;
+    padding:20px 0;
+    background: #f5f5f5;
+}
+.mob-pw-change-save{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:50%;
+    text-align: center;
+    padding:20px 0;
+    background: #2f2f2f;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mob-user-delete-wrap{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+}
+.mob-user-delete-bg{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 100vh;
+    background: #2f2f2f;
+    opacity: .8;
+    z-index: 6;
+}
+
+.mob-user-delete-box{
+    position: absolute;
+    top:150px;
+    width:300px;
+    height: 450px;
+    background:#fff;
+    z-index: 7;
+    left:50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    padding:30px;
+}
+.mob-user-delete-box-title{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+.mob-user-delete-box input[type="text"], .mob-user-delete-box input[type="password"]{
+    position: relative;
+    float:left;
+    width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+   padding:10px 0;
+    border:1px solid #ebebeb;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding-left:15px;
+}
+.mob-user-delete-box input::placeholder{
+    opacity: .5;
+    font-size: 11px;
+}
+
+.mob-user-delete-box-txt{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+.mob-user-delete-box-submit{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 12px;
+}
+
+.mob-user-delete-box-check-wrap{
+    position: relative;
+    float:right;
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+
+
+.mob-user-delete-box-check-wrap p{
+    position: relative;
+    font-size: 12px;
+}
+.mob-user-delete-box-check-wrap input{
+    margin:0;
+    margin-top:1px;
+    margin-left:5px;
+}
+
+
+
+.mob-user-delete-cancel{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:50%;
+    text-align: center;
+    padding:20px 0;
+    background: #f5f5f5;
+}
+.mob-user-delete-save{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:50%;
+    text-align: center;
+    padding:20px 0;
+    background: #2f2f2f;
+    color:#fff;
+}
+
 /* //mob-user-info-box */
 

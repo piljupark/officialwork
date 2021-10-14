@@ -264,62 +264,261 @@ li {
 }
 
 
-#mob-mypage-whole{
+#mob-mypage-whole {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    padding:10px;
-    margin-top:100px;
+    padding: 10px;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
 
-.mob-mypage-title{
+.mob-mypage-title {
     position: relative;
-    float:left;
-    width:100%;
-    margin-left:20px;
+    float: left;
+    width: 100%;
+    margin-left: 20px;
 }
 
 
 
 
 /* mob-mypage-button-wrap */
-.mob-mypage-button-wrap{
+.mob-mypage-button-wrap {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.mob-mypage-button{
+
+.mob-mypage-button {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     opacity: .6;
     box-sizing: border-box;
-    border:1px solid #fcfcfc;
+    border: 1px solid #fcfcfc;
 }
-.mob-mypage-button-wrap1 .mob-mypage-button:nth-child(2){
-    margin-right:10px;
-    border:1px solid #808080;
+
+.mob-mypage-button-wrap1 .mob-mypage-button:nth-child(2) {
+    border: 1px solid #808080;
     opacity: 1;
 }
-.mob-mypage-button:nth-child(1){
-    margin-right:10px;
+
+.mob-mypage-button:nth-child(1) {
+    margin-right: 10px;
 }
-.mob-mypage-button p{
+
+.mob-mypage-button p {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     text-align: center;
-    padding:15px 0;
+    padding: 15px 0;
     background: #fcfcfc;
 }
+
 /* //mob-mypage-button-wrap */
 
 
+
+/* mob-history-wrap */
+.mob-history-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.mob-history-title {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+.mob-history-count-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ebebeb;
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+
+.mob-history-count {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.mob-history-wrap input[type="radio"] {
+    display: none;
+}
+
+
+
+.mob-history-buy-button {
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid #2f2f2f;
+    box-sizing: border-box;
+    padding: 12px 0;
+    background: #f5f5f5;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.mob-history-cancel-button {
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid #2f2f2f;
+    box-sizing: border-box;
+    padding: 12px 0;
+    background: #f5f5f5;
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+
+.mob-history-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.mob-history-top-category {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.mob-history-top-category p {
+    position: relative;
+    float: left;
+    opacity: .7;
+}
+
+.mob-history-top-category .mob-history-img {
+    margin-right: 50px;
+}
+
+.mob-history-top-category .mob-history-price {
+    float: right;
+}
+
+.mob-history-top-category .mob-history-now {
+    float: right;
+    margin-left: 40px;
+}
+
+
+
+.mob-history-mine{
+    position: relative;
+    float:left;
+    width:100%;
+    height: 80px;
+    border-bottom:1px solid #f5f5f5;
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+.mob-history-img-box{
+    position: relative;
+    float:left;
+    width:70px;
+    height: 70px;
+    background: #ddd;
+    top:50%;
+    transform: translate(0,-50%);
+    margin-right:15px;
+}
+
+.mob-history-info-box{
+    position: relative;
+    float:left;
+    width:auto;
+    height: 100%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.mob-history-info-title{
+    padding-bottom: 27px;
+    font-size: 12px;
+}
+.mob-history-info-ea, .mob-history-info-date{
+    font-size: 10px;
+    line-height:1.6;
+    opacity: .6;
+}
+
+.mob-history-info-delivery{
+    position: relative;
+    float:right;
+    font-size: 12px;
+    margin-left:38px;
+}
+.mob-history-info-price{
+    position: absolute;
+    float:right;
+    font-size: 12px;
+    right:69px;
+}
+
+
+
+
+
+
+
+/* mob-history-buy, cancel-button */
+.mob-history-content{
+    display: none;
+}
+.mob-history-cancel-content .mob-history-info-delivery{
+    color:#AB0000;
+}
+
+
+
+
+#mob-history-buy:checked ~ .mob-history-buy-button,
+#mob-history-cancel:checked ~ .mob-history-cancel-button{
+    border: 1px solid #2f2f2f;
+    border-bottom: 0;
+    opacity: 1;
+    background: none;
+}
+
+
+#mob-history-buy:checked ~ .mob-history-buy-content,
+#mob-history-cancel:checked ~ .mob-history-cancel-content{
+     display: block;
+}
+/* //mob-history-buy, cancel-button */
+
+
+
+
+/* //mob-history-wrap */

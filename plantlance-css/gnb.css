@@ -1,48 +1,9 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
-
-
-@font-face {
-    src: url("../fonts/Pretendard-Thin.ttf");
-    font-family: "Pretendard-Thin";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Thin.woff");
-    font-family: "Pretendard-Thin";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Thin.woff2");
-    font-family: "Pretendard-Thin";
-}
 
 @font-face {
     src: url("../fonts/Pretendard-Thin.otf");
     font-family: "Pretendard-Thin";
-}
-
-
-
-
-
-@font-face {
-    src: url("../fonts/Pretendard-Regular.ttf");
-    font-family: "Pretendard-Regular";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Regular.woff");
-    font-family: "Pretendard-Regular";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Regular.woff2");
-    font-family: "Pretendard-Regular";
 }
 
 @font-face {
@@ -50,44 +11,9 @@
     font-family: "Pretendard-Regular";
 }
 
-
-
-@font-face {
-    src: url("../fonts/Pretendard-Medium.ttf");
-    font-family: "Pretendard-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Medium.woff");
-    font-family: "Pretendard-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Medium.woff2");
-    font-family: "Pretendard-Medium";
-}
-
 @font-face {
     src: url("../fonts/Pretendard-Medium.otf");
     font-family: "Pretendard-Medium";
-}
-
-
-
-
-@font-face {
-    src: url("../fonts/Pretendard-SemiBold.ttf");
-    font-family: "Pretendard-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-SemiBold.woff");
-    font-family: "Pretendard-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-SemiBold.woff2");
-    font-family: "Pretendard-SemiBold";
 }
 
 @font-face {
@@ -95,121 +21,35 @@
     font-family: "Pretendard-SemiBold";
 }
 
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
 
 
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Light.ttf");
+    font-family: "Urbanist-Light";
+}
 @font-face {
     src: url("../fonts/Urbanist-Regular.ttf");
     font-family: "Urbanist-Regular";
 }
-
-@font-face {
-    src: url("../fonts/Urbanist-Regular.woff");
-    font-family: "Urbanist-Regular";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Regular.woff2");
-    font-family: "Urbanist-Regular";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Regular.otf");
-    font-family: "Urbanist-Regular";
-}
-
-
-
-
-
 @font-face {
     src: url("../fonts/Urbanist-Medium.ttf");
     font-family: "Urbanist-Medium";
 }
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.woff");
-    font-family: "Urbanist-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.woff2");
-    font-family: "Urbanist-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.otf");
-    font-family: "Urbanist-Medium";
-}
-
-
-
 @font-face {
     src: url("../fonts/Urbanist-SemiBold.ttf");
     font-family: "Urbanist-SemiBold";
 }
-
-@font-face {
-    src: url("../fonts/Urbanist-SemiBold.woff");
-    font-family: "Urbanist-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-SemiBold.woff2");
-    font-family: "Urbanist-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-SemiBold.otf");
-    font-family: "Urbanist-SemiBold";
-}
-
-
-
-
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.ttf");
-    font-family: "Urbanist-Bold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.woff");
-    font-family: "Urbanist-Bold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.woff2");
-    font-family: "Urbanist-Bold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.otf");
-    font-family: "Urbanist-Bold";
-}
-
-
-
-
 @font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
     font-family: "Urbanist-ExtraBold";
 }
 
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.woff");
-    font-family: "Urbanist-ExtraBold";
-}
-
-
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.woff2");
-    font-family: "Urbanist-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.otf");
-    font-family: "Urbanist-ExtraBold";
-}
 
 
 
@@ -221,14 +61,14 @@ body::-webkit-scrollbar{
 */
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     color: #292929;
     font-size: 14px;
     overflow-x: hidden;
-
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
 }
 
 
@@ -236,27 +76,28 @@ a,
 p,
 li {
     text-decoration: none;
-    color: #292929;
+    color: #2f2f2f;
 }
 
 
 
 
 .txt-eng {
-    font-family: "Urbanist-Regular"!important;
+    font-family: "Urbanist-Medium";
 }
 
 .txt-eng-bold {
-    font-family: "Urbanist-Bold"!important;
+    font-family: "Urbanist-ExtraBold";
 }
 
 .txt-kor {
-    font-family: "Pretendard-Regular"!important;
+    font-family: "Pretendard-Medium";
 }
 
 .txt-kor-bold {
-    font-family: "Pretendard-SemiBold"!important;
+    font-family: "Pretendard-SemiBold";
 }
+
 
 
 
@@ -430,6 +271,7 @@ nav {
     float: left;
     width: 100%;
     margin-bottom: 10px;
+    font-family: "Urbanist-Medium"!important;
 }
 
 .my-page,
@@ -502,7 +344,6 @@ nav {
     position: relative;
     float: left;
     color: #fff;
-
     padding: 2px 8px 3px 8px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -526,6 +367,7 @@ nav {
     position: absolute;
     float: left;
     width: 50%;
+    height: auto;
     top: 250px;
     left: 65%;
     transform: translate(-50%, 0);
@@ -533,7 +375,7 @@ nav {
 }
 
 .nav-main-menu .title {
-    font-size: 17px;
+    font-size: 16px;
     transition-duration: .3s;
 }
 
@@ -542,15 +384,7 @@ nav {
     float: left;
     color: #fff;
     width: 50%;
-    margin-bottom: 20px;
-}
-
-.nav-main-menu ul li {
-    position: relative;
-    float: left;
-    color: #fff;
-    width: 50%;
-    margin-bottom: 20px;
+    height: 30px;
 }
 
 .collection {
@@ -594,14 +428,18 @@ nav {
     position: relative;
     float: left;
     width: 50%;
-    padding-bottom: 10px;
 }
 
 .shop .furniture .sub-title {
+    position: relative;
+    float:left;
     width: 100%;
-    color: #c7c7c7;
+    color: #fff;
     font-size: 13px;
-    margin-bottom: 10px;
+    opacity: .4;
+    margin-left:10px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 /* // shop - furniture */
@@ -609,25 +447,30 @@ nav {
 
 
 /* shop - furniture - sofa */
-.shop .furniture .sofa {
+.shop .furniture .gnb-sofa {
     position: relative;
     float: left;
-    width: 70%;
-    padding-left: 10px;
+    width: 90%;
     transition-duration: .3s;
     overflow: hidden;
-    height: 00px;
+    height: 0px;
+    margin-bottom: 0;
+    padding:0;
     /*height: 170px;*/
 }
 
-.shop .furniture .sofa p {
-    width: 100%;
+.shop .furniture .gnb-sofa p {
+    position: relative;
+    float:left;
+    width: 120%;
     font-size: 12px;
     color: #888;
     transition-duration: .2s;
+    margin-left:20px;
 }
 
-.shop .furniture .sofa p:hover {
+
+.shop .furniture .gnb-sofa p:hover {
     color: #fff;
 }
 
@@ -636,25 +479,27 @@ nav {
 
 
 /* shop - furniture - table */
-.shop .furniture .table {
+.shop .furniture .gnb-table {
     position: relative;
     float: left;
-    width: 70%;
+    width: 90%;
     padding-left: 10px;
     transition-duration: .3s;
     overflow: hidden;
-    height: 0px;
+    height: 0px; 
+    padding:0;
     /*height: 100px;*/
 }
 
-.shop .furniture .table p {
+.shop .furniture .gnb-table p {
     width: 120%;
     font-size: 11px;
     color: #888;
     transition-duration: .2s;
+    margin-left:20px;
 }
 
-.shop .furniture .table p:hover {
+.shop .furniture .gnb-table p:hover {
     color: #fff;
 }
 
@@ -676,6 +521,18 @@ nav {
 }
 
 /* //community */
+
+.showroom {
+    position: absolute;
+    float: right;
+    width: 50%;
+    right:0;
+    top:300px;
+}
+.showroom .title {
+    height: 100px;
+}
+
 
 /* //nav-main-menu */
 
@@ -699,7 +556,7 @@ nav {
     align-content: center;
     align-items: center;
     transition-duration: .3s;
-    background: #444;
+    background: #2f2f2f;
 
     -ms-overflow-style: none;
     /* IE and Edge */
@@ -758,10 +615,11 @@ nav {
 
 .nav-mob-main-menu p {
     color: #fff;
+   
 }
 
 .nav-mob-main-menu .title {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 30px;
 }
 
@@ -771,7 +629,7 @@ nav {
     width: 100%;
     margin-bottom: 15px;
     color: #ddd;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .nav-mob-main-menu .mob-about {
@@ -806,11 +664,11 @@ nav {
     position: relative;
     float: right;
     width: 10px;
-    margin-top: 5px;
+    margin-top: 2px;
     margin-left: 15px;
 }
 
-.nav-mob-main-menu .mob-shop .arrow-up {
+.nav-mob-main-menu .mob-shop .mob-gnb-furniture-up {
     display: none;
 }
 
@@ -824,28 +682,40 @@ nav {
     transition-duration: .3s;
 }
 
-.nav-mob-main-menu .mob-shop .sofa,
-.nav-mob-main-menu .mob-shop .table {
+.nav-mob-main-menu .mob-shop a .mob-gnb-furniture{
+    position:absolute;
+    float:left;
+    display: block;
+    width:100%;
+    height: 20px;
+    z-index: 2;
+}
+.nav-mob-main-menu .mob-shop .gnb-mob-sofa,
+.nav-mob-main-menu .mob-shop .gnb-mob-table {
     position: relative;
-    float: left;
+    float:left;
     width: 100%;
-    height: 0px;
+    height: 0;
     margin-left: 10px;
     transition-duration: .3s;
+    padding-bottom: 0;
     overflow: hidden;
 }
 
-.nav-mob-main-menu .mob-shop .sofa p,
-.nav-mob-main-menu .mob-shop .table p {
+.nav-mob-main-menu .mob-shop .gnb-mob-sofa p, .nav-mob-main-menu .mob-shop .gnb-mob-table p {
+    position: relative;
+    float:left;
+    width:100%;
     margin-bottom: 15px;
     font-size: 13px;
     color: #c9c9c9;
     transition-duration: .2s;
+    opacity: .4;
 }
 
-.nav-mob-main-menu .mob-shop .sofa p:hover,
-.nav-mob-main-menu .mob-shop .table p:hover {
-    color: #fff;
+.nav-mob-main-menu .mob-shop .gnb-mob-sofa p:hover,
+.nav-mob-main-menu .mob-shop .gnb-mob-table p:hover {
+    opacity: 1;
 }
 
 
@@ -858,7 +728,17 @@ nav {
     transform: translate(-50%);
     margin-bottom: 40px;
 }
-
+.nav-mob-main-menu .mob-gnb-showroom{
+    position: relative;
+    float: left;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 40px;
+}
+.nav-mob-main-menu .mob-gnb-showroom p{
+    font-size: 15px;
+}
 .nav-mob-main-menu .mob-collection {
     position: relative;
     float: left;
@@ -878,8 +758,9 @@ nav {
 }
 
 .nav-mob-main-menu .mob-main-bottom p {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 15px;
+    font-family: "Urbanist-Regular"
 }
 
 .nav-mob-main-menu .mob-main-bottom .wish-list,
@@ -898,7 +779,7 @@ nav {
     width: 100%;
     height: 130px;
     bottom: 0;
-    background: #555;
+    background: #3a3a3a;
     transition-duration: .3s;
     display: none;
 }
@@ -1186,7 +1067,14 @@ nav {
     }
 
     .shop {
-        height: 550px;
+        height: auto;
+    }
+    
+    .showroom{
+        position: relative;
+        right: inherit;
+        top:0;
+        right:50%;
     }
 
     .nav-slide-side {

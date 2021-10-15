@@ -1,22 +1,24 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 
 @font-face {
-    src: url("../fonts/Pretendard-SemiBold.ttf");
-    font-family: "Pretendard-SemiBold";
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
 }
 
 @font-face {
-    src: url("../fonts/Pretendard-SemiBold.woff");
-    font-family: "Pretendard-SemiBold";
+    src: url("../fonts/Pretendard-Light.otf");
+    font-family: "Pretendard-Light";
 }
 
 @font-face {
-    src: url("../fonts/Pretendard-SemiBold.woff2");
-    font-family: "Pretendard-SemiBold";
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
 }
 
 @font-face {
@@ -24,10 +26,25 @@
     font-family: "Pretendard-SemiBold";
 }
 
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
 
 
 
 
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Light.ttf");
+    font-family: "Urbanist-Light";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
 
 @font-face {
     src: url("../fonts/Urbanist-Medium.ttf");
@@ -35,66 +52,12 @@
 }
 
 @font-face {
-    src: url("../fonts/Urbanist-Medium.woff");
-    font-family: "Urbanist-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.woff2");
-    font-family: "Urbanist-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.otf");
-    font-family: "Urbanist-Medium";
-}
-
-
-
-
-
-
-@font-face {
     src: url("../fonts/Urbanist-SemiBold.ttf");
     font-family: "Urbanist-SemiBold";
 }
 
 @font-face {
-    src: url("../fonts/Urbanist-SemiBold.woff");
-    font-family: "Urbanist-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-SemiBold.woff2");
-    font-family: "Urbanist-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-SemiBold.otf");
-    font-family: "Urbanist-SemiBold";
-}
-
-
-
-
-
-@font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
-    font-family: "Urbanist-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.woff");
-    font-family: "Urbanist-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.woff2");
-    font-family: "Urbanist-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.otf");
     font-family: "Urbanist-ExtraBold";
 }
 
@@ -107,15 +70,66 @@ body::-webkit-scrollbar{
     display: none;
 }
 */
-html {
-    overflow-x: hidden!important;
-}
+
 body {
     width: 100vw;
     height: 100vh;
     color: #292929;
     font-size: 14px;
-    overflow-x: hidden!important;
+    overflow-x: hidden;
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+
+
+
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Regular";
+}
+
+.txt-kor-light {
+    font-family: "Pretendard-Light";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
 
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
@@ -127,7 +141,7 @@ a,
 p,
 li {
     text-decoration: none;
-    color: #292929;
+    color: #2f2f2f;
 }
 
 
@@ -151,369 +165,231 @@ li {
 
 
 
-
-
 footer {
-    position: relative;
+    position: absolute;
     float: left;
     width: 100%;
-    height: 300px;
-    bottom: 0;
+    height: auto;
     left: 0;
-    background: rgba(0, 0, 0, 0.03);
+    bottom: 0;
+    box-sizing: border-box;
+    background: #fff;
     display: flex;
-    padding: 20px;
-    padding-right:0;
-    z-index: 1;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .footer-wrap {
     position: relative;
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-
+    max-width: 1360px;
+    height: 350px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding: 0 20px;
 }
 
 .footer-logo {
     position: relative;
-    float: left;
-    width: 120px;
-    margin-top: 35px;
+    width: 100px;
 }
 
-.footer-bottom-wrap {
+
+
+
+
+.footer-info-box {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    margin-top: 50px;
+    transition-duration: .3s;
+}
+
+
+
+.ceo-info {
+    position: relative;
+    width: auto;
+
+}
+
+.footer-info {
     position: relative;
     float: left;
     width: 100%;
     margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-
 }
 
-.footer-left {
+.footer-info p {
     position: relative;
     float: left;
-    width: 50%;
+    width: 100%;
+    line-height: 1.5;
 }
 
-.footer-left p {
+.footer-contact {
     position: relative;
     float: left;
+    width: 100%;
+}
+
+.footer-contact p {
+    width: auto;
     margin-right: 10px;
 }
 
-.footer-left .txt-kor {
-    color: rgba(0, 0, 0, 0.3);
+.footer-show-contents {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    right: 20px;
 }
 
-.footer-left-bottom {
+.footer-show-contents p {
     position: relative;
-    float: left;
-    margin-top: 5px;
+    text-align: right;
+    line-height: 1.5;
+    font-size: 12px;
+}
+.footer-show-contents .footer-call{
+    font-size: 14px;
 }
 
-.footer-left-bottom .footer-copyright {
+.footer-show-contents p:nth-child(3) {
+    margin-top: 20px;
+}
+
+.footer-show-contents p:last-child {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* mob-footer-wrap */
+.mob-footer-wrap {
+    display: none;
+}
+
+
+.mob-footer-wrap{
     position: relative;
-    float: left;
-    margin-top: 30px;
+    float:left;
+    width:100%;
+    height: auto;
+    box-sizing: border-box; 
+    padding:20px;
 }
 
-.footer-left-bottom .footer-copyright .copyright1 {
-    margin-bottom: 5px;
-}
-
-/* //footer-left*/
-
-
-
-
-/* footer-right */
-.footer-right {
+.mob-footer-logo{
     position: relative;
-    float: right;
-    width: 50%;
+    float:left;
+    width:130px;
 }
 
-.tel-wrap {
+.mob-footer-show-content{
     position: relative;
-    float: left;
-
+    float:right;
+    width: auto;
 }
 
-.tel-wrap .tel-txt {
-    position: relative;
-    color: rgba(0, 0, 0, 0.4);
+.mob-footer-show-content p{
+    text-align: right;
+    line-height: 1.5;
+    font-size: 11px;
 }
 
-.tel-wrap .tel-number {
+.mob-footer-time{
     position: relative;
-    font-size: 31px;
-    text-align: center;
-    margin-top: 10px;
+    width: auto;
+    display: flex;
+    justify-content:flex-end;
+}
+.mob-footer-time:nth-child(3){
+    margin-top:10px;
+}
+.mob-footer-time p{
+    position: relative;
+    float:left;
+    margin-left:5px;
 }
 
-.operation-hour-wrap {
-    position: relative;
-    float: right;
-    width: 250px;
-    height: 60px;
-    margin-left: 50px;
-    background: rgba(0, 0, 0, 0.04);
-    margin-right: 40px;
-}
 
-.operation-hour-wrap .operation {
+.mob-footer-company-show{
     position: relative;
+    width:auto;
+    margin-top:30px;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
 }
-
-.operation-hour-wrap .operation p {
+.mob-footer-company-hide{
     position: relative;
-    float: left;
-    margin-top: 9px;
+    width:auto;
+    margin-top:30px;
+    cursor: pointer;
+    display: none;
+    display: flex;
+    justify-content: space-between;
 }
-
-.operation-hour-wrap .operation .off {
-    font-size: 11px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 3px 10px 2px 10px;
-    border-radius: 40px;
-    margin-top: 8px;
-}
-
-.operation-hour-wrap .operation .hour {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-/* //footer-right */
-
-
-
-
-
-@media screen and (max-width:940px) and (min-width:840px) {
-
-    .footer-left p {
-        font-size: 12px;
-    }
-
-    .footer-right {
-        width: 50%;
-    }
-
-    .footer-right p {
-        font-size: 12px;
-    }
-
-    .footer-right .tel-number {
-        font-size: 28px;
-    }
-
-    .footer-right .off {
-        font-size: 7px;
-    }
-
-    .operation-hour-wrap {
-        margin-left: 10px;
-
-    }
+.mob-footer-arrow{
+    position: relative;
+    width:10px;
+    height: 10px;
+    top:3px;
+    left:2px;
 }
 
 
-@media screen and (max-width:839px) and (min-width:390px) {
-    footer {
-        padding-bottom: 0;
-        height: 300px;
-    }
 
-    .footer-logo {
-        margin-top: 15px;
-    }
-
-    .footer-right {
-        float: left;
-        width: 100%;
-    }
-
-    .footer-right .tel-wrap {
-        float: left;
-    }
-
-    .footer-right p {
-        font-size: 12px;
-    }
-
-    .footer-right .tel-number {
-        font-size: 28px;
-    }
-
-    .footer-right .operation-hour-wrap {
-        width: 210px;
-        margin-left: 0;
-    }
-
-    .footer-right .operation-hour-wrap p {
-        margin-top: 10px;
-    }
-
-    .operation-hour-wrap .operation .off {
-        font-size: 9px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-
-
-
-    .footer-left {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-
-    .footer-left p {
-        font-size: 11px;
-    }
-
-    .footer-copyright {
-        float: left;
-
-        width: 100%;
-    }
-
-
+.mob-footer-company-info {
+    position: relative;
+    float:right;
+    width:100%;
+    height: 0;
+    margin-top:30px;
+    transition-duration: .3s;
+    overflow: hidden;
+}
+.mob-footer-company-info p{
+    position: relative;
+    font-size: 10px;
+    text-align: right;
 }
 
+.mob-footer-company-info .mob-footer-company-title{
+    margin-bottom: 20px;
+}
+.mob-footer-contact{
+    position: relative;
+    float:right;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.mob-footer-contact p{
+    position: relative;
+    float:left;
+    margin-left:10px;
+}
+/* //mob-footer-wrap */
 
-@media screen and (max-width:389px) and (min-width:200px) {
-    footer {
-        padding-bottom: 0;
-        height: 200px;
-        padding-left: 0;
+
+
+
+@media screen and (max-width:750px) {
+    .footer-wrap {
+        display: none;
     }
 
-    .footer-logo {
-        margin-top: 15px;
-        width: 100px;
-        margin-left: 4%;
-    }
-
-
-
-    .footer-bottom-wrap {
-        border: none;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-
-
-    .footer-right {
-        position: absolute;
-        float: left;
-        width: 95%;
-        top: -150px;
-        left: 50%;
-        transform: translate(-50%);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .footer-right .tel-wrap {
-        float: left;
-        width: 45%;
-        margin-top: 9px;
-    }
-
-    .footer-right p {
-        font-size: 10px;
-        text-align: center;
-    }
-
-    .footer-right .tel-txt {
-        margin-top: 2px;
-    }
-
-    .footer-right .tel-number {
-        width: 100%;
-        font-size: 22px;
-        margin-top: 6px;
-        font-family: "Urbanist-SemiBold";
-    }
-
-    /* operation-hour-wrap */
-    .footer-right .operation-hour-wrap {
-        position: relative;
-        float: right;
-        width: 55%;
-        height: 45px;
-        margin-top:10px;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
-        background: none;
-        border-left: 1px solid #292929;
-
-    }
-
-    .operation-hour-wrap .operation {
-        justify-content: flex-start;
-    }
-
-    .operation-hour-wrap .operation .day {
-        height: 0;
-        margin-top: 0;
-        margin-right: 7px;
-        font-size: 11px;
-        font-family: "Urbanist-SemiBold";
-    }
-    .operation-hour-wrap .operation .hour{
-        margin-top:1px;
-    }
-
-
-    .operation-hour-wrap .operation .off {
-        position: absolute;
-        font-size: 9px;
-        padding-left: 7px;
-        padding-right: 7px;
-        margin-top:-3px;
-        right: 0px;
-    }
-    
-    .operation-hour-wrap .operation:nth-child(2) {
-        margin-bottom: 0px;
-        margin-top:20px;
-        height:0;
-    }
-
-    /* //operation-hour-wrap */
-
-
-
-
-
-    .footer-left {
-        width: 90%;
-        margin-top: 0px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-
-    .footer-left p {
-        font-size: 10px;
-    }
-
-    .footer-copyright {
-        float: left;
-        width: 100%;
+    .mob-footer-wrap {
+        display: block;
     }
 
 

@@ -1,47 +1,14 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
-
-@font-face {
-    src: url("../fonts/Pretendard-Thin.ttf");
-    font-family: "Pretendard-Thin";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Thin.woff");
-    font-family: "Pretendard-Thin";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Thin.woff2");
-    font-family: "Pretendard-Thin";
-}
 
 @font-face {
     src: url("../fonts/Pretendard-Thin.otf");
     font-family: "Pretendard-Thin";
 }
 
-
-
-
-
 @font-face {
-    src: url("../fonts/Pretendard-Regular.ttf");
-    font-family: "Pretendard-Regular";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Regular.woff");
-    font-family: "Pretendard-Regular";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Regular.woff2");
-    font-family: "Pretendard-Regular";
+    src: url("../fonts/Pretendard-Light.otf");
+    font-family: "Pretendard-Light";
 }
 
 @font-face {
@@ -49,66 +16,14 @@
     font-family: "Pretendard-Regular";
 }
 
-
-
-@font-face {
-    src: url("../fonts/Pretendard-Medium.ttf");
-    font-family: "Pretendard-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Medium.woff");
-    font-family: "Pretendard-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-Medium.woff2");
-    font-family: "Pretendard-Medium";
-}
-
 @font-face {
     src: url("../fonts/Pretendard-Medium.otf");
     font-family: "Pretendard-Medium";
 }
 
-
-
-
-@font-face {
-    src: url("../fonts/Pretendard-SemiBold.ttf");
-    font-family: "Pretendard-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-SemiBold.woff");
-    font-family: "Pretendard-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-SemiBold.woff2");
-    font-family: "Pretendard-SemiBold";
-}
-
 @font-face {
     src: url("../fonts/Pretendard-SemiBold.otf");
     font-family: "Pretendard-SemiBold";
-}
-
-
-
-@font-face {
-    src: url("../fonts/Pretendard-ExtraBold.ttf");
-    font-family: "Pretendard-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-ExtraBold.woff");
-    font-family: "Pretendard-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Pretendard-ExtraBold.woff2");
-    font-family: "Pretendard-ExtraBold";
 }
 
 @font-face {
@@ -122,26 +37,19 @@
 
 
 @font-face {
+    src: url("../fonts/Urbanist-Light.ttf");
+    font-family: "Urbanist-Light";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
     src: url("../fonts/Urbanist-Medium.ttf");
     font-family: "Urbanist-Medium";
 }
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.woff");
-    font-family: "Urbanist-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.woff2");
-    font-family: "Urbanist-Medium";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Medium.otf");
-    font-family: "Urbanist-Medium";
-}
-
-
 
 @font-face {
     src: url("../fonts/Urbanist-SemiBold.ttf");
@@ -149,66 +57,10 @@
 }
 
 @font-face {
-    src: url("../fonts/Urbanist-SemiBold.woff");
-    font-family: "Urbanist-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-SemiBold.woff2");
-    font-family: "Urbanist-SemiBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-SemiBold.otf");
-    font-family: "Urbanist-SemiBold";
-}
-
-
-
-
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.ttf");
-    font-family: "Urbanist-Bold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.woff");
-    font-family: "Urbanist-Bold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.woff2");
-    font-family: "Urbanist-Bold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-Bold.otf");
-    font-family: "Urbanist-Bold";
-}
-
-
-
-
-@font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
     font-family: "Urbanist-ExtraBold";
 }
 
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.woff");
-    font-family: "Urbanist-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.woff2");
-    font-family: "Urbanist-ExtraBold";
-}
-
-@font-face {
-    src: url("../fonts/Urbanist-ExtraBold.otf");
-    font-family: "Urbanist-ExtraBold";
-}
 
 
 
@@ -230,12 +82,11 @@ body {
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
 }
 
-
 a,
 p,
 li {
     text-decoration: none;
-    color: #292929;
+    color: #2f2f2f;
 }
 
 
@@ -250,19 +101,16 @@ li {
 }
 
 .txt-kor {
-    font-family: "Pretendard-Medium";
+    font-family: "Pretendard-Regular";
+}
+
+.txt-kor-light {
+    font-family: "Pretendard-Light";
 }
 
 .txt-kor-bold {
     font-family: "Pretendard-SemiBold";
 }
-
-
-
-#header {
-    position: relative;
-}
-
 
 
 

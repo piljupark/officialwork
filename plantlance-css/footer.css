@@ -166,7 +166,7 @@ li {
 
 
 footer {
-    position: absolute;
+    position: relative;
     float: left;
     width: 100%;
     height: auto;
@@ -177,6 +177,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:50px;
 }
 
 
@@ -184,7 +185,7 @@ footer {
     position: relative;
     width: 100%;
     max-width: 1360px;
-    height: 350px;
+    height: 300px;
     box-sizing: border-box;
     padding-top: 50px;
     padding: 0 20px;
@@ -334,8 +335,9 @@ footer {
     width:auto;
     margin-top:30px;
     cursor: pointer;
-    display: none;
     display: flex;
+    display: none;
+    
     justify-content: space-between;
 }
 .mob-footer-arrow{

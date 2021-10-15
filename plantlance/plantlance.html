@@ -1696,6 +1696,146 @@
     
 
     <!-- 푸터 -->
+    <footer>
+        <div class="footer-wrap">
+            <a href="plantlance.html">
+                <img src="../plantlance-image/logo-detail.png" alt="pltl-logo" class="footer-logo">
+            </a>
+
+
+
+
+            <div class="footer-info-box">
+
+                <p class="txt-kor-light ceo-info">Company : Plantlance CEO : semin, Jang</p>
+
+                <div class="footer-info">
+                    <p class="txt-kor-light">Address : 서울시 성동구 상원12길 23 오리엔트 빌딩 8층</p>
+                    <p class="txt-kor-light">Address / Daegu-company : 대구광역시 달서구 진천로 18길 30</p>
+
+
+                    <div class="footer-contact">
+                        <p class="txt-kor-light">Business registration no. 427-87-01446</p>
+                        <a href="#none">
+                            <p class="txt-kor-light">Email : info@plantlance.kr</p>
+                        </a>
+                    </div>
+
+
+
+                    <p class="txt-kor-light">Mail-order sales license no. 제 2013 - 대구달서 - 0430 / 3010238호</p>
+
+                    <p class="txt-kor-light copyright">plantlance group &copy;2018 all rights reserved</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-show-contents">
+                <a href="tel:1899-3417">
+                    <p class="txt-kor-bold footer-call">T. 1899 - 3417</p>
+                </a>
+
+                <p class="txt-kor-light">costomer-center</p>
+                <p class="txt-kor">Tue - Sat</p>
+                <p class="txt-kor-light">10:00 - 19:00</p>
+                <p class="txt-kor">Sun / Holiday</p>
+                <p class="txt-kor-light">13:00 - 19:00</p>
+
+                <p class="txt-kor-light">Monday off</p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- 모바일 푸터 -->
+        <div class="mob-footer-wrap">
+            <a href="#none">
+                <img src="../plantlance-image/logo-detail.png" alt="footer-logo" class="mob-footer-logo">
+            </a>
+
+            <div class="mob-footer-show-content">
+                <a href="tel:1899-3417">
+                    <p class="txt-kor-bold">T. 1899-3417</p>
+                </a>
+
+                <p class="txt-kor-light">costomer center</p>
+
+                <div class="mob-footer-time">
+                    <p class="txt-kor-bold">Tue - Sat</p>
+                    <p class="txt-kor-light">10:00 - 19:00</p>
+                </div>
+
+                <div class="mob-footer-time">
+                    <p class="txt-kor-bold">Sun / Holiday</p>
+                    <p class="txt-kor-light">13:00 - 19:00</p>
+                </div>
+                <p class="txt-kor-light">Monday off</p>
+
+
+
+
+                <p class="txt-kor-light mob-footer-company-show">(주) 플랜트란스 사업자 정보
+                    <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="mob-footer-arrow">
+                </p>
+
+                <p class="txt-kor-light mob-footer-company-hide">(주) 플랜트란스 사업자 정보
+                    <img src="../plantlance-image/icon/arrow-up2.png" alt="arrow" class="mob-footer-arrow">
+                </p>
+
+
+
+
+            </div>
+            <div class="mob-footer-company-info">
+                <p class="txt-kor-light mob-footer-company-title">Company. Plantlance CEO. semin, Jang</p>
+
+
+                <p class="txt-kor-light">Address : 서울시 성동구 상원12길 23 오리엔트 빌딩 8층</p>
+                <p class="txt-kor-light">Address / Daegu-company : 대구광역시 달서구 진천로 18길 30</p>
+
+                <div class="mob-footer-contact">
+                    <p class="txt-kor-light">Business registration no. 427-87-01446</p>
+                    <a href="#none">
+                        <p class="txt-kor-light">Email : info@plantlance.kr</p>
+                    </a>
+                </div>
+
+
+
+                <p class="txt-kor-light">Mail-order sales license no. 제 2013 - 대구달서 - 0430 / 3010238호</p>
+
+                <p class="txt-kor-light copyright">plantlance group &copy;2018 all rights reserved</p>
+            </div>
+        </div>
+
+        <!-- //모바일 푸터 -->
+    </footer>
+    
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+            $(".mob-footer-company-show").click(function(){
+                $(".mob-footer-company-info").css("height","100px");
+                
+                $(".mob-footer-company-show").css("display","none");
+                $(".mob-footer-company-hide").css("display","flex");
+            });
+            
+            $(".mob-footer-company-hide").click(function(){
+                $(".mob-footer-company-info").css("height","000px");
+                
+                $(".mob-footer-company-hide").css("display","none");
+                $(".mob-footer-company-show").css("display","flex");
+            });
+        });
+    </script>
 
 
     <!-- //푸터 -->

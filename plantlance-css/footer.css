@@ -128,7 +128,7 @@ body {
     width: 100vw;
     height: 100vh;
     color: #292929;
-    font-size: 14px;
+    font-size: 13px;
     overflow-x: hidden;
 
     /*-ms-overflow-style: none; /* IE and Edge */
@@ -177,7 +177,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:50px;
+    margin-top:150px;
+    margin-bottom: 30px;
 }
 
 
@@ -187,13 +188,13 @@ footer {
     max-width: 1360px;
     height: 300px;
     box-sizing: border-box;
-    padding-top: 50px;
     padding: 0 20px;
 }
 
 .footer-logo {
     position: relative;
-    width: 100px;
+    width: 140px;
+    top:15px;
 }
 
 
@@ -216,7 +217,7 @@ footer {
 .ceo-info {
     position: relative;
     width: auto;
-
+    font-family: "Pretendard-Regular";
 }
 
 .footer-info {
@@ -246,9 +247,9 @@ footer {
 
 .footer-show-contents {
     position: absolute;
-    right: 0;
-    top: 70px;
-    right: 20px;
+    top: 63px;
+    right:20px;
+    
 }
 
 .footer-show-contents p {

@@ -9,64 +9,788 @@
     <title>Plantlance</title>
 
 
-    <script src="../plantlance-script/jquery-1.11.2.min.js"></script>
-    <script src="../plantlance-script/jquery.fullpage.js"></script>
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+
 
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/list-table.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
+    
+    
+     <script>
+        // **  gnb 스크립트 
 
-    <script src="../plantlance-script/list-table.js"></script>
 
-    <script>
         $(document).ready(function() {
-            $("#header").load("gnb.html", function() {
-                //페이지 별로 다른 메뉴 css 적용도 가능
-                document.getElementById("sub_nav").classList.add("show");
+            /* 메뉴 - 웹 슬라이드 메뉴 활성화 */
+            $("nav > .nav-wrap > a > .menu-icon").click(function() {
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-duration", ".1s");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", "0s");
+
+                $("#nav-slide").css("width", "100%");
+                $("#nav-slide").css("z-index", "5");
+
+                $("#nav-slide").css("animation-name", "menuShow");
+                $("#nav-slide").css("animation-delay", ".1s");
+                $("#nav-slide").css("animation-fill-mode", "forwards");
+
+                $("#nav-slide > .nav-slide-wrap").css("transition-duration", ".2s");
+                $("#nav-slide > .nav-slide-wrap").css("transition-delay", ".3s");
+                $("#nav-slide > .nav-slide-wrap").css("opacity", "1");
+
+
+                $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "block");
+
+
+                $(".nav-mob").css("animation-name", "menuShow");
+                $(".nav-mob").css("animation-delay", ".1s");
+                $(".nav-mob").css("animation-fill-mode", "forwards");
+
+
+                $(".nav-mob").css("width", "100%");
+
+                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-duration", ".2s");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-delay", ".3s");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "block");
+
+                $("::-webkit-scrollbar").css("display", "none");
+                $("body").css("-ms-overflow-style", "none");
             });
-            $("#footer").load("footer.html", function() {
-                //페이지 별로 다른 메뉴 css 적용도 가능
-                document.getElementById("sub_footer").classList.add("show");
+            /* // 메뉴 - 웹 슬라이드 메뉴 활성화 */
+
+
+
+
+            /* 메뉴 - 닫기 - 슬라이드 메뉴 비활성화 */
+            $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").click(function() {
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
+
+                $("#nav-slide").css("width", "0");
+                $("#nav-slide").css("animation-name", "menuNone");
+                $("#nav-slide").css("animation-delay", ".4s");
+                $("#nav-slide").css("animation-fill-mode", "forwards");
+
+                $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
+
+                $("#nav-slide > .nav-slide-wrap").css("transition-delay", "0s");
+                $("#nav-slide > .nav-slide-wrap").css("transition-duration", ".1s");
+                $("#nav-slide > .nav-slide-wrap").css("opacity", "0");
+
+
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "0px");
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "0px");
+
+
+
+
+
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
+
+                $(".nav-mob").css("width", "0");
+                $(".nav-mob").css("animation-name", "menuNone");
+                $(".nav-mob").css("animation-delay", ".4s");
+                $(".nav-mob").css("animation-fill-mode", "forwards");
+
+                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-duration", ".2s");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-delay", ".3s");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "none");
+
+
+
+                $("html::-webkit-scrollbar").css("display", "block");
+                $("html").css("-ms-overflow-style", "auto");
+
+
             });
-            $("#list-mobile").load("list-new-mob.html", function() {
-                //페이지 별로 다른 메뉴 css 적용도 가능
-                document.getElementById("sub_footer").classList.add("show");
+            /* 메뉴 - 닫기 - 슬라이드 메뉴 비활성화 */
+
+
+            /* 메뉴 - 퍼니쳐 - 소파 하위메뉴 비활성화*/
+            $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > a > .title-sofa").click(function() {
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "auto");
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "0px");
+
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap").css("height", "auto");
             });
-        })
+            /* //메뉴 - 퍼니쳐 - 소파 하위메뉴 비활성화*/
+
+
+            /* 메뉴 - 소파 - 테이블 하위 메뉴 활성화 */
+            $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > a > .title-table").click(function() {
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "0px");
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "auto");
+
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap").css("height", "auto");
+            });
+            /* //메뉴 - 소파 - 테이블 하위 메뉴 활성화 */
+
+
+
+
+
+
+
+            /* 메뉴 - 모바일 슬라이드 메뉴 활성화 */
+            $("nav > .nav-wrap > a > .menu-icon").click(function() {
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-duration", ".1s");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", "0s");
+
+                $(".nav-mob").css("width", "100%");
+                $(".nav-mob").css("z-index", "5");
+
+                $("#nav-slide").css("animation-name", "menuShow");
+                $("#nav-slide").css("animation-delay", ".1s");
+                $("#nav-slide").css("animation-fill-mode", "forwards");
+                $(".nav-mob").css("animation-name", "menuShow");
+                $(".nav-mob").css("animation-delay", ".1s");
+                $(".nav-mob").css("animation-fill-mode", "forwards");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "block");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("opacity", "1");
+
+
+                $(".nav-mob > .nav-mob-wrap").css("transition-duration", ".2s");
+                $(".nav-mob > .nav-mob-wrap").css("transition-delay", ".3s");
+                $(".nav-mob > .nav-mob-wrap").css("opacity", "1");
+
+                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "block");
+
+
+                $("html::-webkit-scrollbar").css("display", "none");
+                $("html").css("-ms-overflow-style", "none");
+            });
+            /* // 메뉴 - 모바일 슬라이드 메뉴 활성화 */
+
+
+            /* 메뉴 - 닫기 - 모바일 슬라이드 메뉴 비활성화 */
+            $(".nav-mob > .nav-mob-wrap > .nav-mob-top > a > .close-button").click(function() {
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
+
+                $(".nav-mob").css("width", "0");
+                $(".nav-mob").css("animation-name", "menuNone");
+                $(".nav-mob").css("animation-delay", ".4s");
+                $(".nav-mob").css("animation-fill-mode", "forwards");
+
+                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
+
+                $(".nav-mob > .nav-mob-wrap").css("transition-duration", ".1s");
+                $(".nav-mob > .nav-mob-wrap").css("transition-delay", "0s");
+                $(".nav-mob > .nav-mob-wrap").css("opacity", "0");
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "0");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
+
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "block");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "none");
+
+
+
+
+
+
+
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
+                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
+
+                $("#nav-slide").css("width", "0");
+                $("#nav-slide").css("animation-name", "menuNone");
+                $("#nav-slide").css("animation-delay", ".4s");
+                $("#nav-slide").css("animation-fill-mode", "forwards");
+
+                $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
+
+                $("#nav-slide > .nav-slide-wrap").css("transition-delay", "0s");
+                $("#nav-slide > .nav-slide-wrap").css("transition-duration", ".1s");
+                $("#nav-slide > .nav-slide-wrap").css("opacity", "0");
+
+
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "0px");
+                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "0px");
+
+
+                $("html::-webkit-scrollbar").css("display", "block");
+                $("html").css("-ms-overflow-style", "auto");
+            });
+            /* 메뉴 - 닫기 - 모바일 슬라이드 메뉴 비활성화 */
+
+
+
+            /* 모바일 메뉴 - 퍼니쳐 활성화 */
+
+            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").click(function() {
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "auto");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "none");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "block");
+                
+                
+                
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","none");
+                
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","block");
+            });
+            /* //모바일 메뉴 - 퍼니쳐 활성화 */
+
+
+
+            /* 모바일 메뉴 - 퍼니쳐 비활성화 */
+
+            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").click(function() {
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > .furniture").css("height", "0px");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "block");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "none");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
+                
+                
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","block");
+                
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","none");
+            });
+            /* //모바일 메뉴 - 퍼니쳐 비활성화 */
+
+
+
+
+            /* 모바일 메뉴 - 퍼니쳐 - 소파 활성화 */
+            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > .furniture > a > .title-sofa").click(function() {
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "auto");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "auto");
+            });
+            /* //모바일 메뉴 - 퍼니쳐 - 소파 활성화 */
+
+
+
+            /* 모바일 메뉴 - 퍼니쳐 - 테이블 활성화 */
+
+            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > a > .title-table").click(function() {
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "auto");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "auto");
+
+
+            });
+            /* //모바일 메뉴 - 퍼니쳐 - 테이블 활성화 */
+
+
+
+
+            /* 검색 활성화 */
+
+            $("nav > .nav-wrap > .sub-button-wrap > a > .search-icon").click(function() {
+                $(".search-wrap").css("display", "block");
+
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
+                $("nav > .nav-wrap > .sub-button-wrap").css("opacity", "0");
+            });
+
+            /* //검색 활성화 */
+
+
+
+            /* 검색 닫기 */
+            $(".search-close-btn").click(function() {
+                $(".search-wrap").css("display", "none");
+
+
+                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
+                $("nav > .nav-wrap > .sub-button-wrap").css("opacity", "1");
+
+            });
+            /* //검색 닫기 */
+        });
     </script>
+
+
+
 </head>
 
 
 
-<body onload="init();">
+<body>
+  
+  
+  
+    <!-- gnb -->
+    <nav>
+        <div class="nav-wrap">
+            <a href="#none">
+                <img src="../plantlance-image/icon/menu2.png" alt="menu" class="menu-icon">
+            </a>
+            <a href="plantlance.html">
+                <img src="../plantlance-image/logo.png" alt="logo" class="logo">
+            </a>
+            <div class="sub-button-wrap">
+                <a href="#none">
+                    <img src="../plantlance-image/icon/search.png" alt="search" class="search-icon">
+                </a>
+                <a href="shopping.html">
+                    <img src="../plantlance-image/icon/bag.png" alt="bag" class="bag-icon">
+                </a>
+                <a href="login.html" target="_self">
+                    <img src="../plantlance-image/icon/login.png" alt="login" class="login-icon">
+                </a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- gnb 불러오기 -->
-    <div id="header">
-        <!-- z-index: 5 -->
+
+    <div id="nav-slide">
+
+        <div class="nav-slide-wrap nav-pc-tablet">
+            <div class="nav-slide-side">
+                <div class="side-wrap">
+                    <a href="#none">
+                        <img src="../plantlance-image/icon/close2.png" alt="close" class="close-button">
+                    </a>
+                    <div class="side-left">
+
+                        <a href="my-page.html">
+                            <p class="txt-eng-bold my-page">MY PAGE</p>
+                        </a>
+                        <a href="shopping.html">
+                            <p class="txt-eng-bold cart">CART</p>
+                        </a>
+                        <a href="my-page.html">
+                            <p class="txt-eng-bold wish-list">WISH LIST</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng-bold delivery">DELIVERY</p>
+                        </a>
+                    </div>
+
+                    <div class="side-right">
+                        <p class="txt-eng tel-txt">Customer center</p>
+                        <a href="tel:1899-3417">
+                            <img src="../plantlance-image/icon/call1.png" alt="call" class="call-img">
+                            <p class="txt-eng tel">1899-3417</p>
+                        </a>
+
+                        <p class="txt-eng ig-txt">Instagram</p>
+                        <a href="https://www.instagram.com/plantlance.kr/">
+                            <p class="txt-eng ig">@plantlance.kr</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="nav-slide-top">
+                <div class="user-wrap">
+                    <a href="join.html">
+                        <p class="txt-eng join">JOIN</p>
+                    </a>
+                    <a href="login.html">
+                        <p class="txt-eng login">LOGIN</p>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="nav-main-menu">
+
+                <div class="about">
+                    <p class="txt-eng-bold title">ABOUT</p>
+
+                    <a href="#none">
+                        <p class="txt-eng">PLTL</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">BESPOKE</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">CONTACT</p>
+                    </a>
+
+                </div>
+
+                <div class="collection">
+                    <p class="txt-eng-bold title">COLLECTION</p>
+                    <a href="#none">
+                        <p class="txt-eng">2021 REFURB</p>
+                    </a>
+                </div>
+
+                <div class="shop">
+                    <p class="txt-eng-bold title">SHOP</p>
+                    <div class="shop-wrap">
+                        <a href="list-new.html">
+                            <p class="txt-eng sub-title">NEW OBJECT</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng">FURNITURE</p>
+                        </a>
+                        <div class="furniture">
+                            <a href="#none">
+                                <p class="txt-eng sub-title title-sofa">Sofa</p>
+                            </a>
+                            <div class="gnb-sofa">
+                                <a href="list-sofa.html">
+                                    <p class="txt-kor">전체 소파</p>
+                                </a>
+
+                                <a href="#none">
+                                    <p class="txt-kor">플렉스 소파 시리즈</p>
+                                </a>
+
+                                <a href="#none">
+                                    <p class="txt-kor">클라우드 소파 시리즈</p>
+                                </a>
+
+                                <a href="#none">
+                                    <p class="txt-kor">아우어 소파 시리즈</p>
+                                </a>
+
+                                <a href="#none">
+                                    <p class="txt-kor">그래 소파</p>
+                                </a>
+                            </div>
+
+                            <a href="#none">
+                                <p class="txt-eng sub-title title-table">Table</p>
+                            </a>
+                            <div class="gnb-table">
+                                <a href="list-sofa.html">
+                                    <p class="txt-kor">전체 테이블</p>
+                                </a>
+
+                                <a href="#none">
+                                    <p class="txt-kor">카페 테이블 시리즈</p>
+                                </a>
+
+                                <a href="#none">
+                                    <p class="txt-kor">메이트 테이블 시리즈</p>
+                                </a>
+
+                                <a href="#none">
+                                    <p class="txt-kor">무아 테이블 시리즈</p>
+                                </a>
+
+
+
+                            </div>
+                            <a href="list-chair.html">
+                                <p class="txt-eng sub-title">Chair</p>
+                            </a>
+                            <a href="list-stool.html">
+                                <p class="txt-eng sub-title">Stool</p>
+                            </a>
+                            <a href="list-lighting.html">
+                                <p class="txt-eng sub-title">Lighting</p>
+                            </a>
+                            <a href="list-etc.html">
+                                <p class="txt-eng sub-title">Etc</p>
+                            </a>
+                        </div>
+                        <a href="list-planterior.html">
+                            <p class="txt-eng">PLANTERIOR</p>
+                        </a>
+                        <a href="list-kitchen.html">
+                            <p class="txt-eng">KITCHEN</p>
+                        </a>
+                        <a href="list-interior.html">
+                            <p class="txt-eng">INTERIOR</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="community">
+                    <p class="txt-eng-bold title">COMMUNITY</p>
+
+                    <a href="#none">
+                        <p class="txt-eng">NOTICE</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">Q &amp; A</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">REVIEW</p>
+                    </a>
+                </div>
+
+                <div class="showroom">
+                    <a href="#none">
+                        <p class="txt-eng-bold title">SHOWROOM</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //gnb 웹/태블릿 -->
+
+
+    <!-- 검색 -->
+    <div class="search-wrap">
+        <div class="search-place-wrap">
+            <a href="#none">
+                <p class="txt-eng search-close-btn">Close</p>
+            </a>
+            <div class="search-place">
+                <form>
+                    <input type="text" placeholder="검색어를 입력하세요" class="txt-kor" id="search" onkeyup="printName()" onkeypress="if( event.keyCode == 13){searchData();}">
+
+                    <a href="search-list.html">
+                        <img src="../plantlance-image/icon/search.png" alt="search" class="search-btn">
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <!--
+        <div class="search-result">
+            <div class="search-result-wrap">
+                <div id="result" class="txt-kor-bold"></div>
+                <p class="txt-kor result-txt">에 대한 검색 결과입니다.</p>
+            </div>
+        </div>
+        -->
+        <div class="search-bg"></div>
+    </div>
+    <!-- //검색 -->
+
+
+
+
+
+
+
+    <!-- gnb 모바일 -->
+
+
+
+
+
+    <div class="nav-mob">
+        <div class="nav-mob-wrap">
+            <div class="nav-mob-top">
+                <a href="#none">
+                    <img src="../plantlance-image/icon/close2.png" alt="close" class="close-button">
+                </a>
+                <div class="user-wrap">
+                    <a href="join.html">
+                        <p class="txt-eng join">JOIN</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng login">LOGIN</p>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="nav-mob-main-menu">
+
+                <div class="mob-about">
+                    <p class="txt-eng-bold title">ABOUT</p>
+
+                    <a href="#none">
+                        <p class="txt-eng">PLTL</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">BESPOKE</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">CONTACT</p>
+                    </a>
+                </div>
+
+
+
+                <div class="mob-shop">
+                    <p class="txt-eng-bold title">SHOP</p>
+                    <div class="shop-wrap">
+                        <a href="#none">
+                            <p class="txt-eng sub-title">NEW OBJECT</p>
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng title-furniture mob-gnb-furniture-down">FURNITURE 
+                               <img src="../plantlance-image/icon/arrow-down-white.png" alt="arrow" class="arrow arrow-down">
+                            </p>
+
+                        </a>
+                        <a href="#none">
+                            <p class="txt-eng title-furniture mob-gnb-furniture-up">FURNITURE 
+                               <img src="../plantlance-image/icon/arrow-up-white.png" alt="arrow" class="arrow arrow-up">
+                            </p>
+
+                        </a>
+                        
+                        <div class="furniture">
+                            <a href="#none">
+                                <p class="txt-eng sub-title title-sofa">Sofa</p>
+                            </a>
+                            <div class="gnb-mob-sofa">
+                                <a href="list-sofa.html">
+                                    <p class="txt-kor">전체 소파</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">플랙스 소파</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">클라우드 소파</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">아우어 소파</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">블러크 소파</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">그래 소파</p>
+                                </a>
+                            </div>
+                            <a href="#none">
+                                <p class="txt-eng sub-title title-table">Table</p>
+                            </a>
+                            <div class="gnb-mob-table">
+                                <a href="list-table.html">
+                                    <p class="txt-kor">전체 테이블</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">카페 테이블 시리즈</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">메이트 테이블 시리즈</p>
+                                </a>
+                                <a href="#none">
+                                    <p class="txt-kor">무아 테이블 시리즈</p>
+                                </a>
+                            </div>
+                            <a href="list-table.html">
+                                <p class="txt-eng sub-title">Chair</p>
+                            </a>
+                            <a href="list-stool.html">
+                                <p class="txt-eng sub-title">Stool</p>
+                            </a>
+                            <a href="list-lighting.html">
+                                <p class="txt-eng sub-title">Lighting</p>
+                            </a>
+                            <a href="list-etc.html">
+                                <p class="txt-eng sub-title">Etc</p>
+                            </a>
+                        </div>
+                        <a href="list-planterior.html">
+                            <p class="txt-eng">PLANTERIOR</p>
+                        </a>
+                        <a href="list-kitchen.html">
+                            <p class="txt-eng">KITCHEN</p>
+                        </a>
+                        <a href="list-interior.html">
+                            <p class="txt-eng">INTERIOR</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mob-collection">
+                    <p class="txt-eng-bold title">COLLECTION</p>
+
+                    <a href="#none">
+                        <p class="txt-eng">2021 REFURB</p>
+                    </a>
+
+                </div>
+
+
+
+                <div class="mob-community">
+                    <p class="txt-eng-bold title">COMMUNITY</p>
+
+                    <a href="#none">
+                        <p class="txt-eng">NOTICE</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">Q &amp; A</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng">NOTICE</p>
+                    </a>
+
+                </div>
+                
+                <div class="mob-gnb-showroom">
+                    <a href="#none">
+                        <p class="txt-eng-bold">SHOWROOM</p>
+                    </a>
+                </div>
+
+
+                <div class="mob-main-bottom">
+
+                    <a href="mob-mypage-home.html">
+                        <p class="txt-eng-bold my-page">MY PAGE</p>
+                    </a>
+                    <a href="shopping.html">
+                        <p class="txt-eng-bold cart">CART</p>
+                    </a>
+                    <a href="my-page.html">
+                        <p class="txt-eng-bold wish-list">WISH LIST</p>
+                    </a>
+                    <a href="#none">
+                        <p class="txt-eng-bold delivery">DELIVERY</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="nav-mob-bottom">
+                <div class="bottom-info">
+                    <div class="info1">
+                        <p class="txt-eng tel-txt">Customer center</p>
+                        <a href="tel:1899-3417">
+                            <img src="../plantlance-image/icon/call1.png" alt="call" class="call-img">
+                            <p class="txt-eng tel">1899-3417</p>
+                        </a>
+                    </div>
+                    <div class="info2">
+                        <p class="txt-eng ig-txt">Instagram</p>
+                        <a href="https://www.instagram.com/plantlance.kr/">
+                            <p class="txt-eng ig">@plantlance.kr</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <script>
-        window.addEventListener('load', function() {
-            var allElements = document.getElementsByTagName('*');
-            Array.prototype.forEach.call(allElements, function(el) {
-                var includePath = el.dataset.includePath;
-                if (includePath) {
-                    var xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4 && this.status == 200) {
-                            el.outerHTML = this.responseText;
-                        }
-                    };
-                    xhttp.open('GET', includePath, true);
-                    xhttp.send();
-                }
-            });
-        });
-    </script>
-    <!-- //gnb 불러오기 -->
+    <!-- //gnb 모바일 -->
+
+    <!-- //gnb -->
+
+  
 
    
    <div id="pc-product-list">
@@ -369,10 +1093,150 @@
 
 
 
-    
-    <div id="list-mobile"></div>
-    <div id="footer"></div>
+     <!-- 푸터 -->
+    <footer>
+        <div class="footer-wrap">
+            <a href="plantlance.html">
+                <img src="../plantlance-image/logo-detail.png" alt="pltl-logo" class="footer-logo">
+            </a>
 
+
+
+
+            <div class="footer-info-box">
+
+                <p class="txt-kor-light ceo-info">Company : Plantlance CEO : semin, Jang</p>
+
+                <div class="footer-info">
+                    <p class="txt-kor-light">Address : 서울시 성동구 상원12길 23 오리엔트 빌딩 8층</p>
+                    <p class="txt-kor-light">Address / Daegu-company : 대구광역시 달서구 진천로 18길 30</p>
+
+
+                    <div class="footer-contact">
+                        <p class="txt-kor-light">Business registration no. 427-87-01446</p>
+                        <a href="#none">
+                            <p class="txt-kor-light">Email : info@plantlance.kr</p>
+                        </a>
+                    </div>
+
+
+
+                    <p class="txt-kor-light">Mail-order sales license no. 제 2013 - 대구달서 - 0430 / 3010238호</p>
+
+                    <p class="txt-kor-light copyright">plantlance group &copy;2018 all rights reserved</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-show-contents">
+                <a href="tel:1899-3417">
+                    <p class="txt-kor-bold footer-call">T. 1899 - 3417</p>
+                </a>
+
+                <p class="txt-kor-light">costomer-center</p>
+                <p class="txt-kor">Tue - Sat</p>
+                <p class="txt-kor-light">10:00 - 19:00</p>
+                <p class="txt-kor">Sun / Holiday</p>
+                <p class="txt-kor-light">13:00 - 19:00</p>
+
+                <p class="txt-kor-light">Monday off</p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- 모바일 푸터 -->
+        <div class="mob-footer-wrap">
+            <a href="#none">
+                <img src="../plantlance-image/logo-detail.png" alt="footer-logo" class="mob-footer-logo">
+            </a>
+
+            <div class="mob-footer-show-content">
+                <a href="tel:1899-3417">
+                    <p class="txt-kor-bold">T. 1899-3417</p>
+                </a>
+
+                <p class="txt-kor-light">costomer center</p>
+
+                <div class="mob-footer-time">
+                    <p class="txt-kor-bold">Tue - Sat</p>
+                    <p class="txt-kor-light">10:00 - 19:00</p>
+                </div>
+
+                <div class="mob-footer-time">
+                    <p class="txt-kor-bold">Sun / Holiday</p>
+                    <p class="txt-kor-light">13:00 - 19:00</p>
+                </div>
+                <p class="txt-kor-light">Monday off</p>
+
+
+
+
+                <p class="txt-kor-light mob-footer-company-show">(주) 플랜트란스 사업자 정보
+                    <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="mob-footer-arrow">
+                </p>
+
+                <p class="txt-kor-light mob-footer-company-hide">(주) 플랜트란스 사업자 정보
+                    <img src="../plantlance-image/icon/arrow-up2.png" alt="arrow" class="mob-footer-arrow">
+                </p>
+
+
+
+
+            </div>
+            <div class="mob-footer-company-info">
+                <p class="txt-kor-light mob-footer-company-title">Company. Plantlance CEO. semin, Jang</p>
+
+
+                <p class="txt-kor-light">Address : 서울시 성동구 상원12길 23 오리엔트 빌딩 8층</p>
+                <p class="txt-kor-light">Address / Daegu-company : 대구광역시 달서구 진천로 18길 30</p>
+
+                <div class="mob-footer-contact">
+                    <p class="txt-kor-light">Business registration no. 427-87-01446</p>
+                    <a href="#none">
+                        <p class="txt-kor-light">Email : info@plantlance.kr</p>
+                    </a>
+                </div>
+
+
+
+                <p class="txt-kor-light">Mail-order sales license no. 제 2013 - 대구달서 - 0430 / 3010238호</p>
+
+                <p class="txt-kor-light copyright">plantlance group &copy;2018 all rights reserved</p>
+            </div>
+        </div>
+
+        <!-- //모바일 푸터 -->
+    </footer>
+    
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+            $(".mob-footer-company-show").click(function(){
+                $(".mob-footer-company-info").css("height","100px");
+                
+                $(".mob-footer-company-show").css("display","none");
+                $(".mob-footer-company-hide").css("display","flex");
+            });
+            
+            $(".mob-footer-company-hide").click(function(){
+                $(".mob-footer-company-info").css("height","000px");
+                
+                $(".mob-footer-company-hide").css("display","none");
+                $(".mob-footer-company-show").css("display","flex");
+            });
+        });
+    </script>
+
+
+    <!-- //푸터 -->
 
 
 

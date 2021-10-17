@@ -24,12 +24,79 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
 
-    <script src="../plantlance-script/wily-detail.js"></script>
-    <script src="../plantlance-script/wily-detail-mob.js"></script>
-    
-    
-    
-      <script>
+
+    <script>
+        // 제품 상세페이지 스크립트
+
+        $(document).ready(function() {
+
+            //사이드 메뉴 활성화
+
+            $(".side-menu-button > a > .arrow-right").click(function() {
+                $("#side-menu").css("width", "350px");
+
+                $(".side-menu-button > a > .arrow-right").css("display", "none");
+                $(".side-menu-button > a > .arrow-left").css("display", "block");
+                $(".side-menu-button").css("left", "350px");
+
+
+                $("#bg-black").css("display", "block");
+
+                $("body").css("overflow-y", "hidden");
+            });
+
+
+
+            // 사이드 메뉴 비활성화 
+
+            $(".side-menu-button > a > .arrow-left").click(function() {
+                $("#side-menu").css("width", "0px");
+
+                $(".side-menu-button > a > .arrow-right").css("display", "block");
+                $(".side-menu-button > a > .arrow-left").css("display", "none");
+                $(".side-menu-button").css("left", "0px");
+
+                $("#bg-black").css("display", "none");
+
+                $("body").css("overflow-y", "scroll");
+            });
+
+
+
+        });
+    </script>
+
+    <script>
+        // 모바일 제품 상세페이지 스크립트
+        
+        $(document).ready(function() {
+
+            $(".mob-option-up").click(function() {
+                $(".mob-option-wrap").css("height", "500px");
+                $(".mob-option-up").css("display", "none");
+                $(".mob-option-down").css("display", "block");
+            });
+
+
+            $(".mob-option-down").click(function() {
+                $(".mob-option-wrap").css("height", "80px");
+                $(".mob-option-up").css("display", "block");
+                $(".mob-option-down").css("display", "none");
+            });
+
+
+
+            $(".mob-product-more a").click(function() {
+                $(".mob-product-img-wrap").css("height", "auto");
+                $(".mob-product-more").css("display", "none");
+            });
+        });
+    </script>
+
+
+
+
+    <script>
         // **  gnb 스크립트 
 
 
@@ -251,12 +318,12 @@
 
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "none");
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "block");
-                
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","none");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","block");
+
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display", "none");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display", "block");
             });
             /* //모바일 메뉴 - 퍼니쳐 활성화 */
 
@@ -272,11 +339,11 @@
 
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","block");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","none");
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display", "block");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display", "none");
             });
             /* //모바일 메뉴 - 퍼니쳐 비활성화 */
 
@@ -344,7 +411,7 @@
 
 
 
-<!-- gnb -->
+    <!-- gnb -->
     <nav>
         <div class="nav-wrap">
             <a href="#none">
@@ -645,18 +712,18 @@
                             <p class="txt-eng sub-title">NEW OBJECT</p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng title-furniture mob-gnb-furniture-down">FURNITURE 
-                               <img src="../plantlance-image/icon/arrow-down-white.png" alt="arrow" class="arrow arrow-down">
+                            <p class="txt-eng title-furniture mob-gnb-furniture-down">FURNITURE
+                                <img src="../plantlance-image/icon/arrow-down-white.png" alt="arrow" class="arrow arrow-down">
                             </p>
 
                         </a>
                         <a href="#none">
-                            <p class="txt-eng title-furniture mob-gnb-furniture-up">FURNITURE 
-                               <img src="../plantlance-image/icon/arrow-up-white.png" alt="arrow" class="arrow arrow-up">
+                            <p class="txt-eng title-furniture mob-gnb-furniture-up">FURNITURE
+                                <img src="../plantlance-image/icon/arrow-up-white.png" alt="arrow" class="arrow arrow-up">
                             </p>
 
                         </a>
-                        
+
                         <div class="furniture">
                             <a href="#none">
                                 <p class="txt-eng sub-title title-sofa">Sofa</p>
@@ -748,7 +815,7 @@
                     </a>
 
                 </div>
-                
+
                 <div class="mob-gnb-showroom">
                     <a href="#none">
                         <p class="txt-eng-bold">SHOWROOM</p>
@@ -802,11 +869,11 @@
 
 
 
-    
-    
-    
 
-    
+
+
+
+
     <!-- 수량과 비례한 가격 변동 스크립트 -->
     <script language="JavaScript">
         var sell_price;
@@ -849,7 +916,7 @@
     <!-- //수량과 비례한 가격 변동 스크립트 -->
 
 
-   
+
 
 
 
@@ -995,7 +1062,7 @@
                             </label>
                         </div>
                     </div>
-                    
+
                     <div class="choice-shape choice-kind">
                         <p class="txt-eng-bold">SHAPE</p>
                         <div id="result"></div>
@@ -1067,9 +1134,6 @@
 
 
 
-
-
-                    
 
 
 
@@ -1651,7 +1715,7 @@
 
     </div>
     <!-- //모바일 -->
-    
+
     <footer>
         <div class="footer-wrap">
             <a href="plantlance.html">
@@ -1771,24 +1835,24 @@
 
         <!-- //모바일 푸터 -->
     </footer>
-    
-    
-    
-    
+
+
+
+
     <script>
         $(document).ready(function() {
-            $(".mob-footer-company-show").click(function(){
-                $(".mob-footer-company-info").css("height","100px");
-                
-                $(".mob-footer-company-show").css("display","none");
-                $(".mob-footer-company-hide").css("display","flex");
+            $(".mob-footer-company-show").click(function() {
+                $(".mob-footer-company-info").css("height", "100px");
+
+                $(".mob-footer-company-show").css("display", "none");
+                $(".mob-footer-company-hide").css("display", "flex");
             });
-            
-            $(".mob-footer-company-hide").click(function(){
-                $(".mob-footer-company-info").css("height","000px");
-                
-                $(".mob-footer-company-hide").css("display","none");
-                $(".mob-footer-company-show").css("display","flex");
+
+            $(".mob-footer-company-hide").click(function() {
+                $(".mob-footer-company-info").css("height", "000px");
+
+                $(".mob-footer-company-hide").css("display", "none");
+                $(".mob-footer-company-show").css("display", "flex");
             });
         });
     </script>

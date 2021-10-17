@@ -134,12 +134,6 @@ li {
     height:500px;
     text-align: center;
 }
-.login-wrap .title-login{
-    position: relative;
-    float:left;
-    width:100%;
-    font-size: 18px;
-}
 .login-wrap .login-type{
     position: relative;
     float:left;
@@ -208,6 +202,10 @@ li {
     border-bottom:1px solid #d1d1d1;
     padding-bottom: 15px;
     margin-bottom: 20px;
+}
+input[type="text"], input[type="password"]{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 .user-login input:focus{
     outline: none;

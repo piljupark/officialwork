@@ -154,6 +154,10 @@ li {
     padding-bottom: 15px;
     margin-bottom: 20px;
 }
+input[type="text"], input[type="password"]{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
 .user-login input:focus{
     outline: none;
 }

@@ -1932,7 +1932,7 @@ li {
         display: none;
     }
     #pltl .pltl-wrap .pltl-bg:nth-child(2){
-        opacity: 1;
+        display: block;
         width:100%;
         min-width: inherit;
     }

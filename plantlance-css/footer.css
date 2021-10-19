@@ -186,7 +186,7 @@ footer {
     position: relative;
     width: 100%;
     max-width: 1360px;
-    height: 300px;
+    height: 280px;
     box-sizing: border-box;
     padding: 0 20px;
 }
@@ -207,8 +207,7 @@ footer {
     width: 100%;
     height: auto;
     overflow: hidden;
-
-    margin-top: 50px;
+    margin-top: 60px;
     transition-duration: .3s;
 }
 
@@ -232,6 +231,7 @@ footer {
     float: left;
     width: 100%;
     line-height: 1.5;
+    font-size: 13px;
 }
 
 .footer-contact {
@@ -287,6 +287,7 @@ footer {
     height: auto;
     box-sizing: border-box; 
     padding:20px;
+    padding-bottom: 0;
 }
 
 .mob-footer-logo{

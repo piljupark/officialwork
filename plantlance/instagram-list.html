@@ -41,6 +41,29 @@
             });
         });
     </script>
+    
+    
+    
+    <script>
+        // 리뷰 글 보기 (팝업)
+        
+        $(document).ready(function() {
+            $(".go-to-contents").click(function(){
+               $(".contents-popup-bg").css("display","block");
+                
+                $(".contents-popup-wrap").css("visibility","visible");
+            }); 
+            
+            
+            
+            $(".contents-popup-close-button").click(function(){
+               $(".contents-popup-bg").css("display","none");
+                
+                $(".contents-popup-wrap").css("visibility","hidden");
+            }); 
+        });
+        
+    </script>
 
 
 
@@ -1625,7 +1648,7 @@
 
     <div class="contents-popup-wrap">
         <div class="contents-popup">
-           <a href="#none">
+           <a href="#none" class="contents-popup-close-button">
                 <img src="../plantlance-image/icon/close-black.png" alt="close" class="contents-popup-close">
            </a>
             <div class="contents-popup-img-wrap">
@@ -1662,6 +1685,43 @@
                 <div class="contents-similar">
                    <div class="contents-similar-title">
                     <p class="txt-kor-light">연관상품</p>
+                    <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="contents-similar-title-arrow">
+                    </div>
+                    
+                    <div class="contents-similar-product-wrap">
+                       
+                        <div class="contents-similar-product">
+                            <div class="contents-similar-img">
+                                
+                            </div>
+                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
+                            <p class="txt-kor-light contents-similar-price">330,000원</p>
+                        </div>
+                        
+                         <div class="contents-similar-product">
+                            <div class="contents-similar-img">
+                                
+                            </div>
+                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
+                            <p class="txt-kor-light contents-similar-price">330,000원</p>
+                        </div>
+                        
+                         <div class="contents-similar-product">
+                            <div class="contents-similar-img">
+                                
+                            </div>
+                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
+                            <p class="txt-kor-light contents-similar-price">330,000원</p>
+                        </div>
+                        
+                         <div class="contents-similar-product">
+                            <div class="contents-similar-img">
+                                
+                            </div>
+                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
+                            <p class="txt-kor-light contents-similar-price">330,000원</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1832,6 +1892,9 @@
             $('.contents-popup-img-wrap').slick();
         });
     </script>
+    
+    
+    
 
 
 

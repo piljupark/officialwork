@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/review-list.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/mob-review-list.css">
 
 
 
@@ -51,7 +51,7 @@
             $(".go-to-contents").click(function() {
                 $(".contents-popup-bg").css("display", "block");
 
-                $(".contents-popup-wrap").css("visibility", "visible");
+                $(".mob-contents-popup-wrap").css("visibility", "visible");
             });
 
 
@@ -59,7 +59,26 @@
             $(".contents-popup-close-button").click(function() {
                 $(".contents-popup-bg").css("display", "none");
 
-                $(".contents-popup-wrap").css("visibility", "hidden");
+                $(".mob-contents-popup-wrap").css("visibility", "hidden");
+            });
+            
+            
+            
+            
+            $(".mob-contents-popup-similar").click(function(){
+                $(".contents-similar-popup").css("visibility","visible");
+                
+                 $(".mob-contents-popup-wrap").css("visibility", "hidden");
+            });
+            
+            
+            
+            $(".contents-similar-popup .contents-popup-close-button").click(function() {
+                $(".contents-popup-bg").css("display", "none");
+                
+                $(".mob-contents-popup-wrap").css("visibility", "hidden");
+                
+                $(".contents-similar-popup").css("visibility", "hidden");
             });
 
 
@@ -845,9 +864,10 @@
 
 
 
-    <!-- 리뷰 -->
+    <!-- 모바일 리뷰 -->
 
-    <div id="review-list-whole" class="pc-list-whole">
+
+    <div id="review-list-whole" class="mob-list-whole">
         <div class="title-wrap">
             <p class="txt-kor-bold review-title">REVIEW</p>
             <p class="txt-kor-light review-title">상품리뷰</p>
@@ -860,7 +880,7 @@
             </label>
 
             <a href="#none">
-                <p class="txt-kor-light review-search-button">검색하기</p>
+                <p class="txt-kor-light review-search-button">검색</p>
             </a>
 
         </div>
@@ -993,57 +1013,7 @@
                 </div>
             </div>
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
 
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
-
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
 
         </div>
@@ -1104,57 +1074,6 @@
                 </div>
             </div>
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
-
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
 
         </div>
@@ -1215,57 +1134,9 @@
                 </div>
             </div>
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
 
 
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
 
         </div>
@@ -1326,57 +1197,8 @@
                 </div>
             </div>
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
 
 
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
-
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
 
         </div>
@@ -1435,57 +1257,8 @@
                 </div>
             </div>
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
 
 
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
-
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
 
         </div>
@@ -1544,114 +1317,14 @@
                 </div>
             </div>
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
 
 
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
-
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
 
         </div>
 
         <div class="review-instagram-contents-wrap review-instagram-contents-wrap7">
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
-
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
             <div class="contents-wrap">
                 <a href="#none" class="go-to-contents"></a>
@@ -1710,57 +1383,7 @@
 
         <div class="review-instagram-contents-wrap review-instagram-contents-wrap8">
 
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
 
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
-
-            <div class="contents-wrap">
-                <a href="#none" class="go-to-contents"></a>
-                <div class="contents-top">
-                    <p class="txt-kor-light">abc12***</p>
-
-                    <p>
-                        ★★★★☆
-                    </p>
-                </div>
-                <div class="contents-img-wrap">
-
-                </div>
-                <div class="contents-info-wrap">
-                    <p class="txt-kor contents-title">외않사템은 바로 이런건가요?</p>
-
-                    <p class="txt-kor-light contents-txt">기대 했던것보다 훨씬 좋아요! 색상이 많아서 고민을 많이 했는데, 뭘 해도 예뻤을 것 같네요. 식사 할 때도, 책을 읽을때도</p>
-
-                    <div class="contents-line"> </div>
-
-
-                    <p class="txt-kor contents-my-option">
-                        윌리테이블 (FENIX) A / Silver / Round / 600 X 600 / Shade blue
-                    </p>
-                </div>
-            </div>
 
             <div class="contents-wrap">
                 <a href="#none" class="go-to-contents"></a>
@@ -1829,36 +1452,24 @@
 
 
     </div>
-    <!-- //리뷰 -->
+
+    <!-- //모바일 리뷰 -->
 
 
 
-
-
-    <!-- 게시물 보기 ( 팝업 ) -->
+    <!-- 모바일 팝업 -->
     <div class="contents-popup-bg">
 
     </div>
-
-    <div class="contents-popup-wrap pc-contents-popup-wrap">
+    <div class="mob-contents-popup-wrap">
         <div class="contents-popup">
             <a href="#none" class="contents-popup-close-button">
                 <img src="../plantlance-image/icon/close-black.png" alt="close" class="contents-popup-close">
             </a>
-            <div class="contents-popup-img-wrap">
-                <div class="contents-popup-img">
-                    <img src="../plantlance-image/main/main-chair.png" alt="popup-img">
-                </div>
-                <div class="contents-popup-img">
-                    <img src="../plantlance-image/main/main-chair.png" alt="popup-img">
-                </div>
-                <div class="contents-popup-img">
-                    <img src="../plantlance-image/main/main-chair.png" alt="popup-img">
-                </div>
-            </div>
-
-            <div class="contents-popup-info-wrap">
-                <p class="txt-kor-bold contents-popup-title">
+            
+            
+            
+             <p class="txt-kor-bold contents-popup-title">
                     외않사템은 바로 이런건가요?
                 </p>
 
@@ -1874,22 +1485,9 @@
                         4.0 / 5
                     </p>
 
-                    <p class="txt-kor-light contents-popup-date">
-                        2021.10.01 작성
-                    </p>
-
                 </div>
-
-                <p class="txt-kor contents-popup-txt">
-                    기대 했던것보다 훨씬 좋아요 ! 색상이 많아서 정말 고민을 많이 했는데,<br>
-                    뭘 해도 예뻣을 것 같네요. 식사 할 때나, 책을 읽을 때에나<br>
-                    혼자 사는 집에사이즈 딱 적당합니다.<br>
-                    볼 때 마다 기분이 좋아지는 마법의 테이블이에요 ㅠㅠ<br>
-                    덕분에 집 분위기가 완전히 바뀌었어요. 확실히 포인트가 되어주네요.<br>
-                    요즘 아침에 여기서 커피마시면서 창밖 보는게 제 낙입니다.. 외 않사요!
-                </p>
-
-                <div class="contents-popup-myproduct">
+                
+                 <div class="contents-popup-myproduct">
                     <p class="txt-kor-bold">구매 상품</p>
                     <p class="txt-kor">윌리 (FENIX)</p>
                 </div>
@@ -1898,72 +1496,122 @@
                     <p class="txt-kor-bold">구매 옵션</p>
                     <p class="txt-kor">A / Silver / Round / 600 X 600 / Shade Blue</p>
                 </div>
-
-
-
-
-
-
-                <div class="contents-similar">
-                    <div class="contents-similar-title">
-                        <p class="txt-kor-light">연관상품</p>
-                        <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="contents-similar-title-arrow">
+                
+                
+                
+                <div class="mob-contents-popup-img-wrap">
+                    <div class="mob-contents-popup-img">
+                        <img src="../plantlance-image/main/chair1.png" alt="chair">
+                        
                     </div>
-
-                    <div class="contents-similar-product-wrap">
-
-                        <div class="contents-similar-product">
-                            <div class="contents-similar-img">
-
-                            </div>
-                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
-                            <p class="txt-kor-light contents-similar-price">330,000원</p>
-                        </div>
-
-                        <div class="contents-similar-product">
-                            <div class="contents-similar-img">
-
-                            </div>
-                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
-                            <p class="txt-kor-light contents-similar-price">330,000원</p>
-                        </div>
-
-                        <div class="contents-similar-product">
-                            <div class="contents-similar-img">
-
-                            </div>
-                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
-                            <p class="txt-kor-light contents-similar-price">330,000원</p>
-                        </div>
-
-                        <div class="contents-similar-product">
-                            <div class="contents-similar-img">
-
-                            </div>
-                            <p class="txt-kor contents-similar-name">WILY TABLE</p>
-                            <p class="txt-kor-light contents-similar-price">330,000원</p>
-                        </div>
-
+                    <div class="mob-contents-popup-img">
+                        <img src="../plantlance-image/main/chair1.png" alt="chair">
+                    </div>
+                    <div class="mob-contents-popup-img">
+                         <img src="../plantlance-image/main/chair1.png" alt="chair">
                     </div>
                 </div>
+            
+
+           
+            <div class="mob-contents-popup-info-wrap">
+                <p class="txt-kor contents-popup-txt">
+                    기대 했던것보다 훨씬 좋아요 ! 색상이 많아서 정말 고민을 많이 했는데,
+                    뭘 해도 예뻣을 것 같네요. 식사 할 때나, 책을 읽을 때에나
+                    혼자 사는 집에사이즈 딱 적당합니다.
+                    볼 때 마다 기분이 좋아지는 마법의 테이블이에요 ㅠㅠ
+                    덕분에 집 분위기가 완전히 바뀌었어요. 확실히 포인트가 되어주네요.
+                    요즘 아침에 여기서 커피마시면서 창밖 보는게 제 낙입니다.. 외 않사요!
+                </p>
+
+               
+            
+            </div>
+            
+            <p class="txt-kor-light contents-popup-date">2021.10.01 작성</p>
+            
+            <div class="contents-popup-bottom">
+                <a href="#none">
+                    <img src="../plantlance-image/icon/share.png" alt="share" class="share-img">
+                </a>
+                
+                <a href="#none">
+                    <img src="../plantlance-image/icon/heart-clear.png" alt="heart" class="heart-img">
+                </a>
+                
+                
+                <a href="#none">
+                    <p class="txt-kor mob-contents-popup-similar">연관상품 보기
+                    <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow" class="arrow-img">
+                    </p>
+                </a>
+            </div>
+            
+            
+        </div>
+        
+        
+        <div class="contents-similar-popup">
+            <a href="#none" class="contents-popup-close-button">
+                <img src="../plantlance-image/icon/close-black.png" alt="close" class="contents-popup-close">
+            </a>
+            
+            <p class="txt-kor-bold contents-similar-popup-title">
+                연관상품 목록
+            </p>
+            
+            
+            <div class="contents-similar">
+                <div class="contents-similar-img"></div>
+                
+                <p class="txt-eng">WILY TABLE (FENIX)</p>
+                <p class="txt-kor-light">윌리 테이블</p>
+                
+                <a href="#none">
+                    <p class="txt-kor show-similar-product">상품보기 
+                        <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow" class="similar-arrow-img">
+                    </p>
+                </a>
+                
+                <p class="txt-kor-light contents-similar-price">330,000원</p>
+            </div>
+            
+            <div class="contents-similar">
+                <div class="contents-similar-img"></div>
+                
+                <p class="txt-eng">WILY TABLE (FENIX)</p>
+                <p class="txt-kor-light">윌리 테이블</p>
+                
+                <a href="#none">
+                    <p class="txt-kor show-similar-product">상품보기 
+                        <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow" class="similar-arrow-img">
+                    </p>
+                </a>
+                
+                <p class="txt-kor-light contents-similar-price">330,000원</p>
+            </div>
+            
+            <div class="contents-similar">
+                <div class="contents-similar-img"></div>
+                
+                <p class="txt-eng">WILY TABLE (FENIX)</p>
+                <p class="txt-kor-light">윌리 테이블</p>
+                
+                <a href="#none">
+                    <p class="txt-kor show-similar-product">상품보기 
+                        <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow" class="similar-arrow-img">
+                    </p>
+                </a>
+                
+                <p class="txt-kor-light contents-similar-price">330,000원</p>
             </div>
         </div>
 
 
 
     </div>
-    <!-- //게시물 보기 ( 팝업 ) -->
+    <!-- //모바일 팝업 -->
 
-
-
-
-
-
-
-
-
-
-    
 
 
 
@@ -2130,17 +1778,13 @@
 
     <script>
         $(document).ready(function() {
-            $('.contents-popup-img-wrap').slick();
+            $('.mob-contents-popup-img-wrap').slick();
         });
     </script>
 
 
 
-    <script>
-        function resizePopup() {
-            $(".contents-popup-wrap").load(window.location.href + ".contents-popup-wrap");
-        }
-    </script>
+
 
 
 

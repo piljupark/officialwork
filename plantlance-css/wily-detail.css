@@ -276,14 +276,10 @@ li {
     transform: translate(-50%,-55%);
 }
 .main-img2 img{
-    width:2800px;
-    top:100%;
-    left:100%;
+    width:100%;
 }
 .main-img3 img{
-    width:3200px;
-    top:-20%;
-    left:65%;
+    width:100%;
 }
 /* //main-img-wrap */
 
@@ -315,16 +311,19 @@ li {
     left:50%;
     transform: translate(-50%,-50%);
 }
-
+.second-img1 img{
+    width:150%;
+    min-width: 300px;
+}
 .second-img2 img{
-    width:1000px;
-    top:100%;
-    left:100%;
+    width:100%;
+    min-width: 200px;
+
 }
 .second-img3 img{
-    width:1000px;
-    top:-40%;
-    left:60%;
+    width:100%;
+    min-width: 200px;
+
 }
 /* //second-img-wrap */
 

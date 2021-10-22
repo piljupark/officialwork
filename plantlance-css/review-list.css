@@ -315,14 +315,14 @@ li {
     -moz-appearance: none;
     appearance: none;
     background: url('../plantlance-image/icon/arrow-down2.png') no-repeat 90% 50% #fff;
-    padding:4px 20px;
+    padding: 4px 20px;
     background-size: 8px;
     font-size: 12px;
     outline: none;
     cursor: pointer;
 }
 
-.contents-sort-wrap select::-ms-expand{
+.contents-sort-wrap select::-ms-expand {
     display: none;
 }
 
@@ -459,7 +459,10 @@ li {
 
 
 
-.review-instagram-contents-wrap5, .review-instagram-contents-wrap6, .review-instagram-contents-wrap7, .review-instagram-contents-wrap8{
+.review-instagram-contents-wrap5,
+.review-instagram-contents-wrap6,
+.review-instagram-contents-wrap7,
+.review-instagram-contents-wrap8 {
     display: none;
 }
 
@@ -499,18 +502,18 @@ li {
 
 
 /* contents-popup*/
-.contents-popup-bg{
-    position:fixed;
-    width:100%;
+.contents-popup-bg {
+    position: fixed;
+    width: 100%;
     height: auto;
-    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px;
     z-index: 100;
     display: none;
 }
 
-.contents-popup-wrap{
+.contents-popup-wrap {
     position: fixed;
-    width:100%;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -522,64 +525,67 @@ li {
     visibility: hidden;
 }
 
-.contents-popup{
+.contents-popup {
     position: relative;
-    width:1100px;
+    width: 1100px;
     height: 550px;
     background: #fff;
     box-sizing: border-box;
-    padding:35px;
+    padding: 35px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.contents-popup-close{
+.contents-popup-close {
     position: absolute;
-    width:15px;
-    top:25px;
-    right:25px;
+    width: 15px;
+    top: 25px;
+    right: 25px;
     z-index: 3;
 }
 
-.contents-popup-img-wrap{
+.contents-popup-img-wrap {
     position: relative;
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
     height: 100%;
-    margin-right:30px;
+    margin-right: 30px;
     overflow: hidden;
 }
 
-.contents-popup-img-wrap .contents-popup-img{
-    position:relative;
-    float:left;
-    width:100%;
+.contents-popup-img-wrap .contents-popup-img {
+    position: relative;
+    float: left;
+    width: 100%;
     z-index: 2;
     overflow: hidden;
 }
-.contents-popup-img-wrap .contents-popup-img img{
+
+.contents-popup-img-wrap .contents-popup-img img {
     position: relative;
-    float:left;
-    width:120%;
-    left:50%;
+    float: left;
+    width: 120%;
+    left: 50%;
     transform: translate(-50%);
 }
 
-.contents-popup-info-wrap{
+.contents-popup-info-wrap {
     position: relative;
-    width:50%;
+    width: 50%;
 }
-.contents-popup-title{
+
+.contents-popup-title {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     font-size: 20px;
     text-overflow: ellipsis;
     margin-bottom: 10px;
 }
-.contents-popup-id{
+
+.contents-popup-id {
     position: relative;
-    float:left;
+    float: left;
     width: 100%;
     font-size: 12px;
     margin-bottom: 10px;
@@ -588,79 +594,85 @@ li {
 
 
 
-.contents-popup-assess-wrap{
+.contents-popup-assess-wrap {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     border-bottom: 1px solid #f0f0f0;
-    padding-bottom:15px;
+    padding-bottom: 15px;
     margin-bottom: 25px;
 }
-.contents-popup-assess-wrap .contents-popup-assess{
+
+.contents-popup-assess-wrap .contents-popup-assess {
     position: relative;
     margin-right: 15px;
     font-size: 18px;
 }
-.contents-popup-assess-wrap .contents-popup-assess2{
+
+.contents-popup-assess-wrap .contents-popup-assess2 {
     position: relative;
     font-size: 12px;
-    top:2px;
-    
+    top: 2px;
+
 }
-.contents-popup-date{
+
+.contents-popup-date {
     position: absolute;
-    right:0;
+    right: 0;
     font-size: 12px;
-    top:2px;
+    top: 2px;
     opacity: .6;
-    
+
 }
-.contents-popup-txt{
+
+.contents-popup-txt {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     font-size: 13px;
     text-align: justify;
     line-height: 1.7;
     margin-bottom: 15px;
 }
 
-.contents-popup-myproduct{
+.contents-popup-myproduct {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10px;
 }
-.contents-popup-myproduct p{
+
+.contents-popup-myproduct p {
     position: relative;
     font-size: 11px;
     opacity: .6;
 }
 
-.contents-popup-myproduct p:nth-child(1){
+.contents-popup-myproduct p:nth-child(1) {
     margin-right: 10px;
 }
 
 
-.contents-popup-myoption{
+.contents-popup-myoption {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
 
 }
-.contents-popup-myoption p{
+
+.contents-popup-myoption p {
     position: relative;
     font-size: 11px;
     opacity: .6;
 }
 
-.contents-popup-myoption p:nth-child(1){
+.contents-popup-myoption p:nth-child(1) {
     margin-right: 10px;
 }
 
@@ -669,61 +681,264 @@ li {
 
 
 
-.contents-similar{
+.contents-similar {
     position: absolute;
-    width:100%;
-    bottom:0;
-    border-top:1px solid #f0f0f0;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #f0f0f0;
     padding-top: 10px;
 }
 
-.contents-similar-title{
+.contents-similar-title {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    
-}
-.contents-similar-title-arrow{
-    position: relative;
-    width:12px;
-    height: 12px;
-    top:3px;
-    left:5px; 
+
 }
 
-.contents-similar-product-wrap{
+.contents-similar-title-arrow {
     position: relative;
-    float:left;
-    width:100%;
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    left: 5px;
+}
+
+.contents-similar-product-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
- 
+
 }
-.contents-similar-product{
+
+.contents-similar-product {
     position: relative;
-    float:left;
-    width:18%;
+    float: left;
+    width: 18%;
     margin-right: 10px;
     cursor: pointer;
 }
-.contents-similar-img{
+
+.contents-similar-img {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     padding-bottom: 90%;
     background: #ddd;
     margin-bottom: 10px;
 }
 
-.contents-similar-product-wrap p{
+.contents-similar-product-wrap p {
     position: relative;
-    float:left;
-    width:100%;
+    float: left;
+    width: 100%;
     text-align: center;
     font-size: 12px;
 }
+
 /* //contents-popup*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mob-list-whole {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .pc-list-whole {
+        display: none !important;
+    }
+    .pc-contents-popup-wrap{
+        display: none;
+    }
+
+    .mob-list-whole {
+        display: block;
+    }
+    .mob-contents-popup-wrap{
+        visibility: hidden;
+    }
+
+
+
+
+    .mob-list-whole .contents-wrap {
+        width: 50%;
+    }
+
+    /* review-search-wrap */
+    .mob-list-whole .review-search {
+        margin-right: 10px;
+    }
+
+    .mob-list-whole .review-search-img {
+        margin-left: 20px;
+    }
+
+    .mob-list-whole .review-search input[type="text"] {
+        font-size: 10px;
+        top: 1px;
+    }
+
+    .mob-list-whole .review-search-wrap .review-search-button {
+        font-size: 10px;
+        width: 40px;
+    }
+
+    /* //review-search-wrap */
+
+
+
+
+    /* review-kind-wrap */
+    .mob-list-whole .review-kind-wrap p {
+        position: relative;
+        font-size: 10px;
+        top: 2.4px;
+    }
+
+    .mob-list-whole .review-kind-wrap {
+        position: relative;
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mob-list-whole .review-kind-wrap label {
+        margin-right: 0;
+    }
+
+    /* //review-kind-wrap */
+
+
+
+
+
+    /* review-or-instagram-button-wrap */
+    .mob-list-whole .review-or-instagram-button-wrap {
+        margin-top: 10px;
+    }
+
+    .mob-list-whole .review-or-instagram-button-wrap p {
+        font-size: 12px;
+        top: 10px;
+    }
+
+    .mob-list-whole .review-or-instagram-button-wrap .text-bottom-line {
+        width: 40px;
+    }
+
+
+
+    .mob-list-whole .contents-sort {
+        top: 50px;
+    }
+
+    .mob-list-whole .contents-sort select {
+        font-size: 10px;
+        padding: 6px 14px;
+        margin-right: 1px;
+
+    }
+
+    /* //review-or-instagram-button-wrap */
+
+
+
+
+
+    /* review-instagram-contents-wrap */
+    .mob-list-whole .review-instagram-contents-wrap .contents-top p {
+        font-size: 10px;
+    }
+
+    .mob-list-whole .review-instagram-contents-wrap .contents-title {
+        font-size: 12px;
+    }
+
+    .mob-list-whole .review-instagram-contents-wrap .contents-txt {
+        font-size: 11px;
+    }
+
+    .mob-list-whole .review-instagram-contents-wrap .contents-my-option {
+        opacity: .6;
+    }
+
+    /* //review-instagram-contents-wrap */
+
+
+
+
+
+    /* more-review-button */
+    .mob-list-whole .contents-more {
+        font-size: 12px;
+    }
+
+    .mob-list-whole .contents-more .contents-more-arrow-img {
+        width: 8px;
+        height: 8px;
+        margin-left: 5px;
+    }
+
+    /* //more-review-button */
+    
+    
+    
+    
+    /* content-popup */
+   
+    .mob-contents-popup-wrap .contents-popup{
+        width:90%;
+        padding:30px 20px;
+        display: block;
+        overflow-y: scroll;
+    }
+    .mob-contents-popup-wrap .contents-popup-title{
+        font-size: 14px;
+    }
+    .mob-contents-popup-wrap .contents-popup-id{
+        font-size: 12px;
+        opacity: .5;
+    }
+    .mob-contents-popup-wrap .contents-popup-img-wrap{
+        width:100%;
+        margin-right: 0;
+    }
+    .mob-contents-popup-wrap .contents-popup-img-wrap img{
+        width:100%;
+    }
+    .mob-contents-popup-wrap .contents-popup-info-wrap{
+        width:100%;
+    }
+    /* //content-popup */
+
+
+}

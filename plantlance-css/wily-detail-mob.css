@@ -38,27 +38,27 @@
 
 @font-face {
     src: url("../fonts/Urbanist-Light.ttf");
-    font-family: "Urbanist-Light";
+    font-family: "Urbanist-Light"!important;
 }
 
 @font-face {
     src: url("../fonts/Urbanist-Regular.ttf");
-    font-family: "Urbanist-Regular";
+    font-family: "Urbanist-Regular"!important;
 }
 
 @font-face {
     src: url("../fonts/Urbanist-Medium.ttf");
-    font-family: "Urbanist-Medium";
+    font-family: "Urbanist-Medium"!important;
 }
 
 @font-face {
     src: url("../fonts/Urbanist-SemiBold.ttf");
-    font-family: "Urbanist-SemiBold";
+    font-family: "Urbanist-SemiBold"!important;
 }
 
 @font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
-    font-family: "Urbanist-ExtraBold";
+    font-family: "Urbanist-ExtraBold"!important;
 }
 
 
@@ -93,23 +93,23 @@ li {
 
 
 .txt-eng {
-    font-family: "Urbanist-Medium";
+    font-family: "Urbanist-Medium"!important;
 }
 
 .txt-eng-bold {
-    font-family: "Urbanist-ExtraBold";
+    font-family: "Urbanist-ExtraBold"!important;
 }
 
 .txt-kor {
-    font-family: "Pretendard-Regular";
+    font-family: "Pretendard-Regular"!important;
 }
 
 .txt-kor-light {
-    font-family: "Pretendard-Light";
+    font-family: "Pretendard-Light"!important;
 }
 
 .txt-kor-bold {
-    font-family: "Pretendard-SemiBold";
+    font-family: "Pretendard-SemiBold"!important;
 }
 
 

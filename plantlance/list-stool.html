@@ -19,6 +19,46 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
     
     
+    
+    
+    
+     <script>
+	// 상품 리스트 사이드 메뉴
+
+
+        $(document).ready(function() {
+            $(".sofa-title .down-menu").click(function(){
+                $('.category-sofa').css("height","155px");
+                
+                $(".sofa-title .down-menu").css("width","0");
+                $(".sofa-title .up-menu").css("width","8px");
+            });
+            
+            $(".sofa-title .up-menu").click(function(){
+                $('.category-sofa').css("height","0px");
+                
+                $(".sofa-title .down-menu").css("width","8px");
+                $(".sofa-title .up-menu").css("width","0");
+            });
+            
+            $(".table-title .down-menu").click(function(){
+                $('.category-table').css("height","95px");
+                
+                $(".table-title .down-menu").css("width","0");
+                $(".table-title .up-menu").css("width","8px");
+            });
+            
+            $(".table-title .up-menu").click(function(){
+                $('.category-table').css("height","0px");
+                
+                
+                $(".table-title .down-menu").css("width","8px");
+                $(".table-title .up-menu").css("width","0");
+            });
+        });
+    </script>
+    
+    
      <script>
         // **  gnb 스크립트 
 
@@ -842,27 +882,27 @@
                 </p>
             </a>
             <div class="category-sofa second-category">
-                <input type="radio" name="sofa" value="flex-sofa" id="flex-sofa">
-                <input type="radio" name="sofa" value="cloud-sofa" id="cloud-sofa">
-                <input type="radio" name="sofa" value="our-sofa" id="our-sofa">
-                <input type="radio" name="sofa" value="block-sofa" id="block-sofa">
-                <input type="radio" name="sofa" value="cloud-sofa" id="grae-sofa">
-
-                <label for="flex-sofa">
-                    <p class="txt-eng">Flex sofa</p>
-                </label>
-                <label for="cloud-sofa">
-                    <p class="txt-eng">Cloud sofa</p>
-                </label>
-                <label for="our-sofa">
-                    <p class="txt-eng">Our sofa</p>
-                </label>
-                <label for="block-sofa">
-                    <p class="txt-eng">Block sofa</p>
-                </label>
-                <label for="grae-sofa">
-                    <p class="txt-eng">Grae sofa</p>
-                </label>
+              <a href="list-sofa.html">
+                   <p class="txt-eng">All sofa</p>
+               </a>
+               <a href="#none">
+                   <p class="txt-eng">Flex sofa</p>
+               </a>
+               <a href="#none">
+                   <p class="txt-eng">Cloud sofa</p>
+               </a>
+               
+               <a href="#none">
+                   <p class="txt-eng">Our sofa</p>
+               </a>
+               
+               <a href="#none">
+                   <p class="txt-eng">Block sofa</p>
+               </a>
+               
+               <a href="#none">
+                   <p class="txt-eng">Grae sofa</p>
+               </a>
             </div>
 
             <a href="#none">
@@ -875,23 +915,22 @@
                 </p>
             </a>
             <div class="category-table second-category">
-
-                <input type="radio" name="table" value="cafe-series" id="cafe-series">
-                <input type="radio" name="table" value="mate-series" id="mate-series">
-                <input type="radio" name="table" value="muah-series" id="muah-series">
-
-                <label for="cafe-series" class="category-cafe-button">
-                    <p class="txt-eng">Cafe series</p>
-                </label>
-                <label for="mate-series" class="category-mate-button">
+               <a href="list-table.html">
+                    <p class="txt-eng">All tables</p>
+                </a>
+                
+                <a href="#none">
+                    <p class="txt-eng">Wily series</p>
+                </a>
+                 <a href="#none">
                     <p class="txt-eng">Mate series</p>
-                </label>
-                <label for="muah-series" class="category-muah-button">
+                </a>
+                 <a href="#none">
                     <p class="txt-eng">Muah series</p>
-                </label>
+                </a>
             </div>
 
-            <a href="#none">
+            <a href="list-chair.html">
                 <p class="txt-eng-bold side-category-title">
                     CHAIR
                 </p>
@@ -1110,7 +1149,7 @@
     <footer>
         <div class="footer-wrap">
             <a href="plantlance.html">
-                <img src="../plantlance-image/logo-detail.png" alt="pltl-logo" class="footer-logo">
+                <img src="../plantlance-image/logo.png" alt="pltl-logo" class="footer-logo">
             </a>
 
 
@@ -1166,7 +1205,7 @@
         <!-- 모바일 푸터 -->
         <div class="mob-footer-wrap">
             <a href="#none">
-                <img src="../plantlance-image/logo-detail.png" alt="footer-logo" class="mob-footer-logo">
+                <img src="../plantlance-image/logo.png" alt="footer-logo" class="mob-footer-logo">
             </a>
 
             <div class="mob-footer-show-content">

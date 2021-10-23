@@ -283,10 +283,11 @@ li {
 
 .text-bottom-line {
     position: absolute;
-    width: 47px;
+    width: 65px;
     height: 3px;
     background: #2f2f2f;
     top: 36px;
+    left: 75px;
 }
 
 /* //review-or-instagrm-button-wrap */
@@ -375,13 +376,46 @@ li {
     overflow: hidden;
 }
 
-.contents-img-wrap img {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
+
+
+
+.contents-img-wrap input[type="radio"] {
+    display: none;
 }
+
+.wishlist-button {
+    display: none;
+}
+
+#not-wishlist:checked ~ label .wishlist-button {
+    display: block;
+}
+
+#not-wishlist:checked ~ label .not-wishlist-button {
+    display: none;
+}
+
+#wishlist:checked ~ .not-wishlist-button {
+    display: block;
+}
+
+#wishlist:checked ~ .wishlist-button {
+    display: none;
+}
+
+.contents-img-wrap .heart-button {
+    position: absolute;
+    float: right;
+    width: 20px;
+    right: 15px;
+    top: 15px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+
+
 
 
 .contents-top {
@@ -389,7 +423,19 @@ li {
     float: left;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.contents-profile {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 100%;
+    margin-right: 13px;
 }
 
 .contents-top p {
@@ -433,29 +479,10 @@ li {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     font-size: 12px;
+    cursor: pointer;
+    color: #2578B9;
 }
 
-.contents-line {
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-top: 15px;
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 10px;
-}
-
-
-.contents-my-option {
-    position: relative;
-    float: left;
-    width: 100%;
-    font-size: 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    display: block;
-    box-sizing: border-box;
-}
 
 
 
@@ -473,7 +500,7 @@ li {
 
 
 
-/* contentx-more */
+/* contents-more */
 
 .contents-more {
     position: relative;
@@ -494,24 +521,145 @@ li {
     margin-left: 10px;
 }
 
-/* //contentx-more */
+/* //contents-more */
 
 
 
 
+/* contents-popup*/
+.contents-popup-bg {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px;
+    z-index: 100;
+    display: none;
+}
+
+.contents-popup-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    z-index: 101;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.contents-popup {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents-popup-close {
+    position: absolute;
+    width: 15px;
+    top: 25px;
+    right: 25px;
+    z-index: 3;
+}
+
+.contents-popup-img-wrap {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.contents-popup-img-wrap .contents-popup-img {
+    position: relative;
+    float: left;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.contents-popup-img-wrap .contents-popup-img img {
+    position: relative;
+    float: left;
+    width: 120%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.contents-popup-info-wrap {
+    position: relative;
+    width: 50%;
+}
+
+.contents-popup-info-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    font-size: 20px;
+}
+
+.contents-popup-profile {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #e2e2e2;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.contents-popup-id {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.contents-popup-date {
+    font-size: 10px;
+    opacity: .5;
+}
+
+.contents-popup-txt {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.contents-popup-tag {
+    position: relative;
+    float: left;
+    width: 100%;
+
+    margin-top: 30px;
+    font-size: 12px;
+    color: #2578B9;
+    cursor: pointer;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
+/* //contents-popup*/
 
 
 
@@ -519,7 +667,14 @@ li {
 .mob-list-whole {
     display: none;
 }
-.mob-contents-popup-wrap{
+
+
+.contents-popup-bg {
+    display: none;
+    visibility: hidden;
+}
+
+.contents-popup-wrap {
     display: none;
 }
 
@@ -527,26 +682,39 @@ li {
 
 
 
-
-
-
 @media screen and (max-width:1024px) {
-    .pc-list-whole {
-        display: none !important;
-    }
-
-    .pc-contents-popup-wrap {
-        visibility: hidden;
-    }
-
     .mob-list-whole {
         display: block;
     }
 
-    .mob-contents-popup-wrap {
-        display: flex;
-        visibility: hidden;
+    .contents-popup-bg {
+        display: none;
+        visibility: visible;
     }
+
+    .contents-popup-wrap {
+        display: flex;
+    }
+    
+    
+    
+    /* more-review-button */
+    .mob-list-whole .contents-more {
+        font-size: 12px;
+    }
+
+    .mob-list-whole .contents-more .contents-more-arrow-img {
+        width: 8px;
+        height: 8px;
+        margin-left: 5px;
+    }
+
+    /* //more-review-button */
+
+
+
+
+
 
 
 
@@ -615,10 +783,9 @@ li {
     }
 
     .mob-list-whole .review-or-instagram-button-wrap .text-bottom-line {
-        width: 40px;
+        width: 57px;
+        left: 67px;
     }
-
-
 
     .mob-list-whole .contents-sort {
         top: 50px;
@@ -628,308 +795,213 @@ li {
         font-size: 10px;
         padding: 6px 14px;
         margin-right: 1px;
-
     }
+
 
     /* //review-or-instagram-button-wrap */
-
-
-
-
-
-    /* review-instagram-contents-wrap */
-    .mob-list-whole .review-instagram-contents-wrap .contents-top p {
-        font-size: 10px;
-    }
-
-    .mob-list-whole .review-instagram-contents-wrap .contents-title {
+    
+    
+    
+    .mob-list-whole .contents-title{
         font-size: 12px;
     }
-
-    .mob-list-whole .review-instagram-contents-wrap .contents-txt {
+    .mob-list-whole .contents-txt{
         font-size: 11px;
     }
-
-    .mob-list-whole .review-instagram-contents-wrap .contents-my-option {
-        opacity: .6;
-    }
-
-    /* //review-instagram-contents-wrap */
-
-
-
-
-
-    /* more-review-button */
-    .mob-list-whole .contents-more {
-        font-size: 12px;
-    }
-
-    .mob-list-whole .contents-more .contents-more-arrow-img {
-        width: 8px;
-        height: 8px;
-        margin-left: 5px;
-    }
-
-    /* //more-review-button */
 
 
 
 
     /* contents-popup */
-    .contents-popup-bg {
-        position: fixed;
-        width: 100%;
-        height: auto;
-        box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px;
-        z-index: 100;
-        display: none;
+    .mob-contents-popup-wrap .contents-popup {
+        width: 300px;
+        padding: 30px 20px;
+        display: block;
     }
-    
-    .mob-contents-popup-wrap{
-        position: absolute;
-        width:100%;
-        height: 100vh;
+
+    .mob-contents-popup-top {
+        position: relative;
+        float: left;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-content: center;
         justify-items: center;
         align-items: center;
-        align-content: center;
-        z-index: 101;
+        margin-bottom: 15px;
+        font-size: 12px;
     }
-    
-    .mob-contents-popup-wrap .contents-popup{
-        position: relative;
-        width:300px;
-        height: 600px;
-        background: #fff;
-        box-sizing: border-box;
-        padding:30px 20px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        
-    }
-    
-    .mob-contents-popup-wrap .contents-popup .contents-popup-close{
-        position: absolute;
+    .mob-contents-popup-wrap .contents-popup-close{
         width:10px;
-        right:20px;
-        top:30px;
     }
-    
-    .mob-contents-popup-wrap .contents-popup-title{
+
+    .mob-contents-popup-profile {
         position: relative;
-        float:left;
-        width:100%;
-        margin-top:15px;
-        font-size: 14px;
-        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background: #eee;
+        border-radius: 100%;
+        margin-right: 10px;
     }
-    .mob-contents-popup-wrap .contents-popup-id{
+
+    .mob-contents-popup-img {
         position: relative;
-        float:left;
-        width:100%;
-        font-size: 12px;
-        opacity: .6;
-        margin-bottom: 10px;
+        float: left;
+        width: 100%;
+        background: #eee;
+        height: 250px;
+        margin-bottom: 15px;
     }
-    .mob-contents-popup-wrap .contents-popup-assess-wrap{
+
+    .mob-contents-popup-txt {
         position: relative;
-        float:left;
-        width:100%;
-        display: flex;
-        justify-content: flex-start;
-        font-size: 12px;
-        margin-bottom:10px;
-        border-bottom: 1px solid #f0f0f0;
-        padding-bottom: 10px;
-    }
-    .mob-contents-popup-wrap .contents-popup-assess2{
-        position: relative;
-        margin-left:10px;
+        float: left;
+        width: 100%;
         font-size: 11px;
-    }
-    .mob-contents-popup-wrap .contents-popup-myproduct{
-        position: relative;
-        float:left;
-        width:100%;
-        display: flex;
-        justify-content: flex-start;
-        font-size: 10px;
-        opacity: .7;
-        box-sizing: border-box;
-    }
-    .mob-contents-popup-wrap .contents-popup-myproduct p{
-        margin-right: 4px;
-    }
-    
-    .mob-contents-popup-wrap .contents-popup-myoption{
-        position: relative;
-        float:left;
-        width:100%;
-        display: flex;
-        justify-content: flex-start;
-        font-size: 10px;
-        opacity: .7;
-    }
-    .mob-contents-popup-wrap .contents-popup-myoption p{
-        margin-right: 4px;
-    }
-    
-    
-    .mob-contents-popup-img-wrap{
-        position: relative;
-        float:left;
-        width:100%;
-        height:230px;
-        margin-top:20px;
-        background: #ddd;
-        margin-bottom: 20px;
-        overflow: hidden;
-    }
-    
-    .mob-contents-popup-img-wrap img{
-        position: relative;
-        float:left;
-        width:100%;
-    }
-    
-    
-    .mob-contents-popup-wrap .contents-popup-txt{
-        position: relative;
-        float:left;
-        width:100%;
-        font-size: 12px;
-        text-align: justify;
         line-height: 1.5;
+        margin-bottom: 10px;
     }
-    
-    
-    .mob-contents-popup-wrap .contents-popup-date{
+
+    .mob-contents-popup-hashtag {
         position: relative;
-        float:left;
-        width:100%;
-        font-size: 10px;
-        margin-top:10px; 
-        opacity: .6;
+        float: left;
+        width: 100%;
+        font-size: 11px;
+        line-height: 1.5;
+        color: #2578B9;
+
     }
-    
-    .mob-contents-popup-wrap .contents-popup-bottom{
-        position: relative;
-        float:left;
-        width:100%;
-        height: auto;
+
+
+
+    .mob-contents-popup-wrap .contents-popup-bottom {
+        position: absolute;
+        float: left;
+        width: 100%;
+        height: 40px;
         background: #fff;
         box-sizing: border-box;
-        border-top:1px solid #f0f0f0;
-        margin-top:20px;
+        border-top: 1px solid #f0f0f0;
+        margin-top: 20px;
+        bottom: 0;
+        left: 0;
+        padding: 0 20px;
+
     }
-    
-    .mob-contents-popup-wrap .contents-popup-bottom .share-img{
+
+    .mob-contents-popup-wrap .contents-popup-bottom .share-img {
         position: relative;
-        float:left;
-        width:15px;
-        top:10px;
-        margin-right:20px;
+        float: left;
+        width: 15px;
+        top: 10px;
+        margin-right: 20px;
     }
-    
-    .mob-contents-popup-wrap .contents-popup-bottom .heart-img{
+
+    .mob-contents-popup-wrap .contents-popup-bottom .heart-img {
         position: relative;
-        float:left;
-        width:17px;
-        top:9px;
-        margin-right:10px;
+        float: left;
+        width: 17px;
+        top: 9px;
+        margin-right: 10px;
     }
-    
-    .mob-contents-popup-wrap .contents-popup-bottom .mob-contents-popup-similar{
+
+    .mob-contents-popup-wrap .contents-popup-bottom .mob-contents-popup-similar {
         position: relative;
-        float:right;
+        float: right;
         display: flex;
         justify-content: flex-end;
-        margin-top:11px;
+        margin-top: 11px;
         font-size: 12px;
     }
-    .mob-contents-popup-wrap .contents-popup-bottom .mob-contents-popup-similar .arrow-img{
+
+    .mob-contents-popup-wrap .contents-popup-bottom .mob-contents-popup-similar .arrow-img {
         position: relative;
-        width:9px;
+        width: 9px;
         height: 9px;
-        top:5px;
-        margin-left:5px;
+        top: 3px;
+        margin-left: 5px;
     }
-    /* //content-popup */
-    
-    
-    
-    
-    
-    
+
+    /* //contents-popup */
+
+
+
+
+
+
+
+
+
     /* contents-similar-popup*/
-    .contents-similar-popup{
+    .contents-similar-popup {
         position: absolute;
-        width:300px;
+        width: 300px;
         height: 440px;
         background: #fff;
         box-sizing: border-box;
-        padding:30px 20px;
+        padding: 30px 20px;
         overflow-x: hidden;
         visibility: hidden;
     }
-    
-    .contents-similar-popup .contents-popup-close{
+
+    .contents-similar-popup .contents-popup-close {
         position: absolute;
-        width:10px;
-        right:20px;
+        width: 10px;
+        right: 20px;
     }
-    
-    
-    .contents-similar-popup-title{
+
+
+    .contents-similar-popup-title {
         position: relative;
-        float:left;
-        width:100%;
+        float: left;
+        width: 100%;
         font-size: 12px;
-        margin-top:10px;
+        margin-top: 10px;
         margin-bottom: 25px;
     }
-    .contents-similar{
+
+    .contents-similar {
         position: relative;
-        float:left;
-        width:100%;
+        float: left;
+        width: 100%;
         height: auto;
         box-sizing: border-box;
-        padding:20px 0;
-        border-top:1px solid #f0f0f0;
+        padding: 20px 0;
+        border-top: 1px solid #f0f0f0;
     }
-    .contents-similar-img{
+
+    .contents-similar-img {
         position: relative;
-        float:left;
-        width:70px;
+        float: left;
+        width: 70px;
         height: 70px;
         background: #eee;
-        margin-right:20px;
+        margin-right: 20px;
     }
-    .contents-similar p{
+
+    .contents-similar p {
         position: relative;
-        width:auto;
+        width: auto;
         font-size: 11px;
         margin-bottom: 5px;
     }
-    
-    .show-similar-product{
+
+    .show-similar-product {
         position: relative;
-        float:left;
-        margin-top:19px;
+        float: left;
+        margin-top: 19px;
     }
-    .show-similar-product .similar-arrow-img{
+
+    .show-similar-product .similar-arrow-img {
         position: relative;
         width: 8px;
     }
-    
-    .contents-similar-price{
+
+    .contents-similar-price {
         position: relative;
-        float:right;
-        margin-top:19px;
+        float: right;
+        margin-top: 19px;
     }
+
     /* //contents-similar-popup*/
-
-
 }

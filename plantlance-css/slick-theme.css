@@ -125,7 +125,6 @@ html{
     position: absolute;
     bottom: 0px;
     width:100%;
-    max-width: 1660px;
     list-style: none;
     text-align: center;
     margin-left:30px;
@@ -140,7 +139,7 @@ html{
     width:20px;
     float:left;
     height: 20px;
-    margin: 5px 5px;
+    margin: 3px 3px;
     padding: 0;
 
     cursor: pointer;
@@ -178,7 +177,7 @@ html{
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 14px;
     line-height: 20px;
 
     position: absolute;

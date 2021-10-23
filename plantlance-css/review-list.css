@@ -264,7 +264,7 @@ li {
     margin-top: 40px;
 }
 
-.review-or-instagram-button-wrap p {
+.review-or-instagram-button-wrap p{
     position: relative;
     float: left;
     width: auto;
@@ -278,7 +278,6 @@ li {
     width: 100%;
     margin-top: 20px;
     border: 1px solid #f5f5f5;
-    margin-bottom: 80px;
 }
 
 .text-bottom-line {
@@ -288,6 +287,8 @@ li {
     background: #2f2f2f;
     top: 36px;
 }
+
+
 
 /* //review-or-instagrm-button-wrap */
 
@@ -340,6 +341,22 @@ li {
     display: flex;
     justify-content: space-between;
 }
+.review-instagram-contents-wrap1{
+    margin-top:120px;
+}
+
+.write-review-button{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    box-sizing: border-box;
+    padding:15px 0;
+    background: #2f2f2f;
+    top:-90px;
+    z-index: 2;
+}
+
 
 
 .contents-wrap {

@@ -340,8 +340,22 @@ li {
     display: flex;
     justify-content: space-between;
 }
+.review-instagram-contents-wrap1{
+    margin-top:50px;
+}
 
-
+.write-review-button{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    box-sizing: border-box;
+    padding:15px 0;
+    background: #2f2f2f;
+    top:-80px;
+    z-index: 2;
+    font-size: 12px;
+}
 .contents-wrap {
     position: relative;
     width: 25%;

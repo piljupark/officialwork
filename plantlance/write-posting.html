@@ -15,32 +15,14 @@
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/write-posting.css">
 
 
 
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
 
 
 
 
-
-
-
-    <script>
-        // review more 버튼 클릭시 더 많은 리뷰글 보여주기
-
-        $(document).ready(function() {
-            $(".contents-more").click(function() {
-                $(".review-instagram-contents-wrap5").css("display", "flex");
-                $(".review-instagram-contents-wrap6").css("display", "flex");
-                $(".review-instagram-contents-wrap7").css("display", "flex");
-                $(".review-instagram-contents-wrap8").css("display", "flex");
-            });
-        });
-    </script>
 
 
     <script>
@@ -900,20 +882,20 @@
                         2021.10.01
                     </p>
                 </div>
-                
+
                 <p class="txt-kor-light myproduct-notice">
                     * 변경버튼을 눌러 직접 상품을 선택하시지 않는 경우 가장 최근에 구매하신 상품과 옵션으로 자동 선택됩니다. 가장 최근 구매하신 상품이 아닌 구매하신 상품에 대한 리뷰를 작성하시려면 변경하기를 눌러 상품을 선택해주세요.
                 </p>
             </div>
 
-           
-           
-           
+
+
+
             <div class="write-content-wrap">
                 <p class="txt-kor write-content-title">
                     상품분류
                 </p>
-                
+
                 <select value="" class="txt-kor write-sort">
                     <option value="" checked>대분류전체</option>
                     <option value="furniture">FURNITURE</option>
@@ -921,7 +903,7 @@
                     <option value="kitchen">KITCHEN</option>
                     <option value="interior">INTERIOR</option>
                 </select>
-                
+
                 <select value="" class="txt-kor write-sort">
                     <option value="" checked>소분류전체</option>
                     <option value="sofa">SOFA</option>
@@ -931,65 +913,218 @@
                     <option value="lighting">LIGHTING</option>
                     <option value="etc">ETC</option>
                 </select>
-                
-                
+
+
                 <textarea class="txt-kor write-content" placeholder="리뷰 내용을 작성해주세요.">
                 </textarea>
             </div>
-            
-            
+
+
             <div class="add-file-wrap">
-               <div class="add-file-top">
-                     <p class="txt-kor add-file-title">파일첨부</p>
-                
+                <div class="add-file-top">
+                    <p class="txt-kor add-file-title">파일첨부</p>
+
                     <a href="#none">
                         <p class="txt-kor-light delete-file">삭제하기</p>
                     </a>
                 </div>
-                
-                
+
+
                 <div class="add-file-category">
                     <input type="checkbox">
-                    
+
                     <p class="txt-kor-light add-file-name">파일명</p>
-                    
-                    
+
+
                     <p class="txt-kor-light add-file-condition">업로드상태</p>
                     <p class="txt-kor-light add-file-capacity">용량</p>
                 </div>
-                
+
                 <div class="add-myfile">
                     <input type="checkbox">
-                    
+
                     <p class="txt-kor-light add-file-name">screenshot20211023.jpg</p>
-                    
-                    
+
+
                     <p class="txt-kor-light add-file-condition">전송상태</p>
                     <p class="txt-kor-light add-file-capacity">315KB</p>
                 </div>
             </div>
-            
+
             <div class="write-posting-button-wrap">
                 <a href="review-list.html">
                     <p class="txt-kor go-to-list">목록보기</p>
                 </a>
-                
-                 <a href="#none">
+
+                <a href="#">
                     <p class="txt-kor go-to-save">저장하기</p>
                 </a>
             </div>
 
         </div>
     </div>
+
+
+
+    <!-- 저장하기 -->
+    <div id="save">
+        <div class="save-bg"></div>
+
+        <div class="save-wrap">
+            <a href="#none">
+                <img src="../plantlance-image/icon/close-black.png" alt="close" class="save-close-button">
+            </a>
+            <p class="txt-kor-bold save-title">리뷰를 저장하시겠습니까?</p>
+            <p class="txt-kor-light save-txt">리뷰 저장 전 상품의 평점을 등록해주세요.</p>
+
+            <p class="txt-kor-light evaluation-number">0.0</p>
+
+            <p class="evaluation-star"> ☆ ☆ ☆ ☆ ☆ </p>
+
+            <a href="review-list.html ">
+                <p class="txt-kor save-button">저장하기</p>
+            </a>
+        </div>
+    </div>
+    <!-- //저장하기 -->
+
+
+
+    <!-- 상품 선택 -->
+    <div id="choice-product">
+        <div class="save-bg"></div>
+
+        <div class="choice-product-wrap">
+            <a href="#none">
+                <img src="../plantlance-image/icon/close-black.png" alt="close" class="choice-product-close-button">
+            </a>
+            <p class="txt-kor-bold choice-product-title">리뷰상품 선택</p>
+
+            <div class="setting-date">
+                <input type="date" id="currentDate" class="txt-kor-light" />
+                <p class="txt-kor wave">~</p>
+                <input type="date" id="currentDate1" class="txt-kor-light" />
+                <a href="#none">
+                    <p class="txt-kor-light find-date">조회하기</p>
+                </a>
+            </div>
+            
+            <div class="choice-product-mylist">
+                <div class="choice-product-category">
+                    <input type="checkbox">
+                    
+                    <p class="txt-kor-light">상품이미지</p>
+                    <p class="txt-kor-light">상품정보</p>
+                    <p class="txt-kor-light">판매가</p>
+                    <p class="txt-kor-light">구매일자</p>
+                </div>
+                
+                
+                <div class="product-mylist">
+                    <input type="checkbox">
+                    
+                    <div class="mylist-img">
+                        
+                    </div>
+                    
+                    <div class="mylist-info-wrap">
+                        <p class="txt-kor">WILY TABLE(FENIX)</p>
+                        <p class="txt-kor-light">옵션 : A / Silver / Round / 600 X 600 / Shade Blue</p>
+                    </div>
+                    
+                    <p class="txt-kor-light product-mylist-price">300,300원</p>
+                    <p class="txt-kor-light product-mylist-date">2021.10.01</p>
+                </div>
+                
+                 <div class="product-mylist">
+                    <input type="checkbox">
+                    
+                    <div class="mylist-img">
+                        
+                    </div>
+                    
+                    <div class="mylist-info-wrap">
+                        <p class="txt-kor">WILY TABLE(FENIX)</p>
+                        <p class="txt-kor-light">옵션 : A / Silver / Round / 600 X 600 / Shade Blue</p>
+                    </div>
+                    
+                    <p class="txt-kor-light product-mylist-price">300,300원</p>
+                    <p class="txt-kor-light product-mylist-date">2021.10.01</p>
+                </div>
+                
+                 <div class="product-mylist">
+                    <input type="checkbox">
+                    
+                    <div class="mylist-img">
+                        
+                    </div>
+                    
+                    <div class="mylist-info-wrap">
+                        <p class="txt-kor">WILY TABLE(FENIX)</p>
+                        <p class="txt-kor-light">옵션 : A / Silver / Round / 600 X 600 / Shade Blue</p>
+                    </div>
+                    
+                    <p class="txt-kor-light product-mylist-price">300,300원</p>
+                    <p class="txt-kor-light product-mylist-date">2021.10.01</p>
+                </div>
+                
+                
+                
+                <a href="#none">
+                    <p class="txt-kor success-choice">선택완료</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- //상품 선택 -->
     <!-- //글쓰기 -->
 
 
 
 
+    <script>
+        $(document).ready(function() {
 
+            $(".go-to-save").click(function() {
+                $("#save").css("display", "block");
 
+                $("body").css("overflow", "hidden");
+            });
 
+            $(".save-close-button").click(function() {
+                $("#save").css("display", "none");
 
+                $("body").css("overflow-y", "scroll");
+            });
+            
+            
+            $(".change-product-button").click(function(){
+               $("#choice-product").css("display","block");
+                
+                $("body").css("overflow","hidden");
+            });
+            
+            $(".choice-product-close-button").click(function(){
+               $("#choice-product").css("display","none");
+                
+                $("body").css("overflow","scroll");
+            });
+            
+            
+            $(".success-choice").click(function(){
+               $("#choice-product").css("display","none");
+                
+                $("body").css("overflow","scroll");
+            });
+        });
+    </script>
+
+    <script>
+        document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);
+
+        document.getElementById('currentDate1').value = new Date().toISOString().substring(0, 10);
+    </script>
 
 
 

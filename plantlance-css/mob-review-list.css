@@ -150,18 +150,20 @@ li {
     width: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .review-title {
     position: relative;
-    float: left;
     width: auto;
     font-size: 16px;
     margin-right: 10px;
 }
 
 .review-title:nth-child(2) {
-    font-size: 14px;
+    position: relative;
+    font-size: 13px;
+    margin-right: 0;
 }
 
 

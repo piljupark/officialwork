@@ -811,3 +811,30 @@ li {
 
 
 
+
+
+
+
+
+
+
+
+
+@media screen and ( min-width: 1025px ){
+    #write-posting{
+        display: none;
+    }
+    
+    #save{
+        display: none!important;
+    }
+    
+    #choice-product{
+        display: none!important;
+    }
+}
+
+
+
+
+

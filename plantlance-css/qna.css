@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Light.otf");
+    font-family: "Pretendard-Light";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Light.ttf");
+    font-family: "Urbanist-Light";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+
+
+
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Regular";
+}
+
+.txt-kor-light {
+    font-family: "Pretendard-Light";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#qna-whole {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    margin-top: 150px;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+.title-wrap {
+    position: relative;
+    float: left;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qna-title {
+    position: relative;
+    float: left;
+    width: auto;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.qna-title:nth-child(2) {
+    font-size: 14px;
+}
+
+
+
+
+ 
+
+
+
+/* qna-search-wrap */
+.qna-search-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    border:1px solid #2f2f2f;
+     padding:20px; 
+    box-sizing: border-box;
+}
+.qna-search-box{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+}
+.qna-search {
+    position: relative;
+    width: 90%;
+    padding: 13px 0;
+    background: #f0f0f0;
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.qna-search input[type="text"] {
+    position: relative;
+    width: 90%;
+    box-sizing: border-box;
+    float: right;
+    background: none;
+    border: none;
+    font-size: 13px;
+    outline: none;
+    padding-right: 30px;
+}
+
+.qna-search .qna-search-img {
+    position: relative;
+    float: left;
+    width: 13px;
+    height: 13px;
+    top: 3px;
+    margin-right: 10px;
+    opacity: .6;
+    margin-left:20px;
+
+}
+
+.qna-search-button {
+    position: relative;
+    width: 50px;
+    background: #2f2f2f;
+    padding: 13px 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+/* qna-mostly-question-wrap */
+.qna-mostly-question-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    box-sizing: border-box;
+    margin-top:30px;
+}
+.qna-mostly-question-wrap .qna-mostly-question-title{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+}
+
+.qna-mostly-question{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mostly-question{
+    position: relative;
+    width:25%;
+    height: 330px;
+    background: #f0f0f0;
+    margin-right:10px;
+    box-sizing: border-box;
+    padding:10px;
+}
+.mostly-question:nth-last-child(1){
+    margin-right: 0;
+}
+.mostly-question .title-img{
+    position: absolute;
+    float:left;
+    width:45px;
+    top:30px;
+    left:50%;
+    transform: translate(-50%);
+    opacity: .2;
+}
+.mostly-question:nth-child(1) .title-img{
+    width:35px;
+}
+
+
+.mostly-question-title-wrap{
+    position:relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+
+.arrow-down-img{
+    position: relative;
+    float:left;
+    width:13px;
+    margin-top:20px;
+    left:50%;
+    transform: translate(-50%);
+    opacity: .6;
+}
+
+.mostly-question-txt-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    
+}
+.mostly-question-txt-wrap .center-number{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+.mostly-question-txt-wrap .address-info{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 12px;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+.mostly-question-txt-wrap .furniture-size-info{
+    position: relative;
+    float:left;
+    width:100%;
+    max-width:260px;
+    font-size: 12px;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+
+.center-time{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+
+    align-items: center;
+}
+.center-time p:nth-child(n+2):nth-child(-n+3){
+    margin-left:4px;
+    opacity: .6;
+    font-size: 11px;
+}
+.center-time .mon-off{
+    color:#2374B4;
+}
+
+
+
+
+.furniture-size-way-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.furniture-size-way-wrap p:nth-child(2){
+    margin-left:3px;
+    font-size: 11px;
+}
+.furniture-size-way-img{
+    position: relative;
+    float:left;
+    width:80px;
+    left:50%;
+    transform: translate(-50%);
+    margin-top:25px;
+}
+
+
+
+
+.exchange-info2{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 10px;
+    margin-top:25px;
+    background: #e9e9e9;
+    left:50%;
+    transform: translate(-50%);
+}
+
+/* //qna-mostly-question-wrap */
+
+
+
+
+/* //review-search-wrap */
+
+
+
+
+
+
+
+
+/* contents-sort */
+.contents-sort {
+    position:relative;
+    float:right;
+}
+
+.contents-sort-wrap {
+    position: relative;
+    float: left;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:50px;
+}
+
+.contents-sort-wrap select {
+    position: relative;
+    margin: 0 5px;
+    margin-right:0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../plantlance-image/icon/arrow-down2.png') no-repeat 90% 50% #fff;
+    padding: 4px 20px;
+    background-size: 8px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.contents-sort-wrap select::-ms-expand {
+    display: none;
+}
+
+/* //contents-sort */
+
+
+
+
+@media screen and ( max-width:1024px ){
+    
+    #qna-whole{
+        display: none;
+    }
+}
+
+
+

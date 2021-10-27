@@ -374,6 +374,7 @@ li {
     position: relative;
     float: left;
     width: 100%;
+    padding-bottom: 150px;
 }
 
 
@@ -407,15 +408,50 @@ li {
     float: left;
     width: 100%;
     height: auto;
-    padding: 5px 20px;
-    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 20px;
     box-sizing: border-box;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.add-file-name-title{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 10px;
+}
+.add-file-name{
+    position: relative;
+    float:left;
+    width:auto;
+    font-size: 11px;
+    margin-left:0;
+}
 
+
+.add-myfile  .myfile-delete{
+    position: relative;
+    float:right;
+    font-size: 11px;
+    border:1px solid #4f4f4f;
+    padding: 3px 13px;
+    border-radius: 5px;
+    
+}
+
+
+
+.mob-add-myfile-button{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    padding:13px 0;
+    background: #909090;
+    color:#fff;
+    font-size: 12px;
+}
 /* //add-file-wrap */
 
 
@@ -586,15 +622,16 @@ li {
 
 .choice-product-wrap {
     position: fixed;
-    width: 650px;
+    width:320px;
     height: 480px;
     background: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    padding: 40px;
+    padding: 10px;
     z-index: 101;
+    padding-top:40px;
 }
 .choice-product-close-button {
     position: absolute;
@@ -619,8 +656,12 @@ li {
     box-sizing: border-box;
     padding:5px;
     cursor: pointer;
-    
+    font-size: 10px;
 }
+.choice-product-wrap input[type="date"]::-webkit-calendar-picker-indicator { 
+    padding:0;
+    margin-left:0;
+} 
 
 .setting-date{
     position: relative;
@@ -630,17 +671,26 @@ li {
     align-items: center;
     margin-top:30px;
 }
+
 .setting-date .wave{
     position: relative;
     margin: 0 10px;
 }
 .find-date{
-    position: relative;
+    position: absolute;
+    width:20px;
     margin-left:10px;
-    border:1px solid #4f4f4f;
-    padding:6px 10px;
-    top:-1px;
+    padding:5px 10px;
+    top:1px;
+    font-size: 11px;
+    right:0;
+    background: #909090;
+    color:#fff;
 }
+
+
+
+
 
 
 .choice-product-mylist{
@@ -661,22 +711,10 @@ li {
     font-size: 12px;
     display: flex;
     align-items: center;
-}
-.choice-product-category input[type="checkbox"]{
-    width:10px;
-    padding:0;
-     margin-right: 20px;
+    justify-content: space-between;
+    font-size: 10px;
 }
 
-.choice-product-category p:nth-child(2){
-    width:100px;
-}
-.choice-product-category p:nth-child(3){
-    width:200px;
-}
-.choice-product-category p:nth-child(4){
-    width:130px;
-}
 
 
 
@@ -684,30 +722,38 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 5px;
     border-bottom: 1px solid #f0f0f0;
     box-sizing: border-box;
     font-size: 12px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
+    
+
     
 }
 .product-mylist input[type="checkbox"]{
+    position: relative;
+    float:left;
     width:10px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .mylist-img{
+    position: relative;
+    float:left;
     width:50px;
     height: 50px;
     background: #eee;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .mylist-info-wrap{
     position: relative;
     float:left;
-    width:200px;
+    width:150px;
     
 }
 .mylist-info-wrap p{
@@ -720,17 +766,22 @@ li {
     overflow: hidden;
 }
 .mylist-info-wrap p:nth-child(1){
-    margin-bottom: 20px;
+    font-size: 11px;
 }
-
-
+.mylist-info-wrap p:nth-child(2){
+    font-size: 10px;
+    margin-top:3px;
+}
 .product-mylist-price{
     position: relative;
-    width:130px;
+    width:50px;
+    font-size: 10px;
+    margin-top:10px;
 }
 
 .product-mylist-date{
     position: relative;
+    font-size: 10px;
 }
 
 
@@ -741,6 +792,7 @@ li {
     color:#fff;
     padding:10px 19px;
     margin-top:20px;
+    font-size: 11px;
 }
 
 

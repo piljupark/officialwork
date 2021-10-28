@@ -148,9 +148,9 @@ li {
 .title-wrap {
     position: relative;
     float: left;
-    width: auto;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .qna-title {
@@ -515,8 +515,17 @@ li {
     
     font-size: 13px;
 }
+
 .contents-qna-important{
     background: #e0e0e0;
+}
+
+.contents-qna .go-to-post{
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 100%;
+    z-index: 2;
 }
 .contents-qna .type{
     width:40px;
@@ -531,7 +540,7 @@ li {
     color:#fff;
     margin-right:33px;
 }
-.contents-qna p:nth-child(2){
+.contents-qna .sort{
     width:40px;
     margin-right: 70px;
 }
@@ -539,14 +548,25 @@ li {
 .contents-qna .show-contents{
     width:100%;
 }
-.contents-qna p:nth-child(4){
+.contents-qna .writer{
     width:250px;
 }
-.contents-qna p:nth-child(5){
+.contents-qna .date{
     width:150px;
 }
-/* //contents-qna */
 
+
+.write-qna{
+    position: relative;
+    float:right;
+    width:auto;
+    margin-top:20px;
+    padding:10px 20px;
+    color:#fff;
+    background: #2f2f2f;
+}
+/* //contents-qna */
+ 
 
 
 

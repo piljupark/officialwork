@@ -15,59 +15,11 @@
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/write-posting.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/write-qna.css">
 
 
 
 
-
-
-
-
-
-    <script>
-        // 리뷰 글 보기 (팝업)
-
-        $(document).ready(function() {
-
-            $(".go-to-contents").click(function() {
-                $(".contents-popup-bg").css("display", "block");
-
-                $(".mob-contents-popup-wrap").css("visibility", "visible");
-            });
-
-
-
-            $(".contents-popup-close-button").click(function() {
-                $(".contents-popup-bg").css("display", "none");
-
-                $(".mob-contents-popup-wrap").css("visibility", "hidden");
-            });
-
-
-
-
-            $(".mob-contents-popup-similar").click(function() {
-                $(".contents-similar-popup").css("visibility", "visible");
-
-                $(".mob-contents-popup-wrap").css("visibility", "hidden");
-            });
-
-
-
-            $(".contents-similar-popup .contents-popup-close-button").click(function() {
-                $(".contents-popup-bg").css("display", "none");
-
-                $(".mob-contents-popup-wrap").css("visibility", "hidden");
-
-                $(".contents-similar-popup").css("visibility", "hidden");
-            });
-
-
-
-
-        });
-    </script>
 
 
 
@@ -848,71 +800,53 @@
     <div id="write-posting">
         <div class="write-posting-wrap">
             <p class="txt-kor-bold write-title">
-                REVIEW
+                Q &amp; A
             </p>
 
             <input type="text" class="txt-kor customer-write-title" placeholder="글의 제목을 작성해주세요">
 
-            <div class="product-select-wrap">
-                <p class="txt-kor product-select-title">상품선택</p>
+            <div class="posting-type-wrap">
 
-                <div class="product-select-category">
-                    <p class="txt-kor-light">상품이미지</p>
-                    <p class="txt-kor-light">상품명</p>
-                    <p class="txt-kor-light">옵션</p>
-                    <p class="txt-kor-light">구매일자</p>
+
+                <label for="product" class="post-type">
+                    <input type="radio" name="post-type" id="product">
+                    <p class="txt-kor">상품문의</p>
+                </label>
+
+                <label for="delivery" class="post-type">
+                    <input type="radio" name="post-type" id="delivery">
+                    <p class="txt-kor">배송문의</p>
+                </label>
+
+                <label for="payment" class="post-type">
+                    <input type="radio" name="post-type" id="payment">
+                    <p class="txt-kor">결제문의</p>
+                </label>
+
+                <label for="etc" class="post-type">
+                    <input type="radio" name="post-type" id="etc">
+                    <p class="txt-kor">기타문의</p>
+                </label>
+
+
+
+                <div class="show-or-not-wrap">
+                    <p class="txt-kor show-or-not-title">비공개</p>
+
+                    <label class="switch">
+                        <input type="checkbox" onclick="toggle(this)">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
 
-                <div class="product-select-myproduct">
-                    <div class="myproduct-img">
-
-                    </div>
-
-                    <div class="myproduct-title-wrap">
-                        <p class="txt-kor myproduct-title">WILY TABLE (FENIX)</p>
-
-                        <a href="#none">
-                            <p class="txt-kor-light change-product-button">변경</p>
-                        </a>
-                    </div>
-
-                    <p class="txt-kor myproduct-option">A / Silver / Round / 600 X 600 / Shade Blue</p>
-
-                    <p class="txt-kor myproduct-date">
-                        2021.10.01
-                    </p>
-                </div>
-
-                <p class="txt-kor-light myproduct-notice">
-                    * 변경버튼을 눌러 직접 상품을 선택하시지 않는 경우 가장 최근에 구매하신 상품과 옵션으로 자동 선택됩니다. 가장 최근 구매하신 상품이 아닌 구매하신 상품에 대한 리뷰를 작성하시려면 변경하기를 눌러 상품을 선택해주세요.
-                </p>
             </div>
 
 
 
 
+
+
             <div class="write-content-wrap">
-                <p class="txt-kor write-content-title">
-                    상품분류
-                </p>
-
-                <select value="" class="txt-kor write-sort">
-                    <option value="" checked>대분류전체</option>
-                    <option value="furniture">FURNITURE</option>
-                    <option value="planterior">PLANTERIOR</option>
-                    <option value="kitchen">KITCHEN</option>
-                    <option value="interior">INTERIOR</option>
-                </select>
-
-                <select value="" class="txt-kor write-sort">
-                    <option value="" checked>소분류전체</option>
-                    <option value="sofa">SOFA</option>
-                    <option value="table">TABLE</option>
-                    <option value="chair">CHAIR</option>
-                    <option value="stool">STOOL</option>
-                    <option value="lighting">LIGHTING</option>
-                    <option value="etc">ETC</option>
-                </select>
 
 
                 <textarea class="txt-kor write-content" placeholder="리뷰 내용을 작성해주세요.">
@@ -952,11 +886,11 @@
             </div>
 
             <div class="write-posting-button-wrap">
-                <a href="review-list.html">
+                <a href="qna.html">
                     <p class="txt-kor go-to-list">목록보기</p>
                 </a>
 
-                <a href="review-list.html">
+                <a href="qna.html">
                     <p class="txt-kor go-to-save">저장하기</p>
                 </a>
             </div>
@@ -965,166 +899,16 @@
     </div>
 
 
-
-    <!-- 저장하기 -->
-    <div id="save">
-        <div class="save-bg"></div>
-
-        <div class="save-wrap">
-            <a href="#none">
-                <img src="../plantlance-image/icon/close-black.png" alt="close" class="save-close-button">
-            </a>
-            <p class="txt-kor-bold save-title">리뷰를 저장하시겠습니까?</p>
-            <p class="txt-kor-light save-txt">리뷰 저장 전 상품의 평점을 등록해주세요.</p>
-
-            <p class="txt-kor-light evaluation-number">0.0</p>
-
-            <p class="evaluation-star"> ☆ ☆ ☆ ☆ ☆ </p>
-
-            <a href="review-list.html ">
-                <p class="txt-kor save-button">저장하기</p>
-            </a>
-        </div>
-    </div>
-    <!-- //저장하기 -->
-
-
-
-    <!-- 상품 선택 -->
-    <div id="choice-product">
-        <div class="save-bg"></div>
-
-        <div class="choice-product-wrap">
-            <a href="#none">
-                <img src="../plantlance-image/icon/close-black.png" alt="close" class="choice-product-close-button">
-            </a>
-            <p class="txt-kor-bold choice-product-title">리뷰상품 선택</p>
-
-            <div class="setting-date">
-                <input type="date" id="currentDate" class="txt-kor-light" />
-                <p class="txt-kor wave">~</p>
-                <input type="date" id="currentDate1" class="txt-kor-light" />
-                <a href="#none">
-                    <p class="txt-kor-light find-date">조회하기</p>
-                </a>
-            </div>
-            
-            <div class="choice-product-mylist">
-                <div class="choice-product-category">
-                    <input type="checkbox">
-                    
-                    <p class="txt-kor-light">상품이미지</p>
-                    <p class="txt-kor-light">상품정보</p>
-                    <p class="txt-kor-light">판매가</p>
-                    <p class="txt-kor-light">구매일자</p>
-                </div>
-                
-                
-                <div class="product-mylist">
-                    <input type="checkbox">
-                    
-                    <div class="mylist-img">
-                        
-                    </div>
-                    
-                    <div class="mylist-info-wrap">
-                        <p class="txt-kor">WILY TABLE(FENIX)</p>
-                        <p class="txt-kor-light">옵션 : A / Silver / Round / 600 X 600 / Shade Blue</p>
-                    </div>
-                    
-                    <p class="txt-kor-light product-mylist-price">300,300원</p>
-                    <p class="txt-kor-light product-mylist-date">2021.10.01</p>
-                </div>
-                
-                 <div class="product-mylist">
-                    <input type="checkbox">
-                    
-                    <div class="mylist-img">
-                        
-                    </div>
-                    
-                    <div class="mylist-info-wrap">
-                        <p class="txt-kor">WILY TABLE(FENIX)</p>
-                        <p class="txt-kor-light">옵션 : A / Silver / Round / 600 X 600 / Shade Blue</p>
-                    </div>
-                    
-                    <p class="txt-kor-light product-mylist-price">300,300원</p>
-                    <p class="txt-kor-light product-mylist-date">2021.10.01</p>
-                </div>
-                
-                 <div class="product-mylist">
-                    <input type="checkbox">
-                    
-                    <div class="mylist-img">
-                        
-                    </div>
-                    
-                    <div class="mylist-info-wrap">
-                        <p class="txt-kor">WILY TABLE(FENIX)</p>
-                        <p class="txt-kor-light">옵션 : A / Silver / Round / 600 X 600 / Shade Blue</p>
-                    </div>
-                    
-                    <p class="txt-kor-light product-mylist-price">300,300원</p>
-                    <p class="txt-kor-light product-mylist-date">2021.10.01</p>
-                </div>
-                
-                
-                
-                <a href="#none">
-                    <p class="txt-kor success-choice">선택완료</p>
-                </a>
-            </div>
-
-        </div>
-    </div>
-    <!-- //상품 선택 -->
     <!-- //글쓰기 -->
 
 
-
-
-    <script>
-        $(document).ready(function() {
-
-            $(".go-to-save").click(function() {
-                $("#save").css("display", "block");
-
-                $("body").css("overflow", "hidden");
-            });
-
-            $(".save-close-button").click(function() {
-                $("#save").css("display", "none");
-
-                $("body").css("overflow-y", "scroll");
-            });
-            
-            
-            $(".change-product-button").click(function(){
-               $("#choice-product").css("display","block");
-                
-                $("body").css("overflow","hidden");
-            });
-            
-            $(".choice-product-close-button").click(function(){
-               $("#choice-product").css("display","none");
-                
-                $("body").css("overflow","scroll");
-            });
-            
-            
-            $(".success-choice").click(function(){
-               $("#choice-product").css("display","none");
-                
-                $("body").css("overflow","scroll");
-            });
-        });
+<script>
+    function toggle(element){
+        console.log(element.checked);
+    }
     </script>
 
-    <script>
-        document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);
 
-        document.getElementById('currentDate1').value = new Date().toISOString().substring(0, 10);
-    </script>
 
 
 

@@ -425,6 +425,14 @@ li {
 .contents-important{
     background: #efefef;
 }
+
+.contents .go-to-post{
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+}
 .contents .contents-type{
     position: relative;
     width:auto;

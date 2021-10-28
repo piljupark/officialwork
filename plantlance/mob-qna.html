@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/qna.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/mob-qna.css">
 
 
 
@@ -825,200 +825,124 @@
                 <p class="txt-kor-bold qna-mostly-question-title">자주 묻는 질문 </p>
 
                 <div class="qna-mostly-question">
-                    <div class="mostly-question">
-                        <img src="../plantlance-image/icon/center-number1.png" alt="center-number" class="center-number-img title-img">
+                    <input type="radio" name="qna" id="center-number">
+                    <input type="radio" name="qna" id="showroom-address">
+                    <input type="radio" name="qna" id="furniture-size">
+                    <input type="radio" name="qna" id="exchange-policy">
 
-                        <div class="mostly-question-title-wrap">
-                            <p class="txt-kor-bold mostly-question-title">고객센터 번호</p>
-                            <p class="txt-kor-light mostly-question-title">가 어떻게 되나요?</p>
-                        </div>
+                    <div class="qna-mostly-question-label-box">
+                        <label for="center-number">
+                            <div class="label-title-wrap">
+                                <p class="txt-kor-bold label-title">고객센터 번호</p>
+                                <p class="txt-kor label-title">가 어떻게 되나요?</p>
 
-                        <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="arrow-down-img">
-
-
-                        <div class="mostly-question-txt-wrap">
-                            <a href="tel:1899-3417">
-                                <p class="txt-kor-bold center-number">1899 - 3417</p>
-                            </a>
-
-                            <div class="center-time">
-                                <p class="txt-kor-bold">Tue - Sat</p>
-                                <p class="txt-kor-light">|</p>
-                                <p class="txt-kor-light">10:00 - 19:00</p>
+                                <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow-down" class="qna-arrow-img qna-arrow-down">
                             </div>
-                            <div class="center-time">
-                                <p class="txt-kor-bold">Sun / Holiday</p>
-                                <p class="txt-kor-light">|</p>
-                                <p class="txt-kor-light">13:00 - 19:00</p>
+
+                            <div class="qna-answer">
+                                <a href="tel:1899-3417">
+                                    <p class="txt-kor-bold call-number">
+                                        1899-3417
+                                    </p>
+                                </a>
+
+                                <div class="time-wrap time-wrap1">
+                                    <p class="txt-kor-bold">Tue - Sat</p>
+                                    <p class="txt-kor-light">| 10:00 - 19:00</p>
+                                </div>
+
+                                <div class="time-wrap time-wrap2">
+                                    <p class="txt-kor-bold">Sun / Holiday</p>
+                                    <p class="txt-kor-light">| 13:00 - 19:00</p>
+                                    <p class="txt-kor-light">* Mon off</p>
+                                </div>
+
                             </div>
-                            <div class="center-time">
-                                <p class="txt-kor mon-off">* Mon off *</p>
+
+                        </label>
+
+                        <label for="showroom-address">
+                            <div class="label-title-wrap">
+                                <p class="txt-kor-bold label-title">쇼룸 주소</p>
+                                <p class="txt-kor label-title">가 어떻게 되나요?</p>
+
+                                <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow-down" class="qna-arrow-img qna-arrow-down">
+
                             </div>
-                        </div>
-                    </div>
 
+                            <div class="qna-answer">
+                                <p class="txt-kor answer">
+                                    플랜트란스는 전국적으로 6개의 지점이 분포해 있으며 본사 쇼룸은 '대구 달서구 진천로 18길 30'에 위치하고 있습니다.
+                                </p>
 
+                                <div class="time-wrap time-wrap1">
+                                    <p class="txt-kor-bold">Tue - Sat</p>
+                                    <p class="txt-kor-light">| 10:00 - 19:00</p>
+                                </div>
 
-                    <div class="mostly-question">
-                        <img src="../plantlance-image/icon/showroom-address1.png" alt="showroom-address" class="showroom-address-img title-img">
+                                <div class="time-wrap time-wrap2">
+                                    <p class="txt-kor-bold">Sun / Holiday</p>
+                                    <p class="txt-kor-light">| 13:00 - 19:00</p>
+                                    <p class="txt-kor-light">* Mon off</p>
+                                </div>
 
-                        <div class="mostly-question-title-wrap">
-                            <p class="txt-kor-bold mostly-question-title">쇼룸주소</p>
-                            <p class="txt-kor-light mostly-question-title">가 어떻게 되나요?</p>
-                        </div>
-
-                        <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="arrow-down-img">
-
-
-
-                        <div class="mostly-question-txt-wrap">
-
-                            <p class="txt-kor address-info"> 플랜트란스는 전국적으로 6개의 지점이 분포해 있으며<br> 본사 쇼룸은 '대구 달서구 진천로 18길 30'에<br> 위치하고 있습니다.</p>
-
-
-                            <div class="center-time">
-                                <p class="txt-kor-bold">Tue - Sat</p>
-                                <p class="txt-kor-light">|</p>
-                                <p class="txt-kor-light">10:00 - 19:00</p>
                             </div>
-                            <div class="center-time">
-                                <p class="txt-kor-bold">Sun / Holiday</p>
-                                <p class="txt-kor-light">|</p>
-                                <p class="txt-kor-light">13:00 - 19:00</p>
+                        </label>
+
+                        <label for="furniture-size">
+                            <div class="label-title-wrap">
+                                <p class="txt-kor-bold label-title">가구 사이즈</p>
+                                <p class="txt-kor label-title">는 어떻게 측정하나요?</p>
+
+                                <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow-down" class="qna-arrow-img qna-arrow-down">
+
                             </div>
-                            <div class="center-time">
-                                <p class="txt-kor mon-off">* Mon off *</p>
+
+
+                            <div class="qna-answer">
+                                <p class="txt-kor answer">
+                                    W x D x H ( 너비 X 깊이 X 높이 ) <br>
+                                    순으로 측정하며, 단위는 mm입니다.<br>
+                                    실제 사이즈와 약간의 오차가 있을 수 있습니다.
+                                </p>
+                                
+                                <img src="../plantlance-image/icon/furniture-size-way.png" alt="furniture-size-way" class="furniture-size-way-img">
                             </div>
-                        </div>
-                    </div>
+                        </label>
 
+                        <label for="exchange-policy">
+                            <div class="label-title-wrap">
+                                <p class="txt-kor-bold label-title">교환/반품 정책</p>
+                                <p class="txt-kor label-title">은 어떻게 되나요?</p>
 
-
-
-                    <div class="mostly-question">
-                        <img src="../plantlance-image/icon/furniture-size1.png" alt="furniture-size" class="furniture-size-img title-img">
-
-                        <div class="mostly-question-title-wrap">
-                            <p class="txt-kor-bold mostly-question-title">가구 사이즈</p>
-                            <p class="txt-kor-light mostly-question-title">는 어떻게 측정하나요?</p>
-                        </div>
-
-                        <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="arrow-down-img">
-
-
-
-                        <div class="mostly-question-txt-wrap">
-                            <div class="furniture-size-way-wrap">
-                                <p class="txt-kor-bold">W x D x H</p>
-                                <p class="txt-kor-light">( 너비 x 깊이 x 높이 )</p>
+                                <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow-down" class="qna-arrow-img qna-arrow-down">
                             </div>
-                            <p class="txt-kor"> 순으로 측청하며, 단위는 mm입니다.<br>실제 사이즈와 약간의 오차가 있을 수 있습니다.</p>
                             
-                            <img src="../plantlance-image/icon/furniture-size-way.png" alt="furniture-size-way" class="furniture-size-way-img">
-                        </div>
+                            <div class="qna-answer">
+                                <p class="txt-kor answer">
+                                   주문취소는 당일 기준으로 유선상 문의를 주시는 분에 한해서만 가능하며, 교환 및 반품은 제품 수령시 제품하자가 있을 경우 당일에 한해서만 가능합니다.
+                                </p>
+                                
+                                
+                                <p class="txt-kor-light answer">자세한 내용은 A/S &amp; 교환/반품 글을 참고해주세요</p>
+                            </div>
+                        </label>
                     </div>
-
-
-
-
-                    <div class="mostly-question">
-                        <img src="../plantlance-image/icon/exchange-policy1.png" alt="exchange-policy" class="exchange-policy-img title-img">
-
-                        <div class="mostly-question-title-wrap">
-                            <p class="txt-kor-bold mostly-question-title">교환/반품 정책</p>
-                            <p class="txt-kor-light mostly-question-title">은 어떻게 되나요?</p>
-                        </div>
-
-                        <img src="../plantlance-image/icon/arrow-down2.png" alt="arrow" class="arrow-down-img">
-                        
-                        
-                        
-                        <div class="mostly-question-txt-wrap">
-
-                            <p class="txt-kor exchange-info"> 주문취소는 당일 기준으로 <br>유선상 문의를 주시는 분에 한해서만 가능하며, <br> 교환 및 반품은 제품 수령시 제품하자가 있을 경우<br>당일에 한해서만 가능합니다.</p>
-
-
-                            <p class="txt-kor exchange-info exchange-info2">
-                                자세한 사항은 A/S &amp; 교환/반품 글을 참고해주세요.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
+                </div>
             </div>
         </div>
 
 
 
-        
+
         <div class="contents-wrap">
-           <p class="txt-kor-bold contents-title">
-               총 17 건의 글이 있습니다.
-           </p>
-            <div class="contents-sort-wrap">
-                <select class="txt-kor-light sort sort2">
-                    <option value="" checked class="txt-kor-light">전체</option>
-                    <option value="sofa" class="txt-kor-light">제목</option>
-                    <option value="table" class="txt-kor-light">내용</option>
-                    <option value="chair" class="txt-kor-light">작성자</option>
-                </select>
+            <p class="txt-kor-bold contents-title">
+                총 5 건의 글이 있습니다.
+            </p>
 
-                <select class="txt-kor-light sort sort3">
-                    <option value="" checked class="txt-kor-light">최근 등록순</option>
-                    <option value="sofa" class="txt-kor-light">오래된순</option>
-                    <option value="table" class="txt-kor-light">조회순</option>
-                </select>
-            </div>
         </div>
-        
-        
-        <div class="contents-category">
-            <p class="txt-kor">NO</p>
-            <p class="txt-kor">분류</p>
-            <p class="txt-kor">제목</p>
-            <p class="txt-kor">작성자</p>
-            <p class="txt-kor">작성일</p>
-        </div>
-        
-        
-        <div class="contents-qna contents-qna-important">
-            <p class="txt-kor type">중요</p>
-            <p class="txt-kor-bold">안내</p>
-            <a href="#none" class="show-contents">
-                <p class="txt-kor-bold">제품 / 결제 관련 안내</p>
-             </a>
-            <p class="txt-kor-bold">플랜트란스</p>
-            <p class="txt-kor-light">2021.09.15</p>
-        </div>
-        
-        <div class="contents-qna contents-qna-important">
-            <p class="txt-kor type">중요</p>
-            <p class="txt-kor-bold">안내</p>
-            <a href="#none" class="show-contents">
-            <p class="txt-kor-bold">배송 관련 안내</p>
-            </a>
-            <p class="txt-kor-bold">플랜트란스</p>
-            <p class="txt-kor-light">2021.09.15</p>
-        </div>
-        
-        <div class="contents-qna contents-qna-important">
-            <p class="txt-kor type">중요</p>
-            <p class="txt-kor-bold">안내</p>
-            <a href="#none" class="show-contents">
-                <p class="txt-kor-bold">A/S &amp; 교환/반품 관련 안내</p>
-            </a>
-            <p class="txt-kor-bold">플랜트란스</p>
-            <p class="txt-kor-light">2021.09.15</p>
-        </div>
-        
-        <div class="contents-qna">
-            <p class="txt-kor type">1</p>
-            <p class="txt-kor">문의</p>
-            <a href="#none" class="show-contents">
-                <p class="txt-kor">배송 관련 문의 드립니다.</p>
-            </a>
-            <p class="txt-kor">abc123</p>
-            <p class="txt-kor-light">2021.09.15</p>
-        </div>
+
+
     </div>
     <!-- //문의사항 -->
 

@@ -33,18 +33,22 @@
     src: url("../fonts/Urbanist-Light.ttf");
     font-family: "Urbanist-Light";
 }
+
 @font-face {
     src: url("../fonts/Urbanist-Regular.ttf");
     font-family: "Urbanist-Regular";
 }
+
 @font-face {
     src: url("../fonts/Urbanist-Medium.ttf");
     font-family: "Urbanist-Medium";
 }
+
 @font-face {
     src: url("../fonts/Urbanist-SemiBold.ttf");
     font-family: "Urbanist-SemiBold";
 }
+
 @font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
     font-family: "Urbanist-ExtraBold";
@@ -102,19 +106,363 @@ li {
 
 
 
-#bespoke-whole{
+#bespoke-whole {
     position: relative;
-    float:left;
-    width:100%;
-    height:100vh;
+    float: left;
+    width: 100%;
+    height: 100vh;
     box-sizing: border-box;
+}
+
+
+.bespoke-main {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.bespoke-main .bespoke-main-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 100px;
+    font-family: "Urbanist-SemiBold";
+}
+
+.bespoke-main-arrow-img {
+    position: absolute;
+    width: 40px;
+    bottom: 20px;
+    transform: rotate(90deg);
+}
+
+
+
+/* bespoke-main2 */
+.bespoke-main2 {
+    background: #f8f8f8;
+}
+
+.bespoke-sub-title-wrap {
+    position: absolute;
+    bottom: 150px;
+}
+
+
+.bespoke-sub-title-wrap .join {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.bespoke-sub-title-wrap div {
+    position: relative;
+
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.bespoke-sub-title-wrap div .made-in-you {
+    margin-right: 10px;
+}
+
+
+/* //bespoke-main2 */
+
+
+
+
+
+
+
+
+/* bespoke-main3 */
+.bespoke-main3 {
+    background: #f8f8f8;
+}
+
+.main3-left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 250px;
+}
+
+.main3-title {
+    position: relative;
+    float: left;
+    width: 180px;
+    font-size: 48px;
+}
+
+
+.main3-shape {
+    position: relative;
+    float: left;
+    width: auto;
+    height: 440px;
+    border-right: 1px solid #2f2f2f;
+    transform: rotate(45deg);
+}
+
+.main3-title1 {
+    bottom: 100px;
+}
+
+.main3-title2 {
+    top: 100px;
+    transform: rotate(180deg);
+}
+
+
+
+.main3-right{
+    width:660px;
+}
+
+.main3-right-shape {
+    position: relative;
+    width:auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-items: center;
+    align-content: center;
+    box-sizing: border-box;
 }
 
-#bespoke-whole p{
+.main3-right-shape .shape {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 100%;
+    opacity: .8;
+}
+
+.main3-right-shape .shape1 {
+    background: #4c77aa;
+}
+
+.main3-right-shape .shape2 {
+    background: #7FA193;
+    margin-left: -25px;
+}
+
+.main3-right-shape .shape3 {
+    background: #FFCF7B;
+    margin-left: -25px;
+}
+
+.main3-right-shape .shape4 {
+    background: #0C0C0C;
+    margin-left: -25px;
+    opacity: .6
+}
+
+.main3-right-shape .shape5 {
+    background: #560707;
+    margin-left: -25px;
+}
+
+
+
+.main3-txt-box{
     position: relative;
     float:left;
-
+    width:100%;
+    margin-top:80px;
 }
+
+.main3-txt-box p:nth-child(1) {
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.main3-txt-box p:nth-child(2) {
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2.5;
+}
+.main3-txt-box p:nth-child(3) {
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: left;
+    font-size: 14px;
+}
+/* //bespoke-main3 */
+
+
+
+
+
+
+
+
+
+/* bespoke-main4 */
+
+.bespoke-main4-title-wrap{
+    position: relative;
+    width:100%;
+    max-width: 1400px;
+    min-width: 1400px;
+    box-sizing: border-box;
+    padding:0 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 500px;
+}
+
+.bespoke-main4-title{
+    position: relative;
+    float:left;
+    text-align: left;
+}
+
+.bespoke-main4-title p{
+    font-size: 60px;
+    line-height: 1.5;
+}
+.bespoke-main4-title p:nth-child(2){
+    text-decoration: 3px solid line-through;
+    text-decoration-color: rgba(196,0,0,0.8);
+}
+
+
+.bespoke-main4-title2 p{
+    font-size: 16px;
+    text-align: right;
+    line-height: 2;
+}
+
+.bespoke-main4-title2 p:nth-child(2){
+    text-decoration: none;
+    margin-top:30px;
+}
+
+
+
+.go-to-wily-wrap{
+    position: absolute;
+    bottom:280px;
+}
+
+
+.go-to-wily-title{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.go-to-wily-button{
+    position: relative;
+    float:left;
+    width:auto;
+    background: #2f2f2f;
+    color:#fff;
+    padding:15px 100px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+
+/* //bespoke-main4 */
+
+
+
+
+
+
+
+
+
+/* bespoke-main5 */
+.bespoke-main5-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding:0 20px;
+}
+
+.bespoke-main5-img-wrap{
+    position: relative;
+    float:left;
+    width:70%;
+    height: 450px;
+    background: #eee;
+}
+
+
+
+.bespoke-main5-info-wrap{
+    position: relative;
+    float:right;
+    width:23%;
+    height: 450px;
+}
+
+.bespoke-main5-info-title{
+    position: relative;
+    float:left;
+    width:100%;
+    min-width: 310px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.5;
+    top:-10px;
+}
+
+.bespoke-main5-info-title-kor{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+
+.bespoke-main5-info-txt-box{
+    position: relative;
+    float:left;
+    width:310px;
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+    text-align: justify;
+    line-height: 1.5;
+    opacity: .8;
+}
+.bespoke-main5-info-txt-box1{
+    margin-bottom: 30px;
+    margin-top:170px;
+}
+
+
+/* //bespoke-main5 */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 
     <meta charset="UTF-8">
@@ -13,11 +14,29 @@
 
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/mob-pltl.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/contact.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
 
 
+
+<script>
+     $(document).ready(function() {
+         $(".more-open-and-close.open").click(function(){
+             $(".more-open-and-close.open").css("display","none");
+             $(".more-open-and-close.close").css("display","block");
+             
+             $(".more-wrap").css("height","auto");
+         });
+         
+          $(".more-open-and-close.close").click(function(){
+             $(".more-open-and-close.close").css("display","none");
+             $(".more-open-and-close.open").css("display","block");
+             
+             $(".more-wrap").css("height","0");
+         });
+     });
+    </script>
 
 
     <script>
@@ -797,129 +816,130 @@
 
 
 
-    <!-- PLTL -->
+    <!-- CONTACT -->
 
 
-    <div id="mob-pltl-whole">
-        <div class="mob-pltl-main1">
-            <img src="../plantlance-image/pltl/pltl-mob-main2.png" alt="pltl-main" class="mob-pltl-main-img">
+    <div id="contact-whole">
+        <p class="txt-eng-bold contact-title">Would you<br>like to<br>Collaborate?</p>
+
+        <p class="txt-kor-bold contact-txt1">플랜트란스는 언제나 열려있습니다.</p>
+        <p class="txt-kor-light contact-txt2">우리는 자연 친화주의를 바탕으로, 다양한 공간에 대한 끊임없는 <br>고민을 통한 맞춤 솔루션을 제안합니다.</p>
 
 
-            <div class="mob-pltl-main1-txt-wrap">
-                <div class="mob-pltl-main1-txt">
-                    <p class="txt-kor-bold mob-pltl-main1-title">가장<br>사적인<br>비스포크<br>브랜드 .</p>
+        <div class="contact-img-wrap">
+
+        </div>
+
+
+        <div class="collaborate-inquiry">
+            <p class="txt-kor-bold collaborate-inquiry-title">
+                협업 문의
+            </p>
+
+
+            <label>
+                <p class="txt-kor-bold inquiry-category">담당자 이름</p>
+                <input type="text" placeholder="홍길동" class="txt-kor">
+            </label>
+
+            <label>
+                <p class="txt-kor-bold inquiry-category">담당자 연락처</p>
+                <input type="text" placeholder="01012345678" class="txt-kor">
+            </label>
+
+            <label>
+                <p class="txt-kor-bold inquiry-category">담당자 이메일</p>
+                <input type="text" class="txt-kor">
+            </label>
+
+            <textarea placeholder="해당 내용은 플랜트란스 본사로 전달됩니다.
+
+협업을 문의하고자 하는 내용을 양식에 따라 작성해주세요.
+
+문의 등록 시 사업자등록증 파일을 필히 함께 첨부해주세요.
+
+1.  기관 혹은 기업명 :
+
+2. 상담용 메일주소 : 
+
+2. 세금계산서 발행용 메일 주소 :
+
+3. 관련 제품 :
+
+4. 주소 :
+
+-납품 받으실 곳의 주소를 적어주세요.
+
+5. 납품 희망일 :
+
+6. 환경 :
+
+-유의사항 및 특이사항을 적어주세요.
+
+-예 : 엘리베이터 유/무, 진입 관련 유의사항 등
+
+7. 기타  :" class="txt-kor-light"></textarea>
+
+
+
+            <a href="#none" class="more-wrap-button">
+                <p class="txt-kor-bold">파일첨부 및 개인정보 이용 동의</p>
+
+                <p class="txt-kor-light more-open-and-close open">열기</p>
+                <p class="txt-kor-light more-open-and-close close">닫기</p>
+            </a>
+
+
+            <div class="more-wrap">
+                <div class="add-file">
+                    <p class="txt-kor-bold add-file-title">파일첨부</p>
+                    <p class="txt-kor delete-file">삭제하기</p>
+
+                    <div class="add-file-top-category">
+                        <input type="checkbox">
+                        <p class="txt-kor-light">파일명</p>
+                        <p class="txt-kor-light">업로드상태</p>
+                        <p class="txt-kor-light">용량</p>
+                    </div>
+
+                    <div class="add-my-file">
+                        <input type="checkbox">
+                        <p class="txt-kor-light">screenshot2021.jpg</p>
+                        <p class="txt-kor-light">전송완료</p>
+                        <p class="txt-kor-light">315KB</p>
+                    </div>
+                </div>
+
+
+                <div class="admit-privacy">
+                    <p class="txt-kor-bold admit-privacy-title">개인정보 이용 동의</p>
+
+                    <p class="txt-kor-light admit-privacy-info">
+                        개인정보의 수집 및 이용에 대한 안내<br><br>
+
+                        수집 항목 : 이름, 이메일, 전화번호, 직업<br>
+                        수집 목적 : 가맹점 개설상담 접수 및 결과 회신<br>
+                        이용 기간 : 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에 해당 정보를 지체 없이 파기합니다.<br>
+                        단, 관계법령의 규정에 의하여 필요가 있는 경우 일정기간 동안 개인정보를 보관할 수 있습니다.<br><br>
+
+                        그 밖의 사항은 플랜트란스 개인정보취급방침을 준수합니다.<br>
+
+                    </p>
+                    
+                    <div class="admit-privacy-checkbox">
+                        <p class="txt-kor-bold admit-privacy-checkbox-txt">개인정보 수집 및 이용에 동의합니다.</p>
+                        <input type="checkbox">
+                    </div>
                 </div>
             </div>
-
-            <p class="txt-kor-light mob-pltl-main1-bottom-txt">
-                각기 다른 환경과 공간 속에 살아가지만 지금까지의 가구는 그 환경이 다름에도 맞춰
-                주질 않습니다. 플랜트란스는 개인의 취향과 공간을 위한 하나뿐인 가구를 선보입니다.
-            </p>
-        </div>
-
-
-        <div class="mob-pltl-main2">
-            <div class="mob-pltl-main2-txt-box">
-                <p class="txt-kor-bold mob-pltl-main2-title">We are,</p>
-                <p class="txt-kor-light mob-pltl-main2-txt">
-                    플랜트란스는 Plant + Bala nce 로,<br>
-                    자연과의 밸런스의 뜻을 담은<br>
-                    친환경 기업입니다.<br>
-                </p>
-            </div>
-
-
-            <div class="mob-pltl-main2-img-wrap">
-
-            </div>
-        </div>
-
-
-
-        <div class="mob-pltl-main3">
-            <p class="txt-kor-bold mob-pltl-main3-title">
-                무한히 확장하는 가구<br>
-                자원 순환을 위한 가구<br>
-                지속 가능한 가구
-            </p>
-
-            <div class="mob-pltl-main3-img-wrap">
-                <div class="mob-pltl-main3-img mob-pltl-main3-img1"></div>
-                <div class="mob-pltl-main3-img mob-pltl-main3-img2"></div>
-            </div>
-
-            <div class="mob-pltl-main3-txt-wrap">
-                <p class="txt-kor-bold mob-pltl-main3-txt1">
-                    " Plantlance loves planet "
-                </p>
-                <p class="txt-kor-light mob-pltl-main3-txt2">'우리는 패스트 푸드나 패스트 패션과 같이 모든 것이 빠르게 소비되고, 사라지는 시대에 살고 있습니다. 최근, 대두되고 있는 여러 환경문제에 맞서 더 나은 미래를 위한 ‘지속 가능한 가구’를 선보여 동시대의 새로운 선택의 기준이 되겠습니다.</p>
-            </div>
-        </div>
-        
-        
-        
-        
-        <div class="mob-pltl-main4">
-            <p class="txt-kor-bold mob-pltl-main4-title">
-                사는모습 사는공간<br>
-                사람마다 공간마다<br>
-                다르기에<br>
-                가구도<br>
-                달라야 합니다.
-            </p>
-            
-            <div class="mob-pltl-main4-img-wrap">
-                <img src="../plantlance-image/pltl/pltl-mob-sofa.png" alt="all-of-the-sofa">
-            </div>
-            
-            
-            <a href="mob-bespoke.html">
-                <p class="txt-kor mob-go-to-bespoke">
-                    BESPOKE 알아보기
-                    <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow" class="mob-go-to-bespoke-arrow-img">
+            <a href="#none">
+                <p class="txt-kor-bold inquiry-button">
+                    문의하기
                 </p>
             </a>
-            
-            
-            <div class="mob-go-to-bespoke-product-wrap">
-                <p class="txt-kor-bold mob-go-to-bespoke-product-title">
-                    BESPOKE 제품 둘러보기
-                </p>
-                
-                <a href="#none" class="mob-go-to-bespoke-product-button">
-                    <p class="txt-kor-light">
-                        Cloud sofa _ bespoke
-                    </p>
-                    <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow-right" class="mob-go-to-bespoke-product-arrow-img">
-                </a>
-                
-                <a href="#none" class="mob-go-to-bespoke-product-button">
-                    <p class="txt-kor-light">
-                        Café table series
-                    </p>
-                    <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow-right" class="mob-go-to-bespoke-product-arrow-img">
-                </a>
-                
-                <a href="#none" class="mob-go-to-bespoke-product-button">
-                    <p class="txt-kor-light">
-                       Block sofa
-                    </p>
-                    <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow-right" class="mob-go-to-bespoke-product-arrow-img">
-                </a>
-                
-                <a href="#none" class="mob-go-to-bespoke-product-button">
-                    <p class="txt-kor-light">
-                        Flex sofa _ bespoke
-                    </p>
-                    <img src="../plantlance-image/icon/arrow-right2.png" alt="arrow-right" class="mob-go-to-bespoke-product-arrow-img">
-                </a>
-            </div>
         </div>
-
-
-
     </div>
-    <!-- //PLTL -->
+    <!-- //CONTACT -->
 
 
 

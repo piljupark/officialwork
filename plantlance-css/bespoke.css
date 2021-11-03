@@ -1072,3 +1072,16 @@ li {
     right:50px;
 }
 /* bespoke-main10 */
+
+
+
+
+
+
+@media screen and ( max-width:1024px ){
+    
+    #bespoke-whole{
+        display: none;
+    }
+}
+

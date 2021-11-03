@@ -511,4 +511,16 @@ li {
     margin-top:100px;
 }
 /* //pltl-main5 */
+
+
+
+
+@media screen and ( max-width:1024px ){
+    
+    #pltl-whole{
+        display: none;
+    }
+}
+
+
  

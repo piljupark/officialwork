@@ -19,6 +19,30 @@
     <link rel="stylesheet" type="text/css" href="../plantlance-css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/slick.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/slick-theme.css">
+    
+    
+    <script>
+        $(document).ready(function() {
+        $(".mob-cafe-button").click(function(){
+            $(".mob-product7, .mob-product8, .mob-product9, .mob-product10").css("display","none");
+            
+            $(".mob-product1, .mob-product2, .mob-product3, .mob-product4, .mob-product5, .mob-product6").css("display","block");
+        });
+        
+         $(".mob-mate-button").click(function(){
+            $(".mob-product7, .mob-product8, .mob-product9").css("display","block");
+             
+             $(".mob-product1, .mob-product2, .mob-product3, .mob-product4, .mob-product5, .mob-product6,.mob-product10").css("display","none");
+        });
+        
+        $(".mob-muah-button").click(function(){
+            $(".mob-product10").css("display","block");
+             
+             $(".mob-product1, .mob-product2, .mob-product3, .mob-product4, .mob-product5, .mob-product6, .mob-product7, .mob-product8, .mob-product9").css("display","none");
+        });
+            
+            });
+    </script>
 
 
     <script>
@@ -832,26 +856,24 @@
                 </p>
 
                 <!-- 카테고리 버튼 -->
-                <input type="radio" name="furniture" id="mob-table" checked>
-                <input type="radio" name="furniture" id="mob-chair">
-                <input type="radio" name="furniture" id="mob-sofa">
-
-                <label for="mob-table" class="mob-category-button mob-table-button txt-eng">
+               <a href="list-table-mob.html" class="mob-category-button mob-table-button txt-eng-bold">
                     TABLE
-                </label>
-                <div class="label-underline1 label-underline" for="mob-table"></div>
+                </a>
+                
+                <div class="label-underline1 label-underline" for="mob-table" style="display: block;"></div>
 
 
-                <label for="mob-chair" class="mob-category-button mob-chair-button txt-eng">
+                <a href="list-chair-mob.html" class="mob-category-button mob-chair-button txt-eng">
                     CHAIR
-                </label>
-                <div class="label-underline2 label-underline" for="mob-table"></div>
+                   
+                </a>
+                <div class="label-underline2 label-underline" for="mob-table" ></div>
 
 
-                <label for="mob-sofa" class="mob-category-button mob-sofa-button txt-eng">
+                <a href="list-sofa-mob.html" class="mob-category-button mob-sofa-button txt-eng">
                     SOFA
-                </label>
-                <div class="label-underline3 label-underline" for="mob-table"></div>
+                    
+                </a>
 
                 <div class="line"></div>
                 <!-- //카테고리 버튼 -->
@@ -863,7 +885,7 @@
                 <input type="radio" name="table" id="mob-muah">
 
                 <label for="mob-cafe" class="txt-eng mob-table-category-button mob-cafe-button">
-                    Cafe Series
+                    Wily Series
                 </label>
                 <label for="mob-mate" class="txt-eng mob-table-category-button mob-mate-button">
                     Mate Series
@@ -884,15 +906,14 @@
                             <a href="../plantlance/wily-detail.html" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/wily-fenix1.png" alt="wily-table" class="mob-wily-fenix">
-                                <p class="txt-eng mob-material">FENIX</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
-                                    <p class="txt-eng mob-color">12 color</p>
+                                    <p class="txt-eng-bold mob-name">WILY [ Fenix ]</p>
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                                
 
                                 <p class="txt-kor mob-price">330,000 원</p>
                             </div>
@@ -902,15 +923,15 @@
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/wily-hpl1.png" alt="wily-table" class="mob-wily-hpl">
-                                <p class="txt-eng mob-material mob-material-hpl">HPL</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">WILY TABLE</p>
-                                    <p class="txt-eng mob-color">3 color</p>
+                                    <p class="txt-eng-bold mob-name">WILY [ HPL ]</p>
+                                    
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">윌리 테이블</p>
+                               
 
                                 <p class="txt-kor mob-price">330,000 원</p>
                             </div>
@@ -922,15 +943,15 @@
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/wily-low1.png" alt="wily-table" class="mob-wily-low-fenix">
-                                <p class="txt-eng mob-material">FENIX</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">WILY LOW TABLE</p>
-                                    <p class="txt-eng mob-color">12 color</p>
+                                    <p class="txt-eng-bold mob-name">WILY LOW [ Fenix ]</p>
+                                 
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">윌리 로우 테이블</p>
+                                
 
                                 <p class="txt-kor mob-price">330,000 원</p>
                             </div>
@@ -940,15 +961,15 @@
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/wily-low-hpl.png" alt="wily-table" class="mob-wily-low-hpl">
-                                <p class="txt-eng mob-material mob-material-hpl">HPL</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">WILY LOW TABLE</p>
-                                    <p class="txt-eng mob-color">12 color</p>
+                                    <p class="txt-eng-bold mob-name">WILY LOW [ HPL ]</p>
+                                    
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">윌리 로우 테이블</p>
+                             
 
                                 <p class="txt-kor mob-price">330,000 원</p>
                             </div>
@@ -960,16 +981,15 @@
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/oblong-fenix.png" alt="oblong-table" class="mob-oblong-fenix">
-                                <p class="txt-eng mob-material">FENIX</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">OBLONG TABLE</p>
-                                    <p class="txt-eng mob-color">13 color</p>
+                                    <p class="txt-eng-bold mob-name">WILY OBLONG TYPE  [ Fenix ]</p>
+                                    
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">오블롱 테이블</p>
-
+                               
                                 <p class="txt-kor mob-price">330,000 원</p>
                             </div>
                         </div>
@@ -978,15 +998,15 @@
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/oblong-hpl.png" alt="oblong-table" class="mob-oblong-hpl">
-                                <p class="txt-eng mob-material mob-material-hpl">HPL</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">OBLONG TABLE</p>
-                                    <p class="txt-eng mob-color">3 color</p>
+                                    <p class="txt-eng-bold mob-name">WILY OBLONG TYPE  [ HPL ]</p>
+                                    
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">오블롱 테이블</p>
+                              
 
                                 <p class="txt-kor mob-price">330,000 원</p>
                             </div>
@@ -998,16 +1018,15 @@
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/mate-table.png" alt="mate-table" class="mob-mate-table">
-                                <p class="txt-eng mob-material">FENIX</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
                                     <p class="txt-eng-bold mob-name">MATE TABLE</p>
-                                    <p class="txt-eng mob-color">13 color</p>
+                                    
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">메이트 라운드 테이블</p>
-
+                              
                                 <p class="txt-kor mob-price">842,000 원</p>
                             </div>
                         </div>
@@ -1016,7 +1035,7 @@
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
                                 <img src="../plantlance-image/shop-table/mate-table-square.png" alt="mate-table" class="mob-mate-table-square">
-                                <p class="txt-eng mob-material">FENIX</p>
+                                
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
@@ -1024,8 +1043,8 @@
 
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">메이트 스퀘어 테이블</p>
-                                <p class="txt-eng mob-color">13 color</p>
+                                
+                               
                                 <p class="txt-kor mob-price">909,000 원</p>
                             </div>
                         </div>
@@ -1040,10 +1059,10 @@
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
                                     <p class="txt-eng-bold mob-name">MATE SOFA TABLE</p>
-                                    <p class="txt-eng mob-color">13 color</p>
+                                    
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">메이트 소파 테이블</p>
+                               
 
                                 <p class="txt-kor mob-price">272,000 원</p>
                             </div>
@@ -1057,10 +1076,9 @@
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
                                     <p class="txt-eng-bold mob-name">PET TROLLEY</p>
-                                    <p class="txt-eng mob-color">13 color</p>
                                 </div>
 
-                                <p class="txt-kor mob-name-kor">펫 트롤리</p>
+                              
 
                                 <p class="txt-kor mob-price">339,000 원</p>
                             </div>

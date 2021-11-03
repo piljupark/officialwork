@@ -187,9 +187,7 @@ li {
 
 
 /* category-button */
-.mob-product-list input[type="radio"] {
-    display: none;
-}
+
 
 .mob-product-list .mob-category-button {
     position: absolute;
@@ -226,7 +224,7 @@ li {
 
 .label-underline1 {
     width: 40px;
-    right: 115px;
+    right: 113px;
 }
 
 .label-underline2 {
@@ -237,11 +235,15 @@ li {
 
 
 
+#mob-cafe, #mob-mate, #mob-muah{
+    display: none;
+}
+
 
 #mob-table:checked ~ .mob-table-button,
 #mob-chair:checked ~ .mob-chair-button,
 #mob-sofa:checked ~ .mob-sofa-button {
-    font-family: "Urbanist-Bold";
+    font-family: "Urbanist-ExtraBold";
 }
 
 #mob-table:checked ~ .label-underline1,
@@ -282,8 +284,11 @@ li {
 #mob-cafe:checked ~ .mob-cafe-button,
 #mob-mate:checked ~ .mob-mate-button,
 #mob-muah:checked ~ .mob-muah-button{
-    font-family: "Urbanist-Bold";
+    font-family: "Urbanist-ExtraBold";
 }
+
+
+
 
 /* //table-button */
 

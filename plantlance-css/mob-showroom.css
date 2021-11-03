@@ -108,123 +108,118 @@ li {
 
 
 
-.showroom-top-img-wrap{
+.mob-showroom-top-img-wrap{
     position: relative;
     float:left;
     width:100%;
     height: 250px;
     background: #eee;
-    margin-top:150px;
+    margin-top:80px;
     overflow: hidden;
 }
 
 
 
 
-#showroom-whole {
+#mob-showroom-whole {
    position: relative;
     float: left;
     width: 100%;
-    max-width: 1400px;
     height: auto;
     box-sizing: border-box;
     padding: 0 20px;
-    left:50%;
-    transform: translate(-50%);
 }
 
 
-#showroom-whole input[type="radio"]{
+#mob-showroom-whole input[type="radio"]{
     display: none;
 }
 
 
-/* showroom-place-button */
-.showroom-place-button{
+/* mob-showroom-place-button */
+.mob-showroom-place-button{
     position: relative;
-    float:right;
-    width:500px;
+    float:left;
+    width:350px;
     margin-top:25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    left:50%;
+    transform: translate(-50%);
 }
 
-.showroom-place-button label{
+.mob-showroom-place-button label{
     position: relative;
     font-size: 16px;
     opacity: .5;
     cursor: pointer;
     transition-duration: .2s;
+    font-size: 13px;
 }
 
-#showroom-gimpo:checked ~ .showroom-place-button label:nth-child(1),
-#showroom-seongsu:checked ~ .showroom-place-button label:nth-child(2),
-#showroom-pangyo:checked ~ .showroom-place-button label:nth-child(3),
-#showroom-sejong:checked ~ .showroom-place-button label:nth-child(4),
-#showroom-daegu:checked ~ .showroom-place-button label:nth-child(5),
-#showroom-busan:checked ~ .showroom-place-button label:nth-child(6){
+#mob-showroom-gimpo:checked ~ .mob-showroom-place-button label:nth-child(1),
+#mob-showroom-seongsu:checked ~ .mob-showroom-place-button label:nth-child(2),
+#mob-showroom-pangyo:checked ~ .mob-showroom-place-button label:nth-child(3),
+#mob-showroom-sejong:checked ~ .mob-showroom-place-button label:nth-child(4),
+#mob-showroom-daegu:checked ~ .mob-showroom-place-button label:nth-child(5),
+#mob-showroom-busan:checked ~ .mob-showroom-place-button label:nth-child(6){
     opacity: 1;
 }
 
 
 
-#showroom-gimpo:checked ~ .show-showroom-info-wrap .show-showroom-info:nth-child(1),
-#showroom-seongsu:checked ~ .show-showroom-info-wrap .show-showroom-info:nth-child(2),
-#showroom-pangyo:checked ~ .show-showroom-info-wrap .show-showroom-info:nth-child(3),
-#showroom-sejong:checked ~ .show-showroom-info-wrap .show-showroom-info:nth-child(4),
-#showroom-daegu:checked ~ .show-showroom-info-wrap .show-showroom-info:nth-child(5),
-#showroom-busan:checked ~ .show-showroom-info-wrap .show-showroom-info:nth-child(6){
+#mob-showroom-gimpo:checked ~ .mob-show-showroom-info-wrap .mob-show-showroom-info:nth-child(1),
+#mob-showroom-seongsu:checked ~ .mob-show-showroom-info-wrap .mob-show-showroom-info:nth-child(2),
+#mob-showroom-pangyo:checked ~ .mob-show-showroom-info-wrap .mob-show-showroom-info:nth-child(3),
+#mob-showroom-sejong:checked ~ .mob-show-showroom-info-wrap .mob-show-showroom-info:nth-child(4),
+#mob-showroom-daegu:checked ~ .mob-show-showroom-info-wrap .mob-show-showroom-info:nth-child(5),
+#mob-showroom-busan:checked ~ .mob-show-showroom-info-wrap .mob-show-showroom-info:nth-child(6){
     display: block;
 }
-/* //showroom-place-button */
+/* //mob-showroom-place-button */
 
 
 
 
-/* show-showroom-info-wrap */
+/* mob-show-showroom-info-wrap */
 
-.show-showroom-info-wrap .show-showroom-info{
+.mob-show-showroom-info-wrap .mob-show-showroom-info{
     display: none;
 }
-.show-showroom-info-wrap{
+.mob-show-showroom-info-wrap{
     position: relative;
     float:left;
     width:100%;
-    margin-top:150px;
+    margin-top:40px;
 }
 
-.show-showroom-info{
+.mob-show-showroom-info{
     position: relative;
     float:left;
     width:100%;
 }
 
-.showroom-name{
-    position: relative;
-    float:left;
-    width:100%;
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.showroom-name-kor{
+.mob-showroom-name{
     position: relative;
     float:left;
     width:auto;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.showroom-img-small{
+
+
+.mob-showroom-img-small{
     position: relative;
     float:right;
-    width:300px;
-    height: 200px;
+    width:150px;
+    height: 100px;
     background: #eee;
 }
 
 
-.showroom-address-wrap{
+.mob-showroom-address-wrap{
     position: relative;
     float:left;
     width:100%;
@@ -233,18 +228,18 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
     margin-top:50px;
 }
 
-.showroom-address-wrap p:nth-child(2){
-    margin-right:140px;
+.mob-showroom-address-wrap p:nth-child(2){
+    margin-right:35px;
     opacity: .7;
     line-height: 1.5;
 }
 
-.showroom-time-wrap{
+.mob-showroom-time-wrap{
     position: relative;
     float:left;
     width:100%;
@@ -253,13 +248,13 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #2f2f2f;
     margin-bottom: 30px;
 }
 
-.showroom-time-box{
+.mob-showroom-time-box{
     position: relative;
-    width:300px;
+    margin-right:35px;
 }
 
 .weekdays-time{
@@ -273,12 +268,12 @@ li {
 .weekend-time{
     position: relative;
 }
-.weekend-time span:nth-child(4){
+.weekend-time p:nth-child(4){
     position: relative;
-    float: right;
+    margin-top:10px;
 }
 
-.showroom-call-number{
+.mob-showroom-call-number{
     position: relative;
     float:right;
     width:auto;
@@ -291,31 +286,32 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 11px;
 }
-.showroom-call-img{
+.mob-showroom-call-img{
     position: relative;
     float:left;
-    width:12px;
+    width:10px;
     filter: invert();
     opacity: .7;
     margin-right: 10px;
 }
 
 
-.showroom-img-wrap{
+.mob-showroom-img-wrap{
     position: relative;
     float:left;
     width:100%;
     height: 350px;
     background: #eee;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 
 
 .go-to-ig-button{
     position: relative;
-    float:right;
+    float:left;
     width:auto;
     box-sizing: border-box;
     padding:10px 20px;
@@ -325,17 +321,13 @@ li {
     align-items: center;
     border-radius: 40px;
     margin-bottom: 150px;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 12px;
 }
 
-.ig-arrow-img{
-    position: relative;
-    width:8px;
-}
 
-.go-to-ig-button span{
-    margin:0 3px;
-}
-/* //show-showroom-info-wrap */
+/* //mob-show-showroom-info-wrap */
 
 
 
@@ -354,12 +346,12 @@ li {
 
 
 
-@media screen and ( max-width:1024px ){
+@media screen and ( min-width:1025px ){
     
-    #showroom-whole{
+    #mob-showroom-whole{
         display: none;
     }
-    .showroom-top-img-wrap{
+    .mob-showroom-top-img-wrap{
         display: none;
     }
 }

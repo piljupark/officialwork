@@ -223,7 +223,7 @@ li {
 
 .mob-collaborate-category{
     position: relative;
-    width:100px;
+    width:120px;
     margin-right:50px;
     font-size: 12px;
 }
@@ -312,7 +312,7 @@ li {
     position: relative;
     float:left;
     width:100%;
-    margin-top:50px;
+    margin-top:20px;
 }
 .mob-admit-privacy-title{
     position: relative;
@@ -336,9 +336,10 @@ li {
 
 .mob-admit-privacy-checkbox{
     position: relative;
-    float:right;
-    width:auto;
+    float:left;
+    width:100%;
     display: flex;
+    justify-content: space-between;
 }
 .mob-admit-privacy-checkbox-txt{
     position: relative;

@@ -406,54 +406,231 @@ li {
 .mob-product .mob-product-img img{
     position: absolute;
     float:left;
+
+}
+
+
+
+
+
+
+/* mob-table-img */
+.mob-wily-fenix{
+    width:60%;
     top:50%;
     transform: translate(0,-50%);
 }
-.mob-product .mob-product-img .mob-material{
-    position: absolute;
-    top:5px;
-    right:5px;
-    font-size: 10px;
-    border:1px solid #3D82B8;
-    border-radius: 30px;
-    padding:3px 7px;
-    color:#3D82B8;
-}
-.mob-product .mob-product-img .mob-material-hpl{
-    color:#37683c;
-    border:1px solid #37683c;
-}
-.mob-product1 img{
+.mob-wily-hpl{
     width:60%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product2 img{
-    width:60%;
-}
-.mob-product3 img{
+.mob-wily-low-fenix{
     width:70%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product4 img{
+.mob-wily-low-hpl{
     width:70%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product5 img{
+.mob-oblong-fenix{
     width:80%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product6 img{
+.mob-oblong-hpl{
     width:80%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product7 img{
+.mob-mate-table{
     width:60%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product8 img{
+.mob-mate-table-square{
     width:80%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product9 img{
+.mob-mate-sofa-table{
     width:60%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-.mob-product10 img{
+.mob-pet-trolley{
     width:120%;
+    top:50%;
+    transform: translate(0,-50%);
 }
-/* //product-img */
+/* //mob-table-img */
+
+
+
+
+
+
+
+
+/* mob-sofa-img */
+.mob-grae-sofa1{
+    width:40%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-grae-sofa2{
+    width:60%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-grae-sofa3{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-grae-sofa4{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-oursofa-seater1{
+    width:50%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-oursofa-seater2{
+    width:73%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-oursofa-seater3{
+    width:73%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-oursofa-couch{
+    width:50%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-oursofa-bench{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-flexsofa-bb{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-flexsofa-acd{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.mob-flexsofa-ad{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-flexsofa-bcb{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-flexsofa-bespoke{
+    width:100%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-cloudsofa-ab{
+    width:200%;
+    top:60%;
+    left:-130px;
+    transform: translate(0,-50%);
+}
+
+
+.mob-cloudsofa-ac{
+    width:200%;
+    top:40%;
+    left:-130px;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-cloudsofa-ad{
+    width:200%;
+    top:60%;
+    left:-330px;
+    transform: translate(0,-50%);
+}
+
+
+.mob-cloudsofa-bespoke{
+    width:200%;
+    top:60%;
+    left:-270px;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-blocksofa-bespoke{
+    width:170%;
+    top:50%;
+    left:-50px;
+    transform: translate(0,-50%);
+}
+/* //mob-sofa-img */
+
+
+
+
+
+
 
 
 

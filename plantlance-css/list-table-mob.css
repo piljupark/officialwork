@@ -585,16 +585,16 @@ li {
 
 
 .mob-cloudsofa-ab{
-    width:200%;
-    top:60%;
+    width:100%;
+    top:50%;
     
     transform: translate(0,-50%);
 }
 
 
 .mob-cloudsofa-ac{
-    width:200%;
-    top:40%;
+    width:100%;
+    top:50%;
     
     transform: translate(0,-50%);
 }
@@ -602,16 +602,16 @@ li {
 
 
 .mob-cloudsofa-ad{
-    width:200%;
-    top:60%;
+    width:100%;
+    top:50%;
     
     transform: translate(0,-50%);
 }
 
 
 .mob-cloudsofa-bespoke{
-    width:200%;
-    top:60%;
+    width:100%;
+    top:50%;
     
     transform: translate(0,-50%);
 }
@@ -619,12 +619,130 @@ li {
 
 
 .mob-blocksofa-bespoke{
-    width:170%;
+    width:100%;
     top:50%;
     
     transform: translate(0,-50%);
 }
 /* //mob-sofa-img */
+
+
+
+
+
+
+
+/* mob-chair-img */
+.mob-rotu-chair{
+    width:90%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-cesca-arm-chair{
+    width:100%;
+     top:45%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-cesca-side-chair{
+    width:60%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-ironica-chair{
+    width:90%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-mid-century-chair{
+    width:100%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-mate-stool{
+    width:45%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-y-chair{
+    width:80%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-royce-chair{
+    width:100%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-side-ton-chair{
+    width:45%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.mob-michael-side-chair{
+    width:90%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.mob-michael-arm-chair{
+    width:90%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-wilson-chair{
+    width:80%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.mob-wilson-rattan-arm-chair{
+    width:80%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-wilson-chair{
+    width:80%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+/* //mob-chair-img */
 
 
 

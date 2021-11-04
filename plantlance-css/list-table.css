@@ -916,6 +916,219 @@ li {
 
 
 
+/* chair img */
+.default.rotu-chair {
+    width: 70%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.rotu-chair {
+    width: 70%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+
+.default.cesca-arm-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.cesca-arm-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+.default.cesca-side-chair {
+    width: 45%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.cesca-side-chair {
+    width: 45%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+.default.ironica-chair {
+    width: 70%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.ironica-chair {
+    width: 70%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+.default.mid-century-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.mid-century-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+.default.mate-stool{
+    width: 35%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.mate-stool{
+    width: 35%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+.default.y-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.y-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+.default.royce-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.royce-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+.default.side-ton-chair {
+    width: 40%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.side-ton-chair {
+    width: 40%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+
+.default.michael-side-chair {
+    width:80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.michael-side-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+.default.michael-arm-chair {
+    width:80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.michael-arm-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+.default.wilson-arm-chair {
+    width:80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.wilson-arm-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+.default.wilson-rattan-arm-chair {
+    width:80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.wilson-rattan-arm-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+.default.wilson-chair {
+    width:80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+.img-zoom.wilson-chair {
+    width: 80%;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+/* //chair img */
+
+
+
+
+
+
+
+
+
 
 
 

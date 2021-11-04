@@ -274,7 +274,7 @@ li {
 .mob-table-category-button{
     position: relative;
     float:left;
-    width:33.3%;
+    width:50%;
     text-align: center;
     font-size: 11px;
     margin-top:20px;
@@ -282,8 +282,7 @@ li {
 }
 
 #mob-cafe:checked ~ .mob-cafe-button,
-#mob-mate:checked ~ .mob-mate-button,
-#mob-muah:checked ~ .mob-muah-button{
+#mob-mate:checked ~ .mob-mate-button{
     font-family: "Urbanist-ExtraBold";
 }
 

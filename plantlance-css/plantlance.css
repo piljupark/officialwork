@@ -90,6 +90,10 @@ li {
     font-family: "Urbanist-ExtraBold";
 }
 
+.txt-kor-light {
+    font-family: "Pretendard-Thin";
+}
+
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -166,7 +170,6 @@ li {
     position: relative;
     width: 100%;
     text-align: center;
-    font-family: "Pretendard-ExtraBold";
     font-size: 50px;
     margin-bottom: 20px;
 }
@@ -213,7 +216,6 @@ li {
 .slide .text-wrap2 .slide-title {
     text-align: right;
     font-size: 50px;
-    font-family: "Pretendard-ExtraBold";
     line-height: 1.3;
     margin-right: 40px;
 }
@@ -543,7 +545,6 @@ li {
 .plan-b .plan-title {
     color: #000;
     top: 50%;
-    font-family: "Pretendard-Thin"!important;
     transition-duration: .2s;
 }
 

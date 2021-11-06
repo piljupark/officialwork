@@ -261,6 +261,10 @@ li {
     width:40%;
     padding-bottom: 70%;
     background: #eee;
+    background-image: url(../plantlance-image/pltl/diy.png);
+    background-size: cover;
+    background-position: center left 70%;
+    background-repeat: no-repeat;
 }
 
 

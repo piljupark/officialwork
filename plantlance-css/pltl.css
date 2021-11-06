@@ -253,6 +253,10 @@ li {
     margin-top:50px;
     left:50%;
     transform: translate(-50%);
+    background-image: url(../plantlance-image/pltl/pltl-mob-forest.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* //pltl-main2 */
@@ -315,7 +319,9 @@ li {
     position: relative;
     width:550px;
     height: 1000px;
-    background: #eee;
+    background-image: url(../plantlance-image/pltl/diy.png);
+    background-position: center;
+    background-size: cover;
 }
 
 

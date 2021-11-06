@@ -149,10 +149,44 @@ li {
     margin-bottom: 30px;
 }
 
+.mob-bespoke-main1-title1{
+    animation-name: textDisappear;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.mob-bespoke-main1-title2{
+    position: absolute;
+    animation-name: textAppear;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes textDisappear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes textAppear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 .mob-bespoke-main1-txt-wrap{
     position: relative;
     float:left;
-    width:200px;
+    width:180px;
     text-align: center;
     line-height: 2;
     font-size: 12px;
@@ -269,6 +303,18 @@ li {
     background: #eee;
     overflow: hidden;
     margin-bottom: 30px;
+
+}
+.mob-bespoke-main3-img-wrap1{
+    background-image: url(../plantlance-image/main/main-pltl2.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.mob-bespoke-main3-img-wrap2{
+    background-image: url(../plantlance-image/bespoke/leg-compair.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center right 40%;
 }
 
 .mob-bespoke-main3-txt{
@@ -347,16 +393,19 @@ li {
     width:100%;
     overflow: hidden;
     margin-bottom: 40px;
+   
 }
 
 .mob-bespoke-main4-img{
     position: relative;
     float:left;
     width:100%;
-    height:200px;
-    background: #eee;
+    height:260px;
     overflow: hidden;
-    margin-bottom: 10px;
+     background-image: url(../plantlance-image/bespoke/your-color2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .mob-bespoke-main4-img-txt{
     position: relative;
@@ -364,6 +413,7 @@ li {
     width:100%;
     text-align: right;
     opacity: .6;
+    margin-top:10px;
 }
 .mob-bespoke-main4-txt{
     position: relative;
@@ -425,11 +475,25 @@ li {
 }
 .mob-bespoke-main5-img:nth-child(1){
     margin-right:10px;
+    background-image: url(../plantlance-image/bespoke/750.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .mob-bespoke-main5-img:nth-child(2){
     margin-right:10px;
+     background-image: url(../plantlance-image/bespoke/900.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.mob-bespoke-main5-img:nth-child(3){
+    background-image: url(../plantlance-image/bespoke/1100.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .mob-bespoke-main5-img-txt-box{
     position: relative;
@@ -502,8 +566,11 @@ li {
     float:left;
     width:100%;
     height:200px;
-    background: #eee;
     overflow: hidden;
+    background-image: url(../plantlance-image/bespoke/evolution.png);
+    background-position: center top 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -565,6 +632,17 @@ li {
 }
 .mob-bespoke-main7-img:nth-child(1){
     margin-right:10px;
+    background-image: url(../plantlance-image/bespoke/big-change1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mob-bespoke-main7-img:nth-child(2){
+    background-image: url(../plantlance-image/bespoke/big-change2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -573,9 +651,11 @@ li {
 
 .mob-bespoke-main7-txt{
     position: relative;
+    float:left;
     line-height: 1.7;
     text-align: justify;
     font-size: 12px;
+    margin-bottom: 150px;
 }
 
 

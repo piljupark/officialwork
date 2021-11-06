@@ -313,8 +313,10 @@ li {
     float:left;
     width:100%;
     height: auto;
-    border-top:1px solid #767676;
     margin-top:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .mob-information-wrap input[type="radio"]{
     display: none;
@@ -324,49 +326,45 @@ li {
     position: relative;
     float:left;
     width:100%;
-    height: 45px;
+    height: 35px;
     border-bottom: 1px solid #767676;
     cursor: pointer;
-    overflow: hidden;
-    transition-duration: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mob-information-wrap label p{
     position: relative;
     float:left;
-    width: auto;
-    top:50%;
-    transform: translate(0,-50%);
+    width: 100%;
     font-size: 11px;
     transition-duration: .3s;
-}
-.mob-information-wrap label p:nth-child(2){
-    float:right;
-    font-size: 18px;
-    margin-right: 2px;
+    text-align: center;
+    opacity: .6;
+     transition-duration: .3s;
 }
 
 
-
-#mob-info:checked ~ .mob-information-button1,
-#mob-delivery:checked ~ .mob-information-button2,
-#mob-notice:checked ~ .mob-information-button3{
-    height: 200px;
-}
 
 
 #mob-info:checked ~ .mob-information-button1 p,
-#mob-delivery:checked ~ .mob-information-button2 p,
-#mob-notice:checked ~ .mob-information-button3 p{
-    top:10px;
-    transform: translate(0,0);
+#mob-standard:checked ~ .mob-information-button2 p,
+#mob-delivery:checked ~ .mob-information-button3 p,
+#mob-review:checked ~ .mob-information-button4 p{
+    opacity: 1;
 }
 
-#mob-info:checked ~ .mob-information-button1 p:nth-child(2),
-#mob-delivery:checked ~ .mob-information-button2 p:nth-child(2),
-#mob-notice:checked ~ .mob-information-button3 p:nth-child(2){
-   display: none;
+#mob-info:checked ~ .mob-information-button1,
+#mob-standard:checked ~ .mob-information-button2,
+#mob-delivery:checked ~ .mob-information-button3,
+#mob-review:checked ~ .mob-information-button4{
+    border-bottom: 3px solid #2f2f2f;
 }
+
+
+
+
 
 /* //mob-information-wrap */
 

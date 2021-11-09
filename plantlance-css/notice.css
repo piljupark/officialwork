@@ -132,6 +132,7 @@ li {
     float: left;
     width: 100%;
     max-width: 1400px;
+    min-width: 1400px;
     height: auto;
     left: 50%;
     transform: translate(-50%);
@@ -433,15 +434,6 @@ li {
 
 
 
-
-
-
-@media screen and ( max-width:1024px ){
-    
-    #notice-whole{
-        display: none;
-    }
-}
 
 
 

@@ -120,6 +120,7 @@ li {
     float: left;
     width: 100%;
     max-width: 1360px;
+    min-width: 1360px;
     height: auto;
     box-sizing: border-box;
     padding: 0 30px;
@@ -1733,10 +1734,4 @@ li {
 /* //my-page-first */
 
 
-
-@media screen and (max-width:1024px){
-    #my-page-whole{
-        display: none;
-    }
-}
 

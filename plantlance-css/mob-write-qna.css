@@ -229,7 +229,6 @@ li {
     display: inline-block;
     width:25px;
     height: 14px;
-    top:1px;
 }
 
 .switch input{
@@ -248,6 +247,7 @@ li {
     background-color: #ccc;
     -webkit-transition:.4s;
     transition:.4s;
+    
 }
 
 .slider:before{
@@ -260,6 +260,7 @@ li {
     background-color: white;
     -webkit-transition:.4s;
     transition:.4s;
+   
 }
 .switch input:checked + .slider{
     background-color: #2196f3;
@@ -279,6 +280,7 @@ li {
 }
 .slider.round:before{
     border-radius: 80%;
+   
 }
 
 /* //posting-type-wrap */ 
@@ -457,19 +459,6 @@ li {
 
 
 
-@media screen and ( min-width: 1025px ){
-    #write-posting{
-        display: none;
-    }
-    
-    #save{
-        display: none!important;
-    }
-    
-    #choice-product{
-        display: none!important;
-    }
-}
 
 
 

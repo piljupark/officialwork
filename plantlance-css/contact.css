@@ -111,6 +111,7 @@ li {
     float: left;
     width: 100%;
     max-width: 1400px;
+    min-width: 1400px;
     height: auto;
     box-sizing: border-box;
     margin-top:150px;
@@ -397,14 +398,6 @@ li {
 
 
 
-
-
-@media screen and ( max-width:1024px ){
-    
-    #contact-whole{
-        display: none;
-    }
-}
 
 
 

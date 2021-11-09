@@ -513,44 +513,6 @@ li {
 /* //contentx-more */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mob-list-whole {
-    display: none;
-}
-.mob-contents-popup-wrap{
-    display: none;
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width:1024px) {
-    .pc-list-whole {
-        display: none !important;
-    }
-
     .pc-contents-popup-wrap {
         visibility: hidden;
     }
@@ -563,6 +525,10 @@ li {
         display: flex;
         visibility: hidden;
     }
+
+
+
+
 
 
 
@@ -948,4 +914,6 @@ li {
     /* //contents-similar-popup*/
 
 
-}
+
+
+

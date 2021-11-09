@@ -131,6 +131,7 @@ li {
     float: left;
     width: 100%;
     max-width: 1400px;
+    min-width: 1400px;
     height: auto;
     left: 50%;
     transform: translate(-50%);

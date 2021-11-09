@@ -689,9 +689,3 @@ li {
 
 
 
-@media screen and ( min-width : 1025px ){
-    #mob-bespoke-whole{
-        display: none;
-    }
-}
-

@@ -118,6 +118,9 @@ li {
     position: relative;
     float: left;
     width: 100%;
+    min-width:1400px;
+    left:50%;
+    transform: translate(-50%);
     height: auto;
     animation-name: appEar;
     animation-delay: .5s;
@@ -1166,23 +1169,3 @@ li {
 
 
 
-
-#list-mobile {
-    display: none;
-}
-
-
-
-
-
-
-
-@media screen and (max-width:830px) and (min-width:300px) {
-    #pc-product-list {
-        display: none;
-    }
-
-    #list-mobile {
-        display: block;
-    }
-}

@@ -657,6 +657,8 @@ li {
 .choice-product-wrap input[type="date"]{
     position: relative;
     float:left;
+    width:100px;
+    height: 30px;
     -webkit-border-radius: 0;
     border:1px solid #e0e0e0;
     color:#4f4f4f;
@@ -664,6 +666,7 @@ li {
     padding:5px;
     cursor: pointer;
     font-size: 10px;
+    background: none;
 }
 .choice-product-wrap input[type="date"]::-webkit-calendar-picker-indicator { 
     padding:0;
@@ -674,25 +677,33 @@ li {
     position: relative;
     float:left;
     width:100%;
-    display: flex;
-    align-items: center;
     margin-top:30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    
 }
 
 .setting-date .wave{
     position: relative;
-    margin: 0 10px;
+    margin: 0 5px;
 }
+
 .find-date{
-    position: absolute;
-    width:20px;
+   position: relative;
+    width:40px;
+    height: 30px;
     margin-left:10px;
-    padding:5px 10px;
-    top:1px;
     font-size: 11px;
     right:0;
     background: #909090;
     color:#fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -815,24 +826,6 @@ li {
 
 
 
-
-
-
-
-
-@media screen and ( min-width: 1025px ){
-    #write-posting{
-        display: none;
-    }
-    
-    #save{
-        display: none!important;
-    }
-    
-    #choice-product{
-        display: none!important;
-    }
-}
 
 
 

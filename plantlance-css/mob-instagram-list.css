@@ -662,41 +662,6 @@ li {
 /* //contents-popup*/
 
 
-
-
-.mob-list-whole {
-    display: none;
-}
-
-
-.contents-popup-bg {
-    display: none;
-    visibility: hidden;
-}
-
-.contents-popup-wrap {
-    display: none;
-}
-
-
-
-
-
-@media screen and (max-width:1024px) {
-    .mob-list-whole {
-        display: block;
-    }
-
-    .contents-popup-bg {
-        display: none;
-        visibility: visible;
-    }
-
-    .contents-popup-wrap {
-        display: flex;
-    }
-    
-    
     
     /* more-review-button */
     .mob-list-whole .contents-more {
@@ -712,10 +677,9 @@ li {
     /* //more-review-button */
 
 
-
-
-
-
+    
+    
+    
 
 
 
@@ -1004,4 +968,8 @@ li {
     }
 
     /* //contents-similar-popup*/
-}
+
+
+
+
+

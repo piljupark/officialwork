@@ -152,6 +152,7 @@ li {
     padding:13px 0;
     box-sizing: border-box;
     outline: none;
+    font-size: 14px;
 }
 #search-list form .search-btn{
     right:0;
@@ -167,8 +168,11 @@ li {
     width:auto;
     margin-right:5px;
     margin-bottom: 20px;
+    font-size: 12px;
 }
-
+.search-txt2{
+    font-size: 12px;
+}
 
 
 .search-result-wrap{

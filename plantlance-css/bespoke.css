@@ -98,15 +98,22 @@ li {
 
 
 
-
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
+}
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -167,7 +174,7 @@ li {
     float: left;
     width: 100%;
     font-size: 100px;
-    font-family: "Urbanist-SemiBold";
+
 }
 
 .bespoke-main-arrow-img {

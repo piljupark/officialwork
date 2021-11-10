@@ -75,7 +75,6 @@ body {
     color: #292929;
     font-size: 14px;
     overflow-x: hidden;
-    font-family: "Urbanist-ExtraBold";
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
@@ -90,25 +89,33 @@ li {
 }
 
 
+
+
+
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor {
-    font-family: "Pretendard-Regular";
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
 }
-
-.txt-kor-light {
-    font-family: "Pretendard-Light";
+.txt-kor {
+    font-family: "Pretendard-Medium";
 }
 
 .txt-kor-bold {
     font-family: "Pretendard-SemiBold";
 }
+
 
 
 
@@ -234,7 +241,7 @@ li {
     border-left: 1px solid #2380C9;
     padding-left: 10px;
     margin-bottom: 20px;
-    font-family: "Urbanist-SemiBold";
+
 }
 
 .side-category-wrap .down-menu {
@@ -402,7 +409,6 @@ li {
     width: auto;
     margin-right: 10px;
     font-size: 18px;
-    font-family: "Urbanist-Medium";
 }
 
 .product-name-wrap .material {
@@ -436,7 +442,6 @@ li {
     font-size: 16px;
     margin-right: 40px;
     margin-top: -2px;
-    font-family: "Pretendard-light"!important;
 }
 
 /* //product-list */

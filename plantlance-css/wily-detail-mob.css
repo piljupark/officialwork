@@ -92,24 +92,28 @@ li {
 
 
 
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
-    font-family: "Urbanist-Medium"!important;
+    font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
-    font-family: "Urbanist-ExtraBold"!important;
+    font-family: "Urbanist-ExtraBold";
 }
 
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
+}
 .txt-kor {
-    font-family: "Pretendard-Regular"!important;
-}
-
-.txt-kor-light {
-    font-family: "Pretendard-Light"!important;
+    font-family: "Pretendard-Medium";
 }
 
 .txt-kor-bold {
-    font-family: "Pretendard-SemiBold"!important;
+    font-family: "Pretendard-SemiBold";
 }
 
 
@@ -716,7 +720,7 @@ li {
     width:13px;
     height:13px;
     padding:0;
-    font-family: "Urbanist-Regular";
+
     font-size: 10px;
     cursor: pointer;
     border:none;
@@ -737,7 +741,7 @@ li {
 .mob-ea-wrap .num-ea{
     border:none;
     font-size: 10px;
-    font-family: "Urbanist-Thin";
+
     text-align: center;
 }
 .mob-price-wrap{
@@ -751,7 +755,7 @@ li {
     width:55px;
     border:none;
     font-size: 14px;
-    font-family: "Urbanist-Regular";
+
 }
 .mob-ea-wrap input:focus {
     outline:none;

@@ -84,16 +84,22 @@ li {
 }
 
 
-
-
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
+}
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -105,11 +111,13 @@ li {
 
 
 
-
 #mob-pltl-whole {
     position: relative;
     float: left;
     width: 100%;
+    max-width: 1400px;
+    left:50%;
+    transform: translate(-50%);
     height: auto;
     box-sizing: border-box;
     
@@ -382,17 +390,5 @@ li {
 
 
 
-
-
-
-
-
-
-
-@media screen and ( min-width:1025px ){
-    #mob-pltl-whole{
-        display: none;
-    }
-}
 
  

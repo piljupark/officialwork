@@ -93,26 +93,29 @@ li {
 
 
 
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor {
-    font-family: "Pretendard-Regular";
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
 }
-
-.txt-kor-light {
-    font-family: "Pretendard-Light";
+.txt-kor {
+    font-family: "Pretendard-Medium";
 }
 
 .txt-kor-bold {
     font-family: "Pretendard-SemiBold";
 }
-
 
 
 
@@ -380,7 +383,6 @@ li {
     width:15px;
     height:15px;
     padding:0;
-    font-family: "Urbanist-Regular";
     font-size: 12px;
     cursor: pointer;
     border:none;
@@ -401,7 +403,6 @@ li {
 .num-ea{
     border:none;
     font-size: 16px;
-    font-family: "Urbanist-Thin";
     text-align: center;
     
 }

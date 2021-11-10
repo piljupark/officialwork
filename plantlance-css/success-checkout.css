@@ -92,20 +92,24 @@ li {
 
 
 
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor {
-    font-family: "Pretendard-Regular";
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
 }
-
-.txt-kor-light {
-    font-family: "Pretendard-Light";
+.txt-kor {
+    font-family: "Pretendard-Medium";
 }
 
 .txt-kor-bold {
@@ -201,9 +205,7 @@ li {
     margin-right: 10px;
 }
 
-.success-info-wrap .success-info:nth-child(n+1):nth-child(-n+3) p:nth-child(3) {
-    font-family: "Pretendard-Regular";
-}
+
 
 .success-info-wrap .success-price p:nth-child(3) {
     color: #3D82B8;
@@ -255,13 +257,7 @@ li {
 
 }
 
-.back-to-shop p:nth-child(2) {
-    font-family: "Pretendard-Regular";
-}
 
-.back-to-shop p:nth-child(1) {
-    font-family: "Pretendard-SemiBold";
-}
 
 /* //back-to-shop-button */
 

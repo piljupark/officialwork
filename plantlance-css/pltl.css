@@ -86,14 +86,22 @@ li {
 
 
 
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
+}
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -105,12 +113,12 @@ li {
 
 
 
-
 #pltl-whole {
     position: relative;
     float: left;
     width: 100%;
     max-width: 1400px;
+    min-width: 1400px;
     height: auto;
     box-sizing: border-box;
     left: 50%;
@@ -520,13 +528,6 @@ li {
 
 
 
-
-@media screen and ( max-width:1024px ){
-    
-    #pltl-whole{
-        display: none;
-    }
-}
 
 
  

@@ -68,14 +68,15 @@ body::-webkit-scrollbar{
     display: none;
 }
 */
-
+html{
+    overflow-x: hidden;
+}
 body {
     width: 100%;
     height: 100vh;
     color: #292929;
     font-size: 14px;
     overflow-x: hidden;
-
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
@@ -91,20 +92,24 @@ li {
 
 
 
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor {
-    font-family: "Pretendard-Regular";
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
 }
-
-.txt-kor-light {
-    font-family: "Pretendard-Light";
+.txt-kor {
+    font-family: "Pretendard-Medium";
 }
 
 .txt-kor-bold {
@@ -118,12 +123,16 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    height: 100vh;
+    max-width: 1400px;
+    min-width: 1400px;
     box-sizing: border-box;
     padding: 0 20px;
     display: flex;
     justify-content: center;
     margin-top: 150px;
+    left:50%;
+    transform: translate(-50%);
+
 }
 
 

@@ -38,27 +38,27 @@
 
 @font-face {
     src: url("../fonts/Urbanist-Light.ttf");
-    font-family: "Urbanist-Light" !important;
+    font-family: "Urbanist-Light";
 }
 
 @font-face {
     src: url("../fonts/Urbanist-Regular.ttf");
-    font-family: "Urbanist-Regular" !important;
+    font-family: "Urbanist-Regular";
 }
 
 @font-face {
     src: url("../fonts/Urbanist-Medium.ttf");
-    font-family: "Urbanist-Medium" !important;
+    font-family: "Urbanist-Medium";
 }
 
 @font-face {
     src: url("../fonts/Urbanist-SemiBold.ttf");
-    font-family: "Urbanist-SemiBold" !important;
+    font-family: "Urbanist-SemiBold";
 }
 
 @font-face {
     src: url("../fonts/Urbanist-ExtraBold.ttf");
-    font-family: "Urbanist-ExtraBold" !important;
+    font-family: "Urbanist-ExtraBold";
 }
 
 
@@ -92,20 +92,24 @@ li {
 
 
 
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor {
-    font-family: "Pretendard-Regular";
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
 }
-
-.txt-kor-light {
-    font-family: "Pretendard-Light";
+.txt-kor {
+    font-family: "Pretendard-Medium";
 }
 
 .txt-kor-bold {

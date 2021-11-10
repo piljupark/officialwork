@@ -82,18 +82,22 @@ li {
 
 
 
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor-light {
-    font-family: "Pretendard-Thin";
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
 }
-
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -811,7 +815,6 @@ li {
     float: left;
     width: 100%;
     font-size: 30px;
-    font-family: "Urbanist-SemiBold";
     text-align: left;
     top:0;
     left:200px;
@@ -1222,7 +1225,6 @@ li {
     float:left;
     width:100%;
     text-align: center;
-    font-family: "Urbanist-SemiBold"!important;
     font-size: 16px;
     top:50%;
     transform: translate(0,-50%);
@@ -1472,7 +1474,6 @@ li {
     margin-right: 10px;
     font-size: 20px;
     text-align: center;
-    font-family: "Urbanist-SemiBold";
 }
 .mob-sofa a{
     position: absolute;
@@ -1735,7 +1736,6 @@ li {
     padding-left: 50px;
     padding-right: 50px;
     border: 1px solid #292929;
-    font-family: "Pretendard-Regular";
     transition-duration: .2s;
     margin-top:50px;
 }

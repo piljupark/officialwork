@@ -143,15 +143,22 @@ li {
 
 
 
-
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
-
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
 .txt-eng-bold {
     font-family: "Urbanist-ExtraBold";
 }
 
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
+}
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -159,6 +166,9 @@ li {
 .txt-kor-bold {
     font-family: "Pretendard-SemiBold";
 }
+
+
+
 
 
 
@@ -359,7 +369,6 @@ select {
     float: left;
     width: 100%;
     margin-bottom: 10px;
-    font-family: "Pretendard-SemiBold";
     font-size: 18px;
 }
 
@@ -390,7 +399,6 @@ select {
     align-content: center;
     align-items: center;
     justify-items: center;
-    font-family: "Pretendard-Regular";
 }
 
 .customer-wrap input {
@@ -581,7 +589,6 @@ select {
     justify-items: center;
     align-content: center;
     align-items: center;
-    font-family: "Pretendard-Regular";
     font-size: 16px;
 }
 
@@ -627,7 +634,6 @@ select {
     position: relative;
     float: left;
     width: 100%;
-    font-family: "Pretendard-Regular";
     font-size: 12px;
     margin: 2px 0;
     color: #888;
@@ -707,7 +713,6 @@ select {
     left: 50%;
     transform: translate(-50%);
     font-size: 12px;
-    font-family: "Pretendard-Regular";
     color: #999;
 }
 
@@ -1116,7 +1121,6 @@ select {
         justify-items: center;
         align-content: center;
         align-items: center;
-        font-family: "Pretendard-Regular";
         font-size: 14px;
     }
 
@@ -1208,7 +1212,6 @@ select {
         justify-items: center;
         align-content: center;
         align-items: center;
-        font-family: "Pretendard-Regular";
         font-size: 14px;
     }
 
@@ -1473,7 +1476,6 @@ select {
         justify-items: center;
         align-content: center;
         align-items: center;
-        font-family: "Pretendard-Regular";
         font-size: 14px;
     }
 
@@ -1577,12 +1579,10 @@ select {
     /* submit */
     .submit-txt .submit-txt-wrap p:nth-child(1) {
         font-size: 12px;
-        font-family: "Pretendard-Regular"
     }
 
     .submit-txt .submit-txt-wrap p:nth-child(2) {
         font-size: 12px;
-        font-family: "Pretendard-Regular"
     }
 
 

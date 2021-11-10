@@ -425,10 +425,11 @@ li {
     width:100%;
     height: auto;
 }
-.test-img{
+.wily-hpl-detail-img{
     position: relative;
     float:left;
     width:100%;
+    padding:0;
 }
 
 .show-product-info-box .show-product-info2{

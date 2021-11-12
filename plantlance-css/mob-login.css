@@ -63,7 +63,6 @@
 
 
 
-
 /*
 body::-webkit-scrollbar{
     display: none;
@@ -118,6 +117,7 @@ li {
 
 
 
+
 /* login */
 #login{
     position: relative;
@@ -131,13 +131,64 @@ li {
     justify-items: center;
     overflow-x: hidden;
 }
+
 .login-wrap{
     position: relative;
-    width:500px;
+     width:300px;
     height:500px;
     text-align: center;
 }
 
+.login-wrap .login-type{
+    position: relative;
+    float:left;
+    width:100%;
+    height:50px;
+    margin-top:60px; 
+    box-sizing: border-box;
+}
+.login-type .user{
+    position: relative;
+    float:left;
+    width:50%;
+    height:100%;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border:2px solid #292929;
+    border-bottom: none;
+}
+
+.login-type .not-a-user{
+    position: relative;
+    float:left;
+    width:50%;
+    height:100%;
+    border:1px solid #999;
+    border-left:none;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.login-type .not-a-user .not-a-user-button{
+    color:#999;
+}
+.login-type a{
+    display: block;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
 
 
 
@@ -188,8 +239,6 @@ input[type="text"], input[type="password"]{
     margin-left:10px;
     cursor: pointer;
 }
-
-
 .user-login .login-btn{
     position: relative;
     float:left;
@@ -198,19 +247,6 @@ input[type="text"], input[type="password"]{
     color:#fff;
     padding:18px 0;
 }
-.user-login .non-member-btn{
-    position: relative;
-    float:left;
-    width:100%;
-    margin-top:10px;
-    border:1px solid #707070;
-    color:#101010;
-    padding:18px 0;
-    box-sizing: border-box;
-}
-
-
-
 .user-help{
     position: relative;
     float:left;
@@ -249,28 +285,81 @@ input[type="text"], input[type="password"]{
 
 
 
+/* customer-login */
+
+.customer-login{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:70px;
+    display: none;
+}
+.customer-login input{
+    position: relative;
+    float:left;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #d1d1d1;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 0;
+}
+.customer-login input:focus{
+    outline: none;
+}
+.customer-login input::placeholder{
+    color:#d1d1d1;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.remember-user-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+}
+.remember-user-wrap .remember-user{
+    position: relative;
+    float:left;
+    width:12px;
+    left:0;
+    border-radius: 0;
+}
+.remember-user-wrap .remember-txt{
+    position: relative;
+    float:left;
+    margin-left:10px;
+    cursor: pointer;
+}
+.customer-login .login-btn{
+    position: relative;
+    float:left;
+    width:100%;
+    background: #292929;
+    color:#fff;
+    padding:18px 0;
+}
+.customer-help{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:20px;
+    left:50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between; 
+}
+.customer-help p{
+    color:#999;
+    font-size: 12px;
+    padding-left:30px;
+}
+.customer-help img{
+    position: absolute;
+    width:20px;
+    top:-2.5px;
+    left:0;
+    opacity: .8;
+}
+/* //customer-login */
 

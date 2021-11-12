@@ -62,6 +62,8 @@
 }
 
 
+
+
 /*
 body::-webkit-scrollbar{
     display: none;
@@ -69,17 +71,16 @@ body::-webkit-scrollbar{
 */
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     color: #292929;
     font-size: 14px;
     overflow-x: hidden;
+
     /*-ms-overflow-style: none; /* IE and Edge */
     /*scrollbar-width: none; /* Firefox */
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
 }
-
-
 
 a,
 p,
@@ -87,7 +88,6 @@ li {
     text-decoration: none;
     color: #2f2f2f;
 }
-
 
 
 
@@ -118,168 +118,165 @@ li {
 
 
 
-
-
-
-/* join-whole */
-
-
-
-
-
-#join-whole {
-    position: relative;
-    float: left;
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    left:50%;
-    transform: translate(-50%);
-    box-sizing: border-box;
-    padding: 0 20px;
-}
-
-
-
-
-/* join-step-wrap */
-.join-step-wrap {
-    position: relative;
-    float: left;
-    width: 100%;
-    z-index: 3;
-    box-sizing: border-box;
-    margin-top:150px;
-}
-.join-step-txt-wrap {
-    position: relative;
-    float: left;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 20px;
-    font-size: 12px;
-}
-
-
-.join-step-txt-wrap p {
-    color: #2f2f2f;
-}
-
-
-.join-step-line {
-    position: relative;
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding:0 20px;
-}
-
-.step {
-    position:relative;
-    border-radius: 100%;
-    font-size: 45px;
-    top: -23px;
-    z-index: 2;
-}
-
-.step1 {
-    left:-15px;
-    opacity: 1;
-}
-
-.step3 {
-    right: -15px;
-    color: #2f2f2f;
-}
-
-
-.step-line{
-    position: absolute;
-    float:left;
-    width:100%;
-    height: 30px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    left:50%;
-    transform: translate(-50%);
-    padding:0 20px;
-}
-
-.join-step-line2 {
-    position: relative;
-    float: left;
-    width: 50%;
-    border-top: 2px solid #2f2f2f;
-}
-
-.join-step-line3 {
-    position: relative;
-    float: right;
-    width: 50%;
-    border-top: 2px solid #2f2f2f;
-}
-
-/* //join-step-wrap */
-
-
-
-
-.join-wrap {
-    position: relative;
-    float: left;
-    width: auto;
-    height: auto;
-    left: 50%;
-    transform: translate(-50%);
-    background: #fff;
-    box-sizing: border-box;
-    margin-top: 140px;
-
-
-}
-.shape{
-    position: relative;
-    float:left;
-    width:50px;
-    height: 50px;
-    background: #e0e0e0;
-    border-radius: 100%;
-    left:50%;
-    transform: translate(-50%);
-}
-.success-img{
-    position: absolute;
-    width:45px;
-    bottom:10px;
-    left:5px;
-}
-
-.success-title{
+/* login */
+#login{
     position: relative;
     float:left;
     width:100%;
+    height:100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
+}
+.login-wrap{
+        position: relative;
+    width:300px;
+    height:500px;
     text-align: center;
-    font-size: 20px;
-    margin-top:20px;
 }
 
 
-.go-to-login{
+
+
+
+.user-login{
     position: relative;
     float:left;
-    background: #2f2f2f;
+    width:100%;
+    margin-top:70px;
+}
+.user-login input{
+    position: relative;
+    float:left;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #d1d1d1;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="password"]{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.user-login input:focus{
+    outline: none;
+}
+.user-login input::placeholder{
+    color:#d1d1d1;
+}
+
+
+
+.remember-user-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+}
+.remember-user-wrap .remember-user{
+    position: relative;
+    float:left;
+    width:12px;
+    left:0;
+    border-radius: 0;
+}
+.remember-user-wrap .remember-txt{
+    position: relative;
+    float:left;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+
+.user-login .login-btn{
+    position: relative;
+    float:left;
+    width:100%;
+    background: #292929;
     color:#fff;
-    padding:15px 90px;
-    font-size: 13px;
-    margin-top:100px;
+    padding:18px 0;
+}
+.user-login .non-member-btn{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:10px;
+    border:1px solid #707070;
+    color:#101010;
+    padding:18px 0;
+    box-sizing: border-box;
+}
+
+
+
+.user-help{
+    position: relative;
+    float:left;
+    width:250px;
+    margin-top:40px;
     left:50%;
     transform: translate(-50%);
+    display: flex;
+    justify-content: space-between; 
 }
+.user-help p{
+    color:#999;
+}
+.user-help .join{
+    color:#292929;
+}
+
+
+.join-sns{
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+}
+
+.join-sns img{
+    position: relative;
+    float:left;
+    width:35px;
+    margin: 0 10px;
+}
+/* //login */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

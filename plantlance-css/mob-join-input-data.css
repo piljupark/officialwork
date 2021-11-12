@@ -138,6 +138,10 @@ li {
 }
 
 
+
+
+
+
 /* join-step-wrap */
 .join-step-wrap {
     position: relative;
@@ -145,20 +149,41 @@ li {
     width: 100%;
     z-index: 3;
     box-sizing: border-box;
-    padding: 0 20px;
     margin-top:150px;
 }
+.join-step-txt-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+
+.join-step-txt-wrap p {
+    color: #2f2f2f;
+}
+.join-step-txt-wrap p:nth-child(3) {
+    color: #e0e0e0;
+}
+
+
 .join-step-line {
     position: relative;
     float: left;
     width: 100%;
-    left: 50%;
-    transform: translate(-50%);
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding:0 10px;
 }
 
 .step {
-    position: absolute;
+    position:relative;
     border-radius: 100%;
     font-size: 45px;
     top: -23px;
@@ -170,54 +195,41 @@ li {
     opacity: 1;
 }
 
-.step2 {
-    left: 50%;
-    transform: translate(-50%);
-    color: #2f2f2f;
-}
-
 .step3 {
     right: -15px;
     color: #e0e0e0;
 }
 
-.join-step-txt-wrap {
-    position: relative;
-    float: left;
-    width: 110%;
+
+.step-line{
+    position: absolute;
+    float:left;
+    width:100%;
+    height: 30px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    left: 50%;
+    left:50%;
     transform: translate(-50%);
-    margin-bottom: 20px;
-    font-size: 10px;
-}
-
-.join-step-txt-wrap p {
-    color: #2f2f2f;
-}
-
-.join-step-txt-wrap p:nth-child(3) {
-    color: #e0e0e0;
+    padding:0 10px;
 }
 
 .join-step-line2 {
     position: relative;
     float: left;
     width: 50%;
-    border-bottom: 2px solid #2f2f2f;
-    top: 0.9px;
+    border-top: 2px solid #2f2f2f;
 }
 
 .join-step-line3 {
     position: relative;
-    float: left;
+    float: right;
     width: 50%;
-    border-bottom: 2px solid #e0e0e0;
-
+    border-top: 2px solid #e0e0e0;
 }
 
 /* //join-step-wrap */
+
 
 
 
@@ -566,6 +578,11 @@ li {
     float: left;
     font-size: 13px;
     top: 1px;
+}
+
+.submit-checkbox input[type="checkbox"]{
+    padding:0;
+    margin-top:1px;
 }
 
 /* //join-submit-wrap */

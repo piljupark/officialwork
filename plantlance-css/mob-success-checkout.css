@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Light.otf");
+    font-family: "Pretendard-Light";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Light.ttf");
+    font-family: "Urbanist-Light";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+
+
+
+.txt-eng-light {
+    font-family: "Urbanist-Light";
+}
+
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+
+.txt-eng-semibold {
+    font-family: "Urbanist-SemiBold";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+.txt-kor-light {
+    font-family: "Pretendard-Thin";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Medium";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+/* success */
+#success {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    left:50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    padding:0 20px;
+}
+
+.success-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* success-title */
+.success-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.title-shape {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #eee;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.title-shape img {
+    position: absolute;
+    width: 50px;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+/* //success-title */
+
+
+
+/* success-info */
+.success-info-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+    border-top: 2px solid #292929;
+    border-bottom: 2px solid #292929;
+}
+
+.success-info-wrap .success-info {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.success-info-wrap .success-info p {
+    position: relative;
+    float: left;
+    font-size: 11px;
+}
+
+.success-info-wrap .success-info p:nth-child(1) {
+    width: 25px;
+    color: #ddd;
+}
+
+.success-info-wrap .success-info p:nth-child(3) {
+    float: right;
+    margin-right: 10px;
+}
+
+
+
+.success-info-wrap .success-price p:nth-child(3) {
+    color: #3D82B8;
+}
+
+/* //success-info */
+
+
+
+/* back-to-shop-button */
+.back-to-shop {
+    position: fixed;
+
+    float: left;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    margin-top: 40px;
+    background: #292929;
+    text-align: center;
+    z-index: 2;
+}
+
+.back-to-shop a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.back-to-shop .text-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 37.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.back-to-shop p {
+    position: relative;
+    float: left;
+    width: auto;
+    color: #fff;
+    font-size: 18px;
+    top: 18px;
+    text-align: center;
+
+}
+
+
+
+/* //back-to-shop-button */
+
+
+
+
+/* success-bottom-menu */
+.success-bottom-menu {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin-top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.success-bottom-menu p {
+    position: relative;
+    color: #a8a8a8;
+    transition-duration: .2s;
+}
+
+.success-bottom-menu a:nth-child(1) p {
+    color: #292929;
+}
+
+.success-bottom-menu .bottom-menu:hover {
+    color: #292929;
+}
+
+/* //success-bottom-menu */
+
+
+
+
+/* success */

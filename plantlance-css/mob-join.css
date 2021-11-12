@@ -68,7 +68,9 @@ body::-webkit-scrollbar{
     display: none;
 }
 */
-
+html{
+    overflow-x: hidden;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -133,8 +135,11 @@ li {
     position: relative;
     float: left;
     width: 100%;
+    max-width: 500px;
     height: 100vh;
     box-sizing: border-box;
+    left:50%;
+    transform: translate(-50%);
 }
 
 .join-bg {
@@ -144,7 +149,7 @@ li {
     height: 100vh;
     top: 0;
     left: 0;
-    background: #f5f5f5;
+    background: #fff;
     z-index: 5;
     opacity: .7;
 }
@@ -164,6 +169,7 @@ li {
     margin-top:150px;
     padding:0 20px;
 }
+
 .join-step-txt-wrap {
     position: relative;
     float: left;
@@ -173,7 +179,7 @@ li {
     left: 50%;
     transform: translate(-50%);
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
@@ -192,7 +198,7 @@ li {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding:0 20px;
+    padding:0 10px;
 }
 
 .step {
@@ -225,7 +231,7 @@ li {
     justify-content: space-between;
     left:50%;
     transform: translate(-50%);
-    padding:0 20px;
+    padding:0 10px;
 }
 
 .join-step-line2 {
@@ -264,9 +270,10 @@ li {
 .join-close-button {
     position: absolute;
     float: left;
-    width: 20px;
-    top: 30px;
-    right: 30px;
+    width: 17px;
+    top: 95px;
+    right: 18px;
+    z-index: 7;
 }
 
 .join-title {
@@ -418,16 +425,8 @@ li {
 
 
 
-@media screen and (max-width:649px) and (min-width:200px){
-    .join-close-button{
-        top:70px;
-        right:18px;
-    }
-    
-    .join-bg{
-        background: #fff;
-    }
-    
+
+
     
     /* join-wrap */
     .join-wrap{
@@ -536,15 +535,8 @@ li {
     }
     /* //join-wrap */
     
-}
 
-
-
-
-
-@media screen and (max-width:399px) and (min-width:200px){
     .join-wrap{
         padding:0 20px;
     }
     
-}

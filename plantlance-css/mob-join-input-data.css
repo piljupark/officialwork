@@ -129,8 +129,7 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    max-width: 1400px;
-    min-width: 1400px;
+    max-width: 500px;
     height: auto;
     box-sizing: border-box;
     padding: 0 20px;
@@ -144,8 +143,6 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    left: 50%;
-    transform: translate(-50%);
     z-index: 3;
     box-sizing: border-box;
     padding: 0 20px;
@@ -158,7 +155,6 @@ li {
     left: 50%;
     transform: translate(-50%);
     box-sizing: border-box;
-    
 }
 
 .step {
@@ -188,13 +184,13 @@ li {
 .join-step-txt-wrap {
     position: relative;
     float: left;
-    width: 103%;
+    width: 110%;
     display: flex;
     justify-content: space-between;
     left: 50%;
     transform: translate(-50%);
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .join-step-txt-wrap p {
@@ -263,10 +259,13 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    height: 80px;
-    padding: 0px 20px;
+    height: 100px;
+    padding: 0px ;
     border-bottom: 1px solid #e0e0e0;
     box-sizing: border-box;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
 }
 
 .input-data-txt-wrap {
@@ -276,9 +275,7 @@ li {
     height: 100%;
 }
 
-.id {
-    border-top: 2px solid #808080;
-}
+
 
 .essential {
     position: relative;
@@ -290,6 +287,7 @@ li {
     top: 50%;
     transform: translate(0, -50%);
 }
+
 
 .call-number .essential {
     opacity: 0;
@@ -305,22 +303,22 @@ li {
     transform: translate(0, -50%);
 }
 
+
 .join-input-data-wrap input {
     position: relative;
     float: left;
+    width: 100%;
+    padding: 7px 0;
+    font-size: 12px;
+    text-align: center;
+    background: #f9f9f9;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
-    border: none;
     border: 1px solid #e0e0e0;
-    padding: 7px 0;
-    background: #f9f9f9;
     outline: none;
-    font-size: 12px;
-    width: 240px;
-    text-align: center;
-    top: 50%;
-    transform: translate(0, -50%);
+    box-sizing: border-box;
 }
+
 
 .join-input-data-wrap input::placeholder {
     text-align: center;
@@ -328,24 +326,63 @@ li {
     color: #d0d0d0;
 }
 
+
+
+
+
+
+/* id */
+.id {
+    border-top: 2px solid #808080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.id-input-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .id-check {
     position: relative;
     float: left;
-    width: auto;
+    width:40px;
+    margin-left: 10px;
+    padding: 9px 10px;
+    font-size: 11px;
     background: #808080;
     color: #fff;
-    font-size: 11px;
-    padding: 9px 10px;
-    margin-left: 10px;
-    top: 50%;
-    transform: translate(0, -50%);
+    text-align: center;
 }
+/* //id */
 
 
+
+
+
+/* e-mail */
+.email-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+}
+.email-select-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+    box-sizing: border-box;
+}
 .join-input-data-wrap .email-check {
-    width: 90px;
-    margin-left: 10px;
+    width: 100%;
     padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .join-input-data-wrap .email-check::placeholder {
@@ -366,45 +403,56 @@ li {
     background: url('../plantlance-image/icon/arrow-down2.png') calc(100% - 5px) center no-repeat;
     background-size: 10px;
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 11px;
     border: 1px solid #e0e0e0e0;
     cursor: pointer;
-    top: 50%;
-    transform: translate(0, -50%);
 }
+/* //e-mail */
 
-.address {
-    height: 100px;
+
+
+
+
+/* address */
+.address-wrap{
+    position: relative;
+    float:left;
+    width:100%;
 }
-
-.address input {
-    top: 30%;
+.address-find-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 .address .address-button {
     position: relative;
     float: left;
-    width: auto;
+    width: 100px;
     background: #808080;
     color: #fff;
     font-size: 11px;
     padding: 9px 5px;
     margin-left: 10px;
-    top: 30%;
-    transform: translate(0, -50%);
     cursor: pointer;
+    text-align: center;
 }
 
 .address .other-address {
-    width: 400px;
-    margin-top: 10px;
-    position: absolute;
-    left: 170px;
-    top: 60%;
-
+    position: relative;
+    float:left;
+    width:100%;
+    margin-top:10px;
 }
+/* //address */
+/* //join-inpt-data-wrap */
 
-/* //join-input-data-wrap */
+
+
+
+
 
 
 /* join-submit-wrap */
@@ -431,7 +479,7 @@ li {
     float: left;
     width: 100%;
     font-size: 12px;
-
+    opacity: .7;
 }
 
 .join-submit-info-wrap {
@@ -539,98 +587,35 @@ li {
 /* //join-submit-next-button */
 
 
-/*
-@media screen and (max-width:725px) and (min-width:200px) {
-
-    .join-input-data-wrap .e-mail {
-        height: 100px;
-    }
-
-    .join-input-data-wrap .e-mail input {
-        top: 30%;
-    }
-
-    .join-input-data-wrap .e-mail select {
-        margin-left: 0;
-        top: 40%;
-    }
-
-
-    .address .other-address {
-        width: 200px;
-    }
 
 
 
-}
 
-@media screen and (max-width:649px) and (min-width:200px) {
+
+
+
+
+
+
+
+
 
 
     
-    .join-step-wrap {
-        width: 100%;
-        padding: 0 0px;
-        box-sizing: border-box;
-    }
+  
 
-    .join-step-txt-wrap {
-        width: 100%;
-    }
-
-    .join-step-line {
-        width: 92%;
-        box-sizing: border-box;
-    }
+  
 
     
 
 
 
 
-    .join-input-data-wrap input {
-        width: 165px;
-    }
+   
 
 
-}
-
-@media screen and (max-width:560px) and (min-width:200px) {
-    #join-whole {
-        padding: 0 20px;
-    }
-    .input-data-txt-wrap {
-        position: relative;
-        float: left;
-        width: 100px;
-        height: 100%;
-    }
-    .join-input-data-wrap input {
-        width:35%;
-    }
-    
-    .address .other-address {
-        width:40%;
-        left:120px;
-    }
-}
 
 
-@media screen and (max-width:415px) and (min-width:200px) {
-    .email-check{
-        width:20%;
-    }
-    
-    .input-data{
-        padding:0;
-    }
-    
-    
-    .address .other-address {
-        left:100px;
-    }
-
-}
 
 
-*/
+

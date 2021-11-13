@@ -15,12 +15,12 @@
 
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/payment.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/mob-payment.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
 
 
 
- <script>
+    <script>
         // **  gnb 스크립트 
 
 
@@ -242,12 +242,12 @@
 
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "none");
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "block");
-                
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","none");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","block");
+
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display", "none");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display", "block");
             });
             /* //모바일 메뉴 - 퍼니쳐 활성화 */
 
@@ -263,11 +263,11 @@
 
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","block");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","none");
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display", "block");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display", "none");
             });
             /* //모바일 메뉴 - 퍼니쳐 비활성화 */
 
@@ -329,8 +329,8 @@
 </head>
 
 <body>
- 
- <!-- gnb -->
+
+    <!-- gnb -->
     <nav>
         <div class="nav-wrap">
             <a href="#none">
@@ -482,7 +482,7 @@
                                     <p class="txt-kor">메이트 테이블 시리즈</p>
                                 </a>
 
-                              
+
 
 
 
@@ -678,7 +678,7 @@
                                 <a href="#none">
                                     <p class="txt-kor">메이트 테이블 시리즈</p>
                                 </a>
-                                
+
                             </div>
                             <a href="list-chair-mob.html">
                                 <p class="txt-eng sub-title">Chair</p>
@@ -780,14 +780,14 @@
     <!-- //gnb 모바일 -->
 
     <!-- //gnb -->
-    
-    
-    
-    
-    
 
 
- 
+
+
+
+
+
+
 
     <div id="payment">
         <div class="payment-wrap">
@@ -861,32 +861,50 @@
                             <input type="text">
                         </div>
                         <div class="customer-wrap number-wrap">
-                            <p class="txt-kor number">휴대폰 번호</p>
+                            <p class="txt-kor name number">휴대폰 번호</p>
 
                             <input type="number">
 
                         </div>
+
+                       
+                       
                         <div class="customer-wrap email-wrap">
                             <p class="txt-kor name">이메일</p>
-                            <input type="email">
-                            <p class="txt-eng at">@</p>
-                            <input type="email" class="email-dot">
-                            <select name="number" class="selection">
-                                <option value="" selected>직접입력</option>
-                                <option value="naver">naver.com</option>
-                                <option value="google">google.com</option>
-                                <option value="hanmail">hanmail.net</option>
-                                <option value="nate">nate.com</option>
 
-                            </select>
+                            <div class="email-input-wrap">
+                                <input type="email" class="email-address">
+
+                                <div class="email-select-wrap">
+                                    <input type="email" class="email-dot">
+                                    <select name="number" class="selection">
+                                        <option value="" selected>직접입력</option>
+                                        <option value="naver">naver.com</option>
+                                        <option value="google">google.com</option>
+                                        <option value="hanmail">hanmail.net</option>
+                                        <option value="nate">nate.com</option>
+
+                                    </select>
+                                </div>
+                            </div>
                         </div>
+                        
+                        
                         <div class="customer-wrap address-wrap">
                             <p class="txt-kor name">배송 주소</p>
-                            <input id="member_addr" type="text" readonly>
-                            <p id="member_post" class="address-button" readonly onclick="findAddr()">
-                                우편번호 찾기
-                            </p>
+                            
+                            
+                            <div class="address-input-wrap">
+                            <div class="address-find-wrap">
+                                <input id="member_addr" type="text" readonly>
+                            
+                            
+                                <p id="member_post" class="address-button" readonly onclick="findAddr()">
+                                    우편번호 찾기
+                                </p>
+                            </div>
                             <input type="text" class="other-address" placeholder="나머지 주소">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -900,49 +918,78 @@
                     <div class="customer">
                         <div class="customer-wrap name-wrap">
                             <p class="txt-kor name">배송지 선택</p>
-                            <input type="checkbox" class="delivery-check">
-                            <p class="txt-kor">주문자와 동일</p>
+                            
+                            <div class="same-buyer">
+                                <input type="checkbox" class="delivery-check" id="delivery-checkbox">
+                                
+                                <label for="delivery-checkbox">
+                                    <p class="txt-kor">주문자와 동일</p>
+                                </label>
+                            </div>
                         </div>
                         <div class="customer-wrap name-wrap">
                             <p class="txt-kor name">받으시는 분</p>
                             <input type="text">
                         </div>
                         <div class="customer-wrap number-wrap">
-                            <p class="txt-kor number">휴대폰 번호</p>
+                            <p class="txt-kor name number">휴대폰 번호</p>
 
                             <input type="number">
 
                         </div>
                         <div class="customer-wrap number-wrap">
-                            <p class="txt-kor number">전화번호</p>
+                            <p class="txt-kor name number">전화번호</p>
 
                             <input type="number">
 
                         </div>
+                        
+                        
+                        
                         <div class="customer-wrap email-wrap">
                             <p class="txt-kor name">이메일</p>
-                            <input type="email">
-                            <p class="txt-eng at">@</p>
-                            <input type="email" class="email-dot">
-                            <select name="number" class="selection">
-                                <option value="" selected>직접입력</option>
-                                <option value="naver">naver.com</option>
-                                <option value="google">google.com</option>
-                                <option value="hanmail">hanmail.net</option>
-                                <option value="nate">nate.com</option>
-                            </select>
+
+                            <div class="email-input-wrap">
+                                <input type="email" class="email-address">
+
+                                <div class="email-select-wrap">
+                                    <input type="email" class="email-dot">
+                                    <select name="number" class="selection">
+                                        <option value="" selected>직접입력</option>
+                                        <option value="naver">naver.com</option>
+                                        <option value="google">google.com</option>
+                                        <option value="hanmail">hanmail.net</option>
+                                        <option value="nate">nate.com</option>
+
+                                    </select>
+                                </div>
+                            </div>
                         </div>
+                        
+                        
+                        
                         <div class="customer-wrap address-wrap">
                             <p class="txt-kor name">배송 주소</p>
-                            <input id="member_addr2" type="text" readonly>
-                            <p id="member_post2" class="address-button" readonly onclick="findAddr1()">
-                                우편번호 찾기
-                            </p>
+                            
+                            
+                            <div class="address-input-wrap">
+                            <div class="address-find-wrap">
+                                <input id="member_addr2" type="text" readonly>
+                            
+                            
+                                <p id="member_post2" class="address-button" readonly onclick="findAddr1()">
+                                    우편번호 찾기
+                                </p>
+                            </div>
                             <input type="text" class="other-address" placeholder="나머지 주소">
+                            </div>
                         </div>
+                        
+                        
+                        
                         <div class="customer-wrap message-wrap">
                             <p class="txt-kor name">배송 메세지</p>
-                            <input type="text">
+                            <textarea value="delivery-messege" class="txt-kor"></textarea>
                         </div>
                     </div>
                 </div>
@@ -1025,20 +1072,23 @@
                                 </div>
 
                                 <div class="way-kind-info">
-                                   <div class="way-kind-info-txt-wrap">
-                                    <div class="way-kind-info-wrap">
-                                        <p class="txt-kor title">입금자명</p>
-                                        <input type="text">
-                                        <p class="txt-kor deposit-number"> 농협 | 301-0238-1529-61 (주식회사 플랜트란스)</p>
-                                    </div>
+                                    <div class="way-kind-info-txt-wrap">
+                                        <div class="way-kind-info-wrap">
+                                          
+                                            <p class="txt-kor title">입금자명</p>
+                                            <input type="text">
+                                            <p class="txt-kor deposit-number"> 농협 | 301-0238-1529-61 (주식회사 플랜트란스)</p>
+                                        </div>
 
-                                    <div class="way-notice-wrap">
-                                        <p class="txt-kor">&bull; 입금액과 결제 금액이 일치해야 정상 입금완료되니 금액을 반드시 확인 바랍니다.</p>
-                                        <p class="txt-kor">&bull; 입금 기한은 주문 완료 후 3일 이내이며, 미입금 시 자동 취소 됩니다.</p>
-                                    </div>
+                                        <div class="way-notice-wrap">
+                                            <p class="txt-kor">&bull; 입금액과 결제 금액이 일치해야 정상 입금완료되니 금액을 반드시 확인 바랍니다.</p>
+                                            <p class="txt-kor">&bull; 입금 기한은 주문 완료 후 3일 이내이며, 미입금 시 자동 취소 됩니다.</p>
+                                        </div>
+                                           
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            
 
                             <!-- 계좌이체 -->
                             <div class="live-wrap">
@@ -1144,12 +1194,11 @@
 
                             </div>
                         </div>
-
+                    </div>
                     </div>
 
                 </div>
 
-            </div>
             <!-- //결제 정보 -->
 
 
@@ -1417,7 +1466,6 @@
 
 
     </div>
-
 
 
 

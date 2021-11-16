@@ -81,6 +81,7 @@ body {
     /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
 }
 
+
 a,
 p,
 li {
@@ -136,6 +137,7 @@ li {
     width:500px;
     height:500px;
     text-align: center;
+    box-sizing: border-box;
 }
 .login-wrap .login-type{
     position: relative;
@@ -158,7 +160,9 @@ li {
     justify-items: center;
     border:2px solid #292929;
     border-bottom: none;
+    
 }
+
 
 .login-type .not-a-user{
     position: relative;
@@ -174,6 +178,7 @@ li {
     align-items: center;
     justify-items: center;
 }
+
 .login-type .not-a-user .not-a-user-button{
     color:#999;
 }
@@ -186,6 +191,7 @@ li {
     justify-content: center;
     align-items: center;
     justify-items: center;
+    box-sizing: border-box;
 }
 
 
@@ -196,6 +202,7 @@ li {
     float:left;
     width:100%;
     margin-top:70px;
+    box-sizing: border-box;
 }
 .user-login input{
     position: relative;
@@ -205,6 +212,7 @@ li {
     border-bottom:1px solid #d1d1d1;
     padding-bottom: 15px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 input[type="text"], input[type="password"]{
     -webkit-appearance: none;
@@ -301,6 +309,7 @@ input[type="text"], input[type="password"]{
     padding-bottom: 15px;
     margin-bottom: 20px;
     -webkit-border-radius: 0;
+    box-sizing: border-box;
 }
 .customer-login input:focus{
     outline: none;

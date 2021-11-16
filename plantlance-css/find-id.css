@@ -124,7 +124,7 @@ li {
     position: relative;
     float:left;
     width:100%;
-    max-width: 500px;
+    max-width: 300px;
     height:100vh;
     display: flex;
     align-content: center;
@@ -137,19 +137,100 @@ li {
 }
 
 
+.find-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+}
+
 .find-title-wrap{
     position: relative;
     float:left;
     width:100%;
-    text-align: center;
 }
 
 .find-title{
     position: relative;
     font-size: 20px;
+    transition-duration: .3s;
 }
 
-/* find-id */
+.find-id-title{
+    margin-right: 20px;
+    cursor:default;
+}
+.find-pw-title{
+    opacity: .5;
+}
+.find-pw-title:hover{
+    opacity: 1;
+}
+
+
+
+
+/* to-number */
+.to-number-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    margin-top:50px;
+}
+.to-number-title{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.to-number-button{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+    background: #2f2f2f;
+    color:#fff;
+}
+/* //to-number */
+
+
+/* to-email */
+.to-email-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto;
+    margin-top:10px;
+}
+.to-email-title{
+    position: relative;
+    float:left;
+    width:100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.to-email-button{
+    position: relative;
+    float:left;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+    border:1px solid #2f2f2f;
+    transition-duration: .3s;
+}
+
+/* //to-email */
+
+
+
+/* //find-id */
 
 
 

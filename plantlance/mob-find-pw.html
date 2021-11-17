@@ -14,7 +14,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/find-id.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/mob-find-pw.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
 
 
@@ -46,7 +46,7 @@
             
             
             $(".to-email-button").click(function(){
-                $(".input-yours").css("height","200px");
+                $(".input-yours").css("height","280px");
             });
         });
     </script>
@@ -835,11 +835,11 @@
     <div id="find-id">
         <div class="find-wrap">
             <div class="find-title-wrap">
-
-                <span class="txt-kor find-title find-id-title">아이디 찾기</span>
-                <a href="find-pw.html">
+                <a href="mob-find-id.html">
+                    <span class="txt-kor find-title find-id-title">아이디 찾기</span>
+                 </a>
                     <span class="txt-kor find-title find-pw-title">비밀번호 찾기</span>
-                </a>
+               
             </div>
 
             <div class="to-number-wrap">
@@ -858,6 +858,7 @@
                 <div class="input-yours">
 
                     <input type="text" name="name" placeholder="이름을 입력해주세요" autocomplete="off" class="txt-kor" id="name">
+                     <input type="text" name="id" placeholder="아이디를 입력해주세요" autocomplete="off" class="txt-kor" id="id">
 
                     <input type="email" name="mail" placeholder="이메일을 입력해주세요" autocomplete="off" class="txt-kor">
                     <div id="error_mail" class="txt-kor result-email result-check"></div>

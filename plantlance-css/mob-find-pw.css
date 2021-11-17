@@ -157,14 +157,16 @@ li {
 }
 
 .find-id-title{
-    margin-right: 20px;
-    cursor:default;
-}
-.find-pw-title{
+    margin-right: 20px;   
     opacity: .5;
 }
-.find-pw-title:hover{
+.find-id-title:hover{
     opacity: 1;
+}
+
+.find-pw-title{
+    opacity: 1;
+    cursor:default;
 }
 
 

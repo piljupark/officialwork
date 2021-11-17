@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Light.otf");
+    font-family: "Pretendard-Light";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Light.ttf");
+    font-family: "Urbanist-Light";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+
+
+.txt-eng-light{
+    font-family: "Urbanist-Light";
+}
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+.txt-eng-semibold{
+    font-family: "Urbanist-SemiBold";
+}
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+.txt-kor-light{
+     font-family: "Pretendard-Thin";
+}
+.txt-kor {
+    font-family: "Pretendard-Medium";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-SemiBold";
+}
+
+
+
+
+
+/* terms-conditions */
+#terms-conditions{
+    position: relative;
+    float:left;
+    width:100%;
+    max-width: 1400px;
+    height:100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    overflow-x: hidden;
+    left:50%;
+    transform: translate(-50%);
+    background:#ddd;
+    margin-top:100px;
+}
+
+
+
+
+
+/* //terms-conditions */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

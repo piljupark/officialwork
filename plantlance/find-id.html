@@ -34,19 +34,19 @@
                 if (!email_check(email)) {
                     $(".result-email").text('× 이메일을 확인해주세요');
                     $(".result-email").css('color', '#a50000');
-                    $("input[type=email]").css('border', '2px solid #a50000');
-                    $(".send-to-email").css('opacity','.4');
+                    $("input[type=email]").css('border-bottom', '2px solid #a50000');
+                    $(".send-to-email").css('opacity', '.4');
                     return false;
                 } else {
                     $(".result-email").text('');
-                    $("input[type=email]").css('border', '2px solid #466A7A');
-                    $(".send-to-email").css('opacity','1');
+                    $("input[type=email]").css('border-bottom', '2px solid #466A7A');
+                    $(".send-to-email").css('opacity', '1');
                 }
             });
-            
-            
-            $(".to-email-button").click(function(){
-                $(".input-yours").css("height","200px");
+
+
+            $(".to-email-button").click(function() {
+                $(".input-yours").css("height", "240px");
             });
         });
     </script>
@@ -834,8 +834,12 @@
 
     <div id="find-id">
         <div class="find-wrap">
-            <div class="find-title-wrap">
 
+            <a href="login.html">
+                <img src="../plantlance-image/icon/right-arrow.png" class="go-back-login">
+            </a>
+
+            <div class="find-title-wrap">
                 <span class="txt-kor find-title find-id-title">아이디 찾기</span>
                 <a href="find-pw.html">
                     <span class="txt-kor find-title find-pw-title">비밀번호 찾기</span>
@@ -861,7 +865,7 @@
 
                     <input type="email" name="mail" placeholder="이메일을 입력해주세요" autocomplete="off" class="txt-kor">
                     <div id="error_mail" class="txt-kor result-email result-check"></div>
-                    
+
                     <a href="#none">
                         <p class="txt-kor send-to-email">확인</p>
                     </a>

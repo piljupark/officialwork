@@ -125,15 +125,15 @@ li {
     float:left;
     width:100%;
     max-width: 250px;
-    height:100vh;
+    height:auto;
     display: flex;
     align-content: center;
     justify-content: center;
-    align-items: center;
     justify-items: center;
     overflow-x: hidden;
     left:50%;
     transform: translate(-50%);
+    margin-top:150px;
 }
 
 

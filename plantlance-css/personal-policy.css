@@ -159,12 +159,12 @@ li {
     letter-spacing: 1px;
 }
 
-.personal-policy{
+.terms-condition-title{
     opacity: .3;
-    margin-left:10px;
+    margin-right:10px;
     transition-duration: .4s;
 }
-.personal-policy:hover{
+.terms-condition-title:hover{
     opacity: .8;
 }
 

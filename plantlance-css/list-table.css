@@ -1145,6 +1145,59 @@ li {
 
 
 
+/* lighting img */
+.default.any-wireless-lamp{
+    width:80%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.any-wireless-lamp{
+    width:80%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.default.farol-lamp-floor{
+    width:45%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.farol-lamp-floor{
+    width:45%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.default.farol-lamp{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.farol-lamp{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.default.celina-lamp{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.celina-lamp{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+/* //lighting img */
+
+
 
 
 

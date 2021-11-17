@@ -152,10 +152,10 @@ li {
     position: relative;
     float:left;
     width:100%;
-    font-size: 35px;
+    font-size: 28px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
-    font-family: "Pretendard-Bold";
+    font-family: "Pretendard-ExtraBold";
     letter-spacing: 1px;
 }
 

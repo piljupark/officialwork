@@ -1279,6 +1279,67 @@ li {
 
 
 
+/* planterior img */
+.default.air-purifying{
+    width:50%;
+    top:40%;
+    transform: translate(0,-50%);
+}
+.img-zoom.air-purifying{
+    width:50%;
+    top:40%;
+    transform: translate(0,-50%);
+}
+
+
+
+.default.functional-plant{
+    width:45%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.functional-plant{
+    width:45%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+
+.default.mini-plant{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.mini-plant{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+
+
+.default.mini-pot{
+    width:50%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.mini-pot{
+    width:50%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+/* //planterior img */
+
+
+
+
+
 
 
 

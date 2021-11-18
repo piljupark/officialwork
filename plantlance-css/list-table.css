@@ -1146,13 +1146,27 @@ li {
 
 
 /* lighting img */
+.default.any-wireless-lamp-floor{
+    width:45%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.any-wireless-lamp-floor{
+    width:45%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
 .default.any-wireless-lamp{
-    width:80%;
+    width:90%;
     top:50%;
     transform: translate(0,-50%);
 }
 .img-zoom.any-wireless-lamp{
-    width:80%;
+    width:90%;
     top:50%;
     transform: translate(0,-50%);
 }
@@ -1196,6 +1210,70 @@ li {
     transform: translate(0,-50%);
 }
 /* //lighting img */
+
+
+
+
+
+
+/* interior img */
+.default.side-table{
+    width:80%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.side-table{
+    width:80%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.default.tubo-bin{
+    width:80%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.tubo-bin{
+    width:80%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+/* //interior img */
+
+
+
+
+/* kitchen img */
+.default.mio-bowl{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.mio-bowl{
+    width:70%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.default.mio-mug{
+    width:50%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.mio-mug{
+    width:50%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+/* //kitchen img */
+
+
 
 
 

@@ -769,6 +769,92 @@ li {
 
 
 
+/* mob-lighting-img */
+.mob-any-wireless-lamp-floor{
+    width:50%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-any-wireless-lamp{
+    width:100%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-farol-lamp-floor{
+    width:60%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-farol-lamp{
+    width:80%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-celina-lamp{
+    width:80%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+/* //mob-lighting-img */
+
+
+
+
+
+
+
+/* mob-interior-img */
+.mob-side-table{
+    width:90%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+.mob-tubo-bin{
+    width:90%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+/* //mob-interior-img */
+
+
+
+
+
+
+/* mob-kitchen-img */
+.mob-mio-bowl{
+    width:90%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+.mob-mio-mug{
+    width:60%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+/* //mob-kitchen-img */
+
+
+
+
+
+
+
+
+
+
 
 
 /* more-product */

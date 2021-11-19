@@ -230,8 +230,17 @@ li {
     width:300px;
     height: 200px;
     background: #eee;
+    overflow: hidden;
 }
 
+.showroom-img-small img{
+    position: relative;
+    float:left;
+    width:130%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 
 .showroom-address-wrap{
     position: relative;
@@ -315,10 +324,20 @@ li {
     position: relative;
     float:left;
     width:100%;
-    height: 350px;
+    height: 550px;
     background: #eee;
     margin-bottom: 50px;
+    overflow: hidden;
 }
+.showroom-map-img{
+    position: relative;
+    float:left;
+    width:100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
 
 
 
@@ -333,7 +352,8 @@ li {
     justify-content: space-between;
     align-items: center;
     border-radius: 40px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+    margin-top:50px;
 }
 
 .ig-arrow-img{
@@ -343,6 +363,15 @@ li {
 
 .go-to-ig-button span{
     margin:0 3px;
+}
+
+
+.ig-img{
+    position: relative;
+    float:left;
+    width:100%;
+    margin:0 auto;
+    margin-bottom: 200px;
 }
 /* //show-showroom-info-wrap */
 

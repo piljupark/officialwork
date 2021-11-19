@@ -1241,6 +1241,20 @@ li {
 }
 
 
+
+
+.default.toilet-brush{
+    width:20%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.toilet-brush{
+    width:20%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
 /* //interior img */
 
 
@@ -1331,6 +1345,92 @@ li {
 }
 .img-zoom.mini-pot{
     width:50%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.default.stand26{
+    width:35%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.stand26{
+    width:35%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.default.stand32{
+    width:40%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.stand32{
+    width:40%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.default.stand18{
+    width:40%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.stand18{
+    width:40%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+
+.default.hanging-plant{
+    width:60%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.hanging-plant{
+    width:60%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.default.bengal-tree{
+    width:35%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.bengal-tree{
+    width:35%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+
+
+.default.wood-stand{
+    width:30%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.img-zoom.wood-stand{
+    width:30%;
     top:50%;
     transform: translate(0,-50%);
 }

@@ -825,6 +825,14 @@ li {
      top:50%;
     transform: translate(0,-50%);
 }
+
+
+
+.mob-toilet-brush{
+    width:25%;
+     top:50%;
+    transform: translate(0,-50%);
+}
 /* //mob-interior-img */
 
 
@@ -850,6 +858,86 @@ li {
 
 
 
+
+
+
+/* mob-planterior-img*/
+.mob-air-purifying{
+    width:65%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+.mob-functional-plant{
+    width:55%;
+     top:55%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-mini-plant{
+    width:100%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-wood-stand{
+    width:40%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+.mob-stand26{
+    width:40%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-stand32{
+    width:50%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-stand18{
+    width:50%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-hanging-plant{
+    width:80%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+
+.mob-bengal-tree{
+    width:45%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+.mob-mini-pot{
+    width:60%;
+     top:50%;
+    transform: translate(0,-50%);
+}
+
+
+/* //mob-planterior-img*/
 
 
 

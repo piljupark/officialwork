@@ -14,133 +14,18 @@
 
     <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/list-table-mob.css">
-    <link rel="stylesheet" type="text/css" href="../plantlance-css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/mob-gnb.css">
     <link rel="stylesheet" type="text/css" href="../plantlance-css/footer.css">
-    
-    
-    
-    <script>
+
+
+
+
+     <script>
         // **  gnb 스크립트 
 
 
         $(document).ready(function() {
-            /* 메뉴 - 웹 슬라이드 메뉴 활성화 */
-            $("nav > .nav-wrap > a > .menu-icon").click(function() {
-                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-duration", ".1s");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", "0s");
-
-                $("#nav-slide").css("width", "100%");
-                $("#nav-slide").css("z-index", "5");
-
-                $("#nav-slide").css("animation-name", "menuShow");
-                $("#nav-slide").css("animation-delay", ".1s");
-                $("#nav-slide").css("animation-fill-mode", "forwards");
-
-                $("#nav-slide > .nav-slide-wrap").css("transition-duration", ".2s");
-                $("#nav-slide > .nav-slide-wrap").css("transition-delay", ".3s");
-                $("#nav-slide > .nav-slide-wrap").css("opacity", "1");
-
-
-                $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "block");
-
-
-                $(".nav-mob").css("animation-name", "menuShow");
-                $(".nav-mob").css("animation-delay", ".1s");
-                $(".nav-mob").css("animation-fill-mode", "forwards");
-
-
-                $(".nav-mob").css("width", "100%");
-
-                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-duration", ".2s");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-delay", ".3s");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "block");
-
-                $("::-webkit-scrollbar").css("display", "none");
-                $("body").css("-ms-overflow-style", "none");
-            });
-            /* // 메뉴 - 웹 슬라이드 메뉴 활성화 */
-
-
-
-
-            /* 메뉴 - 닫기 - 슬라이드 메뉴 비활성화 */
-            $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").click(function() {
-                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
-
-                $("#nav-slide").css("width", "0");
-                $("#nav-slide").css("animation-name", "menuNone");
-                $("#nav-slide").css("animation-delay", ".4s");
-                $("#nav-slide").css("animation-fill-mode", "forwards");
-
-                $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
-
-                $("#nav-slide > .nav-slide-wrap").css("transition-delay", "0s");
-                $("#nav-slide > .nav-slide-wrap").css("transition-duration", ".1s");
-                $("#nav-slide > .nav-slide-wrap").css("opacity", "0");
-
-
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "0px");
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "0px");
-
-
-
-
-
-                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
-
-                $(".nav-mob").css("width", "0");
-                $(".nav-mob").css("animation-name", "menuNone");
-                $(".nav-mob").css("animation-delay", ".4s");
-                $(".nav-mob").css("animation-fill-mode", "forwards");
-
-                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-duration", ".2s");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("transition-delay", ".3s");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "none");
-
-
-
-                $("html::-webkit-scrollbar").css("display", "block");
-                $("html").css("-ms-overflow-style", "auto");
-
-
-            });
-            /* 메뉴 - 닫기 - 슬라이드 메뉴 비활성화 */
-
-
-            /* 메뉴 - 퍼니쳐 - 소파 하위메뉴 비활성화*/
-            $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > a > .title-sofa").click(function() {
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "auto");
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "0px");
-
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap").css("height", "auto");
-            });
-            /* //메뉴 - 퍼니쳐 - 소파 하위메뉴 비활성화*/
-
-
-            /* 메뉴 - 소파 - 테이블 하위 메뉴 활성화 */
-            $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > a > .title-table").click(function() {
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "0px");
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "auto");
-
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap").css("height", "auto");
-            });
-            /* //메뉴 - 소파 - 테이블 하위 메뉴 활성화 */
-
-
-
-
-
-
-
+        
             /* 메뉴 - 모바일 슬라이드 메뉴 활성화 */
             $("nav > .nav-wrap > a > .menu-icon").click(function() {
                 $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
@@ -241,12 +126,12 @@
 
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "none");
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "block");
-                
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","none");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","block");
+
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display", "none");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display", "block");
             });
             /* //모바일 메뉴 - 퍼니쳐 활성화 */
 
@@ -262,11 +147,11 @@
 
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
                 $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","block");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","none");
+
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display", "block");
+
+                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display", "none");
             });
             /* //모바일 메뉴 - 퍼니쳐 비활성화 */
 
@@ -325,13 +210,18 @@
         });
     </script>
 
-   
+
+
 </head>
 
 
 
 <body>
-   <!-- gnb -->
+
+
+
+
+    <!-- gnb -->
     <nav>
         <div class="nav-wrap">
             <a href="#none">
@@ -355,190 +245,7 @@
     </nav>
 
 
-    <div id="nav-slide">
-
-        <div class="nav-slide-wrap nav-pc-tablet">
-            <div class="nav-slide-side">
-                <div class="side-wrap">
-                    <a href="#none">
-                        <img src="../plantlance-image/icon/close2.png" alt="close" class="close-button">
-                    </a>
-                    <div class="side-left">
-
-                        <a href="my-page.html">
-                            <p class="txt-eng-bold my-page">MY PAGE</p>
-                        </a>
-                        <a href="shopping.html">
-                            <p class="txt-eng-bold cart">CART</p>
-                        </a>
-                        <a href="my-page.html">
-                            <p class="txt-eng-bold wish-list">WISH LIST</p>
-                        </a>
-                        <a href="#none">
-                            <p class="txt-eng-bold delivery">DELIVERY</p>
-                        </a>
-                    </div>
-
-                    <div class="side-right">
-                        <p class="txt-eng tel-txt">Customer center</p>
-                        <a href="tel:1899-3417">
-                            <img src="../plantlance-image/icon/call1.png" alt="call" class="call-img">
-                            <p class="txt-eng tel">1899-3417</p>
-                        </a>
-
-                        <p class="txt-eng ig-txt">Instagram</p>
-                        <a href="https://www.instagram.com/plantlance.kr/">
-                            <p class="txt-eng ig">@plantlance.kr</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="nav-slide-top">
-                <div class="user-wrap">
-                    <a href="join.html">
-                        <p class="txt-eng join">JOIN</p>
-                    </a>
-                    <a href="login.html">
-                        <p class="txt-eng login">LOGIN</p>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <div class="nav-main-menu">
-
-                <div class="about">
-                    <p class="txt-eng-bold title">ABOUT</p>
-
-                    <a href="pltl.html">
-                        <p class="txt-eng">PLTL</p>
-                    </a>
-                    <a href="bespoke.html">
-                        <p class="txt-eng">BESPOKE</p>
-                    </a>
-                    <a href="contact.html">
-                        <p class="txt-eng">CONTACT</p>
-                    </a>
-
-                </div>
-
-                <div class="collection">
-                    <p class="txt-eng-bold title">COLLECTION</p>
-                    <a href="#none">
-                        <p class="txt-eng">2021 REFURB</p>
-                    </a>
-                </div>
-
-                <div class="shop">
-                    <p class="txt-eng-bold title">SHOP</p>
-                    <div class="shop-wrap">
-                        <a href="list-new.html">
-                            <p class="txt-eng sub-title">NEW OBJECT</p>
-                        </a>
-                        <a href="#none">
-                            <p class="txt-eng">FURNITURE</p>
-                        </a>
-                        <div class="furniture">
-                            <a href="#none">
-                                <p class="txt-eng sub-title title-sofa">Sofa</p>
-                            </a>
-                            <div class="gnb-sofa">
-                                <a href="list-sofa.html">
-                                    <p class="txt-kor">전체 소파</p>
-                                </a>
-
-                                <a href="#none">
-                                    <p class="txt-kor">플렉스 소파 시리즈</p>
-                                </a>
-
-                                <a href="#none">
-                                    <p class="txt-kor">클라우드 소파 시리즈</p>
-                                </a>
-
-                                <a href="#none">
-                                    <p class="txt-kor">아우어 소파 시리즈</p>
-                                </a>
-
-                                <a href="#none">
-                                    <p class="txt-kor">그래 소파</p>
-                                </a>
-                            </div>
-
-                            <a href="#none">
-                                <p class="txt-eng sub-title title-table">Table</p>
-                            </a>
-                            <div class="gnb-table">
-                                <a href="list-table.html">
-                                    <p class="txt-kor">전체 테이블</p>
-                                </a>
-
-                                <a href="#none">
-                                    <p class="txt-kor">카페 테이블 시리즈</p>
-                                </a>
-
-                                <a href="#none">
-                                    <p class="txt-kor">메이트 테이블 시리즈</p>
-                                </a>
-
-                               
-
-
-
-                            </div>
-                            <a href="list-chair.html">
-                                <p class="txt-eng sub-title">Chair</p>
-                            </a>
-                            <a href="list-stool.html">
-                                <p class="txt-eng sub-title">Stool</p>
-                            </a>
-                            <a href="list-lighting.html">
-                                <p class="txt-eng sub-title">Lighting</p>
-                            </a>
-                            <a href="list-etc.html">
-                                <p class="txt-eng sub-title">Etc</p>
-                            </a>
-                        </div>
-                        <a href="list-planterior.html">
-                            <p class="txt-eng">PLANTERIOR</p>
-                        </a>
-                        <a href="list-kitchen.html">
-                            <p class="txt-eng">KITCHEN</p>
-                        </a>
-                        <a href="list-interior.html">
-                            <p class="txt-eng">INTERIOR</p>
-                        </a>
-                    </div>
-                </div>
-
-
-
-                <div class="community">
-                    <p class="txt-eng-bold title">COMMUNITY</p>
-
-                    <a href="notice.html">
-                        <p class="txt-eng">NOTICE</p>
-                    </a>
-                    <a href="qna.html">
-                        <p class="txt-eng">Q &amp; A</p>
-                    </a>
-                    <a href="review-list.html">
-                        <p class="txt-eng">REVIEW</p>
-                    </a>
-                </div>
-
-                <div class="showroom">
-                    <a href="showroom.html">
-                        <p class="txt-eng-bold title">SHOWROOM</p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- //gnb 웹/태블릿 -->
+    
 
 
     <!-- 검색 -->
@@ -549,7 +256,7 @@
             </a>
             <div class="search-place">
                 <form>
-                    <input type="text" placeholder="검색어를 입력하세요" class="txt-kor" id="search" onkeyup="printName()" onkeypress="if( event.keyCode == 13){searchData();}">
+                    <input autocomplete="off" type="text" placeholder="검색어를 입력해주세요" class="txt-kor" id="search" onkeyup="printName()" onkeypress="if( event.keyCode == 13){searchData();}">
 
                     <a href="search-list.html">
                         <img src="../plantlance-image/icon/search.png" alt="search" class="search-btn">
@@ -575,13 +282,10 @@
 
 
 
+    
+    
 
     <!-- gnb 모바일 -->
-
-
-
-
-
     <div class="nav-mob">
         <div class="nav-mob-wrap">
             <div class="nav-mob-top">
@@ -589,10 +293,10 @@
                     <img src="../plantlance-image/icon/close2.png" alt="close" class="close-button">
                 </a>
                 <div class="user-wrap">
-                    <a href="join.html">
+                    <a href="mob-join.html">
                         <p class="txt-eng join">JOIN</p>
                     </a>
-                    <a href="login.html">
+                    <a href="mob-login.html">
                         <p class="txt-eng login">LOGIN</p>
                     </a>
                 </div>
@@ -626,7 +330,7 @@
                 <div class="mob-shop">
                     <p class="txt-eng-bold title">SHOP</p>
                     <div class="shop-wrap">
-                        <a href="list-new-mob.html">
+                        <a href="mob-list-new.html">
                             <p class="txt-eng sub-title">NEW OBJECT</p>
                         </a>
                         <a href="#none">
@@ -647,7 +351,7 @@
                                 <p class="txt-eng sub-title title-sofa">Sofa</p>
                             </a>
                             <div class="gnb-mob-sofa">
-                                <a href="list-sofa-mob.html">
+                                <a href="mob-list-sofa.html">
                                     <p class="txt-kor">전체 소파</p>
                                 </a>
                                 <a href="#none">
@@ -670,37 +374,37 @@
                                 <p class="txt-eng sub-title title-table">Table</p>
                             </a>
                             <div class="gnb-mob-table">
-                                <a href="list-table-mob.html">
+                                <a href="mob-list-table.html">
                                     <p class="txt-kor">전체 테이블</p>
                                 </a>
-                                <a href="#none">
+                                <a href="mob-list-table.html">
                                     <p class="txt-kor">카페 테이블 시리즈</p>
                                 </a>
-                                <a href="#none">
+                                <a href="mob-list-table.html">
                                     <p class="txt-kor">메이트 테이블 시리즈</p>
                                 </a>
-                                
+
                             </div>
-                            <a href="list-chair-mob.html">
+                            <a href="mob-list-chair.html">
                                 <p class="txt-eng sub-title">Chair</p>
                             </a>
-                            <a href="list-stool-mob.html">
+                            <a href="mob-list-stool.html">
                                 <p class="txt-eng sub-title">Stool</p>
                             </a>
-                            <a href="list-lighting-mob.html">
+                            <a href="mob-list-lighting.html">
                                 <p class="txt-eng sub-title">Lighting</p>
                             </a>
-                            <a href="list-etc-mob.html">
+                            <a href="mob-list-etc.html">
                                 <p class="txt-eng sub-title">Etc</p>
                             </a>
                         </div>
-                        <a href="list-planterior-mob.html">
+                        <a href="mob-list-planterior.html">
                             <p class="txt-eng">PLANTERIOR</p>
                         </a>
-                        <a href="list-kitchen-mob.html">
+                        <a href="mob-list-kitchen.html">
                             <p class="txt-eng">KITCHEN</p>
                         </a>
-                        <a href="list-interior-mob.html">
+                        <a href="mob-list-interior.html">
                             <p class="txt-eng">INTERIOR</p>
                         </a>
                     </div>
@@ -744,7 +448,7 @@
                     <a href="mob-mypage-home.html">
                         <p class="txt-eng-bold my-page">MY PAGE</p>
                     </a>
-                    <a href="shopping.html">
+                    <a href="mob-shopping.html">
                         <p class="txt-eng-bold cart">CART</p>
                     </a>
                     <a href="mob-mypage-wishlist.html">
@@ -781,17 +485,12 @@
     <!-- //gnb 모바일 -->
 
     <!-- //gnb -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-    
+
+
+
+
+
     <div id="mob-whole">
         <div class="mob-whole-wrap">
 
@@ -803,71 +502,103 @@
 
                 <p class="txt-eng">></p>
 
-                <a href="list-new.html">
-                    <p class="txt-eng">New Object</p>
+                <a href="#none">
+                    <p class="txt-eng">Shop</p>
                 </a>
 
+                <p class="txt-eng">></p>
 
+                <a href="#none">
+                    <p class="txt-eng">Furniture</p>
+                </a>
+
+                <p class="txt-eng">></p>
+
+                <a href="../plantlance/list-chair.html">
+                    <p class="txt-eng">Chair
+                    </p>
+                </a>
             </div>
             <!-- //탑 카테고리 -->
 
-          
-          
-          
-          
-          
-          
-           <!-- 제품 리스트 -->
-           
             <div class="mob-product-list">
                 <p class="txt-eng-bold mob-product-title-category">
-                   NEW OBJECT
+                    CHAIR
                 </p>
+
+                <!-- 카테고리 버튼 -->
+
+
+                <a href="list-table-mob.html" class="mob-category-button mob-table-button txt-eng">
+                    TABLE
+                </a>
+
+                <div class="label-underline1 label-underline" for="mob-table"></div>
+
+
+                <a href="list-chair-mob.html" class="mob-category-button mob-chair-button txt-eng-bold">
+                    CHAIR
+
+                </a>
+                <div class="label-underline2 label-underline" for="mob-table" style="display: block;"></div>
+
+
+                <a href="list-sofa-mob.html" class="mob-category-button mob-sofa-button txt-eng">
+                    SOFA
+
+                </a>
+                <div class="label-underline3 label-underline" for="mob-table"></div>
+
                 <div class="line"></div>
-                
-                <div class="no-product-sign">
-                    <p class="txt-kor-bold">상품 준비 중입니다.</p>
-                </div>
+                <!-- //카테고리 버튼 -->
 
-           
 
-               
+
+                <!-- //테이블 버튼 -->
+
                 
-                    <!--
+                
+                
+                
+                
+
+                <!-- 제품 리스트 -->
+                <div class="mob-product-list">
+
                     <div class="mob-product-list-wrap">
                         <div class="mob-product mob-product1">
                             <a href="../plantlance/wily-detail.html" class="mob-product-button"></a>
                             <div class="mob-product-img">
-                                
-                              
+                                <img src="../plantlance-image/shop-chair/rotu.png" alt="rotu-chair" class="mob-rotu-chair">
+
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">ANI WIRELESS LAMP FLOOR</p>
-                                  
+                                    <p class="txt-eng-bold mob-name">ROTU CHAIR</p>
+
                                 </div>
 
-                               
 
-                                <p class="txt-kor mob-price">398,000 원</p>
+
+                                <p class="txt-kor mob-price">213,000 원</p>
                             </div>
                         </div>
 
                         <div class="mob-product mob-product2">
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
-                                
-                               
+                                <img src="../plantlance-image/shop-chair/cesca-arm-chair.png" alt="cesca-arm-chair" class="mob-cesca-arm-chair">
+
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">ANI WIRELSS LAMP</p>
-                                   
+                                    <p class="txt-eng-bold mob-name">CESCA ARM CHAIR</p>
+
                                 </div>
 
-                           
 
-                                <p class="txt-kor mob-price">199,000 원</p>
+
+                                <p class="txt-kor mob-price">290,000 원</p>
                             </div>
                         </div>
                     </div>
@@ -876,36 +607,36 @@
                         <div class="mob-product mob-product3">
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
-                                
-                                
+                                <img src="../plantlance-image/shop-chair/cesca-side-chair.png" alt="cesca-side-chair" class="mob-cesca-side-chair">
+
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">FAROL LAMP FLOOR</p>
-                                    
+                                    <p class="txt-eng-bold mob-name">CESCA SIDE CHAIR</p>
+
                                 </div>
 
-                                
 
-                                <p class="txt-kor mob-price">368,000 원</p>
+
+                                <p class="txt-kor mob-price">270,000 원</p>
                             </div>
                         </div>
 
                         <div class="mob-product mob-product4">
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
-                                
-                                
+                                <img src="../plantlance-image/shop-chair/ironica-chair.png" alt="ironica-chair" class="mob-ironica-chair">
+
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">FAROL LAMP</p>
-                                 
+                                    <p class="txt-eng-bold mob-name">IRONICA CHAIR</p>
+
                                 </div>
 
-                                
 
-                                <p class="txt-kor mob-price">199,000 원</p>
+
+                                <p class="txt-kor mob-price">330,000 원</p>
                             </div>
                         </div>
                     </div>
@@ -914,38 +645,206 @@
                         <div class="mob-product mob-product5">
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
-                               
-                                
+                                <img src="../plantlance-image/shop-chair/mid-century-chair.png" alt="mid-century-chair" class="mob-mid-century-chair">
+
                             </div>
                             <div class="mob-product-info">
                                 <div class="mob-product-name-wrap">
-                                    <p class="txt-eng-bold mob-name">CELINA STAND LAMP</p>
-                                   
+                                    <p class="txt-eng-bold mob-name">MID CENTURY CHAIR</p>
+
                                 </div>
 
 
-                                <p class="txt-kor mob-price">179,000 원</p>
+
+                                <p class="txt-kor mob-price">310,000 원</p>
                             </div>
                         </div>
 
-                        <div class="mob-product mob-product6" style="visibility: hidden;">
+                        <div class="mob-product mob-product6">
                             <a href="#none" class="mob-product-button"></a>
                             <div class="mob-product-img">
-                               
-                                <p class="txt-eng mob-material mob-material-hpl">HPL</p>
+                                <img src="../plantlance-image/shop-chair/mate-stool.png" alt="mate-stool" class="mob-mate-stool">
+
                             </div>
-                            
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">MATE STOOL [ Fenix ]</p>
+
+                                </div>
+
+
+
+                                <p class="txt-kor mob-price">138,000 원</p>
+                            </div>
                         </div>
                     </div>
-                    -->
-                   
 
-                    
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product mob-product7">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+
+                                <img src="../plantlance-image/shop-chair/y-chair.png" alt="y-chair" class="mob-y-chair">
+                            </div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">Y CHAIR</p>
+
+                                </div>
 
 
 
-               
+                                <p class="txt-kor mob-price">210,000 원</p>
+                            </div>
+                        </div>
 
+                        <div class="mob-product mob-product8">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+                                <img src="../plantlance-image/shop-chair/royce-chair.png" alt="royce-chair" class="mob-royce-chair">
+
+                            </div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">ROYCE CHAIR</p>
+
+                                </div>
+
+
+                                <p class="txt-kor mob-price">110,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product mob-product9">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+                                <img src="../plantlance-image/shop-chair/side-ton-chair.png" alt="side-ton-chair" class="mob-side-ton-chair">
+                            </div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">SIDE TON CHAIR</p>
+
+                                </div>
+
+
+
+                                <p class="txt-kor mob-price">300,000 원</p>
+                            </div>
+                        </div>
+
+                        <div class="mob-product mob-product10">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+                                     <img src="../plantlance-image/shop-chair/michael-side-chair.png" alt="michael-side-chair" class="mob-michael-side-chair">
+                            </div>    
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">MICHAEL SIDE CHAIR</p>
+
+                                </div>
+
+
+
+                                <p class="txt-kor mob-price">600,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product mob-product11">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+                            <img src="../plantlance-image/shop-chair/michael-arm-chair.png" alt="michael-arm-chair" class="mob-michael-arm-chair">
+                            </div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">MICHAEL ARM CHAIR</p>
+
+                                </div>
+
+
+
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+
+                        <div class="mob-product mob-product12">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+                                      <img src="../plantlance-image/shop-chair/wilson-chair.png" alt="wilson-chair" class="mob-wilson-chair">
+                            </div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILSON CHAIR</p>
+
+                                </div>
+
+
+
+                                <p class="txt-kor mob-price">700,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mob-product-list-wrap">
+                        <div class="mob-product mob-product13">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+                                <img src="../plantlance-image/shop-chair/wilson-rattan-arm-chair.png" alt="wilson-rattan-arm-chair" class="mob-wilson-rattan-arm-chair">
+                            </div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILSON RATTAN ARM CHAIR</p>
+
+                                </div>
+
+
+
+                                <p class="txt-kor mob-price">560,000 원</p>
+                            </div>
+                        </div>
+
+                        <div class="mob-product mob-product14">
+                            <a href="#none" class="mob-product-button"></a>
+                            <div class="mob-product-img">
+                                <img src="../plantlance-image/shop-chair/wilson-chair.png" alt="wilson-chair" class="mob-wilson-chair">
+                            </div>
+                            <div class="mob-product-info">
+                                <div class="mob-product-name-wrap">
+                                    <p class="txt-eng-bold mob-name">WILSON CHAIR</p>
+
+                                </div>
+
+
+
+                                <p class="txt-kor mob-price">330,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- //제품 리스트 -->
+
+
+
+                <!-- MORE PRODUCT 버튼 -->
+                <!--
+                <input type="radio" name="more" id="mob-more-product">
+                
+                <label for="mob-more-product" class="txt-eng mob-more-product-button">
+                    more product
+                    <img src="../plantlance-image/icon/arrow-down2.png" alt="down" class="more-down">
+                </label>
+                
+                -->
+                <!-- //MORE PRODUCT 버튼 -->
 
             </div>
 
@@ -956,14 +855,13 @@
 
         </div>
     </div>
-    <!-- //제품 리스트 -->
 
 
 
 
 
 
- <!-- 푸터 -->
+    <!-- 푸터 -->
     <footer>
         <div class="footer-wrap">
             <a href="plantlance.html">
@@ -1083,31 +981,30 @@
 
         <!-- //모바일 푸터 -->
     </footer>
-    
-    
-    
-    
+
+
+
+
     <script>
         $(document).ready(function() {
-            $(".mob-footer-company-show").click(function(){
-                $(".mob-footer-company-info").css("height","100px");
-                
-                $(".mob-footer-company-show").css("display","none");
-                $(".mob-footer-company-hide").css("display","flex");
+            $(".mob-footer-company-show").click(function() {
+                $(".mob-footer-company-info").css("height", "100px");
+
+                $(".mob-footer-company-show").css("display", "none");
+                $(".mob-footer-company-hide").css("display", "flex");
             });
-            
-            $(".mob-footer-company-hide").click(function(){
-                $(".mob-footer-company-info").css("height","000px");
-                
-                $(".mob-footer-company-hide").css("display","none");
-                $(".mob-footer-company-show").css("display","flex");
+
+            $(".mob-footer-company-hide").click(function() {
+                $(".mob-footer-company-info").css("height", "000px");
+
+                $(".mob-footer-company-hide").css("display", "none");
+                $(".mob-footer-company-show").css("display", "flex");
             });
         });
     </script>
 
 
     <!-- //푸터 -->
-
 
 
 

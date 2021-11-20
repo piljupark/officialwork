@@ -171,7 +171,7 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    height:100vh;
+    height:90vh;
     overflow: hidden;
 }
 
@@ -179,7 +179,7 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    height: 100vh!important;
+    height: 90vh!important;
     display: flex!important;
     justify-content: center;
     align-items: center;
@@ -193,7 +193,7 @@ li {
 
 @media screen and (max-width:500px){
     .slide .main-img{
-        width:550px;
+        width:500px;
     }
 }
 .slide-go-to-product{
@@ -313,7 +313,7 @@ li {
     position: relative;
     float:left;
     width:100%;
-    height: 140px;
+    height: 85px;
 
 }
 .mob-bespoke a{
@@ -819,10 +819,10 @@ li {
 
 .pltl-text-wrap {
     position:absolute;
+    width:100%;
     top:45%;
     left:50%;
     transform: translate(-50%,-50%);
-    
 }
 
 
@@ -831,9 +831,8 @@ li {
     float: left;
     width: 100%;
     text-align: center;
-    font-size: 25px;
     line-height: 1.5;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .pltl-wrap .pltl-button {
@@ -841,11 +840,11 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding:12px 20px;
+    padding:12px 15px;
     border: 1px solid #292929;
     transition-duration: .2s;
     margin-top:50px;
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .pltl-wrap .pltl-button:hover {

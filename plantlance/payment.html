@@ -118,186 +118,23 @@
 
 
             /* 메뉴 - 퍼니쳐 - 소파 하위메뉴 비활성화*/
-            $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > a > .title-sofa").click(function() {
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "auto");
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "0px");
+            $(".title-sofa").click(function() {
+                $(".gnb-sofa").css("height", "auto");
+                $(".gnb-table").css("height", "0px");
 
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap").css("height", "auto");
+                $(".shop-wrap").css("height", "auto");
             });
             /* //메뉴 - 퍼니쳐 - 소파 하위메뉴 비활성화*/
 
 
             /* 메뉴 - 소파 - 테이블 하위 메뉴 활성화 */
-            $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > a > .title-table").click(function() {
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "0px");
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "auto");
+            $(".title-table").click(function() {
+                $(".gnb-sofa").css("height", "0px");
+                $(".gnb-table").css("height", "auto");
 
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap").css("height", "auto");
+                $(".shop-wrap").css("height", "auto");
             });
             /* //메뉴 - 소파 - 테이블 하위 메뉴 활성화 */
-
-
-
-
-
-
-
-            /* 메뉴 - 모바일 슬라이드 메뉴 활성화 */
-            $("nav > .nav-wrap > a > .menu-icon").click(function() {
-                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-duration", ".1s");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", "0s");
-
-                $(".nav-mob").css("width", "100%");
-                $(".nav-mob").css("z-index", "5");
-
-                $("#nav-slide").css("animation-name", "menuShow");
-                $("#nav-slide").css("animation-delay", ".1s");
-                $("#nav-slide").css("animation-fill-mode", "forwards");
-                $(".nav-mob").css("animation-name", "menuShow");
-                $(".nav-mob").css("animation-delay", ".1s");
-                $(".nav-mob").css("animation-fill-mode", "forwards");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("display", "block");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-bottom").css("opacity", "1");
-
-
-                $(".nav-mob > .nav-mob-wrap").css("transition-duration", ".2s");
-                $(".nav-mob > .nav-mob-wrap").css("transition-delay", ".3s");
-                $(".nav-mob > .nav-mob-wrap").css("opacity", "1");
-
-                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "block");
-
-
-                $("html::-webkit-scrollbar").css("display", "none");
-                $("html").css("-ms-overflow-style", "none");
-            });
-            /* // 메뉴 - 모바일 슬라이드 메뉴 활성화 */
-
-
-            /* 메뉴 - 닫기 - 모바일 슬라이드 메뉴 비활성화 */
-            $(".nav-mob > .nav-mob-wrap > .nav-mob-top > a > .close-button").click(function() {
-                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
-
-                $(".nav-mob").css("width", "0");
-                $(".nav-mob").css("animation-name", "menuNone");
-                $(".nav-mob").css("animation-delay", ".4s");
-                $(".nav-mob").css("animation-fill-mode", "forwards");
-
-                $(".nav-mob > .nav-mob-top > a > .close-button").css("display", "none");
-
-                $(".nav-mob > .nav-mob-wrap").css("transition-duration", ".1s");
-                $(".nav-mob > .nav-mob-wrap").css("transition-delay", "0s");
-                $(".nav-mob > .nav-mob-wrap").css("opacity", "0");
-
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "0");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
-
-
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "block");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "none");
-
-
-
-
-
-
-
-                $("nav > .nav-wrap > a > .menu-icon").css("opacity", "1");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-delay", ".4s");
-                $("nav > .nav-wrap > a > .menu-icon").css("transition-duturation", ".2s");
-
-                $("#nav-slide").css("width", "0");
-                $("#nav-slide").css("animation-name", "menuNone");
-                $("#nav-slide").css("animation-delay", ".4s");
-                $("#nav-slide").css("animation-fill-mode", "forwards");
-
-                $("#nav-slide > .nav-slide-wrap > .nav-slide-side > .side-wrap > a > .close-button").css("display", "none");
-
-                $("#nav-slide > .nav-slide-wrap").css("transition-delay", "0s");
-                $("#nav-slide > .nav-slide-wrap").css("transition-duration", ".1s");
-                $("#nav-slide > .nav-slide-wrap").css("opacity", "0");
-
-
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-sofa").css("height", "0px");
-                $("#nav-slide > .nav-slide-wrap > .nav-main-menu > .shop > .shop-wrap > .furniture > .gnb-table").css("height", "0px");
-
-
-                $("html::-webkit-scrollbar").css("display", "block");
-                $("html").css("-ms-overflow-style", "auto");
-            });
-            /* 메뉴 - 닫기 - 모바일 슬라이드 메뉴 비활성화 */
-
-
-
-            /* 모바일 메뉴 - 퍼니쳐 활성화 */
-
-            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").click(function() {
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "auto");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "none");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "block");
-                
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","none");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","block");
-            });
-            /* //모바일 메뉴 - 퍼니쳐 활성화 */
-
-
-
-            /* 모바일 메뉴 - 퍼니쳐 비활성화 */
-
-            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").click(function() {
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > .furniture").css("height", "0px");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-down").css("display", "block");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .title-furniture > .arrow-up").css("display", "none");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
-                
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-down").css("display","block");
-                
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > a > .mob-gnb-furniture-up").css("display","none");
-            });
-            /* //모바일 메뉴 - 퍼니쳐 비활성화 */
-
-
-
-
-            /* 모바일 메뉴 - 퍼니쳐 - 소파 활성화 */
-            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap > .furniture > a > .title-sofa").click(function() {
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "auto");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "0");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "auto");
-            });
-            /* //모바일 메뉴 - 퍼니쳐 - 소파 활성화 */
-
-
-
-            /* 모바일 메뉴 - 퍼니쳐 - 테이블 활성화 */
-
-            $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > a > .title-table").click(function() {
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-sofa").css("height", "0");
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture > .gnb-mob-table").css("height", "auto");
-
-                $(".nav-mob > .nav-mob-wrap > .nav-mob-main-menu > .mob-shop > .shop-wrap >  .furniture").css("height", "auto");
-
-
-            });
-            /* //모바일 메뉴 - 퍼니쳐 - 테이블 활성화 */
-
-
 
 
             /* 검색 활성화 */
@@ -362,6 +199,10 @@
                     <a href="#none">
                         <img src="../plantlance-image/icon/close2.png" alt="close" class="close-button">
                     </a>
+                    
+                    
+                    
+                    <div class="side-menu-wrap">
                     <div class="side-left">
 
                         <a href="my-page.html">
@@ -390,28 +231,51 @@
                             <p class="txt-eng ig">@plantlance.kr</p>
                         </a>
                     </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
 
 
-            <div class="nav-slide-top">
-                <div class="user-wrap">
-                    <a href="join.html">
-                        <p class="txt-eng join">JOIN</p>
-                    </a>
-                    <a href="login.html">
-                        <p class="txt-eng login">LOGIN</p>
-                    </a>
-                </div>
-            </div>
+
+
+
+
+
 
 
 
             <div class="nav-main-menu">
 
-                <div class="about">
-                    <p class="txt-eng-bold title">ABOUT</p>
 
+               
+               
+                <div class="nav-slide-top">
+                    <div class="user-wrap">
+                        <a href="join.html">
+                            <p class="txt-eng join">JOIN</p>
+                        </a>
+                        <a href="login.html">
+                            <p class="txt-eng login">LOGIN</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-main-menu-wrap">
+                
+                 <span class="collection">
+                    <p class="txt-eng-bold title">COLLECTION</p>
+                    <a href="#none">
+                        <p class="txt-eng">2021 REFURB</p>
+                    </a>
+                </span>
+                
+                
+                <span class="about">
+                    <p class="txt-eng-bold title">ABOUT</p>
+                    
+                    <div class="second-menu">
                     <a href="pltl.html">
                         <p class="txt-eng">PLTL</p>
                     </a>
@@ -421,24 +285,21 @@
                     <a href="contact.html">
                         <p class="txt-eng">CONTACT</p>
                     </a>
+                    </div>
 
-                </div>
+                </span>
 
-                <div class="collection">
-                    <p class="txt-eng-bold title">COLLECTION</p>
-                    <a href="#none">
-                        <p class="txt-eng">2021 REFURB</p>
-                    </a>
-                </div>
+               
 
-                <div class="shop">
+                <span class="shop">
                     <p class="txt-eng-bold title">SHOP</p>
+                    
                     <div class="shop-wrap">
                         <a href="list-new.html">
                             <p class="txt-eng sub-title">NEW OBJECT</p>
                         </a>
                         <a href="#none">
-                            <p class="txt-eng">FURNITURE</p>
+                            <p class="txt-eng sub-title">FURNITURE</p>
                         </a>
                         <div class="furniture">
                             <a href="#none">
@@ -482,7 +343,7 @@
                                     <p class="txt-kor">메이트 테이블 시리즈</p>
                                 </a>
 
-                              
+
 
 
 
@@ -501,22 +362,24 @@
                             </a>
                         </div>
                         <a href="list-planterior.html">
-                            <p class="txt-eng">PLANTERIOR</p>
+                            <p class="txt-eng sub-title">PLANTERIOR</p>
                         </a>
                         <a href="list-kitchen.html">
-                            <p class="txt-eng">KITCHEN</p>
+                            <p class="txt-eng sub-title">KITCHEN</p>
                         </a>
                         <a href="list-interior.html">
-                            <p class="txt-eng">INTERIOR</p>
+                            <p class="txt-eng sub-title">INTERIOR</p>
                         </a>
                     </div>
-                </div>
+                </span>
 
 
 
-                <div class="community">
+                <span class="community">
                     <p class="txt-eng-bold title">COMMUNITY</p>
 
+                   
+                   <div class="second-menu">
                     <a href="notice.html">
                         <p class="txt-eng">NOTICE</p>
                     </a>
@@ -526,17 +389,25 @@
                     <a href="review-list.html">
                         <p class="txt-eng">REVIEW</p>
                     </a>
-                </div>
+                    </div>
+                </span>
 
                 <div class="showroom">
                     <a href="showroom.html">
                         <p class="txt-eng-bold title">SHOWROOM</p>
                     </a>
                 </div>
-
+                </div>
+                
+                
             </div>
+
         </div>
+
     </div>
+
+
+
     <!-- //gnb 웹/태블릿 -->
 
 
@@ -548,7 +419,7 @@
             </a>
             <div class="search-place">
                 <form>
-                    <input type="text" placeholder="검색어를 입력하세요" class="txt-kor" id="search" onkeyup="printName()" onkeypress="if( event.keyCode == 13){searchData();}">
+                    <input autocomplete="off" type="text" placeholder="검색어를 입력해주세요" class="txt-kor" id="search" onkeyup="printName()" onkeypress="if( event.keyCode == 13){searchData();}">
 
                     <a href="search-list.html">
                         <img src="../plantlance-image/icon/search.png" alt="search" class="search-btn">
@@ -557,14 +428,7 @@
             </div>
         </div>
 
-        <!--
-        <div class="search-result">
-            <div class="search-result-wrap">
-                <div id="result" class="txt-kor-bold"></div>
-                <p class="txt-kor result-txt">에 대한 검색 결과입니다.</p>
-            </div>
-        </div>
-        -->
+
         <div class="search-bg"></div>
     </div>
     <!-- //검색 -->
@@ -575,211 +439,10 @@
 
 
 
-    <!-- gnb 모바일 -->
 
-
-
-
-
-    <div class="nav-mob">
-        <div class="nav-mob-wrap">
-            <div class="nav-mob-top">
-                <a href="#none">
-                    <img src="../plantlance-image/icon/close2.png" alt="close" class="close-button">
-                </a>
-                <div class="user-wrap">
-                    <a href="join.html">
-                        <p class="txt-eng join">JOIN</p>
-                    </a>
-                    <a href="login.html">
-                        <p class="txt-eng login">LOGIN</p>
-                    </a>
-                </div>
-
-            </div>
-
-
-
-
-
-
-
-            <div class="nav-mob-main-menu">
-
-                <div class="mob-about">
-                    <p class="txt-eng-bold title">ABOUT</p>
-
-                    <a href="mob-pltl.html">
-                        <p class="txt-eng">PLTL</p>
-                    </a>
-                    <a href="mob-bespoke.html">
-                        <p class="txt-eng">BESPOKE</p>
-                    </a>
-                    <a href="mob-contact.html">
-                        <p class="txt-eng">CONTACT</p>
-                    </a>
-                </div>
-
-
-
-                <div class="mob-shop">
-                    <p class="txt-eng-bold title">SHOP</p>
-                    <div class="shop-wrap">
-                        <a href="list-new-mob.html">
-                            <p class="txt-eng sub-title">NEW OBJECT</p>
-                        </a>
-                        <a href="#none">
-                            <p class="txt-eng title-furniture mob-gnb-furniture-down">FURNITURE
-                                <img src="../plantlance-image/icon/arrow-down-white.png" alt="arrow" class="arrow arrow-down">
-                            </p>
-
-                        </a>
-                        <a href="#none">
-                            <p class="txt-eng title-furniture mob-gnb-furniture-up">FURNITURE
-                                <img src="../plantlance-image/icon/arrow-up-white.png" alt="arrow" class="arrow arrow-up">
-                            </p>
-
-                        </a>
-
-                        <div class="furniture">
-                            <a href="#none">
-                                <p class="txt-eng sub-title title-sofa">Sofa</p>
-                            </a>
-                            <div class="gnb-mob-sofa">
-                                <a href="list-sofa-mob.html">
-                                    <p class="txt-kor">전체 소파</p>
-                                </a>
-                                <a href="#none">
-                                    <p class="txt-kor">플랙스 소파</p>
-                                </a>
-                                <a href="#none">
-                                    <p class="txt-kor">클라우드 소파</p>
-                                </a>
-                                <a href="#none">
-                                    <p class="txt-kor">아우어 소파</p>
-                                </a>
-                                <a href="#none">
-                                    <p class="txt-kor">블러크 소파</p>
-                                </a>
-                                <a href="#none">
-                                    <p class="txt-kor">그래 소파</p>
-                                </a>
-                            </div>
-                            <a href="#none">
-                                <p class="txt-eng sub-title title-table">Table</p>
-                            </a>
-                            <div class="gnb-mob-table">
-                                <a href="list-table-mob.html">
-                                    <p class="txt-kor">전체 테이블</p>
-                                </a>
-                                <a href="#none">
-                                    <p class="txt-kor">카페 테이블 시리즈</p>
-                                </a>
-                                <a href="#none">
-                                    <p class="txt-kor">메이트 테이블 시리즈</p>
-                                </a>
-                                
-                            </div>
-                            <a href="list-chair-mob.html">
-                                <p class="txt-eng sub-title">Chair</p>
-                            </a>
-                            <a href="list-stool-mob.html">
-                                <p class="txt-eng sub-title">Stool</p>
-                            </a>
-                            <a href="list-lighting-mob.html">
-                                <p class="txt-eng sub-title">Lighting</p>
-                            </a>
-                            <a href="list-etc-mob.html">
-                                <p class="txt-eng sub-title">Etc</p>
-                            </a>
-                        </div>
-                        <a href="list-planterior-mob.html">
-                            <p class="txt-eng">PLANTERIOR</p>
-                        </a>
-                        <a href="list-kitchen-mob.html">
-                            <p class="txt-eng">KITCHEN</p>
-                        </a>
-                        <a href="list-interior-mob.html">
-                            <p class="txt-eng">INTERIOR</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mob-collection">
-                    <p class="txt-eng-bold title">COLLECTION</p>
-
-                    <a href="#none">
-                        <p class="txt-eng">2021 REFURB</p>
-                    </a>
-
-                </div>
-
-
-
-                <div class="mob-community">
-                    <p class="txt-eng-bold title">COMMUNITY</p>
-
-                    <a href="mob-notice.html">
-                        <p class="txt-eng">NOTICE</p>
-                    </a>
-                    <a href="mob-qna.html">
-                        <p class="txt-eng">Q &amp; A</p>
-                    </a>
-                    <a href="mob-review-list.html">
-                        <p class="txt-eng">REVIEW</p>
-                    </a>
-
-                </div>
-
-                <div class="mob-gnb-showroom">
-                    <a href="mob-showroom.html">
-                        <p class="txt-eng-bold">SHOWROOM</p>
-                    </a>
-                </div>
-
-
-                <div class="mob-main-bottom">
-
-                    <a href="mob-mypage-home.html">
-                        <p class="txt-eng-bold my-page">MY PAGE</p>
-                    </a>
-                    <a href="shopping.html">
-                        <p class="txt-eng-bold cart">CART</p>
-                    </a>
-                    <a href="mob-mypage-wishlist.html">
-                        <p class="txt-eng-bold wish-list">WISH LIST</p>
-                    </a>
-                    <a href="#none">
-                        <p class="txt-eng-bold delivery">DELIVERY</p>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="nav-mob-bottom">
-                <div class="bottom-info">
-                    <div class="info1">
-                        <p class="txt-eng tel-txt">Customer center</p>
-                        <a href="tel:1899-3417">
-                            <img src="../plantlance-image/icon/call1.png" alt="call" class="call-img">
-                            <p class="txt-eng tel">1899-3417</p>
-                        </a>
-                    </div>
-                    <div class="info2">
-                        <p class="txt-eng ig-txt">Instagram</p>
-                        <a href="https://www.instagram.com/plantlance.kr/">
-                            <p class="txt-eng ig">@plantlance.kr</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- //gnb 모바일 -->
 
     <!-- //gnb -->
+
     
     
     

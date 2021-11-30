@@ -181,10 +181,10 @@ li {
     position: relative;
     float:left;
     width:100%;
-    margin-top:50px;
-    padding-bottom: 55%;
+    margin-top:30px;
+    padding-bottom: 65%;
     background: #eee;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     overflow: hidden;
     /* how to add img */ 
     background-image: url(../plantlance-image/contact/contact-main.jpg);

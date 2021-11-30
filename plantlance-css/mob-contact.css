@@ -182,14 +182,13 @@ li {
     float:left;
     width:100%;
     margin-top:50px;
-    padding-bottom: 90%;
+    padding-bottom: 55%;
     background: #eee;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     overflow: hidden;
-    
     /* how to add img */ 
-    background-image: url(../plantlance-image/pltl/pltl-mob-forest.png);
-    background-position: center;
+    background-image: url(../plantlance-image/contact/contact-main.jpg);
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     /* //how to add img */ 

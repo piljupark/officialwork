@@ -30,7 +30,7 @@
 
 
         $(document).ready(function() {
-        
+
             /* 메뉴 - 모바일 슬라이드 메뉴 활성화 */
             $("nav > .nav-wrap > a > .menu-icon").click(function() {
                 $("nav > .nav-wrap > a > .menu-icon").css("opacity", "0");
@@ -236,18 +236,12 @@
                 <a href="#none">
                     <img src="../plantlance-image/icon/search.png" alt="search" class="search-icon">
                 </a>
-                <a href="shopping.html">
-                    <img src="../plantlance-image/icon/bag.png" alt="bag" class="bag-icon">
-                </a>
-                <a href="login.html" target="_self">
-                    <img src="../plantlance-image/icon/login.png" alt="login" class="login-icon">
-                </a>
             </div>
         </div>
     </nav>
 
 
-    
+
 
 
     <!-- 검색 -->
@@ -284,8 +278,8 @@
 
 
 
-    
-    
+
+
 
     <!-- gnb 모바일 -->
     <div class="nav-mob">
@@ -295,11 +289,11 @@
                     <img src="../plantlance-image/icon/close2.png" alt="close" class="close-button">
                 </a>
                 <div class="user-wrap">
-                    <a href="mob-join.html">
-                        <p class="txt-eng join">JOIN</p>
+                    <a href="mob-shopping-fill.html">
+                        <img src="../plantlance-image/icon/bag.png" alt="bag" class="shopping-button">
                     </a>
                     <a href="mob-login.html">
-                        <p class="txt-eng login">LOGIN</p>
+                        <img src="../plantlance-image/icon/login.png" alt="login" class="login-button">
                     </a>
                 </div>
 
@@ -456,6 +450,9 @@
                     <a href="mob-mypage-wishlist.html">
                         <p class="txt-eng-bold wish-list">WISH LIST</p>
                     </a>
+                    <a href="mob-join.html">
+                        <p class="txt-eng-bold wish-list">JOIN</p>
+                    </a>
                     <a href="#none">
                         <p class="txt-eng-bold delivery">DELIVERY</p>
                     </a>
@@ -492,10 +489,10 @@
 
 
 
-    
-    
-    
-    
+
+
+
+
 
     <!-- 메인 모바일 -->
     <div id="mobile-whole">
@@ -504,7 +501,7 @@
         <div class="main-slider-wrap mob-main-slider-wrap">
             <div class="slide mob-slide">
                 <a href="list-table-mob.html" class="slide-go-to-product"></a>
-                <img src="../plantlance-image/main/mob-slide-1.png" alt="slide1" class="slide1-img main-img" >
+                <img src="../plantlance-image/main/mob-slide-1.png" alt="slide1" class="slide1-img main-img">
                 <div class="text-wrap">
                     <p class="txt-eng-bold slide-title-eng">Not just a table.</p>
                     <div class="text-kor-wrap">
@@ -559,7 +556,7 @@
         <div class="mob-plan-a">
             <a href="plan-a.html"></a>
             <div class="mob-plan-a-wrap">
-                <p class="txt-eng-bold mob-plan-title">Plan A</p>
+                <p class="txt-eng-semibold mob-plan-title">Plan A</p>
 
                 <img src="../plantlance-image/icon/right-arrow-in-circle1.png" alt="arrow" class="mob-plan-arrow">
 
@@ -569,7 +566,7 @@
 
         <div class="mob-chair">
             <a href="list-chair-mob.html"></a>
-            <p class="txt-eng-bold mob-chair-title">Chairs</p>
+            <p class="txt-eng-semibold mob-chair-title">Chairs</p>
             <img src="../plantlance-image/main/chair1.png" alt="chair">
         </div>
 
@@ -577,7 +574,7 @@
         <div class="mob-plan-b">
             <a href="plan-b.html"></a>
             <div class="mob-plan-b-wrap">
-                <p class="txt-eng-bold mob-plan-title">Plan B</p>
+                <p class="txt-eng-semibold mob-plan-title">Plan B</p>
 
                 <img src="../plantlance-image/icon/right-arrow-in-circle1.png" alt="arrow" class="mob-plan-arrow">
 
@@ -587,7 +584,7 @@
 
         <div class="mob-table">
             <a href="list-table-mob.html"></a>
-            <p class="txt-eng-bold mob-table-title">Tables</p>
+            <p class="txt-eng-semibold mob-table-title">Tables</p>
             <img src="../plantlance-image/main/wily-table-resize1.png" alt="wily-table">
         </div>
 
@@ -600,7 +597,7 @@
 
             <div class="mob-sofa-button-wrap">
                 <a href="list-new-mob.html"></a>
-                <p class="txt-eng-semibold mob-sofa-title">New Product</p>
+                <p class="txt-eng-semibold  mob-sofa-title">New Product</p>
             </div>
         </div>
 
@@ -644,47 +641,66 @@
 
             <div class="mob-showroom-info-wrap">
                 <div class="mob-showroom-seongsu mob-showroom-info-box">
-                    <p class="txt-eng-bold mob-showroom-info-title">Seongsu</p>
 
-                    <a href="tel:024653135">
-                        <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
-                    </a>
+                    <div class="mob-showroom-title-wrap">
+                        <p class="txt-eng-semibold mob-showroom-info-title">Seongsu</p>
+
+                        <div class="mob-showroom-info-button-wrap">
+                            <a href="https://www.instagram.com/plantlance_seongsu/" target="_blank">
+                                <img src="../plantlance-image/icon/instagram.png" alt="ig" class="mob-showroom-instagram">
+                            </a>
+
+                            <a href="tel:024653135">
+                                <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
+                            </a>
+                        </div>
+                    </div>
+
 
                     <p class="txt-kor mob-showroom-address">서울 성동구 뚝섬로3나길 13, 1층</p>
                     <p class="txt-kor mob-showroom-near-info">2호선 뚝섬역 5번 출구 10분 거리, 분당선 서울숲역 1번 출구 10분 거리</p>
 
-                    <div class="mob-showroom-time mob-showroom-time1">
-                        <p class="txt-kor">Tue - Sat</p>
-                        <p class="txt-kor">| 10:00 - 19:00</p>
-                        <p class="txt-kor">* Mon Off *</p>
+                    <div class="mob-showroom-place-wrap">
+                        <div class="mob-showroom-time-wrap">
+                            <div class="mob-showroom-time mob-showroom-time1">
+                                <p class="txt-kor">Tue - Sat</p>
+                                <p class="txt-kor">| 10:00 - 19:00</p>
+                            </div>
+                            <div class="mob-showroom-time">
+                                <p class="txt-kor">Sun / Holiday</p>
+                                <p class="txt-kor">| 13:00 - 19:00</p>
+                                <p class="txt-kor">* Mon Off *</p>
+                            </div>
+                        </div>
+                        <a href="https://map.naver.com/v5/search/%ED%94%8C%EB%9E%9C%ED%8A%B8%EB%9E%80%EC%8A%A4/place/1654699101?c=14142680.1420309,4514876.2233910,16,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">
+                            <p class="txt-kor mob-showroom-show-place">위치보기</p>
+                        </a>
+
                     </div>
-                    <div class="mob-showroom-time">
-                        <p class="txt-kor">Sun / Holiday</p>
-                        <p class="txt-kor">| 13:00 - 19:00</p>
-                    </div>
-
-                    <a href="https://map.naver.com/v5/search/%ED%94%8C%EB%9E%9C%ED%8A%B8%EB%9E%80%EC%8A%A4/place/1654699101?c=14142680.1420309,4514876.2233910,16,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">
-                        <p class="txt-kor mob-showroom-show-place">위치보기</p>
-                    </a>
-
-                    <a href="https://www.instagram.com/plantlance_seongsu/" target="_blank">
-                        <p class="txt-kor mob-showroom-instagram">Instagram</p>
-                    </a>
-
                 </div>
 
 
                 <div class="mob-showroom-pangyo mob-showroom-info-box">
-                    <p class="txt-eng-bold mob-showroom-info-title">Pangyo</p>
+
+                    <div class="mob-showroom-title-wrap">
+                        <p class="txt-eng-semibold mob-showroom-info-title">Pangyo</p>
+
+                        <div class="mob-showroom-info-button-wrap">
+                            <a href="https://www.instagram.com/plantlance_pangyo/" target="_blank">
+                                <img src="../plantlance-image/icon/instagram.png" alt="ig" class="mob-showroom-instagram">
+                            </a>
 
 
-                    <a href="tel:050714191194">
-                        <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
-                    </a>
+                            <a href="tel:050714191194">
+                                <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
+                            </a>
+                        </div>
+                    </div>
 
                     <p class="txt-kor mob-showroom-address">경기 성남시 분당구 운중로113번길 4-11</p>
                     <p class="txt-kor mob-showroom-near-info">운정동행복복지센터 정류장 5분 거리</p>
-
+                    
+                    <div class="mob-showroom-place-wrap">
                     <div class="mob-showroom-time mob-showroom-time1">
                         <p class="txt-kor">Tue - Sun</p>
                         <p class="txt-kor">| 10:00 - 19:00</p>
@@ -694,23 +710,32 @@
                     <a href="https://map.naver.com/v5/search/%ED%94%8C%EB%9E%9C%ED%8A%B8%EB%9E%80%EC%8A%A4/place/1078549873?c=14145621.3476930,4494005.4037641,16,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">
                         <p class="txt-kor mob-showroom-show-place">위치보기</p>
                     </a>
+                        </div>
 
-                    <a href="https://www.instagram.com/plantlance_pangyo/" target="_blank">
-                        <p class="txt-kor mob-showroom-instagram">Instagram</p>
-                    </a>
                 </div>
 
 
                 <div class="mob-showroom-gimpo mob-showroom-info-box">
-                    <p class="txt-eng-bold mob-showroom-info-title">Gimpo</p>
+                    <div class="mob-showroom-title-wrap">
+                        <p class="txt-eng-semibold mob-showroom-info-title">Gimpo</p>
 
-                    <a href="tel:050713265446">
-                        <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
-                    </a>
+                        <div class="mob-showroom-info-button-wrap">
+                            <a href="https://www.instagram.com/lavenihome/" target="_blank">
+                                <img src="../plantlance-image/icon/instagram.png" alt="ig" class="mob-showroom-instagram">
+                            </a>
+                            <a href="tel:050713265446">
+                                <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
+                            </a>
+
+                        </div>
+                    </div>
 
                     <p class="txt-kor mob-showroom-address">경기 김포시 김포한강2로23번길 10 1차 212호</p>
                     <p class="txt-kor mob-showroom-near-info">쌍용예가아파트 맞은편</p>
 
+                   
+                   <div class="mob-showroom-place-wrap">
+                   <div class="mob-showroom-time-wrap">
                     <div class="mob-showroom-time mob-showroom-time1">
                         <p class="txt-kor">Tue - Sat</p>
                         <p class="txt-kor">| 10:00 - 19:00</p>
@@ -719,54 +744,75 @@
                     <div class="mob-showroom-time">
                         <p class="txt-kor">Sun / Holiday</p>
                         <p class="txt-kor">| 13:00 - 19:00</p>
+                    </div>
                     </div>
 
                     <a href="https://map.naver.com/v5/search/%ED%94%8C%EB%9E%9C%ED%8A%B8%EB%9E%80%EC%8A%A4/place/1345995664?c=14101285.5107056,4529037.2860202,16,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">
                         <p class="txt-kor mob-showroom-show-place">위치보기</p>
                     </a>
+                    </div>
 
-                    <a href="https://www.instagram.com/lavenihome/" target="_blank">
-                        <p class="txt-kor mob-showroom-instagram">Instagram</p>
-                    </a>
                 </div>
 
 
                 <div class="mob-showroom-sejong mob-showroom-info-box">
-                    <p class="txt-eng-bold mob-showroom-info-title">Sejong</p>
+                    <div class="mob-showroom-title-wrap">
+                        <p class="txt-eng-semibold mob-showroom-info-title">Sejong</p>
 
-                    <a href="tel:050713662288">
-                        <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
-                    </a>
+                        <div class="mob-showroom-info-button-wrap">
+                            <a href="https://www.instagram.com/plantlance_sejong/" target="_blank">
+                                <img src="../plantlance-image/icon/instagram.png" alt="ig" class="mob-showroom-instagram">
+                            </a>
+                            <a href="tel:050713662288">
+                                <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
+                            </a>
+                        </div>
+                    </div>
 
                     <p class="txt-kor mob-showroom-address">충남 공주시 반포면 금벽로 1377-5</p>
                     <p class="txt-kor mob-showroom-near-info">과학고등학교 정류장에서 도보 10분 거리</p>
-
+                
+                   <div class="mob-showroom-place-wrap">
+                 
+                   <div class="mob-showroom-time-wrap">
                     <div class="mob-showroom-time mob-showroom-time1">
                         <p class="txt-kor">Tue - Sun</p>
                         <p class="txt-kor">| 10:00 - 19:00</p>
                         <p class="txt-kor">* Mon Off *</p>
                     </div>
+                    </div>
+                    
 
                     <a href="https://map.naver.com/v5/search/%ED%94%8C%EB%9E%9C%ED%8A%B8%EB%9E%80%EC%8A%A4/place/1992578940?c=14161489.8186541,4359120.6702126,16,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">
                         <p class="txt-kor mob-showroom-show-place">위치보기</p>
                     </a>
+                    </div>
 
-                    <a href="https://www.instagram.com/plantlance_sejong/" target="_blank">
-                        <p class="txt-kor mob-showroom-instagram">Instagram</p>
-                    </a>
+
                 </div>
 
 
                 <div class="mob-showroom-daegu mob-showroom-info-box">
-                    <p class="txt-eng-bold mob-showroom-info-title">Daegu</p>
 
-                    <a href="tel:01075549218">
-                        <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
-                    </a>
+                    <div class="mob-showroom-title-wrap">
+                        <p class="txt-eng-semibold mob-showroom-info-title">Daegu</p>
+
+                        <div class="mob-showroom-info-button-wrap">
+                            <a href="https://www.instagram.com/plantlance_daegu/" target="_blank">
+                                <img src="../plantlance-image/icon/instagram.png" alt="ig" class="mob-showroom-instagram">
+                            </a>
+                            <a href="tel:01075549218">
+                                <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
+                            </a>
+                        </div>
+                    </div>
 
                     <p class="txt-kor mob-showroom-address">대구 달서구 진천로18길 30</p>
                     <p class="txt-kor mob-showroom-near-info">1호선 진천역 4번 출구 5분 거리</p>
 
+                   
+                   <div class="mob-showroom-place-wrap">
+                   <div class="mob-showroom-time-wrap">
                     <div class="mob-showroom-time mob-showroom-time1">
                         <p class="txt-kor">Tue - Sat</p>
                         <p class="txt-kor">| 10:00 - 19:00</p>
@@ -776,27 +822,37 @@
                         <p class="txt-kor">Sun / Holiday</p>
                         <p class="txt-kor">| 13:00 - 19:00</p>
                     </div>
+                    </div>
 
                     <a href="https://map.naver.com/v5/search/%ED%94%8C%EB%9E%9C%ED%8A%B8%EB%9E%80%EC%8A%A4/place/1009888962?c=14306830.4160012,4275446.0272425,16,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">
                         <p class="txt-kor mob-showroom-show-place">위치보기</p>
                     </a>
+                    </div>
 
-                    <a href="https://www.instagram.com/plantlance_daegu/" target="_blank">
-                        <p class="txt-kor mob-showroom-instagram">Instagram</p>
-                    </a>
+
                 </div>
 
 
                 <div class="mob-showroom-busan mob-showroom-info-box">
-                    <p class="txt-eng-bold mob-showroom-info-title">Busan</p>
+                    <div class="mob-showroom-title-wrap">
+                        <p class="txt-eng-semibold mob-showroom-info-title">Busan</p>
 
-                    <a href="tel:050714854997">
-                        <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
-                    </a>
+                        <div class="mob-showroom-info-button-wrap">
+
+                            <a href="https://www.instagram.com/plantlance_busan.yangsan/" target="_blank">
+                                <img src="../plantlance-image/icon/instagram.png" alt="ig" class="mob-showroom-instagram">
+                            </a>
+                            <a href="tel:050714854997">
+                                <img src="../plantlance-image/icon/call5.png" alt="mob-showroom-call" class="mob-showroom-call-button">
+                            </a>
+                        </div>
+                    </div>
 
                     <p class="txt-kor mob-showroom-address">경남 양산시 동면 양산대로 528 1층</p>
                     <p class="txt-kor mob-showroom-near-info"></p>
 
+                   
+                   <div class="mob-showroom-place-wrap">
                     <div class="mob-showroom-time mob-showroom-time1">
                         <p class="txt-kor">Tue - Sun</p>
                         <p class="txt-kor">| 10:00 - 19:30</p>
@@ -806,10 +862,8 @@
                     <a href="https://map.naver.com/v5/search/%ED%94%8C%EB%9E%9C%ED%8A%B8%EB%9E%80%EC%8A%A4/place/1072123488?c=14363112.3594278,4207377.2321064,16,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">
                         <p class="txt-kor mob-showroom-show-place">위치보기</p>
                     </a>
+                    </div>
 
-                    <a href="https://www.instagram.com/plantlance_busan.yangsan/" target="_blank">
-                        <p class="txt-kor mob-showroom-instagram">Instagram</p>
-                    </a>
                 </div>
             </div>
         </div>
@@ -831,18 +885,15 @@
             <img src="../plantlance-image/main/main-pltl1-mob2.png" alt="pltl-bg" class="pltl-bg">
 
             <div class="pltl-text-wrap">
-                <p class="txt-kor-bold">We, plantlance provide</p>
-                <p class="txt-kor-bold">customer oriented customized furniture</p>
-                <p class="txt-kor-bold">with practical and trendy designs</p>
-                <p class="txt-kor-bold">based on modernity and basicity.</p>
+                <p>We, plantlance provide</p>
+                <p>customer oriented customized furniture</p>
+                <p>with practical and trendy designs</p>
+                <p>based on modernity and basicity.</p>
             </div>
 
-            <a href="pltl.html">
-                <p class="txt-kor pltl-button pc-pltl-button">Brand Story</p>
-            </a>
 
             <a href="mob-pltl.html">
-                <p class="txt-kor pltl-button mob-pltl-button">Brand Story</p>
+                <p class="pltl-button mob-pltl-button">Brand Story</p>
             </a>
         </div>
     </div>

@@ -179,7 +179,6 @@ li {
     float: left;
     width: 100%;
     color: #fff;
-
     font-size: 30px;
     opacity: .6;
     margin-top: 40px;
@@ -236,19 +235,28 @@ li {
     margin-top:200px;
     margin-bottom:200px;
 }
-
+.pltl-main2-text-wrap{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .pltl-main2-title{
     position: relative;
     float:left;
     width:100%;
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: 80px;
 }
 
+.pltl-main2-kor-text-wrap{
+    position: relative;
+    float:left;
+    width:550px;
+}
 
 .pltl-main2-txt{
     position: relative;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -288,45 +296,57 @@ li {
     position: relative;
     float:left;
     width:100%;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 50px;
     line-height: 1.5;
+}
+
+.pltl-main3-wrap{
+    position: relative;
+    float:left;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pltl-main3-text-wrap{
+    position: relative;
+    float:left;
+    width:420px;
 }
 
 
 .pltl-main3-txt{
     position: relative;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 30px;
 }
 .pltl-main3-txt2{
     margin-top:30px;
     line-height: 2;
+    margin-bottom:120px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
 }
 
-.pltl-main3-img-wrap{
-    position: relative;
-    float:left;
-    width:100%;
-    min-width: 1400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top:50px;
-    left:50%;
-    transform: translate(-50%);
-}
+
+
 .pltl-main3-img1{
     position: relative;
-    width:550px;
-    height: 600px;
+    width:840px;
+    height: 1000px;
     background: #eee;
+    background-image: url(../plantlance-image/pltl/pltl-img1.jpeg);
+    background-position: center;
+    background-size: cover;
 }
+
+
 
 .pltl-main3-img2{
     position: relative;
-    width:550px;
-    height: 1000px;
+    width:420px;
+    height: 660px;
     background-image: url(../plantlance-image/pltl/diy.png);
     background-position: center;
     background-size: cover;
@@ -353,8 +373,9 @@ li {
     position: relative;
     float:left;
     width:auto;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.5;
+    margin-bottom:10px;
 }
 .pltl-main4-title:nth-child(1){
     width:100%;
@@ -365,13 +386,13 @@ li {
 .pltl-main4-txt-wrap{
     position: relative;
     float:right;
-    width:400px;
+    width:450px;
 }
 .pltl-main4-txt1{
     position: relative;
     float:left;
     width:100%;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -379,7 +400,7 @@ li {
     position: relative;
     float:left;
     width:100%;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     margin-top:30px;
 }

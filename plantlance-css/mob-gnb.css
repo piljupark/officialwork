@@ -132,13 +132,11 @@ nav {
     position: relative;
     width: 15px;
     margin-left: 20px;
-    top: -2px;
     background: #fff;
     padding: 9px;
     border-radius: 100%;
     box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.05);
-       
-     
+    opacity: .8; 
 }
 
 .nav-wrap .logo {
@@ -151,19 +149,29 @@ nav {
 
 .nav-wrap .sub-button-wrap {
     position: relative;
-     width: 80px;
+     width: 15px;
+    height:15px;
+    padding:9px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-right: 20px;
-
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: .8;
+    box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.05);
+    margin-top:-3px;
 }
 
 .nav-wrap .sub-button-wrap img {
     position: relative;
-    width: 15px;
+    width: 12px;
+     background: #fff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
-
+ 
 
 /* //nav */
 
@@ -603,7 +611,27 @@ nav {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-
+}
+.nav-mob-top .user-wrap{
+    position: relative;
+    float:right;
+    width:50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-mob-top .shopping-button{
+    position: relative;
+    float:left;
+    width:17px;
+    filter: invert();
+    opacity: .8;
+}
+.nav-mob-top .login-button{
+    position: relative;
+    float:left;
+    width:17px;
+    filter: invert();
+    opacity: .8;
 }
 
 .nav-mob-top .close-button {

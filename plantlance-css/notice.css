@@ -141,7 +141,7 @@ li {
     left: 50%;
     transform: translate(-50%);
     box-sizing: border-box;
-    margin-top: 150px;
+    margin-top: 120px;
     padding: 0 20px;
 }
 
@@ -156,18 +156,19 @@ li {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .notice-title {
     position: relative;
     float: left;
     width: auto;
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 10px;
 }
 
 .notice-title:nth-child(2) {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 

@@ -212,7 +212,7 @@ li {
     float: right;
     background: none;
     border: none;
-    font-size: 13px;
+    font-size: 16px;
     outline: none;
     padding-right: 30px;
 }
@@ -238,6 +238,7 @@ li {
     transform: translate(0, -50%);
     text-align: center;
     color: #fff;
+    font-size: 16px;
 }
 
 
@@ -305,7 +306,7 @@ li {
 }
 .contents-title{
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 .contents-sort-wrap {
@@ -342,8 +343,8 @@ li {
     float:left;
     width:100%;
     display: flex;
-    font-size: 12px;
-    padding:20px 0;
+    font-size: 14px;
+    padding:25px 0;
     box-sizing: border-box;
     border-top:2px solid #2f2f2f;
     border-bottom: 1px solid #e0e0e0;
@@ -378,10 +379,9 @@ li {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding:20px 0;
+    padding:25px 0;
     border-bottom: 1px solid #d0d0d0;
-    
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .contents-notice-important{

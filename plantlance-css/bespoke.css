@@ -428,8 +428,8 @@ li {
 
 
 .bespoke-main4-title2 p{
-    font-size: 16px;
-    text-align: right;
+    font-size: 18px;
+    text-align: left;
     line-height: 2;
 }
 
@@ -451,8 +451,9 @@ li {
     float:left;
     width:100%;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
+
 .go-to-wily-button{
     position: relative;
     float:left;
@@ -553,47 +554,6 @@ li {
 }
 
 
-.go-to-product-wily{
-    position: relative;
-    width:50%;
-    margin-right:100px;
-
-    text-align:left;
-}
-.go-to-product-wily:nth-child(2){
-    margin-right: 0;
-}
-.go-to-product-wily div{
-    position: relative;
-    float:left;
-    width:100%;
-    border-bottom: 1px solid #2f2f2f;
-    padding-bottom: 5px;
-    margin-bottom: 35px;
-}
-.go-to-product-wily div .go-to-product-wily-button{
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-.go-to-product-wily div span{
-    position: relative;
-}
-
-.go-to-product-wily div span:nth-child(3){
-    font-size: 11px;
-    opacity: .6;
-}
-
-
-.go-to-product-wily-arrow-img{
-    position: absolute;
-    right:0;
-    width:10px;
-    
-}
 /* //bespoke-main5 */
 
 
@@ -711,7 +671,6 @@ li {
     position: relative;
     width:50%;
     margin-right:100px;
-
     text-align:left;
 }
 .go-to-product-wily:nth-child(2){
@@ -722,8 +681,8 @@ li {
     float:left;
     width:100%;
     border-bottom: 1px solid #2f2f2f;
-    padding-bottom: 5px;
-    margin-bottom: 35px;
+    padding-bottom: 10px;
+    margin-bottom: 45px;
 }
 .go-to-product-wily div .go-to-product-wily-button{
     position: absolute;
@@ -734,11 +693,13 @@ li {
 }
 .go-to-product-wily div span{
     position: relative;
+    font-size: 16px;
 }
 
 .go-to-product-wily div span:nth-child(3){
     font-size: 11px;
-    opacity: .6;
+    opacity: .8;
+    margin-left:5px;
 }
 
 
@@ -746,7 +707,6 @@ li {
     position: absolute;
     right:0;
     width:10px;
-    
 }
 /* //bespoke-main6 */
 
@@ -813,7 +773,7 @@ li {
     position: relative;
     float:right;
     width:100%;
-    margin-bottom: 170px;
+    margin-bottom: 120px;
 }
 .bespoke-main7-sub-img-wrap:nth-child(1) p{
     margin-bottom: 10px;
@@ -831,8 +791,6 @@ li {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-   
-
 }
 
 .bespoke-main7-sub-title{
@@ -844,10 +802,14 @@ li {
     text-align: left;
     text-align: justify;
     line-height: 1.82;
+    opacity: .7;
+    font-size: 14px;
 }
 
 
-
+.bespoke-main7-sub-title-span:nth-child(2){
+    opacity: .7;
+}
 .bespoke-main7-sub-title-span{
     position: relative;
     float:left;
@@ -856,6 +818,8 @@ li {
     text-align: left;
     text-align: justify;
     line-height:1.82;
+    font-size:14px;
+    
 }
 
 

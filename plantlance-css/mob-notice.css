@@ -107,6 +107,9 @@ li {
 .txt-kor-light{
      font-family: "Pretendard-Thin";
 }
+.txt-kor-regular {
+    font-family: "Pretendard-Regular";
+}
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -153,19 +156,19 @@ li {
     width: 100%;
     display: flex;
     justify-content:flex-start;
+    align-items: center;
 }
 
 .notice-title {
     position: relative;
     float: left;
     width: auto;
-    font-size: 14px;
-    margin-right: 10px;
+    font-size: 18px;
+    margin-right: 6px;
 }
 
 .notice-title:nth-child(2) {
-    font-size: 11px;
-    top:2px;
+    font-size: 12px;
 }
 
 

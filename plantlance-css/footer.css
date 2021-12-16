@@ -108,9 +108,14 @@ li {
 .txt-kor-light{
      font-family: "Pretendard-Thin";
 }
+
+.txt-kor-regular {
+    font-family: "Pretendard-Regular";
+}
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
+
 
 .txt-kor-bold {
     font-family: "Pretendard-SemiBold";

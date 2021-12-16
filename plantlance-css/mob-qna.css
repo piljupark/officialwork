@@ -153,19 +153,19 @@ li {
     width: 100%;
     display: flex;
     justify-content:flex-start;
+    align-items: center;
 }
 
 .qna-title {
     position: relative;
     float: left;
     width: auto;
-    font-size: 14px;
+    font-size: 18px;
     margin-right: 10px;
 }
 
 .qna-title:nth-child(2) {
-    font-size: 11px;
-    top:2px;
+    font-size: 12px;
 }
 
 

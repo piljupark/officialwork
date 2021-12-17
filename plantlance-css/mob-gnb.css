@@ -660,29 +660,43 @@ nav {
     margin-bottom:40px;
     left:50%;
     transform: translate(-50%);
+    border-bottom: 1px solid #676767;
 }
+
 .nav-mob-search-bar{
     position: relative;
     float:left;
-    width:100%;
+    width:90%;
     box-sizing: border-box;
     background: none;
     border:none;
-    border-bottom: 1px solid #4b4b4b;
     padding-bottom:15px;
     font-size:16px;
-    padding-left:0;
     color:#fff;
     -webkit-appearance: none;
-   -webkit-border-radius: 0;
+    -webkit-border-radius: 00px;
 }
 .nav-mob-search-bar::placeholder{
-    font-size: 12px;
+    font-size: 14px;
+    color:#676767;
 }
+
 .nav-mob-search-bar:focus{
     outline:none;
-    border-bottom:1px solid #fff;
 }
+
+.nav-mob-search-arrow-img{
+    position: relative;
+    float:right;
+    top:0;
+    right:0;
+    width:12px;
+    top:5px;
+}
+
+
+
+
 
 .nav-mob-main-menu {
     position: relative;

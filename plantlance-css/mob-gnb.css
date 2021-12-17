@@ -673,6 +673,8 @@ nav {
     font-size:16px;
     padding-left:0;
     color:#fff;
+    -webkit-appearance: none;
+   -webkit-border-radius: 0;
 }
 .nav-mob-search-bar::placeholder{
     font-size: 12px;

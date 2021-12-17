@@ -574,16 +574,17 @@ li {
     width:100%;
     height: 100%;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mob-sofa .mob-sofa-title{
     position: relative;
     color:#fff;
-    margin-right: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 12px;
-    left:18px;
-    top:18px;
+
 }
 .mob-sofa a{
     position: absolute;
@@ -620,7 +621,8 @@ li {
     margin-left:15px;
     margin-bottom:30px;
     margin-top:50px;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 0.1px;
 }
 .mob-showroom input[type="radio"]{
     display: none;
@@ -639,7 +641,7 @@ li {
     width: 100%;
     border:1px solid #ebebeb;
     border-right:none;
-     height: 40px;
+     height: 50px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -657,7 +659,7 @@ li {
     width: 100%;
     text-align: center;
     color:#d0d0d0;
-    font-size: 11px;
+    font-size: 13px;
 }
 #mob-seongsu:checked ~ .mob-showroom-button-wrap label:nth-child(1),
 #mob-pangyo:checked ~ .mob-showroom-button-wrap label:nth-child(2),

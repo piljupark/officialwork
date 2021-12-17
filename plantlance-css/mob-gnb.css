@@ -604,7 +604,6 @@ nav {
 
 /* nav-mob-top*/
 .nav-mob-top {
-
     position: relative;
     width: 80%;
     left: 50%;
@@ -621,7 +620,15 @@ nav {
     float:right;
     width:50px;
     display: flex;
+ 
     justify-content: space-between;
+}
+.nav-mob-top .search-button{
+    position: relative;
+    float:left;
+    width:17px;
+    filter: invert();
+    opacity: .8;
 }
 .nav-mob-top .shopping-button{
     position: relative;
@@ -644,6 +651,36 @@ nav {
     width: 20px;
 }
 
+
+
+.nav-mob-search-place{
+    position: relative;
+    float:left;
+    width:80%;
+    margin-bottom:40px;
+    left:50%;
+    transform: translate(-50%);
+}
+.nav-mob-search-bar{
+    position: relative;
+    float:left;
+    width:100%;
+    box-sizing: border-box;
+    background: none;
+    border:none;
+    border-bottom: 1px solid #4b4b4b;
+    padding-bottom:15px;
+    font-size:16px;
+    padding-left:0;
+    color:#fff;
+}
+.nav-mob-search-bar::placeholder{
+    font-size: 12px;
+}
+.nav-mob-search-bar:focus{
+    outline:none;
+    border-bottom:1px solid #fff;
+}
 
 .nav-mob-main-menu {
     position: relative;

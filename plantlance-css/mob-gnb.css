@@ -109,10 +109,11 @@ li {
 
 /* nav */
 nav {
-    position: absolute;
+    position: relative;
     float: left;
     width: 100%;
     z-index: 5;
+    top:0;
 }
 
 
@@ -129,14 +130,16 @@ nav {
 }
 
 .nav-wrap .menu-icon {
-    position: relative;
+    position:fixed;
     width: 15px;
     margin-left: 20px;
     background: #fff;
     padding: 9px;
     border-radius: 100%;
-    box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.1);
     opacity: .8; 
+    top:30px;
+    
 }
 
 .nav-wrap .logo {
@@ -148,7 +151,7 @@ nav {
 }
 
 .nav-wrap .sub-button-wrap {
-    position: relative;
+    position: fixed;
      width: 15px;
     height:15px;
     padding:9px;
@@ -160,6 +163,7 @@ nav {
     opacity: .8;
     box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.05);
     margin-top:-3px;
+    right:0;
 }
 
 .nav-wrap .sub-button-wrap img {

@@ -129,14 +129,14 @@ nav {
 }
 
 .nav-wrap .menu-icon {
-    position: relative;
+    position: fixed;
     width: 22px;
     margin-left: 20px;
     background: #fff;
     padding: 9px;
     border-radius: 100%;
-    box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.05);
-    opacity: .7;
+    box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.1);
+    opacity: .8;
 }
 
 .nav-wrap .logo {

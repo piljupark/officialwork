@@ -100,6 +100,9 @@ li {
 .txt-kor-light{
      font-family: "Pretendard-Thin";
 }
+.txt-kor-regular{
+     font-family: "Pretendard-Regular";
+}
 .txt-kor {
     font-family: "Pretendard-Medium";
 }
@@ -202,13 +205,27 @@ li {
 }
 .mob-pltl-main2-title{
     position: relative;
+    float:left;
+    width: 100%;
     font-size: 30px;
+}
+
+.mob-pltl-main2-txt-wrap{
+    position: relative;
+    float:right;
+    width:450px;
+
 }
 
 .mob-pltl-main2-txt{
     position: relative;
     font-size: 12px;
     line-height: 1.5;
+}
+.mob-pltl-main2-txt3{
+    position: relative;
+    float:right;
+    width:100%;
 }
 
 

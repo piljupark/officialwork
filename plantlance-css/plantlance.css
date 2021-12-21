@@ -156,7 +156,6 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    min-width: 1400px!important;
     height: 100vh;
     overflow: hidden;
     justify-content: center;

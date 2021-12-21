@@ -63,7 +63,7 @@ body::-webkit-scrollbar{
 body {
     position: relative;
     width: 100vw;
-    min-width: 1400px;
+    min-width: 1920px;
     height: 100vh;
     color: #292929;
     font-size: 14px;
@@ -89,6 +89,9 @@ li {
 .txt-eng-light{
     font-family: "Urbanist-Light";
 }
+.txt-eng-regular{
+    font-family: "Urbanist-Regular";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
@@ -99,8 +102,16 @@ li {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor-light{
+
+
+.txt-kor-thin{
      font-family: "Pretendard-Thin";
+}
+.txt-kor-light{
+    font-family:"Pretendard-Light";
+}
+.txt-kor-regular{
+    font-family: "Pretendard-Regular";
 }
 .txt-kor {
     font-family: "Pretendard-Medium";
@@ -125,6 +136,7 @@ li {
     position: relative;
     float: left;
     width: 100%;
+   
     height: auto;
     box-sizing: border-box;
     padding-bottom: 0;
@@ -161,114 +173,108 @@ li {
 
 .slide .main-img {
     position:relative;
-    width: 100%;
-    min-width: 1700px;
-    height: 100%;
-    top:30%;
+    width:100%;
+    min-width: 2200px;
+    top:0%;
     left:50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -0%);
 }
 
 
-.slide .text-wrap {
+.text-wrap {
     position: absolute;
+    width: auto;
     z-index: 2;
-    width: 100%;
-    top: 24%;
+}
+.text-wrap a{
+    position: relative;
+    float:left;
+    width:auto;
 }
 
-.text-wrap .slide-title-eng {
+.slide-title-eng{
     position: relative;
     width: 100%;
     text-align: center;
-    font-size: 50px;
+}
+.slide-title-kor{
+    position: relative;
+    float: left;
+    width: auto;
+}
+
+
+.text-wrap1{
+    bottom:335px;
+    left:300px;
+}
+.slide-title-eng1 {
+    font-size: 22px;
     margin-bottom: 20px;
     color:#fff;
 }
-
-.text-kor-wrap{
-    position: relative;
-    float:left;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.text-kor-wrap p:nth-child(1) {
-    position: relative;
-    float: left;
-    width: auto;
-    font-size: 22px;
+.slide-title-kor1 {
+    font-size: 20px;
     color: #fff;
-    margin-right: 10px;
+    text-align: left;
+    opacity: .6;
 }
 
-.text-kor-wrap p:nth-child(2) {
-    position: relative;
-    float: left;
-    width: auto;
-    font-size: 22px;
-    color: #fff;
-}
 
-.slide .text-wrap2 {
-    position: absolute;
-    float:left;
-    width: 100%;
-    max-width: 1360px;
-    max-height: 100vh;
-    top:35%;
-    z-index: 2;
+
+.text-wrap2{
     left:50%;
-    transform: translate(-50%,-50%);
+    top:50%;
+    transform: translate(-50%,-200%);
 }
-.slide .text-wrap3{
-    top:25%;
+.slide-title-eng2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+.slide-title-kor2{
+    font-size:22px;  
+    text-align: center;
+}
+
+
+.text-wrap3{
+   top:335px;
+   left:300px;
+}
+.slide-title-eng3{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.slide-title-kor3{
+    width:auto;
+    font-size:16px;  
+    text-align: left;
+    padding:15px 30px;
+    background: #d3d3d3;
 }
 
 
-.slide .text-wrap2 .slide-title {
-    text-align: right;
-    font-size: 50px;
-    line-height: 1.3;
-    margin-right: 40px;
+
+.text-wrap4{
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-200%);
+}
+.slide-title-eng4{
+    font-size:26px;
+    margin-bottom:30px;
+    color:#ebebeb;
 }
 
-.slide .text-wrap2 .view-button {
-    position: relative;
-    float: right;
-    border: 1px solid #292929;
-    margin-top: 10px;
-    width: 220px;
-    height: 50px;
-    margin-right: 40px;
+.slide-title-kor4{
+    width:auto;
+    font-size:16px;  
+    text-align: center;
+    color:#cbcbcb;
+    line-height: 1.5;
 }
 
-.slide .text-wrap2 .view-button a {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
-.slide .text-wrap2 .view-button p {
-    position: relative;
-    float: left;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-left: 10px;
-}
-
-.slide .text-wrap2 .view-button .view-next {
-    position: relative;
-    float: right;
-    width: 20px;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-right: 10px;
-}
 
 /* //main-slider */
 

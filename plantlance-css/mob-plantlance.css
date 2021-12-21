@@ -85,6 +85,9 @@ li {
 .txt-eng-light{
     font-family: "Urbanist-Light";
 }
+.txt-eng-regular{
+    font-family: "Urbanist-Regular";
+}
 .txt-eng {
     font-family: "Urbanist-Medium";
 }
@@ -95,8 +98,16 @@ li {
     font-family: "Urbanist-ExtraBold";
 }
 
-.txt-kor-light{
+
+
+.txt-kor-thin{
      font-family: "Pretendard-Thin";
+}
+.txt-kor-light{
+    font-family:"Pretendard-Light";
+}
+.txt-kor-regular{
+    font-family: "Pretendard-Regular";
 }
 .txt-kor {
     font-family: "Pretendard-Medium";
@@ -191,12 +202,12 @@ li {
     position:relative;
     width:100%;
 }
-
-@media screen and (max-width:500px){
-    .slide .main-img{
-        width:500px;
-    }
+.slide1-img {
+    filter:brightness(.5);
 }
+
+
+
 .slide-go-to-product{
     position: absolute;
     display: block;
@@ -208,106 +219,132 @@ li {
 
 
 
-.slide .text-wrap {
+.text-wrap {
     position: absolute;
-    z-index: 2;
     width: 100%;
-    top: 24%;
+    z-index: 2;
+}
+.text-wrap a{
+    position: relative;
+    float:left;
+    width:auto;
 }
 
-.text-wrap .slide-title-eng {
+.slide-title-eng{
     position: relative;
     width: 100%;
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-    color:#fff;
-    opacity: .8;
 }
-
-.text-kor-wrap{
-    position: relative;
-    float:left;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: .8; 
-}
-.text-kor-wrap p:nth-child(1) {
+.slide-title-kor{
     position: relative;
     float: left;
     width: auto;
-    font-size: 12px;
-    color: #5d5d5d;
-    margin-right: 3px;
-    color:#fff;
 }
 
-.text-kor-wrap p:nth-child(2) {
-    position: relative;
-    float: left;
-    width: auto;
-    color: #2f2f2f;
-    font-size: 12px;
-    color:#fff;
-}
 
-.slide .text-wrap2 {
+.mob-main-more-button{
     position: absolute;
     float:left;
-    width: 100%;
-    max-width: 1360px;
-    max-height: 100vh;
-    top:50%;
-    z-index: 2;
+    width:auto;
     left:50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0%);
+    bottom:70px;
 }
 
-
-.slide .text-wrap2 .slide-title {
-    text-align: right;
-    font-size: 20px;
-    line-height: 1.3;
-    margin-right: 40px;
-}
-
-.slide .text-wrap2 .view-button {
+.mob-main-more{
     position: relative;
-    float: right;
-    width: 90px;
-    height: 30px;
-    margin-right: 40px;
-    border: 1px solid #292929;
-    margin-top: 10px;
+    float:left;
+    padding:10px 20px;
+    background: #fff;
+    opacity: .7;
+    border-radius: 40px;
+    font-size:13px;
 }
 
-.slide .text-wrap2 .view-button a {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+
+.text-wrap1{
+    bottom:70px;
+    left:50px;
+}
+.slide-title-eng1{
+    font-size:22px;
+    color:#fff;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom:20px;
+}
+.slide-title-kor1{
+    font-size:16px;
+    color:#fff;
+    text-align: left;
 }
 
-.slide .text-wrap2 .view-button p {
-    position: relative;
-    float: left;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-left: 10px;
-   font-size: 10px;
+
+
+
+.text-wrap2{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-150%)
+}
+.slide-title-eng2{
+    width:auto;
+    font-size:22px;
+    color:#fff;
+    text-align: center;
+    margin-bottom:20px;
+    color:#2f2f2f;
+}
+.slide-title-kor2{
+    width:100%;
+    font-size:16px;
+    color:#fff;
+    text-align: center;
+    color:#2f2f2f;
 }
 
-.slide .text-wrap2 .view-button .view-next {
-    position: relative;
-    float: right;
-    width: 9px;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-right: 10px;
+
+
+.text-wrap3{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-150%)
 }
+.slide-title-eng3{
+    width:auto;
+    font-size:22px;
+    color:#fff;
+    text-align: center;
+    margin-bottom:40px;
+    color:#2f2f2f;
+}
+
+
+
+
+.text-wrap4{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+.slide-title-eng4{
+    width:auto;
+    font-size:22px;
+    color:#fff;
+    text-align: center;
+    margin-bottom:20px;
+    color:#ebebeb;
+}
+.slide-title-kor4{
+    width:100%;
+    font-size:14px;
+    color:#fff;
+    text-align: center;
+    color:#cbcbcb;
+}
+
+
+
 
 /* //main-slider */
 

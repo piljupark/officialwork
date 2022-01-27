@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>바이백 접수</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/buyback-accept2.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <!-- #buyback-accept-whole 시작 -->
+    <div id="buyback-accept-whole">
+
+        <!-- .Timeline-wrap 시작 -->
+        <div class="timeline-wrap">
+
+
+            <!-- .Timeline-title-wrap 시작 -->
+            <div class="timeline-title-wrap">
+                <p class="txt-kor-semibold timeline-title timeline-title1">상품선택</p>
+                <p class="txt-kor-semibold timeline-title timeline-title2">상품진단</p>
+                <p class="txt-kor-semibold timeline-title timeline-title3">신청기준 안내</p>
+                <p class="txt-kor-semibold timeline-title timeline-title4">서비스 신청</p>
+            </div>
+            <!-- .Timeline-title-wrap 끝 -->
+
+            <!-- .Timeline-shape-wrap 시작 -->
+            <div class="timeline-shape-wrap">
+                <span class="timeline-shape timeline-shape1">
+                </span>
+                <span class="timeline-shape timeline-shape2">
+                    <div class="timeline-present-shape"></div>
+                </span>
+                <span class="timeline-shape timeline-shape3"></span>
+                <span class="timeline-shape timeline-shape4"></span>
+
+                <div class="timeline-bg"></div>
+            </div>
+            <!-- .Timeline-shape-wrap 끝 -->
+        </div>
+        <!-- .Timeline-wrap 끝 -->
+
+
+
+        <!-- .buyback-condition-title-wrap 시작 -->
+        <div class="buyback-condition-title-wrap">
+            <span class="txt-kor-bold">상품의 현재 상태를 진단해주세요.</span>
+            <span class="txt-kor">( 객관적이고 정확한 진단은 빠른 서비스 진행에 도움이 됩니다. )</span>
+        </div>
+        <!-- .buyback-condition-title-wrap 끝 -->
+
+
+
+        <!-- .buyback-condition-select-wrap 시작 -->
+        <div class="buyback-condition-select-wrap">
+
+            <a href="#none" class="show-standard-btn">
+                <p class="txt-kor-bold standard-title">등급 분류 기준</p>
+                <p class="txt-kor-bold standard-qna">?</p>
+            </a>
+
+
+            <div class="buyback-condition-select">
+                <input type="radio" id="condition-s" class="condition-select" name="condition">
+                <input type="radio" id="condition-a" class="condition-select" name="condition">
+                <input type="radio" id="condition-b" class="condition-select" name="condition">
+
+                <div class="condition-list-wrap">
+
+                    <label for="condition-s">
+
+                        <div class="condition-inner-wrap">
+                            <div class="condition-exam-img">
+                                <img src="../plantlance-image/buyback/s.jpg" alt="condition-s">
+                            </div>
+                            <p class="txt-kor-bold condition-title">거의 새것 / S</p>
+
+                            <p class="txt-kor-regular condition-txt">상판 엣지 마모 / 찍힘 X</p>
+                            <p class="txt-kor-regular condition-txt">상판 상면 오염 / 얼룩 / 패임 X</p>
+                            <p class="txt-kor-regular condition-txt">레그 파손(깨짐) / 스크래치(헤어라인 제외) / 찍힘 X</p>
+
+                            <div class="condition-result-wrap">
+                                <span class="txt-kor-bold perchase-price">매입가</span>
+                                <span class="txt-kor perchase-price">공시가 기준 40%</span>
+
+                                <p class="check">✓</p>
+                            </div>
+                        </div>
+
+                    </label>
+
+                    <label for="condition-a">
+                        <div class="condition-inner-wrap">
+                            <div class="condition-exam-img">
+                                <img src="../plantlance-image/buyback/a.jpg" alt="condition-s">
+                            </div>
+                            <p class="txt-kor-bold condition-title">좋음 / A</p>
+
+                            <p class="txt-kor-regular condition-txt">상판 엣지 찍힘 (최대 2mm), 마모 (최대 5mm) / 상면 오염, 얼룩 (최대 3mm)</p>
+                            <p class="txt-kor-regular condition-txt">상판 상면 패임 / 하부면 오염 X</p>
+                            <p class="txt-kor-regular condition-txt">레그 찍힘 (최대 2mm), 레그 발 파손 O / 깨짐, 스크래치 X</p>
+
+
+                            <div class="condition-result-wrap">
+                                <span class="txt-kor-bold perchase-price">매입가</span>
+                                <span class="txt-kor perchase-price">공시가 기준 33%</span>
+
+                                <p class="check">✓</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="condition-b">
+                        <div class="condition-inner-wrap">
+                            <div class="condition-exam-img">
+                                <img src="../plantlance-image/buyback/b.jpg" alt="condition-s">
+                            </div>
+                            <p class="txt-kor-bold condition-title">보통 / B</p>
+
+                            <p class="txt-kor-regular condition-txt">상판 엣지 찍힘 (최대 5mm) / 엣지 마모 (최대 30mm)</p>
+                            <p class="txt-kor-regular condition-txt">상판 상면 오염, 얼룩 (최대 10mm) / 상면 </p>
+                            <p class="txt-kor-regular condition-txt">상판 상면 깨짐 / 패임 (최대 3mm), 하부면 오염 (최대 15mm)</p>
+                            <p class="txt-kor-regular condition-txt">레그 찍힘 (최대 3mm) / 레그 발 플라스틱 파손 O</p>
+                            <p class="txt-kor-regular condition-txt">레그 파손(깨짐) X / 스크래치(헤어라인 제외) O</p>
+
+
+                            <div class="condition-result-wrap">
+                                <span class="txt-kor-bold perchase-price">매입가</span>
+                                <span class="txt-kor perchase-price">공시가 기준 22%</span>
+
+                                <p class="check">✓</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <!-- .buyback-condition-select-wrap 끝 -->
+
+
+
+
+
+
+
+
+        <!-- .steps-btn-wrap 시작 -->
+        <div class="steps-btn-wrap">
+            <a href="buyback-accept1.html" class="txt-kor steps-btn close-steps-btn">이전</a>
+            <a href="buyback-accept3.html" class="txt-kor steps-btn next-steps-btn">다음단계</a>
+        </div>
+        <!-- .steps-btn-wrap 끝 -->
+
+
+    </div>
+    <!-- #buyback-accept-whole 끝 -->
+
+
+
+
+
+
+
+
+
+
+</body></html>

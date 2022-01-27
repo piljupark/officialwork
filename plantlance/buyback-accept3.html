@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>바이백 접수</title>
+
+
+    <script src="../plantlance-script/jquery-3.6.0.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../plantlance-css/buyback-accept3.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <!-- #buyback-accept-whole 시작 -->
+    <div id="buyback-accept-whole">
+
+        <!-- .Timeline-wrap 시작 -->
+        <div class="timeline-wrap">
+
+
+            <!-- .Timeline-title-wrap 시작 -->
+            <div class="timeline-title-wrap">
+                <p class="txt-kor-semibold timeline-title timeline-title1">상품선택</p>
+                <p class="txt-kor-semibold timeline-title timeline-title2">상품진단</p>
+                <p class="txt-kor-semibold timeline-title timeline-title3">신청기준 안내</p>
+                <p class="txt-kor-semibold timeline-title timeline-title4">서비스 신청</p>
+            </div>
+            <!-- .Timeline-title-wrap 끝 -->
+
+            <!-- .Timeline-shape-wrap 시작 -->
+            <div class="timeline-shape-wrap">
+                <span class="timeline-shape timeline-shape1">
+                </span>
+                <span class="timeline-shape timeline-shape2">
+
+                </span>
+                <span class="timeline-shape timeline-shape3">
+                    <div class="timeline-present-shape"></div>
+                </span>
+                <span class="timeline-shape timeline-shape4"></span>
+
+                <div class="timeline-bg"></div>
+            </div>
+            <!-- .Timeline-shape-wrap 끝 -->
+        </div>
+        <!-- .Timeline-wrap 끝 -->
+
+
+
+
+        <!-- .buyback-condition-title-wrap 시작 -->
+        <div class="buyback-able-title-wrap">
+            <span class="txt-kor-bold buyback-able-title">이런 경우는 서비스 접수가 어려워요!</span>
+        </div>
+        <!-- .buyback-condition-title-wrap 끝 -->
+
+
+
+        <!-- .buyback-able-list-wrap 시작 -->
+        <div class="buyback-able-list-wrap">
+            <input type="radio" name="product" id="able-table" checked>
+            <input type="radio" name="product" id="able-sofa">
+
+
+            <label for="able-table">
+                <a href="#none" class="buyback-product-category-btn buyback-product-category-btn1">
+                    <p class="txt-kor buyback-product-category buyback-product-category1">Table</p>
+                </a>
+            </label>
+
+
+            <label for="able-sofa">
+                <a href="#none" class="buyback-product-category-btn buyback-product-category-btn2">
+                    <p class="txt-kor buyback-product-category buyback-product-category2">Sofa</p>
+                </a>
+            </label>
+
+
+
+            <!-- .able-table-wrap 시작 -->
+            <div class="able-table-wrap">
+                <div class="able-table">
+
+                    <div class="top-sign">
+                        <p class="txt-kor-semibold able-sign">가능해요</p>
+                        <img src="../plantlance-image/buyback/able.png" alt="able-emoji" class="able-emoji">
+                    </div>
+
+                    <p class="txt-kor-regualr able-txt">1. 윌리테이블을 테이블 용도로 사용 가능한 상태</p>
+                    <p class="txt-kor-regualr able-txt">2. 플랜트란스 윌리테이블 (상판+레그) 완제품인 상태</p>
+                    <p class="txt-kor-regualr able-txt">3. 테이블이 재가공 되지 않은 상태 ex)페인트,도장 등</p>
+                </div>
+
+                <div class="disable-table">
+                    <div class="top-sign">
+                        <p class="txt-kor-semibold disable-sign">불가능해요</p>
+                        <img src="../plantlance-image/buyback/disable.png" alt="disable-emoji" class="able-emoji">
+                    </div>
+
+                    <p class="txt-kor-regualr able-txt">1. 테이블 레그 체결 홈과 브라켓 고리가 파손되지 않은 상태 (사진 의무 접수 필요)</p>
+                    <p class="txt-kor-regualr able-txt">2. 실버엣지 마모 면적이 30mm이상인 상태 (하자 면적 모두 합한 길이)</p>
+                    <p class="txt-kor-regualr able-txt">3. 윌리 테이블 레그가 파손(깨짐)이 있는 상태</p>
+                    <p class="txt-kor-regualr able-txt">4. 상판의 엣지 파손 면적 (파손 면적에서 가장 긴 부분)이 15mm 이상인 경우 (하자 면적 모두 합한 길이)</p>
+
+                    <div class="disable-caution-wrap">
+                        <p class="txt-kor-regualr">*신청 불가능 상태인 제품으로 신청될 시에 신청이 반려될 수 있습니다.</p>
+                        <p class="txt-kor-regualr">*제품 하자로 인해 사용상의 안전이 우려되는 경우는 신청이 반려될 수 있습니다.</p>
+                    </div>
+                </div>
+
+
+                <div class="admit-contents-wrap">
+                    <input type="checkbox" name="admit-contents" id="admit-contents">
+                    <label for="admit-contents" class="txt-kor-regular">
+                        신청기준에 대한 내용을 모두 확인했으며, 이에 동의합니다.
+                    </label>
+                </div>
+
+            </div>
+            <!-- .able-table-wrap 끝 -->
+
+        </div>
+        <!-- .buyback-able-list-wrap 끝 -->
+
+
+
+
+
+
+
+
+
+
+        <!-- .steps-btn-wrap 시작 -->
+        <div class="steps-btn-wrap">
+            <a href="buyback-accept2.html" class="txt-kor steps-btn close-steps-btn">이전</a>
+            <a href="buyback-accpet4.html" class="txt-kor steps-btn next-steps-btn">다음단계</a>
+        </div>
+        <!-- .steps-btn-wrap 끝 -->
+
+
+    </div>
+    <!-- #buyback-accept-whole 끝 -->
+
+
+
+
+
+
+
+
+
+
+</body></html>

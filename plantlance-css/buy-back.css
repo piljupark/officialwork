@@ -1,0 +1,503 @@
+@charset "utf-8";
+
+
+@font-face {
+    src: url("../fonts/Pretendard-Thin.otf");
+    font-family: "Pretendard-Thin";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Regular.otf");
+    font-family: "Pretendard-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Medium.otf");
+    font-family: "Pretendard-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-SemiBold.otf");
+    font-family: "Pretendard-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-Bold.otf");
+    font-family: "Pretendard-Bold";
+}
+
+@font-face {
+    src: url("../fonts/Pretendard-ExtraBold.otf");
+    font-family: "Pretendard-ExtraBold";
+}
+
+
+
+
+@font-face {
+    src: url("../fonts/Urbanist-Light.ttf");
+    font-family: "Urbanist-Light";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist-Regular";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-Medium.ttf");
+    font-family: "Urbanist-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+    font-family: "Urbanist-SemiBold";
+}
+
+@font-face {
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+
+
+/*
+body::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #292929;
+    font-size: 14px;
+    overflow-x: hidden;
+    /*-ms-overflow-style: none; /* IE and Edge */
+    /*scrollbar-width: none; /* Firefox */
+    /*background-image: url(../plantlance-img/main-bespoke1.jpg);*/
+}
+
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #010101;
+}
+
+
+
+
+.txt-eng-light {
+    font-family: "Urbanist-Light";
+}
+
+.txt-eng-regular {
+    font-family: "Urbanist-Regular";
+}
+
+.txt-eng {
+    font-family: "Urbanist-Medium";
+}
+
+.txt-eng-semibold {
+    font-family: "Urbanist-SemiBold";
+}
+
+.txt-eng-bold {
+    font-family: "Urbanist-ExtraBold";
+}
+
+
+
+.txt-kor-thin {
+    font-family: "Pretendard-Thin";
+}
+
+.txt-kor-light {
+    font-family: "Pretendard-Light";
+}
+
+.txt-kor-regular {
+    font-family: "Pretendard-Regular";
+}
+
+.txt-kor {
+    font-family: "Pretendard-Medium";
+}
+
+.txt-kor-semibold {
+    font-family: "Pretendard-SemiBold";
+}
+
+.txt-kor-bold {
+    font-family: "Pretendard-Bold";
+}
+
+
+
+
+
+
+#header {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+/*.buyback-title-wrap 시작*/
+.buyback-title-wrap {
+    position: relative;
+    float: left;
+    width: 1400px;
+    height: auto;
+    margin-top: 215px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.buyback-title {
+    position: relative;
+    width: auto;
+    font-size: 110px;
+}
+
+.buyback-title2 {
+    float: left;
+}
+
+.buyback-title3 {
+    float: left;
+    margin-left: 60px;
+}
+
+/*.buyback-title-wrap 끝*/
+
+
+
+
+/*.buyback-contents-wrap 시작*/
+.buyback-contents-wrap {
+    position: relative;
+    float: left;
+    width: 1400px;
+    margin-top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.buyback-contents-title-wrap {
+    position: relative;
+    float: left;
+    width: 70%;
+}
+
+.buyback-contents-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.buyback-contents-subtitle {
+    position: relative;
+    float: left;
+    width: auto;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+
+.buyback-contents-text-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.buyback-contents-text {
+    position: relative;
+    float: left;
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+
+
+.buyback-contents-text3,
+.buyback-contents-text6 {
+    text-decoration: 10px rgba(0, 0, 0, 0.15) line-through;
+}
+
+
+
+
+
+
+
+/*.buyback-contents-wrap 끝*/
+
+
+
+
+
+
+
+
+/*.buyback-accept-wrap 시작*/
+.buyback-accept-wrap {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #0a5c32;
+    right: -100px;
+    bottom: 0px;
+}
+
+.buyback-accept-btn {
+    position: absolute;
+    bottom: 65px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyback-accept-title {
+    position: relative;
+    float: left;
+    font-size: 28px;
+    color: #fff;
+    margin-right: 35px;
+}
+
+.accept-right-img {
+    position: relative;
+    float: left;
+    width: 43px;
+    filter: invert();
+}
+
+/*.buyback-accept-wrap 끝*/
+
+
+
+
+
+
+
+/*.buyback-info-wrap 시작*/
+.buyback-info-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 255px;
+    margin-top: 160px;
+    background: #f5f5f5;
+    margin-bottom: 240px;
+}
+
+.buyback-info-text-wrap {
+    position: relative;
+    float: left;
+    width: 1360px;
+    height: 100%;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+.buyback-info p {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+
+.buyback-info-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 70px;
+    line-height: 1.5;
+}
+
+.buyback-info-title2 {
+    margin-bottom: 40px;
+}
+
+.buyback-info-txt {
+    font-size: 18px;
+}
+
+
+.buyback-info-line {
+    border-right: 1px solid #787878;
+    height: 100px;
+}
+
+/*.buyback-info-wrap 끝*/
+
+
+
+
+
+
+
+/*.buyback-steps-wrap 시작*/
+.buyback-steps-wrap {
+    position: relative;
+    float: left;
+    width: 1360px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.buyback-steps-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.buyback-steps {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.steps {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    background: #e0e0e0;
+}
+
+.steps-arrow {
+    position: relative;
+    width: 43px;
+}
+
+
+.buyback-steps-info-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.buyback-steps-info {
+    position: relative;
+    width: 280px;
+}
+
+.buyback-steps-info-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.buyback-steps-info-txt {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+    font-size: 14px;
+}
+
+/*.buyback-steps-wrap 끝*/
+
+
+
+
+/*.buyback-qna-wrap 시작*/
+.buyback-qna-wrap {
+    position: relative;
+    float: left;
+    width: 1360px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 280px;
+}
+
+.buyback-qna-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 105px;
+}
+
+details {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 85px;
+}
+
+summary {
+    cursor: pointer; 
+}
+
+summary > p {
+    position: relative;
+    float:left;
+    margin-top:30px;
+}
+
+
+
+details summary::-webkit-details-marker{
+    display: none;
+}
+
+
+details summary::-webkit-details-marker {
+    background: url(../plantlance-image/icon/arrow-down.png) center center no-repeat/cover;
+    
+}
+
+details[open] summary::-webkit-details-marker {
+    background: url(../plantlance-image/icon/arrow-up.png) center center no-repeat/cover;
+}
+
+
+
+/*.buyback-qna-wrap 끝*/

@@ -20,6 +20,10 @@
     src: url("../fonts/Pretendard-SemiBold.otf");
     font-family: "Pretendard-SemiBold";
 }
+@font-face {
+    src: url("../fonts/Pretendard-Bold.otf");
+    font-family: "Pretendard-Bold";
+}
 
 @font-face {
     src: url("../fonts/Pretendard-ExtraBold.otf");
@@ -94,6 +98,11 @@ li {
     font-family: "Urbanist-ExtraBold";
 }
 
+
+
+.txt-kor-regular{
+    font-family:"Pretendard-Regular"
+}
 .txt-kor-light{
      font-family: "Pretendard-Thin";
 }
@@ -101,8 +110,11 @@ li {
     font-family: "Pretendard-Medium";
 }
 
-.txt-kor-bold {
+.txt-kor-semibold {
     font-family: "Pretendard-SemiBold";
+}
+.txt-kor-bold {
+    font-family: "Pretendard-Bold";
 }
 
 

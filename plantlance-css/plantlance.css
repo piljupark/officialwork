@@ -1028,13 +1028,13 @@ li {
     width:10px;
     margin-right:5px;
     margin-top:1.5px;
-     transition-duration: .3s;
+    transition-duration: .3s;
 }
 .showroom-info-wrap .number{
     position: relative;
     float:left;
     width:auto;
-     transition-duration: .3s;
+    transition-duration: .3s;
 }
 .call-btn:hover{
     background: #2f2f2f;

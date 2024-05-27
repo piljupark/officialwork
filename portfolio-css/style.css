@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+
+body {
+    width: 100vw;
+    height: auto;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: #292929;
+    background-color: rgba(142, 202, 241, 0.5);
+    transition: all .2s;
+    overflow-x: hidden;
+}
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #292929;
+}
+
+::selection {
+    color: #01C9FD;  
+    background-color: #001D23;
+}
+
+
+
+/* main__name */
+#main__name {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 4vw;
+    text-align: center;
+    z-index: 1;
+    mix-blend-mode: difference;
+    opacity: .4;
+}
+/* //main__name */
+
+/* menu */
+#menu {
+    position: fixed;
+    width: 240px;
+    top: 40px;
+    right: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 60px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    box-sizing: border-box;
+    z-index: 99;
+
+    @media (max-width: 1024px) {
+        width: 240px;
+        top: unset;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .copy__Email {
+        padding: 0;
+        font-size: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    img {
+        width: 40px;
+    }
+
+    /* 라이트&다크모드 버튼 */
+    #toggle{ 
+        &:checked ~ .toggle__switch {
+            background-color: #292929;
+
+            .toggle__btn {
+                left: calc(100% - 44px);
+                background: #fff;
+            }
+        }
+
+    }
+
+    .toggle__switch {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        display: block;
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+        cursor: pointer;
+        transition: all .4s ease-in;
+
+        .toggle__btn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            left: 4px;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: #888;
+            transition: all .4s ease-in;
+        }
+    }
+    /* //라이트&다크모드 버튼 */
+
+}
+/* //menu */
+
+
+/* main__wrap */
+#main__wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    gap: 20px;
+
+    @media (max-width: 1024px) {
+        padding: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+
+
+/* box */
+.box {
+    position: relative;
+    height: 0;
+    padding: 20px;
+    padding-bottom:56.25%;
+    border: 1.5px solid #e6e6e6;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: .1s;
+    overflow: hidden;
+    flex: 1 1 40%;
+
+    .box__shadow{
+
+        &:hover {
+            box-shadow: 4px 10px 40px 1px rgba(0, 0, 0, 0.1);
+            transition: all .3s;
+        }
+
+    }
+}
+
+
+
+/* info__wrap */
+.info__wrap {
+    width: 100%;
+    box-sizing: border-box;
+
+    .info {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        gap: 20px;
+        box-sizing: border-box;
+       
+
+        .info__hand{
+            position: relative;
+            width: clamp(60px, 13vw, 100px);
+            animation-name: handshake;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+        }
+
+        .info__title {
+            font-family: "Hanken Grotesk", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-optical-sizing: auto;
+            font-size: clamp(24px, 3vw, 40px);
+            line-height: 1.5;
+            letter-spacing: -0.04em;
+        }
+
+    }
+}
+
+
+
+@-webkit-keyframes handshake{
+   0%{
+        -webkit-transform: rotate(0deg);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+       -webkit-transform: rotate(10deg);
+    }
+    10%,
+    30%,
+    50%{
+        -webkit-transform: rotate(-10deg);
+    }
+    70%,
+    100%{
+        -webkit-transform: rotate(0);
+    }
+}
+/* //info__wrap */
+
+
+
+/* tool__wrap */
+.tool__wrap {
+    background-image: url('/portfolio-img/app.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+/* //tool__wrap */
+
+
+   
+/* contact__wrap */
+.contact__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: none;
+    display: none;
+
+    .contact__git{
+        width: calc(50% - 10px);
+        left: 0;
+        top: 0;
+        background: #f3d9fa;
+        border-radius: 30px;
+
+        @media (max-width: 1024px) {
+            width: calc(50% - 5px);
+        }
+
+        img {
+            position: absolute;
+            width: clamp(40px, 10vw, 100px);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .contact__mail{
+        width: calc(50% - 10px);
+        right: 0;
+        top: 0;
+        background: #ffe3e3;
+        border-radius: 30px;
+
+        @media (max-width: 1024px) {
+            width: calc(50% - 5px);
+        }
+
+        img {
+            position: absolute;
+            width: clamp(40px, 10vw, 100px);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+/* //contact__wrap */
+
+
+/* portfolio */
+.p1 {
+    overflow: hidden;
+    background-image: url('/portfolio-img/port_01.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media (max-width: 1024px) {
+        padding-bottom: 70%;
+    }
+
+    a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transition: all .5s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        &:hover .port__title{
+            margin-bottom: 20px;
+        }
+        
+        .port__title {
+            margin-bottom: -20px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
+            color: #fff;
+            transition: all .25s;
+        }
+    }
+}
+
+.p2 {
+    overflow: hidden;
+    background-image: url('/portfolio-img/port_02.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1024px) {
+        padding-bottom: 70%;
+    }
+
+    a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transition: all .5s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        &:hover .port__title{
+            margin-bottom: 20px;
+        }
+        
+        .port__title {
+            margin-bottom: -20px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
+            color: #fff;
+            transition: all .25s;
+        }
+    }
+}
+
+.p3 {
+    overflow: hidden;
+    background-image: url('/portfolio-img/port_03.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media (max-width: 1024px) {
+        padding-bottom: 70%;
+    }
+
+    a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transition: all .5s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        &:hover .port__title{
+            margin-bottom: 20px;
+        }
+        
+        .port__title {
+            margin-bottom: -20px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
+            color: #fff;
+            transition: all .25s;
+        }
+    }
+}
+
+.p4 {
+    overflow: hidden;
+    background-image: url('/portfolio-img/port_04.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1024px) {
+        padding-bottom: 70%;
+    }
+
+    a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transition: all .5s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        &:hover .port__title{
+            margin-bottom: 20px;
+        }
+        
+        .port__title {
+            margin-bottom: -20px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
+            color: #fff;
+            transition: all .25s;
+        }
+    }
+}
+/* //portfolio */
